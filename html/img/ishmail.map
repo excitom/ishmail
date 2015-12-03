@@ -1,0 +1,19 @@
+
+#########################################################################
+#									#
+#	Ishmail Home Page						#
+#									#
+#########################################################################
+
+#	return to main index if no button was touched
+default index.html
+
+#	column of buttons
+#
+#		Demo
+#		Info
+#		Prices
+
+rect	http://www.ishmail.com/html/download.html	281, 1 361, 48
+rect	http://www.ishmail.com/html/info.html		281,49 361, 96
+rect	http://www.ishmail.com/html/prices.html	281,97 361,144

@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+ <TITLE>Mailcap File Definition</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="6m52wFBX4N9X3cS">Mailcap File Definition</H1>
+
+<P>
+A MIME message contains message blocks of a variety of
+file-types that can be displayed or created using a number of
+tools. You or your organization may prefer one tool over another.
+You can also define your own file-types in
+<CITE>Ishmail</CITE>. To handle such
+flexibility,
+<CITE>Ishmail</CITE> provides mechanisms for defining unique
+file-types and display methods through the use of the mailcap
+files.
+
+<P>
+The purpose of the mailcap is to indicate to
+<CITE>Ishmail</CITE> what program
+to run in order to show user mail in a given format. With
+<CITE>Ishmail</CITE>,
+it is possible to add a new file-type to all of the mail reading
+programs at a site simply by adding a line to a the system
+<SAMP>mailcap</SAMP> file. This can be overridden by defining the
+<CODE>$SYSMAILCAP</CODE>
+environment variable.
+<P>
+<CITE>Ishmail</CITE> also attempts to read a user-provided
+<I>mailcap</I> file in the
+user's home directory. This file is
+<I>$HOME/.mailcap</I>. This file does
+not have to exist. But, if it does, its entries will take precedence
+over entries of the same type in the system mailcap file.
+<P>
+The syntax of a
+mailcap file is fairly simple and straightforward.
+Any line that starts with
+<SAMP>#</SAMP> is a comment. Blank lines are ignored.
+Otherwise, each line defines a single mailcap entry for a single
+content type. Long lines may be continued by ending them with
+a backslash character, "<SAMP>\</SAMP>".
+<P>
+Each individual
+mailcap entry consists of a content-type
+specification, a command to execute, and (possibly) a set of
+optional flag values. For example, a very simple mailcap entry
+might look like this:
+<PRE>
+image/gif; xloadimage %s
+</PRE>
+<P>
+The optional flags can be used to specify additional information
+about the mail-handling command. For example:
+<PRE>
+image/gif; xloadimage %s; label="A GIF Image"
+</PRE>
+<P>
+can be added to use as a default label to display when a MIME
+message arrives with an image/gif type, that provides no
+description of itself.
+<P>
+The type field (image/gif, in the above example) is simply any
+legal content type name, as defined by
+<CITE>Internet RFC 1341
+(Multipurpose Internet Mail Extension)</CITE>. In practice, this is
+almost any string. It is the string that will be matched against
+the "Content-type" header to decide if this is the mailcap entry
+that matches the current message.
+
+<P>
+Additionally, the type field may specify a subtype or a wildcard
+to match all subtypes (for example, "image/*"). A wild card
+definition should follow specific definitions, because
+<CITE>Ishmail</CITE> will
+attempt to match the first entry it finds.
+<P>
+The command field is any UNIX command ("xloadimage %s" in
+the above example), and is used to specify the interpreter for the
+given type of message. Semicolons and backslashes within the
+command must be quoted with backslashes. If the command
+contains "%s", those two characters will be replaced by the name
+of a file that contains the body of the message. If it contains "%t",
+those two characters will be replaced by the content-type field,
+including the subtype, if any. (That is, if the content-type was
+"image/jpeg; opt1=something-else", then "%t" would be replaced
+by "image/jpeg".)
+
+<P>
+If the command field contains "%{" followed by a parameter name
+and a closing "}", then all those characters will be replaced by the
+value of the value of the named parameter, if any, from the value
+of the Content-type header. Thus, in the earlier example,
+"%{opt1}" will be replaced by "something-else". If a parameter is
+specified for the command, and the body part does not have a
+value for it, then "" (two double quotes representing the empty
+string) is substituted on the command line.
+<P>
+If the command contains a "%e", those two characters will be
+replaced by the value of the Content-Transfer-Encoding, if there
+is one. This is useful particularly for external-body types, and the
+command needs to decode the retrieved body.
+<P>
+There are two additional built-in parameters; %{ruser} and
+%{rpwd}. The first,
+<CODE>ruser</CODE>, is where a user-supplied user account
+name is substituted on the command line. This is commonly used
+for external-body types that use "ftp" as an access-type. The
+<CODE>rpwd</CODE>
+parameter is for the accompanying password.
+<P>
+If no "%s" appears in the command field, then instead of placing
+the message body in a temporary file,
+<CITE>Ishmail</CITE> passes the body to
+the command on the standard input.
+
+<P>
+The "notes=xxx" field is an uninterpreted string that is used to
+specify the name of the person who installed this entry in the
+mailcap file. (The "xxx" may be replaced by any text string.)
+<P>
+The "test=xxx" field is a command that is executed to determine
+whether the mailcap line actually applies. That is, if the
+content-type field matches the content-type on the message, but
+a "test=" field is present, then the test must succeed before the
+mailcap line is considered to "match" the message being viewed.
+The command may be any UNIX command, using the same
+syntax and the same %-escapes as for the viewing command, as
+described above. A command is considered to succeed if it exits
+with a zero exit status, and to fail otherwise.
+<P>
+The "print=xxx" field is a command to use when you want to print
+the file. For instance application/postscript type could have an
+entry:
+<PRE>
+application/postscript; ghostview %s; print=lpr -P ps_printer
+</PRE>
+<P>
+The "textualnewlines" field can be used in the rather obscure
+case where
+<CITE>Ishmail's</CITE> default rules for treating newlines in
+base64-encoded data are unsatisfactory. By default,
+<CITE>Ishmail</CITE>
+translates
+<B>CRLF</B> to the local newline character in decoded
+base64 output if the content-type is "text" (any subtype), but will
+not do so otherwise. A mailcap entry with a field of
+"textualnewlines=1" will force such translation for the specified
+content-type, while "textualnewlines=0" will guarantee that the
+translation does not take place even for textual content-types.
+<P>
+<CITE>Ishmail</CITE> handles the following types automatically, thus negating
+a need for mailcap entries for text/plain, text/richtext, multipart/
+mixed, multipart/digest, multipart/alternative,
+multipart/parallel, message/rfc822, and message/partial. But
+this does not preclude creating
+<I>mailcap</I> entries for these types if,
+for some reason, you'd rather not use the built-in presentation
+mechanisms for these types.
+<P>
+<CITE>Ishmail</CITE> has a default entry for message/external-body in the
+mailcap shipped with the program. It is recommended that this
+entry not be changed.
+<P>
+<CITE>Ishmail</CITE> also has default entries for image/gif and audio/basic.
+However, if you have a better application for presenting these
+types, make the change there.
+
+<HR>
+Preceding Section: <A HREF="Xj52wFBX4N9X3cS.html">Ishmail Resources</A><BR>
+Following Section: <A HREF="3InsZOBOAH9X3cS.html">Sample Mailcap File</A><BR>
+Parent Section: <A HREF="Xj52wFBX4N9X3cS.html">Ishmail Resources</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

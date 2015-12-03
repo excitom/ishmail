@@ -1,0 +1,335 @@
+<HTML>
+<HEAD>
+ <TITLE>Ishmail Resources</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="Xj52wFBX4N9X3cS">Ishmail Resources</H1>
+
+<P>
+This section describes
+<CITE>Ishmail</CITE> resources. It contains resource
+definitions and a sample file.
+
+<P>
+In addition to the resources common to
+<CITE>X</CITE> and
+<CITE>Motif</CITE>, there are a
+number of resources that you can add or change to customize
+specific features of
+<CITE>Ishmail</CITE>.
+<P>
+The application looks for these resources in the
+<I>$HOME/.ishmailrc</I>
+file and the
+<I>$HOME/app-defaults/Ishmail</I> file.
+
+<P>
+The
+<I>$HOME/.ishmailrc</I> file is created when you start
+<CITE>Ishmail</CITE>. At
+first, it is empty. When you specify any preference in an
+<CITE>Ishmail</CITE>
+<U>O</U><B>ptions</B> menu, the modified resource is written to this file.
+<P>
+In general, resources that govern color, type fonts, and window
+widget labels within the
+<CITE>Ishmail</CITE> application should be added to
+your
+<I>app-defaults/Ishmail</I> file.
+
+<P>
+<HR>
+<B>CAUTION:</B>
+<BR>Changes you make to the
+<I>.ishmailrc</I> file may be
+overwritten the next time you change
+something using the
+<CITE>Ishmail</CITE>
+<U>O</U><B>ptions</B> menu.
+<HR>
+</P>
+<P>
+<HR>
+<B>TIP:</B>
+<BR>Resources should start with the prefix
+<KBD>Ishmail*</KBD>, to ensure that they apply only to
+the
+<CITE>Ishmail</CITE> program (and don't have adverse
+side effects on other programs), and also to
+prevent resources defined for other programs
+from inadvertently affecting
+<CITE>Ishmail</CITE>.
+<HR>
+</P>
+<P>
+Default resources are found in the
+<I>lib</I> subdirectory of where the
+<CITE>Ishmail</CITE> package was installed. For example, if you use the
+<B>pkgadd</B> command to install the
+SPARC64/OS, the resources will
+be in
+<I>/opt/ishmail/1.1/lib/Ishmail</I>. If you create a
+<I>$HOME/app-defaults/Ishmail</I> file it is not necessary (nor desirable)
+to first copy everything from the default file. The resources you
+define supplement or override those in the default file.
+<P>
+If you want resource changes to apply to everyone who is using
+<CITE>Ishmail</CITE>, make the changes to the default file.
+<P>
+Default resources are separated into several files, grouped by
+function. The
+<I>Ishmail</I> file contains
+<KBD>#include</KBD> statements, which
+cause the separate files to be read as if they were all part of a
+single, large file. These resource files are:
+<DL>
+<DT><I>Ishmail.lang</I>
+<DD>Contains all the menu and button labels, and various
+pop-up messages, that are used in the program. Also,
+contains definitions for shortcut key sequences. If you
+wanted to create a non-English language version of
+<CITE>Ishmail</CITE>, this file and the
+<I>Ishmail.help</I> file are what you
+would need to change.
+<P>
+
+<DT><I>Ishmail.colors</I>
+<DD>Contains the color specifications for windows and menus.
+There is a related file,
+<I>Ishmail.colors-mono</I>, intended for
+use if you have a monochrome monitor. There are two
+ways to use the monochrome version of this. You can
+change the
+<I>Ishmail</I> file to include
+<I>Ishmail.colors-mono</I>, that
+will affect everyone, or put this resource in your
+<I>$HOME/.ishmailrc</I> or
+<I>$HOME/app-defaults/Ishmail file</I>:
+<P>
+
+<PRE>
+Ishmail*customization:	-mono
+</PRE>
+<P>
+<HR>
+<B>TIP:</B>
+<BR>Some graphical desktops, for example
+<CITE>HP
+VUE</CITE> or the
+<CITE>CDE</CITE>
+<CITE>Desktop</CITE>, attempt to control
+the colors for all programs. Resources in this
+file can cause conflicts that result in odd
+looking color schemes, or worse, unreadable
+color combinations such as white text on a
+white background. To fix this, comment out
+(put an exclamation point character,
+<KBD>!</KBD>, at the
+beginning of the line) the
+<I>Ishmail.colors</I> line.
+<HR>
+</P>
+<DT><I>Ishmail.fonts</I>
+<DD>Contains font definitions for labels, buttons, lists, and
+text. There is an alternative file,
+<I>Ishmail.fonts.ow</I>, intended
+for use on systems using Sun's
+<CITE>Open Windows</CITE>
+environment.
+<P>
+
+<DT><I>Ishmail.help</I>
+<DD>Contains all the
+<I>quick help</I> messages as well as pointers
+to the
+<I>on-line help cards</I>, which are defined in
+<I>Ishmail.hlp</I>.
+<P>
+
+<DT><I>Ishmail.hlp</I>
+<DD>Contains the on-line help cards.
+<P>
+
+<P>
+<HR>
+<B>TIP:</B>
+<BR>The help cards are read into memory when
+<CITE>Ishmail</CITE> is started. If you are concerned about
+excessive memory use by the program, and
+you don't mind loosing the use of the help
+cards, comment out the following line, found
+in the
+<I>Ishmail.help</I> file:
+<HR>
+</P>
+<PRE>
+ishmail.helpcardDbFiles:                Ishmail.hlp
+</PRE>
+<P>
+<HR>
+<B>WARNING:</B>
+<BR>The help card file contains a table at the end
+which defines offsets into the file where help
+cards are located. This table greatly speeds
+access to the help cards. However, this makes
+it very difficult to change the wording of the
+help cards, such as translating them to
+another language. If you change the length of
+a help card you will invalidate the offsets in
+the table, resulting in scrambled help cards
+when they are used.
+<HR>
+</P>
+<DT><I>Ishmail.misc</I>
+<DD>Contains everything not in the other files, such as:
+<P>
+
+<UL>
+<LI>Name of the external editor command
+<P>
+
+</LI>
+<LI>Name of the spelling checker command
+<P>
+
+</LI>
+<LI>Name of the web browser command
+<P>
+
+</LI>
+<LI>Name of the command used to send mail
+<P>
+
+</LI>
+<LI>Window geometries
+<P>
+
+</LI>
+<LI>3D visual attributes
+<P>
+
+</LI>
+<LI>Icon definitions
+<P>
+
+</LI>
+<LI>Margins and spacing control
+<P>
+
+</LI>
+<LI>etc.
+<P>
+
+</LI>
+</UL>
+</DL>
+<P>
+Other default resource files, not directly related to
+<CITE>X</CITE> or
+<CITE>Motif</CITE>, are:
+<DL>
+<DT><I>mailcap</I>
+<DD>Defines the methods used for composing, viewing, and
+printing various MIME data types. The following section
+describes this file in more detail.
+<P>
+Edit this file to make changes that will affect all
+<CITE>Ishmail</CITE>
+users. Or, you can add entries to your
+<I>$HOME/.mailcap</I> file
+to specify your own utilities for viewing and printing
+<CITE>Ishmail</CITE> messages that contain MIME content.
+
+<P>
+
+<DT><I>mime.types</I>
+<DD>Defines the default MIME data type for various file name
+suffixes. For example, a file named
+<I>xyz.gif</I> is assumed to
+be a GIF file. This relationship is used when you include
+or attach a file to a message.
+<P>
+Edit this file to make changes that will affect all
+<CITE>Ishmail</CITE>
+users. Or, you can add entries to your
+<I>$MIMETYPES</I> file
+to specify relationship between file names and data
+types.
+
+<P>
+
+<DT><I>mailrc</I>
+<DD>Defines e-mail aliases common to all
+<CITE>Ishmail</CITE> users. The
+format of the alias entries is the same as defined for the
+<CITE>sendmail</CITE> aliases file.
+<P>
+The resource
+<KBD>Ishmail*groupAliasFile:</KBD> can be set to
+refer to a different alias file.
+<P>
+Edit this file to make changes that will affect all
+<CITE>Ishmail</CITE>
+users. Or, you can add entries to your
+<I>$HOME/.mailrc</I> file
+to specify your own e-mail aliases.
+<P>
+
+<P>
+<HR>
+<B>TIP:</B>
+<BR>Use the
+<B>Aliases</B> dialog from the Main window
+<B>Options</B> menu to make changes to your
+<I>$HOME/.mailrc</I> file. If you have write
+permission for the
+<I>mailrc</I> file, you can use the
+<B>Group Aliases</B> dialog from the Main window
+<B>Options</B> menu to make changes to it.
+<HR>
+</P>
+<P>
+<HR>
+<B>TIP:</B>
+<BR><CITE>Ishmail</CITE> can also use e-mail aliases defined for
+other programs such as
+<CITE>elm</CITE>,
+<CITE>pine</CITE>, and
+<CITE>Zmail</CITE>.
+For example, to use
+<CITE>pine</CITE> aliases, add this
+resource to your
+<I>$HOME/app-defaults/Ishmail</I>
+file:
+<HR>
+</P>
+<PRE>
+Ishmail*otherAliasFiles: $HOME/.addressbook
+</PRE>
+<DT><I>XKeysymDB</I>
+<DD>Contains keyboard mappings.
+<P>
+
+<P>
+<HR>
+<B>TIP:</B>
+<BR>If you see various warning messages from the
+X server about problems mapping keys, try
+commenting out the following line in the
+<B>ishmail</B> shell script:
+<HR>
+</P>
+<PRE>
+XKEYSYMDB=$ISHLIB/XKeysymDB; export XKEYSYMDB
+</PRE>
+</DL>
+
+<HR>
+Preceding Section: <A HREF="yDeIvFBSQJ9X3cS.html">MIME Data Types</A><BR>
+Following Section: <A HREF="6m52wFBX4N9X3cS.html">Mailcap File Definition</A><BR>
+Parent Section: <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

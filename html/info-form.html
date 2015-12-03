@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Information Form for ishmail</TITLE>
+</HEAD>
+<BODY>
+
+<H1><IMG SRC="logo.gif" ALIGN="MIDDLE" ALT="Ishmail"> Information Request Form</H1>
+<HR>
+<FORM METHOD="POST" ACTION="/hal-bin/ishmail-info-form.pl">
+<INPUT NAME="name" SIZE=50> <I>Name</I><BR>
+<INPUT NAME="org" SIZE=50> <I>Organization</I><BR>
+<INPUT NAME="address" SIZE=50> <I>Address</I><BR>
+<INPUT NAME="city" SIZE=50> <I>City</I><BR>
+<INPUT NAME="state" SIZE=50> <I>State</I><BR>
+<INPUT NAME="country" SIZE=50 VALUE="USA"> <I>Country</I><BR>
+<INPUT NAME="zip" SIZE=50> <I>Zip Code</I><P>
+<INPUT NAME="voice" SIZE=30> <I>Voice</I><BR>
+<INPUT NAME="fax" SIZE=30> <I>Fax</I><P>
+<INPUT NAME="email" SIZE=50> <I>Email</I><BR>
+<INPUT NAME="url" SIZE=50> <I>WWW URL</I><P>
+
+<HR>
+Please indicate which operating system(s) are used at your site:<BR>
+<INPUT TYPE="checkbox" VALUE="aix" NAME="aixos"> <I>AIX</I>
+<INPUT TYPE="checkbox" VALUE="bsd" NAME="bsdos"> <I>BSD/OS</I>
+<INPUT TYPE="checkbox" VALUE="dos" NAME="dosos"> <I>DOS</I>
+<INPUT TYPE="checkbox" VALUE="hp" NAME="hpos"> <I>HP-UX</I>
+<INPUT TYPE="checkbox" VALUE="irix" NAME="irixos"> <I>IRIX</I>
+<INPUT TYPE="checkbox" VALUE="linux" NAME="linuxos"> <I>Linux</I><BR>
+<INPUT TYPE="checkbox" VALUE="mvs" NAME="mvsos"> <I>MVS</I>
+<INPUT TYPE="checkbox" VALUE="os2" NAME="os2os"> <I>OS/2</I>
+<INPUT TYPE="checkbox" VALUE="solaris" NAME="solarisos"> <I>Solaris</I>
+<INPUT TYPE="checkbox" VALUE="sun" NAME="sunos"> <I>Sun OS</I>
+<INPUT TYPE="checkbox" VALUE="vms" NAME="vmsos"> <I>VMS</I><BR>
+<INPUT TYPE="checkbox" VALUE="windows" NAME="windowsos"> <I>Windows</I>
+<INPUT TYPE="checkbox" VALUE="nt" NAME="ntos"> <I>Windows NT</I><BR>
+<INPUT TYPE="checkbox" VALUE="other" NAME="otheros"> <I>Other</I>
+
+<HR>
+
+Please enter a project description:<BR>
+<TEXTAREA NAME="project" ROWS=5 COLS=55></TEXTAREA><P>
+<INPUT TYPE="submit" VALUE="Submit Form">
+<INPUT TYPE="reset" VALUE="Clear Form">
+
+</FORM>
+<HR>
+</BODY>
+</HTML>

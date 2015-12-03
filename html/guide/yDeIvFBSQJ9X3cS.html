@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+ <TITLE>MIME Data Types</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="yDeIvFBSQJ9X3cS">MIME Data Types</H1>
+
+<P>
+All predefined
+types and subtypes, as defined in
+<A HREF="http://ds.internic.net/rfc/rfc1521.txt">Internet RFC
+1521 (Multipurpose Internet Mail Extension)</A>, will be handled by
+<CITE>Ishmail</CITE>. The image, audio, video, and application types will not be
+displayed directly by
+<CITE>Ishmail</CITE>. Rather,
+<CITE>Ishmail</CITE> will rely on the
+availability of other applications to do this. If defined in a mail
+capabilities file (mailcap),
+<CITE>Ishmail</CITE> will launch the specified
+application when it comes across one of these types.
+<P>
+Also, two methods of data encoding will be directly supported by
+<CITE>Ishmail</CITE>; quoted-printable, and base64 (as defined in RFC 1521).
+Briefly, quoted-printable is for character sets that are a superset
+of US-ASCII, and encodes any 8-bit characters into a string of
+7-bit characters. Base64 is used for parts that are largely (or
+completely) 8 bit. This is superior to
+<I>uuencode</I>, because it
+guarantees that the encoded data will only be 1/3 larger than the
+original. Another advantage is that Base64 does not rely on the
+ASCII character set, therefore will decode correctly on a system
+using, for example, EBCDIC character encoding. However, if a
+user insists on using
+<I>uuencode</I>, it is possible to define this
+through the
+<I>mailcap</I> file.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>The
+<I>mailcap</I> file is a configuration file for
+"mail capabilities," similar in style to the
+more familiar BSD UNIX
+<I>termcap</I> and
+<I>printcap</I> files.
+<HR>
+</P>
+<P>
+Following is an excerpt from the RFC, defining data types:
+<P>
+<I>Text</I> - Textual information. The primary subtype, "plain",
+indicates plain unformatted text. No special software is required
+to get the full meaning of the text, aside from support for the
+indicated character set. Subtypes are to be used for enriched text
+in forms where application software may enhance the
+appearance of the text, but such software must not be required
+in order to get the general idea of the content. Possible subtypes
+thus include any readable word processor format. A very simple
+and portable subtype, rich text, is the other predefined subtype.
+The supported character sets will be US-ASCII and the
+ISO-8859-* set.
+<P>
+<I>Multipart</I> - Data consisting of multiple parts of independent data
+types. Four initial subtypes are defined; the primary "mixed" subtype, "alternative" for representing the same data in multiple
+formats, "parallel" for parts intended to be viewed
+simultaneously, and "digest" for multipart entities in which each
+part is of type "message".
+<P>
+<I>Message</I> - An encapsulated message. A body of Content-Type
+"message" is itself a fully formatted RFC 822 conforming
+message which may contain its own different Content-Type
+header field. The primary subtype is "rfc822". The "partial" subtype is defined for partial messages, to permit the fragmented
+transmission of bodies that are thought to be too large to be
+passed through mail transport facilities. Another subtype,
+"External-body", is defined for specifying large bodies by
+reference to an external data source (e.g. the MUA might use
+anon-ftp to get the data for you).
+<P>
+<I>Image</I> - This format requires a display device (such as a
+graphical display, a printer, or a FAX machine) to view the
+information. Initial subtypes are defined for two widely-used
+image formats,
+<CITE>jpeg</CITE> and
+<CITE>gif</CITE>. The viewer,
+<CITE>xloadimage</CITE>, may be used
+for
+<CITE>gif</CITE>. The viewer,
+<CITE>xv</CITE>, can display
+<CITE>jpeg</CITE>, but this is not available
+for resale. It may only be distributed as contributed software.
+<P>
+<I>Audio</I> - With initial subtype "basic". Audio requires an audio
+output device (such as a speaker or a telephone) to "display" the
+contents. The "basic" subtype is 8-bit ISDN u-law (PCM), and
+assumes a 8k Hz sample rate on one channel. This will be the
+standard audio device provided by HAL (same as Sun).
+<P>
+<I>Video</I> - This format requires the capability to display moving
+images typically including specialized hardware and software.
+The initial subtype is "mpeg". A public domain viewer called
+"<CITE>mpeg_play</CITE>" is available for SunOS.
+<P>
+<I>Application</I> - Some other kind of data, typically either
+un-interpreted binary data or information to be processed by a
+mail-based application. The primary subtype, "octet-stream", is
+to be used in the case of uninterpreted binary data, in which case
+the simplest recommended action is to offer to write the
+information into a file for the user. Two additional subtypes,
+"ODA" and "PostScript", are defined for transporting ODA and
+PostScript documents in bodies. At this time, and ODA viewer is
+not defined.
+<I>Ghostscript</I> is expected to be used as the PostScript
+viewer. Other expected uses for "application" include
+spreadsheets, data for mail-based scheduling systems, and
+languages for "active" (computational) e-mail.
+
+<HR>
+Preceding Section: <A HREF="QDeIvFBSQJ9X3cS.html">Composing MIME Messages</A><BR>
+Following Section: <A HREF="Xj52wFBX4N9X3cS.html">Ishmail Resources</A><BR>
+Parent Section: <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

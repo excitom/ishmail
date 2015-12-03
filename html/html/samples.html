@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Ishmail Screen Shots</TITLE>
+</HEAD>
+<body bgcolor="#ffffff">
+<font face="verdana,arial,helvetica">
+<table>
+<tr>
+<td>
+<IMG SRC="/html/mailbox.gif" ALIGN="MIDDLE" ALT="">
+</td>
+<td><h1>
+Ishmail Screen Shots
+</h1></td>
+</tr>
+</table>
+<p>Click a link to see a sample snapshot of Ishmail windows.
+<h3>
+<a href="../img/mainwin.gif">Main Window</a></h3>
+<p>The main window shows a list of active folders at the top.
+One of these folders is the <i>current</i> folder, 
+and the list of messages in the current folder is shown in the bottom
+half of the window.
+<p>The folder area and message are are re-sizable.
+You can change the ordering and contents of the columns as well as the ordering of the rows.
+<p>You can also customize the buttons, and move them to different positions in the window.
+<h3>
+<a href="../img/readwin.gif">Reading Window</a></h3>
+<p>Ishmail supports MIME <i>enriched text</i> so you can use different
+fonts and styles.
+<h3>
+<a href="../img/readwin2.gif">Reading Window with Attachment</a></h3>
+<p>You can attach files to messages, and attachments are shown in-line
+in the text.
+Click on an attachment's icon and the appropriate program is launched
+to view it, save it, or print it.
+<h3>
+<a href="../img/sendwin.gif">Composition Window</a></h3>
+<p>Ishmail's text editor is a <i>WYSIWYG</i> editor,
+i.e. you can see the formatting changes to the text as they are typed.
+<p>There are many shortcut keys for text editing,
+and they can be customized to work like the <i>vi</i> editor or
+like the <i>emacs</i> editor.
+You can also click the <i>Editor</i> button to use an external text editor
+to compose your message.
+../img/appwin.gif
+<h3>
+<a href="../img/autofileprefwin.gif">Automatic Filing Preferences Window</a></h3>
+<p>Ishmail can recognize incoming messages, according to patterns you
+specify, and automatically file the messages into folders.
+Unix <i>regular expressions</i> can be used to define patterns.
+Note that you can use a folder name like <i>/dev/null</i> to cause mail
+to be automatically deleted.
+<p>Similarly, you can define patterns for:
+<ul>
+<li>Running commands or programs automatically, to respond to or to process
+incoming mail.
+<li>Changing the Ishmail icon to indicate new mail has arrived, and use
+different patterns to select different icons.
+<li>Choosing which folder into which a message should be saved.
+</ul>
+<h3>
+<a href="../img/buttonprefwin.gif">Button Preferences Window</a></h3>
+<p>For each main window you can define what buttons are show, what 
+functions are performed, and what position the windows will occupy in the window.
+<h3>
+<a href="../img/confprefwin.gif">Confirmations Preference Window</a></h3>
+<p>Ishmail is careful to ask you to confirm most operations, but you can 
+selectively disable these.
+<h3>
+<a href="../img/findwin.gif">Search Window</a></h3>
+<p>You can use complex logical patterns to search through messages,
+either the headers or the body or both.
+There is also a simple, case-insensitive string search function for folders
+and inside individual messages.
+<h3>
+<a href="../img/folderprefwin.gif">Folder Preferences Window</a></h3>
+<p>Ishmail supports several different types of mail folder formats,
+and you can use different types at the same time.
+<p>This window also lets you control how folder names are displayed in the
+<a href="../img/mainwin.gif">Main</a> window Folder List area.
+Also, you can control which folders are opened at startup, either by
+typing their names explicitly or by telling Ishmail to remember which folders
+were in use when you exit so that these will be reopened the next time the program starts.
+<h3>
+<a href="../img/fontprefwin.gif">Font Selector Window</a></h3>
+<p>You can define which fonts are used for text, buttons, lables, and
+lists.
+<h3>
+<a href="../img/hdrprefwin.gif">Header Display Preferences Window</a></h3>
+<p>You can customize which mail headers are shown (or ignored) in the
+Reading window.
+<h3>
+<a href="../img/mailprefwin.gif">Outgoing Mail Preferences Window</a></h3>
+<p>You can control many aspects of outgoing mail, such as character set, MIME encoding, and encoding for message headers.
+<p>Also you can specify that outgoing messages be copied to a folder, and
+there are several options for which folder is selected. 
+For example, you can file outgoing messages according to the name of the
+recipient.
+<p>You can tell Ishmail to <i>confirm</i> certain addresses, 
+for example to catch if you accidently include and <i>all company</i>
+mail alias in your reply to a letter.
+<p>You can add headers explicitly to each outgoing message, such as 
+<i>Reply-To:</i>, or customize standard headers, such as <i>From:</i>.
+If you turn on display of these additional headers in the 
+<a href="../img/sendprefwin.gif">Composition Preferences</a> window, 
+you can customize these headers on a per-message basis.
+<p>You can control which command is used to deliver mail.
+The default is to use <i>/usr/lib/sendmail</i>.
+A Perl script called <i>customize.pl</i> is provided, which
+gives you powerful capabilities to customize the headers of outgoing
+messages. 
+Refer to the <i>README.customize.pl</i> file, which is included
+with the program, for more information.
+<p>You can request that Ishmail <i>check</i> addresses by calling the
+<i>sendmail</i> command to validate that mail is deliverable to all the
+addresses.
+<p>
+<h3>
+<a href="../img/messageprefwin.gif">Message List Preference Window</a></h3>
+<p>This window lets you control how columns are show in the Message List
+area of the 
+<a href="../img/mainwin.gif">Main</a> window.
+<p>You can control which columns are shown, in what order they are shown,
+and the width of each column.
+<p>In addition to giving columns a fixed width, you can resize columns in 
+the Main window by clicking and dragging the column separator lines at
+the top of each column.
+<h3>
+<a href="../img/readprefwin.gif">Reading Preferences Window</a></h3>
+<p>THis window lets you specify the default size of the
+<a href="../img/readwin.gif">Reading</a> window, and whether text should
+be automatically wrapped.
+<p>You can also specify the web browser command if you use <i>CTRL-left-button-click</i> to click on a highlighted web page URL (address) in a
+mail message.
+<p>And, you can specify the commands to use for decrypting and authenticating
+mail messages.
+Default shell scripts are provided with Ishmail.
+<h3>
+<a href="../img/replyprefwin.gif">Reply/Forward Preferences Window</a></h3>
+<p>This window lets you set several options for how messages should be
+formatted when you are replying or forwarding to another person.
+For example, you can specify how excerpted text should be indented.
+<p>Ishmail lets you keep track of a sequence of replies to a message by
+numbering the <i>Re:</i> prefix in the subject. 
+For example, the reply to a reply on the same subject is marked as 
+<i>Re[2]:</i> and a reply to that reply is marked as <i>Re[3]:</i>.
+You can disable this feature if you want.
+<h3>
+<a href="../img/saveprefwin.gif">Save Preferences Window</a></h3>
+<p>This window works similar to the 
+<a href="../img/autofileprefwin.gif">Automatic Filing Preferences Window</a>,
+letting you specify <i>regular expression</i> patterns to choose the
+default folder name for saving messages.
+<h3>
+<a href="../img/sendprefwin.gif">Composition Preferences Window</a></h3>
+<p>This window lets you set several options for controlling how messages
+are composed.
+<p>You can set the default size of the window and whether text should
+wrap automatically.
+<p>You can set which header fields are shown, and which can be edited.
+<p>You can set the shortcut key bindings to work like the <i>vi</i>
+editor or like the <i>emacs</i> editor.
+<p>You can set the names of commands to use for:
+<ul>
+<li>External text editor (default is <i>vi</i>)
+<li>External spell checker (default is <i>ispell</i>)
+<li>External commands for digitally signing and encrypting the message
+</ul>
+<h3>
+<a href="../img/sigprefwin.gif">Signature Preferences Window</a></h3>
+<p>This window lets you specify the path names of files to use as your
+signature, depending on whether the outgoing message is in MIME format 
+and whether MIME <i>enriched text</i> is used.
+<h3>
+<a href="../img/sortprefwin.gif">Message List Sort Window</a></h3>
+<p>This window lets you set the sort order for the message list in the
+<a href="../img/mainwin.gif">Main</a> window.
+You can apply the sort order to:
+<ul>
+<li>The current folder
+<li>Any folders selected in the Main window Folder area
+<li>All folders
+<li>As the default sort if no other sort order is specifically defined 
+for a folder.
+</ul>
+<p>You can sort on any of the columns in the message list, and
+a sequence of sort rules can be set for example, to sort first by
+<i>Subject</i> then sort by <i>Sender</i> within subject.
+You can sort in either ascending or descending order for each sort key.
+<p>And you can sort messages by subject <i>thread</i>.
+</font>
+</BODY>
+</HTML>

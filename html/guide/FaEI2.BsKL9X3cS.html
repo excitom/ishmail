@@ -1,0 +1,687 @@
+<HTML>
+<HEAD>
+ <TITLE>Including or Attaching an External File</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="FaEI2.BsKL9X3cS">Including or Attaching an External File</H1>
+
+<P>
+When you select
+<U>F</U><B>iles(s)</B> from the
+<U>I</U><B>nclude/Attach</B> -> menu the
+<B>Include/Attach File</B> dialog is opened. This is very similar to the
+<B>Select
+Folders</B> menu available through the
+<U>O</U><B>pen ...</B> option in the Main
+window
+<B>Fo</B><U>l</U><B>der</B> pull-down menu. (See
+<A HREF="uO2ZgMB8BJ9X3cS.html">Using the File Selection
+Window</A> for information on using this type of dialog window.)
+<P>
+You can enter the path name of one or more files, separated by a
+<B>Return</B> after each name. Or, click the
+<B>Show list</B> button to see an
+expanded dialog that lists files in the current directory and
+subdirectories of the current directory. You can then select a file
+by clicking on a name in the list.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>You may use variable names known to your
+login shell in the path name. You may also use
+wildcard characters, which will be expanded
+by your login shell.
+<HR>
+</P>
+<P>
+After you have selected a file path name the
+<B>Include/Attach file data</B>
+dialog is opened.
+<P>
+<H4>Figure: <A NAME="MaEI2.BsKL9X3cS">Include/Attach File Data</H4>
+
+<IMG SRC="FaEI2.BsKL9X3cS.extobj.1.gif">
+<P>
+The
+<B>Include/Attach file data</B> dialog lets you specify how the data is to
+be included or attached, how it is to be encoded, and how it is
+described. This dialog will be shown once for each file you named
+in the
+<B>Include/Attach File</B> dialog. The items to be specified include:
+<DL>
+<DT><B>File name</B>
+<DD>This is the name you entered in the previous dialog. If
+you made a typing mistake in the path name, you have
+the opportunity to correct it here.
+<P>
+
+<DT><B>Description</B>
+<DD>Here you can enter a line of descriptive information to be
+used as the label on the icon that will be displayed in the
+text at the point where the file is included. If you don't
+enter a description, the path name is used as the label.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>If you include a file in-line the
+<B>Description</B>
+information is not used.
+<HR>
+</P>
+<DT><B>Type</B>
+<DD>This is an option menu that presents all the possible data
+types for an external file. The default choice in the menu
+will reflect
+<CITE>Ishmail</CITE>'s best guess as to the data type. You
+can override the default by clicking the option menu
+button and selecting from the list.
+<P>
+The icon displayed in the message text will vary
+according to the data type.
+<A HREF="FaEI2.BsKL9X3cS.html#zqPXKNB0FN9X3cS">Icons Representing Included
+Files
+</A>shows examples of
+icons that represent included
+GIF, JPEG, binary, PostScript, MPEG, and U-LAW audio
+files in a Composition window.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>The option menu is built from a file containing
+a list of MIME data types and file name
+suffixes associated with them. A default file is
+supplied with
+<CITE>Ishmail</CITE>, called
+<I>mime.types</I>. It is
+located in the
+<I>lib</I> subdirectory at the location
+where the product is installed. When you add
+entries to the
+<I>mime.types</I> file, corresponding
+choices are automatically added to the option
+menu. If you wish to override entries in the
+default file, you can use the
+<I>$MIMETYPES</I>
+environment variable to point to an alternate
+file.
+
+<HR>
+</P>
+<DT><B>How should this file be included/attached?</B>
+<DD>The radio buttons labelled
+<B>How should this file be
+included/attached?</B> are used to select how to add the external
+file. Choices are:
+<P>
+
+<DL>
+<DT><B>In Message as text</B>
+<DD>Use this option to cause the contents of the
+external file to be copied into your message at
+the point where the cursor is located, as if you
+had typed in the data. When you do this
+<CITE>Ishmail</CITE>
+does not create a separate message body part.
+The recipient of the message will be unable to
+detect that the data was included from a file.
+<P>
+This option is intended as a shortcut to save you
+typing time. It is not recommended for including
+non-ASCII data.
+<P>
+
+<DT><B>In Message as a separate file</B>
+<DD>Use this option to cause the contents of the file
+to be copied into your message as a separate
+body part, at the point where the cursor is
+located. The body part will be identified by an
+icon, examples of which are shown in
+<A HREF="FaEI2.BsKL9X3cS.html#zqPXKNB0FN9X3cS">Icons
+Representing Included Files</A>.
+<P>
+When the recipient of the message clicks on the
+icon, the appropriate viewer program will be
+launched (if available) to show the data
+contained in the file, as specified in the
+<A HREF="6m52wFBX4N9X3cS.html">Mailcap
+File Definition</A>.
+<P>
+
+<DT><B>Attached as "local to the recipient"</B>
+<DD>This is the first of the attach options, each of
+which place a pointer to the external file into the
+message. To the recipient, the icon looks the
+same as an included file. Clicking the icon
+causes the appropriate viewer program to be
+launched.
+<P>
+The
+<B>local</B> attachment option can be used when all
+the recipients are in the same local network,
+and can access common files from a server.
+<P>
+When you click the
+<B>Attached as "local to the recipient"</B>
+button the
+<B>Include/Attach file data</B> dialog expands to
+include
+<EM>extra parameter fields</EM><I>.</I>
+<P>
+<A HREF="FaEI2.BsKL9X3cS.html#LSKtg-BfiI9X3cS">Expanded Include/Attach File Data</A> shows an
+example of an
+<B>Include/Attach file data</B> dialog with
+expanded parameters. The section entitled
+<A HREF="FaEI2.BsKL9X3cS.html#rrEI2.BsKL9X3cS">Extra parameters for attached files</A> describes
+the additional parameters.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>The recipient of the message must be able to
+access the attached file.
+
+<HR>
+</P>
+<DT><B>Attached via anonymous FTP</B>
+<DD>This attach option is most frequently used when
+the recipients of a message are not in the same
+local network as the sender. It requires that the
+sender's network support an FTP server that
+can be accessed by people outside the local
+network.
+<P>
+The sender must first place the external file in a
+directory which is made visible to the outside
+world by the FTP server. Then, the file is
+attached to the message by providing both the
+path name and the network name (or IP
+address) of the FTP server.
+<P>
+This option is known as
+<B>anonymous FTP</B> since the
+recipients do not need a login account on the
+FTP server. Instead, they log in using the name
+<I>anonymous</I>, and give their e-mail address as the
+password. (Most MIME mail programs do this
+automatically.)
+<P>
+When the recipient clicks on the file icon in the
+message, the file is retrieved from the FTP
+server and then it is displayed. Depending on
+the speed of the FTP link, this may take a long
+time. An animated icon is displayed during the
+retrieval, so the recipient is aware that it is in
+progress.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>You may need to coordinate with your system
+administrator to get files copied into
+directories used by the FTP server. For
+security reasons, some organizations restrict
+access to this service.
+<HR>
+</P>When you click the
+<B>Attached via anonymous FTP</B>
+button the
+<B>Include/Attach file data</B> dialog expands to
+include
+<I>extra parameter fields</I>.
+<P>
+<A HREF="FaEI2.BsKL9X3cS.html#LSKtg-BfiI9X3cS">Expanded Include/Attach File Data</A> shows an
+example of an
+<B>Include/Attach file data</B> dialog with
+expanded parameters. The section entitled
+<A HREF="FaEI2.BsKL9X3cS.html#rrEI2.BsKL9X3cS">Extra parameters for attached files</A> describes
+the additional parameters.
+<P>
+
+<DT><B>Attached via regular FTP</B>
+<DD>This option is essentially the same as
+<B>anonymous
+FTP</B> described above, except that the recipients
+need to have a login account on the FTP server.
+When the recipient clicks the icon and
+connection is made with the FTP server, the
+server will prompt the recipient for a login
+account name and password.
+<P>
+This option is more secure than the
+<B>anonymous
+FTP</B> option, but requires more effort to set up.
+<P>
+
+<DT><B>Attached via TFTP</B>
+<DD>This option also is essentially the same as
+<B>anonymous FTP</B> described above, except that it
+uses the TFTP program rather than the FTP
+program. Because of network security problems
+associated with TFTP many organizations do
+not support use of this program, so you may find
+this option unusable.
+<P>
+
+<DT><B>Attached via mail server</B>
+<DD>This option is considered the most secure way to
+allow people external to your network to
+retrieve files, though it is the most complicated
+to set up and has the slowest performance.
+<P>
+A
+<EM>mail server</EM> is a program which accepts e-mail
+messages formatted a certain way. It recognizes,
+among other things, requests to retrieve a file
+with a specific path name. It responds to the
+e-mail message by sending a reply message
+containing the requested file.
+<P>
+When the recipient clicks on the file icon
+<CITE>Ishmail</CITE>
+mails a request to the appropriate mail server.
+The requested file will eventually arrive as a
+new mail message.
+<P>
+The sender must coordinate with the local
+system administrator to make the file available
+to the mail server.
+<P>
+
+</DL>
+<DT><B>What type of encoding should be applied to this file?</B>
+<DD>This set of radio buttons lets you specify how, if at all, the
+file data should be encoded when transferred over the
+network. The recipient's mail tool uses this information
+to know how to automatically decode the file.
+
+<P>
+Electronic mail systems were originally designed to
+handle 7-bit ASCII characters, i.e. the U.S. English
+character set. All modern mail systems can now handle
+8-bit ASCII, thus can use various ISO character sets for
+non-English alphabets. However, messages you send
+may pass through many different mail systems on the
+way to their destination, and there is no guarantee that
+some intermediate mail system may not be able to
+handle other than 7-bit ASCII. The result may be that
+your message is garbled in transmission. To guard
+against this, you can encode your message so that it will
+pass safely through any mail system even if it contains
+binary (non-ASCII) data.
+<P>
+There are five choices for encoding.
+<P>
+
+<DL>
+<DT><B>None</B>
+<DD>The data is not encoded. It is implied that your
+data contains only 7-bit ASCII characters.
+<P>
+
+<DT><B>8-bit</B>
+<DD>The data is marked as containing 8-bit ASCII
+data, but not otherwise encoded. This is really
+just a warning. It may cause intermediate mail
+systems, and the destination mail reader, to
+treat you message differently. You should mark
+your data this way if you know it contains 8-bit
+characters.
+<P>
+
+<DT><B>Quoted Printable</B>
+<DD>Your message is converted to a form that uses
+only 7-bit ASCII. For example, 8-bit ASCII
+characters are changed to an equal sign followed
+by two hexadecimal digits, which represent the
+8-bit character code. This encoding method
+leaves the message mostly human-readable.
+However, this method doesn't work very well
+with non-ASCII data, mainly because the
+encoded message may be 2 to 3 times the size of
+the original.
+<P>
+
+<DT><B>Base 64</B>
+<DD>This encoding should be used for binary data.
+Like
+<B>Quoted Printable,</B> all characters are encoded so
+they appear as 7-bit ASCII characters. Unlike
+<B>Quoted printable</B> encoding, this method works well
+with any binary (ASCII or non-ASCII) data.
+This is the encoding method is used, for
+example, for file types such as
+<I>Audio</I>,
+<I>GIF</I>, and
+<I>JPEG</I>. The encoded message will be about one
+third larger than the original.
+<P>
+<B>Base 64</B> encoding is a "next generation" of
+<B>uuencode</B>. It was developed to address the
+shortcomings in
+<B>uuencode</B>, mainly the lack of
+standardization of the algorithm.
+<P>
+
+<DT><B>uuencode</B>
+<DD>This encoding is also used for binary data. It has
+been in use for years and is popular. However, it
+is not included in the MIME specification due to
+lack of standardization of the algorithm, which
+may lead to a recipient being unable to correctly
+decode a uuencoded message.
+<CITE>Ishmail</CITE> supports
+uuencode to increase backward compatibility
+with other mail tools.
+<P>
+
+</DL>
+<DT><B>The file is already encoded this way</B>
+<DD>Toggle this option
+<KBD>On</KBD> if the file you are including or
+attaching has already been encoded. Otherwise
+<CITE>Ishmail</CITE>
+will encode the file automatically.
+<P>
+
+</DL>
+<P>
+<H4>Figure: <A NAME="zqPXKNB0FN9X3cS">Icons Representing Included Files</H4>
+
+<IMG SRC="FaEI2.BsKL9X3cS.extobj.2.gif">
+
+<H2><A NAME="rrEI2.BsKL9X3cS">Extra Parameters for Attached Files</H2>
+
+<P>
+If you are attaching an
+external file, the
+<B>Include/Attach file data</B> dialog
+expands to present extra parameters, depending on the
+attachment type. Certain parameters are displayed in the
+expanded
+<B>Include/Attach file data</B> dialog only when file to be included
+or attached is of a certain type. For example, the parameters
+<B>Application type</B> and
+<B>Application padding</B> only appear when you select
+the file type
+<EM>application/octet-stream</EM>. The figure below shows an
+example of the expanded
+<B>Include/Attach file data</B> dialog.
+
+<P>
+<H4>Figure: <A NAME="LSKtg-BfiI9X3cS">Expanded Include/Attach File Data</H4>
+
+<IMG SRC="FaEI2.BsKL9X3cS.extobj.3.gif">
+<P>
+The optional parameters are:
+<DL>
+<DT><B>Output file name</B>
+<DD>This is default path name of the file which will be created
+on the recipient's system when the attached file is
+retrieved from the sender's system. It is not necessarily
+the same as the original file name. The recipient may
+also override this name at the time the file is retrieved.
+<P>
+
+<DT><B>Application type</B>
+<DD>This parameter is specified only for files of type
+<EM>application/octet-stream</EM>. You can specify additional type
+information that identifies the format of the data.
+<P>
+
+<DT><B>Application padding</B>
+<DD>This parameter is specified only for files of type
+<EM>application/octet-stream</EM>. If your system hardware has a
+byte size other than 8-bits, or a word size that is not a
+multiple of 8-bits, you specify the number of bits required
+for padding here.
+<P>
+
+<DT><B>Character Set</B>
+<DD>This parameter is required only for ASCII text files
+included in a message as a separate body part. You can
+specify which ASCII character set to use when displaying
+the data.
+<P>
+An option menu button to the right of the field shows a
+list of possible character set names to choose from, or
+type the name in the field.
+<P>
+If the data is included in-line, this implies using the same
+character set as the message body.
+<P>
+
+<DT><B>Other parameters</B>
+<DD>The MIME specification is evolving. Other parameters
+are proposed for file attachments. This field lets you add
+other parameters that may be defined after this version
+of
+<CITE>Ishmail</CITE> was released.
+<P>
+
+<DT><B>Expires</B>
+<DD>This is a date after which the original file may be deleted
+or changed. A recipient attempting to retrieve the file
+after this date may receive an error or stale data.
+<P>
+
+<DT><B>Size</B>
+<DD>This is the size of the original file. Specifying this
+parameter gives the recipient a hint about how long the
+retrieval will take and how much space is needed to hold
+the retrieved file.
+<P>
+
+<DT><B>Permission</B>
+<DD>The file can be marked as either
+<B>Read Only</B> or
+<B>Read/Write</B>. A
+<B>Read Only</B> file will not be changed before the
+<B>Expiration Date</B>.
+A
+<B>Read/Write</B> file may be changed at any time. Therefore,
+this parameter is a hint to the recipient that the file need
+be retrieved only once (<B>Read Only</B>) or should be retrieved
+each time the recipient looks at the data (<B>Read/Write</B>).
+<P>
+
+<DT><B>Host</B>
+<DD>This parameter is shown only for FTP or TFTP
+attachments. It lets you specify the name of the FTP or
+TFTP server. It can be a host name, such as
+<KBD>ftp.ishmail.com</KBD>, or an IP address, such as
+<KBD>206.196.74.36</KBD>.
+<P>
+
+<DT><B>Directory</B>
+<DD>This parameter is shown only for FTP or TFTP
+attachments. It lets you specify the directory which
+contains the file to be retrieved. This parameter works in
+conjunction with the
+<B>File name</B> field. For example, if the
+path name of the file is
+<I>/ftp/public/data.file</I>, you could
+specify the
+<B>File name</B> as
+<KBD>data.file</KBD> and the
+<B>Directory</B> as
+<KBD>/ftp/public</KBD>. Or, you could leave the
+<B>Directory</B> blank and
+specify the
+<B>File name</B> as
+<KBD>/ftp/public/data.file</KBD>.
+<P>
+
+<DT><B>Mode</B>
+<DD>This parameter is shown only for FTP or TFTP
+attachments. It lets you specify the transfer mode. For
+FTP the choices are:
+<P>
+
+<UL>
+<LI>ASCII
+<P>
+
+</LI>
+<LI>EBCDIC
+<P>
+
+</LI>
+<LI>Image/Binary
+<P>
+
+</LI>
+</UL>For TFTP the choices are:
+<P>
+
+<UL>
+<LI>NetASCII
+<P>
+
+</LI>
+<LI>Octet
+<P>
+
+</LI>
+</UL>
+<DT><B>Server address</B>
+<DD>This parameter is shown only for mail server
+attachments. It lets you specify the e-mail address of the
+mail server. For example,
+<KBD>majordomo@ishmail.com</KBD>.
+<P>
+
+<DT><B>Subject</B>
+<DD>This parameter is shown only for mail server
+attachments. It lets you specify the subject line of the
+mail message to be sent to the mail server. Depending on
+how your mail server is configured, it may expect a
+command to be in the
+<B>Subject</B> field, the
+<B>Body</B> field, or both.
+An example command is:
+<KBD>get /public/data.file</KBD>.
+<P>
+
+<P>
+<HR>
+<B>WARNING:</B>
+<BR>The sender is responsible for understanding
+how the mail server is configured and what
+commands it expects. This will vary among
+different organizations.
+<HR>
+</P>
+<DT><B>Body</B>
+<DD>This parameter is shown only for mail server
+attachments. It lets you specify the body of the mail
+message to be sent to the mail server. Depending on how
+your mail server is configured, it may expect a command
+to be in the
+<B>Subject</B> field, the
+<B>Body</B> field, or both. An
+example command is:
+<KBD>get /public/data.file</KBD>.
+<P>
+
+<P>
+<HR>
+<B>WARNING:</B>
+<BR>The sender is responsible for understanding
+how the mail server is configured and what
+commands it expects. This will vary among
+different organizations.
+<HR>
+</P>
+</DL>
+
+<H2><A NAME="YsEI2.BsKL9X3cS">Including a Message from the Active
+Folder</H2>
+
+<P>
+Use the
+<B>Message ...</B> option to copy a message from the active mail
+folder (the one shown in the
+<B>Folder Contents</B> area of the Main
+window) into the message you are composing. The file will be
+shown as an icon in the message text. The recipient will be able
+to view the included message or save it to a file (or mail folder).
+<P>
+<B>TIPS:</B>
+<OL>
+<LI>You can also use "drag and drop" to include a
+message from the active folder. Click on the
+message in the
+<B>Folder Contents</B> area, drag it to
+the Composition window, and drop it.
+<P>
+
+</LI>
+<LI>You can edit the included message. Double
+click on the icon to open an edit window. Or,
+press and hold the right button and a menu
+will pop up offering the option to edit the
+message, edit its attributes, or delete it from
+the Composition window.
+<P>
+
+</LI>
+</OL>
+
+<H2><A NAME="hsEI2.BsKL9X3cS">Including Your Signature File</H2>
+
+<P>
+Use the
+<U>S</U><B>ignature</B> -> option to copy the
+<I>.signature</I> file from your
+home directory into this message.
+
+<P>
+When you click
+<U>S</U><B>ignature</B> -> a cascading menu is opened offering
+you the choice of four possible
+<I>.signature</I> files. See
+<A HREF="uhFI2.BsKL9X3cS.html#mqFI2.BsKL9X3cS">Signature
+Preferences</A> for information about signature files. You can have
+different signatures for internal mail versus external mail. You
+can also have plain text and enriched text versions of the
+internal and external signatures.
+<P>
+Clicking this option places the contents of the
+<I>.signature</I> file at
+the cursor location.
+<P>
+Another way to add the contents of a
+<I>.signature</I> file to the
+composition is to click on the
+<B>Append Signature</B> button at the bottom
+of the Composition window. If you use this method, the signature
+is not appended until you send the message.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>If your
+<I>.signature</I> file is owned by you, is
+<I>not</I>
+writable by others, and is executable it will be
+treated as an executable program.
+<CITE>Ishmail</CITE> will
+run the file using your login shell, and capture
+its standard output as your signature.
+<HR>
+</P>
+
+<HR>
+Preceding Section: <A HREF="bqbqgMBPQJ9X3cS.html">Include/Attach Option</A><BR>
+Following Section: <A HREF="sHQXKNB0FN9X3cS.html">Modifying or Deleting an Included File</A><BR>
+Parent Section: <A HREF="bqbqgMBPQJ9X3cS.html">Include/Attach Option</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

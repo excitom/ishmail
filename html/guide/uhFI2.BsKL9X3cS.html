@@ -1,0 +1,356 @@
+<HTML>
+<HEAD>
+ <TITLE>Reply/Forward Preferences</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="uhFI2.BsKL9X3cS">Reply/Forward Preferences</H1>
+
+<P>
+When you
+click the
+<U>R</U><B>eply/Forward ...</B> option, the
+<B>Reply Forward
+Preferences</B> dialog appears.
+
+<P>
+<H4>Figure: <A NAME="whFI2.BsKL9X3cS">Reply/Forward Preferences Dialog</H4>
+
+<IMG SRC="uhFI2.BsKL9X3cS.extobj.1.gif">
+
+<H2><A NAME="ZJI1QLB-zWwA0YK">Remove me from recipient list in replies</H2>
+
+<P>
+Toggle this parameter
+<KBD>On</KBD> to have your name removed from the
+recipient list when replying to a message that has your name in
+the
+<B>To:</B> field or the
+<B>Cc:</B> field. This preference helps ensure that you
+don't get a copy of your own reply.
+<P>
+Redundant replies can occur if you are listed in either the
+<CODE>To:</CODE> or
+<CODE>Cc:</CODE> fields of an incoming message.
+
+<P>
+In some cases, however, you may still generate an additional
+reply copy. This could happen if your alias gets expanded to a full
+Internet address. In that case, the pattern matching routine that
+removes your alias from the recipient list will not be able to find
+a match for the full address.
+
+
+<H2><A NAME="CqFI2.BsKL9X3cS">Numbering Replies</H2>
+
+<P>
+When you reply to a message,
+<CITE>Ishmail</CITE> and various other mail
+tools change the original subject line by adding the prefix
+<I>Re:</I>.
+For example, when you reply to mail with the subject
+<I>Question
+about Ishmail</I> the subject in the reply will become
+<I>Re: Question
+about Ishmail</I>. If the reply is replied to, the subject becomes
+<I>Re:
+Re: Question about Ishmail</I>.
+<P>
+Toggle this parameter
+<KBD>On</KBD> to cause
+<CITE>Ishmail</CITE> to condense all
+<I>Re:</I>
+prefixes into a single prefix that is numbered to indicate how
+many times replies have been traded on this subject. For
+example, the
+<I>Re: Re: Question about Ishmail</I> in the previous
+example would become instead
+<I>Re[2]: Question about Ishmail</I>.
+
+<H2><A NAME="JqFI2.BsKL9X3cS">Remove comment text from addresses</H2>
+
+<P>
+E-mail addresses can be adorned with various information which
+is ignored by the mail transport subsystem, but which make the
+address more readable to humans. In
+<CITE>Ishmail</CITE>, this extra
+information is referred to as
+<I>comment text</I>. Given the address
+<KBD>support@ishmail.com</KBD>, here are two examples
+containing comment text:
+<PRE>
+support@ishmail.com (Ishmail Technical Support)
+</PRE>
+<PRE>
+Ishmail Technical Support &lt;support@ishmail.com>
+</PRE>
+<P>
+In order to avoid cluttering the
+<B>To:</B> field in the Composition
+window, Ishmail strips off any comment text from addresses. You
+can override this behavior by toggling this parameter
+<KBD>Off</KBD>.
+
+<H2><A NAME="1LI1QLB-zWwA0YK">Indent lines in responses using:</H2>
+
+<P>
+This field specifies the prefix to use for each line in the original
+message of a reply. Any valid text string can be used.
+
+<P>
+The default character is a greater-than symbol (<SAMP>></SAMP>).
+
+<H2><A NAME="VLI1QLB-zWwA0YK">Begin forwarded messages with:</H2>
+
+<P>
+This field specifies the string to include at the beginning of
+forwarded messages. Any valid text string can be used.
+
+<P>
+The default string is:
+<VAR>>>>>>Forwarded message from %from:</VAR>.
+
+<H2><A NAME="cLI1QLB-zWwA0YK">End forwarded messages with:</H2>
+
+<P>
+This field specifies the string to include at the end of forwarded
+messages. Any valid text string can be used.
+
+<P>
+The default string is:
+<VAR>&lt;&lt;&lt;&lt;&lt;End forwarded message</VAR>.
+
+<H2><A NAME="8LI1QLB-zWwA0YK">Attribution string:</H2>
+
+<P>
+This field specifies an
+attribution string to use in message
+responses.
+
+<P>
+The default string is
+<VAR>%from:wrote:</VAR>, where
+<VAR>%from:</VAR> is the
+associated line from the mail header command through which
+messages are filtered.
+<P>
+Any keyword found in the message header can be referred to as
+a variable by preceding its name with a percent sign "%", for
+example
+<VAR>%to</VAR>,
+<VAR>%subject</VAR>,
+<VAR>%in-reply-to</VAR>. If the specified header is not
+found in a particular mail message the variable name is used as
+a literal. In other words, if the preference defines the attribution
+string as
+<VAR>$xyz said:</VAR> and an
+<VAR>xyz:</VAR> line is not found in the message
+header, the attribution string will literally be
+<VAR>%xyz said:</VAR>.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Refer to
+<CITE>RFC822</CITE> for a list of standard
+keywords. If you wish to define new keywords,
+follow the guidelines in
+<CITE>RFC822</CITE>.
+<HR>
+</P>
+
+<H2><A NAME="iqFI2.BsKL9X3cS">Forward these headers:</H2>
+
+<P>
+In the
+<A HREF="5MI1QLB-zWwA0YK.html">Displayed Headers Option</A> dialog you can specify which
+mail headers should be shown in the Reading window. When you
+forward a message, by clicking one of the
+<B>Forward these headers:</B>
+radio buttons you can specify whether the forwarded message
+should contain:
+<UL>
+<LI>All the headers from the original message
+<P>
+
+</LI>
+<LI>Only the headers displayed in the Reading window
+<P>
+
+</LI>
+<LI>No mail headers
+<P>
+
+</LI>
+</UL>
+
+<H2><A NAME="mqFI2.BsKL9X3cS">Signature Preferences</H2>
+
+<P>
+When you click the
+<U>S</U><B>ignature ...</B> option, the
+<B>Signature Preferences</B>
+dialog appears.
+
+<P>
+<H4>Figure: <A NAME="oqFI2.BsKL9X3cS">Signature Preferences Dialog</H4>
+
+<IMG SRC="uhFI2.BsKL9X3cS.extobj.2.gif">
+
+<H3><A NAME="Y.FI2.BsKL9X3cS">Signature Preferences Window</H3>
+
+<P>
+Use the
+<B>Signature Window Preferences</B> window to control how your
+signature is used, if at all, in outgoing mail messages.
+<P>
+Your
+<I>signature</I> consists of one or more lines of information, which
+are added to your outgoing messages, typically at the end. You
+can put information here such as your full name, street address,
+telephone numbers, your organization's or company's name, and
+so forth. Some people also put clever sayings, quotations, or
+ASCII artwork in their signature.
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Internet etiquette encourages you to keep
+your signature small, three lines or less.
+<HR>
+</P>
+
+<H3><A NAME="f.FI2.BsKL9X3cS">Signature files</H3>
+
+<P>
+You can have up to four different
+signature files, for use in
+different circumstances:
+<DL>
+<DT>Messages sent outside your organization or domain
+<DD>The default path name is
+<I>$HOME/.signature</I>. This is the
+same path name used by various other e-mail tools. You
+can use the same signature file with other tools.
+<P>
+
+<DT>MIME messages sent outside your domain
+<DD>The default path name is
+<I>$HOME/.signature</I>
+<P>
+
+<DT>Message sent internal to your domain
+<DD>The default path name is
+<I>$HOME/.signature</I>
+<P>
+
+<DT>MIME messages sent internal to your domain
+<DD>The default path name is
+<I>$HOME/.signature</I>
+<P>
+
+</DL>
+<P>
+If you do not specify any names for the internal signature files,
+or if the names specified in the fields don't exist,
+<CITE>Ishmail</CITE> uses your
+external signature regardless of where the message is going. If
+you don't have any signature files, no signature is added
+regardless of the setting of the
+<B>Add signature</B> button.
+<P>
+If your message is being sent to more than one person, and one
+or more of them are external to your domain, the external
+signature is used for all copies of the message.
+<P>
+Whether to use the enriched signature is controlled by the
+<B>Signature Type</B> radio buttons.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>If your signature file has execute permission
+and you are the only one with write
+permission, the
+<CITE>Ishmail</CITE> uses your login shell to
+execute the file and the standard output is
+captured as your signature. This lets you
+customize your signature for each message.
+<HR>
+</P>
+<P>
+You can edit your signature file by clicking the
+<B>Edit</B> button to the
+left of the file name. The editor specified as the
+<B>Alternate Editor</B> in
+the
+<A HREF="XBFI2.BsKL9X3cS.html">Composition Window Preferences</A> dialog will be used (the
+default is the
+<B>vi</B> editor).
+
+<H3><A NAME="2-FI2.BsKL9X3cS">Signature Type</H3>
+
+<P>
+Click the
+<B>Always use plain signature</B> radio
+button if you just want to
+use the
+<I>$HOME/.signature file</I>.
+<P>
+If you click
+<B>Always use enriched signature</B> and your enriched signature
+file exists, it will be used for all messages.
+<P>
+If you click
+<B>Use enriched signature only in MIME messages</B> and your
+enriched signature file exists, it will be used if you are sending a
+MIME message. Otherwise, the plain signature is used.
+
+<H3><A NAME="6-FI2.BsKL9X3cS">Add signature to outgoing messages</H3>
+
+<P>
+Toggle this parameter
+<KBD>On</KBD> to cause
+<CITE>Ishmail</CITE> to automatically add
+your signature to every outgoing message.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>You can override this for an individual
+message by toggling the
+<B>Append Signature</B> button
+at the bottom of the Composition window.
+<HR>
+</P>
+
+<H3><A NAME="9-FI2.BsKL9X3cS">Add delimiter before signature</H3>
+
+<P>
+Some mail tools always put a line containing two dash (minus
+sign) characters in front of the signature. The MIME standard
+does not include this convention, but it doesn't seem to preclude
+it either. By default,
+<CITE>Ishmail</CITE> does not do this but you can have this
+extra line added by toggling this parameter
+<KBD>On</KBD>.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Explicit help is available in the
+<U>H</U><B>elp</B>
+pull-down menu for each of the parameters
+that can be customized. From the
+<U>H</U><B>elp</B>
+pull-down menu, select the
+<U>O</U><B>n Context</B> function,
+then move the cursor over the item of interest
+and click the mouse.
+<HR>
+</P>
+
+<HR>
+Preceding Section: <A HREF="lQFI2.BsKL9X3cS.html">Outgoing Mail Preferences</A><BR>
+Following Section: <A HREF="OkswbfBjlJ9X3cS.html">Shortcut Buttons</A><BR>
+Parent Section: <A HREF="Mr-1vFBulI9X3cS.html">Composition Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

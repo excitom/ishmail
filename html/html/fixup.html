@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>
+Fix up tar installation
+</title>
+</head>
+<body bgcolor="#ffffff">
+<font face="verdana,arial,helvetica">
+<table>
+<tr>
+<td>
+<IMG SRC="/html/mailbox.gif" ALIGN="MIDDLE" ALT="">
+</td>
+<td><h1>
+Fix up tar installation
+</h1></td>
+</tr>
+</table>
+<p>
+If you didn't install the <b>tar</b> archive with <i>root</i> privilege,
+these commands will fix problems with locking you InBox folder, and also
+make the program more easily accessible.
+<p>First, go to the directory where you installed <i>Ishmail</i>, 
+then go to the <tt>bin</tt> subdirectory.
+<p>
+<tt>
+su<br>
+chgrp mail ishmail.real<br>
+chmod 2755 ishmail.real<br>
+ln -s `pwd`/ishmail /usr/bin/ishmail<br>
+</tt>
+</font>
+</body>
+</html>

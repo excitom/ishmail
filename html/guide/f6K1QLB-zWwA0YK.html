@@ -1,0 +1,385 @@
+<HTML>
+<HEAD>
+ <TITLE>Sort Option</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="f6K1QLB-zWwA0YK">Sort Option</H1>
+
+<P>
+The
+<U>S</U><B>ort ...</B> option lets you specify the order in which mail
+messages should be listed in the
+<B>Folder Contents</B> area of the Main
+window.
+
+<P>
+To specify the sort order of messages, click the
+<U>S</U><B>ort ...</B> option. The
+<B>Sort Specification</B> window appears, in which you can:
+<UL>
+<LI>Specify the message sort order using up to eight
+available sort keys.
+
+<P>
+
+</LI>
+<LI>Specify the direction of the sort, either ascending or
+descending.
+<P>
+
+</LI>
+<LI>Specify a different sort key for each folder.
+<P>
+
+</LI>
+<LI>Select the
+<B>Thread messages</B> parameter to group messages
+by subject-thread and sort each group by newest or oldest
+message in the group.
+<P>
+
+</LI>
+</UL>
+<P>
+<H4>Figure: <A NAME="o6K1QLB-zWwA0YK">Sort Specification Window</H4>
+
+<IMG SRC="f6K1QLB-zWwA0YK.extobj.1.gif">
+<P>
+The
+<B>Sort Specification</B> window contains a row of toggle buttons, each
+of which controls an associated sort key. Adjacent to each sort
+key is a pair of radio buttons for controlling sort
+direction-either ascending or descending. (For alphabetical
+characters, ascending order is A to Z; descending order is Z to A.)
+The radio buttons for the
+<B>Status</B> key act differently, in that they
+select between the sort orders
+<B>New</B>,
+<B>Unread</B>, and
+<B>Other</B> and
+<B>Other</B>,
+<B>Unread</B>, and
+<B>New</B>.
+
+<P>
+When you toggle
+<KBD>On</KBD> a button that corresponds to a sort key, a
+number appears in the
+<B>Order</B> column to the left of the buttons. The
+number indicates the precedence of the sort key. The first key you
+toggle
+<KBD>On</KBD> becomes key
+<KBD>1</KBD>, the second becomes key
+<KBD>2</KBD>, and so on.
+Conversely, if you toggle a button
+<KBD>Off</KBD>, the corresponding sort
+key is removed and the number is removed from the
+<B>Order</B>
+column. The other sort keys are renumbered. You can specify any
+or all eight sort keys and any order of direction in your sort
+specification.
+
+<H2><A NAME="7lZPR1C.RM9X3cS">Sort Keys</H2>
+
+<P>
+There are eight possible sort keys.
+
+<DL>
+<DT>Message number
+<DD>Select the
+<B>Number</B> option to sort mail messages by number.
+When you do this, the first mail messages to arrive have
+the lower numbers. So, if you sort in descending
+numerical order, the newest messages appear at the top
+of the
+<B>Folder Contents</B> area. If you sort in ascending
+numerical order, the oldest messages appear at the top of
+the
+<B>Folder Contents</B> area.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>This differs from sorting by
+<B>Date</B> in that
+<B>Number</B>
+indicates the order in which messages were
+received, while
+<B>Date</B> indicates when a message
+was sent. These usually result in the same
+sort order, but not necessarily. Differences
+result from variable delays in the mail
+network and differences in clock time among
+systems.
+<HR>
+</P>
+<DT>Message status
+<DD>Select
+<B>Status</B> to sort mail messages by status. The buttons
+for the
+<B>Status</B> key select between these two sort orders
+<B>New,
+Unread, Other</B> and
+<B>Other, Unread, New</B>.
+
+<P>
+
+<DT>Subject
+<DD>Select
+<B>Subject</B> to sort mail messages alpha-numerically by
+subject, as indicated by the message's
+<KBD>Subject:</KBD> header.
+For alphabetical characters, ascending order is A to Z;
+descending order is Z to A.
+<P>
+
+<DT>Sender
+<DD>Select
+<B>Sender</B> to sort mail messages in alpha-numerically
+by sender's name, as found in the message's
+<KBD>From:</KBD>
+header. For alphabetical characters, ascending order is A
+to Z; descending order is Z to A.
+<P>
+
+<DT>To
+<DD>Select
+<B>To</B> to sort mail messages alphabetically according
+to the name(s) in the
+<KBD>To:</KBD> header. If you display mail
+messages by the
+<B>To</B> field in ascending order, a message
+addressed "<B>To:</B>
+<KBD>adam@someplace.com</KBD>" would be lower in
+the message list than a message addressed
+"<B>To:</B> <KBD>bob@someplace.com</KBD>".
+
+<P>
+
+<DT>Date
+<DD>Select
+<B>Date</B> to sort mail messages by the time and date the
+message was sent, as indicated by the message's
+<KBD>Date:</KBD>
+header. If you display mail messages by date in
+ascending order, the oldest messages appear at the top of
+the message list.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>This differs from sorting by
+<B>Number</B> in that
+<B>Number</B> indicates the order in which messages
+were received, while
+<B>Date</B> indicates when a
+message was sent. These usually result in the
+same sort order, but not necessarily.
+Differences result from variable delays in the
+mail network and differences in clock time
+among systems.
+<HR>
+</P>
+<DT>Number of lines
+<DD>Select
+<B>Line Count</B> to sort mail messages by line count. If you
+display mail messages by line count in ascending order,
+the shortest messages appear at the top of the
+<B>Folder
+Contents</B> area.
+<P>
+A
+<I>line</I> is counted as a string of characters ending with a
+<KBD>newline</KBD> character.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>For messages containing data other than
+ASCII text, for example GIF or JPEG data,
+the count of number of lines may not be
+meaningful.
+<HR>
+</P>
+<DT>Number of bytes
+<DD>Select
+<B>Byte Count</B> to sort mail messages by number of
+bytes, or characters. If you display mail messages by byte
+count in ascending order, the messages with the lowest
+byte count appear at the top of the
+<B>Folder Contents</B> area.
+<P>
+Only the characters in the message body are counted, not
+the characters in the headers.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Some mail messages contain a
+<KBD>Content-Length:</KBD> header. This is a good
+indication of the number of bytes in a
+message, but it is not always accurate.
+<CITE>Ishmail</CITE>
+counts the number of bytes instead of relying
+on a
+<KBD>Content-Length:</KBD> header, if present.
+<HR>
+</P>
+</DL>
+
+<H2><A NAME="1mZPR1C.RM9X3cS">Thread Messages Parameter</H2>
+
+<P>
+Select the
+<B>Thread messages</B> parameter to sort messages by subject
+thread. Messages will be grouped in the message list according
+to their subject line (from the
+<KBD>Subject:</KBD> mail header). If you sort
+in ascending order, the oldest subject is shown first.
+<P>
+To illustrate how this works, consider this example: You have 3
+messages in your folder, each with a different subject line.
+Applying the
+<B>Thread messages</B> parameter has no apparent,
+immediate effect. The messages remain sorted by arrival
+sequence. When new mail with a unique subject arrives it is
+added to the end of the list, so the list still appears sorted by
+number. However, when new mail arrives containing a subject
+line that matches an existing message, the new message appears
+inserted in the list just after the message with the same subject.
+
+<H2><A NAME="ZYK1QLB-zWwA0YK">Specifying
+Sort Order</H2>
+
+<P>
+Sort keys are added in the order you select them. Sort criteria is
+based on this order and on the direction (ascending or
+descending) of each sort key.
+<P>
+For example, to specify sorting first by
+<B>Date</B>, descending order
+(that is, latest message at the top of the message list), then by
+<B>Status</B> (new messages first, followed by unread messages, then
+other messages), you would:
+<OL>
+<LI>Select (toggle
+<KBD>On</KBD>) the
+<B>Date</B> sort key. A
+<KBD>1</KBD> appears in the
+<B>Order</B> column next to the toggle button.
+
+<P>
+Click
+<B>Descending</B> to select that direction.
+<P>
+
+</LI>
+<LI>Next, select (toggle
+<KBD>On</KBD>) the
+<B>Status</B> sort key. A
+<KBD>2</KBD> appears in
+the
+<B>Order</B> column next to the toggle button.
+
+<P>
+Click
+<B>New</B>,
+<B>Unread</B>,
+<B>Other</B> to select that direction.
+
+<P>
+
+</LI>
+<LI>Apply your changes.
+<P>
+
+</LI>
+</OL>
+<P>
+<B>NOTES:</B>
+<OL>
+<LI>For the
+<B>Date</B> field, the value of the date string
+is first resolved into a number before
+comparing, so that values in different formats
+(for example, Dec 01 versus December 1) will
+sort correctly.
+<P>
+
+</LI>
+<LI>The
+<B>Date</B> and
+<B>Number</B> keys have roughly the
+same meaning since messages are numbered
+sequentially in the order received. The
+<B>Date</B>
+indicates the time of day and date the
+message was sent. The
+<B>Number</B> indicates order
+of arrival in your In-Box. However, there may
+be subtle differences due to propagation
+delays within the mail network or differences
+in the time of day clocks on various machines.
+A message sent later than another (thus
+having a newer date) may actually arrive
+sooner (thus having a lower, older sequence
+number).
+<P>
+
+</LI>
+</OL>
+
+<H2><A NAME="Qdc3vyBctI9X3cS">Specifying Which Folders are Affected</H2>
+
+<P>
+When you specify a sort for a folder, click the appropriate radio
+button in the box below the sort keys to make the sort apply to:
+<UL>
+<LI>The current mail folder, as displayed in the
+<CODE>Main</CODE> window
+<B>Folder Contents</B> area.
+<P>
+
+</LI>
+<LI>All mail folders selected in the
+<CODE>Main</CODE> window
+<B>Open Folders</B>
+area.
+<P>
+
+</LI>
+<LI>All mail folders, overriding any other sort definitions.
+<P>
+
+</LI>
+<LI>All mail folders which don't otherwise have an explicit
+sort order defined.
+<P>
+
+</LI>
+</UL>
+<P>
+You make this selection by clicking one of the radio buttons in the
+box below the sort keys.
+
+<H2><A NAME="Z6K1QLB-zWwA0YK">Applying Your Changes</H2>
+
+<P>
+Apply or cancel your changes using the row of buttons across the
+bottom of the window. See
+<A HREF="1j.-uyBk2I9X3cS.html#9eH1QLB-zWwA0YK">Applying Your Changes</A>.
+
+
+<HR>
+Preceding Section: <A HREF="6wXf7fBT.L9X3cS.html">Folder Preferences Option</A><BR>
+Following Section: <A HREF="DEtRqFB0aG9X3cS.html">Help Menu</A><BR>
+Parent Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

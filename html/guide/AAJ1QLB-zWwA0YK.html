@@ -1,0 +1,274 @@
+<HTML>
+<HEAD>
+ <TITLE>Alerts Option</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="AAJ1QLB-zWwA0YK">Alerts Option</H1>
+
+<P>
+Alerts are user-specified commands that run when incoming
+mail arrives. The
+<B>A</B><U>l</U><B>erts ...</B> option invokes a specific command
+when incoming mail containing a certain string pattern in its
+header arrives. You can specify a different string pattern for each
+command you define. When mail arrives, the headers are
+scanned for a match with any of the patterns. When a match is
+detected the associated command is executed.
+
+<P>
+The alert command can be any executable program. You can
+specify the program's full path name, or your
+<CODE>$PATH</CODE> environment
+variable is used to find the program.
+
+<P>
+You can pass the message headers and/or the message body to
+the alert command. If
+<CODE>%m</CODE> is added to the command,
+<CITE>Ishmail</CITE> will
+create a file with the entire message contents and replace
+<CODE>%m</CODE>
+with the name of that file.  <CODE>%h</CODE> will be replaced with the name of
+a file containing just the message headers.  <CODE>%b</CODE> will be replaced
+with the name of a file containing just the message body.  <CODE>%%</CODE> will
+be replaced with %. Here is an example command that will
+display the
+<CODE>Subject:</CODE> and
+<CODE>From:</CODE> headers in a new message using the
+<CITE>mfyi</CITE> command:
+<PRE>
+mfyi -center "`egrep `^(Subject:|From:)' %h`"
+</PRE>
+<P>
+Possible uses for alert commands include:
+<UL>
+<LI>Generate automatic replies to incoming mail, based on
+sender and subject.
+<P>
+
+</LI>
+<LI>Provide the function of the
+<B>vacation</B> command.
+<P>
+
+</LI>
+<LI>Provide the function of the
+<CITE>xbiff++</CITE> command.
+<P>
+
+</LI>
+</UL>
+<P>
+To add or insert new alerts, and to edit or delete existing alerts,
+click the
+<B>A</B><U>l</U><B>erts ...</B> option. The
+<B>Alerts</B> dialog window appears.
+<P>
+<H4>Figure: <A NAME="JAJ1QLB-zWwA0YK">Alerts Window</H4>
+
+<IMG SRC="AAJ1QLB-zWwA0YK.extobj.1.gif">
+
+<H2><A NAME="cYZZbLB6WH9X3cS">Specifying
+Alerts</H2>
+
+<P>
+The
+<B>Alerts</B> dialog window shows the list of current string patterns
+and associated commands in a box containing two text fields
+-
+the
+<B>Pattern</B> name field and the associated
+<B>Command</B> field. (If no
+alerts have been defined, both fields are empty). Each pattern
+must have a command associated with it.
+
+<P>
+Each pattern is evaluated as a
+<VAR>regular expression</VAR>, as defined by
+the UNIX
+<B>ed</B> command.
+<P>
+The
+<CODE>Enable Alerts</CODE> button in the upper right corner of the
+<CODE>Alerts</CODE>
+window lets you temporarily disable all alert commands without
+having to delete them.
+<P>
+You use the four buttons to the left of the text fields to:
+<UL>
+<LI>Create a new alert.
+<P>
+
+</LI>
+<LI>Insert an alert.
+<P>
+
+</LI>
+<LI>Edit an existing alert.
+<P>
+
+</LI>
+<LI>Delete an existing alert.
+<P>
+
+</LI>
+</UL>
+<P>
+When you click the
+<B>New ..., Insert ...</B> or
+<B>Edit ...</B> buttons, the
+<B>Edit Alert Rule</B>
+window appears. It contains text fields in which you can create
+or modify an alert.
+<P>
+<H4>Figure: <A NAME="MUJ1QLB-zWwA0YK">Edit Alert Rule Window</H4>
+
+<IMG SRC="AAJ1QLB-zWwA0YK.extobj.2.gif">
+
+<H3><A NAME="wJCd.LBUXXwA0YK">Creating a New Alert</H3>
+
+<P>
+New alerts are added to the end of the list. Since patterns are
+evaluated in order, this means that the newest alert pattern is
+checked last. To create a new alert:
+<OL>
+<LI>Click the
+<B>New ...</B> button. The
+<B>Edit Alert Rule</B> window appears.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Pattern</B>: text field and enter a
+string pattern that would appear in the header field of an
+incoming message.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Command:</B> text field and enter an
+associated command that will be invoked when the
+string pattern is encountered in a message header.
+<P>
+
+</LI>
+<LI>Click
+<B>Ok</B> or
+<B>Apply</B> in the
+<B>Edit Alert Rule</B> window. The new alert
+is added to the end of the
+<B>Pattern</B> list.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="zf3ZgMB8BJ9X3cS">Inserting an Alert</H3>
+
+<P>
+Since patterns are evaluated in order, inserting an alert ahead of
+other alerts causes its pattern to be evaluated first. To insert an
+alert:
+<OL>
+<LI>Select an alert in the
+<B>Pattern</B> list and click the
+<B>Insert ...</B>
+button. The
+<B>Edit Alert Rule</B> window appears.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Pattern</B>: text field and enter a
+string pattern that would appear in the header field of an
+incoming message.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Command:</B> text field and enter an
+associated command that will be invoked when the
+string pattern is encountered in a message header.
+<P>
+
+</LI>
+<LI>Click
+<B>Ok</B> or
+<B>Apply</B> in the
+<B>Edit Alert Rule</B> window to insert your
+changes before the selected alert in the
+<B>Pattern</B> list.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="KKCd.LBUXXwA0YK">Editing an Alert</H3>
+
+<P>
+To
+edit an alert:
+<OL>
+<LI>Select an alert in the
+<B>Pattern</B> list and click the
+<B>Edit ...</B> button
+or double-click the alert. The
+<B>Edit Alert Rule</B> window
+appears with the alert pattern and associated command
+in the text fields.
+<P>
+
+</LI>
+<LI>Make your modification(s) in the text fields.
+
+<P>
+
+</LI>
+<LI>Click
+<B>Ok</B> or
+<B>Apply</B> in the
+<B>Edit Alert Rule</B> window to add your
+changes to the selected icon in the
+<B>Pattern</B> list.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="cKCd.LBUXXwA0YK">Deleting an Alert</H3>
+
+<P>
+To delete one or more alerts:
+<OL>
+<LI>Select the alert(s) you want to remove.
+<P>
+
+</LI>
+<LI>Click the
+<B>Delete</B> button.
+
+<P>
+A pop-up confirmation box prompts you for confirmation
+before completing the operation.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="AcJ1QLB-zWwA0YK">Applying Your Changes</H3>
+
+<P>
+Apply or cancel your changes using the row of buttons across the
+bottom of the window. See
+<A HREF="1j.-uyBk2I9X3cS.html#9eH1QLB-zWwA0YK">Applying Your Changes</A>.
+
+
+<HR>
+Preceding Section: <A HREF="8lI1QLB-zWwA0YK.html">Aliases Option</A><BR>
+Following Section: <A HREF="FcJ1QLB-zWwA0YK.html">Icons Option</A><BR>
+Parent Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>
+IRIX Installation Warnings
+</title>
+</head>
+<body>
+<h1>
+<img src="../mailbox.gif" align="middle" alt="">
+IRIX Installation Warnings
+</h1>
+<p>
+The <tt>pkgadd</tt> command can generate various warning messages during
+the installation.
+Several warning messages are to be expected.
+The first one will be:
+<hr>
+<pre>
+The following files are already installed on the system and are being
+used by another package:<br>
+        /opt (attribute change only)
+        /opt/ishmail (attribute change only)
+        /usr (attribute change only)
+        /usr/bin (attribute change only)
+        /usr/share (attribute change only)
+        /usr/share/man (attribute change only)
+        /usr/share/man/man1 (attribute change only)
+
+Do you want to install these conflicting files [y,n,?,q] n
+</pre>
+<hr>
+<p>
+To be safe, the package is explicitly specifying that common directories
+should be installed.
+Since these (most likely) already exist, you'll see the warning.
+It doesn't matter if you install these files.
+<p>
+The next warning will be:
+<hr>
+<pre>
+The following files are being installed with setuid and/or setgid
+permissions or are overwriting files which are currently
+setuid/setgid:
+        /opt/ishmail/1.0.5/bin/ishmail.real <setgid mail>
+
+Do you want to install these setuid/setgid files [y,n,?,q] y
+</pre>
+<hr>
+<p>
+The <i>Ishmail</i> program needs <i>setgid</i> privilege in the <i>mail</i>
+group, so that it can coordinate update of mail folders with the system's
+mail transport subsystem.
+You should answer <b>y</b> to this question.
+<p>
+The next warning will be:
+<hr>
+<pre>
+This package contains scripts which will be executed with super-user
+permission during the process of installing this package.
+
+Do you want to continue with the installation of this package [y,n,?] y
+</pre>
+<hr>
+<p>
+The package contains two scripts, called <tt>request</tt> and
+<tt>postinstall</tt>,
+which do some housekeeping during the installation.
+The <tt>pkgadd</tt> command will run them with <i>root</i> privilege.
+If you are suspicious about what these scripts will do,
+use the <tt>pkgtrans</tt> command to extract the contents of the package
+without actually installing it (and running the privileged scripts).
+Then, look in the <tt>/var/spool/pkg/ishmail/install</tt> directory for the
+<tt>request</tt> and <tt>postinstall</tt> scripts.
+You may examine them to assure yourself that they will not abuse their
+<i>root</i> privilege.
+</body>
+</html>

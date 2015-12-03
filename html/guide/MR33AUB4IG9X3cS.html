@@ -1,0 +1,255 @@
+<HTML>
+<HEAD>
+ <TITLE>Message List Option</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="MR33AUB4IG9X3cS">Message List Option</H1>
+
+<P>
+The
+<B>Messa</B><U>g</U><B>e List ...</B> option lets you change the column order and
+the column width of message status information in the window.
+You can also elect to show or to hide the message status icon.
+
+<P>
+Specifically, you control:
+<UL>
+<LI>The titles shown for each column of information.
+<P>
+
+</LI>
+<LI>The order in which the columns are shown.
+<P>
+
+</LI>
+<LI>Which columns are shown or hidden.
+<P>
+
+</LI>
+<LI>The minimum width for each column.
+<P>
+
+</LI>
+<LI>The maximum width for each column.
+<P>
+
+</LI>
+<LI>Whether status icons are shown for each message.
+<P>
+
+</LI>
+<LI>The format used in the
+<B>Date</B> column.
+<P>
+
+</LI>
+</UL>
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>You can also change the width of columns in
+the message list by clicking on the vertical
+separator bars above the message list, and
+dragging right or left. Changes made this way
+are only temporary.
+<HR>
+</P>
+<P>
+To modify or reorder message status information, click the
+<B>Messa</B><U>g</U><B>e List ...</B> option. The
+<B>Message List Preferences</B> window appears.
+
+<P>
+<H4>Figure: <A NAME="QR33AUB4IG9X3cS">Message List Preferences Window</H4>
+
+<IMG SRC="MR33AUB4IG9X3cS.extobj.1.gif">
+<P>
+The
+<B>Message List Preferences</B> window contains a row of toggle
+buttons, each of which controls an associated message status
+<B>Field</B>
+(or status column). The fields are:
+<UL>
+<LI><B>Number</B>
+<P>
+
+</LI>
+<LI><B>Status</B>
+<P>
+
+</LI>
+<LI><B>Sender</B>
+<P>
+
+</LI>
+<LI><B>Subject</B>
+<P>
+
+</LI>
+<LI><B>Date</B>
+<P>
+
+</LI>
+<LI><B>Line count</B>
+<P>
+
+</LI>
+<LI><B>Byte count</B>
+<P>
+
+</LI>
+<LI><B>Show status icon</B>
+<P>
+
+</LI>
+<LI><B>Date format</B>
+<P>
+
+</LI>
+</UL>
+<P>
+The default value for all message status fields is
+<KBD>On</KBD>. To remove
+any field from the Main window message status list, simply
+toggle the button associated with that field to
+<KBD>Off</KBD>. When you
+apply this change, the field is removed from the message list.
+
+<P>
+Adjacent to each toggle button is set of four text fields in which
+you can enter values to specify the
+<B>Position</B>,
+<B>Minimum Width</B>,
+<B>Maximum
+Width</B>, and
+<B>Title</B> of each message status field. These values are
+applicable to message status fields that are toggled
+<KBD>On</KBD>.
+<P>
+As you specify your preferences for each message status
+<B>Field</B>, you
+can apply your changes interactively at any time to see how they
+look.
+
+<H2><A NAME="AY33AUB4IG9X3cS">Specifying Status
+Field Preferences</H2>
+
+<P>
+The procedure for specifying your message status field
+preferences is simple. For each message status
+<B>Field</B> (or status
+column) that is toggled
+<KBD>On</KBD>:
+<OL>
+<LI>Enter a value in the
+<B>Position</B> text field to designate the
+<B>Field's</B> relative position (from left-to-right) in the Main
+window message status list.
+
+<P>
+The lowest number in a
+<B>Position</B> text field places its
+associated message
+<B>Field</B> furthest left in the message list;
+the highest number places its associated message
+<B>Field</B>
+furthest right.
+
+<P>
+
+</LI>
+<LI>Enter a value in the
+<B>Minimum Width</B> text field to designate
+the minimum width (in characters) of the field.
+
+<P>
+A non-zero value means the field will always display the
+specified number of characters, even if all of the entries
+are smaller.
+
+<P>
+
+</LI>
+<LI>Enter a value in the
+<B>Maximum Width</B> text field to designate
+the maximum width (in characters) of the field.
+
+<P>
+A value of zero or blank means the field will always
+expand to accommodate the longest line of text. A
+non-zero value means the field will never display more
+than the specified number of characters, even if one of
+the field's entries is longer.
+
+<P>
+
+</LI>
+<LI>Enter a title in the
+<B>Title</B> field (or you can accept the default
+name, if one is available).
+
+<P>
+
+</LI>
+<LI>Toggle the
+<B>Show status icon</B> either
+<KBD>On</KBD> or
+<KBD>Off</KBD> according to
+your preference.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="cOZPR1C.RM9X3cS">Date Format</H3>
+
+<P>
+You can modify the format used to display the
+<B>Date</B> column by
+specifying the format using the syntax of the
+<B>strftime(3)</B> library
+function.
+<P>
+Each conversion specification is replaced by appropriate
+characters as described in the following list. The appropriate
+characters are determined by the
+<B>LC_TIME</B> category of the
+program's locale, as shown in
+<A HREF="MR33AUB4IG9X3cS.html#cTmfg-B0YI9X3cS">Date Format</A>.
+
+<P>
+<H4>Table: <A NAME="cTmfg-B0YI9X3cS">Date Format</H4>
+
+<IMG SRC="MR33AUB4IG9X3cS.extobj.2.gif">
+<P>
+The following example illustrates the use of the date format
+string. Assuming the date is
+<I>Thursday, August 28, 1986 at
+12:44:36</I>, and a format string:
+<P>
+<KBD>%A %b %d %j</KBD>
+<P>
+This results in date containing
+<I>Thursday Aug 28 240</I>.
+<P>
+The default for the
+<B>Date format</B> field is a blank string, meaning that
+the date will take the format of the original message.
+
+<H3><A NAME="z1WxnVB8PI9X3cS">Applying Your Changes</H3>
+
+<P>
+Apply or cancel your changes using the row of buttons across the
+bottom of the window. See
+<A HREF="1j.-uyBk2I9X3cS.html#9eH1QLB-zWwA0YK">Applying Your Changes</A>.
+
+
+<HR>
+Preceding Section: <A HREF="1dJ1QLB-zWwA0YK.html">Buttons Option</A><BR>
+Following Section: <A HREF="6wXf7fBT.L9X3cS.html">Folder Preferences Option</A><BR>
+Parent Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

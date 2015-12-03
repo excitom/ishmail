@@ -1,0 +1,170 @@
+<HTML>
+<HEAD>
+ <TITLE>Ishmail(1)</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="VNXkYGBySH9X3cS">Ishmail(1) Electronic Mail</H1>
+
+
+<H2><A NAME="WNXkYGBySH9X3cS">Name</H2>
+
+<P>
+<B>ishmail</B> - start the
+<CITE>H&L Electronic</CITE>
+<CITE>Mail</CITE> application
+
+<H2><A NAME="YNXkYGBySH9X3cS">Synopsis</H2>
+
+<PRE>
+<B>ishmail</B> [<VAR>standard_X11_flags</VAR>] [<VAR>name1</VAR> [<VAR>name2</VAR> . . . <VAR>nameN</VAR>]] [ &amp; ]
+</PRE>
+
+<H2><A NAME="aNXkYGBySH9X3cS">Description</H2>
+
+<P>
+<B>ishmail</B> starts
+<CITE>H&L Electronic Mail</CITE>, a graphical user interface
+(GUI) to the
+<CITE>sendmail</CITE> mail delivery subsystem. You can use
+<CITE>Ishmail</CITE> to receive, read, compose, and organize electronic mail
+messages containing standard 7-bit ASCII text information, as
+well as the specially formatted information provided by MIME
+(Multipurpose Internet Mail Extension), including Rich Text,
+audio, video, image (facsimile) and application information.
+<P>
+Interacting with mail objects in
+<CITE>Ishmail</CITE> is simple and intuitive. In
+general, you select an object or multiple objects (mail folder, mail
+message, alias name, and so forth), then select a command from
+one of the menus to perform some action on the selected object
+(<B>open</B>,
+<B>close</B>,
+<B>compose</B>,
+<B>read</B>,
+<B>reply</B>,
+<B>forward</B>,
+<B>resend</B>,
+<B>save</B>,
+<B>delete</B>,
+<B>print</B>, and so forth).
+<P>
+<CITE>Ishmail</CITE> has three primary window interfaces, the Main window,
+the Composition window, and the Reading window. Each window
+contains pull-down, tear-off, and cascading menus from which
+you select options that perform various command functions in
+the window.
+<P>
+The Main window is displayed upon startup. From the Main
+window, you choose options to manage your mail folders and files,
+read and compose mail messages, reply to, forward, and resend
+messages, and customize your mail environment.
+
+<P>
+The Composition window is displayed when you select the
+<B>compose</B>,
+<B>reply</B>,
+<B>forward</B>, or
+<B>resend</B> command from the Main
+window or from a Reading window. The Composition window
+menus contain options for specifying an alternate editor,
+previewing the formatted output of messages containing Rich
+Text attributes, and including and attaching external files to
+mail messages. You can have multiple Composition windows
+open simultaneously.
+<P>
+The Reading window is displayed when you select the
+<B>read</B>
+command from the Main window. The Reading window menus
+contain options for reading the next or previous message, saving
+a message, printing a message, deleting a message, and other
+functions. While in the Reading window, you can also display and
+print MIME-encoded inclusions and attachments via external
+viewing and printing software that
+<CITE>Ishmail</CITE> launches when you
+select a MIME-encoded body part. You can "pin" multiple
+Reading windows to the screen.
+
+<P>
+Each of
+<CITE>Ishmail's</CITE> primary windows contains an
+<B>Options</B> menu in
+which you specify parameters for customizing the "look and feel" of the particular window. Customization options include
+changing display fonts and font sizes, adding shortcut buttons
+for commonly performed functions, specifying sort parameters,
+word-wrapping, and so forth.
+
+<H2><A NAME="eNXkYGBySH9X3cS">Options</H2>
+
+<P>
+<CITE>ishmail</CITE> accepts the standard
+<CITE>X</CITE> client command line arguments.
+Warning messages are displayed on the command line if
+unrecognized option flags are used.
+
+<DL>
+<DT><VAR>X client option flags</VAR>
+<DD>The standard
+<CITE>X</CITE> client option flags. For more information
+about these option flags, see the
+<I>X User's Guide</I>. (See also
+<CITE>X User's Reference</CITE> for additional information about
+<CITE>X</CITE>
+command line options.)
+<P>
+
+<DT><VAR>name1</VAR>,
+<VAR>name2 ... nameN</VAR>
+<DD>The names of the mail folders you wish to open during
+<CITE>Ishmail</CITE> startup. These names are relative to the directory
+in which the command is being run. To make
+<CITE>Ishmail</CITE> look
+for them in your folder directory, add `<KBD>+</KBD>' or `<KBD>=</KBD>' before the
+name.
+
+<P>
+When the program starts, these folders and the default
+In-box, or "system folder," are opened and presented in
+<CITE>Ishmail's</CITE> main window.
+<P>
+
+<DT><CODE>&amp;</CODE>
+<DD>The standard flag to the UNIX shell indicating that the
+program should run in the background.
+
+<P>
+
+</DL>
+<P>
+<HR>
+<B>CAUTION:</B>
+<BR><CITE>Ishmail</CITE> catches and ignores all signals, except
+<CODE>SIGKILL(9)</CODE> and
+<CODE>SIGTERM(15)</CODE>. If a SIGTERM is
+caught the program attempts to clean up and
+exit gracefully. If a
+<CODE>SIGKILL</CODE> is caught the
+program exits immediately, losing un-saved
+changes to mail folders.
+<CODE>SIGKILL</CODE> should be used
+only as a last resort for termination.
+
+<HR>
+</P>
+
+<H2><A NAME="tNXkYGBySH9X3cS">See Also</H2>
+
+<P>
+<CITE>X(1)</CITE>,
+<CITE>sendmail(1M)</CITE>,
+<CITE>mail(1)</CITE>
+
+
+<HR>
+Preceding Section: <A HREF="oydhpVBVhL9X3cS.html">Related Man Page</A><BR>
+Following Section: <A HREF="0lKLpVBzLK9X3cS.html">Index</A><BR>
+Parent Section: <A HREF="oydhpVBVhL9X3cS.html">Related Man Page</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

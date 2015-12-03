@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+ <TITLE>Command Line Interface</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="E-7NkEBPyK9X3cS">Command Line Interface</H1>
+
+<P>
+To start
+<CITE>Ishmail</CITE> from the UNIX
+command
+line, type:
+<PRE>
+<B>ishmail</B> <KBD>[</KBD><VAR>standard_X_flags</VAR><KBD>] [</KBD><VAR>name1</VAR><KBD>[</KBD><VAR>name2</VAR> <VAR>... nameN</VAR><KBD>]] [</KBD><B>&amp;</B><KBD>]</KBD>
+</PRE>
+<P>
+<CITE>Ishmail</CITE> accepts the standard
+<CITE>X</CITE> client command line arguments.
+Warning messages are displayed on the command line if
+unrecognized option flags are used.
+
+<DL>
+<DT><VAR>X client option flags</VAR>
+<DD>The standard
+<CITE>X</CITE> client option flags as described in the
+<CITE>X
+User's Guide</CITE>. (Also see the
+<CITE>X User's Reference</CITE> for
+additional information about
+<CITE>X</CITE> command line options.)
+<P>
+
+<DT><VAR>name1</VAR>,
+<VAR>name2 ... nameN</VAR>
+<DD>The names of the mail folders you wish to open during
+<CITE>Ishmail</CITE> startup. These names are relative to the directory
+in which the command is being run. To make
+<CITE>Ishmail</CITE> look
+for them in your folder directory, add "<KBD>+</KBD>" or "<KBD>=</KBD>" before the
+name. Thus, the command:
+<P>
+
+<PRE>
+<SAMP>ishmail +work +personal +projects</SAMP>
+</PRE>automatically launches the
+<CITE>Ishmail</CITE> application with the
+default
+<B>In-box</B>, or "system folder," as well as the folders
+<I>work</I>,
+<I>personal</I>, and
+<I>projects</I> if their locations are relative to
+<I>$HOME</I>.
+<P>
+
+</DL>
+<P>
+<HR>
+<B>CAUTION:</B>
+<BR>The program catches and ignores all signals,
+except
+<CODE>SIGHUP(1)</CODE>,
+<CODE>SIGKILL(9),</CODE> and
+<CODE>SIGTERM(15)</CODE>. If
+a
+<CODE>SIGHUP</CODE> is caught the program attempts to
+save changes to mail folders, clean up, and
+exit gracefully. A
+<CODE>SIGTERM</CODE> works the same as
+<CODE>SIGHUP</CODE>, except that changes to folders are
+<I>not</I>
+saved. If a
+<CODE>SIGKILL</CODE> is caught the program exits
+immediately.
+<CODE>SIGKILL</CODE> should be used only as a
+last resort for termination.
+
+<HR>
+</P>
+<P>
+After
+<CITE>Ishmail</CITE> is launched, it appears as an icon on your desktop.
+If you open the
+<CITE>Ishmail</CITE> application and then iconify it, the
+program remains active, showing one of three different icons, as
+shown in
+<A HREF="E-7NkEBPyK9X3cS.html#d-3fbLBahH9X3cS">Ishmail Icon Bitmaps</A>. The first, an icon depicting a
+mailbox with its flag down, is displayed if there is no mail in the
+In-box. When a new mail message arrives the icon changes to a
+mailbox with its flag up, its door open, and newly arrived mail.
+An audible alarm also sounds when new mail arrives. The third
+icon, showing an empty open mail box, indicates there are no new
+messages in the In-box though it may contain unread mail.
+
+<P>
+<H4>Figure: <A NAME="d-3fbLBahH9X3cS">Ishmail Icon Bitmaps</H4>
+
+<IMG SRC="E-7NkEBPyK9X3cS.extobj.1.gif">
+
+<HR>
+Preceding Section: <A HREF="A-7NkEBPyK9X3cS.html">Starting Ishmail</A><BR>
+Following Section: <A HREF="ZG3a7fB9yL9X3cS.html">License Management</A><BR>
+Parent Section: <A HREF="A-7NkEBPyK9X3cS.html">Starting Ishmail</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

@@ -1,0 +1,244 @@
+<HTML>
+<HEAD>
+ <TITLE>Composition Window Preferences</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="XBFI2.BsKL9X3cS">Composition Window Preferences</H1>
+
+<P>
+When you click the
+<U>W</U><B>indow ...</B> option, the
+<B>Composition Window
+Preferences</B> dialog appears.
+
+<P>
+<H4>Figure: <A NAME="Qr-1vFBulI9X3cS">Composition Window Preferences Dialog</H4>
+
+<IMG SRC="XBFI2.BsKL9X3cS.extobj.1.gif">
+<P>
+Use the
+<B>Composition Window Preferences</B> dialog to control the size and
+format of the Composition window, control text wrapping,
+keystroke bindings, alternate editor command, and spelling
+checker command.
+<P>
+Explicit help is available in the
+<U>H</U><B>elp</B> pull-down menu for each of
+the parameters that can be customized. From the
+<U>H</U><B>elp</B> pull-down
+menu, select the
+<U>O</U><B>n Context</B> function, then move the cursor over
+the item of interest and click the mouse.
+
+<H2><A NAME="rOFI2.BsKL9X3cS">Rows, Columns, and Wrapping Text</H2>
+
+<P>
+You can set the number of rows and columns that are shown in
+the Composition window. If the text in the window needs more
+rows or columns than are available, scroll bars are placed on the
+text area borders. If you have turned on the
+<B>Wrap text at right margin</B>
+option,
+<CITE>Ishmail</CITE> will reformat the text to fit the window width
+rather than use a horizontal scroll bar.
+<P>
+Another way to change the size of the window is to click on the
+outside window border and drag horizontally or vertically.
+Changes made this way do not stay in effect the next time you
+run
+<CITE>Ishmail</CITE>.
+<P>
+With the
+<B>Wrap text at right margin</B> button, you can control whether
+<CITE>Ishmail</CITE> will insert "soft newlines" into your text as you type past
+the right margin. The effect is that the cursor will return to the
+left margin, one row down.
+<P>
+You can also specify how many rows should be shown for each of
+the header fields, except the subject line (which is always a single
+line). When you specify multiple addresses in the
+<KBD>To:</KBD>,
+<KBD>Cc:</KBD>,
+<KBD>Bcc:</KBD>, or
+<KBD>Fcc:</KBD> fields you can place each address on a separate
+line. The fields will show a vertical scroll bar if you enter more
+addresses than there are rows in the field. Similarly, you can
+enter multiple extra mail headers, placing each on a separate
+line.
+
+<H2><A NAME="1PFI2.BsKL9X3cS">Message Header Fields</H2>
+
+<P>
+You can specify which header fields are shown, or hidden, in the
+Composition window. Since each field occupies space in the
+window, you can minimize the size of the Composition window by
+showing only the fields you need to use. You set the default here,
+which can be overridden for individual messages.
+<P>
+You can also specify how many header fields are shown on a
+single line. Putting multiple fields on a line reduces the vertical
+size required for the composition.
+
+<H2><A NAME="6PFI2.BsKL9X3cS">Key Bindings</H2>
+
+<P>
+You can set the bindings for short cut keys to mimic either the
+standard
+<CITE>Motif</CITE> edit functions or the
+<CITE>emacs</CITE> editor functions.
+
+<P>
+You can also control whether the
+<B>Delete</B> key deletes characters
+from the right of the cursor, or if it works like the
+<B>Backspace</B> key
+and deletes to the left of the cursor.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>If you toggle either the
+<B>Use Emacs key bindings</B>
+key or the
+<B>Delete key works like Backspace</B> key, you
+must exit and restart
+<CITE>Ishmail</CITE> for this change
+to take effect.
+<HR>
+</P>
+<P>
+The following table summarizes the key bindings. The
+<CITE>Motif</CITE> key
+is shown first followed by the
+<CITE>emacs</CITE> equivalent key. Note that
+the
+<CODE>Meta</CODE> key is the key with the diamond symbol next to the
+<B>Alt</B>
+key on
+<CITE>Sun</CITE> keyboards. If your keyboard doesn't have a
+<B>Meta</B> key,
+the
+<B>Alt</B> key serves this function.
+<P>
+<H4>Table: <A NAME="jBLtg-BfiI9X3cS">Key Bindings</H4>
+
+<IMG SRC="XBFI2.BsKL9X3cS.extobj.2.gif">
+
+<H2><A NAME="JQFI2.BsKL9X3cS">Specifying Multiple Addresses</H2>
+
+<P>
+When you specify more than one address in the
+<KBD>To:</KBD>,
+<KBD>Cc:</KBD>,
+<KBD>Bcc:</KBD>,
+or
+<KBD>Fcc:</KBD> fields you can place each address on a separate line, by
+pressing the
+<KBD>Return</KBD> (or
+<KBD>Enter</KBD>) key after each one.
+<P>
+Or, you can type multiple addresses on a single line, provided
+that you type a comma between each address.
+<P>
+Some mail tools let you specify multiple addresses just by typing
+a space between each. For compatibility,
+<CITE>Ishmail</CITE> lets you do this
+too, if you turn
+<KBD>on</KBD> the
+<B>Allow spaces to delimit addresses</B> button.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>If you allow spaces to delimit addresses you
+will not be able to enter addresses containing
+comment information, since these will fool the
+comma insertion logic into thinking you have
+entered more than one address.
+<HR>
+</P>
+
+<H2><A NAME="QQFI2.BsKL9X3cS">External Commands - Editor and Spell
+Checker</H2>
+
+<P>
+When you use the
+<U>E</U><B>ditor ...</B> function in the Composition window
+<U>M</U><B>essage</B> pull-down menu,
+<CITE>Ishmail</CITE> starts the alternate editor
+program you have specified as the
+<B>External editor command</B>. The
+contents of the Composition window are passed to the editor, and
+any changes you make are passed back to the Composition
+window when you exit the editor.
+<P>
+<B>NOTES:</B>
+<OL>
+<LI>If you have applied
+<I>Enriched Text</I> formatting
+in the Composition window, and if your
+message type is MIME, you will see the MIME
+text markup commands mixed in with the
+text when you use an external editor.
+<P>
+
+</LI>
+<LI>You cannot completely bypass the
+Composition window, using only an external
+editor to compose messages. This is because
+the Composition window controls the building
+of MIME data structures within your
+message.
+<P>
+
+</LI>
+</OL>
+<P>
+You can also supply the name of an external command to check
+your spelling. When you use the
+<B>Check s</B><U>p</U><B>elling ...</B> function in the
+Composition window
+<U>M</U><B>essage</B> pull-down,
+<CITE>Ishmail</CITE> starts the spell
+checker program and passes it the contents of the Composition
+window. Changes you make with the spell checker are reflected
+back to the Composition window when you exit the spell checker.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>The default spell checker is the public domain
+<CITE>ispell</CITE> command. This is not supplied as part of
+the
+<CITE>Ishmail</CITE> product. If you don't have
+<CITE>ispell</CITE>,
+contact
+<KBD>support@ishmail.com</KBD>
+for assistance in getting it.
+<HR>
+</P>
+<P>
+For either command, the
+<I>$FILE</I> parameter specifies the name of
+a temporary file which holds the contents of the Composition
+window.
+<P>
+When specifying commands that don't create their own window,
+use the
+<CITE>term</CITE> command to create a window and supply the spell
+checker or editor command name as the
+<KBD>-e</KBD> parameter to
+<CITE>term</CITE>.
+Commands, such as
+<CITE>emacs</CITE>, which create their own window can
+be used directly, for example:
+<PRE>
+emacs $FILE
+</PRE>
+
+<HR>
+Preceding Section: <A HREF="Mr-1vFBulI9X3cS.html">Composition Options Menu</A><BR>
+Following Section: <A HREF="lQFI2.BsKL9X3cS.html">Outgoing Mail Preferences</A><BR>
+Parent Section: <A HREF="Mr-1vFBulI9X3cS.html">Composition Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

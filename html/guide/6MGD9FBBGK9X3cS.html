@@ -1,0 +1,208 @@
+<HTML>
+<HEAD>
+ <TITLE>Keyboard Conventions</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="6MGD9FBBGK9X3cS">Keyboard Conventions</H1>
+
+<P>
+<CITE>Ishmail</CITE> windows follow
+<CITE>Motif</CITE>
+conventions for selecting,
+highlighting, and performing actions on selected items using the
+keyboard.
+
+<P>
+You can use certain combinations of keyboard keys to perform
+many of the functions you would perform with a mouse. These
+keyboard operations are referred to as
+<EM>mnemonics</EM>,
+keyboard
+<EM>accelerators</EM>, and shortcut key sequences.
+<P>
+For example, you can use the cursor motion keys
+-
+<B>right arrow</B>,
+<B>left arrow</B>,
+<B>up arrow</B>, and
+<B>down arrow</B>
+- to position the cursor on
+an item in a list (such as a mail message in the Main window).
+Once the cursor is on an item, you can select it by pressing the
+space bar. This is the keyboard equivalent of moving the mouse
+pointer to an item in a list and clicking that item to select it.
+
+<P>
+You can also use specially mapped key combinations (called
+mnemonics) to perform actions, such as
+<B>read</B>,
+<B>reply</B>,
+<B>forward</B>,
+<B>delete</B>, and so forth, on highlighted items. You can also perform
+these actions using certain keyboard combinations, called
+accelerators, such as the "C<B>ontrol</B>" key and/or the "M<B>eta</B>" key
+followed by one or more other keystrokes to perform actions
+similar to clicking and double-clicking menu items with the
+mouse.
+<P>
+For example, to read a message using the keyboard keys only:
+<UL>
+<LI>Use the
+<B>Tab</B> key to place primary focus in the
+<B>Folder
+Contents</B> area of the Main window.
+
+<P>
+
+</LI>
+<LI>Use the
+<B>up arrow</B> or
+<B>down arrow</B> keys to place the cursor
+on a mail message you wish to read and press the
+<B>Space
+bar</B> to select that message. Then type the appropriate
+<B>Meta</B>-key combination (in this case
+<KBD>Meta-M</KBD>) to open the
+<U>M</U><B>essage</B> pull-down window.
+<P>
+
+</LI>
+<LI>Next, either:
+<P>
+
+<UL>
+<LI>Cursor down to the
+<B>Re</B><U>a</U><B>d</B> option and press the
+<B>space bar</B> or the
+<B>Enter</B> key to select it, or
+<P>
+
+</LI>
+<LI>Press the
+<KBD>a</KBD> key (the mnemonic for the
+<B>Re</B><U>a</U><B>d</B>
+option), or,
+<P>
+
+</LI>
+<LI>Type
+<KBD>Control-R</KBD> (the keyboard accelerator
+sequence for the
+<B>Re</B><U>a</U><B>d</B> option).
+<P>
+(The
+<KBD>Control-R</KBD> function works even if the
+<U>M</U><B>essage</B> pull-down menu is not being displayed.)
+<P>
+
+</LI>
+</UL>
+</LI>
+</UL>
+<P>
+<B>NOTES:</B>
+<OL>
+<LI>The
+<B>Meta-key</B> sequence is used only for
+activating a menu in a window's menu bar.
+<P>
+
+</LI>
+<LI>Keyboard mapping may differ on some
+keyboards. On certain keyboards, for
+instance, the Alt-key sequence
+<KBD>Alt-M</KBD> may
+perform the same function that the Meta-key
+sequence
+<KBD>Meta-M</KBD> would perform on a
+different keyboard.
+
+<P>
+
+</LI>
+</OL>
+<P>
+Mnemonics are available for most functions in the pull-down
+menus. A
+mnemonic is indicated by the underscored letter in the
+menu item, such as the
+<B>a</B> in the
+<B>Re</B><U>a</U><B>d</B> menu item and the
+<B>P</B> in the
+<U>P</U><B>rint</B> menu item. Mnemonics are not case sensitive. You can type
+either a capital
+<B>P</B> or a lower-case
+<B>p</B> to perform the
+<U>P</U><B>rint</B> function.
+<P>
+<B>Control</B>-key sequences (accelerators) are available for many
+functions in the pull-down menus.
+<B>Control</B> key sequences are
+displayed to the right of each menu item for which the sequence
+is available. If a
+<B>Control</B>-key sequence is available for a menu
+option, you do not have to display the menu first. You can invoke
+the menu option directly without first displaying the menu.
+
+
+<H2><A NAME="ROOARgBlKG9X3cS">Shortcuts</H2>
+
+<P>
+You can add "shortcut" buttons to many of your
+<CITE>Ishmail</CITE> windows
+to facilitate performing actions on mail messages. Shortcut
+buttons enable you to bypass the normal menu selection process.
+See
+<A HREF="1dJ1QLB-zWwA0YK.html">Buttons Option</A> for more information about adding custom
+buttons to your
+<CITE>Ishmail</CITE> windows.
+
+<P>
+You can also create your own key
+sequences by adding the
+appropriate resource lines to your
+<I>app-defaults/Ishmail</I> file. For
+each character sequence you want to create, add two resource
+lines similar to these to your
+<I>app-defaults/Ishmail</I> file:
+
+<PRE>
+*mainShell*mainWindow*&lt;widgetname>.accelerator: Ctrl&lt;Key>X
+</PRE>
+<PRE>
+*mainShell*mainWindow*&lt;widgetname>.acceleratorText: Ctrl + X
+</PRE>
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>"<VAR>X</VAR>" can be any character that isn't already
+used for another function. Look in the menus
+to see which characters are already used.
+Look in the
+<B>Edit Custom Buttons</B> windows for the
+function widgetnames.
+
+<HR>
+</P>
+<P>
+See
+<A HREF="Xj52wFBX4N9X3cS.html">Ishmail Resources</A> for more information about customizing
+your
+<CITE>Ishmail</CITE> application with
+<CITE>X</CITE> and
+<CITE>Motif</CITE> resources.
+<P>
+See the
+<I>X User's Guide</I> for more information about mouse and
+keyboard conventions in the
+<CITE>X Window System</CITE> environment.
+
+<HR>
+Preceding Section: <A HREF="lLGD9FBBGK9X3cS.html">Mouse Conventions</A><BR>
+Following Section: <A HREF="tkHjaEBxDWwA0YK.html">About Ishmail</A><BR>
+Parent Section: <A HREF="0.JlaEBGGWwA0YK.html">About Ishmail User's Guide</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

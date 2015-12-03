@@ -1,0 +1,176 @@
+<HTML>
+<HEAD>
+ <TITLE>Display Source</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="PeeSlNBpSL9X3cS">Display Source</H1>
+
+<P>
+You can
+display the MIME-encoded representation of Rich Text
+mark-up attributes and of non-ASCII file-types, such as GIF,
+Binary, PostScript, and so forth by selecting the
+<U>D</U><B>isplay source</B>
+option. The displayed source includes the MIME content-type
+headers and all MIME-encoding. The
+<U>D</U><B>isplay source</B> function is
+useful if you wish to see the original format of a
+MIME-encoded
+message.
+<P>
+Click the
+<U>D</U><B>isplay source</B> option to display the MIME-encoded
+source for ASCII Rich Text and for non-ASCII file-types.
+<CITE>Ishmail</CITE>
+launches a special text window to display the text.
+
+<P>
+Three examples of the
+<U>D</U><B>isplay source</B> output are shown below.
+Examples one and two show (partial) source for included and
+attached GIF files. The third example shows the source for a Rich
+Text message.
+<P>
+<H4>Example: <A NAME="WdzfvNBKxL9X3cS">MIME Content (GIF file-type
+- inclusion)</H4>
+
+<PRE>
+*********************************************************
+<BR>* This message has been encoded using the Multipurpose
+<BR>* Internet Mail Extensions (MIME) format. The mail reader
+<BR>* you are using does not support MIME. To display the
+<BR>* non-text portions of this message you will need a
+<BR>* MIME-capable mail reader.
+<BR>*********************************************************
+<BR>--bODY.pART.bOUNDARY.2
+<BR>Content-Type: text/plain;
+<BR>        charset=""
+<BR>
+<BR>Hello Joan:
+<BR>
+<BR>Here's the picture you wanted of that beautiful
+<BR>car that won all the awards at the show:
+<BR>
+<BR>--bODY.pART.bOUNDARY.2
+<BR>Content-Type: image/gif
+<BR>Content-Transfer-Encoding: base64
+<BR>Content-Description: Rambler photo
+<BR>
+<BR>CgUBCAAAAABrA28CawNvAnNOQPm/tXt3cYR+eVpWUCsmIZZ3cYROSP//B
+<BR>P8E/wT//wQE/wT/BP8EBAQEBP///wABbAMAAAAAAAAAAAAAAAAAAAAAAA
+<BR>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZDsgZGST/GdsZGR
+<BR>jQGRkYyxkZGMYZxRkZGMUZGRjBGRkYGRjDGRnBGBjBGRnBGBjEGRkYwRk
+<BR>ZGMIZGRjBGRkYGwRkZGMIZGRjBGRkYwRkZwRgYGRgZGMQZGRjGGRkYxhk
+<BR>ZGNIZGRjEGRkYyGRjBGRkYyRkZGBkYxBkZGMIZGRjEGRkYyRkZGMEZGRg
+<BR>ZGMMZGRgZGMgZG0BkZGMkZGRjQGRkYzRkZGMoZGRjIGRkYwxkZGMEZGRj
+<BR>iGRkYwhkZGMEZGwxkZGNEZGQ7SGRkO9BkZGMMZGRjCGRnBGBjBGRkYwhk
+<BR>ZGBkYGRgZGBnBG
+<BR>.................................................
+<BR>........................(numerous lines of output
+<BR>removed for the sake of brevity).................
+<BR>.................................................
+<BR> 
+<BR>--bODY.pART.bOUNDARY.2--
+</PRE>
+<P>
+<H4>Example: <A NAME="ldzfvNBKxL9X3cS">MIME Content (GIF file-type
+- attachment)</H4>
+
+<PRE>
+--bODY.pART.bOUNDARY.2
+<BR>Content-Type: text/plain;
+<BR>        charset="us-ascii"
+<BR>
+<BR>David:
+<BR>
+<BR>Here's the attachment I promised of the Shuttle Orbiter.
+<BR>Hope you like it!
+<BR>
+<BR>--bODY.pART.bOUNDARY.1
+<BR>Content-Type: message/external-body;
+<BR>        access-type="anon-ftp";
+<BR>        name="shuttle.gif";
+<BR>        site="ames.arc.nasa.gov";
+<BR>        directory="/pub/GIF";
+<BR>        mode="image";
+<BR>        expiration="March 9, 1994";
+<BR>        size="164 Kb"
+<BR>
+<BR>Content-Type: image/gif
+<BR>Content-Description: NASA photo of the Shuttle Orbiter
+<BR>
+<BR>--bODY.pART.bOUNDARY.1--
+</PRE>
+<P>
+<H4>Example: <A NAME="ec8wJVB4NK9X3cS">MIME Content (Rich Text
+- inclusion )</H4>
+
+<PRE>
+*********************************************************
+<BR>* This message has been encoded using the Multipurpose
+<BR>* Internet Mail Extensions (MIME) format. The mail reader
+<BR>* you are using does not support MIME. To display the
+<BR>* non-text portions of this message you will need a
+<BR>* MIME-capable mail reader such as Ishmail
+<BR>* (support@hal.com).
+<BR>*********************************************************
+<BR>--bODY.pART.bOUNDARY.3
+<BR>
+<BR>FOR SALE
+<BR>
+<BR>1974 Bronco 4X4
+<BR>
+<BR>150,000 easy miles
+<BR>
+<BR>Options:
+<BR>Power Steering
+<BR>Windshield Wipers
+<BR>
+<BR>Excellent condition except for transmission,
+<BR>brakes, body and interior
+<BR>
+<BR>Call for Price
+<BR>
+<BR>
+<BR>--bODY.pART.bOUNDARY.3
+<BR>Content-Type: text/richtext
+<BR>Content-Transfer-Encoding: quoted-printable
+<BR>
+<BR>&lt;Bigger>&lt;Bold>FOR SALE&lt;/Bold>&lt;/Bigger>&lt;nl>
+<BR>&lt;nl>
+<BR>1974 Bronco 4X4&lt;nl>
+<BR>&lt;nl>
+<BR>&lt;Italic>&lt;Bold>150,000 easy miles&lt;/Bold>&lt;/Italic>&lt;nl>
+<BR>&lt;nl>
+<BR>&lt;Bold>&lt;Underline>Options:&lt;/Underline>&lt;/Bold>&lt;nl>
+<BR>&lt;Indent>Power Steering&lt;/Indent>&lt;nl>
+<BR>&lt;Indent>Windshield Wipers&lt;/Indent>&lt;nl>
+<BR>&lt;nl>
+<BR>&lt;Smaller>Excellent condition except for transmission,&lt;/Smaller>&lt;nl>
+<BR>&lt;Smaller>brakes, body and interior&lt;/Smaller>&lt;nl>
+<BR>&lt;nl>
+<BR>Call for Price&lt;nl>
+<BR>&lt;nl>
+<BR>&lt;nl>
+<BR>
+<BR>--bODY.pART.bOUNDARY.3--
+</PRE>
+
+<H2><A NAME="xdzfvNBKxL9X3cS">See Also</H2>
+
+<P>
+Please refer to
+<A HREF="http://ds.internic.net/rfc/rfc1521.txt">Internet RFC 1521</A> and
+<A HREF="http://ds.internic.net/rfc/rfc1341.txt">Internet RFC 1341</A>
+(<CITE>Multipurpose Internet Mail Extension</CITE>), September 1993, and
+June 1992, respectively, by N. Borenstein, and N. Freed.
+
+<HR>
+Preceding Section: <A HREF="HeeSlNBpSL9X3cS.html">Show All Headers Option</A><BR>
+Following Section: <A HREF="SeeSlNBpSL9X3cS.html">Re-read Mailcap File</A><BR>
+Parent Section: <A HREF="HKeSlNBpSL9X3cS.html">Reading Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

@@ -1,0 +1,29 @@
+#!/usr/bin/perl
+#
+# output a binary file, marked as Content-Type: application/octet-stream
+#
+# Tom Lang 2/95
+
+#
+# get file path name
+#
+$name = $ENV{QUERY_STRING};
+$file = "/space/ftp/pub/" . $name;
+#$encoding = "x-gzip";
+#$encoding = "x-compress" if ($name =~ /Z$/);
+
+open(IN, "<$file") || die;
+
+#
+# output header
+#
+print <<_HDR_;
+Content-Type: application/octet-stream
+
+_HDR_
+#
+# transfer the file
+#
+while( read(IN, $buffer, 16384 ) ) {
+	print $buffer;
+}

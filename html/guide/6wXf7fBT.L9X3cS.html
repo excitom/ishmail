@@ -1,0 +1,206 @@
+<HTML>
+<HEAD>
+ <TITLE>Folder Preferences Option</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="6wXf7fBT.L9X3cS">Folder Preferences Option</H1>
+
+<P>
+The
+<B>F</B><U>o</U><B>lders ...</B> option lets you change the way mail folders are
+handled and change the way folder names are shown in the
+<B>Open
+Folders</B> area of the Main window.
+
+<P>
+To modify your folder configuration, click the
+<B>F</B><U>o</U><B>lders ...</B> option. The
+<B>Folder</B>
+<B>Preferences</B> window appears.
+<P>
+<H4>Figure: <A NAME="FwXf7fBT.L9X3cS">Folder Preferences Window</H4>
+
+<IMG SRC="6wXf7fBT.L9X3cS.extobj.1.gif">
+<P>
+User preferences that can be changed include:
+<UL>
+<LI>Choice of folder icons
+<P>
+
+</LI>
+<LI>Sort order of folder names
+<P>
+
+</LI>
+<LI>Default data type when creating new folders
+<P>
+
+</LI>
+<LI>How folder names are presented in file selection dialogs
+<P>
+
+</LI>
+<LI>Which folders will open at start-up
+<P>
+
+</LI>
+<LI>Whether to remember which folders were open upon exit
+<P>
+
+</LI>
+</UL>
+
+<H2><A NAME="rQc3vyBctI9X3cS">Folder Icons</H2>
+
+<P>
+By default, folder names are shown using icon labels. You can
+choose to use smaller icons instead, so that more names can be
+visible in the
+<B>Open Folders</B> area without requiring scroll bars. Or,
+you can choose to eliminate the icons altogether and just show
+the folder names, which results in a very compact list of names.
+<P>
+Toggle
+<KBD>Off</KBD> the
+<B>Sort Folders</B> button to show folder icons in the order
+they are opened. By default, this button is
+<KBD>On</KBD> and folder icons are
+sorted alphabetically by folder name.
+
+<H2><A NAME="vQc3vyBctI9X3cS">Folder Type</H2>
+
+<P>
+When you create a new folder (see
+<A HREF="f9tRqFB0aG9X3cS.html#LLY.bKBv3M9X3cS">Folder Menu Options</A>), you can
+choose from one of three different formats for the folder. Your
+choices are:
+<DL>
+<DT>UNIX (<CITE>mailx</CITE>-type)
+<DD>This is the default on most UNIX systems. Your In-Box
+folder most likely has this format. Each folder is a file
+containing zero or more messages. Message boundaries
+are marked by a line starting with the word "<KBD>From</KBD>" followed by a blank space.
+<P>
+
+<DT>MH-type
+<DD>This is the folder type supported by the
+<CITE>mh</CITE> program, and
+related programs (<CITE>xmh</CITE>,
+<CITE>exmh</CITE>, etc.). It is also to format for
+<CITE>USENET</CITE> news groups. Each folder is a directory
+containing zero or more files, each of which contains one
+message.
+<P>
+
+<DT>MMDF-type
+<DD>This is the folder type supported by the
+<CITE>MMDF</CITE> program.
+Similar to UNIX folders, each folder is a file containing
+zero or more messages. The difference is that in
+<CITE>MMDF</CITE>
+folders the message boundary is a line containing four
+<KBD>Ctrl-A</KBD> characters.
+<P>
+
+</DL>
+<P>
+All
+<CITE>Ishmail</CITE> functions work with each folder type. Which folder
+type you select is determined mainly by compatibility with other
+mail programs. For example, if you have been using
+<CITE>xmh</CITE> and
+want to switch to
+<CITE>Ishmail</CITE> you will most likely choose to work with
+MH-style folders.
+<P>
+Toggle
+<KBD>Off</KBD> the
+<B>Confirm type before creating new folders</B> button if you
+intend to always use the same folder type, and don't want to be
+asked about it each time you create a folder.
+<P>
+This button is also found in the
+<B>Confirmations</B> dialog (see
+<A HREF="07--uyBk2I9X3cS.html">Confirmations Option</A>). You can set it either place.
+
+<H2><A NAME="9Rc3vyBctI9X3cS">Showing Folder Names in File Selection
+Dialogs</H2>
+
+<P>
+<CITE>Ishmail</CITE> uses a common
+<B>File Selection</B> dialog for specifying file names
+or folder names. It contains a list showing directory names and a
+list showing file names.
+<P>
+When you use the
+<B>File Selection</B> dialog to choose a folder name, the
+names of MH folders appear in both lists. If you select an MH
+folder name from the
+<B>Directory Name</B> list, it is treated as a directory
+rather than a folder. If you select an MH folder name from the
+<B>File
+Name List</B>, it is treated as a mail folder.
+
+<P>
+Showing the name in both lists can be confusing. If you are not
+using MH folders, you may want to toggle
+<KBD>Off</KBD> the
+<B>Show MH folders
+in file selection dialogs</B> button so that directory names will not appear
+in the
+<B>Folder Name</B> list.
+
+<P>
+Conversely, if you are using MH folders you may want to Toggle
+<KBD>Off</KBD> the
+<B>Show Unix and MMDF folders in file selection dialogs</B> folders button
+so that only directory names (MH folder names) will appear in
+the
+<B>Folder Name list</B>.
+
+<H2><A NAME="KRc3vyBctI9X3cS">Initial Folders</H2>
+
+<P>
+You can explicitly specify folders which should be automatically
+opened when
+<CITE>Ishmail</CITE> starts up, by entering their names in the
+<B>Initial Folders:</B> field.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>A
+<KBD>+</KBD> character or an
+<KBD>=</KBD> character at the
+beginning of a name is a synonym for your
+default folder directory, typically
+<I>$HOME/Mail</I>.
+<HR>
+</P>
+<P>
+Alternatively, you can specify folders which should automatically
+be opened when
+<CITE>Ishmail</CITE> starts up, by toggling
+<KBD>ON</KBD> the
+<B>Remember
+folders on exit:</B> button. If you do so, any folders that are open at the
+time you exit
+<CITE>Ishmail</CITE> will be automatically opened the next time
+you start the program.
+
+<H2><A NAME="FbDubfBjVJ9X3cS">Applying Your Changes</H2>
+
+<P>
+Apply or cancel your changes using the row of buttons across the
+bottom of the window. See
+<A HREF="1j.-uyBk2I9X3cS.html#9eH1QLB-zWwA0YK">Applying Your Changes</A>.
+
+
+<HR>
+Preceding Section: <A HREF="MR33AUB4IG9X3cS.html">Message List Option</A><BR>
+Following Section: <A HREF="f6K1QLB-zWwA0YK.html">Sort Option</A><BR>
+Parent Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>
