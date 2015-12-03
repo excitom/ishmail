@@ -1,0 +1,42 @@
+#!/bin/sh
+
+usage()
+{
+   echo "Usage: build_list_c HGL_srcdir P|O class_name type_name"
+   exit 1;
+}
+
+HGLSRC=$1
+
+LTYPE=$2
+CLASS=$3
+ETYPE=$4
+
+test -z "$HGLSRC"	&& usage
+test -z "$LTYPE"	&& usage
+test -z "$CLASS"	&& usage
+test -z "$ETYPE"	&& usage
+
+LIST=$HGLSRC/${LTYPE}ListC
+
+test -f "$LIST.meth"  || exit 0
+
+rm -f $CLASS.C
+
+#
+# Build .C file
+#
+
+echo "Creating $CLASS.C"
+echo "//"			>> $CLASS.C
+echo "// $CLASS.C"		>> $CLASS.C
+echo "//"			>> $CLASS.C
+echo ""				>> $CLASS.C
+echo "#include <config.h>"	>> $CLASS.C
+echo ""				>> $CLASS.C
+echo "#include \"$CLASS.h\""	>> $CLASS.C
+echo ""				>> $CLASS.C
+cat $LIST.meth \
+| sed -e "s/CLASS/$CLASS/g" \
+| sed -e "s/TYPE/$ETYPE/g" \
+>> $CLASS.C

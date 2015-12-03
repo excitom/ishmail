@@ -1,0 +1,14 @@
+#!/bin/sh
+exec perl -x $0 ${1+"$@"}
+#!perl
+
+# convert a file containing PostScript code into a C string constant,
+# for inclusion in a C program.
+
+while(<>) {
+	if (/\n$/) {
+		chop;
+	}
+	$x .= $_;
+}
+printf("static char pscode[] = \"%s\";\n",$x);

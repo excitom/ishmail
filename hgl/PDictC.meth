@@ -1,0 +1,302 @@
+/* 
+ *          HAL COMPUTER SYSTEMS INTERNATIONAL, LTD.
+ *                  1315 Dell Avenue
+ *                  Campbell, CA  95008
+ *
+ * Author: Greg Hilton
+ * Contributors: Tom Lang, Frank Bieser, and others
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ */
+
+/*
+ *  PDictC.meth -- method definition file for class PDictC
+ *
+ *   This type of dictionary stores only pointers to the keys and values
+ *   ODictC.h stores the actual keys and values
+ */
+
+/* Copy one dictionary to another */
+
+CLASS&
+CLASS::operator=(const CLASS& d)
+{
+   int	count = d.size();
+   /* Add each entry in source to destination */
+   for (int i=0; i<count; i++) {
+      ENTRY	*e = d[i];
+      add(e->key, e->val);
+   }
+   return *this;
+}
+
+int
+CLASS::indexOf(const ENTRY& entry) const
+{
+   return ENTLIST::indexOf(entry);
+}
+
+int
+CLASS::indexOf(const ENTRY* entry) const
+{
+   return ENTLIST::indexOf(entry);
+}
+
+int
+CLASS::includes(const KEYTYPE& key) const
+{
+   return (indexOf(key) != NULL_INDEX);
+}
+
+int
+CLASS::includes(const KEYTYPE* kp) const
+{
+   return (indexOf(kp) != NULL_INDEX);
+}
+
+int
+CLASS::includes(const ENTRY& entry) const
+{
+   return ENTLIST::includes(entry);
+}
+
+int
+CLASS::includes(const ENTRY* entry) const
+{
+   return ENTLIST::includes(entry);
+}
+
+void
+CLASS::remove(unsigned index)
+{
+   if ( index < _count ) {
+      ENTRY	*entry = _list[index];
+      if (entry) {
+	 ENTLIST::remove(index);
+	 delete entry;
+      }
+   }
+}
+
+void
+CLASS::remove(const ENTRY& entry)
+{
+   ENTLIST::remove(entry);
+   delete (ENTRY *)&entry;
+}
+
+void
+CLASS::remove(const ENTRY* entry)
+{
+   if (entry) {
+      ENTLIST::remove(entry);
+      delete (ENTRY *)entry;
+   }
+}
+
+/* Printing */
+
+void
+CLASS::printOn(ostream& strm) const
+{
+   ENTLIST::printOn(strm);
+}
+
+/*-------------------------------------------------------------*/
+
+int
+CLASS::indexOf(const KEYTYPE& key) const
+{
+/* Loop through list, checking keys for a match */
+   register int i;
+   for (i=0; i<_count; i++) {
+
+/* If this one matches, return the index */
+      if ( *(_list[i]->key) == key ) {
+	 return i;
+      }
+   }
+   return NULL_INDEX;
+}
+
+/*-------------------------------------------------------------*/
+
+int
+CLASS::indexOf(const KEYTYPE* kp) const
+{
+   if ( !kp ) return NULL_INDEX;
+
+/* Loop through list, checking key pointers for a match */
+   register int i;
+   for (i=0; i<_count; i++) {
+
+/* If this one matches, return the index */
+      if ( _list[i]->key == (KEYTYPE *)kp ) {
+	 return i;
+      }
+   }
+   return NULL_INDEX;
+}
+
+/*-------------------------------------------------------------*/
+
+VALTYPE*
+CLASS::definitionOf(const KEYTYPE& key) const
+{
+   int	i = indexOf(key); /* Look up this entry */
+   return ((i==NULL_INDEX) ? (VALTYPE*)NULL : _list[i]->val);
+}
+
+/*-------------------------------------------------------------*/
+
+VALTYPE*
+CLASS::definitionOf(const KEYTYPE* kp) const
+{
+   int	i = indexOf(kp); /* Look up this entry */
+   return ((i==NULL_INDEX) ? (VALTYPE*)NULL : _list[i]->val);
+}
+
+/*-------------------------------------------------------------*/
+
+VALTYPE*
+CLASS::valOf(const int index) const
+{
+   return _list[index]->val;
+}
+
+/*-------------------------------------------------------------*/
+
+KEYTYPE*
+CLASS::keyOf(const int index) const
+{
+    return _list[index]->key;
+}
+
+/*-------------------------------------------------------------*/
+
+ENTRY*
+CLASS::entryOf(const KEYTYPE& key) const
+{
+   int	i = indexOf(key); /* Get index of key */
+   return ((i==NULL_INDEX) ? (ENTRY*)NULL : _list[i]);
+}
+
+/*-------------------------------------------------------------*/
+
+ENTRY*
+CLASS::entryOf(const KEYTYPE* kp) const
+{
+   int	i = indexOf(kp); /* Get index of key */
+   return ((i==NULL_INDEX) ? (ENTRY*)NULL : _list[i]);
+}
+
+/*-------------------------------------------------------------*/
+
+ENTRY*
+CLASS::add(const KEYTYPE* kp, const VALTYPE* vp)
+{
+/* Check if this entry is already present */
+
+   if ( includes(kp) ) {
+      if ( definitionOf(kp) != vp ) {
+	 return (ENTRY*)NULL; /* Same key with different value */
+      } else {
+	 return entryOf(kp);
+      }
+   } else { /* Add it */
+      /* Allocate a new entry */
+      ENTRY	*ent = new ENTRY(kp, vp);
+      append(ent);
+      return ent;
+   }
+}
+
+/*-------------------------------------------------------------*/
+/* Change the definition for this key */
+
+ENTRY*
+CLASS::modify(const KEYTYPE& key, const VALTYPE* vp)
+{
+   int	i = indexOf(key); /* Look up this entry */
+
+   if ( i == NULL_INDEX ) {
+      return (ENTRY*)NULL;
+   } else {
+      _list[i]->val = (VALTYPE *)vp; /* Change it */
+      return _list[i];
+   }
+}
+
+/*-------------------------------------------------------------*/
+
+ENTRY*
+CLASS::modify(const KEYTYPE* kp, const VALTYPE* vp)
+{
+   int	i = indexOf(kp); /* Look up this entry */
+
+   if ( i == NULL_INDEX ) {
+      return (ENTRY*)NULL;
+   } else {
+      _list[i]->val = (VALTYPE *)vp; /* Change it */
+      return _list[i];
+   }
+}
+
+/*-------------------------------------------------------------*/
+
+ENTRY*
+CLASS::modify(unsigned index, const VALTYPE* vp)
+{
+   if (index < _count) {
+      _list[index]->val = (VALTYPE *)vp; /* Change it */
+      return _list[index];
+   } else {
+      return (ENTRY*)NULL;
+   }
+}
+
+/*-------------------------------------------------------------*/
+
+void
+CLASS::remove(const KEYTYPE& key)
+{
+   int	i = indexOf(key); /* Look up this entry */
+
+   if ( i != NULL_INDEX ) {
+      ENTRY	*entry = _list[i];
+      if (entry) {
+	 ENTLIST::remove(i);
+	 delete entry;
+      }
+   }
+}
+
+/*-------------------------------------------------------------*/
+
+void
+CLASS::remove(const KEYTYPE* kp)
+{
+   int	i = indexOf(kp); /* Look up this entry */
+
+   if ( i != NULL_INDEX ) {
+      ENTRY	*entry = _list[i];
+      if (entry) {
+	 ENTLIST::remove(i);
+	 delete entry;
+      }
+   }
+}

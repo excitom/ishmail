@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Usage: statrun status-file command command-args
+#
+# This script runs a command and places the exit code in the file specified
+#    in arg 1.  We do this because xterm will not return the status of the
+#    exec'd process.
+#
+
+STATFILE=$1
+shift
+eval $*
+echo $? > $STATFILE

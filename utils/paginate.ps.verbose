@@ -1,0 +1,867 @@
+%!PS-Adobe-3.0
+%%Title: MIME Rich Text converted to PostScript
+%%DocumentNeededResources: font Courier Times-Roman Helvetica
+%
+%	 Copyright (c) 1996 H&L Software, Inc.
+%	 All rights reserved
+%	 Written by Tom Lang 1/94
+%
+%	This program is free software; you can redistribute it and/or
+%	modify it under the terms of the GNU General Public License
+%	as published by the Free Software Foundation; either version 2
+%	of the License, or (at your option) any later version.
+%
+%	This program is distributed in the hope that it will be useful,
+%	but WITHOUT ANY WARRANTY; without even the implied warranty of
+%	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%	GNU General Public License for more details.
+%
+%	You should have received a copy of the GNU General Public License
+%	along with this program; if not, write to the Free Software
+%	Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+% 
+% Function: Paginate and format MIME Rich Text/Enriched Text into PostScript.
+%	This is the second of two stages. The first stage is a host-based filter
+%	which tokenizes the Rich Text. Most of the formatting work is done in
+%	this stage, to avoid needing to know font metrics in the host filter.
+%
+%	Input from the first stage is a stream of macros. Two passes are
+%	made over the macros, first to gather enough stuff to fill one line
+%	of output, then again to output the line. 
+%
+%	The main macro is the "C" macro. It takes a set of four parameters,
+%	delimited by square brackets. The macro name follows the parameters.
+%
+%	[ (hello) 24 /Helvetica 0 ] C
+%
+%	The first parameter is the character string to output. Text is broken
+%	up one word per macro, to facilitate pagination and justification. The
+%	PostScript engine is used to calculate string lengths and heights
+%	rather than understanding font metrics in the host-based filter.
+%
+%	The second and third parameters are font size and name. These can be
+%	specified as "don't cares" if unchanged from the previous token.
+%
+%	The last parameter is an action code, defined as follows:
+%		 0 = show string
+%		 1 = show underlined string
+%		 2 = show space character
+%		 3 = show underlined space
+%		 4 = show tab
+%		 5 = show underlined tab
+%		 6 = show subscript string
+%		 7 = show underlined subscript
+%		 8 = show superscript string
+%		 9 = show underlined superscript
+%
+%	Also, a set of macros are defined for operations which apply
+%	globally or to an entire line. These are:
+%		JU	Set justification mode (e.g. left, right, center, both)
+%		ILM	Increment left margin
+%		DLM	Decrement left margin
+%		DILM	Increment left margin, delayed until soft newline.
+%		DDLM	Decrement left margin, delayed until soft newline.
+%		IRM	Increment right margin
+%		DRM	Decrement right margin
+%		DIRM	Increment right margin, delayed until soft newline.
+%		DDRM	Decrement right margin, delayed until soft newline.
+%		NL	Force new line
+%		NP	Force new page
+%
+%	And, there are several global variables which can be set by the
+%	host-based filter:
+%		TOP	Top page margin
+%		BOT	Bottom page margin
+%		LM	Left page margin
+%		RM	Right margin
+%		BOX	If "true", draw a box around the text on the page
+%		HDR	If "true", print running headers on each page
+%		MSG	The text of the running header
+%		PG	Page number, to be printed in the running header
+%
+%%EndComments
+%%BeginDefaults
+%
+% Change font encoding vector to use ISO Latin 1, so that European language
+% characters print correctly
+%
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Helvetica exch definefont pop
+/Times-Roman findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Times-Roman exch definefont pop
+/Courier findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Courier exch definefont pop
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Helvetica-Bold exch definefont pop
+/Times-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Times-Bold exch definefont pop
+/Courier-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Courier-Bold exch definefont pop
+/Helvetica-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Helvetica-Oblique exch definefont pop
+/Times-Italic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Times-Italic exch definefont pop
+/Courier-Oblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Courier-Oblique exch definefont pop
+/Helvetica-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Helvetica-BoldOblique exch definefont pop
+/Times-BoldItalic findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Times-BoldItalic exch definefont pop
+/Courier-BoldOblique findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding ISOLatin1Encoding def
+  currentdict
+end
+/Courier-BoldOblique exch definefont pop
+%
+% Define literal strings
+%
+/x (X) def		% "don't care" string
+/s ( ) def		% single space character
+/SPACE 16#20 def	% hex literal value of a space
+/BOX false def		% don't draw a box around the text
+/HDR false def		% don't print running headers
+/PG 1 def		% start numbering pages with 1
+%
+% shorthand for commonly used tokens
+/S {[s 0 x 2] C} def	% token containing a space character, no font change
+/US {[s 0 x 3] C} def	% token containing an underlined space , no font change
+/T {[x 0 x 4] C} def	% token containing a tab character, no font change
+/UT {[x 0 x 5] C} def	% token containing an underlined tab , no font change
+%
+% page coordinates - NOTE: these may be overridden later in the Setup code
+%  Standard PostScript: 72 points = 1 inch
+%  0,0 = lower left corner. 72,720 = 1" from left, 10" from bottom
+/LM 72 def	% left margin
+/NLM LM def	% "new" left margin
+/RM 540 def	% right margin
+/NRM RM def	% "new" right margin
+/TOP 720 def	% top margin
+/BOT 72 def	% bottom margin
+/X LM def	% X coordinate
+/Y TOP def	% Y coordinate
+%
+% copy coordinates for the page. this is done since indentation can 
+% temporarily change the margins, but we don't want this to cause the
+% running headers or outline boxes to move.
+% note that the margins are expanded by 2 pts, so the outline box won't
+% actually touch the text.
+/PLM 70 def /PRM 542 def /PTOP 722 def /PBOT 70 def
+%
+% internal variables
+/REM 0 def	% length string (remainder) which won't fit on current line
+/TK 0 def	% count of tokens in the current line
+/SC 0 def	% count of space characters in the current line
+/JU 0 def	% justification flag, 0=left, 1=center, 2=right, 3=full
+/FH 0 def	% font height
+/MFH 0 def	% max font height in a line (largest font used in line)
+%%EndDefaults
+%%BeginProlog
+%
+% subroutines for adjusting left and right margins
+%   these assume the unit of change is .5 inch. to do something different
+%   is OK, and can be done "manually," these are handy shortcuts
+%   LM is the left margin. NLM is the "new" left margin, which doesn't take
+%   effect until next new line. in the ILM macro, NLM and LM change in sync.
+/ILM {	% immediate increment left margin
+  LM 36 add
+  /LM exch def
+  /NLM LM def
+  X 36 add
+  /X exch def
+} def
+/DLM {	% immediate decrement left margin
+  LM 36 sub
+  /LM exch def
+  /NLM LM def
+  X 36 sub
+  /X exch def
+} def
+/DILM {	% delayed increment left margin
+  NLM 36 add
+  /NLM exch def
+} def
+/DDLM {	% delayed delayed left margin
+  NLM 36 sub
+  /NLM exch def
+} def
+/IRM {	% increment right margin
+  RM 36 sub
+  /RM exch def
+  /NRM RM def
+} def
+/DRM { % decrement right margin
+  RM 36 add
+  /RM exch def
+  /NRM RM def
+} def
+/DIRM {	% delayed increment right margin
+  NRM 36 sub
+  /NRM exch def
+} def
+/DDRM { % delayed decrement right margin
+  NRM 36 add
+  /NRM exch def
+} def
+%
+% subroutine - check for end of line
+%   REM is the length of the token than was too much for this line. it is used
+%   to initialize the length of the next line.
+/LE {
+  dup 			% leave copy of stringwidth on top of stack
+  dup /REM exch def	% save length in case margin exceeded
+  X add			% increment X coordinate
+  1 TK add		% increment token count
+  /TK exch def		% update variable
+  dup RM gt 		% see if right margin exceeded
+	{pop SNL}	% yes - discard X coord and call newline routine
+	{/X exch def}	% no - update X variable
+  ifelse
+} def
+%
+% subroutine to keep track of current font height (FH) and maximum font
+%   height (MFH). MFH exceeds FH if the font size was increased for this line
+%   then subsequently decreased. it is assumed that the font size is on top
+%   of the stack and must remain there after this subroutine is done.
+/FFH {
+  dup			% copy font size, to update MFH variable
+  dup			% copy again, for "gt" test
+  dup /FH exch def	% copy again to update FH variable
+  MFH gt		% see if larger than current max
+	{/MFH exch def}	% yes - update variable
+	{pop}		% no - discard
+  ifelse
+} def
+%
+% subroutine to change fonts. assumes top element is font name and top-1
+% is font size.
+/F {
+  findfont
+  exch			% bring font size to top
+  FFH			% update FH and MFH variables
+  scalefont
+  setfont
+} def
+%
+% pass 2 version of the F subroutine, which doesn't bother with the FH
+% and MFH variables (which only matter to pass 1)
+/F2 {findfont exch scalefont setfont} def
+%
+% subroutine which checks if a line ends with space character(s). if
+%  so, they are discarded (line is truncated).
+/TRUNC {
+  count 0 gt			% any tokens on stack ? (might just be NL)
+  {
+    exch			% swap length and token at top of stack
+    A dup			% get and copy token type
+    2 eq			% last token a space ?
+    exch 3 eq			% last token underlined space?
+    or
+    {
+	pop dup			% yes - discard token, copy the length
+	L exch sub		%  subtract space from line length
+	/L exch def
+	TK 1 sub		%  decrement token count
+	/TK exch def
+	s stringwidth pop
+	exch div		% find number of spaces
+	SC exch sub		% decrement count of spaces
+	/SC exch def
+    }
+    {exch}			% no - restore stack order
+    ifelse
+  } if
+} def
+%
+% subroutine to calculate X coord for start of centered line
+/SXCJ {
+  RM LM sub	% yes - get line length
+  2 div		%  half of line
+  L 2 div	%  half of text in line
+  sub		%  distance to indent
+  LM add	%  starting X coordinate
+  /X exch def
+} def
+%
+% subroutine to calculate X coord for start of right justified line
+/SXRJ {
+  RM L sub	% subtract text length from right margin
+  /X exch def
+} def
+%
+% subroutine to calculate X coord for start of fully justified line
+%  also, the amount to pad each space character is calculated
+/SXFJ {
+  /X LM def			% start at left margin
+  SC 0 gt			% any spaces in the line ?
+  {
+	RM LM sub		% find width between margins
+	dup 4 div 3 mul		% find 3/4 of max line length
+	L gt			% line less than 3/4 of max ?
+	{
+		/ADJ 0 def	% yes - don't bother to adjust
+		pop		%   discard line length
+	}
+	{			% line longer than half of max
+		L sub		% find amount of padding needed
+		SC div		% find amount to add to each space char
+		/ADJ exch def
+	}
+	ifelse
+  }
+  {/ADJ 0 def}			% no spaces, no adjustment needed
+  ifelse
+} def
+%
+% subroutine to calculate line starting X coordinate
+%   L=line length, LM=left margin, RM=right margin
+%   if left justified (JU=0), X = LM
+%   if centered (JU=1) (RM-LM)/2-(L/2)+LM
+%   if right justified, X = RM - L
+/SX {
+  TRUNC				% truncate trailing space, if any
+  JU 0 eq			% left justify ?
+	{ /X LM def }		% yes - X = left margin
+	{
+		JU 1 eq		% center justify ?
+		{SXCJ}		% yes
+		{
+		  JU 2 eq	% right justify ?
+		  {SXRJ}	% yes
+		  {SXFJ}	% else - full justification assumed
+		  ifelse
+		}
+	ifelse
+	}
+  ifelse
+} def
+%
+% subroutine to calculate line starting Y coordinate
+%   subtract the maximum font height (MFH) from Y coordinate. if beyond bottom 
+%   margin (BOT) page eject and start again at top margin (TOP). set new MFH 
+%   to current line height (FH).
+/SY {
+  Y MFH sub		% move down enough to fit biggest font in line
+  dup /Y exch def	% save Y coordinate
+  BOT lt		% past bottom margin ?
+  {
+	showpage	% yes - page eject
+	TOP MFH sub	%  Y coordinate = top margin - max font height
+	/Y exch def
+	BOX {DB} if	% conditionally draw box around page
+	HDR {PH} if	% conditionally print running header
+  }
+  if
+  /MFH FH def		% reset max font height to current font height
+} def
+%
+% subroutine to calculate length of text in line
+/LEN {
+  X LM sub	% subtract left margin from X coordinate
+  /L exch def
+} def
+%
+% subroutine to position to starting X/Y coordinates for a line
+%   find current line length (LEN), starting X & Y coordinates (SX,SY),
+%   and move to that spot.
+/LS {
+  LEN		% find length of text in line
+  SX SY		% get starting X and Y coordinates
+  X Y moveto	% postion to start of line
+} def
+%
+% subroutine to extract action code from token
+/A {dup 3 get} def
+%
+%
+% case statement, process token in pass one
+/C {
+ dup 			% copy token for pass 2
+ A 0 eq
+  {SH1}			% 0 = show string
+  {A 1 eq
+   {SH1}		% 1 = show underlined string
+    {A 2 eq
+     {SP1}		% 2 = show space character
+     {A 3 eq
+      {SP1}		% 3 = show underlined space
+      {A 4 eq
+       {TB1}		% 4 = tab
+       {A 5 eq
+        {TB1}		% 5 = underlined tab
+        {A 6 eq
+         {B1}		% 6 = show subscript string
+         {A 7 eq
+          {B1}		% 7 = underlined subscript
+          {A 8 eq
+           {B1}		% 8 = show superscript string
+           {A 9 eq
+            {B1}	% 9 = underlined superscript
+            {(E1) show}	% error
+           ifelse
+         } ifelse
+        } ifelse
+       } ifelse
+      } ifelse
+     } ifelse
+    } ifelse
+   } ifelse
+  } ifelse
+ } ifelse
+} def
+%
+% pass 1, calculate length of string
+%  assumes token array is on top of stack
+/SH1 {
+  aload			% unpack array
+  pop pop		% discard array copy and action code
+  dup x eq		% font changing ?
+	{ pop pop}	% no - discard "don't cares"
+	{F}		% yes - change font
+  ifelse
+  stringwidth pop	% get length of string, discard Y coordinate
+  dup LL gt		% this string wider than line size ?
+	{pop LL}	% yes - truncate
+  if
+  LE			% check if end of line reached
+} def
+%
+% pass 1, calculate length of space characters
+%  assumes token array is on top of stack
+/SP1 {
+  aload			% unpack array
+  pop pop		% discard array copy and action code
+  dup x eq		% font changing ?
+	{pop pop}	% no - discard "don't cares"
+	{F}		% yes - change font
+  ifelse
+  stringwidth pop	% get length of string, discard Y coordinate
+  dup X add		% increment X coord, leave copy of length on stack
+  /X exch def
+  dup			% copy for division
+  s stringwidth pop	% get size of one space
+  div truncate		% find how many spaces in string
+  X RM gt		% right margin exceeded ?
+  {
+	pop 		% yes - discard number of  spaces
+	X exch sub	%   reset X coordinate
+	/X exch def
+	pop		%   discard pass 2 token copy
+	/REM 0 def	%   no remainder
+	NL		%   show the line
+  }
+  {
+	TK 1 add	% increment token count
+	/TK exch def	% update variable
+	SC add		% increment count of spaces in line
+	/SC exch def	% update variable
+  }
+  ifelse
+} def
+%
+% pass 1, calculate length of tab
+%   if right margin exceeded, the tab is discarded and the line is shown
+/TB1 {
+  pop			% discard token array
+  X 72 add		% calculate next 1 inch (72 pt) boundary
+  72 div truncate
+  72 mul
+  dup X sub		% calculate tab length
+  exch			% swap new X coord to top
+  dup /X exch def	% update X coord
+  RM gt			% right margin exceeded ?
+	{ pop pop	% yes - discard new X coord and pass 2 token copy
+	  /REM 0 def	%   no remainder
+	  NL		%   show the line
+	}
+	{ TK 1 add	% increment token count
+	  /TK exch def	% update variable
+	}
+  ifelse
+} def
+%
+% hard newline encountered, terminate pass 1, start pass 2
+%   a for loop is executed once for each token in the line, TK holds
+%   the number of tokens. the stack is rolled to put the left most token
+%   at the top of the stack, C2 is executed to process the token and pop it
+%   off the stack. the roll moves one less token each time through the loop
+%   since the stack is shrinking by one each iteration. 
+%
+%   paired with each token is the length of the string it contains, so TK
+%   is doubled and the loop iteration count is -2.
+/NL {
+  LS			% calculate line starting coordinates
+  TK 2 mul		% account for token/length pairs
+  -2			% decrement by this amount each iteration
+  1			% loop ends when less than 1 pair of items on stack
+  {			% loop for each token/length pair
+	-2 roll C2	% - roll leftmost pair to the top
+  } for
+  /TK 0 def		% reset token count
+  /LM NLM def		% pick up delayed margin change, if any
+  /X LM def		% reset X coord to left margin
+  /REM 0 def		% reset remainder length
+  /SC 0 def		% reset count of spaces
+  /RM NRM def		% pick up delayed margin change, if any
+} def 
+%
+% soft newline, i.e. building a string and right margin exceeded.
+%  this differs from NL in that one token pair will be left on the
+%  stack, the "remainder" which crossed the margin.
+/SNL {
+  TK 2 mul 		% account for token/length pairs
+  2 roll		% shove remainder way down
+  TK 1 sub		% decrement token count
+  /TK exch def
+  LS			% calculate line starting coordinates
+  TK 2 mul 		% account for token/length pairs
+  -2			% decrement by this amount each iteration
+  1			% loop ends laving one token pair on stack
+  {			% loop for each token/length pair
+	-2 roll C2	% - roll leftmost pair to the top
+  } for
+  /TK 1 def		% reset token count (remainder still on stack)
+  /LM NLM def		% pick up delayed margin change, if any
+  REM LM add		% new X coord = left margin + remainder from prev line
+  /X exch def
+  /REM 0 def		% reset remainder length
+  /SC 0 def		% reset count of spaces
+  /RM NRM def		% pick up delayed margin change, if any
+} def 
+%
+% subroutine to process hard new page
+/NP {
+  NL				% do new line processing
+  X LM eq Y TOP eq and not	% top of page?
+  {				% no -
+	showpage		%   page eject
+  	/X LM def		%   X coord = left margin
+  	/Y TOP def		%   Y coord = top margin
+	BOX {DB} if		% conditionally draw box around page
+	HDR {PH} if		% conditionally print running header
+  } if
+} def
+%
+% subroutine to find length of a subscript or superscript string
+%   assumes that host filter determines font size and passes it in the token
+/B1 {
+  aload			% unpack array
+  pop pop		% discard array copy and action code
+  F			% set font size and style
+  stringwidth pop	% get length of string, discard Y coordinate
+  dup LL gt		% this string wider than line size ?
+	{pop LL}	% yes - truncate
+  if
+  LE			% check if end of line reached
+} def
+%
+% draw box around page
+/DB {
+  PLM PTOP moveto
+  PRM PTOP lineto
+  PRM PBOT lineto
+  PLM PBOT lineto
+  closepath stroke
+} def
+%
+% subroutines: print running header
+%   the header consists of a "3D" representation of the word "MIME," 
+%   followed by a title including the date and time the file was generated.
+%   this is printed at the left margin. at the right margin the page number
+%   is printed. the title is hardcoded to 12 pt, using Times-Roman font.
+%
+/printMime {		% called inside the "3D" loop
+  0 0 moveto			
+  (MIME)
+  true charpath
+} bind def
+
+/printPage {		% print page number, right justified
+  (Page ) stringwidth pop		% length of literal string "Page "
+  PG 10 string cvs stringwidth pop	% length of page number
+  add					% total length
+  PRM exch sub				% distance to indent from right
+  PTOP 2 add				% distance from top of page
+  moveto
+  (Page ) show
+  PG 10 string cvs show
+  PG 1 add /PG exch def			% increment page number
+} def
+
+/printHdr {		% print left justified header
+  12 /Times-Roman F2			% set font to 12 pt, default font name
+  PLM 78 add PTOP 2 add moveto		% location just past "3D" title
+  MSG show				% show date/time message
+  printPage				% show page number
+} def
+
+/PH {
+  gsave
+  24 /Times-Roman F2			% set font for header
+  gsave
+  PLM 20 sub PTOP 12 add translate	% set starting point for 3D
+  1 -.05 0 {				% decrement from 1 to 0 by .05
+	setgray				% set gray scale
+	printMime			% print character outline
+	fill				% fill it in
+	1 -.5 translate			% move for next iteration
+  } for
+  printMime				% print outline 1 last time
+  gsave
+  1 setgray fill			% fill it in solid
+  grestore
+  .2 setlinewidth stroke		% draw solid line around characters
+  grestore
+  printHdr				% print rest of running header
+  grestore
+} def
+%
+% pass 2 case statement
+%  assumes top of stack is stringlength, top-1 is token array
+/C2 {
+ exch			% swap string length and token array
+ A 0 eq
+  {SH2}			% 0 = show string
+  {A 1 eq
+   {USH}		% 1 = show underlined string
+   {A 2 eq
+    {SP2}		% 2 = show space character
+    {A 3 eq
+     {USP}		% 3 = show underlined space
+     {A 4 eq
+      {TB2}		% 4 = tab
+      {A 5 eq
+       {UTB}		% 5 = underlined tab
+       {A 6 eq
+        {B2}		% 6 = show subscript string
+        {A 7 eq
+         {UB}		% 7 = underlined subscript
+         {A 8 eq
+          {P2}		% 8 = show superscript string
+          {A 9 eq
+           {UP}		% 9 = underlined superscript
+           {(E2) show}	% error
+          ifelse
+         } ifelse
+        } ifelse
+       } ifelse
+      } ifelse
+     } ifelse
+    } ifelse
+   } ifelse
+  } ifelse
+ } ifelse
+} def
+%
+% pass 2, display a string
+/SH2 {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  dup x eq		% font changing ?
+	{ pop pop}	% no - discard "don't cares"
+	{F2}		% yes - change the font
+  ifelse
+  show			% show the string
+  pop			% discard stringwidth
+} def
+%
+% pass 2, display an underlined string
+/USH {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  dup x eq		% font changing ?
+	{ pop pop}	% no - discard "don't cares"
+	{F2}		% yes - change the font
+  ifelse
+  currentpoint		% get X and Y coordinates
+  /Y1 exch def /X1 exch def
+  X1 Y1 2 sub moveto	% move to start of underline, 2 pts below line
+  exch			% swap string length to top
+  0 rlineto stroke	% draw the underline
+  X1 Y1 moveto		% restore coordinates
+  show			% show the string
+} def
+%
+% pass 2, show string while adjusting space
+/ADJSPC {
+  /STR exch def		% save string of space(s)
+  ADJ 0			% put X & Y width adjustment on stack
+  SPACE			% put space character literal on stack
+  STR			% put the string of space(s) back
+  widthshow		% show the string, adjusting the width
+} def
+%
+% pass 2, display space(s)
+/SP2 {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  dup x eq		% font changing ?
+	{pop pop}	% no - discard "don't cares"
+	{F2}		% yes - change the font
+  ifelse
+  JU 3 eq		% full justification ?
+   {ADJSPC}		% yes - adjust the space(s)
+   {show}		% else - show the space(s)
+  ifelse
+  pop			% discard stringwidth
+} def
+%
+% pass 2, display an underlined space(s)
+/USP {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  dup x eq		% font changing ?
+	{pop pop}	% no - discard "don't cares"
+	{F2}		% yes - change the font
+  ifelse
+  currentpoint		% save starting point
+  2 sub /Y1 exch def
+  /X1 exch def
+  JU 3 eq		% full justification ?
+   {ADJSPC}		% yes - adjust the space(s)
+   {show}		% else - show the space(s)
+  ifelse
+  currentpoint
+  0 -2 rmoveto		% move 2 pts below line
+  X1 Y1 lineto 		% underline to next tab stop
+  stroke		% draw the underline (which wipes out X & Y)
+  moveto		% restore X & Y
+  pop			% discard stringwidth
+} def
+%
+% pass 2, move to next tab stop
+/TB2 {
+  pop			% discard token array, leave length on top
+  0 rmoveto		% move right to next tab stop
+} def
+%
+% pass 2, move to next tab stop, draw underline
+/UTB {
+  pop			% discard token array, leave length on top
+  0 -2 rmoveto		% move 2 pts below line
+  0 rlineto 		% underline to next tab stop
+  0 2 rmoveto		% move back up to line
+  currentpoint		% remember X & Y coords
+  stroke		% draw the underline (which wipes out X & Y)
+  moveto		% restore X & Y
+} def
+%
+% pass 2, display a subscript string
+/B2 {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  F2			% set font size and style
+  0 -2 rmoveto		% move down from baseline
+  show			% show the string
+  0 2 rmoveto		% restore baseline
+  pop			% discard stringwidth
+} def
+%
+% pass 2, display an underlined subscript string
+/UB {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  F2			% set font size and style
+  currentpoint		% get X and Y coordinates
+  /Y1 exch def /X1 exch def
+  X1 Y1 2 sub moveto	% move to start of underline, 2 pts below line
+  exch			% swap string length to top
+  0 rlineto stroke	% draw the underline
+  X1 Y1 2 sub moveto	% restore coordinates, 2 pt below baseline
+  show			% show the string
+  0 2 rmoveto		% restore baseline
+} def
+%
+% subroutine to set font for superscript, and remember size in PH variable
+/FP {
+  findfont
+  exch dup /PH exch def
+  scalefont setfont
+} def
+%
+% pass 2, display a superscript string
+/P2 {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  FP			% set font size and style
+  0 PH rmoveto		% move up from baseline
+  show			% show the string
+  0 PH neg rmoveto	% restore baseline
+  pop			% discard stringwidth
+} def
+%
+% pass 2, display an underlined superscript string
+/UP {
+  aload			% unpack token array
+  pop pop		% discard array copy and action code
+  FP			% set font size and style
+  currentpoint		% get X and Y coordinates
+  /Y1 exch def /X1 exch def
+  X1 Y1 2 sub moveto	% move to start of underline, 2 pts below line
+  exch			% swap string length to top
+  0 rlineto stroke	% draw the underline
+  X1 Y1 PH add moveto	% restore coordinates, above baseline
+  show			% show the string
+  0 PH neg rmoveto	% restore baseline
+} def
+%
+% subroutine: calculate maximum line length LL
+/LL {RM LM sub} def
+%
+%%EndProlog

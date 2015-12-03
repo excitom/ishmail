@@ -1,0 +1,50 @@
+/*
+ *  ODictC.clas -- class definition for a set of relations
+ *
+ *  This type of dictionary stores the actual keys and values
+ *  PDictC.h stores only pointers to the keys and values
+ */
+
+/*--------------------------------------------------------------------------
+ * Define dictionary class
+ */
+
+class CLASS : public ENTLIST {
+
+public:
+
+/* Copy one dictionary to another */
+
+   CLASS&	operator=(const CLASS&);
+
+/* Lookup up entries */
+
+   int		indexOf (const KEYTYPE&) const;
+   int		indexOf (const ENTRY&) const;
+   int		includes(const KEYTYPE&) const;
+   int		includes(const ENTRY&) const;
+
+   VALTYPE	*definitionOf(const KEYTYPE& key) const;
+
+   KEYTYPE	&keyOf(const int index) const;
+   VALTYPE	&valOf(const int index) const;
+
+   ENTRY	*entryOf(const KEYTYPE& key) const;
+
+/* Changing entries */
+
+   ENTRY	*add   (const KEYTYPE& key, const VALTYPE& val);
+   ENTRY	*modify(const KEYTYPE& key, const VALTYPE& val);
+   ENTRY	*modify(unsigned index,     const VALTYPE& val);
+
+/* Deleting entries */
+
+   void		remove(KEYTYPE&);
+   void		remove(unsigned);
+   void		remove(ENTRY&);
+};
+
+inline ostream& operator<<(ostream& strm, const CLASS& d)
+{
+   return d.printOn(strm);
+}

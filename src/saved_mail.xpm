@@ -1,0 +1,23 @@
+/* XPM */
+static char * saved_mail_xpm [] = {
+"24 16 4 1",
+"   s mask m None  c None",
+".  m black  c black",
+"X  m white  c gray",
+"o  m white  c #f5deb3",
+"    ................    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .X....XXXXXXXXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"  .....XXXXXXXXXXXX.    ",
+" .ooooo.XXXXXXXXXXX.    ",
+".oooooo................ ",
+".oooooooooooooooooooooo.",
+".oooooooooooooooooooooo.",
+".oooooooooooooooooooooo.",
+".oooooooooooooooooooooo.",
+".oooooooooooooooooooooo.",
+".oooooooooooooooooooooo.",
+".oooooooooooooooooooooo.",
+".oooooooooooooooooooooo.",
+"........................"};

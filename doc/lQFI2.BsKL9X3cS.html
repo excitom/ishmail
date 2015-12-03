@@ -1,0 +1,440 @@
+<HTML>
+<HEAD>
+ <TITLE>Outgoing Mail Preferences</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="lQFI2.BsKL9X3cS">Outgoing Mail Preferences</H1>
+
+<P>
+When you click the
+<U>M</U><B>ail ...</B> option, the
+<B>Outgoing Mail Preferences</B> dialog
+appears.
+
+<P>
+<H4>Figure: <A NAME="nQFI2.BsKL9X3cS">Outgoing Mail Preferences Dialog</H4>
+
+<IMG SRC="lQFI2.BsKL9X3cS.extobj.1.gif">
+<P>
+The
+<B>Outgoing Mail Preferences</B> window lets you specify how messages
+are encoded, into which folders mail is copied when sent, which
+mail delivery command to use, whether to validate addresses
+before use, and handling of extremely large messages.
+<P>
+Explicit help is available in the
+<U>H</U><B>elp</B> pull-down menu for each of
+the parameters that can be customized. From the
+<U>H</U><B>elp</B> pull-down
+menu, select the
+<U>O</U><B>n Context</B> function, then move the cursor over
+the item of interest and click the mouse.
+
+<H2><A NAME="cfFI2.BsKL9X3cS">Encoding</H2>
+
+<P>
+Since
+MIME messages ultimately encode all data as plain ASCII
+text, MIME-formatted messages can be read using any mail tool.
+However, the data format may not be very readable. The
+<B>Outgoing
+mail</B> type option lets you enhance MIME message readability for
+people using non-MIME tools. There four options. The option you
+set in the
+<B>Outgoing Mail Preferences</B> dialog becomes the default.
+
+<DL>
+<DT><B>Plain text</B>
+<DD>The message is sent with all MIME formatting and
+attachments stripped from it. This is the ultimate in
+backward compatibility though, of course, you lose all the
+advanced MIME features.
+<P>
+
+<DT><B>MIME</B>
+<DD>The message is sent as a MIME message.
+<P>
+
+<DT><B>MIME with plain text alternative if necessary</B>
+<DD>Similar to the
+<B>MIME</B> option, the message is sent as plain
+text unless it needs MIME formatting. It differs in that a
+<I>plain text alternative</I> is included in front of a MIME
+message. The plain text alternative is the message text
+with all MIME attributes stripped, like the
+<B>Plain text</B>
+option. Recipients without MIME-capability will see the
+plain text alternative, and can ignore the following copy
+of the message with encoded MIME data. MIME-capable
+mail tools will automatically skip the plain text
+alternative part and utilize the MIME encoded data. So,
+this is the best of both, allowing maximum backward
+compatibility while not losing MIME capability.
+However, the message can be much larger, up to double
+the size, due to the duplicate copies of the message in
+different formats.
+<P>
+
+</DL>
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>You can override the default encoding option
+by resetting its value in the
+<B>Message type:</B>
+selection box at the bottom of the composition
+window.
+
+<HR>
+</P>
+
+<H2><A NAME="yfFI2.BsKL9X3cS">Character set</H2>
+
+<P>
+You can specify the character set that will be used to display the
+message. The
+<B>ISO-8859</B> character sets are supported. You can type
+the name of a character set into the field, or click the button to
+the right of the field and pick a character set from the resulting
+pop-up list.
+<P>
+Changing the character set has two effects. First, it changes how
+the text appears in the Composition window. Second, a character
+set parameter is added to the message when it is sent. If this
+parameter is recognized and handled by the recipient's mail tool,
+your message should appear as you typed it. There's no
+guarantee, however, that the recipient's system will have the
+appropriate fonts installed to show the character set you have
+chosen.
+<P>
+<HR>
+<B>TIP:</B>
+<BR><CITE>Ishmail</CITE> supports MIME
+<I>RFC 1522</I>, which
+means that 8-bit ASCII characters can be
+used in message headers. The character set
+you choose here applies to the headers
+(<B>Subject:</B>,
+<B>To:</B>, etc.) as well as the message body.
+<HR>
+</P>
+
+<H2><A NAME="4gFI2.BsKL9X3cS">Encoding for 8-bit characters</H2>
+
+<P>
+For compatibility with all mail transport systems, use of
+character sets in mail messages, as they are sent over the
+network, must be limited to 7-bit ASCII. This is true even if both
+the sender and recipient have no trouble with 8-bit characters,
+since an intermediate network through which the message
+passes on its way to its destination may have a limitation of 7-bit
+characters. The MIME standard provides several methods for
+encoding data so that it appears, while in transit, as 7-bit ASCII.
+
+<P>
+In this window, you can specify which encoding option to use for
+8-bit characters in the message body, and potentially a different
+encoding option for 8-bit characters in the headers. The choices
+for the body are:
+<UL>
+<LI>Mark as containing 8-bit ASCII characters
+<P>
+
+</LI>
+<LI>Convert to 7-bit ASCII using the Quoted Printable
+method
+<P>
+
+</LI>
+</UL>
+<P>
+The choices for the headers are:
+<UL>
+<LI>No encoding at all
+<P>
+
+</LI>
+<LI>Convert to 7-bit ASCII using the Quoted Printable
+method
+<P>
+
+</LI>
+<LI>Convert to 7-bit ASCII using the Base 64 method
+<P>
+
+</LI>
+</UL>
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>The choices for each are not exactly the same,
+since the standards specifications were
+developed by different people at different
+times.
+<HR>
+</P>
+
+<H2><A NAME="DgFI2.BsKL9X3cS">Copy outgoing messages</H2>
+
+<P>
+You can have messages copied automatically to a folder at the
+time they are sent. You can use the same folder each time, or
+specify a folder name based on one of the following:
+<DL>
+<DT><B>User</B>
+<DD>The folder name will be the recipient's user name, as
+specified in the
+<B>To:</B> field. If there are multiple names in
+the
+<B>To:</B> field, the message is copied to multiple folders (the
+<B>Cc:</B> and
+<B>Bcc:</B> fields are not included). For example, if you
+send mail to
+<KBD>greg@ishmail.com</KBD>, the message will be
+copied to the folder called
+<I>greg</I>.
+<P>
+
+<DT><B>Address</B>
+<DD>This is similar to the
+<B>User</B> option, except that the folder
+name is the whole e-mail address. For example, if you
+send mail to
+<KBD>greg@ishmail.com</KBD>, the message will be
+copied to the folder called
+<I>greg@ishmail.com</I>. This is useful
+if you correspond with people in different organizations
+who have the same user name.
+<P>
+
+<P>
+<HR>
+<B>TIP:</B>
+<BR>You can use links (the UNIX
+<B>ln</B> command) to
+give alias names to folders. For example, you
+may want to make
+<I>greg</I> and
+<I>greg@ishmail.com</I> be
+the same folder, while
+<I>greg@osf.org</I> is a
+different folder.
+<HR>
+</P>
+<DT><B>Year</B>
+<DD>Use this option to group outgoing mail by year. The folder
+name will be
+<I>year.[year]</I>, for example,
+<I>year.1995</I>.
+<P>
+
+<DT><B>Month</B>
+<DD>Use this option to group outgoing mail by month. The
+folder name will be
+<I>month.[year].[01-12]</I>, for example,
+<I>month.1995.05</I>.
+<P>
+
+<DT><B>Day</B>
+<DD>Use this option to group outgoing mail by day of the
+month. The folder name will be
+<I>day.[year].[01-12].[01-31]</I>,
+for example,
+<I>day.1995.05.30</I>.
+<P>
+
+<DT><B>Week</B>
+<DD>Use this option to group outgoing mail by week in the
+year. The folder name will be
+<I>week.[year].[01-52]</I>, for
+example,
+<I>week.1995.21</I>.
+<P>
+
+</DL>
+<P>
+If you want to use the same folder each time, you specify the
+name of that folder. Note that if the first character of the folder
+name is a
+<KBD>+</KBD> or an
+<KBD>=</KBD>, this is substituted with the name of your
+folder directory (as specified in the
+<A HREF="1j.-uyBk2I9X3cS.html">Application-related
+Preferences</A> dialog), which is typically
+<I>$HOME/Mail</I>.
+<P>
+If you specify the folder name as a variable, you also need to
+specify the folder directory. This can be a full path name or a
+name relative to your home directory.
+
+
+<H2><A NAME="zgFI2.BsKL9X3cS">Confirm use of mail addresses</H2>
+
+<P>
+Sometimes mail is sent that includes a
+<B>Cc:</B> to a mail alias
+containing a large number of recipients, such as your entire
+organization. You may reply to such a message, intending only to
+send mail to the originator, but inadvertently select
+<B>Reply All:</B>. This
+causes you reply to be broadcast to a much wider audience than
+you intended. To guard against this kind of embarrassment, you
+can specify mail aliases, which if used, cause a confirmation
+prompt to be shown.
+<P>
+Type the names of mail aliases you want to be careful about
+using into the
+<B>Confirm mail to these addresses</B> field. The field will show
+a vertical scroll bar if you enter more lines than fit in the field.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>Another use for this field is to catch common
+typing mistakes. For example, if you find that
+you tend to reverse two letters in a mail
+address you frequently use, put the
+misspelled address in this field.
+<HR>
+</P>
+
+<H2><A NAME="4hFI2.BsKL9X3cS">Additional mail headers</H2>
+
+<P>
+You may want to add extra mail headers to your mail message,
+for example:
+<UL>
+<LI><B>Reply-To:</B>
+<P>
+
+</LI>
+<LI><B>Organization:</B>
+<P>
+
+</LI>
+<LI><B>X-Face:</B>
+<P>
+
+</LI>
+</UL>
+<P>
+Any mail headers you enter into this field will be included in
+every subsequent message you send.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR><CITE>Ishmail</CITE> doesn't check the validity of
+information you specify here. You are
+responsible for using valid header names and
+spelling them correctly.
+<HR>
+</P>
+
+<H2><A NAME="AhFI2.BsKL9X3cS">Mail delivery command</H2>
+
+<P>
+This is the name of the mail transport command
+<CITE>Ishmail</CITE> uses to
+send mail. The default is the
+<B>sendmail</B> command. You may want
+to use a different command. Or, the
+<B>sendmail</B> command may be
+in a different directory on your system, and you just need to
+change the path name.
+<P>
+<CITE>Ishmail</CITE> passes two parameters to the
+<B>sendmail</B> command:
+<KBD>-oi</KBD>
+and
+<KBD>-oem.</KBD> If the message is being sent in multiple pieces, the
+<KBD>-odi</KBD> parameter is added also.
+<P>
+After the parameters the recipients' addresses are added, each
+enclosed in single quote characters. This allows addresses to
+have embedded double quotes and blanks (spaces).
+<P>
+After the addresses, a
+<KBD>&lt;</KBD> symbol is added followed by the path
+name of a temporary file which holds the complete message.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>If you want to use a mail transport command
+which accepts different parameters than
+<B>sendmail</B>, you can put the name of a
+<I>wrapper</I>
+command here. For example, this can be the
+name of a shell script that converts the
+parameters to the format required before
+passing them on to the other command.
+<HR>
+</P>
+
+<H2><A NAME="KhFI2.BsKL9X3cS">Save interrupted messages to a file</H2>
+
+<P>
+If you have been composing a message but you close the
+Composition window without first sending the message, the
+message will be saved to the file you specify in the
+<B>Save interrupted
+messages to file</B> field.
+<P>
+You can disable this function by setting the toggle button
+<KBD>Off</KBD>.
+
+<H2><A NAME="OhFI2.BsKL9X3cS">Split large outgoing messages</H2>
+
+<P>
+Another preference you can control from this window is the
+handling of large messages. MIME messages can be very large,
+particularly if they include image files or audio files. Some older
+mail transport systems cannot handle huge messages and may
+truncate them or refuse to process them. Your messages may
+pass through many networks on the way to their ultimate
+destination. If any of the intermediate networks cannot handle
+huge messages, you will have a problem.
+<P>
+The MIME protocol has a solution for this problem. Outgoing
+messages can be automatically split into two or more parts, and
+reassembled into a single message by the recipient's MIME mail
+reader. You can specify whether messages are split, and if so, how
+large the pieces should be. The default size (100,000 bytes) is a
+standard size which should pass through any network.
+<P>
+When you apply changes,
+<CITE>Ishmail</CITE> asks whether to use the folder
+list preferences for the current session only, or for current and
+future sessions.
+
+<H2><A NAME="VhFI2.BsKL9X3cS">Check Addresses Before Mailing</H2>
+
+<P>
+Toggle this button
+<KBD>On</KBD> to cause
+<CITE>Ishmail</CITE> to use the
+<B>sendmail</B>
+command's address checking option to validate that the
+address(es) in your message are valid. This will prevent mail
+from bouncing, but it may take a long time to do the checking
+depending on the address and how you are connected to the
+Internet.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>If you leave this option disabled, and a
+message you send bounces, use the
+<B>Resend</B>
+function to bounce it back again after you
+have determined the correct address. You do
+not need to re-compose the message.
+<HR>
+</P>
+
+<HR>
+Preceding Section: <A HREF="XBFI2.BsKL9X3cS.html">Composition Window Preferences</A><BR>
+Following Section: <A HREF="uhFI2.BsKL9X3cS.html">Reply/Forward Preferences</A><BR>
+Parent Section: <A HREF="Mr-1vFBulI9X3cS.html">Composition Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

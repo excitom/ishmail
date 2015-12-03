@@ -1,0 +1,2547 @@
+Ishmail*msgDialog_popup.title:			Message
+
+Ishmail*okPB.labelString:			OK
+Ishmail*applyPB.labelString:			Apply
+Ishmail*clearPB.labelString:			Clear
+Ishmail*cancelPB.labelString:			Cancel
+Ishmail*helpPB.labelString:			Help
+Ishmail*donePB.labelString:			Done
+Ishmail*totalLabel.labelString:			Total:
+Ishmail*dispLabel.labelString:			Displayed:
+Ishmail*selLabel.labelString:			Selected:
+
+!-------------------------- Help Window Defaults -----------------------------
+
+Ishmail*helpWin_popup.title:			Help
+Ishmail*helpWin.okLabelString:			Index ...
+Ishmail*helpWin*donePB.labelString:		Done
+Ishmail*helpWin.helpLabelString:		Help
+
+Ishmail*helpWin*fileCB.labelString:		File
+Ishmail*helpWin*editCB.labelString:		Edit
+Ishmail*helpWin*justCB.labelString:		Justify
+Ishmail*helpWin*indentCB.labelString:		Indent
+Ishmail*helpWin*colorCB.labelString:		Color
+Ishmail*helpWin*modLabel.labelString:		MODIFIED
+
+Ishmail*helpWin*fileCB.mnemonic:		F
+Ishmail*helpWin*editCB.mnemonic:		E
+Ishmail*helpWin*justCB.mnemonic:		J
+Ishmail*helpWin*indentCB.mnemonic:		I
+Ishmail*helpWin*colorCB.mnemonic:		C
+
+Ishmail*helpWin*fileNewPB.labelString:		New Card
+Ishmail*helpWin*fileDelPB.labelString:		Delete Card
+Ishmail*helpWin*fileSavePB.labelString:		Save File
+
+Ishmail*helpWin*fileNewPB.mnemonic:		N
+Ishmail*helpWin*fileDelPB.mnemonic:		D
+Ishmail*helpWin*fileSavePB.mnemonic:		S
+
+Ishmail*helpWin*editPlainPB.labelString:	Plain
+Ishmail*helpWin*editBoldPB.labelString:		Bold
+Ishmail*helpWin*editItalicPB.labelString:	Italic
+Ishmail*helpWin*editFixedPB.labelString:	Fixed
+Ishmail*helpWin*editUnderPB.labelString:	Underline
+Ishmail*helpWin*editBigPB.labelString:		Bigger
+Ishmail*helpWin*editSmallPB.labelString:	Smaller
+Ishmail*helpWin*editUndelPB.labelString:	Undelete
+
+Ishmail*helpWin*editPlainPB.mnemonic:		P
+Ishmail*helpWin*editBoldPB.mnemonic:		B
+Ishmail*helpWin*editItalicPB.mnemonic:		I
+Ishmail*helpWin*editFixedPB.mnemonic:		F
+Ishmail*helpWin*editUnderPB.mnemonic:		U
+Ishmail*helpWin*editBigPB.mnemonic:		g
+Ishmail*helpWin*editSmallPB.mnemonic:		S
+Ishmail*helpWin*editUndelPB.mnemonic:		n
+
+Ishmail*helpWin*justLeftPB.labelString:		Left
+Ishmail*helpWin*justRightPB.labelString:	Right
+Ishmail*helpWin*justCenterPB.labelString:	Center
+
+Ishmail*helpWin*justLeftPB.mnemonic:		L
+Ishmail*helpWin*justRightPB.mnemonic:		R
+Ishmail*helpWin*justCenterPB.mnemonic:		C
+
+Ishmail*helpWin*indentLeftMorePB.labelString:	Left more
+Ishmail*helpWin*indentLeftLessPB.labelString:	Left less
+Ishmail*helpWin*indentRightMorePB.labelString:	Right more
+Ishmail*helpWin*indentRightLessPB.labelString:	Right less
+
+Ishmail*helpWin*indentLeftMorePB.mnemonic:	L
+Ishmail*helpWin*indentLeftLessPB.mnemonic:	e
+Ishmail*helpWin*indentRightMorePB.mnemonic:	R
+Ishmail*helpWin*indentRightLessPB.mnemonic:	i
+
+Ishmail*helpWin*colorRedPB.labelString:	Red
+Ishmail*helpWin*colorGreenPB.labelString:	Green
+Ishmail*helpWin*colorBluePB.labelString:	Blue
+Ishmail*helpWin*colorYellowPB.labelString:	Yellow
+Ishmail*helpWin*colorMagentaPB.labelString:	Magenta
+Ishmail*helpWin*colorCyanPB.labelString:	Cyan
+Ishmail*helpWin*colorBlackPB.labelString:	Black
+Ishmail*helpWin*colorWhitePB.labelString:	White
+Ishmail*helpWin*colorNonePB.labelString:	None
+
+Ishmail*helpWin*colorRedPB.mnemonic:		R
+Ishmail*helpWin*colorGreenPB.mnemonic:		G
+Ishmail*helpWin*colorBluePB.mnemonic:		B
+Ishmail*helpWin*colorYellowPB.mnemonic:	Y
+Ishmail*helpWin*colorMagentaPB.mnemonic:	M
+Ishmail*helpWin*colorCyanPB.mnemonic:		C
+Ishmail*helpWin*colorBlackPB.mnemonic:		l
+Ishmail*helpWin*colorWhitePB.mnemonic:		W
+Ishmail*helpWin*colorNonePB.mnemonic:		N
+
+Ishmail*helpWin*nameLabel.labelString:		Name:
+Ishmail*helpWin*locLabel.labelString:		Locator:
+Ishmail*helpWin*titleLabel.labelString:		Title:
+
+Ishmail*helpWin*saveChangesWin_popup.title:	Save changes?
+Ishmail*helpWin*saveChangesWin.messageString:	Save changes to current card?
+Ishmail*helpWin*saveChangesWin.okLabelString:		Save
+Ishmail*helpWin*saveChangesWin*noPB.labelString:	Discard
+Ishmail*helpWin*saveChangesWin.cancelLabelString:	Cancel
+
+Ishmail*helpWin*dbFileNameWin.title:			Helpcard file name
+Ishmail*helpWin*dbFileNameWin.messageString:		Please enter the name of the helpcard file:
+Ishmail*helpWin*dbFileNameWin.okLabelString:		OK
+Ishmail*helpWin*dbFileNameWin.cancelLabelString:	Cancel
+
+!-------------------------- Help Index Defaults -----------------------------
+
+Ishmail*helpIndexWin_popup.title:			Available Help Topics
+Ishmail*helpIndexWin.okLabelString:			View
+Ishmail*helpIndexWin.helpLabelString:			Help
+Ishmail*helpIndexWin*nextPB.labelString:		Next
+Ishmail*helpIndexWin*prevPB.labelString:		Prev
+Ishmail*helpIndexWin*donePB.labelString:		Done
+Ishmail*helpIndexWin*indexList.visibleItemCount:	20
+
+!--------------------- Help Resource Editor Defaults ------------------------
+
+Ishmail*helpResWin.title:				Help Resource Editor
+Ishmail*helpResWin*shortNameLabel.labelString:		Short name:
+Ishmail*helpResWin*longNameLabel.labelString:		Long name:
+Ishmail*helpResWin*quickHelpLabel.labelString:		Quick help:
+Ishmail*helpResWin*quickNameLabel.labelString:		Source:
+Ishmail*helpResWin*contCardLabel.labelString:		Context helpcard:
+Ishmail*helpResWin*contNameLabel.labelString:		Source:
+Ishmail*helpResWin*helpCardLabel.labelString:		Help button helpcard:
+Ishmail*helpResWin*helpNameLabel.labelString:		Source:
+Ishmail*helpResWin*quickLoadPB.labelString:		Load
+Ishmail*helpResWin*contLoadPB.labelString:		Load
+Ishmail*helpResWin*helpLoadPB.labelString:		Load
+Ishmail*helpResWin*contCardPB.labelString:		View
+Ishmail*helpResWin*helpCardPB.labelString:		View
+Ishmail*helpResWin*pickPB.labelString:			Pick
+Ishmail*helpResWin*nextPB.labelString:			Next
+Ishmail*helpResWin*prevPB.labelString:			Prev
+Ishmail*helpResWin*resetPB.labelString:			Reset
+Ishmail*helpResWin*delPB.labelString:			Delete
+Ishmail*helpResWin*loadSomePB.labelString:		List significant widgets
+Ishmail*helpResWin*loadAllPB.labelString:		List all widgets
+Ishmail*helpResWin*savePB.labelString:			Save
+Ishmail*helpResWin*modLabel.labelString:		MODIFIED
+
+Ishmail*helpResWin*saveChangesWin_popup.title:		Save changes?
+Ishmail*helpResWin*saveChangesWin*messageString:	Save changes to help resources?
+Ishmail*helpResWin*saveChangesWin*OK.labelString:	Save
+Ishmail*helpResWin*saveChangesWin*noPB.labelString:	Discard
+
+Ishmail*helpResWin*fileNameWin_popup.title:		Help resource file
+Ishmail*helpResWin*fileNameWin*selectionLabelString:	Please enter the name of the help resource file:\nWARNING: If the file already exists, it will be overwritten.
+Ishmail*helpResWin*fileNameWin*OK.labelString:		Save
+
+!-------------------------- List Box Defaults --------------------------------
+
+Ishmail*addButton.labelString:			Add
+Ishmail*remButton.labelString:			Remove
+Ishmail*repButton.labelString:			Replace
+Ishmail*clrButton.labelString:			Clear
+Ishmail*removeWin_popup.title:			Remove Entries
+Ishmail*removeWin.messageString:		Remove the selected entries?
+Ishmail*removeWin.OK.labelString:		Yes
+Ishmail*removeWin.Cancel.labelString:		No
+Ishmail*clearWin_popup.title:			Clear List
+Ishmail*clearWin.messageString:			Remove all entries?
+Ishmail*clearWin.OK.labelString:		Yes
+Ishmail*clearWin.Cancel.labelString:		No
+
+!------------------------- File Chooser Defaults -----------------------------
+
+Ishmail*FileChooserC.singleTitle:			Select File
+Ishmail*FileChooserC*selectLabel.labelString:		Selected Files
+Ishmail*FileChooserC*selectLabel.singleString:		Selected File
+Ishmail*FileChooserC*imapTB.labelString:		Use IMAP server
+Ishmail*FileChooserC*listTB.labelString:		Show list
+Ishmail*FileChooserC*dirNameLabel.labelString:		Current Directory
+Ishmail*FileChooserC*dirNamePB.labelString:		Set
+Ishmail*FileChooserC*dirListLabel.labelString:		Directories
+Ishmail*FileChooserC*filterLabel.labelString:		File Name Filter
+Ishmail*FileChooserC*filterPB.labelString:		Filter
+Ishmail*FileChooserC*fileListLabel.labelString:		Files
+
+!------------------------ Working Dialog Defaults -------------------------
+
+Ishmail*workingDialog_popup.title:		Working
+Ishmail*workingDialog*startLabel.labelString:  	Start
+Ishmail*workingDialog*endLabel.labelString:    	Finish
+
+!------------------------ Exit Dialog Defaults -------------------------
+
+Ishmail*exitWin_popup.title:			Exit
+Ishmail*exitWin.messageString:			Really exit $APP?
+Ishmail*exitWin*OK.labelString:			Yes
+Ishmail*exitWin*Cancel.labelString:		No
+
+Ishmail*quitWin_popup.title:			Exit
+Ishmail*quitWin.messageString:			Really quit $APP?
+Ishmail*quitWin.unsavedMessageString:		Really quit $APP with unsaved changes?
+Ishmail*quitWin*OK.labelString:			Yes
+Ishmail*quitWin*Cancel.labelString:		No
+
+!------------------------ BoolExpWin Defaults -------------------------
+
+Ishmail*boolExpWin*lparPB.labelString:		(
+Ishmail*boolExpWin*rparPB.labelString:		)
+Ishmail*boolExpWin*andPB.labelString:		AND
+Ishmail*boolExpWin*orPB.labelString:		OR
+Ishmail*boolExpWin*notPB.labelString:		NOT
+Ishmail*boolExpWin*clearPB.labelString:		Clear
+
+Ishmail*boolExpWin*expDA*translations:\
+	<Key>(:			BoolExpWinC-insert-lparen()	\n\
+	<Key>):			BoolExpWinC-insert-rparen()	\n\
+	<Key>&:			BoolExpWinC-insert-and()	\n\
+	<Key>|:			BoolExpWinC-insert-or()		\n\
+	<Key>!:			BoolExpWinC-insert-not()	\n\
+	<Key>osfBackSpace:	BoolExpWinC-delete-left()	\n\
+	<Key>osfDelete:		BoolExpWinC-delete-right()	\n\
+	<Btn1Down>,<Btn1Up>:	BoolExpWinC-move-pointer()
+
+Ishmail*boolExpWin*expDA.trueLabel.labelString:		True
+Ishmail*boolExpWin*expDA.falseLabel.labelString:	False
+Ishmail*boolExpWin*expDA.lparLabel.labelString:		(
+Ishmail*boolExpWin*expDA.rparLabel.labelString:		)
+Ishmail*boolExpWin*expDA.andLabel.labelString:		and
+Ishmail*boolExpWin*expDA.orLabel.labelString:		or
+Ishmail*boolExpWin*expDA.notLabel.labelString:		!
+Ishmail*boolExpWin*expDA.cursor.labelString:		|
+
+!------------------------ SortWin Defaults -------------------------
+
+!Ishmail*sortExpWin*availKeyLabel.labelString:		Available sort keys
+!Ishmail*sortExpWin*keyOrderLabel.labelString:		Selected keys
+!Ishmail*sortExpWin*clearPB.labelString:		Clear
+!Ishmail*sortExpWin*expDA*translations:\
+!	<Key>osfBackSpace:	SortExpWinC-delete-left()	\n\
+!	<Key>osfDelete:		SortExpWinC-delete-right()	\n\
+!	<Btn1Down>,<Btn1Up>:	SortExpWinC-move-pointer()
+!Ishmail*sortExpWin*expDA.cursor.labelString:		|
+!Ishmail*sortExpWin.ascendingString:			(Ascending)
+!Ishmail*sortExpWin.descendingString:			(Descending)
+!Ishmail*sortExpWin.threadString:			Thread
+!Ishmail*sortExpWin.numberString:			Number
+!Ishmail*sortExpWin.statusString:			Status
+!Ishmail*sortExpWin.subjectString:			Sender
+!Ishmail*sortExpWin.subjectString:			Subject
+!Ishmail*sortExpWin.dateString:				Date
+!Ishmail*sortExpWin.linesString:			Line Count
+!Ishmail*sortExpWin.bytesString:			Byte Count
+
+Ishmail*sortWin.title:					Sort Specification
+Ishmail*sortWin*orderTitle.labelString:			Order
+Ishmail*sortWin*keyTitle.labelString:			Key
+Ishmail*sortWin*directionTitle.labelString:		Direction
+Ishmail*sortWin*numberTB.labelString:			Number
+Ishmail*sortWin*statusTB.labelString:			Status
+Ishmail*sortWin*senderTB.labelString:			Sender
+Ishmail*sortWin*toTB.labelString:			To
+Ishmail*sortWin*subjectTB.labelString:			Subject
+Ishmail*sortWin*dateTB.labelString:			Date
+Ishmail*sortWin*linesTB.labelString:			Line Count
+Ishmail*sortWin*bytesTB.labelString:			Byte Count
+Ishmail*sortWin*ascendTB.labelString:			Ascending
+Ishmail*sortWin*descendTB.labelString:			Descending
+Ishmail*sortWin*statusFrame*ascendTB.labelString:	New,Unread,Other
+Ishmail*sortWin*statusFrame*descendTB.labelString:	Other,Unread,New
+Ishmail*sortWin*threadTB.labelString:			Thread messages
+Ishmail*sortWin*threadOldTB.labelString:	Sort on oldest message in thread
+Ishmail*sortWin*threadNewTB.labelString:	Sort on newest message in thread
+Ishmail*sortWin*folderCurTB.labelString:	Apply to the current folder
+Ishmail*sortWin*folderSelTB.labelString:	Apply to the selected folders
+Ishmail*sortWin*folderAllTB.labelString:	Apply to all folders
+Ishmail*sortWin*folderDefTB.labelString:	Apply as the fallback sort
+
+!--------------------------------------------------------------------------
+
+Ishmail*applyAllTB.labelString:			Current and future sessions
+Ishmail*applyCurrentTB.labelString:		Current session only
+
+!--------------------------------------------------------------------------
+
+Ishmail*helpLabelString:			Help
+Ishmail*helpIndex.okLabelString:		Done
+
+Ishmail*workingDialog_popup.title:		Ishmail: Working
+
+Ishmail*noLicenseWin_popup.title:		Ishmail: No license available
+Ishmail*noLicenseWin*ipLabel.labelString:	IP address of host on which\nIshmail is installed:
+Ishmail*noLicenseWin*ipVarTB.labelString:	Variable
+Ishmail*noLicenseWin*mailLabel.labelString:	Your e-mail address:
+Ishmail*noLicenseWin.okLabelString:		Request license
+Ishmail*noLicenseWin.cancelLabelString:		Not yet
+
+Ishmail*queryImapWin_popup.title:	Ishmail: Using IMAP
+Ishmail*queryImapWin*messageString:	Will you be using an IMAP mail server?\
+\n\nIf you don't know what IMAP is, choose "No".\
+\nYou can change your answer later using the\
+\nApplication command in the Options menu.
+Ishmail*queryImapWin.okLabelString:	Yes
+Ishmail*queryImapWin.cancelLabelString:	No
+
+Ishmail*queryImapServerWin_popup.title:	 	  Ishmail: IMAP server name
+Ishmail*queryImapServerWin.selectionLabelString:  Please enter the name of your IMAP mail server:
+Ishmail*queryImapServerWin.okLabelString:	  OK
+Ishmail*queryImapServerWin.cancelLabelString:	  Cancel
+
+Ishmail*queryPopWin_popup.title:	Ishmail: Using POP
+Ishmail*queryPopWin*messageString:	Will you be using a POP mail server?\
+\n\nIf you don't know what POP is, choose "No"\
+\nYou can change your answer later using the\
+\nApplication command in the Options menu.
+Ishmail*queryPopWin.okLabelString:	Yes
+Ishmail*queryPopWin.cancelLabelString:	No
+
+Ishmail*queryPopServerWin_popup.title:	 	  Ishmail: POP server name
+Ishmail*queryPopServerWin*Selection.labelString:  Enter the name of your POP mail server:
+Ishmail*queryPopServerWin*popTypeLabel.labelString: Select the POP server type:
+Ishmail*queryPopServerWin*popType2TB.labelString: POP2
+Ishmail*queryPopServerWin*popType3TB.labelString: POP3
+Ishmail*queryPopServerWin*popCmdLabel.labelString: Enter the "popclient" (or equivalent) command:
+Ishmail*queryPopServerWin.okLabelString:	  OK
+Ishmail*queryPopServerWin.cancelLabelString:	  Cancel
+Ishmail*queryFolderTypeWin_popup.title:		Ishmail: Folder types
+Ishmail*queryFolderTypeWin*messageString:	Which folder type(s) will you be using?
+Ishmail*queryFolderTypeWin*imapMessageString:	Which folder type(s) (if any) will you be using on your local machine?
+Ishmail*queryFolderTypeWin.okLabelString:	OK
+Ishmail*queryFolderTypeWin*unixTB.labelString:	Unix
+Ishmail*queryFolderTypeWin*mmdfTB.labelString:	MMDF
+Ishmail*queryFolderTypeWin*mhTB.labelString:	MH
+Ishmail*queryFolderTypeWin*noneTB.labelString:	None
+
+Ishmail*defFolderTypeWin_popup.title:			Ishmail: Folder types
+Ishmail*defFolderTypeWin*messageString:	Please select a primary folder type:
+Ishmail*defFolderTypeWin.okLabelString:			OK
+Ishmail*defFolderTypeWin*imapTB.labelString:		On IMAP server
+Ishmail*defFolderTypeWin*unixTB.labelString:		Unix
+Ishmail*defFolderTypeWin*unixTB.imapLabelString:	Unix on local machine
+Ishmail*defFolderTypeWin*mmdfTB.labelString:		MMDF
+Ishmail*defFolderTypeWin*mmdfTB.imapLabelString:	MMDF on local machine
+Ishmail*defFolderTypeWin*mhTB.labelString:		MH
+Ishmail*defFolderTypeWin*mhTB.imapLabelString:		MH on local machine
+
+Ishmail*queryEditCompWin_popup.title:		Ishmail: Resume Edit
+Ishmail*queryEditCompWin.messageString:\
+You have $COUNT composition(s) in progress.\n\
+Would you like to resume your edit(s) now?
+Ishmail*queryEditCompWin.okLabelString:		Yes, edit now
+Ishmail*queryEditCompWin.noPB.labelString:	No, edit later
+Ishmail*queryEditCompWin.cancelLabelString:	No, discard edits
+
+Ishmail*retryLoginWin_popup.title:			Retry login?
+Ishmail*retryLoginWin.okLabelString:			Yes
+Ishmail*retryLoginWin.cancelLabelString:		No
+
+Ishmail*printString:				Message sent to printer
+Ishmail*multiPrintString:			Messages sent to printer
+
+!--------------------------------------------------------------------------
+
+Ishmail*mainShell.title:			ishmail
+Ishmail*mainShell.iconName:			ishmail
+
+Ishmail*mainShell.mainWindow*folderTitle.labelString:		Open folders
+
+Ishmail*mainShell.mainWindow*fileCB.labelString:		File
+Ishmail*mainShell.mainWindow*fileCB.mnemonic:			F
+Ishmail*mainShell.mainWindow*filePrintPB.labelString:		Print ...
+Ishmail*mainShell.mainWindow*filePrintPB.abbrev:		Print
+Ishmail*mainShell.mainWindow*filePrintPB.mnemonic:		P
+Ishmail*mainShell.mainWindow*filePrintPB.accelerator:		Ctrl<Key>P
+Ishmail*mainShell.mainWindow*filePrintPB.acceleratorText:	Ctrl + P
+Ishmail*mainShell.mainWindow*fileSleepPB.labelString:		Sleep
+Ishmail*mainShell.mainWindow*fileSleepPB.abbrev:		Sleep
+Ishmail*mainShell.mainWindow*fileSleepPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*fileExitPB.labelString:		Exit
+Ishmail*mainShell.mainWindow*fileExitPB.abbrev:			Exit
+Ishmail*mainShell.mainWindow*fileExitPB.mnemonic:		E
+Ishmail*mainShell.mainWindow*fileExitPB.accelerator:		Ctrl<Key>E
+Ishmail*mainShell.mainWindow*fileExitPB.acceleratorText:	Ctrl + E
+Ishmail*mainShell.mainWindow*fileQuitPB.labelString:		Quit
+Ishmail*mainShell.mainWindow*fileQuitPB.abbrev:			Quit
+Ishmail*mainShell.mainWindow*fileQuitPB.mnemonic:		Q
+Ishmail*mainShell.mainWindow*fileQuitPB.accelerator:		Ctrl<Key>Q
+Ishmail*mainShell.mainWindow*fileQuitPB.acceleratorText:	Ctrl + Q
+
+Ishmail*mainShell.mainWindow*folderCB.labelString:		Folder
+Ishmail*mainShell.mainWindow*folderCB.mnemonic:			l
+Ishmail*mainShell.mainWindow*folderNewPB.labelString:		New ...
+Ishmail*mainShell.mainWindow*folderNewPB.abbrev:		New folder
+Ishmail*mainShell.mainWindow*folderNewPB.mnemonic:		N
+Ishmail*mainShell.mainWindow*folderOpenPB.labelString:		Open ...
+Ishmail*mainShell.mainWindow*folderOpenPB.abbrev:		Open folder
+Ishmail*mainShell.mainWindow*folderOpenPB.mnemonic:		O
+Ishmail*mainShell.mainWindow*folderOpenPB.accelerator:		Ctrl<Key>O
+Ishmail*mainShell.mainWindow*folderOpenPB.acceleratorText:	Ctrl + O
+Ishmail*mainShell.mainWindow*folderOpenRecentCB.labelString:	Open (Recent)
+Ishmail*mainShell.mainWindow*folderOpenRecentCB.mnemonic:	p
+Ishmail*mainShell.mainWindow*folderOpenQuickCB.labelString:	Open (List)
+Ishmail*mainShell.mainWindow*folderOpenQuickCB.mnemonic:	M
+Ishmail*mainShell.mainWindow*folderActCB.labelString:		Activate
+Ishmail*mainShell.mainWindow*folderActCB.mnemonic:		A
+Ishmail*mainShell.mainWindow*folderSaveCB.labelString:		Save
+Ishmail*mainShell.mainWindow*folderSaveCB.mnemonic:		S
+Ishmail*mainShell.mainWindow*folderReadCB.labelString:		Reread
+Ishmail*mainShell.mainWindow*folderReadCB.mnemonic:		R
+Ishmail*mainShell.mainWindow*folderCloseCB.labelString:		Close
+Ishmail*mainShell.mainWindow*folderCloseCB.mnemonic:		C
+Ishmail*mainShell.mainWindow*folderDelCB.labelString:		Delete
+Ishmail*mainShell.mainWindow*folderDelCB.mnemonic:		D
+Ishmail*mainShell.mainWindow*folderSelPB.labelString:		Select All
+Ishmail*mainShell.mainWindow*folderSelPB.abbrev:		Select all folders
+Ishmail*mainShell.mainWindow*folderSelPB.mnemonic:		l
+Ishmail*mainShell.mainWindow*folderDeselPB.labelString:		Deselect All
+Ishmail*mainShell.mainWindow*folderDeselPB.abbrev:		Deselect all folders
+Ishmail*mainShell.mainWindow*folderDeselPB.mnemonic:		e
+
+Ishmail*mainShell.mainWindow*folderActSysPB.labelString:	In-box
+Ishmail*mainShell.mainWindow*folderActSysPB.abbrev:		Open in-box
+Ishmail*mainShell.mainWindow*folderActSysPB.mnemonic:		I
+Ishmail*mainShell.mainWindow*folderActSelPB.labelString:	Selected
+Ishmail*mainShell.mainWindow*folderActSelPB.abbrev:		Open selected folders
+Ishmail*mainShell.mainWindow*folderActSelPB.mnemonic:		S
+
+Ishmail*mainShell.mainWindow*folderSavePB.labelString:		Current folder
+Ishmail*mainShell.mainWindow*folderSavePB.abbrev:		Save folder
+Ishmail*mainShell.mainWindow*folderSavePB.mnemonic:		C
+Ishmail*mainShell.mainWindow*folderSaveSelPB.labelString:	Selected folders
+Ishmail*mainShell.mainWindow*folderSaveSelPB.abbrev:		Save selected folders
+Ishmail*mainShell.mainWindow*folderSaveSelPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*folderSaveAllPB.labelString:	All folders
+Ishmail*mainShell.mainWindow*folderSaveAllPB.abbrev:		Save all folders
+Ishmail*mainShell.mainWindow*folderSaveAllPB.mnemonic:		A
+
+Ishmail*mainShell.mainWindow*folderReadCurPB.labelString:	Current folder
+Ishmail*mainShell.mainWindow*folderReadCurPB.abbrev:		Reread folder
+Ishmail*mainShell.mainWindow*folderReadCurPB.mnemonic:		C
+Ishmail*mainShell.mainWindow*folderReadSelPB.labelString:	Selected folders
+Ishmail*mainShell.mainWindow*folderReadSelPB.abbrev:		Reread selected folders
+Ishmail*mainShell.mainWindow*folderReadSelPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*folderReadAllPB.labelString:	All folders
+Ishmail*mainShell.mainWindow*folderReadAllPB.abbrev:		Reread all folders
+Ishmail*mainShell.mainWindow*folderReadAllPB.mnemonic:		A
+
+Ishmail*mainShell.mainWindow*folderCloseCurPB.labelString:	Current folder
+Ishmail*mainShell.mainWindow*folderCloseCurPB.abbrev:		Close folder
+Ishmail*mainShell.mainWindow*folderCloseCurPB.mnemonic:		C
+Ishmail*mainShell.mainWindow*folderCloseCurPB.accelerator:	Ctrl<Key>C
+Ishmail*mainShell.mainWindow*folderCloseCurPB.acceleratorText:	Ctrl + C
+Ishmail*mainShell.mainWindow*folderCloseSelPB.labelString:	Selected folders
+Ishmail*mainShell.mainWindow*folderCloseSelPB.abbrev:		Close selected folders
+Ishmail*mainShell.mainWindow*folderCloseSelPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*folderCloseAllPB.labelString:	All folders
+Ishmail*mainShell.mainWindow*folderCloseAllPB.abbrev:		Close all folders
+Ishmail*mainShell.mainWindow*folderCloseAllPB.mnemonic:		A
+
+Ishmail*mainShell.mainWindow*folderDelCurPB.labelString:	Current folder
+Ishmail*mainShell.mainWindow*folderDelCurPB.abbrev:		Delete folder
+Ishmail*mainShell.mainWindow*folderDelCurPB.mnemonic:		C
+Ishmail*mainShell.mainWindow*folderDelSelPB.labelString:	Selected folders
+Ishmail*mainShell.mainWindow*folderDelSelPB.abbrev:		Delete selected folders
+Ishmail*mainShell.mainWindow*folderDelSelPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*folderDelAllPB.labelString:	All folders
+Ishmail*mainShell.mainWindow*folderDelAllPB.abbrev:		Delete All folders
+Ishmail*mainShell.mainWindow*folderDelAllPB.mnemonic:		A
+
+Ishmail*mainShell.mainWindow*folderPUActPB.labelString:		Activate
+Ishmail*mainShell.mainWindow*folderPUActPB.mnemonic:		A
+Ishmail*mainShell.mainWindow*folderPUSavePB.labelString:	Save changes
+Ishmail*mainShell.mainWindow*folderPUSavePB.mnemonic:		S
+Ishmail*mainShell.mainWindow*folderPUReadPB.labelString:	Reread
+Ishmail*mainShell.mainWindow*folderPUReadPB.mnemonic:		R
+Ishmail*mainShell.mainWindow*folderPUClosePB.labelString:	Close
+Ishmail*mainShell.mainWindow*folderPUClosePB.mnemonic:		C
+Ishmail*mainShell.mainWindow*folderPUDelPB.labelString:		Delete
+Ishmail*mainShell.mainWindow*folderPUDelPB.mnemonic:		D
+
+Ishmail*mainShell.mainWindow*msgCB.labelString:			Message
+Ishmail*mainShell.mainWindow*msgCB.mnemonic:			M
+Ishmail*mainShell.mainWindow*msgComposePB.labelString:		Compose New ...
+Ishmail*mainShell.mainWindow*msgComposePB.abbrev:		Compose
+Ishmail*mainShell.mainWindow*msgComposePB.mnemonic:		C
+Ishmail*mainShell.mainWindow*msgComposePB.accelerator:		Ctrl<Key>N
+Ishmail*mainShell.mainWindow*msgComposePB.acceleratorText:	Ctrl + N
+Ishmail*mainShell.mainWindow*msgReplyCB.labelString:		Reply
+Ishmail*mainShell.mainWindow*msgReplyCB.mnemonic:		R
+Ishmail*mainShell.mainWindow*msgForwardPB.labelString:		Forward ...
+Ishmail*mainShell.mainWindow*msgForwardPB.abbrev:		Forward
+Ishmail*mainShell.mainWindow*msgForwardPB.mnemonic:		F
+Ishmail*mainShell.mainWindow*msgForward822PB.labelString:	Forward (encapsulate) ...
+Ishmail*mainShell.mainWindow*msgForward822PB.abbrev:		Forward (enc)
+Ishmail*mainShell.mainWindow*msgForward822PB.mnemonic:		o
+Ishmail*mainShell.mainWindow*msgResendPB.labelString:		Resend ...
+Ishmail*mainShell.mainWindow*msgResendPB.abbrev:		Resend
+Ishmail*mainShell.mainWindow*msgResendPB.mnemonic:		e
+Ishmail*mainShell.mainWindow*msgReadCB.labelString:		Read
+Ishmail*mainShell.mainWindow*msgReadCB.mnemonic:		a
+Ishmail*mainShell.mainWindow*msgSaveCB.labelString:		Save
+Ishmail*mainShell.mainWindow*msgSaveCB.mnemonic:		v
+Ishmail*mainShell.mainWindow*msgPrintPB.labelString:		Print ...
+Ishmail*mainShell.mainWindow*msgPrintPB.abbrev:			Print
+Ishmail*mainShell.mainWindow*msgPrintPB.mnemonic:		P
+Ishmail*mainShell.mainWindow*msgPrintPB.acceleratorText:	Ctrl + P
+Ishmail*mainShell.mainWindow*msgPipePB.labelString:		Filter ...
+Ishmail*mainShell.mainWindow*msgPipePB.abbrev:			Filter msg
+Ishmail*mainShell.mainWindow*msgPipePB.mnemonic:		i
+Ishmail*mainShell.mainWindow*msgDelPB.labelString:		Mark for deletion
+Ishmail*mainShell.mainWindow*msgDelPB.abbrev:			Delete msg
+Ishmail*mainShell.mainWindow*msgDelPB.mnemonic:			M
+Ishmail*mainShell.mainWindow*msgDelPB.accelerator:		Ctrl<Key>D
+Ishmail*mainShell.mainWindow*msgDelPB.acceleratorText:		Ctrl + D
+Ishmail*mainShell.mainWindow*msgUndelCB.labelString:		Undelete
+Ishmail*mainShell.mainWindow*msgUndelCB.mnemonic:		U
+Ishmail*mainShell.mainWindow*msgStatCB.labelString:		Set status
+Ishmail*mainShell.mainWindow*msgStatCB.mnemonic:		t
+Ishmail*mainShell.mainWindow*msgSelPB.labelString:		Select All
+Ishmail*mainShell.mainWindow*msgSelPB.abbrev:			Select all msgs
+Ishmail*mainShell.mainWindow*msgSelPB.mnemonic:			S
+Ishmail*mainShell.mainWindow*msgSelPB.accelerator:		Ctrl<Key>slash
+Ishmail*mainShell.mainWindow*msgSelPB.acceleratorText:		Ctrl + /
+Ishmail*mainShell.mainWindow*msgDeselPB.labelString:		Deselect All
+Ishmail*mainShell.mainWindow*msgDeselPB.abbrev:			Deselect all msgs
+Ishmail*mainShell.mainWindow*msgDeselPB.mnemonic:		D
+Ishmail*mainShell.mainWindow*msgDeselPB.accelerator:		Ctrl<Key>backslash
+Ishmail*mainShell.mainWindow*msgDeselPB.acceleratorText:	Ctrl + \\
+Ishmail*mainShell.mainWindow*msgFindPB.labelString:		Search ...
+Ishmail*mainShell.mainWindow*msgFindPB.abbrev:			Search
+Ishmail*mainShell.mainWindow*msgFindPB.mnemonic:		h
+Ishmail*mainShell.mainWindow*msgFindPB.accelerator:		Ctrl<Key>F
+Ishmail*mainShell.mainWindow*msgFindPB.acceleratorText:		Ctrl + F
+
+Ishmail*mainShell.mainWindow*msgReplyPB.labelString:		To sender ...
+Ishmail*mainShell.mainWindow*msgReplyPB.abbrev:			Reply sender
+Ishmail*mainShell.mainWindow*msgReplyPB.mnemonic:		s
+Ishmail*mainShell.mainWindow*msgReplyPB.accelerator:		Ctrl<Key>V
+Ishmail*mainShell.mainWindow*msgReplyPB.acceleratorText:	Ctrl + V
+Ishmail*mainShell.mainWindow*msgReplyIncPB.labelString:		To sender (include body) ...
+Ishmail*mainShell.mainWindow*msgReplyIncPB.abbrev:		Reply sender (inc)
+Ishmail*mainShell.mainWindow*msgReplyIncPB.mnemonic:		i
+Ishmail*mainShell.mainWindow*msgReplyIncPB.accelerator:		Ctrl<Key>W
+Ishmail*mainShell.mainWindow*msgReplyIncPB.acceleratorText:	Ctrl + W
+Ishmail*mainShell.mainWindow*msgReplyAllPB.labelString:		To all ...
+Ishmail*mainShell.mainWindow*msgReplyAllPB.abbrev:		Reply all
+Ishmail*mainShell.mainWindow*msgReplyAllPB.mnemonic:		a
+Ishmail*mainShell.mainWindow*msgReplyAllPB.accelerator:		Ctrl<Key>X
+Ishmail*mainShell.mainWindow*msgReplyAllPB.acceleratorText:	Ctrl + X
+Ishmail*mainShell.mainWindow*msgReplyAllIncPB.labelString:	To all (include body) ...
+Ishmail*mainShell.mainWindow*msgReplyAllIncPB.abbrev:		Reply all (inc)
+Ishmail*mainShell.mainWindow*msgReplyAllIncPB.mnemonic:		m
+Ishmail*mainShell.mainWindow*msgReplyAllIncPB.accelerator:	Ctrl<Key>Y
+Ishmail*mainShell.mainWindow*msgReplyAllIncPB.acceleratorText:	Ctrl + Y
+
+Ishmail*mainShell.mainWindow*msgReadPB.labelString:		Selected
+Ishmail*mainShell.mainWindow*msgReadPB.abbrev:			Read
+Ishmail*mainShell.mainWindow*msgReadPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*msgReadPB.accelerator:		Ctrl<Key>R
+Ishmail*mainShell.mainWindow*msgReadPB.acceleratorText:		Ctrl + R
+Ishmail*mainShell.mainWindow*msgNextCB.labelString:		Next
+Ishmail*mainShell.mainWindow*msgNextCB.mnemonic:		N
+Ishmail*mainShell.mainWindow*msgPrevCB.labelString:		Previous
+Ishmail*mainShell.mainWindow*msgPrevCB.mnemonic:		P
+
+Ishmail*mainShell.mainWindow*msgNextPB.labelString:		Message
+Ishmail*mainShell.mainWindow*msgNextPB.abbrev:			Next
+Ishmail*mainShell.mainWindow*msgNextPB.mnemonic:		M
+Ishmail*mainShell.mainWindow*msgNextPB.accelerator:		Ctrl<Key>Z
+Ishmail*mainShell.mainWindow*msgNextPB.acceleratorText:		Ctrl + Z
+Ishmail*mainShell.mainWindow*msgNextUnreadPB.labelString:	Unread
+Ishmail*mainShell.mainWindow*msgNextUnreadPB.abbrev:		Next unread
+Ishmail*mainShell.mainWindow*msgNextUnreadPB.mnemonic:		U
+Ishmail*mainShell.mainWindow*msgNextSenderPB.labelString:	With same sender
+Ishmail*mainShell.mainWindow*msgNextSenderPB.abbrev:		Next sender
+Ishmail*mainShell.mainWindow*msgNextSenderPB.mnemonic:		n
+Ishmail*mainShell.mainWindow*msgNextSubjectPB.labelString:	With same subject
+Ishmail*mainShell.mainWindow*msgNextSubjectPB.abbrev:		Next subject
+Ishmail*mainShell.mainWindow*msgNextSubjectPB.mnemonic:		b
+
+Ishmail*mainShell.mainWindow*msgPrevPB.labelString:		Message
+Ishmail*mainShell.mainWindow*msgPrevPB.abbrev:			Prev
+Ishmail*mainShell.mainWindow*msgPrevPB.mnemonic:		M
+Ishmail*mainShell.mainWindow*msgPrevPB.accelerator:		Ctrl<Key>A
+Ishmail*mainShell.mainWindow*msgPrevPB.acceleratorText:		Ctrl + A
+Ishmail*mainShell.mainWindow*msgPrevUnreadPB.labelString:	Unread
+Ishmail*mainShell.mainWindow*msgPrevUnreadPB.abbrev:		Prev unread
+Ishmail*mainShell.mainWindow*msgPrevUnreadPB.mnemonic:		U
+Ishmail*mainShell.mainWindow*msgPrevSenderPB.labelString:	With same sender
+Ishmail*mainShell.mainWindow*msgPrevSenderPB.abbrev:		Prev sender
+Ishmail*mainShell.mainWindow*msgPrevSenderPB.mnemonic:		n
+Ishmail*mainShell.mainWindow*msgPrevSubjectPB.labelString:	With same subject
+Ishmail*mainShell.mainWindow*msgPrevSubjectPB.abbrev:		Prev subject
+Ishmail*mainShell.mainWindow*msgPrevSubjectPB.mnemonic:		b
+
+Ishmail*mainShell.mainWindow*msgSavePB.labelString:		To folder (Default)
+Ishmail*mainShell.mainWindow*msgSavePB.abbrev:			Save to folder (def)
+Ishmail*mainShell.mainWindow*msgSavePB.mnemonic:		D
+Ishmail*mainShell.mainWindow*msgSavePB.accelerator:		Ctrl<Key>S
+Ishmail*mainShell.mainWindow*msgSavePB.acceleratorText:		Ctrl + S
+Ishmail*mainShell.mainWindow*msgSavePatPB.labelString:		To folder (pattern)
+Ishmail*mainShell.mainWindow*msgSavePatPB.abbrev:		Save to folder (pat)
+Ishmail*mainShell.mainWindow*msgSavePatPB.mnemonic:		p
+Ishmail*mainShell.mainWindow*msgSaveRecentCB.labelString:	To folder (recent)
+Ishmail*mainShell.mainWindow*msgSaveRecentCB.mnemonic:		r
+Ishmail*mainShell.mainWindow*msgSaveQuickCB.labelString:	To folder (list)
+Ishmail*mainShell.mainWindow*msgSaveQuickCB.mnemonic:		l
+Ishmail*mainShell.mainWindow*msgSaveSelPB.labelString:		To folder (selected)
+Ishmail*mainShell.mainWindow*msgSaveSelPB.abbrev:		Save to folder (sel)
+Ishmail*mainShell.mainWindow*msgSaveSelPB.mnemonic:		s
+Ishmail*mainShell.mainWindow*msgSaveToPB.labelString:		To folder ...
+Ishmail*mainShell.mainWindow*msgSaveToPB.abbrev:		Save to folder
+Ishmail*mainShell.mainWindow*msgSaveToPB.mnemonic:		f
+Ishmail*mainShell.mainWindow*msgSaveToPB.accelerator:		Ctrl<Key>T
+Ishmail*mainShell.mainWindow*msgSaveToPB.acceleratorText:	Ctrl + T
+Ishmail*mainShell.mainWindow*msgSaveToFilePB.labelString:	To file ...
+Ishmail*mainShell.mainWindow*msgSaveToFilePB.abbrev:		Save to file
+Ishmail*mainShell.mainWindow*msgSaveToFilePB.mnemonic:		i
+
+Ishmail*mainShell.mainWindow*msgUndelLastPB.labelString:	Last
+Ishmail*mainShell.mainWindow*msgUndelLastPB.abbrev:		Undelete last
+Ishmail*mainShell.mainWindow*msgUndelLastPB.mnemonic:		L
+Ishmail*mainShell.mainWindow*msgUndelLastPB.accelerator:	Ctrl<Key>U
+Ishmail*mainShell.mainWindow*msgUndelLastPB.acceleratorText:	Ctrl + U
+Ishmail*mainShell.mainWindow*msgUndelSelPB.labelString:		Selected
+Ishmail*mainShell.mainWindow*msgUndelSelPB.abbrev:		Undelete
+Ishmail*mainShell.mainWindow*msgUndelSelPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*msgUndelSelPB.accelerator:		Ctrl<Key>G
+Ishmail*mainShell.mainWindow*msgUndelSelPB.acceleratorText:	Ctrl + G
+Ishmail*mainShell.mainWindow*msgUndelListPB.labelString:	From list ...
+Ishmail*mainShell.mainWindow*msgUndelListPB.abbrev:		Undelete (list)
+Ishmail*mainShell.mainWindow*msgUndelListPB.mnemonic:		F
+
+Ishmail*mainShell.mainWindow*msgMarkReadPB.labelString:		Mark as Read
+Ishmail*mainShell.mainWindow*msgMarkReadPB.abbrev:		Mark read
+Ishmail*mainShell.mainWindow*msgMarkReadPB.mnemonic:		R
+Ishmail*mainShell.mainWindow*msgMarkUnreadPB.labelString:	Mark as Unread
+Ishmail*mainShell.mainWindow*msgMarkUnreadPB.abbrev:		Mark unread
+Ishmail*mainShell.mainWindow*msgMarkUnreadPB.mnemonic:		U
+Ishmail*mainShell.mainWindow*msgMarkNewPB.labelString:		Mark as New
+Ishmail*mainShell.mainWindow*msgMarkNewPB.abbrev:		Mark new
+Ishmail*mainShell.mainWindow*msgMarkNewPB.mnemonic:		N
+Ishmail*mainShell.mainWindow*msgStatSetCB.labelString:		Set
+Ishmail*mainShell.mainWindow*msgStatSetCB.mnemonic:		S
+Ishmail*mainShell.mainWindow*msgStatClearCB.labelString:	Clear
+Ishmail*mainShell.mainWindow*msgStatClearCB.mnemonic:		C
+
+Ishmail*mainShell.mainWindow*msgSetSavedPB.labelString:		Saved
+Ishmail*mainShell.mainWindow*msgSetSavedPB.abbrev:		Mark saved
+Ishmail*mainShell.mainWindow*msgSetSavedPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*msgSetRepliedPB.labelString:	Replied
+Ishmail*mainShell.mainWindow*msgSetRepliedPB.abbrev:		Mark replied
+Ishmail*mainShell.mainWindow*msgSetRepliedPB.mnemonic:		R
+Ishmail*mainShell.mainWindow*msgSetForwardedPB.labelString:	Forwarded
+Ishmail*mainShell.mainWindow*msgSetForwardedPB.abbrev:		Mark forwarded
+Ishmail*mainShell.mainWindow*msgSetForwardedPB.mnemonic:	F
+Ishmail*mainShell.mainWindow*msgSetResentPB.labelString:	Resent
+Ishmail*mainShell.mainWindow*msgSetResentPB.abbrev:		Mark resent
+Ishmail*mainShell.mainWindow*msgSetResentPB.mnemonic:		e
+Ishmail*mainShell.mainWindow*msgSetPrintedPB.labelString:	Printed
+Ishmail*mainShell.mainWindow*msgSetPrintedPB.abbrev:		Mark printed
+Ishmail*mainShell.mainWindow*msgSetPrintedPB.mnemonic:		P
+Ishmail*mainShell.mainWindow*msgSetFilteredPB.labelString:	Filtered
+Ishmail*mainShell.mainWindow*msgSetFilteredPB.abbrev:		Mark filtered
+Ishmail*mainShell.mainWindow*msgSetFilteredPB.mnemonic:		i
+
+Ishmail*mainShell.mainWindow*msgClearAllPB.labelString:		All
+Ishmail*mainShell.mainWindow*msgClearAllPB.abbrev:		Clear status
+Ishmail*mainShell.mainWindow*msgClearAllPB.mnemonic:		A
+Ishmail*mainShell.mainWindow*msgClearSavedPB.labelString:	Saved
+Ishmail*mainShell.mainWindow*msgClearSavedPB.abbrev:		Clear saved
+Ishmail*mainShell.mainWindow*msgClearSavedPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*msgClearRepliedPB.labelString:	Replied
+Ishmail*mainShell.mainWindow*msgClearRepliedPB.abbrev:		Clear replied
+Ishmail*mainShell.mainWindow*msgClearRepliedPB.mnemonic:	R
+Ishmail*mainShell.mainWindow*msgClearForwardedPB.labelString:	Forwarded
+Ishmail*mainShell.mainWindow*msgClearForwardedPB.abbrev:	Clear forwarded
+Ishmail*mainShell.mainWindow*msgClearForwardedPB.mnemonic:	F
+Ishmail*mainShell.mainWindow*msgClearResentPB.labelString:	Resent
+Ishmail*mainShell.mainWindow*msgClearResentPB.abbrev:		Clear resent
+Ishmail*mainShell.mainWindow*msgClearResentPB.mnemonic:		e
+Ishmail*mainShell.mainWindow*msgClearPrintedPB.labelString:	Printed
+Ishmail*mainShell.mainWindow*msgClearPrintedPB.abbrev:		Clear printed
+Ishmail*mainShell.mainWindow*msgClearPrintedPB.mnemonic:	P
+Ishmail*mainShell.mainWindow*msgClearFilteredPB.labelString:	Filtered
+Ishmail*mainShell.mainWindow*msgClearFilteredPB.abbrev:		Clear filtered
+Ishmail*mainShell.mainWindow*msgClearFilteredPB.mnemonic:	i
+
+Ishmail*mainShell.mainWindow*msgPUReadPB.labelString:		Read
+Ishmail*mainShell.mainWindow*msgPUReadPB.mnemonic:		a
+Ishmail*mainShell.mainWindow*msgPUReadPB.acceleratorText:	Ctrl + R
+Ishmail*mainShell.mainWindow*msgPUSaveCB.labelString:		Save
+Ishmail*mainShell.mainWindow*msgPUSaveCB.mnemonic:		v
+Ishmail*mainShell.mainWindow*msgPUPrintPB.labelString:		Print ...
+Ishmail*mainShell.mainWindow*msgPUPrintPB.mnemonic:		P
+Ishmail*mainShell.mainWindow*msgPUPrintPB.acceleratorText:	Ctrl + P
+Ishmail*mainShell.mainWindow*msgPUPipePB.labelString:		Filter ...
+Ishmail*mainShell.mainWindow*msgPUPipePB.mnemonic:		i
+Ishmail*mainShell.mainWindow*msgPUReplyCB.labelString:		Reply
+Ishmail*mainShell.mainWindow*msgPUReplyCB.mnemonic:		R
+Ishmail*mainShell.mainWindow*msgPUForwardPB.labelString:	Forward ...
+Ishmail*mainShell.mainWindow*msgPUForwardPB.mnemonic:		F
+Ishmail*mainShell.mainWindow*msgPUForward822PB.labelString:	Forward (encapsulate) ...
+Ishmail*mainShell.mainWindow*msgPUForward822PB.mnemonic:	o
+Ishmail*mainShell.mainWindow*msgPUResendPB.labelString:		Resend ...
+Ishmail*mainShell.mainWindow*msgPUResendPB.mnemonic:		e
+Ishmail*mainShell.mainWindow*msgPUStatCB.labelString:		Set status
+Ishmail*mainShell.mainWindow*msgPUStatCB.mnemonic:		t
+Ishmail*mainShell.mainWindow*msgPUDelPB.labelString:		Mark for deletion
+Ishmail*mainShell.mainWindow*msgPUDelPB.mnemonic:		M
+Ishmail*mainShell.mainWindow*msgPUDelPB.acceleratorText:	Ctrl + D
+Ishmail*mainShell.mainWindow*msgPUUndelPB.labelString:		Undelete
+Ishmail*mainShell.mainWindow*msgPUUndelPB.mnemonic:		U
+
+Ishmail*mainShell.mainWindow*msgPUSavePB.labelString:		To folder (default)
+Ishmail*mainShell.mainWindow*msgPUSavePB.mnemonic:		d
+Ishmail*mainShell.mainWindow*msgPUSavePB.acceleratorText:	Ctrl + S
+Ishmail*mainShell.mainWindow*msgPUSavePatPB.labelString:	To folder (pattern)
+Ishmail*mainShell.mainWindow*msgPUSavePatPB.mnemonic:		p
+Ishmail*mainShell.mainWindow*msgPUSaveRecentCB.labelString:	To folder (recent)
+Ishmail*mainShell.mainWindow*msgPUSaveRecentCB.mnemonic:	r
+Ishmail*mainShell.mainWindow*msgPUSaveQuickCB.labelString:	To folder (list)
+Ishmail*mainShell.mainWindow*msgPUSaveQuickCB.mnemonic:		l
+Ishmail*mainShell.mainWindow*msgPUSaveSelPB.labelString:	To folder (selected)
+Ishmail*mainShell.mainWindow*msgPUSaveSelPB.mnemonic:		s
+Ishmail*mainShell.mainWindow*msgPUSaveToPB.labelString:		To folder ...
+Ishmail*mainShell.mainWindow*msgPUSaveToPB.mnemonic:		f
+Ishmail*mainShell.mainWindow*msgPUSaveToPB.acceleratorText:	Ctrl + T
+Ishmail*mainShell.mainWindow*msgPUSaveToFilePB.labelString:	To file ...
+Ishmail*mainShell.mainWindow*msgPUSaveToFilePB.mnemonic:	i
+
+Ishmail*mainShell.mainWindow*msgPUReplyPB.labelString:		To sender ...
+Ishmail*mainShell.mainWindow*msgPUReplyPB.mnemonic:		s
+Ishmail*mainShell.mainWindow*msgPUReplyPB.acceleratorText:	Ctrl + V
+Ishmail*mainShell.mainWindow*msgPUReplyIncPB.labelString:	To sender (include body) ...
+Ishmail*mainShell.mainWindow*msgPUReplyIncPB.mnemonic:		i
+Ishmail*mainShell.mainWindow*msgPUReplyIncPB.acceleratorText:	Ctrl + W
+Ishmail*mainShell.mainWindow*msgPUReplyAllPB.labelString:	To all ...
+Ishmail*mainShell.mainWindow*msgPUReplyAllPB.mnemonic:		a
+Ishmail*mainShell.mainWindow*msgPUReplyAllPB.acceleratorText:	Ctrl + X
+Ishmail*mainShell.mainWindow*msgPUReplyAllIncPB.labelString:	To all (include body) ...
+Ishmail*mainShell.mainWindow*msgPUReplyAllIncPB.mnemonic:	m
+Ishmail*mainShell.mainWindow*msgPUReplyAllIncPB.acceleratorText:Ctrl + Y
+
+Ishmail*mainShell.mainWindow*msgPUMarkReadPB.labelString:	Mark as Read
+Ishmail*mainShell.mainWindow*msgPUMarkReadPB.mnemonic:		R
+Ishmail*mainShell.mainWindow*msgPUMarkUnreadPB.labelString:	Mark as Unread
+Ishmail*mainShell.mainWindow*msgPUMarkUnreadPB.mnemonic:	U
+Ishmail*mainShell.mainWindow*msgPUMarkNewPB.labelString:	Mark as New
+Ishmail*mainShell.mainWindow*msgPUMarkNewPB.mnemonic:		N
+Ishmail*mainShell.mainWindow*msgPUStatSetCB.labelString:	Set
+Ishmail*mainShell.mainWindow*msgPUStatSetCB.mnemonic:		S
+Ishmail*mainShell.mainWindow*msgPUStatClearCB.labelString:	Clear
+Ishmail*mainShell.mainWindow*msgPUStatClearCB.mnemonic:		C
+
+Ishmail*mainShell.mainWindow*msgPUSetSavedPB.labelString:	Saved
+Ishmail*mainShell.mainWindow*msgPUSetSavedPB.mnemonic:		S
+Ishmail*mainShell.mainWindow*msgPUSetRepliedPB.labelString:	Replied
+Ishmail*mainShell.mainWindow*msgPUSetRepliedPB.mnemonic:	R
+Ishmail*mainShell.mainWindow*msgPUSetForwardedPB.labelString:	Forwarded
+Ishmail*mainShell.mainWindow*msgPUSetForwardedPB.mnemonic:	F
+Ishmail*mainShell.mainWindow*msgPUSetResentPB.labelString:	Resent
+Ishmail*mainShell.mainWindow*msgPUSetResentPB.mnemonic:		e
+Ishmail*mainShell.mainWindow*msgPUSetPrintedPB.labelString:	Printed
+Ishmail*mainShell.mainWindow*msgPUSetPrintedPB.mnemonic:	P
+Ishmail*mainShell.mainWindow*msgPUSetFilteredPB.labelString:	Filtered
+Ishmail*mainShell.mainWindow*msgPUSetFilteredPB.mnemonic:	i
+
+Ishmail*mainShell.mainWindow*msgPUClearAllPB.labelString:	All
+Ishmail*mainShell.mainWindow*msgPUClearAllPB.mnemonic:		A
+Ishmail*mainShell.mainWindow*msgPUClearSavedPB.labelString:	Saved
+Ishmail*mainShell.mainWindow*msgPUClearSavedPB.mnemonic:	S
+Ishmail*mainShell.mainWindow*msgPUClearRepliedPB.labelString:	Replied
+Ishmail*mainShell.mainWindow*msgPUClearRepliedPB.mnemonic:	R
+Ishmail*mainShell.mainWindow*msgPUClearForwardedPB.labelString:	Forwarded
+Ishmail*mainShell.mainWindow*msgPUClearForwardedPB.mnemonic:	F
+Ishmail*mainShell.mainWindow*msgPUClearResentPB.labelString:	Resent
+Ishmail*mainShell.mainWindow*msgPUClearResentPB.mnemonic:	e
+Ishmail*mainShell.mainWindow*msgPUClearPrintedPB.labelString:	Printed
+Ishmail*mainShell.mainWindow*msgPUClearPrintedPB.mnemonic:	P
+Ishmail*mainShell.mainWindow*msgPUClearFilteredPB.labelString:	Filtered
+Ishmail*mainShell.mainWindow*msgPUClearFilteredPB.mnemonic:	i
+
+Ishmail*mainShell.mainWindow*optCB.labelString:			Options
+Ishmail*mainShell.mainWindow*optCB.mnemonic:			O
+Ishmail*mainShell.mainWindow*optPrefPB.labelString:		Application ...
+Ishmail*mainShell.mainWindow*optPrefPB.abbrev:			App prefs
+Ishmail*mainShell.mainWindow*optPrefPB.mnemonic:		p
+Ishmail*mainShell.mainWindow*optReadPB.labelString:		Reading ...
+Ishmail*mainShell.mainWindow*optReadPB.abbrev:			Reading prefs
+Ishmail*mainShell.mainWindow*optReadPB.mnemonic:		R
+Ishmail*mainShell.mainWindow*optSendPB.labelString:		Composition ...
+Ishmail*mainShell.mainWindow*optSendPB.abbrev:			Comp prefs
+Ishmail*mainShell.mainWindow*optSendPB.mnemonic:		C
+Ishmail*mainShell.mainWindow*optMailPB.labelString:		Mail ...
+Ishmail*mainShell.mainWindow*optMailPB.abbrev:			Mail prefs
+Ishmail*mainShell.mainWindow*optMailPB.mnemonic:		M
+Ishmail*mainShell.mainWindow*optReplyPB.labelString:		Reply/Forward ...
+Ishmail*mainShell.mainWindow*optReplyPB.abbrev:			Reply prefs
+Ishmail*mainShell.mainWindow*optReplyPB.mnemonic:		y
+Ishmail*mainShell.mainWindow*optSigPB.labelString:		Signature ...
+Ishmail*mainShell.mainWindow*optSigPB.abbrev:			Sig prefs
+Ishmail*mainShell.mainWindow*optSigPB.mnemonic:			S
+Ishmail*mainShell.mainWindow*optConfirmPB.labelString:		Confirmations ...
+Ishmail*mainShell.mainWindow*optConfirmPB.abbrev:		Confirmations
+Ishmail*mainShell.mainWindow*optConfirmPB.mnemonic:		n
+Ishmail*mainShell.mainWindow*optHeadPB.labelString:		Displayed headers ...
+Ishmail*mainShell.mainWindow*optHeadPB.abbrev:			Header prefs
+Ishmail*mainShell.mainWindow*optHeadPB.mnemonic:		D
+Ishmail*mainShell.mainWindow*optAliasPB.labelString:		Aliases ...
+Ishmail*mainShell.mainWindow*optAliasPB.abbrev:			Aliases
+Ishmail*mainShell.mainWindow*optAliasPB.mnemonic:		A
+Ishmail*mainShell.mainWindow*optGroupAliasPB.labelString:	Group aliases ...
+Ishmail*mainShell.mainWindow*optGroupAliasPB.abbrev:		Group aliases
+Ishmail*mainShell.mainWindow*optGroupAliasPB.mnemonic:		e
+Ishmail*mainShell.mainWindow*optAlertPB.labelString:		Alerts ...
+Ishmail*mainShell.mainWindow*optAlertPB.abbrev:			Alerts
+Ishmail*mainShell.mainWindow*optAlertPB.mnemonic:		l
+Ishmail*mainShell.mainWindow*optIconPB.labelString:		Icons ...
+Ishmail*mainShell.mainWindow*optIconPB.abbrev:			Icons
+Ishmail*mainShell.mainWindow*optIconPB.mnemonic:		I
+Ishmail*mainShell.mainWindow*optSavePB.labelString:		Save patterns ...
+Ishmail*mainShell.mainWindow*optSavePB.abbrev:			Saving prefs
+Ishmail*mainShell.mainWindow*optSavePB.mnemonic:		v
+Ishmail*mainShell.mainWindow*optAutoFilePB.labelString:		Automatic Filing ...
+Ishmail*mainShell.mainWindow*optAutoFilePB.abbrev:		Auto-filing
+Ishmail*mainShell.mainWindow*optAutoFilePB.mnemonic:		u
+Ishmail*mainShell.mainWindow*optFontPB.labelString:		Fonts ...
+Ishmail*mainShell.mainWindow*optFontPB.abbrev:			Fonts
+Ishmail*mainShell.mainWindow*optFontPB.mnemonic:		F
+Ishmail*mainShell.mainWindow*optButtPB.labelString:		Buttons ...
+Ishmail*mainShell.mainWindow*optButtPB.abbrev:			Buttons
+Ishmail*mainShell.mainWindow*optButtPB.mnemonic:		B
+Ishmail*mainShell.mainWindow*optSummPB.labelString:		Message List ...
+Ishmail*mainShell.mainWindow*optSummPB.abbrev:			Msg list
+Ishmail*mainShell.mainWindow*optSummPB.mnemonic:		g
+Ishmail*mainShell.mainWindow*optFolderPB.labelString:		Folders ...
+Ishmail*mainShell.mainWindow*optFolderPB.abbrev:		Folder prefs
+Ishmail*mainShell.mainWindow*optFolderPB.mnemonic:		o
+Ishmail*mainShell.mainWindow*optSortPB.labelString:		Sort ...
+Ishmail*mainShell.mainWindow*optSortPB.abbrev:			Sort
+Ishmail*mainShell.mainWindow*optSortPB.mnemonic:		t
+
+Ishmail*mainShell.mainWindow*helpCommentPB.labelString:		Comment ...
+Ishmail*mainShell.mainWindow*helpCommentPB.abbrev:		Comment
+Ishmail*mainShell.mainWindow*helpCommentPB.mnemonic:		C
+
+Ishmail*mainWindow*helpButton.labelString:			Help
+Ishmail*mainWindow*helpButton.mnemonic:				H
+Ishmail*mainWindow*helpCB.labelString:				Help
+Ishmail*mainWindow*helpCB.mnemonic:				H
+Ishmail*mainWindow*helpContextButton.labelString:		On Context
+Ishmail*mainWindow*helpContextButton.mnemonic:			C
+Ishmail*mainWindow*helpContextButton.accelerator:		Shift<Key>F1
+Ishmail*mainWindow*helpContextButton.acceleratorText:		Shift + F1
+Ishmail*mainWindow*helpContextPB.labelString:			On Context
+Ishmail*mainWindow*helpContextPB.mnemonic:			C
+Ishmail*mainWindow*helpContextPB.accelerator:			Shift<Key>F1
+Ishmail*mainWindow*helpContextPB.acceleratorText:		Shift + F1
+Ishmail*mainWindow*helpWindowButton.labelString:		On Window
+Ishmail*mainWindow*helpWindowButton.mnemonic:			W
+Ishmail*mainWindow*helpWindowPB.labelString:			On Window
+Ishmail*mainWindow*helpWindowPB.mnemonic:			W
+Ishmail*mainWindow*helpAppButton.labelString:			On Application
+Ishmail*mainWindow*helpAppButton.mnemonic:			A
+Ishmail*mainWindow*helpAppPB.labelString:			On Application
+Ishmail*mainWindow*helpAppPB.mnemonic:				A
+Ishmail*mainWindow*helpIndexButton.labelString:			Index
+Ishmail*mainWindow*helpIndexButton.mnemonic:			I
+Ishmail*mainWindow*helpIndexPB.labelString:			Index
+Ishmail*mainWindow*helpIndexPB.mnemonic:			I
+Ishmail*mainWindow*helpHelpButton.labelString:			On Help
+Ishmail*mainWindow*helpHelpButton.mnemonic:			H
+Ishmail*mainWindow*helpHelpPB.labelString:			On Help
+Ishmail*mainWindow*helpHelpPB.mnemonic:				H
+Ishmail*mainWindow*helpKeysButton.labelString:			On Keys
+Ishmail*mainWindow*helpKeysButton.mnemonic:			K
+Ishmail*mainWindow*helpKeysPB.labelString:			On Keys
+Ishmail*mainWindow*helpKeysPB.mnemonic:				K
+Ishmail*mainWindow*helpVerButton.labelString:			On Version
+Ishmail*mainWindow*helpVerButton.mnemonic:			V
+Ishmail*mainWindow*helpVerPB.labelString:			On Version
+Ishmail*mainWindow*helpVerPB.mnemonic:				V
+Ishmail*mainWindow*helpModPB.labelString:			EDIT RESOURCES
+Ishmail*mainWindow*helpModPB.mnemonic:				E
+Ishmail*mainWindow*helpGuidePB.labelString:			User's Guide
+Ishmail*mainWindow*helpGuidePB.mnemonic:			G
+
+Ishmail*mainShell.mainWindow*msgBox*systemTitleString:		In-Box
+Ishmail*mainShell.mainWindow*msgBox*folderTitleString:		Folder: $NAME
+Ishmail*mainShell.mainWindow*msgBox*msgCountString:		$COUNT message(s)
+Ishmail*mainShell.mainWindow*msgBox*newMsgCountString:		$COUNT new
+Ishmail*mainShell.mainWindow*msgBox*unreadMsgCountString:	$COUNT unread
+Ishmail*mainShell.mainWindow*msgBox*savedMsgCountString:	$COUNT saved
+Ishmail*mainShell.mainWindow*msgBox*delMsgCountString:		$COUNT marked for deletion
+
+!
+! Apply the abbreviations for custom buttons so they will show up properly
+!    if the user doesn't override them.  The addition of the "msgBox" widget
+!    makes these apply only to the custom buttons
+!
+Ishmail*mainShell.mainWindow*msgBox*filePrintPB.labelString:	Print
+Ishmail*mainShell.mainWindow*msgBox*fileSleepPB.labelString:	Sleep
+Ishmail*mainShell.mainWindow*msgBox*fileExitPB.labelString:	Exit
+Ishmail*mainShell.mainWindow*msgBox*fileQuitPB.labelString:	Quit
+Ishmail*mainShell.mainWindow*msgBox*folderNewPB.labelString:	New folder
+Ishmail*mainShell.mainWindow*msgBox*folderOpenPB.labelString:	Open folder
+Ishmail*mainShell.mainWindow*msgBox*folderSelPB.labelString:	Select all folders
+Ishmail*mainShell.mainWindow*msgBox*folderDeselPB.labelString:	Deselect all folders
+Ishmail*mainShell.mainWindow*msgBox*folderActSysPB.labelString:	Open in-box
+Ishmail*mainShell.mainWindow*msgBox*folderActSelPB.labelString:	Open selected folders
+Ishmail*mainShell.mainWindow*msgBox*folderSavePB.labelString:	Save folder
+Ishmail*mainShell.mainWindow*msgBox*folderSaveSelPB.labelString:Save selected folders
+Ishmail*mainShell.mainWindow*msgBox*folderSaveAllPB.labelString:Save all folders
+Ishmail*mainShell.mainWindow*msgBox*folderReadCurPB.labelString:Reread folder
+Ishmail*mainShell.mainWindow*msgBox*folderReadSelPB.labelString:Reread selected folders
+Ishmail*mainShell.mainWindow*msgBox*folderReadAllPB.labelString:Reread all folders
+Ishmail*mainShell.mainWindow*msgBox*folderCloseCurPB.labelString:Close folder
+Ishmail*mainShell.mainWindow*msgBox*folderCloseSelPB.labelString:Close selected folders
+Ishmail*mainShell.mainWindow*msgBox*folderCloseAllPB.labelString:Close all folders
+Ishmail*mainShell.mainWindow*msgBox*folderDelCurPB.labelString:	Delete folder
+Ishmail*mainShell.mainWindow*msgBox*folderDelSelPB.labelString:	Delete selected folders
+Ishmail*mainShell.mainWindow*msgBox*folderDelAllPB.labelString:	Delete All folders
+Ishmail*mainShell.mainWindow*msgBox*msgComposePB.labelString:	Compose
+Ishmail*mainShell.mainWindow*msgBox*msgForwardPB.labelString:	Forward
+Ishmail*mainShell.mainWindow*msgBox*msgForward822PB.labelString:Forward (enc)
+Ishmail*mainShell.mainWindow*msgBox*msgResendPB.labelString:	Resend
+Ishmail*mainShell.mainWindow*msgBox*msgPrintPB.labelString:	Print
+Ishmail*mainShell.mainWindow*msgBox*msgPipePB.labelString:	Filter msg
+Ishmail*mainShell.mainWindow*msgBox*msgDelPB.labelString:	Delete msg
+Ishmail*mainShell.mainWindow*msgBox*msgSelPB.labelString:	Select all msgs
+Ishmail*mainShell.mainWindow*msgBox*msgDeselPB.labelString:	Deselect all msgs
+Ishmail*mainShell.mainWindow*msgBox*msgFindPB.labelString:	Search
+Ishmail*mainShell.mainWindow*msgBox*msgReplyPB.labelString:	Reply sender
+Ishmail*mainShell.mainWindow*msgBox*msgReplyIncPB.labelString:	Reply sender (inc)
+Ishmail*mainShell.mainWindow*msgBox*msgReplyAllPB.labelString:	Reply all
+Ishmail*mainShell.mainWindow*msgBox*msgReplyAllIncPB.labelString:Reply all (inc)
+Ishmail*mainShell.mainWindow*msgBox*msgReadPB.labelString:	Read
+Ishmail*mainShell.mainWindow*msgBox*msgNextPB.labelString:	Next
+Ishmail*mainShell.mainWindow*msgBox*msgNextUnreadPB.labelString:Next unread
+Ishmail*mainShell.mainWindow*msgBox*msgNextSenderPB.labelString:Next sender
+Ishmail*mainShell.mainWindow*msgBox*msgNextSubjectPB.labelString:Next subject
+Ishmail*mainShell.mainWindow*msgBox*msgPrevPB.labelString:	Prev
+Ishmail*mainShell.mainWindow*msgBox*msgPrevUnreadPB.labelString:Prev unread
+Ishmail*mainShell.mainWindow*msgBox*msgPrevSenderPB.labelString:Prev sender
+Ishmail*mainShell.mainWindow*msgBox*msgPrevSubjectPB.labelString:Prev subject
+Ishmail*mainShell.mainWindow*msgBox*msgSavePB.labelString:	Save to folder (def)
+Ishmail*mainShell.mainWindow*msgBox*msgSaveDefPB.labelString:	Save to folder (pat)
+Ishmail*mainShell.mainWindow*msgBox*msgSaveSelPB.labelString:	Save to folder (sel)
+Ishmail*mainShell.mainWindow*msgBox*msgSaveToPB.labelString:	Save to folder
+Ishmail*mainShell.mainWindow*msgBox*msgSaveToFilePB.labelString:Save to file
+Ishmail*mainShell.mainWindow*msgBox*msgUndelLastPB.labelString:	Undelete last
+Ishmail*mainShell.mainWindow*msgBox*msgUndelSelPB.labelString:	Undelete
+Ishmail*mainShell.mainWindow*msgBox*msgUndelListPB.labelString:	Undelete (list)
+Ishmail*mainShell.mainWindow*msgBox*msgMarkReadPB.labelString:	Mark read
+Ishmail*mainShell.mainWindow*msgBox*msgMarkUnreadPB.labelString:Mark unread
+Ishmail*mainShell.mainWindow*msgBox*msgMarkNewPB.labelString:	Mark new
+Ishmail*mainShell.mainWindow*msgBox*msgSetSavedPB.labelString:	Mark saved
+Ishmail*mainShell.mainWindow*msgBox*msgSetRepliedPB.labelString:Mark replied
+Ishmail*mainShell.mainWindow*msgBox*msgSetForwardedPB.labelString:Mark forwarded
+Ishmail*mainShell.mainWindow*msgBox*msgSetResentPB.labelString:	Mark resent
+Ishmail*mainShell.mainWindow*msgBox*msgSetPrintedPB.labelString:Mark printed
+Ishmail*mainShell.mainWindow*msgBox*msgSetFilteredPB.labelString:Mark filtered
+Ishmail*mainShell.mainWindow*msgBox*msgClearAllPB.labelString:	Clear status
+Ishmail*mainShell.mainWindow*msgBox*msgClearSavedPB.labelString:Clear saved
+Ishmail*mainShell.mainWindow*msgBox*msgClearRepliedPB.labelString:Clear replied
+Ishmail*mainShell.mainWindow*msgBox*msgClearForwardedPB.labelString:Clear forwarded
+Ishmail*mainShell.mainWindow*msgBox*msgClearResentPB.labelString:Clear resent
+Ishmail*mainShell.mainWindow*msgBox*msgClearPrintedPB.labelString:Clear printed
+Ishmail*mainShell.mainWindow*msgBox*msgClearFilteredPB.labelString:Clear filtered
+Ishmail*mainShell.mainWindow*msgBox*optPrefPB.labelString:	App prefs
+Ishmail*mainShell.mainWindow*msgBox*optReadPB.labelString:	Reading prefs
+Ishmail*mainShell.mainWindow*msgBox*optSendPB.labelString:	Comp prefs
+Ishmail*mainShell.mainWindow*msgBox*optMailPB.labelString:	Mail prefs
+Ishmail*mainShell.mainWindow*msgBox*optReplyPB.labelString:	Reply prefs
+Ishmail*mainShell.mainWindow*msgBox*optSigPB.labelString:	Sig prefs
+Ishmail*mainShell.mainWindow*msgBox*optConfirmPB.labelString:	Confirmations
+Ishmail*mainShell.mainWindow*msgBox*optHeadPB.labelString:	Header prefs
+Ishmail*mainShell.mainWindow*msgBox*optAliasPB.labelString:	Aliases
+Ishmail*mainShell.mainWindow*msgBox*optGroupAliasPB.labelString:Group aliases
+Ishmail*mainShell.mainWindow*msgBox*optAlertPB.labelString:	Alerts
+Ishmail*mainShell.mainWindow*msgBox*optIconPB.labelString:	Icons
+Ishmail*mainShell.mainWindow*msgBox*optSavePB.labelString:	Saving prefs
+Ishmail*mainShell.mainWindow*msgBox*optAutoFilePB.labelString:	Auto-filing
+Ishmail*mainShell.mainWindow*msgBox*optFontPB.labelString:	Fonts
+Ishmail*mainShell.mainWindow*msgBox*optButtPB.labelString:	Buttons
+Ishmail*mainShell.mainWindow*msgBox*optSummPB.labelString:	Msg list
+Ishmail*mainShell.mainWindow*msgBox*optFolderPB.labelString:	Folder prefs
+Ishmail*mainShell.mainWindow*msgBox*optSortPB.labelString:	Sort
+Ishmail*mainShell.mainWindow*msgBox*helpCommentPB.labelString:	Comment
+
+Ishmail*msgNumColumnTitle:	#
+Ishmail*msgStatColumnTitle:	
+Ishmail*fromColumnTitle:	From
+Ishmail*subjectColumnTitle:	Subject
+Ishmail*dateColumnTitle:	Date
+Ishmail*linesColumnTitle:	Lines
+Ishmail*bytesColumnTitle:	Size
+
+!---------------------------------------------------------------------------
+
+Ishmail*deleteFolderWin_popup.title:			Delete folder
+Ishmail*deleteFolderWin_popup.iconName:			Delete folder
+Ishmail*deleteFolderWin_popup*messageString:		Really delete these folders?
+Ishmail*deleteFolderWin_popup*okLabelString:		Yes
+Ishmail*deleteFolderWin_popup*cancelLabelString:	No
+
+!-----------------------------------------------------------------------
+
+Ishmail*msgFindWin.title:				Find Message
+Ishmail*msgFindWin.iconName:				Find Message
+Ishmail*msgFindWin*patternLabel.labelString:		Search string
+Ishmail*msgFindWin*complexPB.labelString:		Complex search ...
+Ishmail*msgFindWin*searchHeadTB.labelString:		Search headers
+Ishmail*msgFindWin*searchBodyTB.labelString:		Search body
+Ishmail*msgFindWin*searchCaseTB.labelString:		Case sensitive
+Ishmail*msgFindWin*findPB.labelString:			Find Next
+Ishmail*msgFindWin*findPrevPB.labelString:		Find Prev
+Ishmail*msgFindWin*findAllPB.labelString:		Find All
+
+!---------------------------------------------------------------------------
+
+Ishmail*ReadIconC.showLabel:			Show
+Ishmail*ReadIconC.hideLabel:			Hide
+Ishmail*readWin*audio/basic.showLabel:		Play
+Ishmail*readWin*video/mpeg.showLabel:		Play
+Ishmail*readWin*audio/basic.hideLabel:		Stop
+Ishmail*readWin*video/mpeg.hideLabel:		Stop
+
+Ishmail*readWin.title:						Reading Window
+Ishmail*readWin.iconName:					Reading Window
+
+Ishmail*readWin.mainWindow*fileCB.labelString:			Message
+Ishmail*readWin.mainWindow*replyCB.labelString:			Reply
+Ishmail*readWin.mainWindow*optCB.labelString:			Options
+
+Ishmail*readWin.mainWindow*fileCB.mnemonic:           		M
+Ishmail*readWin.mainWindow*replyCB.mnemonic:           		R
+Ishmail*readWin.mainWindow*optCB.mnemonic:           		O
+
+! File menu
+
+Ishmail*readWin.mainWindow*fileNextCB.labelString:		Next
+Ishmail*readWin.mainWindow*filePrevCB.labelString:		Previous
+Ishmail*readWin.mainWindow*fileSaveCB.labelString:		Save
+Ishmail*readWin.mainWindow*filePrintPB.labelString:		Print ...
+Ishmail*readWin.mainWindow*fileFilterCB.labelString:		Filter
+Ishmail*readWin.mainWindow*fileUndeletePB.labelString:		Undelete
+Ishmail*readWin.mainWindow*fileDeletePB.labelString:		Mark for deletion
+Ishmail*readWin.mainWindow*fileDelClosePB.labelString:		Mark for deletion/Close
+Ishmail*readWin.mainWindow*fileClosePB.labelString:		Close
+
+Ishmail*readWin.mainWindow*fileNextCB.mnemonic:           	N
+Ishmail*readWin.mainWindow*filePrevCB.mnemonic:           	v
+Ishmail*readWin.mainWindow*fileSaveCB.mnemonic:           	S
+Ishmail*readWin.mainWindow*filePrintPB.mnemonic:           	P
+Ishmail*readWin.mainWindow*fileFilterPB.mnemonic:           	F
+Ishmail*readWin.mainWindow*fileUndeletePB.mnemonic:           	U
+Ishmail*readWin.mainWindow*fileDeletePB.mnemonic:           	M
+Ishmail*readWin.mainWindow*fileDelClosePB.mnemonic:           	k
+Ishmail*readWin.mainWindow*fileClosePB.mnemonic:           	C
+
+Ishmail*readWin.mainWindow*filePrintPB.accelerator:		Ctrl<Key>P
+Ishmail*readWin.mainWindow*fileUndeletePB.accelerator:		Ctrl<Key>U
+Ishmail*readWin.mainWindow*fileDeletePB.accelerator:		Ctrl<Key>D
+Ishmail*readWin.mainWindow*fileClosePB.accelerator:		Ctrl<Key>C
+
+Ishmail*readWin.mainWindow*filePrintPB.acceleratorText:		Ctrl + P
+Ishmail*readWin.mainWindow*fileUndeletePB.acceleratorText:	Ctrl + U
+Ishmail*readWin.mainWindow*fileDeletePB.acceleratorText:	Ctrl + D
+Ishmail*readWin.mainWindow*fileClosePB.acceleratorText:		Ctrl + C
+
+Ishmail*readWin.mainWindow*filePrintPB.abbrev:			Print
+Ishmail*readWin.mainWindow*fileUndeletePB.abbrev:		Undelete
+Ishmail*readWin.mainWindow*fileDeletePB.abbrev:			Delete
+Ishmail*readWin.mainWindow*fileDelClosePB.abbrev:		Delete/Close
+Ishmail*readWin.mainWindow*fileClosePB.abbrev:			Close
+
+! File->Next menu
+
+Ishmail*readWin.mainWindow*fileNextPB.labelString:		Message
+Ishmail*readWin.mainWindow*fileNextUnreadPB.labelString:	Unread
+Ishmail*readWin.mainWindow*fileNextSenderPB.labelString:	With same sender
+Ishmail*readWin.mainWindow*fileNextSubjectPB.labelString:	With same subject
+
+Ishmail*readWin.mainWindow*fileNextPB.mnemonic:           	M
+Ishmail*readWin.mainWindow*fileNextUnreadPB.mnemonic:		U
+Ishmail*readWin.mainWindow*fileNextSenderPB.mnemonic:		n
+Ishmail*readWin.mainWindow*fileNextSubjectPB.mnemonic:		b
+
+Ishmail*readWin.mainWindow*fileNextPB.accelerator:		Ctrl<Key>Z
+
+Ishmail*readWin.mainWindow*fileNextPB.acceleratorText:		Ctrl + Z
+
+Ishmail*readWin.mainWindow*fileNextPB.abbrev:			Next
+Ishmail*readWin.mainWindow*fileNextUnreadPB.abbrev:		Next unread
+Ishmail*readWin.mainWindow*fileNextSenderPB.abbrev:		Next sender
+Ishmail*readWin.mainWindow*fileNextSubjectPB.abbrev:		Next subject
+
+! File->Prev menu
+
+Ishmail*readWin.mainWindow*filePrevPB.labelString:		Message
+Ishmail*readWin.mainWindow*filePrevUnreadPB.labelString:	Unread
+Ishmail*readWin.mainWindow*filePrevSenderPB.labelString:	With same sender
+Ishmail*readWin.mainWindow*filePrevSubjectPB.labelString:	With same subject
+
+Ishmail*readWin.mainWindow*filePrevPB.mnemonic:           	M
+Ishmail*readWin.mainWindow*filePrevUnreadPB.mnemonic:		U
+Ishmail*readWin.mainWindow*filePrevSenderPB.mnemonic:		n
+Ishmail*readWin.mainWindow*filePrevSubjectPB.mnemonic:		b
+
+Ishmail*readWin.mainWindow*filePrevPB.accelerator:		Ctrl<Key>A
+
+Ishmail*readWin.mainWindow*filePrevPB.acceleratorText:		Ctrl + A
+
+Ishmail*readWin.mainWindow*filePrevPB.abbrev:			Prev
+Ishmail*readWin.mainWindow*filePrevUnreadPB.abbrev:		Prev unread
+Ishmail*readWin.mainWindow*filePrevSenderPB.abbrev:		Prev sender
+Ishmail*readWin.mainWindow*filePrevSubjectPB.prev:		Prev subject
+
+! File->Save menu
+
+Ishmail*readWin.mainWindow*fileSavePB.labelString:		To folder (default)
+Ishmail*readWin.mainWindow*fileSaveRecentCB.labelString:	To folder (recent)
+Ishmail*readWin.mainWindow*fileSaveQuickCB.labelString:		To folder (list)
+Ishmail*readWin.mainWindow*fileSaveSelPB.labelString:		To folder (selected)
+Ishmail*readWin.mainWindow*fileSaveToPB.labelString:		To folder ...
+Ishmail*readWin.mainWindow*fileSaveToFilePB.labelString:	To file ...
+
+Ishmail*readWin.mainWindow*fileSavePB.mnemonic:			d
+Ishmail*readWin.mainWindow*fileSaveRecentCB.mnemonic:		r
+Ishmail*readWin.mainWindow*fileSaveQuickCB.mnemonic:		l
+Ishmail*readWin.mainWindow*fileSaveSelPB.mnemonic:		s
+Ishmail*readWin.mainWindow*fileSaveToPB.mnemonic:		f
+Ishmail*readWin.mainWindow*fileSaveToFilePB.mnemonic:		i
+
+Ishmail*readWin.mainWindow*fileSavePB.accelerator:		Ctrl<Key>S
+Ishmail*readWin.mainWindow*fileSaveToPB.accelerator:		Ctrl<Key>T
+
+Ishmail*readWin.mainWindow*fileSavePB.acceleratorText:		Ctrl + S
+Ishmail*readWin.mainWindow*fileSaveToPB.acceleratorText:	Ctrl + T
+
+Ishmail*readWin.mainWindow*fileSavePB.abbrev:			Save to folder (def)
+Ishmail*readWin.mainWindow*fileSaveSelPB.abbrev:		Save to folder (sel)
+Ishmail*readWin.mainWindow*fileSaveToPB.abbrev:			Save to folder
+Ishmail*readWin.mainWindow*fileSaveToFilePB.abbrev:		Save to file
+
+! File->Filter menu
+
+Ishmail*readWin.mainWindow*fileMimePB.labelString:		Convert to MIME
+Ishmail*readWin.mainWindow*fileDecryptPB.labelString:		Decrypt
+Ishmail*readWin.mainWindow*fileAuthPB.labelString:		Authenticate
+Ishmail*readWin.mainWindow*fileEditPB.labelString:		Edit
+Ishmail*readWin.mainWindow*filePipePB.labelString:		Other ...
+
+Ishmail*readWin.mainWindow*fileMimePB.mnemonic:           	M
+Ishmail*readWin.mainWindow*fileDecryptPB.mnemonic:           	D
+Ishmail*readWin.mainWindow*fileAuthPB.mnemonic:           	A
+Ishmail*readWin.mainWindow*fileEditPB.mnemonic:           	E
+Ishmail*readWin.mainWindow*filePipePB.mnemonic:           	O
+
+Ishmail*readWin.mainWindow*fileMimePB.abbrev:			MIME
+Ishmail*readWin.mainWindow*fileDecryptPB.abbrev:		Decrypt
+Ishmail*readWin.mainWindow*fileAuthPB.abbrev:			Auth
+Ishmail*readWin.mainWindow*fileEditPB.abbrev:			Edit
+Ishmail*readWin.mainWindow*filePipePB.abbrev:			Filter
+
+! Reply menu
+
+Ishmail*readWin.mainWindow*replyPB.labelString:			To sender ...
+Ishmail*readWin.mainWindow*replyIncPB.labelString:		To sender (include body) ...
+Ishmail*readWin.mainWindow*replyAllPB.labelString:		To all ...
+Ishmail*readWin.mainWindow*replyAllIncPB.labelString:		To all (include body) ...
+Ishmail*readWin.mainWindow*forwardPB.labelString:		Forward ...
+Ishmail*readWin.mainWindow*forward822PB.labelString:		Forward (encapsulate) ...
+Ishmail*readWin.mainWindow*resendPB.labelString:		Resend ...
+
+Ishmail*readWin.mainWindow*replyPB.mnemonic:			s
+Ishmail*readWin.mainWindow*replyIncPB.mnemonic:			i
+Ishmail*readWin.mainWindow*replyAllPB.mnemonic:			a
+Ishmail*readWin.mainWindow*replyAllIncPB.mnemonic:		b
+Ishmail*readWin.mainWindow*forwardPB.mnemonic:			F
+Ishmail*readWin.mainWindow*forward822PB.mnemonic:		o
+Ishmail*readWin.mainWindow*resendPB.mnemonic:			R
+
+Ishmail*readWin.mainWindow*replyPB.accelerator:			Ctrl<Key>V
+Ishmail*readWin.mainWindow*replyIncPB.accelerator:		Ctrl<Key>W
+Ishmail*readWin.mainWindow*replyAllPB.accelerator:		Ctrl<Key>X
+Ishmail*readWin.mainWindow*replyAllIncPB.accelerator:		Ctrl<Key>Y
+Ishmail*readWin.mainWindow*forwardPB.accelerator:		Ctrl<Key>F
+Ishmail*readWin.mainWindow*replyPB.acceleratorText:		Ctrl + V
+Ishmail*readWin.mainWindow*replyIncPB.acceleratorText:		Ctrl + W
+Ishmail*readWin.mainWindow*replyAllPB.acceleratorText:		Ctrl + X
+Ishmail*readWin.mainWindow*replyAllIncPB.acceleratorText:	Ctrl + Y
+Ishmail*readWin.mainWindow*forwardPB.acceleratorText:		Ctrl + F
+
+Ishmail*readWin.mainWindow*replyPB.abbrev:			Reply sender
+Ishmail*readWin.mainWindow*replyIncPB.abbrev:			Reply sender (inc)
+Ishmail*readWin.mainWindow*replyAllPB.abbrev:			Reply all
+Ishmail*readWin.mainWindow*replyAllIncPB.abbrev:		Reply all (inc)
+Ishmail*readWin.mainWindow*forwardPB.abbrev:			Forward
+Ishmail*readWin.mainWindow*forward822PB.abbrev:			Forward (enc)
+Ishmail*readWin.mainWindow*resendPB.abbrev:			Resend
+
+! Option menu
+
+Ishmail*readWin.mainWindow*optPrefPB.labelString:		Preferences ...
+Ishmail*readWin.mainWindow*optButtPB.labelString:		Buttons ...
+Ishmail*readWin.mainWindow*optHeadTB.labelString:		Show all headers
+Ishmail*readWin.mainWindow*optWrapTB.labelString:		Wrap text
+Ishmail*readWin.mainWindow*optViewCB.labelString:		View
+Ishmail*readWin.mainWindow*viewFlatTB.labelString:		Normal
+Ishmail*readWin.mainWindow*viewOutlineTB.labelString:		Outline
+Ishmail*readWin.mainWindow*viewNestedTB.labelString:		Nested
+Ishmail*readWin.mainWindow*viewSourceTB.labelString:		Source
+
+Ishmail*readWin.mainWindow*optPrefPB.mnemonic:           	P
+Ishmail*readWin.mainWindow*optButtPB.mnemonic:           	B
+Ishmail*readWin.mainWindow*optHeadTB.mnemonic:           	S
+Ishmail*readWin.mainWindow*optWrapTB.mnemonic:           	W
+Ishmail*readWin.mainWindow*optViewCB.mnemonic:           	V
+Ishmail*readWin.mainWindow*viewFlatTB.mnemonic:			N
+Ishmail*readWin.mainWindow*viewOutlineTB.mnemonic:		O
+Ishmail*readWin.mainWindow*viewNestedTB.mnemonic:		e
+Ishmail*readWin.mainWindow*viewSourceTB.mnemonic:		S
+
+Ishmail*readWin.mainWindow*optPrefPB.abbrev:			Prefs
+Ishmail*readWin.mainWindow*optButtPB.abbrev:			Buttons
+
+Ishmail*readWin.mainWindow*msgTitle.labelString:		($NUM) $SUB
+Ishmail*readWin.mainWindow*msgTitle.noMessageString:		No messages
+Ishmail*readWin.mainWindow*msgMimeShowPB.labelString:		Show ...
+Ishmail*readWin.mainWindow*msgMimeHidePB.labelString:		Hide
+
+Ishmail*readWin.mainWindow*mimePUShowPB.labelString:		Show ...
+Ishmail*readWin.mainWindow*mimePUShowPB.mnemonic:           	S
+Ishmail*readWin.mainWindow*mimePUHidePB.labelString:		Hide
+Ishmail*readWin.mainWindow*mimePUHidePB.mnemonic:           	H
+Ishmail*readWin.mainWindow*mimePUSavePB.labelString:		Save ...
+Ishmail*readWin.mainWindow*mimePUSavePB.mnemonic:           	v
+Ishmail*readWin.mainWindow*mimePUPrintPB.labelString:		Print ...
+Ishmail*readWin.mainWindow*mimePUPrintPB.mnemonic:           	P
+Ishmail*readWin.mainWindow*mimePUFetchPB.labelString:		Retrieve ...
+Ishmail*readWin.mainWindow*mimePUFetchPB.mnemonic:           	R
+
+!
+! Apply the abbreviations for custom buttons so they will show up properly
+!    if the user doesn't override them.  The addition of the "buttonRC" widget
+!    makes these apply only to the custom buttons
+!
+Ishmail*readWin.mainWindow*buttonRC.filePrintPB.labelString:	Print
+Ishmail*readWin.mainWindow*buttonRC.filePipePB.labelString:	Filter
+Ishmail*readWin.mainWindow*buttonRC.fileUndeletePB.labelString:	Undelete
+Ishmail*readWin.mainWindow*buttonRC.fileDeletePB.labelString:	Delete
+Ishmail*readWin.mainWindow*buttonRC.fileDelClosePB.labelString:	Delete/Close
+Ishmail*readWin.mainWindow*buttonRC.fileClosePB.labelString:	Close
+Ishmail*readWin.mainWindow*buttonRC.fileNextPB.labelString:	Next
+Ishmail*readWin.mainWindow*buttonRC.fileNextUnreadPB.labelString:Next unread
+Ishmail*readWin.mainWindow*buttonRC.fileNextSenderPB.labelString:Next sender
+Ishmail*readWin.mainWindow*buttonRC.fileNextSubjectPB.labelString:Next subject
+Ishmail*readWin.mainWindow*buttonRC.filePrevPB.labelString:	Prev
+Ishmail*readWin.mainWindow*buttonRC.filePrevUnreadPB.labelString:Prev unread
+Ishmail*readWin.mainWindow*buttonRC.filePrevSenderPB.labelString:Prev sender
+Ishmail*readWin.mainWindow*buttonRC.fileSavePB.labelString:	Save to folder (def)
+Ishmail*readWin.mainWindow*buttonRC.fileSaveSelPB.labelString:	Save to folder (sel)
+Ishmail*readWin.mainWindow*buttonRC.fileSaveToPB.labelString:	Save to folder
+Ishmail*readWin.mainWindow*buttonRC.fileSaveToFilePB.labelString:Save to file
+Ishmail*readWin.mainWindow*buttonRC.replyPB.labelString:	Reply sender
+Ishmail*readWin.mainWindow*buttonRC.replyIncPB.labelString:	Reply sender (inc)
+Ishmail*readWin.mainWindow*buttonRC.replyAllPB.labelString:	Reply all
+Ishmail*readWin.mainWindow*buttonRC.replyAllIncPB.labelString:	Reply all (inc)
+Ishmail*readWin.mainWindow*buttonRC.forwardPB.labelString:	Forward
+Ishmail*readWin.mainWindow*buttonRC.forward822PB.labelString:	Forward (enc)
+Ishmail*readWin.mainWindow*buttonRC.resendPB.labelString:	Resend
+Ishmail*readWin.mainWindow*buttonRC.optPrefPB.labelString:	Prefs
+Ishmail*readWin.mainWindow*buttonRC.optButtPB.labelString:	Buttons
+
+Ishmail*readWin*localTextWin.title:			Text Window
+Ishmail*readWin*localTextWin.iconName:			Text Window
+Ishmail*readWin*localTextWin*okPB.labelString:		Done
+
+Ishmail*readWin*readWin.title:				Message/RFC822 Window
+Ishmail*readWin*readWin.iconName:			Message/RFC822 Window
+Ishmail*readWin*readWin.mainWindow*okPB.labelString:	Done
+Ishmail*readWin*readWin.mainWindow*fileNextPB.labelString:	Next
+Ishmail*readWin*readWin.mainWindow*fileNextPB.mnemonic:         N
+Ishmail*readWin*readWin.mainWindow*filePrevPB.labelString:	Previous
+Ishmail*readWin*readWin.mainWindow*filePrevPB.mnemonic:         P
+
+Ishmail*readWin.getQueryWin_popup.title:		Retrieve body part
+Ishmail*readWin.getQueryWin_popup*getString:	\
+   "$NAME" must first be retrieved.\nShall I retrieve it?
+Ishmail*readWin.getQueryWin_popup*getAgainString:	\
+   "$NAME" has already been retrieved.\nShall I retrieve it again?
+Ishmail*readWin.getQueryWin_popup*okLabelString:	Yes
+Ishmail*readWin.getQueryWin_popup*cancelLabelString:	No
+
+Ishmail*readWin.sendQueryWin_popup.title:		Confirm mail server request
+Ishmail*readWin.sendQueryWin_popup*messageString:	\
+The following message will be sent to "$SERVER".\n\
+Is this ok?\n\
+\n\
+---------- Message begins ----------\n\
+$MESSAGE\n\
+---------- Message ends ----------
+
+Ishmail*noMailcapWin_popup.title:			No Mailcap Entry
+Ishmail*noMailcapWin_popup.iconName:			No Mailcap Entry
+Ishmail*noMailcapWin*okLabelString:			Save
+Ishmail*noMailcapWin*textPB.labelString:		Display
+
+!---------------------------------------------------------------------------
+
+Ishmail*loginWin.title:				Remote Login
+Ishmail*loginWin*loginLabel.labelString:	Enter login for remote host:
+Ishmail*loginWin*nameLabel.labelString:		User:
+Ishmail*loginWin*passLabel.labelString:		Password:
+
+!---------------------------------------------------------------------------
+
+Ishmail*prefWin.title:				Application Preferences
+Ishmail*prefWin*inBoxLabel.labelString:		In-box folder
+Ishmail*prefWin*checkLabel.labelString:		Check for new mail every
+Ishmail*prefWin*checkSecLabel.labelString:	seconds
+Ishmail*prefWin*alertTB.labelString:		Sound alert when new mail arrives
+Ishmail*prefWin*delSaveTB.labelString:		Mark messages for deletion after saving
+Ishmail*prefWin*hideDelTB.labelString:		Hide messages marked for deletion
+Ishmail*prefWin*quickHelpTB.labelString:	Show quick help
+Ishmail*prefWin*showNewTB.labelString:		Scroll to new messages as they arrive
+Ishmail*prefWin*windowPosTB.labelString:	Save window positions on exit
+Ishmail*prefWin*newUnreadTB.labelString:	Mark New as Unread when folder is saved
+Ishmail*prefWin*archiveTB.labelString:		Move Read messages to folder:
+Ishmail*prefWin*archiveLabel.labelString:	when in-box is saved
+Ishmail*prefWin*recentLabel1.labelString:	Remember the
+Ishmail*prefWin*recentLabel2.labelString:	most recent folders
+Ishmail*prefWin*imapTB.labelString:		Use IMAP server:
+Ishmail*prefWin*popTB.labelString:		Use POP server:
+Ishmail*prefWin*popCmdLabel.labelString:	with popclient command:
+Ishmail*prefWin*folderLabel.labelString:	Folder directory:
+Ishmail*prefWin*saveLabel.labelString:		Default save folder:
+Ishmail*prefWin*trashLabel.labelString:		Trash folder:
+Ishmail*prefWin*autoLabel.labelString:		Automounter prefix:
+Ishmail*prefWin*printLabel.labelString:		Default print command:
+Ishmail*prefWin*bellLabel.labelString:		Alert bell volume:
+Ishmail*prefWin*saveFolderTB.labelString:	Always to:
+Ishmail*prefWin*savePatternTB.labelString:	By
+Ishmail*prefWin*savePatternLabel.labelString:	to directory:
+Ishmail*prefWin*saveUserPB.labelString:		User
+Ishmail*prefWin*saveAddrPB.labelString:		Address
+Ishmail*prefWin*savePatternPB.labelString:	Pattern
+Ishmail*prefWin*savePatUserPB.labelString:	Pattern or User
+Ishmail*prefWin*savePatAddrPB.labelString:	Pattern or Address
+Ishmail*prefWin*editPatternPB.labelString:	Edit patterns ...
+
+!---------------------------------------------------------------------------
+
+Ishmail*saveRuleWin.title:				Save Patterns
+Ishmail*saveRuleWin*keyColumnTitle:			Pattern
+Ishmail*saveRuleWin*valueColumnTitle:			Folder name
+Ishmail*saveRuleWin*addPB.labelString:			New ...
+Ishmail*saveRuleWin*removePB.labelString:		Delete
+Ishmail*saveRuleWin*modifyPB.labelString:		Edit ...
+Ishmail*saveRuleWin*insertPB.labelString:		Insert ...
+Ishmail*saveRuleWin*taskTitle.labelString:		Save Pattern List
+
+Ishmail*saveRuleWinEntryWin.title:			Edit Save Pattern
+Ishmail*saveRuleWinEntryWin*keyLabel.labelString:	Pattern:
+Ishmail*saveRuleWinEntryWin*valueLabel.labelString:	Folder name:
+
+!---------------------------------------------------------------------------
+
+Ishmail*readPrefWin.title:				Reading Window Preferences
+Ishmail*readPrefWin*wrapTB.labelString:			Wrap text at right margin
+Ishmail*readPrefWin*colLabel.labelString:		Number of columns:
+Ishmail*readPrefWin*headRowLabel.labelString:		Number of header rows:
+Ishmail*readPrefWin*bodyRowLabel.labelString:		Number of body rows:
+Ishmail*readPrefWin*viewLabel.labelString:		View type:
+Ishmail*readPrefWin*viewFlatTB.labelString:		Normal
+Ishmail*readPrefWin*viewOutlineTB.labelString:		Outline
+Ishmail*readPrefWin*viewNestedTB.labelString:		Nested
+Ishmail*readPrefWin*viewSourceTB.labelString:		Source
+Ishmail*readPrefWin*webLabel.labelString:		Web browser command:
+Ishmail*readPrefWin*decryptLabel.labelString:		Decryption command:
+Ishmail*readPrefWin*authLabel.labelString:		Authentication command:
+
+!---------------------------------------------------------------------------
+
+Ishmail*savePartWin.title:				Save MIME part to a file
+Ishmail*savePartWin.iconName:				Save MIME part to a file
+Ishmail*savePartWin*okPB.labelString:			Save
+
+!-----------------------------------------------------------------------
+
+Ishmail*overwriteQueryWin_popup.title:			Overwrite File
+Ishmail*overwriteQueryWin_popup.iconName:		Overwrite File
+Ishmail*overwriteQueryWin.messageString:		Replace existing file?
+Ishmail*overwriteQueryWin*okLabelString:		Yes
+Ishmail*overwriteQueryWin*noPB.labelString:		No
+
+!---------------------------------------------------------------------------
+
+Ishmail*sendWin.title:					Composition Window
+Ishmail*sendWin.iconName:				Composition Window
+Ishmail*sendWin.resendTitle:				Resend Window
+Ishmail*sendWin.mainWindow*fileCB.labelString:		Message
+Ishmail*sendWin.mainWindow*fileCB.mnemonic:		M
+Ishmail*sendWin.mainWindow*fileEditPB.labelString:	Editor ...
+Ishmail*sendWin.mainWindow*fileEditPB.abbrev:		Editor
+Ishmail*sendWin.mainWindow*fileEditPB.mnemonic:		E
+Ishmail*sendWin.mainWindow*fileSpellPB.labelString:	Check spelling ...
+Ishmail*sendWin.mainWindow*fileSpellPB.abbrev:		Spelling
+Ishmail*sendWin.mainWindow*fileSpellPB.mnemonic:	p
+Ishmail*sendWin.mainWindow*fileIncCB.labelString:	Include/Attach
+Ishmail*sendWin.mainWindow*fileIncCB.mnemonic:		I
+Ishmail*sendWin.mainWindow*fileAddCB.labelString:	Add container
+Ishmail*sendWin.mainWindow*fileAddCB.mnemonic:		d
+Ishmail*sendWin.mainWindow*fileSavePB.labelString:	Save ...
+Ishmail*sendWin.mainWindow*fileSavePB.abbrev:		Save
+Ishmail*sendWin.mainWindow*fileSavePB.mnemonic:		v
+Ishmail*sendWin.mainWindow*fileLoadPB.labelString:	Load ...
+Ishmail*sendWin.mainWindow*fileLoadPB.abbrev:		Load
+Ishmail*sendWin.mainWindow*fileLoadPB.mnemonic:		d
+Ishmail*sendWin.mainWindow*fileCheckPB.labelString:	Check addresses now
+Ishmail*sendWin.mainWindow*fileCheckPB.abbrev:		Addresses
+Ishmail*sendWin.mainWindow*fileCheckPB.mnemonic:	h
+Ishmail*sendWin.mainWindow*fileSendPB.labelString:	Send
+Ishmail*sendWin.mainWindow*fileSendPB.abbrev:		Send
+Ishmail*sendWin.mainWindow*fileSendPB.mnemonic:		S
+Ishmail*sendWin.mainWindow*fileSendPB.accelerator:	Ctrl<Key>S
+Ishmail*sendWin.mainWindow*fileSendPB.acceleratorText:	Ctrl + S
+Ishmail*sendWin.mainWindow*fileSendKeepPB.labelString:	Send/Keep Text
+Ishmail*sendWin.mainWindow*fileSendKeepPB.abbrev:	Send/Keep
+Ishmail*sendWin.mainWindow*fileSendKeepPB.mnemonic:	n
+Ishmail*sendWin.mainWindow*fileSendClosePB.labelString:	Send/Close
+Ishmail*sendWin.mainWindow*fileSendClosePB.abbrev:	Send/Close
+Ishmail*sendWin.mainWindow*fileSendClosePB.mnemonic:	o
+Ishmail*sendWin.mainWindow*fileClearPB.labelString:	Clear
+Ishmail*sendWin.mainWindow*fileClearPB.abbrev:		Clear
+Ishmail*sendWin.mainWindow*fileClearPB.mnemonic:	C
+Ishmail*sendWin.mainWindow*fileClearPB.accelerator:	Ctrl<Key>X
+Ishmail*sendWin.mainWindow*fileClearPB.acceleratorText:	Ctrl + X
+Ishmail*sendWin.mainWindow*fileClosePB.labelString:	Close
+Ishmail*sendWin.mainWindow*fileClosePB.abbrev:		Close
+Ishmail*sendWin.mainWindow*fileClosePB.mnemonic:	l
+Ishmail*sendWin.mainWindow*fileClosePB.accelerator:	Ctrl<Key>C
+Ishmail*sendWin.mainWindow*fileClosePB.acceleratorText:	Ctrl + C
+Ishmail*sendWin.mainWindow*fileCancelPB.labelString:	Cancel
+Ishmail*sendWin.mainWindow*fileCancelPB.abbrev:		Cancel
+Ishmail*sendWin.mainWindow*fileCancelPB.mnemonic:	a
+
+Ishmail*sendWin.mainWindow*fileIncTextPB.labelString:		Text File(s) ...
+Ishmail*sendWin.mainWindow*fileIncTextPB.abbrev:		Include text
+Ishmail*sendWin.mainWindow*fileIncTextPB.mnemonic:		T
+Ishmail*sendWin.mainWindow*fileIncFilePB.labelString:		File(s) ...
+Ishmail*sendWin.mainWindow*fileIncFilePB.abbrev:		Include file
+Ishmail*sendWin.mainWindow*fileIncFilePB.mnemonic:		F
+Ishmail*sendWin.mainWindow*fileIncMsgPB.labelString:		Message ...
+Ishmail*sendWin.mainWindow*fileIncMsgPB.abbrev:			Include msg
+Ishmail*sendWin.mainWindow*fileIncMsgPB.mnemonic:		M
+Ishmail*sendWin.mainWindow*fileIncSigCB.labelString:		Signature
+Ishmail*sendWin.mainWindow*fileIncSigCB.mnemonic:		S
+Ishmail*sendWin.mainWindow*fileIncExtPSigPB.labelString:	Plain external
+Ishmail*sendWin.mainWindow*fileIncExtPSigPB.abbrev:		Inc sig (ext)
+Ishmail*sendWin.mainWindow*fileIncExtPSigPB.mnemonic:		P
+Ishmail*sendWin.mainWindow*fileIncExtESigPB.labelString:	Enriched external
+Ishmail*sendWin.mainWindow*fileIncExtESigPB.abbrev:		Inc sig (ext MIME)
+Ishmail*sendWin.mainWindow*fileIncExtESigPB.mnemonic:		E
+Ishmail*sendWin.mainWindow*fileIncIntPSigPB.labelString:	Plain internal
+Ishmail*sendWin.mainWindow*fileIncIntPSigPB.abbrev:		Inc sig (int)
+Ishmail*sendWin.mainWindow*fileIncIntPSigPB.mnemonic:		l
+Ishmail*sendWin.mainWindow*fileIncIntESigPB.labelString:	Enriched internal
+Ishmail*sendWin.mainWindow*fileIncIntESigPB.abbrev:		Inc sig (int MIME)
+Ishmail*sendWin.mainWindow*fileIncIntESigPB.mnemonic:		n
+
+Ishmail*sendWin.mainWindow*fileAddMixPB.labelString:		Mixed
+Ishmail*sendWin.mainWindow*fileAddMixPB.abbrev:			Add mixed
+Ishmail*sendWin.mainWindow*fileAddMixPB.mnemonic:		M
+Ishmail*sendWin.mainWindow*fileAddDigPB.labelString:		Message Digest
+Ishmail*sendWin.mainWindow*fileAddDigPB.abbrev:			Add digest
+Ishmail*sendWin.mainWindow*fileAddDigPB.mnemonic:		D
+Ishmail*sendWin.mainWindow*fileAddAltPB.labelString:		Alternatives
+Ishmail*sendWin.mainWindow*fileAddAltPB.abbrev:			Add alternative
+Ishmail*sendWin.mainWindow*fileAddAltPB.mnemonic:		A
+Ishmail*sendWin.mainWindow*fileAddParPB.labelString:		Parallel
+Ishmail*sendWin.mainWindow*fileAddParPB.abbrev:			Add parallel
+Ishmail*sendWin.mainWindow*fileAddParPB.mnemonic:		P
+
+Ishmail*sendWin.mainWindow*editCB.labelString:			Edit
+Ishmail*sendWin.mainWindow*editCB.mnemonic:			E
+Ishmail*sendWin.mainWindow*editUndeletePB.labelString:		Undelete
+Ishmail*sendWin.mainWindow*editUndeletePB.abbrev:		Undelete
+Ishmail*sendWin.mainWindow*editUndeletePB.mnemonic:		U
+Ishmail*sendWin.mainWindow*editPlainPB.labelString:		Plain
+Ishmail*sendWin.mainWindow*editPlainPB.abbrev:			Plain
+Ishmail*sendWin.mainWindow*editPlainPB.mnemonic:		P
+Ishmail*sendWin.mainWindow*editBoldPB.labelString:		Bold
+Ishmail*sendWin.mainWindow*editBoldPB.abbrev:			Bold
+Ishmail*sendWin.mainWindow*editBoldPB.mnemonic:			B
+Ishmail*sendWin.mainWindow*editItalicPB.labelString:		Italic
+Ishmail*sendWin.mainWindow*editItalicPB.abbrev:			Italic
+Ishmail*sendWin.mainWindow*editItalicPB.mnemonic:		I
+Ishmail*sendWin.mainWindow*editFixedPB.labelString:		Fixed
+Ishmail*sendWin.mainWindow*editFixedPB.abbrev:			Fixed
+Ishmail*sendWin.mainWindow*editFixedPB.mnemonic:		F
+Ishmail*sendWin.mainWindow*editUnderPB.labelString:		Underline
+Ishmail*sendWin.mainWindow*editUnderPB.abbrev:			Underline
+Ishmail*sendWin.mainWindow*editUnderPB.mnemonic:		n
+Ishmail*sendWin.mainWindow*editBiggerPB.labelString:		Bigger
+Ishmail*sendWin.mainWindow*editBiggerPB.abbrev:			Bigger
+Ishmail*sendWin.mainWindow*editBiggerPB.mnemonic:		g
+Ishmail*sendWin.mainWindow*editSmallerPB.labelString:		Smaller
+Ishmail*sendWin.mainWindow*editSmallerPB.abbrev:		Smaller
+Ishmail*sendWin.mainWindow*editSmallerPB.mnemonic:		S
+Ishmail*sendWin.mainWindow*editFlushLeftPB.labelString:		Justify Left
+Ishmail*sendWin.mainWindow*editFlushLeftPB.abbrev:		Justify Left
+Ishmail*sendWin.mainWindow*editFlushLeftPB.mnemonic:		J
+Ishmail*sendWin.mainWindow*editFlushRightPB.labelString:	Justify Right
+Ishmail*sendWin.mainWindow*editFlushRightPB.abbrev:		Justify Right
+Ishmail*sendWin.mainWindow*editFlushRightPB.mnemonic:		t
+Ishmail*sendWin.mainWindow*editFlushBothPB.labelString:		Justify Both
+Ishmail*sendWin.mainWindow*editFlushBothPB.abbrev:		Justify Both
+Ishmail*sendWin.mainWindow*editFlushBothPB.mnemonic:		h
+Ishmail*sendWin.mainWindow*editCenterPB.labelString:		Center
+Ishmail*sendWin.mainWindow*editCenterPB.abbrev:			Center
+Ishmail*sendWin.mainWindow*editCenterPB.mnemonic:		C
+Ishmail*sendWin.mainWindow*editNoFillPB.labelString:		Verbatim
+Ishmail*sendWin.mainWindow*editNoFillPB.abbrev:			Verbatim
+Ishmail*sendWin.mainWindow*editNoFillPB.mnemonic:		V
+Ishmail*sendWin.mainWindow*editExcerptMorePB.labelString:	Excerpt More
+Ishmail*sendWin.mainWindow*editExcerptMorePB.abbrev:		Excerpt
+Ishmail*sendWin.mainWindow*editExcerptMorePB.mnemonic:		E
+Ishmail*sendWin.mainWindow*editExcerptLessPB.labelString:	Excerpt Less
+Ishmail*sendWin.mainWindow*editExcerptLessPB.abbrev:		Un-excerpt
+Ishmail*sendWin.mainWindow*editExcerptLessPB.mnemonic:		x
+Ishmail*sendWin.mainWindow*editLeftMarginInPB.labelString:	Indent Left More
+Ishmail*sendWin.mainWindow*editLeftMarginInPB.abbrev:		Indent left
+Ishmail*sendWin.mainWindow*editLeftMarginInPB.mnemonic:		d
+Ishmail*sendWin.mainWindow*editLeftMarginOutPB.labelString:	Indent Left Less
+Ishmail*sendWin.mainWindow*editLeftMarginOutPB.abbrev:		Un-indent left
+Ishmail*sendWin.mainWindow*editLeftMarginOutPB.mnemonic:	L
+Ishmail*sendWin.mainWindow*editRightMarginInPB.labelString:	Indent Right More
+Ishmail*sendWin.mainWindow*editRightMarginInPB.abbrev:		Indent right
+Ishmail*sendWin.mainWindow*editRightMarginInPB.mnemonic:	M
+Ishmail*sendWin.mainWindow*editRightMarginOutPB.labelString:	Indent Right Less
+Ishmail*sendWin.mainWindow*editRightMarginOutPB.abbrev:		Un-indent right
+Ishmail*sendWin.mainWindow*editRightMarginOutPB.mnemonic:	R
+
+Ishmail*sendWin.mainWindow*editColorCB.labelString:		Color
+Ishmail*sendWin.mainWindow*editColorCB.mnemonic:		o
+Ishmail*sendWin.mainWindow*colorRedPB.labelString:		Red
+Ishmail*sendWin.mainWindow*colorGreenPB.labelString:		Green
+Ishmail*sendWin.mainWindow*colorBluePB.labelString:		Blue
+Ishmail*sendWin.mainWindow*colorYellowPB.labelString:		Yellow
+Ishmail*sendWin.mainWindow*colorMagentaPB.labelString:		Magenta
+Ishmail*sendWin.mainWindow*colorCyanPB.labelString:		Cyan
+Ishmail*sendWin.mainWindow*colorBlackPB.labelString:		Black
+Ishmail*sendWin.mainWindow*colorWhitePB.labelString:		White
+Ishmail*sendWin.mainWindow*colorOtherPB.labelString:		Other ...
+Ishmail*sendWin.mainWindow*colorNonePB.labelString:		None
+
+Ishmail*sendWin.mainWindow*colorRedPB.abbrev:			Red
+Ishmail*sendWin.mainWindow*colorGreenPB.abbrev:			Green
+Ishmail*sendWin.mainWindow*colorBluePB.abbrev:			Blue
+Ishmail*sendWin.mainWindow*colorYellowPB.abbrev:		Yellow
+Ishmail*sendWin.mainWindow*colorMagentaPB.abbrev:		Magenta
+Ishmail*sendWin.mainWindow*colorCyanPB.abbrev:			Cyan
+Ishmail*sendWin.mainWindow*colorBlackPB.abbrev:			Black
+Ishmail*sendWin.mainWindow*colorWhitePB.abbrev:			White
+Ishmail*sendWin.mainWindow*colorOtherPB.abbrev:			Other Color
+Ishmail*sendWin.mainWindow*colorNonePB.abbrev:			No Color
+
+Ishmail*sendWin.mainWindow*colorRedPB.mnemonic:			R
+Ishmail*sendWin.mainWindow*colorGreenPB.mnemonic:		G
+Ishmail*sendWin.mainWindow*colorBluePB.mnemonic:		B
+Ishmail*sendWin.mainWindow*colorYellowPB.mnemonic:		Y
+Ishmail*sendWin.mainWindow*colorMagentaPB.mnemonic:		M
+Ishmail*sendWin.mainWindow*colorCyanPB.mnemonic:		C
+Ishmail*sendWin.mainWindow*colorBlackPB.mnemonic:		l
+Ishmail*sendWin.mainWindow*colorWhitePB.mnemonic:		W
+Ishmail*sendWin.mainWindow*colorOtherPB.mnemonic:		O
+Ishmail*sendWin.mainWindow*colorNonePB.mnemonic:		N
+
+Ishmail*sendWin.mainWindow*colorRedPB.accelerator:		Meta<Key>R
+Ishmail*sendWin.mainWindow*colorRedPB.acceleratorText:		Meta + R
+Ishmail*sendWin.mainWindow*colorGreenPB.accelerator:		Meta<Key>G
+Ishmail*sendWin.mainWindow*colorGreenPB.acceleratorText:	Meta + G
+Ishmail*sendWin.mainWindow*colorBluePB.accelerator:		Meta<Key>B
+Ishmail*sendWin.mainWindow*colorBluePB.acceleratorText:  	Meta + B
+Ishmail*sendWin.mainWindow*colorYellowPB.accelerator:		Meta<Key>Y
+Ishmail*sendWin.mainWindow*colorYellowPB.acceleratorText:	Meta + Y
+Ishmail*sendWin.mainWindow*colorMagentaPB.accelerator:		Meta<Key>M
+Ishmail*sendWin.mainWindow*colorMagentaPB.acceleratorText:	Meta + M
+Ishmail*sendWin.mainWindow*colorCyanPB.accelerator:		Meta<Key>C
+Ishmail*sendWin.mainWindow*colorCyanPB.acceleratorText:		Meta + C
+Ishmail*sendWin.mainWindow*colorBlackPB.accelerator:		Meta<Key>L
+Ishmail*sendWin.mainWindow*colorBlackPB.acceleratorText:	Meta + L
+Ishmail*sendWin.mainWindow*colorWhitePB.accelerator:		Meta<Key>W
+Ishmail*sendWin.mainWindow*colorWhitePB.acceleratorText:	Meta + W
+Ishmail*sendWin.mainWindow*colorNonePB.accelerator:		Meta<Key>N
+Ishmail*sendWin.mainWindow*colorNonePB.acceleratorText:		Meta + N
+
+Ishmail*sendWin.mainWindow*optCB.labelString:			Options
+Ishmail*sendWin.mainWindow*optCB.mnemonic:			O
+Ishmail*sendWin.mainWindow*optPrefPB.labelString:		Window ...
+Ishmail*sendWin.mainWindow*optPrefPB.abbrev:			Window prefs
+Ishmail*sendWin.mainWindow*optMailPB.labelString:		Mail ...
+Ishmail*sendWin.mainWindow*optMailPB.abbrev:			Mail prefs
+Ishmail*sendWin.mainWindow*optReplyPB.labelString:		Reply/Forward ...
+Ishmail*sendWin.mainWindow*optReplyPB.abbrev:			Reply prefs
+Ishmail*sendWin.mainWindow*optSigPB.labelString:		Signature ...
+Ishmail*sendWin.mainWindow*optSigPB.abbrev:			Sig prefs
+Ishmail*sendWin.mainWindow*optButtPB.labelString:		Buttons ...
+Ishmail*sendWin.mainWindow*optButtPB.abbrev:			Buttons
+Ishmail*sendWin.mainWindow*optCcTB.labelString:			Show Cc:
+Ishmail*sendWin.mainWindow*optBccTB.labelString:		Show Bcc:
+Ishmail*sendWin.mainWindow*optFccTB.labelString:		Show Fcc:
+Ishmail*sendWin.mainWindow*optOtherTB.labelString:		Show Additional:
+Ishmail*sendWin.mainWindow*optCheckAddrTB.labelString:		Check addresses
+Ishmail*sendWin.mainWindow*optMsgTypeCB.labelString:		Message type
+Ishmail*sendWin.mainWindow*optMsgPlainTB.labelString:		Plain
+Ishmail*sendWin.mainWindow*optMsgMimeTB.labelString:		MIME
+Ishmail*sendWin.mainWindow*optMsgAltTB.labelString:		Both
+Ishmail*sendWin.mainWindow*optTextTypeCB.labelString:		Text type
+Ishmail*sendWin.mainWindow*optTextPlainTB.labelString:		Plain
+Ishmail*sendWin.mainWindow*optTextRichTB.labelString:		Enriched
+
+Ishmail*sendWin.mainWindow*optPrefPB.mnemonic:			W
+Ishmail*sendWin.mainWindow*optMailPB.mnemonic:			M
+Ishmail*sendWin.mainWindow*optReplyPB.mnemonic:			R
+Ishmail*sendWin.mainWindow*optSigPB.mnemonic:			S
+Ishmail*sendWin.mainWindow*optButtPB.mnemonic:			u
+Ishmail*sendWin.mainWindow*optCcTB.mnemonic:			C
+Ishmail*sendWin.mainWindow*optBccTB.mnemonic:			B
+Ishmail*sendWin.mainWindow*optFccTB.mnemonic:			F
+Ishmail*sendWin.mainWindow*optOtherTB.mnemonic:			A
+Ishmail*sendWin.mainWindow*optCheckAddrTB.mnemonic:		h
+Ishmail*sendWin.mainWindow*optMsgTypeCB.mnemonic:		e
+Ishmail*sendWin.mainWindow*optTextTypeCB.mnemonic:		T
+
+Ishmail*sendWin.mainWindow*optMsgPlainTB.mnemonic:		P
+Ishmail*sendWin.mainWindow*optMsgMimeTB.mnemonic:		M
+Ishmail*sendWin.mainWindow*optMsgAltTB.mnemonic:		B
+Ishmail*sendWin.mainWindow*optTextPlainTB.mnemonic:		P
+Ishmail*sendWin.mainWindow*optTextRichTB.mnemonic:		E
+
+Ishmail*sendWin*bodyTitle.labelString:			Message:
+
+Ishmail*sendWin.mainWindow*subjectLabel.labelString:	Subject:
+Ishmail*sendWin.mainWindow*toLabel.labelString:		To:
+Ishmail*sendWin.mainWindow*ccLabel.labelString:		Cc:
+Ishmail*sendWin.mainWindow*bccLabel.labelString:	Bcc:
+Ishmail*sendWin.mainWindow*fccLabel.labelString:	Fcc:
+Ishmail*sendWin.mainWindow*headForm.labelForm.otherLabel.labelString:	Other\nheaders:
+Ishmail*sendWin.mainWindow*headForm*otherLabel.labelString:	Other headers:
+Ishmail*sendWin.mainWindow*headForm*XmPushButton.labelString:	...
+Ishmail*sendWin.mainWindow*headRC*XmPushButton.labelString:	...
+Ishmail*sendWin.mainWindow*typeLabel.labelString:		Message type:
+Ishmail*sendWin.mainWindow*bodyPartModPB.labelString:		Modify ...
+Ishmail*sendWin.mainWindow*bodyPartDelPB.labelString:		Delete
+Ishmail*sendWin.mainWindow*optMimeTB.labelString:	MIME
+Ishmail*sendWin.mainWindow*optWrapTB.labelString:	Wrap
+Ishmail*sendWin.mainWindow*optAddSigTB.labelString:	Add ASCII sig
+Ishmail*sendWin.mainWindow*optDigSignTB.labelString:	Add digital sig
+Ishmail*sendWin.mainWindow*optEncryptTB.labelString:	Encrypt
+
+Ishmail*sendWin.mainWindow*mimePUEditPB.labelString:		Edit Attributes ...
+Ishmail*sendWin.mainWindow*mimePUEditPB.mnemonic:     		A
+Ishmail*sendWin.mainWindow*mimePUContPB.labelString:		Edit Contents ...
+Ishmail*sendWin.mainWindow*mimePUContPB.mnemonic:     		C
+Ishmail*sendWin.mainWindow*mimePUTypeCB.labelString:		Set Type
+Ishmail*sendWin.mainWindow*mimePUTypeCB.mnemonic:     		S
+Ishmail*sendWin.mainWindow*mimePUDelPB.labelString:		Delete
+Ishmail*sendWin.mainWindow*mimePUDelPB.mnemonic:      		D
+Ishmail*sendWin.mainWindow*mimePUTypeMixPB.labelString:		Mixed
+Ishmail*sendWin.mainWindow*mimePUTypeMixPB.mnemonic:      	M
+Ishmail*sendWin.mainWindow*mimePUTypeDigPB.labelString:		Digest
+Ishmail*sendWin.mainWindow*mimePUTypeDigPB.mnemonic:      	D
+Ishmail*sendWin.mainWindow*mimePUTypeAltPB.labelString:		Alternative
+Ishmail*sendWin.mainWindow*mimePUTypeAltPB.mnemonic:      	A
+Ishmail*sendWin.mainWindow*mimePUTypeParPB.labelString:		Parallel
+Ishmail*sendWin.mainWindow*mimePUTypeParPB.mnemonic:      	P
+
+!
+! Apply the abbreviations for custom buttons so they will show up properly
+!    if the user doesn't override them.  The addition of the "buttonRC" widget
+!    makes these apply only to the custom buttons
+!
+Ishmail*sendWin.mainWindow*buttonRC.fileEditPB.labelString:	Editor
+Ishmail*sendWin.mainWindow*buttonRC.fileSpellPB.labelString:	Spelling
+Ishmail*sendWin.mainWindow*buttonRC.fileSavePB.labelString:	Save
+Ishmail*sendWin.mainWindow*buttonRC.fileLoadPB.labelString:	Load
+Ishmail*sendWin.mainWindow*buttonRC.fileCheckPB.labelString:	Addresses
+Ishmail*sendWin.mainWindow*buttonRC.fileSendPB.labelString:	Send
+Ishmail*sendWin.mainWindow*buttonRC.fileSendKeepPB.labelString:	Send/Keep
+Ishmail*sendWin.mainWindow*buttonRC.fileSendClosePB.labelString:Send/Close
+Ishmail*sendWin.mainWindow*buttonRC.fileClearPB.labelString:	Clear
+Ishmail*sendWin.mainWindow*buttonRC.fileClosePB.labelString:	Close
+Ishmail*sendWin.mainWindow*buttonRC.fileCancelPB.labelString:	Cancel
+Ishmail*sendWin.mainWindow*buttonRC.fileIncFilePB.labelString:	Include file
+Ishmail*sendWin.mainWindow*buttonRC.fileIncMsgPB.labelString:	Include msg
+Ishmail*sendWin.mainWindow*buttonRC.fileIncExtPSigPB.labelString:Inc sig (ext)
+Ishmail*sendWin.mainWindow*buttonRC.fileIncExtESigPB.labelString:Inc sig (ext MIME)
+Ishmail*sendWin.mainWindow*buttonRC.fileIncIntPSigPB.labelString:Inc sig (int)
+Ishmail*sendWin.mainWindow*buttonRC.fileIncIntESigPB.labelString:Inc sig (int MIME)
+Ishmail*sendWin.mainWindow*buttonRC.fileAddMixPB.labelString:	Add mixed
+Ishmail*sendWin.mainWindow*buttonRC.fileAddDigPB.labelString:	Add digest
+Ishmail*sendWin.mainWindow*buttonRC.fileAddAltPB.labelString:	Add alternative
+Ishmail*sendWin.mainWindow*buttonRC.fileAddParPB.labelString:	Add parallel
+Ishmail*sendWin.mainWindow*buttonRC.editUndeletePB.labelString:	Undelete
+Ishmail*sendWin.mainWindow*buttonRC.editPlainPB.labelString:	Plain
+Ishmail*sendWin.mainWindow*buttonRC.editBoldPB.labelString:	Bold
+Ishmail*sendWin.mainWindow*buttonRC.editItalicPB.labelString:	Italic
+Ishmail*sendWin.mainWindow*buttonRC.editFixedPB.labelString:	Fixed
+Ishmail*sendWin.mainWindow*buttonRC.editBiggerPB.labelString:	Bigger
+Ishmail*sendWin.mainWindow*buttonRC.editSmallerPB.labelString:	Smaller
+Ishmail*sendWin.mainWindow*buttonRC.editUnderPB.labelString:	Underline
+Ishmail*sendWin.mainWindow*buttonRC.editFlushLeftPB.labelString:Justify Left
+Ishmail*sendWin.mainWindow*buttonRC.editFlushRightPB.labelString:Justify Right
+Ishmail*sendWin.mainWindow*buttonRC.editFlushBothPB.labelString:Justify Both
+Ishmail*sendWin.mainWindow*buttonRC.editCenterPB.labelString:	Center
+Ishmail*sendWin.mainWindow*buttonRC.editNoFillPB.labelString:	Verbatim
+Ishmail*sendWin.mainWindow*buttonRC.editExcerptMorePB.labelString:Excerpt
+Ishmail*sendWin.mainWindow*buttonRC.editExcerptLessPB.labelString:Un-excerpt
+Ishmail*sendWin.mainWindow*buttonRC.editLeftMarginInPB.labelString:Indent left
+Ishmail*sendWin.mainWindow*buttonRC.editLeftMarginOutPB.labelString:Un-indent left
+Ishmail*sendWin.mainWindow*buttonRC.editRightMarginInPB.labelString:Indent right
+Ishmail*sendWin.mainWindow*buttonRC.editRightMarginOutPB.labelString:Un-indent right
+Ishmail*sendWin.mainWindow*buttonRC.optPrefPB.labelString:	Window prefs
+Ishmail*sendWin.mainWindow*buttonRC.optMailPB.labelString:	Mail prefs
+Ishmail*sendWin.mainWindow*buttonRC.optReplyPB.labelString:	Reply prefs
+Ishmail*sendWin.mainWindow*buttonRC.optSigPB.labelString:	Sig prefs
+Ishmail*sendWin.mainWindow*buttonRC.optButtPB.labelString:	Buttons
+
+Ishmail*sendWin.includeFileWin.title:				Include/Attach Text Files
+Ishmail*sendWin.includeFileWin.iconName:			Include/Attach Text Files
+Ishmail*sendWin.includeFileWin*incTextAsTextTB.labelString:	Include as text
+Ishmail*sendWin.includeFileWin*incTextAsIconTB.labelString:	Include as icon
+
+Ishmail*sendWin.includeFileWin.title:				Include/Attach Files
+Ishmail*sendWin.includeFileWin.iconName:			Include/Attach Files
+
+Ishmail*sendWin*fileDataWin.title:				Include/Attach file data
+Ishmail*sendWin*fileDataWin*nameLabel.labelString:		File name:
+Ishmail*sendWin*fileDataWin*descLabel.labelString:		Description:
+Ishmail*sendWin*fileDataWin*typeLabel.labelString:		Type:
+Ishmail*sendWin*fileDataWin*typeAppCB.labelString:		Application
+Ishmail*sendWin*fileDataWin*typeAudioCB.labelString:		Audio
+Ishmail*sendWin*fileDataWin*typeImageCB.labelString:		Image
+Ishmail*sendWin*fileDataWin*typeMsgCB.labelString:		Message
+Ishmail*sendWin*fileDataWin*typeMultCB.labelString:		Multipart
+Ishmail*sendWin*fileDataWin*typeTextCB.labelString:		Text
+Ishmail*sendWin*fileDataWin*typeVideoCB.labelString:		Video
+Ishmail*sendWin*fileDataWin*includeLabel.labelString:		How should this file be included/attached?
+Ishmail*sendWin*fileDataWin*includeAsTextTB.labelString:	In message as text
+Ishmail*sendWin*fileDataWin*includeAsFileTB.labelString:	In message as a separate file
+Ishmail*sendWin*fileDataWin*attachLocalTB.labelString:		Attached as "local to recipient"
+Ishmail*sendWin*fileDataWin*attachAnonTB.labelString:		Attached via anonymous ftp
+Ishmail*sendWin*fileDataWin*attachFtpTB.labelString:		Attached via regular ftp
+Ishmail*sendWin*fileDataWin*attachTftpTB.labelString:		Attached via tftp
+Ishmail*sendWin*fileDataWin*attachMailTB.labelString:		Attached via mail server
+Ishmail*sendWin*fileDataWin*paramLabel.labelString:		Content type parameters
+Ishmail*sendWin*fileDataWin*charLabel.labelString:		Character set:
+Ishmail*sendWin*fileDataWin*charCB.labelString:			...
+Ishmail*sendWin*fileDataWin*outNameLabel.labelString:		Output file name:
+Ishmail*sendWin*fileDataWin*octTypeLabel.labelString:		Application type:
+Ishmail*sendWin*fileDataWin*octPadLabel.labelString:		Application padding:
+Ishmail*sendWin*fileDataWin*otherLabel.labelString:		Other parameters:
+Ishmail*sendWin*fileDataWin*encodeLabel.labelString:		What type of encoding should be applied to this file?
+Ishmail*sendWin*fileDataWin*encodeNoneTB.labelString:		None
+Ishmail*sendWin*fileDataWin*encodeQpTB.labelString:		Quoted Printable
+Ishmail*sendWin*fileDataWin*encode8bitTB.labelString:		8-bit
+Ishmail*sendWin*fileDataWin*encode64TB.labelString:		Base 64
+Ishmail*sendWin*fileDataWin*encodeUuTB.labelString:		UUencode
+Ishmail*sendWin*fileDataWin*encodeBinHexTB.labelString:		BinHex
+Ishmail*sendWin*fileDataWin*preEncodeTB.labelString:		The file is already encoded this way
+Ishmail*sendWin*fileDataWin*ftpLabel.labelString:		Ftp parameters
+Ishmail*sendWin*fileDataWin*hostLabel.labelString:		Host:
+Ishmail*sendWin*fileDataWin*dirLabel.labelString:		Directory:
+Ishmail*sendWin*fileDataWin*ftpModeLabel.labelString:		Mode:
+Ishmail*sendWin*fileDataWin*tftpModeLabel.labelString:		Mode:
+Ishmail*sendWin*fileDataWin*ftpModeAsciiTB.labelString:		ASCII
+Ishmail*sendWin*fileDataWin*ftpModeEbcdicTB.labelString:	EBCDIC
+Ishmail*sendWin*fileDataWin*ftpModeImageTB.labelString:		Image/Binary
+Ishmail*sendWin*fileDataWin*ftpModeLocalTB.labelString:		Local 8
+Ishmail*sendWin*fileDataWin*tftpModeNetAsciiTB.labelString:	NetASCII
+Ishmail*sendWin*fileDataWin*tftpModeOctetTB.labelString:	Octet
+Ishmail*sendWin*fileDataWin*tftpModeMailTB.labelString:		Mail
+Ishmail*sendWin*fileDataWin*mailLabel.labelString:		Mail server parameters
+Ishmail*sendWin*fileDataWin*serverLabel.labelString:		Server address:
+Ishmail*sendWin*fileDataWin*subjectLabel.labelString:		Subject:
+Ishmail*sendWin*fileDataWin*bodyLabel.labelString:		Body:
+Ishmail*sendWin*fileDataWin*attachLabel.labelString:		Common parameters
+Ishmail*sendWin*fileDataWin*expLabel.labelString:		Expires:
+Ishmail*sendWin*fileDataWin*sizeLabel.labelString:		Size:
+Ishmail*sendWin*fileDataWin*permLabel.labelString:		Permissions:
+Ishmail*sendWin*fileDataWin*permRoTB.labelString:		Read-Only
+Ishmail*sendWin*fileDataWin*permRwTB.labelString:		Read-Write
+Ishmail*sendWin*fileDataWin*skipPB.labelString:			Skip
+
+Ishmail*sendWin*clearWin_popup.title:				Clear Message
+Ishmail*sendWin*clearWin.messageString:				Really clear?
+Ishmail*sendWin*clearWin.okLabelString:				OK
+Ishmail*sendWin*clearWin.cancelLabelString:			Cancel
+
+Ishmail*nullBodyWin_popup.title:		OK to Send Message?
+Ishmail*nullBodyWin_popup.iconName:		OK to Send Message?
+Ishmail*nullBodyWin*okLabelString:		Yes
+Ishmail*nullBodyWin*cancelLabelString:		No
+Ishmail*nullBodyWin.messageString:\
+The message body is empty.\n\
+Should I send this message anyway?
+
+Ishmail*nullSubjectWin_popup.title:		OK to Send Message?
+Ishmail*nullSubjectWin_popup.iconName:		OK to Send Message?
+Ishmail*nullSubjectWin*okLabelString:		Yes
+Ishmail*nullSubjectWin*cancelLabelString:	No
+Ishmail*nullSubjectWin.messageString:\
+The message subject is empty.\n\
+Should I send this message anyway?
+
+Ishmail*confirmCloseWin_popup.title:		OK to Close?
+Ishmail*confirmCloseWin_popup.iconName:		OK to Close?
+Ishmail*confirmCloseWin*okLabelString:		Yes
+Ishmail*confirmCloseWin*cancelLabelString:	No
+Ishmail*confirmCloseWin.messageString:\
+Really close window with un-mailed changes?
+
+Ishmail*confirmAddrWin_popup.title:		Confirm address
+Ishmail*confirmAddrWin_popup.iconName:		Confirm address
+Ishmail*confirmAddrWin*okLabelString:		Yes
+Ishmail*confirmAddrWin*cancelLabelString:	No
+Ishmail*confirmAddrWin.messageString:		Really send to $ADDR?
+
+Ishmail*confirm8BitWin_popup.title:		OK to Send?
+Ishmail*confirm8BitWin_popup.iconName:		OK to Send?
+Ishmail*confirm8BitWin*okLabelString:		Send as Plain
+Ishmail*confirm8BitWin*mimePB.labelString:	Send as MIME
+Ishmail*confirm8BitWin*cancelLabelString:	Cancel
+Ishmail*confirm8BitWin.messageString:\
+This message contains 8-bit characters that may not survive\n\
+the delivery process when sent as plain text mail.  This message\n\
+can be delivered safely when sent as a MIME message.\n\
+\n\
+Should I still send this message as plain text mail?
+
+Ishmail*confirmPlainWin_popup.title:		OK to Send as Plain?
+Ishmail*confirmPlainWin_popup.iconName:		OK to Send as Plain?
+Ishmail*confirmPlainWin*okLabelString:		Send as Plain
+Ishmail*confirmPlainWin*mimePB.labelString:	Send as MIME
+Ishmail*confirmPlainWin*cancelLabelString:	Cancel
+Ishmail*confirmPlainWin.messageString:\
+This message contains attachments or text markup that must\n\
+be removed if this message is sent as non-MIME mail.\n\
+\n\
+Should I still send this message as non-MIME (plain) mail?
+
+Ishmail*confirmPlainTextWin_popup.title:		OK to Send as Plain?
+Ishmail*confirmPlainTextWin_popup.iconName:		OK to Send as Plain?
+Ishmail*confirmPlainTextWin*okLabelString:		Send as Plain
+Ishmail*confirmPlainTextWin*enrichedPB.labelString:	Send as Enriched
+Ishmail*confirmPlainTextWin*cancelLabelString:		Cancel
+Ishmail*confirmPlainTextWin.messageString:\
+This message contains enriched text markup that must\n\
+be removed if this message is sent with plain text.\n\
+\n\
+Should I still use plain text?
+
+Ishmail*confirmSplitWin_popup.title:		OK to Split Plain?
+Ishmail*confirmSplitWin_popup.iconName:		OK to Split Plain?
+Ishmail*confirmSplitWin*okLabelString:		Send as Plain\n(not split)
+Ishmail*confirmSplitWin*mimePB.labelString:	Send as MIME\n(split)
+Ishmail*confirmSplitWin*cancelLabelString:	Cancel
+Ishmail*confirmSplitWin.messageString:\
+This message is larger than the size you have set for messages\n\
+to be split.  Split messages must be sent using MIME format.\n\
+\n\
+Should I send this message as non-MIME (without splitting) or as MIME?
+
+!---------------------------------------------------------------------------
+
+Ishmail*sendWin.deleteWin_popup.title:			Delete component
+Ishmail*sendWin.deleteWin_popup.iconName:		Delete component
+Ishmail*sendWin.deleteWin_popup*messageString:		Really delete the component?
+Ishmail*sendWin.deleteWin_popup*okLabelString:		Yes
+Ishmail*sendWin.deleteWin_popup*cancelLabelString:	No
+
+!---------------------------------------------------------------------------
+
+Ishmail*sendWin.includeTextWin.title:			Include text file
+Ishmail*sendWin.includeTextWin.iconName:		Include text file
+Ishmail*sendWin*includeTextWin*selectionLabelString:		Message number:
+Ishmail*sendWin*includeTextWin*incTextAsTextTB.labelString:	Include as text
+Ishmail*sendWin*includeTextWin*incTextAsIconTB.labelString:	Include as icon
+
+!---------------------------------------------------------------------------
+
+Ishmail*sendWin.includeMsgWin_popup.title:			Include message
+Ishmail*sendWin.includeMsgWin_popup.iconName:			Include message
+Ishmail*sendWin*includeMsgWin*selectionLabelString:		Message number:
+Ishmail*sendWin*includeMsgWin*incMsgAsTextTB.labelString:	Include as text
+Ishmail*sendWin*includeMsgWin*incMsgAsIconTB.labelString:	Include as message icon
+
+!---------------------------------------------------------------------------
+
+Ishmail*sendPrefWin.title:			Composition Window Preferences
+Ishmail*sendPrefWin*bodyColLabel.labelString:	Number of columns in message body:
+Ishmail*sendPrefWin*bodyRowLabel.labelString:	Number of rows in message body:
+Ishmail*sendPrefWin*headRowLabel.labelString:	Number of rows in header fields:
+Ishmail*sendPrefWin*wrapTB.labelString:		Wrap text at right margin
+Ishmail*sendPrefWin*showCcTB.labelString:	Display the Cc field
+Ishmail*sendPrefWin*showBccTB.labelString:	Display the Bcc field (Blind Cc)
+Ishmail*sendPrefWin*showFccTB.labelString:	Display the Fcc field (Folder Cc)
+Ishmail*sendPrefWin*showOtherTB.labelString:	Display the Other Headers field
+Ishmail*sendPrefWin*showSettingsTB.labelString:	Display the Selection buttons panel
+Ishmail*sendPrefWin*emacsTB.labelString:	Use Emacs key bindings\n(requires restart)
+Ishmail*sendPrefWin*deleteTB.labelString:	Delete key works like Backspace\n(requires restart)
+Ishmail*sendPrefWin*spaceTB.labelString:	Allow spaces to delimit addresses (comments can't be typed)
+Ishmail*sendPrefWin*maxFieldsLabel1.labelString:	Up to
+Ishmail*sendPrefWin*maxFields1TB.labelString:		One
+Ishmail*sendPrefWin*maxFields2TB.labelString:		Two
+Ishmail*sendPrefWin*maxFields3TB.labelString:		Three
+Ishmail*sendPrefWin*maxFields4TB.labelString:		Four
+Ishmail*sendPrefWin*maxFields5TB.labelString:		Five
+Ishmail*sendPrefWin*maxFieldsLabel2.labelString:	header fields per line
+Ishmail*sendPrefWin*editorLabel.labelString:	External editor command:
+Ishmail*sendPrefWin*spellLabel.labelString:	Spell checker command:
+Ishmail*sendPrefWin*digSignLabel.labelString:	Digital sign command:
+Ishmail*sendPrefWin*encryptLabel.labelString:	Encrypt command:
+Ishmail*sendPrefWin*encryptSignLabel.labelString:	Encrypt and sign command:
+Ishmail*sendPrefWin*mimeDigSignLabel.labelString:	MIME digital sign command:
+Ishmail*sendPrefWin*mimeEncryptLabel.labelString:	MIME encrypt command:
+Ishmail*sendPrefWin*mimeEncryptSignLabel.labelString:	MIME encrypt and sign command:
+Ishmail*sendPrefWin*autoSaveTB.labelString:		Auto-save every
+Ishmail*sendPrefWin*autoSaveDirLabel.labelString:	seconds to directory
+
+!---------------------------------------------------------------------------
+
+Ishmail*mailPrefWin.title:				Outgoing Mail Preferences
+Ishmail*mailPrefWin*splitTB.labelString:		Split outgoing messages when they are larger than
+Ishmail*mailPrefWin*splitLabel.labelString:		bytes
+Ishmail*mailPrefWin*fccLabel.labelString:		Copy outgoing messages
+Ishmail*mailPrefWin*noFccTB.labelString:		Never
+Ishmail*mailPrefWin*fccFolderTB.labelString:		To folder:
+Ishmail*mailPrefWin*fccPatternTB.labelString:		By
+Ishmail*mailPrefWin*fccPatternLabel.labelString:	to directory:
+Ishmail*mailPrefWin*fccUserPB.labelString:		User
+Ishmail*mailPrefWin*fccAddrPB.labelString:		Address
+Ishmail*mailPrefWin*fccYearPB.labelString:		Year
+Ishmail*mailPrefWin*fccMonthPB.labelString:		Month
+Ishmail*mailPrefWin*fccWeekPB.labelString:		Week
+Ishmail*mailPrefWin*fccDayPB.labelString:		Day
+Ishmail*mailPrefWin*checkAddrTB.labelString:		Check addresses before mailing
+Ishmail*mailPrefWin*mailTypeLabel.labelString:		Outgoing mail type
+Ishmail*mailPrefWin*mailPlainTB.labelString:		Plain
+Ishmail*mailPrefWin*mailMimeTB.labelString:		MIME
+Ishmail*mailPrefWin*mailAltTB.labelString:		Both
+Ishmail*mailPrefWin*textTypeLabel.labelString:		Outgoing text type
+Ishmail*mailPrefWin*textPlainTB.labelString:		Plain
+Ishmail*mailPrefWin*textRichTB.labelString:		Enriched
+Ishmail*mailPrefWin*copyTB.labelString:			Copy outgoing messages to folder
+Ishmail*mailPrefWin*charLabel.labelString:		Character set
+Ishmail*mailPrefWin*charCB.labelString:			...
+Ishmail*mailPrefWin*bodyEncLabel.labelString:		Encoding for 8-bit\ncharacters in body
+Ishmail*mailPrefWin*bodyEnc8bitTB.labelString:		8-bit
+Ishmail*mailPrefWin*bodyEncQpTB.labelString:		Quoted Printable
+Ishmail*mailPrefWin*headEncLabel.labelString:		Encoding for 8-bit\ncharacters in headers
+Ishmail*mailPrefWin*headEncNoneTB.labelString:		None
+Ishmail*mailPrefWin*headEncQTB.labelString:		Quoted Printable
+Ishmail*mailPrefWin*headEncBTB.labelString:		Base 64
+Ishmail*mailPrefWin*deadTB.labelString:		Save interrupted\nmessages to file
+Ishmail*mailPrefWin*confirmAddrTB.labelString:	Confirm mail to\nthese addresses
+Ishmail*mailPrefWin*fromHeadLabel.labelString:	From: header
+Ishmail*mailPrefWin*otherHeadLabel.labelString:	Additional mail headers
+Ishmail*mailPrefWin*sendmailLabel.labelString:	Mail delivery command
+
+!---------------------------------------------------------------------------
+
+Ishmail*replyPrefWin.title:			Reply/Forward Preferences
+Ishmail*replyPrefWin*removeMeTB.labelString:	Remove me from recipient list in replies
+Ishmail*replyPrefWin*numberTB.labelString:	Number replies (Re[n]: vs. Re:)
+Ishmail*replyPrefWin*stripTB.labelString:	Remove comment text from addresses
+Ishmail*replyPrefWin*indentLabel.labelString:		Indent lines in replies using:
+Ishmail*replyPrefWin*attribLabel.labelString:		Attribution string:
+Ishmail*replyPrefWin*begForwardLabel.labelString:	Begin forwarded messages with:
+Ishmail*replyPrefWin*endForwardLabel.labelString:	End forwarded messages with:
+Ishmail*replyPrefWin*forwardHeadLabel.labelString:	Forward these headers:
+Ishmail*replyPrefWin*forwardAllTB.labelString:		All
+Ishmail*replyPrefWin*forwardDispTB.labelString:		Displayed
+Ishmail*replyPrefWin*forwardNoneTB.labelString:		None
+
+!---------------------------------------------------------------------------
+
+Ishmail*sigPrefWin.title:			Signature Preferences
+Ishmail*sigPrefWin*enableSigTB.labelString:	Add signature to outgoing messages
+Ishmail*sigPrefWin*sigPrefixTB.labelString:	Add ``-- '' before signature
+Ishmail*sigPrefWin*plainTB.labelString:		Always use plain signature
+Ishmail*sigPrefWin*enrichedTB.labelString:	Always use enriched signature
+Ishmail*sigPrefWin*enrichedMimeTB.labelString:	Use enriched signature only in MIME messages
+Ishmail*sigPrefWin*fieldTitle.labelString:		Signature files:
+Ishmail*sigPrefWin*extPSigLabel.labelString:		Plain external:
+Ishmail*sigPrefWin*extPSigPB.labelString:		Edit ...
+Ishmail*sigPrefWin*extESigLabel.labelString:		Enriched external:
+Ishmail*sigPrefWin*extESigPB.labelString:		Edit ...
+Ishmail*sigPrefWin*intPSigLabel.labelString:		Plain internal:
+Ishmail*sigPrefWin*intPSigPB.labelString:		Edit ...
+Ishmail*sigPrefWin*intESigLabel.labelString:		Enriched internal:
+Ishmail*sigPrefWin*intESigPB.labelString:		Edit ...
+
+!---------------------------------------------------------------------------
+
+Ishmail*confirmWin.title:			Confirmation Preferences
+Ishmail*confirmWin*exitTB.labelString:		Confirm quit and exit
+Ishmail*confirmWin*saveOnExitTB.labelString:	Confirm saving changes during exit
+Ishmail*confirmWin*folderTypeTB.labelString:	Confirm folder type for new folders
+Ishmail*confirmWin*folderDelTB.labelString:	Confirm folder deletion
+Ishmail*confirmWin*sendNoSubjectTB.labelString:\
+Confirm sending messages with no subject
+Ishmail*confirmWin*sendNoBodyTB.labelString:\
+Confirm sending messages with an empty body
+Ishmail*confirmWin*clearSendTB.labelString:\
+Confirm clearing the composition window
+Ishmail*confirmWin*closeSendTB.labelString:\
+Confirm closing the composition window with unmailed contents
+Ishmail*confirmWin*sendPlainTB.labelString:\
+Confirm sending as plain text mail if there will be a loss of information.
+Ishmail*confirmWin*eightBitPlainTB.labelString:\
+Confirm mailing text that contains 8-bit characters as plain text mail
+Ishmail*confirmWin*deleteGraphicTB.labelString:\
+Confirm deleting inclusions/attachments in the composition window
+
+!---------------------------------------------------------------------------
+
+Ishmail*confirmDeleteWin_popup.title:		Confirm deletion
+Ishmail*confirmDeleteWin_popup.iconName:	Confirm deletion
+Ishmail*confirmDeleteWin.messageString:		Really delete selected item(s)?
+Ishmail*confirmDeleteWin*okLabelString:		Yes
+Ishmail*confirmDeleteWin*cancelLabelString:	No
+
+Ishmail*okToCreateWin_popup.title:		Confirm creation
+Ishmail*okToCreateWin_popup.iconName:		Confirm creation
+Ishmail*okToCreateWin.messageString:		Folder $NAME does not exist.\nShall I create it?
+
+Ishmail*resolveNameWin_popup.title:		Which Folder?
+Ishmail*resolveNameWin_popup.iconName:		Which Folder?
+Ishmail*resolveNameWin.messageString: \
+"$NAME" exists in the current directory ($DIR).\n\
+Shall I save the message to that one or create a new folder in \
+your folder directory?
+Ishmail*resolveNameWin*okLabelString:		Save to existing
+Ishmail*resolveNameWin*createPB.labelString:	Create new folder
+
+Ishmail*badFolderWin_popup.title:		Bad Folder Format
+Ishmail*badFolderWin.messageString:		\
+$NAME doesn't appear to be a mail folder.\n\
+Shall I attempt to open it anyway?
+Ishmail*badFolderWin*okLabelString:		Yes, open it
+Ishmail*badFolderWin*cancelLabelString:		No, skip it
+
+Ishmail*folderTypeWin_popup.title:		Select Folder Type
+Ishmail*folderTypeWin_popup.iconName:		Select Folder Type
+Ishmail*folderTypeWin.messageString:		Which type of folder should I create?
+Ishmail*folderTypeWin*imapFolderTB.labelString:	On IMAP server
+Ishmail*folderTypeWin*unixTB.labelString:	Unix-type (File)
+Ishmail*folderTypeWin*mmdfTB.labelString:	MMDF-type (File)
+Ishmail*folderTypeWin*mhTB.labelString:		MH-type (Directory)
+
+!---------------------------------------------------------------------------
+
+Ishmail*headerWin.title:				Edit Displayed Headers
+
+Ishmail*headerWin*dListTitle.labelString:		Display these headers
+Ishmail*headerWin*iListTitle.labelString:		Ignore these headers
+Ishmail*headerWin*choiceDisplayTB.labelString:		Use Display list
+Ishmail*headerWin*choiceIgnoreTB.labelString:		Use Ignore list
+!Ishmail*headerWin*buttonRC.cancelPB.labelString:	Done
+
+!---------------------------------------------------------------------------
+
+Ishmail*aliasWin.title:					Aliases
+
+Ishmail*aliasWin*keyColumnTitle:			Alias
+Ishmail*aliasWin*valueColumnTitle:			Address
+Ishmail*aliasWin*sortTB.labelString:			Sort aliases
+Ishmail*aliasWin*addPB.labelString:			New ...
+Ishmail*aliasWin*insertPB.labelString:			Insert ...
+Ishmail*aliasWin*modifyPB.labelString:			Edit ...
+Ishmail*aliasWin*removePB.labelString:			Delete
+Ishmail*aliasWin*taskTitle.labelString:			Alias List
+!Ishmail*aliasWin*buttonRC.cancelPB.labelString:	Done
+
+Ishmail*aliasWinEntryWin.title:					Edit Alias
+Ishmail*aliasWinEntryWin*keyLabel.labelString:			Alias:
+Ishmail*aliasWinEntryWin*valueLabel.labelString:		Address:
+!Ishmail*aliasWinEntryWin*buttonRC.cancelPB.labelString:	Done
+
+!---------------------------------------------------------------------------
+
+Ishmail*alertWin.title:					Alerts
+
+Ishmail*alertWin*keyColumnTitle:			Pattern
+Ishmail*alertWin*valueColumnTitle:			Command
+Ishmail*alertWin*alertTB.labelString:			Enable alerts
+Ishmail*alertWin*taskTitle.labelString:			Alert Rules
+Ishmail*alertWin*addPB.labelString:			New ...
+Ishmail*alertWin*removePB.labelString:			Delete
+Ishmail*alertWin*modifyPB.labelString:			Edit ...
+Ishmail*alertWin*insertPB.labelString:			Insert ...
+
+Ishmail*alertWinEntryWin.title:				Edit Alert Rule
+Ishmail*alertWinEntryWin*keyLabel.labelString:		Pattern:
+Ishmail*alertWinEntryWin*valueLabel.labelString:	Command:
+
+!---------------------------------------------------------------------------
+
+Ishmail*iconWin.title:					Alert Icons
+
+Ishmail*iconWin*keyColumnTitle:				Pattern
+Ishmail*iconWin*valueColumnTitle:			Pixmap
+Ishmail*iconWin*addPB.labelString:			New ...
+Ishmail*iconWin*removePB.labelString:			Delete
+Ishmail*iconWin*modifyPB.labelString:			Edit ...
+Ishmail*iconWin*insertPB.labelString:			Insert ...
+Ishmail*iconWin*taskTitle.labelString:			Icon Rules
+
+Ishmail*iconWinEntryWin.title:				Edit Icon Rule
+Ishmail*iconWinEntryWin*keyLabel.labelString:		Pattern:
+Ishmail*iconWinEntryWin*valueLabel.labelString:		Pixmap file:
+
+!---------------------------------------------------------------------------
+
+Ishmail*autoFileWin.title:				Automatic Mail Filing
+Ishmail*autoFileWin*autoFileTB.labelString:	Enable automatic filing of new mail
+Ishmail*autoFileWin*taskTitle.labelString:		Automatic Mail Filing Rules
+Ishmail*autoFileWin*keyColumnTitle:			Pattern
+Ishmail*autoFileWin*valueColumnTitle:			Folder name
+Ishmail*autoFileWin*addPB.labelString:			New ...
+Ishmail*autoFileWin*removePB.labelString:		Delete
+Ishmail*autoFileWin*modifyPB.labelString:		Edit ...
+Ishmail*autoFileWin*insertPB.labelString:		Insert ...
+
+Ishmail*autoFileWinEntryWin.title:			Edit Automatic Mail Filing Rule
+Ishmail*autoFileWinEntryWin*keyLabel.labelString:	Pattern:
+Ishmail*autoFileWinEntryWin*valueLabel.labelString:	Folder name:
+
+!---------------------------------------------------------------------------
+
+Ishmail*buttonWin.title:				Edit Custom Buttons
+
+!Ishmail*buttonWin*availTitle.labelString:		Button name
+!Ishmail*buttonWin*displayTitle.labelString:		Displayed
+!Ishmail*buttonWin*orderTitle.labelString:		Order
+!Ishmail*buttonWin*labelTitle.labelString:		Button label
+Ishmail*buttonWin*availTitle.labelString:		Available buttons
+Ishmail*buttonWin*userTitle.labelString:		Selected buttons (double-click to edit label, drag to reorder)
+Ishmail*buttonWin*placeTitle.labelString:		Button placement
+Ishmail*buttonWin*northTB.labelString:			North
+Ishmail*buttonWin*southTB.labelString:			South
+Ishmail*buttonWin*eastTB.labelString:			East
+Ishmail*buttonWin*westTB.labelString:			West
+Ishmail*buttonWin*sameSizeTB.labelString:	Make all buttons the same size
+
+Ishmail*buttonEditWin.title:				Edit Button
+Ishmail*buttonEditWin*labelLabel.labelString:		Button
+Ishmail*buttonEditWin*abbrevLabel.labelString:		Label
+Ishmail*buttonEditWin*orderLabel.labelString:		Position
+
+!---------------------------------------------------------------------------
+
+Ishmail*summaryWin.title:				Message List Preferences
+
+Ishmail*summaryWin*fieldTitle.labelString:		Field
+Ishmail*summaryWin*posTitle.labelString:		Position
+Ishmail*summaryWin*minTitle.labelString:		Minimum Width
+Ishmail*summaryWin*maxTitle.labelString:		Maximum Width
+Ishmail*summaryWin*titleTitle.labelString:		Title
+Ishmail*summaryWin*numberTB.labelString:		Number
+Ishmail*summaryWin*statusTB.labelString:		Status
+Ishmail*summaryWin*senderTB.labelString:		Sender
+Ishmail*summaryWin*subjectTB.labelString:		Subject
+Ishmail*summaryWin*dateTB.labelString:			Date
+Ishmail*summaryWin*lineTB.labelString:			Line count
+Ishmail*summaryWin*byteTB.labelString:			Byte count
+Ishmail*summaryWin*iconTB.labelString:			Show status icon
+Ishmail*summaryWin*dateFormatLabel.labelString:		Date format
+
+!---------------------------------------------------------------------------
+
+Ishmail*folderPrefWin.title:				Folder Preferences
+
+Ishmail*folderPrefWin*viewLabel.labelString:		View by:
+Ishmail*folderPrefWin*viewLargeTB.labelString:		Large icon
+Ishmail*folderPrefWin*viewSmallTB.labelString:		Small icon
+Ishmail*folderPrefWin*viewNameTB.labelString:		Name
+Ishmail*folderPrefWin*sortTB.labelString:		Sort folders by name
+Ishmail*folderPrefWin*statusTB.labelString:		Show folder status
+Ishmail*folderPrefWin*useTypeLabel.labelString:		Local folder types:
+Ishmail*folderPrefWin*useUnixTB.labelString:		Unix
+Ishmail*folderPrefWin*useMmdfTB.labelString:		MMDF
+Ishmail*folderPrefWin*useMhTB.labelString:		MH
+Ishmail*folderPrefWin*useNoneTB.labelString:		None
+Ishmail*folderPrefWin*typeLabel.labelString:		Default folder type:
+Ishmail*folderPrefWin*typeImapTB.labelString:		IMAP
+Ishmail*folderPrefWin*typeUnixTB.labelString:		Unix
+Ishmail*folderPrefWin*typeMmdfTB.labelString:		MMDF
+Ishmail*folderPrefWin*typeMhTB.labelString:		MH
+Ishmail*folderPrefWin*confirmTypeTB.labelString:	Confirm type before creating new folders
+Ishmail*folderPrefWin*showMhTB.labelString:		Show MH folders in file selection dialogs
+Ishmail*folderPrefWin*showUnixTB.labelString:		Show Unix and MMDF folders in file selection dialogs
+Ishmail*folderPrefWin*initLabel.labelString:		Initial folders:
+Ishmail*folderPrefWin*rememberTB.labelString:		Remember folders on exit
+
+!---------------------------------------------------------------------------
+
+Ishmail*printWin.title:				Print Message
+Ishmail*printWin*ordParallelTB.labelString:	Print separately
+Ishmail*printWin*ordSerialTB.labelString:	Print together
+Ishmail*printWin*hdrAllTB.labelString:		Print all headers
+Ishmail*printWin*hdrDispTB.labelString:		Print displayed headers only
+Ishmail*printWin*hdrNoneTB.labelString:		Don't print headers
+Ishmail*printWin*cmdLabel.labelString:		Command:
+Ishmail*printWin*printPB.labelString:		Print
+Ishmail*printWin*messageBanner:\
+\n\n\
+-----------------------------------------------------------------------\n\
+| %subject\n\
+-----------------------------------------------------------------------\n\
+\n
+
+Ishmail*printWin*enrichedBanner:\
+\n\n\n\
+<center>\
+-----------------------------------------------------------------------\n\n\
+<bold><underline>%subject</underline></bold>\
+</center>\
+\n\n
+
+Ishmail*printWin*richtextBanner:\
+<nl><nl>\
+<center>\
+-----------------------------------------------------------------------<nl>\
+<bold><underline>%subject</underline></bold>\
+</center>\
+<nl>
+
+Ishmail*printQueryWin_popup.title:		Print MIME
+Ishmail*printQueryWin.inclusionMsg:		Print the included file: $NAME?
+Ishmail*printQueryWin.attachmentMsg:		Print the attached file: $NAME?
+Ishmail*printQueryWin*printOneYesTB.labelString:Print this one
+Ishmail*printQueryWin*printOneNoTB.labelString:	Skip this one
+Ishmail*printQueryWin*printAllYesTB.labelString:Print all included and attached files
+Ishmail*printQueryWin*printAllNoTB.labelString:	Skip all included and attached files
+
+Ishmail*printWin.getQueryWin_popup.title:	Print MIME attachment
+Ishmail*printWin*getQueryWin.messageString:	Retrieve and print the attached file: $NAME?
+Ishmail*printWin*getQueryWin*okLabelString:	OK
+Ishmail*printWin*getQueryWin*cancelLabelString:	Cancel
+Ishmail*printWin*getQueryWin*getOneYesTB.labelString:	Retrieve and print this one
+Ishmail*printWin*getQueryWin*getOneNoTB.labelString:	Skip this one
+Ishmail*printWin*getQueryWin*getAllYesTB.labelString:	Retrieve and print all attached files
+Ishmail*printWin*getQueryWin*getAllNoTB.labelString:	Skip all attached files
+
+!---------------------------------------------------------------------------
+
+Ishmail*pipeWin.title:				Pass Message to Filter
+Ishmail*pipeWin*ordParallelTB.labelString:	Filter separately
+Ishmail*pipeWin*ordSerialTB.labelString:	Filter together
+Ishmail*pipeWin*hdrAllTB.labelString:		Pass all headers to filter
+Ishmail*pipeWin*hdrDispTB.labelString:		Pass only displayed headers to filter
+Ishmail*pipeWin*hdrNoneTB.labelString:		Don't pass headers to filter
+Ishmail*pipeWin*cmdLabel.labelString:		Command:
+Ishmail*pipeWin*pipePB.labelString:		Filter
+
+!---------------------------------------------------------------------------
+
+Ishmail*undelWin.title:				Recover messages
+Ishmail*undelWin*msgBox*selectPB.labelString:	Select All
+Ishmail*undelWin*msgBox*deselectPB.labelString:	Deselect All
+
+Ishmail*undelWin*msgBox*taskTitle.labelString:	Messages marked for deletion
+
+!---------------------------------------------------------------------------
+
+Ishmail*fileSelectWin_popup.title:		Select File
+
+Ishmail*saveQueryWin_popup.title:		Save
+Ishmail*saveQueryWin.messageString:		Save changes to in-box?
+Ishmail*saveQueryWin*okLabelString:		Yes
+Ishmail*saveQueryWin*noPB.labelString:		No
+
+Ishmail*composeQueryWin_popup.title:		Composition in progress
+Ishmail*composeQueryWin.messageString:		Replace existing composition?
+Ishmail*composeQueryWin*okLabelString:		Yes
+Ishmail*composeQueryWin*noPB.labelString:	No
+
+Ishmail*syncQueryWin_popup.title:		Synchronize In-Box
+Ishmail*syncQueryWin.messageString:		\
+The in-box has been modified external to this program. \n\
+Ishmail will reread the in-box.
+
+Ishmail*lockQueryWin_popup.title:		Folder In Use
+Ishmail*lockQueryWin.messageString:		\
+A lock file exists for the mail folder: $NAME.  \n\
+Continue only if you are sure that no other copy of ishmail has the folder open.
+Ishmail*lockQueryWin.systemMessage:		\
+A lock file exists for your in-box.  \n\
+Continue only if you are sure that no other copies of ishmail are running.
+Ishmail*lockQueryWin*okLabelString:		Continue
+
+Ishmail*saveToFileQueryWin_popup.title:		File exists.
+Ishmail*saveToFileQueryWin.messageString:	$FILE already exists.\n\
+Shall I overwrite it or append the new data to the end?
+Ishmail*saveToFileQueryWin*okLabelString:		Append
+Ishmail*saveToFileQueryWin*replacePB.labelString:	Overwrite
+
+!---------------------------------------------------------------------------
+! non-IMAP comlex search window
+
+Ishmail*boolExpWin.title:				Find Message
+Ishmail*boolExpWin*fromPB.labelString:			From
+Ishmail*boolExpWin*toPB.labelString:			To
+Ishmail*boolExpWin*subjPB.labelString:			Subject
+Ishmail*boolExpWin*headPB.labelString:			Headers
+Ishmail*boolExpWin*bodyPB.labelString:			Body
+Ishmail*boolExpWin*msgPB.labelString:			Message
+Ishmail*boolExpWin*datePB.labelString:			Date
+Ishmail*boolExpWin*statPB.labelString:			Status
+Ishmail*boolExpWin*numPB.labelString:			Number
+Ishmail*boolExpWin*linePB.labelString:			Line Count
+Ishmail*boolExpWin*bytePB.labelString:			Byte Count
+Ishmail*boolExpWin*fromContLabel.labelString:		contains
+Ishmail*boolExpWin*toContLabel.labelString:		contains
+Ishmail*boolExpWin*subjContLabel.labelString:		contains
+Ishmail*boolExpWin*headContLabel.labelString:		contain
+Ishmail*boolExpWin*bodyContLabel.labelString:		contains
+Ishmail*boolExpWin*msgContLabel.labelString:		contains
+Ishmail*boolExpWin*statIsLabel.labelString:		is
+Ishmail*boolExpWin*ltPB.labelString:			<
+Ishmail*boolExpWin*lePB.labelString:			<=
+Ishmail*boolExpWin*eqPB.labelString:			=
+Ishmail*boolExpWin*gePB.labelString:			>=
+Ishmail*boolExpWin*gtPB.labelString:			>
+Ishmail*boolExpWin*nePB.labelString:			!=
+Ishmail*boolExpWin*newPB.labelString:			New
+Ishmail*boolExpWin*unreadPB.labelString:		Unread
+Ishmail*boolExpWin*readPB.labelString:			Read
+Ishmail*boolExpWin*savedPB.labelString:			Saved
+Ishmail*boolExpWin*deletedPB.labelString:		Marked for deletion
+Ishmail*boolExpWin*repliedPB.labelString:		Replied to
+Ishmail*boolExpWin*forwardedPB.labelString:		Forwarded
+Ishmail*boolExpWin*resentPB.labelString:		Resent
+Ishmail*boolExpWin*printedPB.labelString:		Printed
+Ishmail*boolExpWin*filteredPB.labelString:		Filtered
+Ishmail*boolExpWin*mimePB.labelString:			MIME format
+Ishmail*boolExpWin*fromLabel.labelString:		From contains
+Ishmail*boolExpWin*toLabel.labelString:			To contains
+Ishmail*boolExpWin*subjectLabel.labelString:		Subject contains
+Ishmail*boolExpWin*headLabel.labelString:		Header contains
+Ishmail*boolExpWin*bodyLabel.labelString:		Body contains
+Ishmail*boolExpWin*msgLabel.labelString:		Message contains
+Ishmail*boolExpWin*dateLabel.labelString:		Date is
+Ishmail*boolExpWin*statusLabel.labelString:		Status is
+Ishmail*boolExpWin*numLabel.labelString			Number is
+Ishmail*boolExpWin*lineLabel.labelString:		Line count is
+Ishmail*boolExpWin*byteLabel.labelString:		Byte count is
+Ishmail*boolExpWin*applyPB.labelString:			Find Next
+Ishmail*boolExpWin*findPrevPB.labelString:		Find Prev
+Ishmail*boolExpWin*findAllPB.labelString:		Find All
+Ishmail*boolExpWin*cancelPB.labelString:		Done
+
+!---------------------------------------------------------------------------
+! IMAP comlex search window
+
+Ishmail*complexImapFindWin.title:			Find Message (IMAP)
+Ishmail*complexImapFindWin*.toTB.labelString:		To contains
+Ishmail*complexImapFindWin*.ccTB.labelString:		Cc contains
+Ishmail*complexImapFindWin*.bccTB.labelString:		Bcc contains
+Ishmail*complexImapFindWin*.fromTB.labelString:		From contains
+Ishmail*complexImapFindWin*.subjTB.labelString:		Subject contains
+Ishmail*complexImapFindWin*.bodyTB.labelString:		Body contains
+Ishmail*complexImapFindWin*.msgTB.labelString:		Message contains
+Ishmail*complexImapFindWin*.befDateTB.labelString:	Before date
+Ishmail*complexImapFindWin*.onDateTB.labelString:	On date
+Ishmail*complexImapFindWin*.aftDateTB.labelString:	After date
+Ishmail*complexImapFindWin*.recTB.labelString:		Recent
+Ishmail*complexImapFindWin*.notRecTB.labelString:	Not recent
+Ishmail*complexImapFindWin*.seenTB.labelString:		Seen
+Ishmail*complexImapFindWin*.notSeenTB.labelString:	Not seen
+Ishmail*complexImapFindWin*.repTB.labelString:		Replied to
+Ishmail*complexImapFindWin*.notRepTB.labelString:	Not replied to
+Ishmail*complexImapFindWin*.delTB.labelString:		Deleted
+Ishmail*complexImapFindWin*.notDelTB.labelString:	Not deleted
+Ishmail*complexImapFindWin*findNextPB.labelString:	Find Next
+Ishmail*complexImapFindWin*findPrevPB.labelString:	Find Prev
+Ishmail*complexImapFindWin*findAllPB.labelString:	Find All
+
+!---------------------------------------------------------------------------
+
+Ishmail*openSelectWin.title:				Select Folders
+Ishmail*openSelectWin.singleTitle:			Select Folder
+Ishmail*openSelectWin.iconName:				Select Folders
+Ishmail*openSelectWin*selectLabel.labelString:		Selected Folders
+Ishmail*openSelectWin*selectLabel.singleString:		Selected Folder
+Ishmail*openSelectWin*filterLabel.labelString:		Folder Name Filter
+Ishmail*openSelectWin*fileListLabel.labelString:	Folders
+Ishmail*openSelectWin*openOnlyTB.labelString:		Open only
+Ishmail*openSelectWin*openActTB.labelString:		Open and activate
+
+!---------------------------------------------------------------------------
+
+Ishmail*saveFolderWin.title:				Select Folder
+Ishmail*saveFolderWin.singleTitle:			Select Folder
+Ishmail*saveFolderWin.iconName:				Select Folder
+Ishmail*saveFolderWin*selectLabel.labelString:		Selected Folder
+Ishmail*saveFolderWin*selectLabel.singleLabel:		Selected Folder
+Ishmail*saveFolderWin*filterLabel.labelString:		Folder Name Filter
+Ishmail*saveFolderWin*fileListLabel.labelString:	Folders
+Ishmail*saveFolderWin*moveTB.labelString:		Move
+Ishmail*saveFolderWin*copyTB.labelString:		Copy
+
+!---------------------------------------------------------------------------
+
+Ishmail*saveFileWin.title:				Select File
+Ishmail*saveFileWin.iconName:				Select File
+Ishmail*saveFileWin*selectLabel.labelString:		File Name
+Ishmail*saveFileWin*moveTB.labelString:			Move
+Ishmail*saveFileWin*copyTB.labelString:			Copy
+Ishmail*saveFileWin*saveHdrAllTB.labelString:		Save all headers
+Ishmail*saveFileWin*saveHdrDispTB.labelString:		Save displayed headers only
+Ishmail*saveFileWin*saveHdrNoneTB.labelString:		Don't save headers
+
+!---------------------------------------------------------------------------
+
+Ishmail*fileSelectWin.title:				Select File
+Ishmail*fileSelectWin.iconName:				Select File
+
+!---------------------------------------------------------------------------
+
+Ishmail*newFolderWin.title:				Create New Folder
+Ishmail*newFolderWin.singleTitle:			Create New Folder
+Ishmail*newFolderWin.iconName:				Create New Folder
+Ishmail*newFolderWin*selectLabel.labelString:		New Folder Name
+Ishmail*newFolderWin*selectLabel.singleString:		New Folder Name
+Ishmail*newFolderWin*filterLabel.labelString:		Folder Name Filter
+Ishmail*newFolderWin*fileListLabel.labelString:		Existing Folders
+!Ishmail*newFolderWin*unixFolderTB.labelString:		Unix-type folder (File)
+!Ishmail*newFolderWin*mmdfFolderTB.labelString:		MMDF-type folder (File)
+!Ishmail*newFolderWin*mhFolderTB.labelString:		MH-type folder (Directory)
+
+!---------------------------------------------------------------------------
+
+Ishmail*fontWin.title:					Edit Fonts
+Ishmail*fontWin.iconName:				Edit Fonts
+Ishmail*fontWin*pbLabel.labelString:			Push button font:
+Ishmail*fontWin*labelLabel.labelString:			Label font:
+Ishmail*fontWin*textLabel.labelString:			Regular text font:
+Ishmail*fontWin*richLabel.labelString:			Enriched text font:
+Ishmail*fontWin*listLabel.labelString:			List font:
+Ishmail*fontWin*pbChoosePB.labelString:			...
+Ishmail*fontWin*labelChoosePB.labelString:		...
+Ishmail*fontWin*textChoosePB.labelString:		...
+Ishmail*fontWin*richChoosePB.labelString:		...
+Ishmail*fontWin*listChoosePB.labelString:		...
+
+!---------------------------------------------------------------------------
+
+Ishmail*pickAliasWin.title:			Select Aliases
+Ishmail*pickAliasWin*keyColumnTitle:		Alias
+Ishmail*pickAliasWin*valueColumnTitle:		Address
+Ishmail*pickAliasWin*titleLabel.labelString:	Aliases for "$FIELD" field
+Ishmail*pickAliasWin*findLabel.labelString:	Search string:
+Ishmail*pickAliasWin*findNextPB.labelString:	Find Next
+Ishmail*pickAliasWin*findPrevPB.labelString:	Find Prev
+Ishmail*pickAliasWin*findAllPB.labelString:	Find All
+Ishmail*pickAliasWin*expandTB.labelString:	Use expanded value
+
+!---------------------------------------------------------------------------
+
+Ishmail*saveCompositionWin.title:			Save Composition to File
+Ishmail*saveCompositionWin.iconName:			Save Composition to File
+!---------------------------------------------------------------------------
+
+Ishmail*loadCompositionWin.title:		Read Composition from File
+Ishmail*loadCompositionWin.iconName:		Read Composition from File
+
+!---------------------------------------------------------------------------
+
+Ishmail*fontChooser.title:				Font Chooser
+Ishmail*fontChooser*familyLabel.labelString:		Family
+Ishmail*fontChooser*styleLabel.labelString:		Style
+Ishmail*fontChooser*sizeLabel.labelString:		Size
+Ishmail*fontChooser*sizePixelsTB.labelString:		Show size in pixels
+Ishmail*fontChooser*sizePointsTB.labelString:		Show size in points
+Ishmail*fontChooser*showFixedTB.labelString:		Show fixed width fonts
+Ishmail*fontChooser*showPropTB.labelString:		Show variable width fonts
+Ishmail*fontChooser*sampTitle.labelString:		Sample text
+Ishmail*fontChooser*nameTitle.labelString:		Font name
+!Ishmail*fontChooser*sampText.value:\
+!abcdefghijklmnopqrstuvwxyz\n\
+!ABCDEFGHIJKLMNOPQRSTUVWXYZ\n\
+!0123456789-=\[];'`,./\n\
+!!@#$%^&*()_+|{}:"~<>?
+
+Ishmail*fontChooser*sampText.value:\
+\040\041\042\043\044\045\046\047\050\051\052\053\054\055\056\057\
+\060\061\062\063\064\065\066\067\070\071\072\073\074\075\076\077\n\
+\100\101\102\103\104\105\106\107\110\111\112\113\114\115\116\117\
+\120\121\122\123\124\125\126\127\130\131\132\133\134\135\136\137\n\
+\140\141\142\143\144\145\146\147\150\151\152\153\154\155\156\157\
+\160\161\162\163\164\165\166\167\170\171\172\173\174\175\176\177\n\
+\240\241\242\243\244\245\246\247\250\251\252\253\254\255\256\257\
+\260\261\262\263\264\265\266\267\270\271\272\273\274\275\276\277\n\
+\300\301\302\303\304\305\306\307\310\311\312\313\314\315\316\317\
+\320\321\322\323\324\325\326\327\330\331\332\333\334\335\336\337\n\
+\340\341\342\343\344\345\346\347\350\351\352\353\354\355\356\357\
+\360\361\362\363\364\365\366\367\370\371\372\373\374\375\376\377\n\
+\040\001\002\003\004\005\006\007\010\011\012\013\014\015\016\017\
+\020\021\022\023\024\025\026\027\030\031\032\033\034\035\036\037\n\
+\200\201\202\203\204\205\206\207\210\211\212\213\214\215\216\217\
+\220\221\222\223\224\225\226\227\230\231\232\233\234\235\236\237
+
+!---------------------------------------------------------------------------
+
+Ishmail*richSearchWin.title:				Search
+Ishmail*richSearchWin*stringLabel.labelString:		Search string:
+Ishmail*richSearchWin*caseTB.labelString:		Case sensitive
+Ishmail*richSearchWin*wildTB.labelString:		Regular expression
+Ishmail*richSearchWin*backTB.labelString:		Search backwards
+Ishmail*richSearchWin*findPB.labelString:		Find
+
+!---------------------------------------------------------------------------
+
+Ishmail*nonMimeString: \
+*************************************************************************\n\
+* This message has been formatted as a MIME message.  If you are reading\n\
+* this, your mail reader does not support MIME.  To display the non-text\n\
+* portions of this message you will need a MIME-capable mail reader such\n\
+* as Ishmail (http://ishmail.sourceforge.net).\n\
+*************************************************************************\n
+
+Ishmail*altMimeString: \
+*************************************************************************\n\
+* This message has been formatted as a MIME message.  If you are reading\n\
+* this, your mail reader does not support MIME.  The first part of this\n\
+* message is a plain text version of the second part.  To display the\n\
+* non-text portions of this message you will need a MIME-capable mail\n\
+* reader such as Ishmail (http://ishmail.sourceforge.net).\n\
+*************************************************************************\n
+

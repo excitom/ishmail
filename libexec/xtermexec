@@ -1,0 +1,18 @@
+#!/bin/sh
+#
+# Usage: xtermexec title command command-args
+#
+# This script uses the statrun script to get the return status from a process
+#    invoked in an xterm.  We do this because xterm will not return the
+#    status of the exec'd process.
+#
+
+STATFILE=/tmp/stat.$$
+TITLE=$1
+shift
+
+xterm -title "$TITLE" -e statrun $STATFILE $*
+
+STATUS=`cat $STATFILE`
+rm -f $STATFILE
+exit $STATUS

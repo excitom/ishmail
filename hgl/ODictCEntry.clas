@@ -1,0 +1,46 @@
+/*
+ *  ODictCEntry.clas -- class definition for an entry in an ODictC
+ *
+ *  This type of dictionary stores the actual keys and values
+ */
+
+class CLASS {
+
+public:
+
+   KEYTYPE	key;
+   VALTYPE	val;
+
+   inline CLASS () {}
+   inline CLASS (const KEYTYPE& kobj, const VALTYPE& vobj)
+			: key(kobj), val(vobj) {}
+   inline CLASS (const CLASS& e) { *this = e; }
+
+   inline CLASS&	operator= (const CLASS& e) {
+      if ( this != &e ) {
+	 key = e.key;
+	 val = e.val;
+      }
+      return (*this);
+   }
+
+   inline int	operator== (const CLASS& e) const {
+      return (key == e.key && val == e.val);
+   }
+   inline int	operator!= (const CLASS& e) const {
+      return (!(*this==e));
+   }
+   inline int	compare  (const CLASS&) const { return 0; }
+   inline int	operator<(const CLASS&) const { return 0; }
+   inline int	operator>(const CLASS&) const { return 0; }
+
+   inline ostream&  printOn(ostream& strm=cout) const {
+      strm << key << " = " << val;
+      return strm;
+   }
+};
+
+inline ostream& operator<<(ostream& strm, CLASS& e)
+{
+   return e.printOn(strm);
+}

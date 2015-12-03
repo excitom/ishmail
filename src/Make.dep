@@ -1,0 +1,369 @@
+# Generated automatically by `make depend'
+AddressC$(O) : AddressC.C AddressC.h HeaderValC.h
+AddrMisc$(O) : AddrMisc.C IshAppC.h MailPrefC.h PrefC.h MimeTypes.h \
+ AddressC.h
+AlertPrefC$(O) : AlertPrefC.C AlertPrefC.h PrefC.h RuleDictC.h \
+ AlertPrefWinC.h DictEditWinC.h OptWinC.h
+AlertPrefWinC$(O) : AlertPrefWinC.C AlertPrefWinC.h DictEditWinC.h \
+ OptWinC.h AlertPrefC.h PrefC.h RuleDictC.h IshAppC.h
+AliasPrefC$(O) : AliasPrefC.C IshAppC.h AliasPrefC.h PrefC.h \
+ AliasPrefWinC.h DictEditWinC.h OptWinC.h ShellExp.h Misc.h \
+ CompPrefC.h AddressC.h
+AliasPrefWinC$(O) : AliasPrefWinC.C AliasPrefWinC.h DictEditWinC.h \
+ OptWinC.h AliasPrefC.h PrefC.h IshAppC.h EntryEditWinC.h
+AppPrefC$(O) : AppPrefC.C IshAppC.h AppPrefC.h PrefC.h AlertPrefC.h \
+ RuleDictC.h ShellExp.h Misc.h MainWinC.h AppPrefWinC.h OptWinC.h \
+ FolderPrefC.h FolderListC.h FolderC.h ImapMisc.h ReadWinC.h \
+ ReadPrefC.h SendWinC.h MailPrefC.h MimeTypes.h
+AppPrefWinC$(O) : AppPrefWinC.C AppPrefWinC.h OptWinC.h IshAppC.h \
+ AppPrefC.h PrefC.h AlertPrefC.h RuleDictC.h MainWinC.h
+AutoFilePrefC$(O) : AutoFilePrefC.C AutoFilePrefC.h PrefC.h RuleDictC.h \
+ AutoFileWinC.h DictEditWinC.h OptWinC.h
+AutoFileWinC$(O) : AutoFileWinC.C AutoFileWinC.h DictEditWinC.h OptWinC.h \
+ AutoFilePrefC.h PrefC.h RuleDictC.h IshAppC.h
+Base64$(O) : Base64.C Base64.h
+ButtonEditWinC$(O) : ButtonEditWinC.C ButtonEditWinC.h ButtonEntryC.h
+ButtonEntryC$(O) : ButtonEntryC.C ButtonEntryC.h
+ButtonMgrC$(O) : ButtonMgrC.C ButtonMgrC.h
+ButtPrefWinC$(O) : ButtPrefWinC.C ButtPrefWinC.h OptWinC.h \
+ ButtonEntryListC.h ButtonEntryC.h ButtonMgrC.h ButtonEditWinC.h
+CompPrefC$(O) : CompPrefC.C IshAppC.h CompPrefC.h PrefC.h ReplyPrefC.h \
+ AppPrefC.h CompPrefWinC.h OptWinC.h ShellExp.h Query.h
+CompPrefWinC$(O) : CompPrefWinC.C CompPrefWinC.h OptWinC.h CompPrefC.h \
+ PrefC.h IshAppC.h SendWinC.h MailPrefC.h MimeTypes.h MainWinC.h
+ComplexImapFindWinC$(O) : ComplexImapFindWinC.C ComplexImapFindWinC.h \
+ IshAppC.h MainWinC.h AppPrefC.h PrefC.h MsgItemC.h MsgC.h MsgStatus.h \
+ ImapFolderC.h ImapServerC.h Imap.h FolderC.h Misc.h ReadWinC.h \
+ ReadPrefC.h
+ComplexMsgFindWinC$(O) : ComplexMsgFindWinC.C ComplexMsgFindWinC.h \
+ MsgFindExp.h MsgStatus.h IshAppC.h MainWinC.h MsgItemC.h AppPrefC.h \
+ PrefC.h ReadWinC.h ReadPrefC.h
+ConfPrefC$(O) : ConfPrefC.C ConfPrefC.h PrefC.h ConfPrefWinC.h OptWinC.h
+ConfPrefWinC$(O) : ConfPrefWinC.C ConfPrefWinC.h OptWinC.h ConfPrefC.h \
+ PrefC.h IshAppC.h
+DictEditWinC$(O) : DictEditWinC.C DictEditWinC.h OptWinC.h \
+ EntryEditWinC.h Misc.h
+EntryEditWinC$(O) : EntryEditWinC.C EntryEditWinC.h
+FileChooserWinC$(O) : FileChooserWinC.C FileChooserWinC.h FileMisc.h \
+ ShellExp.h IshAppC.h AppPrefC.h PrefC.h ImapServerC.h Imap.h \
+ ImapMisc.h FolderPrefC.h FolderListC.h FolderC.h
+FileFolderC$(O) : FileFolderC.C FileFolderC.h FolderC.h FileMisc.h \
+ FilePartMsgC.h MsgC.h MsgStatus.h IshAppC.h AppPrefC.h PrefC.h \
+ MainWinC.h SortMgrC.h MailSortKeyC.h UndelWinC.h MsgListC.h \
+ LoginWinC.h
+FileMisc$(O) : FileMisc.C IshAppC.h AppPrefC.h PrefC.h Misc.h \
+ UnixFolderC.h FileFolderC.h FolderC.h FolderPrefC.h FolderListC.h
+FileMsgC$(O) : FileMsgC.C FileMsgC.h MsgC.h MsgStatus.h MsgPartC.h \
+ MimeTypes.h TermFn.h
+FilePartMsgC$(O) : FilePartMsgC.C FilePartMsgC.h MsgC.h MsgStatus.h \
+ MsgPartC.h MimeTypes.h TermFn.h FileFolderC.h FolderC.h HeaderValC.h
+FolderC$(O) : FolderC.C FolderC.h IshAppC.h MainWinC.h MsgC.h MsgStatus.h \
+ FileMisc.h FolderPrefC.h PrefC.h FolderListC.h AppPrefC.h MsgItemC.h \
+ SortMgrC.h MailSortKeyC.h SortPrefC.h RuleDictC.h UndelWinC.h \
+ ReadWinC.h ReadPrefC.h PartialMsgDictC.h PartialMsgC.h MsgListC.h \
+ ParamC.h MsgPartC.h MimeTypes.h TermFn.h HeaderC.h FileMsgC.h \
+ ImapFolderC.h ImapServerC.h Imap.h
+FolderPrefC$(O) : FolderPrefC.C IshAppC.h FolderPrefC.h PrefC.h \
+ FolderListC.h FolderC.h ConfPrefC.h AppPrefC.h Misc.h ShellExp.h \
+ FileMisc.h UnixFolderC.h FileFolderC.h MmdfFolderC.h ImapFolderC.h \
+ ImapServerC.h Imap.h MhFolderC.h FolderPrefWinC.h OptWinC.h \
+ MainWinC.h Query.h ImapMisc.h system-closed-new-mail.xpm \
+ system-closed-no-mail.xpm system-open-new-mail.xpm \
+ system-open-no-mail.xpm user-closed-new-mail.xpm \
+ user-closed-no-mail.xpm user-open-new-mail.xpm user-open-no-mail.xpm \
+ sm-system-closed-new-mail.xpm sm-system-closed-no-mail.xpm \
+ sm-system-open-new-mail.xpm sm-system-open-no-mail.xpm \
+ sm-user-closed-new-mail.xpm sm-user-closed-no-mail.xpm \
+ sm-user-open-new-mail.xpm sm-user-open-no-mail.xpm
+FolderPrefWinC$(O) : FolderPrefWinC.C FolderPrefWinC.h OptWinC.h \
+ FolderPrefC.h PrefC.h FolderListC.h FolderC.h IshAppC.h ConfPrefC.h \
+ Misc.h AppPrefC.h
+FontPrefC$(O) : FontPrefC.C IshAppC.h FontPrefC.h PrefC.h FontPrefWinC.h \
+ OptWinC.h
+FontPrefWinC$(O) : FontPrefWinC.C FontPrefWinC.h OptWinC.h FontPrefC.h \
+ PrefC.h IshAppC.h MainWinC.h
+Fork$(O) : Fork.C Fork.h Misc.h
+HeadPrefC$(O) : HeadPrefC.C HeadPrefC.h PrefC.h HeadPrefWinC.h OptWinC.h \
+ Misc.h
+HeadPrefWinC$(O) : HeadPrefWinC.C HeadPrefWinC.h OptWinC.h HeadPrefC.h \
+ PrefC.h IshAppC.h ReadWinC.h ReadPrefC.h
+HeaderC$(O) : HeaderC.C HeaderC.h HeaderValC.h
+HeaderValC$(O) : HeaderValC.C HeaderValC.h QuotedP.h Base64.h
+IconPrefC$(O) : IconPrefC.C IconPrefC.h PrefC.h RuleDictC.h \
+ IconPrefWinC.h DictEditWinC.h OptWinC.h
+IconPrefWinC$(O) : IconPrefWinC.C IconPrefWinC.h DictEditWinC.h OptWinC.h \
+ IconPrefC.h PrefC.h RuleDictC.h IshAppC.h
+ImapFolderC$(O) : ImapFolderC.C ImapFolderC.h ImapServerC.h Imap.h \
+ FolderC.h ImapMsgC.h MsgC.h MsgStatus.h FileMisc.h IshAppC.h \
+ AppPrefC.h PrefC.h MainWinC.h UndelWinC.h SortMgrC.h MailSortKeyC.h \
+ ImapMisc.h MsgListC.h MsgItemC.h
+ImapMisc$(O) : ImapMisc.C IshAppC.h AppPrefC.h PrefC.h FolderPrefC.h \
+ FolderListC.h FolderC.h ImapMisc.h Imap.h
+ImapMsgC$(O) : ImapMsgC.C ImapMsgC.h MsgC.h MsgStatus.h ImapFolderC.h \
+ ImapServerC.h Imap.h FolderC.h MsgPartC.h MimeTypes.h TermFn.h \
+ IshAppC.h MsgItemC.h HeaderC.h
+ImapServerC$(O) : ImapServerC.C IshAppC.h MainWinC.h Misc.h FolderPrefC.h \
+ PrefC.h FolderListC.h FolderC.h ImapServerC.h Imap.h ImapFolderC.h \
+ MsgStatus.h LoginWinC.h Query.h Base64.h
+IncludeWinC$(O) : IncludeWinC.C IncludeWinC.h MimeTypes.h Mailcap.h \
+ MailcapListC.h MailcapC.h SendIconC.h MimeIconC.h FileMisc.h Misc.h \
+ MsgPartC.h TermFn.h ParamC.h
+IshAppC$(O) : IshAppC.C IshAppC.h IshAppP.h AppPrefC.h PrefC.h \
+ CompPrefC.h MailPrefC.h MimeTypes.h ReplyPrefC.h SigPrefC.h \
+ ReadPrefC.h HeadPrefC.h ConfPrefC.h AliasPrefC.h AlertPrefC.h \
+ RuleDictC.h IconPrefC.h SavePrefC.h AutoFilePrefC.h MainButtPrefC.h \
+ ReadButtPrefC.h SendButtPrefC.h SumPrefC.h SumFieldC.h FolderPrefC.h \
+ FolderListC.h FolderC.h FontPrefC.h SortPrefC.h ShellExp.h FileMisc.h \
+ MailFile.h Mailcap.h MailcapListC.h MailcapC.h MainWinC.h \
+ UnixFolderC.h FileFolderC.h ImapFolderC.h ImapServerC.h Imap.h \
+ SaveMgrC.h Query.h UndelWinC.h ImapMisc.h ReadWinC.h MsgC.h \
+ MsgStatus.h MsgItemC.h SendWinC.h
+IshAppP$(O) : IshAppP.C IshAppP.h IshAppC.h SigPrefC.h PrefC.h \
+ MailPrefC.h MimeTypes.h MailFile.h AlertPrefC.h RuleDictC.h \
+ AppPrefC.h FolderC.h FolderPrefC.h FolderListC.h MainWinC.h Query.h \
+ ReadWinC.h ReadPrefC.h SendWinC.h CompPrefC.h ishmail.xpm \
+ ishmail_info.xpm ishmail_question.xpm ishmail_warning.xpm \
+ ishmail_error.xpm
+LocalTextWinC$(O) : LocalTextWinC.C LocalTextWinC.h IshAppC.h ReadPrefC.h \
+ PrefC.h
+LoginWinC$(O) : LoginWinC.C IshAppC.h AppPrefC.h PrefC.h LoginWinC.h
+Mailcap$(O) : Mailcap.C IshAppC.h Mailcap.h MailcapListC.h MailcapC.h \
+ Misc.h MsgPartC.h MimeTypes.h TermFn.h MsgC.h MsgStatus.h \
+ SafeSystem.h ParamC.h
+MailcapC$(O) : MailcapC.C MailcapC.h
+MailFile$(O) : MailFile.C Fork.h SafeSystem.h
+MailPrefC$(O) : MailPrefC.C IshAppC.h MailPrefC.h PrefC.h MimeTypes.h \
+ AppPrefC.h ShellExp.h Misc.h MailPrefWinC.h OptWinC.h
+MailPrefWinC$(O) : MailPrefWinC.C MailPrefWinC.h OptWinC.h MailPrefC.h \
+ PrefC.h MimeTypes.h IshAppC.h FileMisc.h Misc.h SendWinC.h MainWinC.h
+MailSortKeyC$(O) : MailSortKeyC.C MailSortKeyC.h MsgItemC.h MsgC.h \
+ MsgStatus.h Misc.h FolderC.h AddressC.h HeaderValC.h
+MainButtPrefC$(O) : MainButtPrefC.C IshAppC.h MainButtPrefC.h PrefC.h \
+ MainButtWinC.h ButtPrefWinC.h OptWinC.h ButtonEntryListC.h \
+ ButtonEntryC.h MainWinC.h ButtonMgrC.h
+MainButtWinC$(O) : MainButtWinC.C MainButtWinC.h ButtPrefWinC.h OptWinC.h \
+ ButtonEntryListC.h ButtonEntryC.h IshAppC.h MainWinC.h \
+ MainButtPrefC.h PrefC.h ButtonMgrC.h
+MainFile$(O) : MainFile.C MainWinC.h MainWinP.h Query.h IshAppC.h \
+ AppPrefC.h PrefC.h ConfPrefC.h FolderC.h FolderPrefC.h FolderListC.h \
+ ReadWinC.h ReadPrefC.h SendWinC.h MailPrefC.h MimeTypes.h SigPrefC.h \
+ PipeWinC.h PrintWinC.h FileChooserWinC.h
+MainFolder$(O) : MainFolder.C MainWinC.h MainWinP.h Query.h IshAppC.h \
+ QuickMenu.h FolderPrefC.h PrefC.h FolderListC.h FolderC.h AppPrefC.h \
+ ConfPrefC.h MsgItemC.h MsgC.h MsgStatus.h FileChooserWinC.h \
+ MhFolderC.h MmdfFolderC.h FileFolderC.h UnixFolderC.h ImapFolderC.h \
+ ImapServerC.h Imap.h ImapMisc.h ReadWinC.h ReadPrefC.h
+MainMsg$(O) : MainMsg.C MainWinC.h MainWinP.h Query.h IshAppC.h \
+ QuickMenu.h SaveMgrC.h AppPrefC.h PrefC.h MsgC.h MsgStatus.h \
+ MsgItemC.h UndelWinC.h FolderC.h SortMgrC.h MailSortKeyC.h \
+ FolderPrefC.h FolderListC.h MsgFindWinC.h PipeWinC.h PrintWinC.h \
+ SendWinC.h MailPrefC.h MimeTypes.h MsgListC.h
+MainOpt$(O) : MainOpt.C MainWinC.h MainWinP.h Query.h IshAppC.h \
+ AppPrefC.h PrefC.h ReadPrefC.h CompPrefC.h MailPrefC.h MimeTypes.h \
+ SigPrefC.h ReplyPrefC.h ConfPrefC.h HeadPrefC.h AliasPrefC.h \
+ AlertPrefC.h RuleDictC.h IconPrefC.h SavePrefC.h AutoFilePrefC.h \
+ FontPrefC.h MainButtPrefC.h SumPrefC.h SumFieldC.h FolderPrefC.h \
+ FolderListC.h FolderC.h SortPrefC.h
+MainWinC$(O) : MainWinC.C MainWinC.h MainWinP.h Query.h IshAppC.h \
+ AppPrefC.h PrefC.h FolderC.h AddressC.h MsgC.h MsgStatus.h MsgItemC.h \
+ SumPrefC.h SumFieldC.h SortMgrC.h MailSortKeyC.h SortPrefC.h \
+ RuleDictC.h FolderPrefC.h FolderListC.h UndelWinC.h ButtonMgrC.h \
+ MainButtPrefC.h AutoFilePrefC.h QuickMenu.h MsgFindWinC.h ReadWinC.h \
+ ReadPrefC.h MsgListC.h
+MainWinP$(O) : MainWinP.C MainWinP.h Query.h MainWinC.h IshAppC.h \
+ QuickMenu.h AppPrefC.h PrefC.h AliasPrefC.h SumPrefC.h SumFieldC.h \
+ FolderPrefC.h FolderListC.h FolderC.h MsgItemC.h MsgC.h MsgStatus.h \
+ IconPrefC.h RuleDictC.h Fork.h AlertPrefC.h SaveMgrC.h ConfPrefC.h \
+ AutoFilePrefC.h FileChooserWinC.h MsgFindWinC.h ReadWinC.h \
+ ReadPrefC.h PrintWinC.h PipeWinC.h MsgListC.h
+MhFolderC$(O) : MhFolderC.C MhFolderC.h FolderC.h MhMsgC.h MsgC.h \
+ MsgStatus.h FileMisc.h IshAppC.h AppPrefC.h PrefC.h MainWinC.h \
+ MsgItemC.h SortMgrC.h MailSortKeyC.h UndelWinC.h MsgListC.h \
+ MsgPartC.h MimeTypes.h TermFn.h
+MhMsgC$(O) : MhMsgC.C MhMsgC.h MsgC.h MsgStatus.h MsgPartC.h MimeTypes.h \
+ TermFn.h
+MimeEncode$(O) : MimeEncode.C MimeEncode.h SafeSystem.h FileMisc.h
+MimeIconC$(O) : MimeIconC.C MimeIconC.h
+MimeTypes$(O) : MimeTypes.C MimeTypes.h
+Misc$(O) : Misc.C IshAppC.h Base64.h
+MmdfFolderC$(O) : MmdfFolderC.C MmdfFolderC.h FileFolderC.h FolderC.h \
+ MmdfMsgC.h FilePartMsgC.h MsgC.h MsgStatus.h FileMisc.h MsgPartC.h \
+ MimeTypes.h TermFn.h HeaderC.h IshAppC.h MainWinC.h MsgItemC.h \
+ AppPrefC.h PrefC.h MsgListC.h
+MmdfMsgC$(O) : MmdfMsgC.C MmdfMsgC.h FilePartMsgC.h MsgC.h MsgStatus.h \
+ MmdfFolderC.h FileFolderC.h FolderC.h HeaderValC.h MsgPartC.h \
+ MimeTypes.h TermFn.h
+MsgC$(O) : MsgC.C MsgC.h MsgStatus.h AddressC.h HeaderC.h HeaderValC.h \
+ MsgPartC.h MimeTypes.h TermFn.h FolderC.h IshAppC.h HeadPrefC.h \
+ PrefC.h MsgItemC.h MainWinC.h RuleDictC.h date.h ReplyPrefC.h \
+ SendWinC.h MailPrefC.h
+MsgFindExp$(O) : MsgFindExp.C MsgFindExp.h MsgStatus.h MsgItemC.h MsgC.h \
+ AddressC.h HeaderValC.h HeaderC.h date.h
+MsgFindWinC$(O) : MsgFindWinC.C MsgFindWinC.h MsgItemC.h MsgC.h \
+ MsgStatus.h IshAppC.h MainWinC.h FolderC.h AppPrefC.h PrefC.h \
+ HeaderC.h HeaderValC.h ImapFolderC.h ImapServerC.h Imap.h \
+ ComplexMsgFindWinC.h MsgFindExp.h ComplexImapFindWinC.h ReadWinC.h \
+ ReadPrefC.h
+MsgItemC$(O) : MsgItemC.C MsgItemC.h MsgC.h MsgStatus.h IshAppC.h \
+ SumPrefC.h PrefC.h SumFieldC.h HeaderValC.h AddressC.h AddrMisc.h \
+ SortMgrC.h MailSortKeyC.h FolderC.h Misc.h new_mail.xpm read_mail.xpm \
+ saved_mail.xpm unread_mail.xpm current_mail.xpm deleted_mail.xpm \
+ new_mime.xpm read_mime.xpm saved_mime.xpm unread_mime.xpm \
+ partial_mime.xpm current_mime.xpm deleted_mime.xpm
+MsgPartC$(O) : MsgPartC.C MsgPartC.h MimeTypes.h TermFn.h ParamC.h \
+ HeaderC.h HeaderValC.h Mailcap.h MailcapListC.h MailcapC.h QuotedP.h \
+ Base64.h MsgC.h MsgStatus.h FileMsgC.h MhMsgC.h FolderC.h \
+ UnixFolderC.h FileFolderC.h MimeEncode.h
+OptWinC$(O) : OptWinC.C OptWinC.h
+ParamC$(O) : ParamC.C ParamC.h
+PartialMsgC$(O) : PartialMsgC.C PartialMsgC.h MsgListC.h MsgC.h \
+ MsgStatus.h
+PickAliasWinC$(O) : PickAliasWinC.C PickAliasWinC.h IshAppC.h \
+ AliasPrefC.h PrefC.h AppPrefC.h
+PipeWinC$(O) : PipeWinC.C PipeWinC.h IshAppC.h MainWinC.h MsgItemC.h \
+ MsgC.h MsgStatus.h Fork.h Mailcap.h MailcapListC.h MailcapC.h
+PrefC$(O) : PrefC.C PrefC.h IshAppC.h IshAppP.h RuleDictC.h
+PrintWinC$(O) : PrintWinC.C PrintWinC.h IshAppC.h AppPrefC.h PrefC.h \
+ MainWinC.h MsgItemC.h MsgC.h MsgStatus.h LoginWinC.h MsgPartC.h \
+ MimeTypes.h TermFn.h Mailcap.h MailcapListC.h MailcapC.h Fork.h \
+ FolderC.h HeadPrefC.h HeaderC.h Query.h FileMsgC.h ParamC.h
+Query$(O) : Query.C Query.h Misc.h
+QuickMenu$(O) : QuickMenu.C QuickMenu.h IshAppC.h AppPrefC.h PrefC.h \
+ FolderPrefC.h FolderListC.h FolderC.h FileMisc.h ImapServerC.h Imap.h \
+ ImapMisc.h
+QuotedP$(O) : QuotedP.C QuotedP.h
+ReadButtPrefC$(O) : ReadButtPrefC.C IshAppC.h ReadButtPrefC.h PrefC.h \
+ ReadButtWinC.h ButtPrefWinC.h OptWinC.h ButtonEntryListC.h \
+ ButtonEntryC.h ReadWinC.h ReadPrefC.h ButtonMgrC.h
+ReadButtWinC$(O) : ReadButtWinC.C ReadButtWinC.h ButtPrefWinC.h OptWinC.h \
+ ButtonEntryListC.h ButtonEntryC.h IshAppC.h MainWinC.h \
+ ReadButtPrefC.h PrefC.h ButtonMgrC.h
+ReadFile$(O) : ReadFile.C ReadWinP.h ReadPrefC.h PrefC.h ReadWinC.h \
+ IshAppC.h MainWinC.h FolderC.h MsgC.h MsgStatus.h MsgItemC.h \
+ AppPrefC.h QuickMenu.h SaveMgrC.h Query.h FolderPrefC.h FolderListC.h \
+ PrintWinC.h PipeWinC.h sun2mime.h FileMsgC.h MsgPartC.h MimeTypes.h \
+ TermFn.h Misc.h SafeSystem.h SendWinC.h MailPrefC.h Fork.h
+ReadIconC$(O) : ReadIconC.C ReadIconC.h MimeIconC.h MsgPartC.h \
+ MimeTypes.h TermFn.h
+ReadOpt$(O) : ReadOpt.C ReadWinP.h ReadPrefC.h PrefC.h ReadWinC.h \
+ IshAppC.h ReadButtPrefC.h
+ReadPart$(O) : ReadPart.C ReadWinC.h ReadPrefC.h PrefC.h ReadWinP.h \
+ ReadIconC.h MimeIconC.h MsgPartC.h MimeTypes.h TermFn.h LoginWinC.h \
+ ParamC.h Mailcap.h MailcapListC.h MailcapC.h LocalTextWinC.h MsgC.h \
+ MsgStatus.h Query.h Misc.h Fork.h FileMsgC.h FileChooserWinC.h \
+ FileMisc.h IshAppC.h AppPrefC.h
+ReadPrefC$(O) : ReadPrefC.C ReadPrefC.h PrefC.h ReadPrefWinC.h OptWinC.h
+ReadPrefWinC$(O) : ReadPrefWinC.C ReadPrefWinC.h OptWinC.h ReadPrefC.h \
+ PrefC.h IshAppC.h MainWinC.h ReadWinC.h
+ReadReply$(O) : ReadReply.C ReadWinC.h ReadPrefC.h PrefC.h ReadWinP.h \
+ SendWinC.h MailPrefC.h MimeTypes.h IshAppC.h MsgListC.h MsgC.h \
+ MsgStatus.h
+ReadWinC$(O) : ReadWinC.C ReadWinC.h ReadPrefC.h PrefC.h ReadWinP.h \
+ IshAppC.h ButtonMgrC.h ReadButtPrefC.h MsgC.h MsgStatus.h AppPrefC.h \
+ QuickMenu.h LocalTextWinC.h ReadIconC.h MimeIconC.h
+ReadWinP$(O) : ReadWinP.C ReadWinP.h ReadPrefC.h PrefC.h ReadWinC.h \
+ QuickMenu.h IshAppC.h AppPrefC.h FolderPrefC.h FolderListC.h \
+ FolderC.h ReplyPrefC.h SaveMgrC.h Query.h HeaderC.h HeaderValC.h \
+ HeadPrefC.h MsgC.h MsgStatus.h MainWinC.h ButtonMgrC.h MsgPartC.h \
+ MimeTypes.h TermFn.h ReadIconC.h MimeIconC.h Mailcap.h MailcapListC.h \
+ MailcapC.h ParamC.h LocalTextWinC.h PipeWinC.h PrintWinC.h \
+ LoginWinC.h MsgItemC.h FileChooserWinC.h SortMgrC.h MailSortKeyC.h \
+ SendWinC.h MailPrefC.h reading.xpm
+ReplyPrefC$(O) : ReplyPrefC.C IshAppC.h ReplyPrefC.h PrefC.h CompPrefC.h \
+ ReplyPrefWinC.h OptWinC.h
+ReplyPrefWinC$(O) : ReplyPrefWinC.C ReplyPrefWinC.h OptWinC.h \
+ ReplyPrefC.h PrefC.h IshAppC.h CompPrefC.h
+SafeSystem$(O) : SafeSystem.C PidListC.h
+SaveMgrC$(O) : SaveMgrC.C SaveMgrC.h Query.h IshAppC.h SavePrefC.h \
+ PrefC.h RuleDictC.h AppPrefC.h MainWinC.h MsgItemC.h MsgC.h \
+ MsgStatus.h FolderC.h ShellExp.h AddressC.h FolderPrefC.h \
+ FolderListC.h FileChooserWinC.h ImapMisc.h FileMisc.h
+SavePrefC$(O) : SavePrefC.C SavePrefC.h PrefC.h RuleDictC.h \
+ SavePrefWinC.h DictEditWinC.h OptWinC.h
+SavePrefWinC$(O) : SavePrefWinC.C SavePrefWinC.h DictEditWinC.h OptWinC.h \
+ SavePrefC.h PrefC.h RuleDictC.h IshAppC.h
+SendButtPrefC$(O) : SendButtPrefC.C IshAppC.h SendButtPrefC.h PrefC.h \
+ SendWinC.h MailPrefC.h MimeTypes.h ButtonMgrC.h SendButtWinC.h \
+ ButtPrefWinC.h OptWinC.h ButtonEntryListC.h ButtonEntryC.h
+SendButtWinC$(O) : SendButtWinC.C SendButtWinC.h ButtPrefWinC.h OptWinC.h \
+ ButtonEntryListC.h ButtonEntryC.h IshAppC.h MainWinC.h \
+ SendButtPrefC.h PrefC.h ButtonMgrC.h
+SendEdit$(O) : SendEdit.C IshAppC.h SendWinP.h MsgListC.h MsgC.h \
+ MsgStatus.h MimeTypes.h MailPrefC.h PrefC.h SendWinC.h ButtonMgrC.h \
+ IncludeWinC.h SendIconC.h MimeIconC.h FileMsgC.h MsgPartC.h TermFn.h \
+ ConfPrefC.h Misc.h FileChooserWinC.h Query.h FileMisc.h HeaderC.h \
+ HeaderValC.h CompPrefC.h edit.h SendMisc.h
+SendFile$(O) : SendFile.C SendWinC.h MailPrefC.h PrefC.h MimeTypes.h \
+ SendWinP.h MsgListC.h MsgC.h MsgStatus.h IshAppC.h ConfPrefC.h Misc.h \
+ Query.h AliasPrefC.h AddressC.h date.h MailFile.h QuotedP.h Base64.h \
+ SigPrefC.h Fork.h FileMisc.h FolderPrefC.h FolderListC.h FolderC.h \
+ AppPrefC.h SendIconC.h MimeIconC.h SendMisc.h MsgPartC.h TermFn.h \
+ HeaderC.h SafeSystem.h CompPrefC.h ImapMisc.h
+SendIconC$(O) : SendIconC.C SendIconC.h MimeIconC.h SendWinC.h \
+ MailPrefC.h PrefC.h MimeTypes.h IncludeWinC.h MsgPartC.h TermFn.h \
+ MsgC.h MsgStatus.h MimeEncode.h FileMisc.h SendMisc.h HeaderC.h \
+ ParamC.h Misc.h Base64.h QuotedP.h
+SendInc$(O) : SendInc.C IshAppC.h SendWinP.h MsgListC.h MsgC.h \
+ MsgStatus.h MimeTypes.h MailPrefC.h PrefC.h SendWinC.h SigPrefC.h \
+ SendIconC.h MimeIconC.h MainWinC.h FolderC.h FileChooserWinC.h \
+ QuotedP.h Base64.h MimeEncode.h IncludeWinC.h Misc.h FileMisc.h
+SendMisc$(O) : SendMisc.C SendMisc.h Misc.h IshAppC.h MimeTypes.h \
+ QuotedP.h Base64.h MailPrefC.h PrefC.h
+SendOpt$(O) : SendOpt.C SendWinC.h MailPrefC.h PrefC.h MimeTypes.h \
+ SendWinP.h MsgListC.h MsgC.h MsgStatus.h IshAppC.h CompPrefC.h \
+ ReplyPrefC.h SigPrefC.h SendButtPrefC.h
+SendWinC$(O) : SendWinC.C SendWinC.h MailPrefC.h PrefC.h MimeTypes.h \
+ SendWinP.h MsgListC.h MsgC.h MsgStatus.h IshAppC.h CompPrefC.h \
+ ReplyPrefC.h SigPrefC.h AddressC.h HeaderValC.h Misc.h SendIconC.h \
+ MimeIconC.h MsgPartC.h TermFn.h FileMsgC.h FileMisc.h ConfPrefC.h \
+ HeaderC.h
+SendWinP$(O) : SendWinP.C IshAppC.h SendWinP.h MsgListC.h MsgC.h \
+ MsgStatus.h MimeTypes.h MailPrefC.h PrefC.h SendWinC.h CompPrefC.h \
+ SendButtPrefC.h ReplyPrefC.h ButtonMgrC.h AddressC.h AliasPrefC.h \
+ MsgItemC.h AddrMisc.h HeaderValC.h Misc.h HeaderC.h HeadPrefC.h \
+ Query.h ConfPrefC.h PickAliasWinC.h IncludeWinC.h MsgPartC.h TermFn.h \
+ ParamC.h SendIconC.h MimeIconC.h FileChooserWinC.h FileMisc.h \
+ composition.xpm
+ShellExp$(O) : ShellExp.C IshAppC.h AppPrefC.h PrefC.h FolderPrefC.h \
+ FolderListC.h FolderC.h SafeSystem.h Misc.h ImapServerC.h Imap.h \
+ ImapMisc.h
+SigPrefC$(O) : SigPrefC.C IshAppC.h SigPrefC.h PrefC.h ShellExp.h \
+ SafeSystem.h SigPrefWinC.h OptWinC.h
+SigPrefWinC$(O) : SigPrefWinC.C SigPrefWinC.h OptWinC.h SigPrefC.h \
+ PrefC.h IshAppC.h edit.h ShellExp.h MainWinC.h SendWinC.h MailPrefC.h \
+ MimeTypes.h CompPrefC.h
+SortMgrC$(O) : SortMgrC.C SortMgrC.h MailSortKeyC.h MsgItemC.h
+SortPrefC$(O) : SortPrefC.C SortPrefC.h PrefC.h RuleDictC.h \
+ SortPrefWinC.h OptWinC.h IshAppC.h MainWinC.h FolderC.h
+SortPrefWinC$(O) : SortPrefWinC.C SortPrefWinC.h OptWinC.h SortMgrC.h \
+ MailSortKeyC.h SortPrefC.h PrefC.h RuleDictC.h FolderC.h \
+ FolderPrefC.h FolderListC.h IshAppC.h MainWinC.h
+SumFieldC$(O) : SumFieldC.C SumFieldC.h
+SumPrefC$(O) : SumPrefC.C SumPrefC.h PrefC.h SumFieldC.h SumPrefWinC.h \
+ OptWinC.h
+SumPrefWinC$(O) : SumPrefWinC.C SumPrefWinC.h OptWinC.h SumFieldC.h \
+ SumPrefC.h PrefC.h IshAppC.h MainWinC.h UndelWinC.h
+UndelWinC$(O) : UndelWinC.C UndelWinC.h MsgItemC.h IshAppC.h SumPrefC.h \
+ PrefC.h SumFieldC.h MainWinC.h
+UnixFolderC$(O) : UnixFolderC.C UnixFolderC.h FileFolderC.h FolderC.h \
+ UnixMsgC.h FilePartMsgC.h MsgC.h MsgStatus.h FileMisc.h HeaderC.h \
+ IshAppC.h MainWinC.h MsgItemC.h AddressC.h AppPrefC.h PrefC.h \
+ MsgListC.h
+UnixMsgC$(O) : UnixMsgC.C UnixMsgC.h FilePartMsgC.h MsgC.h MsgStatus.h \
+ MsgPartC.h MimeTypes.h TermFn.h UnixFolderC.h FileFolderC.h FolderC.h \
+ HeaderValC.h AddressC.h
+edit$(O) : edit.C Fork.h IshAppC.h CompPrefC.h PrefC.h
+main$(O) : main.C IshAppC.h ShellExp.h ImapMisc.h
+ButtonEntryListC$(O) : ButtonEntryListC.C ButtonEntryListC.h \
+ ButtonEntryC.h
+FolderListC$(O) : FolderListC.C FolderListC.h FolderC.h
+MailcapListC$(O) : MailcapListC.C MailcapListC.h MailcapC.h
+MsgListC$(O) : MsgListC.C MsgListC.h MsgC.h MsgStatus.h
+PartialMsgDictC$(O) : PartialMsgDictC.C PartialMsgDictC.h PartialMsgC.h \
+ MsgListC.h MsgC.h MsgStatus.h
+PidListC$(O) : PidListC.C PidListC.h
+RuleDictC$(O) : RuleDictC.C RuleDictC.h
+getadate$(O) : getadate.c
+sun2mime$(O) : sun2mime.c
+date$(O) : date.c date.h
+version$(O) : version.c

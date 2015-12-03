@@ -1,0 +1,60 @@
+#!/bin/sh
+#
+# Usage: showpgpsign boundary file
+#
+# This script will decompose a "multipart/signed" with protocol
+#    "application/pgp-signature" and pass the parts to pgp
+#
+
+#
+# Use awk to scan the parts
+#
+# Search for first boundary
+# Until next boundary, save lines to data file
+# Until next boundary, save lines to sig file
+#
+
+BOUND=--$1
+LASTBOUND=${BOUND}--
+DATAFILE=/tmp/$$.data
+SIGFILE=/tmp/$$.sig
+AWKFILE=/tmp/$$.awk
+
+echo "BEGIN {"					>> $AWKFILE
+echo "   part = 0"				>> $AWKFILE
+echo "   lastLen = 0"				>> $AWKFILE
+echo "   prevSet = 0"				>> $AWKFILE
+echo "}"					>> $AWKFILE
+
+#
+# Increment part number for each boundary
+#
+echo "/$BOUND/ || \\"				>> $AWKFILE
+echo "/$LASTBOUND/ {"				>> $AWKFILE
+echo "   part = part + 1"			>> $AWKFILE
+echo "}"					>> $AWKFILE
+
+#
+# Put non-boundaries in appropriate files.  If the data file ends with
+#   a blank line, that line is not added
+#
+echo "! /$BOUND/ && \\"				>> $AWKFILE
+echo "! /$LASTBOUND/ {"				>> $AWKFILE
+echo "   if ( part == 1 ) {"			>> $AWKFILE
+echo "      if ( prevSet == 1 )"		>> $AWKFILE
+echo "         print prev >> \"$DATAFILE\""	>> $AWKFILE
+echo "      lastLen = length"			>> $AWKFILE
+echo "      prev = \$0"				>> $AWKFILE
+echo "      prevSet = 1"			>> $AWKFILE
+echo "   }"					>> $AWKFILE
+echo "   else if ( part == 2 ) {"		>> $AWKFILE
+echo "      if ( prevSet == 1 && lastLen > 0 )"	>> $AWKFILE
+echo "         print prev >> \"$DATAFILE\""	>> $AWKFILE
+echo "      print >> \"$SIGFILE\""		>> $AWKFILE
+echo "   }"					>> $AWKFILE
+echo "}"					>> $AWKFILE
+
+cat $2 | awk -f $AWKFILE
+
+xterm -title "Authenticate" -e ishdecrypt $SIGFILE $DATAFILE
+rm -f $AWKFILE $SIGFILE $DATAFILE

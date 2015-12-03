@@ -1,0 +1,2519 @@
+ishmail.helpcardDbFiles:		Ishmail.hlp
+
+!----------------------------------QUICK HELP-------------------------------
+
+*helpPB.quickHelp:		Show more information about this window.
+*cancelPB.quickHelp:		Cancel this request.
+*okPB.quickHelp:		Apply your changes, and close this window.
+*applyPB.quickHelp:		Apply your changes, leaving this window open.
+*clearPB.quickHelp:		Clear all information previously entered.
+*donePB.quickHelp:		Close this window, don't apply any more changes.
+*applyAllTB.quickHelp:		Make this change permanent (update resource files).
+*applyCurrentTB.quickHelp:	This is a temporary change.
+*hScrollBar.quickHelp:\
+   Click and drag left or right to scroll the list.
+*vScrollBar.quickHelp:\
+   Click and drag up or down to scroll the list.
+*joyStick.quickHelp:\
+   Click and drag up, down, left, or right to pan the list.
+
+*selectTextSW.selectText.quickHelp:\
+   Enter one or more file names.
+*selectTextForm.selectTF.quickHelp:\
+   Enter a file name.
+*dirListSW.dirList.quickHelp:\
+   Double-click to view directory contents
+*fileListSW.fileList.quickHelp:\
+   Single-click to select, double-click to accept a file name.
+*dirNameForm.dirNamePB.quickHelp:\
+   Click to view contents of named directory
+*filterForm.filterPB.quickHelp:\
+   Click to apply filter to file names
+*dirNameForm.dirNameTF.quickHelp:\
+   Enter a directory name and press Return/Enter to view contents.
+*filterForm.filterTF.quickHelp:\
+   Enter a regular expression to indicate which names are to be displayed
+*selectForm.listTB.quickHelp:\
+   Select to display a file browser
+*imapForm.imapTB.quickHelp:\
+   Select to get the list from an IMAP server
+*imapForm.imapTF.quickHelp:\
+   Enter the name of an IMAP server
+
+*mainShell.mainWindow*fileCB.quickHelp:\
+   Use File menu options to print messages or exit Ishmail. 
+*mainShell.mainWindow*folderCB.quickHelp:\
+   Use Folder menu options to work with the current or selected folders. 
+*mainShell.mainWindow*msgCB.quickHelp:\
+   Use Message menu options to work with selected messages. 
+*mainShell.mainWindow*optCB.quickHelp:\
+   Use Options menu options to customize Ishmail. 
+*mainShell.mainWindow*helpCB.quickHelp:\
+   Use Help menu options to learn more about Ishmail.
+*mainShell.mainWindow*helpCommentPB.quickHelp:\
+   Comment on Ishmail or request an enhancement.
+
+*mainShell.mainWindow*panedWin*sash.quickHelp:\
+   Click here and drag up or down to resize the Open Folders area.
+*mainShell.mainWindow*joyStick.quickHelp:\
+   Click here and drag up/down/left/right to pan the Folder Contents area.
+*mainShell.mainWindow*folderBox*quickHelp:\
+   Click to select, double-click to activate, drop message to save, right button for popup-menu.
+*mainShell.mainWindow*msgBox*viewFrame*quickHelp:\
+   Click to select, double-click to read, right button for popup-menu.
+
+*mainShell.mainWindow*filePrintPB.quickHelp:\
+   Print one or more messages.
+*mainShell.mainWindow*fileSleepPB.quickHelp:\
+   Save changes to folders and iconify the windows.
+*mainShell.mainWindow*fileQuitPB.quickHelp:\
+   Exit Ishmail, without saving any changes to your folders. 
+*mainShell.mainWindow*fileExitPB.quickHelp:\
+   Save changes to your folders then exit Ishmail.
+
+*mainShell.mainWindow*folderNewPB.quickHelp:\
+   Create a new folder and add it to the Open Folders list.
+*mainShell.mainWindow*folderOpenPB.quickHelp:\
+   Open one or more existing folders, and show them in the Open Folders list.
+*mainShell.mainWindow*folderOpenRecentCB.quickHelp:\
+   Pick from a list of the most recently used folders.
+*mainShell.mainWindow*folderOpenQuickCB.quickHelp:\
+   Pick from a list of all folders in you folder directory.
+*mainShell.mainWindow*folderActCB.quickHelp:\
+   Activate (read in) one or more folders.
+*mainShell.mainWindow*folderActSysPB.quickHelp:\
+   Activate the InBox folder.
+*mainShell.mainWindow*folderActSelPB.quickHelp:\
+   Activate the folders selected in the Open Folders area.
+*mainShell.mainWindow*folderSaveCB.quickHelp:\
+   Discard messages marked for deletion and update message status. 
+*mainShell.mainWindow*folderSavePB.quickHelp:\
+   Discard deleted messages and save changes to the current folder.
+*mainShell.mainWindow*folderSaveCurPB.quickHelp:\
+   Discard deleted messages and save changes to the selected folder(s).
+*mainShell.mainWindow*folderSaveAllPB.quickHelp:\
+   Discard deleted messages and save changes to all open folders.
+*mainShell.mainWindow*folderReadCB.quickHelp:\
+   Updated cached information for one or more folders.
+*mainShell.mainWindow*folderReadCurPB.quickHelp:\
+   Update cached information for the current folder.
+*mainShell.mainWindow*folderReadSelPB.quickHelp:\
+   Update cached information for selected folder(s).
+*mainShell.mainWindow*folderReadAllPB.quickHelp:\
+   Update cached information about all open folders.
+*mainShell.mainWindow*folderCloseCB.quickHelp:\
+   Close one or more folders.
+*mainShell.mainWindow*folderCloseCurPB.quickHelp:\
+   Close the current folder and remove it from the open folders list. 
+*mainShell.mainWindow*folderCloseSelPB.quickHelp:\
+   Close the selected folders and remove them from open folders list.
+*mainShell.mainWindow*folderCloseAllPB.quickHelp:\
+   Close the selected folders and remove them from open folders list.
+*mainShell.mainWindow*folderDelCB.quickHelp:\
+   Delete one or more folders.
+*mainShell.mainWindow*folderDelCurPB.quickHelp:\
+   Delete the current folder.
+*mainShell.mainWindow*folderDelSelPB.quickHelp:\
+   Delete selected folder(s).
+*mainShell.mainWindow*folderDelAllPB.quickHelp:\
+   Delete all open folders.
+*mainShell.mainWindow*folderSelPB.quickHelp:\
+   Select all folders.
+*mainShell.mainWindow*folderDeselPB.quickHelp:\
+   Deselect all folders.
+
+*mainShell.mainWindow*msgComposePB.quickHelp:\
+   Compose a new message. 
+*mainShell.mainWindow*msgDeselPB.quickHelp:\
+   Deselect all messages highlighted in the list.
+*mainShell.mainWindow*msgPipePB.quickHelp:\
+   Send the selected message(s) to an external command.
+*mainShell.mainWindow*msgForward822PB.quickHelp:\
+   Forward the selected message as a message inside of a MIME message.
+*mainShell.mainWindow*msgForwardPB.quickHelp:\
+   Forward the selected message to someone else. 
+*mainShell.mainWindow*msgDelPB.quickHelp:\
+   Mark the selected message(s) for deletion.
+*mainShell.mainWindow*msgPrintPB.quickHelp:\
+   Print the selected message(s).
+*mainShell.mainWindow*msgNextPB.quickHelp:\
+   Read the message following the selected message. 
+*mainShell.mainWindow*msgNextUnreadPB.quickHelp:\
+   Read the next unread message.
+*mainShell.mainWindow*msgNextSenderPB.quickHelp:\
+   Read the next message from the same sender.
+*mainShell.mainWindow*msgNextSubjectPB.quickHelp:\
+   Read the next message with the same subject.
+*mainShell.mainWindow*msgPrevPB.quickHelp:\
+   Read the message before the selected message.
+*mainShell.mainWindow*msgPrevUnreadPB.quickHelp:\
+   Read the previous unread message.
+*mainShell.mainWindow*msgPrevSenderPB.quickHelp:\
+   Read the previous message from the same sender.
+*mainShell.mainWindow*msgPreSubjectPB.quickHelp:\
+   Read the previous message with the same subject.
+*mainShell.mainWindow*msgReadPB.quickHelp:\
+   Read the selected message(s).
+*mainShell.mainWindow*msgReplyAllIncPB.quickHelp:\
+   Reply to the sender and all recipients of the selected \
+message with the message body included.
+*mainShell.mainWindow*msgReplyAllPB.quickHelp:\
+   Reply to the sender and all recipients of the selected \
+message.
+*mainShell.mainWindow*msgReplyIncPB.quickHelp:\
+   Reply to the sender of the selected message with the \
+message body included. 
+*mainShell.mainWindow*msgReplyPB.quickHelp:\
+   Reply to the sender of the selected message.
+*mainShell.mainWindow*msgResendPB.quickHelp:\
+   Redirect the selected message to someone else.
+*mainShell.mainWindow*msgSaveToFilePB.quickHelp:\
+   Save the selected message(s) to a file.
+*mainShell.mainWindow*msgSaveSelPB.quickHelp:\
+   Save the selected message(s) to each of the selected folder(s).
+*mainShell.mainWindow*msgSaveToPB.quickHelp:\
+   Save the selected message(s) to a mail folder.
+*mainShell.mainWindow*msgSavePB.quickHelp:\
+   Save the selected message(s) to the default save file.
+*mainShell.mainWindow*msgFindPB.quickHelp:\
+   Search for a message.
+*mainShell.mainWindow*msgSelPB.quickHelp:\
+   Select all messages in the message list.
+*mainShell.mainWindow*msgClearAllPB.quickHelp:\
+   Clear all status flags for the selected message(s).
+*mainShell.mainWindow*msgClearFilteredPB.quickHelp:\
+   Clear the "filtered" status flag.
+*mainShell.mainWindow*msgClearForwardedPB.quickHelp:\
+   Clear the "forwarded" status flag.
+*mainShell.mainWindow*msgClearPrintedPB.quickHelp:\
+   Clear the "printed" flag.
+*mainShell.mainWindow*msgClearRepliedPB.quickHelp:\
+   Clear the "replied to" flag.
+*mainShell.mainWindow*msgClearResentPB.quickHelp:\
+   Clear the "re-sent" flag.
+*mainShell.mainWindow*msgClearSavedPB.quickHelp:\
+   Clear the "saved" flag.
+*mainShell.mainWindow*msgMarkNewPB.quickHelp:\
+   Set message status to "new".
+*mainShell.mainWindow*msgMarkReadPB.quickHelp:\
+   Set message status to "read".
+*mainShell.mainWindow*msgMarkUnreadPB.quickHelp:\
+   Set message status to "unread".
+*mainShell.mainWindow*msgSetFilteredPB.quickHelp:\
+   Set the "filtered" flag.
+*mainShell.mainWindow*msgSetForwardedPB.quickHelp:\
+   Set the "forwarded" flag.
+*mainShell.mainWindow*msgSetPrintedPB.quickHelp:\
+   Set the "printed" flag.
+*mainShell.mainWindow*msgSetRepliedPB.quickHelp:\
+   Set the "replied to" flag.
+*mainShell.mainWindow*msgSetResentPB.quickHelp:\
+   Set the "re-sent" flag.
+*mainShell.mainWindow*msgSetSavedPB.quickHelp:\
+   Set the "saved" flag.
+*mainShell.mainWindow*msgUndelLastPB.quickHelp:\
+   Restore the most recently deleted message.
+*mainShell.mainWindow*msgUndelListPB.quickHelp:\
+   Display the list of deleted messages.
+*mainShell.mainWindow*msgUndelSelPB.quickHelp:\
+   Restore the selected messages that you marked for deletion. 
+
+*mainShell.mainWindow*optPrefPB.quickHelp:\
+   View and/or modify global options and settings.
+*mainShell.mainWindow*optReadPB.quickHelp:\
+   View and/or modify options and settings for Reading messages.
+*mainShell.mainWindow*optSendPB.quickHelp:\
+   View and/or modify options and settings for Composing messages.
+*mainShell.mainWindow*optMailPB.quickHelp:\
+   View and/or modify options and settings for MIME messages.
+*mainShell.mainWindow*optSigPB.quickHelp:\
+   View and/or modify options and settings for your e-mail signature.
+*mainShell.mainWindow*optReplyPB.quickHelp:\
+   View and/or modify options and settings for replying to mail.
+*mainShell.mainWindow*optConfirmPB.quickHelp:\
+   View and/or modify which actions require confirmation.
+*mainShell.mainWindow*optHeadPB.quickHelp:\
+   View and/or modify the message headers that are \
+displayed or ignored.
+*mainShell.mainWindow*optAliasPB.quickHelp:\
+   View and/or modify your private mail aliases.
+*mainShell.mainWindow*optGroupAliasPB.quickHelp:\
+   View and/or modify your group's mail aliases.
+*mainShell.mainWindow*optAlertPB.quickHelp:\
+   View and/or modify the commands that are run to \
+tell you of new mail.
+*mainShell.mainWindow*optIconPB.quickHelp:\
+   View and/or modify the icons that are used to tell you \
+of new mail.
+*mainShell.mainWindow*optSavePB.quickHelp:\
+   View and/or modify patterns which determine how messages are saved.
+*mainShell.mainWindow*optAutoFilePB.quickHelp:\
+   View and/or modify rules for automatic filing of messages.
+*mainShell.mainWindow*optFontPB.quickHelp:\
+   View and/or modify fonts used for labels, buttons, lists, and text.
+*mainShell.mainWindow*optButtPB.quickHelp:\
+   Add function buttons to the main window.
+*mainShell.mainWindow*optSummPB.quickHelp:\
+   Control the format and content of the message list.
+*mainShell.mainWindow*optFolderPB.quickHelp:\
+   Control the folder list display, and set folder options.
+*mainShell.mainWindow*optSortPB.quickHelp:\
+   Sort the message list.
+
+!---------------------------------------------------------------------------
+
+*printWin*hdrAllTB.quickHelp:\
+   Select this to print all headers.
+*printWin*hdrDispTB.quickHelp:\
+   Select this to print only the displayed headers.
+*printWin*hdrNoneTB.quickHelp:\
+   Select this to not print any headers
+*printWin*ordParallelTB.quickHelp:\
+   Select this to print messages as separate files
+*printWin*ordSerialTB.quickHelp:\
+   Select this to print messages as a single file
+*printWin*cmdTF.quickHelp:\
+   Enter the command to be used for printing
+*printWin*printPB.quickHelp:\
+   Print the message
+
+!---------------------------------------------------------------------------
+
+*pipeWin*hdrAllTB.quickHelp:\
+   Filter the entire message.
+*pipeWin*hdrDispTB.quickHelp:\
+   Pass headers seen in the reading window.
+*pipeWin*hdrNoneTB.quickHelp:\
+   Don't pass any headers, just the msg text.
+*pipeWin*ordParallelTB.quickHelp:\
+   Run the filter once for each file.
+*pipeWin*ordSerialTB.quickHelp:\
+   Filter all the messages as a single file.
+*pipeWin*cmdTF.quickHelp:\
+   Path name of the filter command.
+*pipeWin*pipePB.quickHelp:\
+   Send the message(s) to the command.
+
+!---------------------------------------------------------------------------
+
+*newFolderWin*selectTF.quickHelp:	\
+   Type the name of the folder to be created here.
+*newFolderWin*listTB.quickHelp:		\
+   Select to display a folder browser
+*newFolderWin*filterPB.quickHelp:	\
+   Click to apply filter to folder names
+*newFolderWin*fileList.quickHelp:	\
+   Single-click to select, double-click to accept a folder name.
+*newFolderWin*sash.quickHelp:\
+   Click here and drag up or down to resize.
+
+!---------------------------------------------------------------------------
+
+*openSelectWin*selectTextSW.selectText.quickHelp:\
+   Enter name(s) of folder(s) to be opened
+*openSelectWin*listTB.quickHelp:		\
+   Select to display a folder browser
+*openSelectWin*filterPB.quickHelp:	\
+   Click to apply filter to folder names
+*openSelectWin*fileList.quickHelp:	\
+   Single-click to select, double click to accept a folder name.
+*openSelectWin*okPB.quickHelp:	\
+   Open the selected folders.
+*openSelectWin*clearPB.quickHelp:\
+   Clear all names from the Select Folders field.
+*openSelectWin*openOnlyTB.quickHelp:\
+   Put the folder icon in the Open Folders area, but don't read its contents yet.
+*openSelectWin*openActTB.quickHelp:\
+   Read the folder's contents, and place an icon in the Open Folders area.
+*openSelectWin*sash.quickHelp:\
+   Click here and drap up or down to resize.
+
+!---------------------------------------------------------------------------
+
+*savePartWin*selectTF.quickHelp:	\
+   Enter the name of the file to use for saving this item.
+*savePartWin*okPB.quickHelp:	\
+   Save the item to the specified file.
+
+!---------------------------------------------------------------------------
+
+*fileSelectWin*selectTF.quickHelp:	\
+   Enter the name(s) of file(s) to include or attach.
+*fileSelectWin*okPB.quickHelp:	\
+   Include or attach the selected file.
+*fileSelectWin*sash.quickHelp:\
+   Click here and drag up or down to resize.
+
+*includeTextWin*includeRadio.incTextAsIconTB.quickHelp:\
+   Select to have the file shown as an icon in the message
+*includeTextWin*includeRadio.incTextAsTextTB.quickHelp:\
+   Select to have the file text inserted in the message text
+*includeTextWin*selectTextSW.selectText.quickHelp:\
+   Enter the names of one or more text files to be included
+
+!---------------------------------------------------------------------------
+
+*saveFolderWin*selectTF.quickHelp:	\
+   Type the name of the destination folder here.
+*saveFolderWin*listTB.quickHelp:		\
+   Select to display a folder browser.
+*saveFolderWin*filterPB.quickHelp:	\
+   Click to apply filter to folder names.
+*saveFolderWin*fileList.quickHelp:	\
+   Single-click to select, double click to accept a folder name.
+*saveFolderWin*okPB.quickHelp:	\
+   Copy to save, Move to save and delete the message.
+*saveFolderWin*ok2PB.quickHelp:	\
+   Copy to save, Move to save and delete the message.
+*saveFolderWin*sash.quickHelp:\
+   Click here and drag up or down to resize.
+*saveFolderWin*opRadio.moveTB.quickHelp:\
+   Select this to delete the message after saving
+*saveFolderWin*opRadio.copyTB.quickHelp:\
+   Select this to keep a copy of the message in the current folder
+
+!---------------------------------------------------------------------------
+
+*saveFileWin*selectTF.quickHelp:	\
+   Type the name of the desired file here.
+*saveFileWin*saveHdrRadio.saveHdrAllTB.quickHelp:\
+   Select to save all message headers in addition to the body
+*saveFileWin*saveHdrRadio.saveHdrDispTB.quickHelp:\
+   Select to save the displayed message headers in addition to the body
+*saveFileWin*saveHdrRadio.saveHdrNoneTB.quickHelp:\
+   Select to save the message body only
+*saveFileWin*opRadio.moveTB.quickHelp:\
+   Select this to delete the message after saving
+*saveFileWin*opRadio.copyTB.quickHelp:\
+   Select this to keep a copy of the message in the current folder
+
+*msgFindWin*complexPB.quickHelp:	\
+   Search using boolean expressions.
+*msgFindWin*findPB.quickHelp:	\
+   Find the next occurrence of the string.
+*msgFindWin*findPrevPB.quickHelp:	\
+   Find the previous occurrence of the string.
+*msgFindWin*findAllPB.quickHelp:	\
+   Find and select ALL occurrences of the string.
+*msgFindWin*donePB.quickHelp:	\
+   Quit searching.
+*msgFindWin*patternForm.patternTF.quickHelp:\
+   Enter a regular expression
+*msgFindWin*searchRC.searchHeadTB.quickHelp:\
+   Select to search in message headers
+*msgFindWin*searchRC.searchBodyTB.quickHelp:\
+   Select to search in message bodies
+*msgFindWin*searchRC.searchCaseTB.quickHelp:\
+   Select to make the search case sensitive
+
+*boolExpWin*numPB.quickHelp:	\
+   Search by message number.
+*boolExpWin*numOM*quickHelp:	\
+   Select a compare operator.
+*boolExpWin*numTF.quickHelp:	\
+   Enter a message number to compare against.
+*boolExpWin*statPB.quickHelp:	\
+   Search by message status.
+*boolExpWin*statOM*quickHelp:	\
+   Choose a status to compare.
+*boolExpWin*fromPB.quickHelp:	\
+   Search by message sender.
+*boolExpWin*fromTF.quickHelp:	\
+   Enter to match in From: header.
+*boolExpWin*toPB.quickHelp:	\
+   Search by message recipient.
+*boolExpWin*toTF.quickHelp:	\
+   Enter to match in To: header.
+*boolExpWin*subjPB.quickHelp:	\
+   Search by message subject.
+*boolExpWin*subjTF.quickHelp:	\
+   Enter pattern to match in Subject: header.
+*boolExpWin*headPB.quickHelp:	\
+   Search all the message's headers.
+*boolExpWin*headTF*quickHelp:	\
+   Enter a pattern to match in the headers.
+*boolExpWin*bodyPB.quickHelp:	\
+   Search all the message's body text.
+*boolExpWin*bodyTF*quickHelp:	\
+   Enter a pattern to match in the message body.
+*boolExpWin*msgPB.quickHelp:	\
+   Search all the message's headers and body.
+*boolExpWin*msgTF*quickHelp:	\
+   Enter a pattern to match in the headers or body.
+*boolExpWin*datePB.quickHelp:	\
+   Search by message date.
+*boolExpWin*dateOM*quickHelp:	\
+   Select a compare operator.
+*boolExpWin*dateTF.quickHelp:	\
+   Enter a date to compare against.
+*boolExpWin*linePB.quickHelp:	\
+   Search by the number of lines in a message.
+*boolExpWin*lineOM*quickHelp:	\
+   Select a compare operator.
+*boolExpWin*lineTF.quickHelp:	\
+   Enter line count to compare against.
+*boolExpWin*bytePB.quickHelp:	\
+   Search by the number of bytes/chars in message.
+*boolExpWin*byteOM*quickHelp:	\
+   Select a compare operator.
+*boolExpWin*byteTF.quickHelp:	\
+   Enter byte count to compare against.
+*boolExpWin*lparPB.quickHelp:	\
+   Add a left parenthesis to the expression.
+*boolExpWin*rparPB.quickHelp:	\
+   Add a right parenthesis to the expression.
+*boolExpWin*andPB.quickHelp:	\
+   Add an AND operator to the expression.
+*boolExpWin*orPB.quickHelp:	\
+   Add an OR operator to the expression.
+*boolExpWin*notPB.quickHelp:	\
+   Add a NOT operator to the expression.
+*boolExpWin*ltPB.quickHelp:	\
+   Click for LESS THAN comparison.
+*boolExpWin*lePB.quickHelp:	\
+   Click for LESS THAN OR EQUAL comparison.
+*boolExpWin*expWin*quickHelp:	\
+   Edit your query.
+*boolExpWin*applyPB.quickHelp:	\
+   Find the next matching message.
+*boolExpWin*clearPB.quickHelp:	\
+   Clear out the expression.
+*boolExpWin*cancelPB.quickHelp:	\
+   Quit searching.
+
+!---------------------------------------------------------------------------
+
+*prefWin*inBoxTF.quickHelp:\
+   Enter the path of the InBox folder.
+*prefWin*checkTF.quickHelp:\
+   Enter the number of seconds between checks for new mail.
+*prefWin*alertTB.quickHelp:\
+   Have a beep sounded or an alert command executed when \
+new mail arrives.
+*prefWin*showNewTB.quickHelp:\
+   Cause the message list to be positioned at new messages as \
+they arrive.
+*prefWin*windowPosTB.quickHelp:\
+   Save the position and size of the Main, Reading, and Composition windows \
+upon exit.
+*prefWin*quickHelpTB.quickHelp:\
+   Cause "quick help" messages to be shown at the bottom of \
+windows.
+*prefWin*delSaveTB.quickHelp:\
+   Have saved messages automatically marked as deleted.
+*prefWin*hideDelTB.quickHelp:\
+   Have messages marked for deletion removed from the message list.
+*prefWin*newUnreadTB.quickHelp:\
+   Mark new messages as unread versus leave them marked new.
+*prefWin*recentTF.quickHelp:\
+   Number of folder names which should be keep in the Most Recently Used list.
+*prefWin*archiveTB.quickHelp:\
+   Automatically move read messages to another folder when the InBox is saved.
+*prefWin*archiveTF.quickHelp:\
+   Folder into which messages from the InBox should be moved.
+*prefWin*fieldRC.imapTF.quickHelp:\
+   Name of IMAP mail server
+*prefWin*fieldRC.imapTB.quickHelp:\
+   Click to enable using an IMAP mail server
+*prefWin*fieldRC.popTF.quickHelp:\
+   Name of POP mail server
+*prefWin*fieldRC.popTB.quickHelp:\
+   Click to enable using a POP mail server
+*prefWin*fieldRC.popCmdTF.quickHelp:\
+   Command for accessing a POP server, including path, flags, and options.
+*prefWin*folderTF.quickHelp:\
+   Enter the name of the directory in which your mail folders are kept.
+*prefWin*saveFolderTB.quickHelp:\
+   Click here to use the same default "Save" folder always.
+*prefWin*saveFolderTF.quickHelp:\
+   Enter the name of a file into which the "Save" command should place messages.
+*prefWin*savePatternTB.quickHelp:\
+   Click here to cause the default "Save" folder to vary based on the message.
+*prefWin*savePatternTF.quickHelp:\
+   Enter the directory containing possible default "Save" folders.
+*prefWin*savePatternForm*quickHelp:\
+   Select to base the default "Save" folder on user name, address, or pattern.
+*prefWin*autoTF.quickHelp:\
+   Specify the prefix added to file names by the automounter, if any.
+*prefWin*printTF.quickHelp:\
+   Enter the command to be used for printing plain text messages.
+*prefWin*webTF.quickHelp:\
+   Enter the name of the command to use for following World Wide Web links.
+*prefWin*bellScale*quickHelp:\
+   Slide left to reduce volume, right to increase.
+
+!---------------------------------------------------------------------------
+
+*replyPrefWin*removeMeTB.quickHelp:\
+   Have your user id removed from the recipient list in replies.
+*replyPrefWin*numberTB.quickHelp:\
+   Number a sequence of replies indicating how many replies have been exchanged.
+*replyPrefWin*stripTB.quickHelp:\
+   Strip non-essential information from e-mail addresses to save space.
+*replyPrefWin*indentTF.quickHelp:\
+   Enter the prefix to be used before each line of an included message in a \
+reply.
+*replyPrefWin*attribText*quickHelp:\
+   Enter the string to be placed at the top of the included message in a reply.
+*replyPrefWin*begForwardText*quickHelp:\
+   Enter the string to be placed at the top of a forwarded message.
+*replyPrefWin*endForwardText*quickHelp:\
+   Enter the string to be placed at the bottom of a forwarded message.
+*replyPrefWin*forwardAllTB.quickHelp:\
+   Include all headers from original message in a forwarded message.
+*replyPrefWin*forwardDispTB.quickHelp:\
+   Include only headers show in the Reading window in a forwarded message.
+*replyPrefWin*forwardNoneTB.quickHelp:\
+   Don't include any headers from original message in a forwarded message.
+
+!---------------------------------------------------------------------------
+
+*sigPrefWin*enableSigTB.quickHelp:\
+   Change the default behavior, which you can override for a single message.
+*sigPrefWin*sigPrefixTB.quickHelp:\
+   This line is added by some other mail tools. It's not in the MIME standard.
+*sigPrefWin*typeFrame*quickHelp:\
+   Determine which signature file to use in various circumstances.
+*sigPrefWin*extPsigPB.quickHelp:\
+   Edit your signature file.
+*sigPrefWin*fieldRC*quickHelp:\
+   Enter the name of the file containing your signature.
+
+!---------------------------------------------------------------------------
+
+*confirmWin*exitTB.quickHelp:\
+   Do you really want to quit (or exit) from Ishmail ?
+*confirmWin*saveOnExitTB.quickHelp:\
+   Do you want to save changes to folders before exit ?
+*confirmWin*folderTypeTB.quickHelp:\
+   Which type (Unix, mh, or MMDF) of folder do you wish to create?
+*confirmWin*folderDelTB.quickHelp:\
+   Do you really want to delete a mail folder?
+*confirmWin*sendNoSubjectTB.quickHelp:\
+   Do you really want to send a message with no subject header?
+*confirmWin*sendNoBodyTB.quickHelp:\
+   Do you really want to send an empty (null) message?
+*confirmWin*clearSendTB.quickHelp:\
+   Do you really want to lose everything you've typed in the window?
+*confirmWin*closeSendTB.quickHelp:\
+   Do you really want to abandon this new message?
+*confirmWin*sendPlainTB.quickHelp:\
+   Do you really want to lose MIME data when this message is sent?
+*confirmWin*eightBitPlainTB.quickHelp:\
+   Do you really want to send a message without encoding?
+*confirmWin*deleteGraphicTB.quickHelp:\
+   Do you really want to delete data, with no chance for undelete?
+
+!---------------------------------------------------------------------------
+
+*headerWin*dListBox*itemList.quickHelp:\
+   Select one or more displayed headers to be ignored or removed.
+*headerWin*dListBox*itemText.quickHelp:\
+   Enter the name of a header to be displayed.
+*headerWin*dListBox*addButton.quickHelp:\
+   Add the new header to the displayed list.
+*headerWin*dListBox*remButton.quickHelp:\
+   Remove the selected headers from the displayed list.
+*headerWin*dListBox*clrButton.quickHelp:\
+   Remove all headers from the displayed list.
+*headerWin*iListBox*itemList.quickHelp:\
+   Select one or more ignored headers to be displayed or removed.
+*headerWin*iListBox*itemText.quickHelp:\
+   Enter the name of a header to be ignored.
+*headerWin*iListBox*addButton.quickHelp:\
+   Add the new header to the ignored list.
+*headerWin*iListBox*remButton.quickHelp:\
+   Remove the selected headers from the ignored list.
+*headerWin*iListBox*clrButton.quickHelp:\
+   Remove all headers from the ignored list.
+*headerWin*dtoiAB.quickHelp:\
+   Move selected headers from the display list to the \
+ignore list.
+*headerWin*itodAB.quickHelp:\
+   Move selected headers from the ignore list to the \
+display list.
+*headerWin*choiceDisplayTB.quickHelp:\
+   Select this if the list of displayed headers takes priority over the \
+list of ignored headers.
+*headerWin*choiceIgnoreTB.quickHelp:\
+   Select this if the list of ignored headers takes priority over the \
+list of displayed headers.
+
+!---------------------------------------------------------------------------
+
+*aliasWin*viewDA*quickHelp:\
+   List of aliases.  Click to select, shift-click to extend select, \
+double-click to edit.
+*aliasWin*addPB.quickHelp:\
+   Add a new alias to the list.
+*aliasWin*insertPB.quickHelp:\
+   Insert a new alias into the list above the selected entry.
+*aliasWin*modifyPB.quickHelp:\
+   Edit the selected alias.
+*aliasWin*removePB.quickHelp:\
+   Remove selected aliases from the list.
+*aliasWin*sortTB.quickHelp:\
+   Sort the aliases alphabetically.
+
+*aliasWinEntryWin*keyTF.quickHelp:\
+   Enter a brief name for this alias.
+*aliasWinEntryWin*valueText*quickHelp:\
+   Enter a full e-mail address or a comma-separated list of aliases.
+
+!---------------------------------------------------------------------------
+
+*alertWin*viewDA*quickHelp:\
+   List of message patterns and alert commands.  Click to select.\
+ Double click to edit.
+*alertWin*addPB.quickHelp:\
+   Add a new pattern/command pair to the list.
+*alertWin*removePB.quickHelp:\
+   Remove selected pattern/command pairs from the list.
+*alertWin*modifyPB.quickHelp:\
+   Edit the selected pattern/command pair.
+*alertWin*insertPB.quickHelp:\
+   Insert a new pattern/command pair ahead of the selected pair.
+*alertWin*alertTB.quickHelp:\
+   Enable (or disable) checking of all patterns.
+
+*alertWinEntryWin*keyTF.quickHelp:\
+   Enter pattern to find in message headers.
+*alertWinEntryWin*valueText*quickHelp:\
+   Enter command to run when pattern matches.
+
+!---------------------------------------------------------------------------
+
+*iconWin*viewDA*quickHelp:\
+   List of message patterns and icons.  Click to select.\
+ Double click to edit.
+*iconWin*addPB.quickHelp:\
+   Add a new pattern/icon pair to the list.
+*iconWin*removePB.quickHelp:\
+   Remove selected pattern/icon pairs from the list.
+*iconWin*modifyPB.quickHelp:\
+   Edit the selected pattern/icon pair.
+*iconWin*insertPB.quickHelp:\
+   Insert a new pattern/icon pair ahead of the selected pair.
+
+*iconWinEntryWin*keyTF.quickHelp:\
+   Enter pattern to find in msg headers.
+*iconWinEntryWin*valueText*quickHelp:\
+   Enter name of an icon file to show.
+
+!---------------------------------------------------------------------------
+
+*saveRuleWin*viewDA*quickHelp:\
+   List of message patterns and folder names.  Click to select.\
+ Double Click to edit.
+*saveRuleWin*addPB.quickHelp:\
+   Add a new pattern/folder name pair to the list.
+*saveRuleWin*removePB.quickHelp:\
+   Remove selected pattern/folder name pairs from the list.
+*saveRuleWin*modifyPB.quickHelp:\
+   Edit the selected pattern/folder name pair.
+*saveRuleWin*insertPB.quickHelp:\
+   Insert a new pattern/folder name pair ahead of the selected pair.
+
+*saveRuleWinEntryWin*keyTF.quickHelp:\
+   Enter pattern to find in msg headers.
+*saveRuleWinEntryWin*valueText*quickHelp:\
+   Enter name of a mail folder to use.
+
+!---------------------------------------------------------------------------
+
+*autoFileWin*viewDA*quickHelp:\
+   List of message patterns and folder names.  Click to select.\
+ Double Click to edit.
+*autoFileWin*addPB.quickHelp:\
+   Add a new pattern/folder name pair to the list.
+*autoFileWin*removePB.quickHelp:\
+   Remove selected pattern/folder name pairs from the list.
+*autoFileWin*modifyPB.quickHelp:\
+   Edit the selected pattern/folder name pair.
+*autoFileWin*insertPB.quickHelp:\
+   Insert a new pattern/folder name pair ahead of the selected pair.
+*autoFileWin*autoFileTB.quickHelp:\
+   Enable (or disable) automatic filing of incoming mail.
+
+*autoFileWinEntryWin*keyTF.quickHelp:\
+   Enter pattern to find in msg headers.
+*autoFileWinEntryWin*valueText*quickHelp:\
+   Enter name of a mail folder to use.
+
+!---------------------------------------------------------------------------
+
+*mainShell*buttonWin*addAB.quickHelp:	\
+   Add the selected button(s) to the Main Window.
+*sendWin*buttonWin*addAB.quickHelp:	\
+   Add the selected button(s) to the Composition Window.
+*readWin*buttonWin*addAB.quickHelp:	\
+   Add the selected button(s) to the Reading Window.
+*mainShell*buttonWin*remAB.quickHelp:	\
+   Remove the selected button(s) from the Main Window.
+*sendWin*buttonWin*remAB.quickHelp:	\
+   Remove the selected button(s) from the Composition Window.
+*readWin*buttonWin*remAB.quickHelp:	\
+   Remove the selected button(s) from the Reading Window.
+*buttonWin*northTB.quickHelp: \
+   Place buttons across the top of the window.
+*buttonWin*westTB.quickHelp: \
+   Place buttons across the left size of the window.
+*buttonWin*eastTB.quickHelp: \
+   Place buttons across the right side of the window.
+*buttonWin*southTB.quickHelp: \
+   Place buttons across the bottom of the window.
+*buttonWin*placeTitle.quickHelp: \
+   Make all buttons the same size, or allow different sizes.
+*buttonWin*sameSizeTB.quickHelp: \
+   Make all buttons the same size, or allow different sizes.
+*buttonWin*panedWin.sash.quickHelp: \
+   Click here and drag up or down to resize the area above.
+*mainShell*buttonWin*availList.quickHelp: \
+   This is a list of buttons available for the Main Window.
+*sendWin*buttonWin*availList.quickHelp: \
+   This is a list of buttons available for the Composition Window.
+*readWin*buttonWin*availList.quickHelp:\
+   This is a list of buttons to be shown in the Reading Window.
+*mainShell*buttonWin*userList.quickHelp:\
+   This is a list of buttons to be shown in the Main Window.
+*sendWin*buttonWin*userList.quickHelp:\
+   This is a list of buttons to be shown in the Composition Window.
+*readWin*buttonWin*userList.quickHelp:\
+   This is a list of buttons available for the Reading Window.
+
+*buttonEditWin*labelTF.quickHelp:	\
+   Button name, which can't be changed.
+*buttonEditWin*abbrevTF.quickHelp:	\
+   Enter a *SHORT* label for the button.
+*buttonEditWin*orderTF.quickHelp:	\
+   Enter the button position from left (or top).
+
+!---------------------------------------------------------------------------
+
+*pickAliasWin*viewFrame.viewDA.quickHelp:\
+   Click to select one or more aliases, press OK to use them.
+*pickAliasWin*expandTB.quickHelp:\
+   Click On to copy values from the Address column, else copy from the Alias column.
+*pickAliasWin*findTF.quickHelp:\
+   Enter a string to look for in either column (case doesn't matter).
+*pickAliasWin*findAllPB.quickHelp:\
+   Select all entries which match the search pattern.
+*pickAliasWin*findPrevPB.quickHelp:\
+   Search up the list for the next match.
+*pickAliasWin*findNextPB.quickHelp:\
+   Search down the list for the next match.
+*pickAliasWin*okPB.quickHelp:\
+   Copy selections to the header field, close this window.
+*pickAliasWin*applyPB.quickHelp:\
+   Copy selections to the header field, leave this window open.
+*pickAliasWin*donePB.quickHelp:\
+   Close this window, don't copy any more selections.
+
+!---------------------------------------------------------------------------
+
+*sortWin*threadTB.quickHelp:	\
+   Select this to sort by message subject thread, or topic.
+*sortWin*threadOldTB.quickHelp:	\
+   Oldest message in thread is the sort key.
+*sortWin*threadNewTB.quickHelp:	\
+   Newest message in thread is the sort key.
+*sortWin*threadFrame*ascendTB.quickHelp:	\
+   Select this to display threads oldest to newest.
+*sortWin*threadFrame*descendTB.quickHelp:	\
+   Select this to display threads newest to oldest.
+*sortWin*numberTB.quickHelp:	\
+   Select this to sort by message number.
+*sortWin*numberFrame*ascendTB.quickHelp:	\
+   Select this to display lower numbers first.
+*sortWin*numberFrame*descendTB.quickHelp:	\
+   Select this to display higher numbers first.
+*sortWin*statusTB.quickHelp:	\
+   Select this to sort by message status.
+*sortWin*statusFrame*ascendTB.quickHelp:	\
+   Select this to sort by message status.
+*sortWin*statusFrame*descendTB.quickHelp:	\
+   Select this to sort by message status.
+*sortWin*senderTB.quickHelp:	\
+   Select this to sort by message sender.
+*sortWin*senderFrame*ascendTB.quickHelp:	\
+   Select this to sort alphabetically.
+*sortWin*senderFrame*descendTB.quickHelp:	\
+   Select this to sort reverse alphabetically.
+*sortWin*subjectTB.quickHelp:	\
+   Select this to sort by message subject.
+*sortWin*subjectFrame*ascendTB.quickHelp:	\
+   Select this to sort alphabetically.
+*sortWin*subjectFrame*descendTB.quickHelp:	\
+   Select this to sort reverse alphabetically.
+*sortWin*toTB.quickHelp:	\
+   Select this to sort by the message recipient.
+*sortWin*toFrame*ascendTB.quickHelp:	\
+   Select this to sort alphabetically.
+*sortWin*dateFrame*descendTB.quickHelp:	\
+   Select this to sort reverse alphabetically.
+*sortWin*dateTB.quickHelp:	\
+   Select this to sort by the date the messages arrived.
+*sortWin*dateFrame*ascendTB.quickHelp:	\
+   Select this to display your newest messages first.
+*sortWin*dateFrame*descendTB.quickHelp:	\
+   Select this to display your oldest messages first.
+*sortWin*linesTB.quickHelp:	\
+   Select this to sort by the number of lines in each message.
+*sortWin*linesFrame*ascendTB.quickHelp:	\
+   Select this to display the shortest messages first.
+*sortWin*linesFrame*descendTB.quickHelp:	\
+   Select this to display the longest messages first.
+*sortWin*bytesTB.quickHelp:	\
+   Select this to sort by the number of characters in each message.
+*sortWin*bytesFrame*ascendTB.quickHelp:	\
+   Select this to display the shortest messages first.
+*sortWin*bytesFrame*descendTB.quickHelp:	\
+   Select this to display the longest messages first.
+*sortWin*orderTitle*quickHelp:	\
+   This column shows the ordering of multiple sort keys. \
+Key 1 is the primary sort key.
+*sortWin*keyTitle.quickHelp:	\
+   This column shows the ordering of multiple sort keys. \
+Key 1 is the primary sort key.
+*sortWin*folderCurTB.quickHelp:	\
+   Keys apply only the the current folder in the Main window.
+*sortWin*folderSelTB.quickHelp:	\
+   Keys apply to all folders selected in the Open Folders area.
+*sortWin*folderAllTB.quickHelp:	\
+   Keys apply to all folders, overriding other sort definitions.
+*sortWin*folderDefTB.quickHelp:	\
+   Keys apply to any folder which doesn't have keys \
+explicitly defined.
+
+!---------------------------------------------------------------------------
+
+*readWin.mainWindow*fileCB.quickHelp:\
+   Commands in this menu apply to this message.
+*readWin.mainWindow*replyCB.quickHelp:\
+   Commands in this menu allow you to reply to or forward the message.
+*readWin.mainWindow*optCB.quickHelp:\
+   Commands in this menu allow customization of this window.
+*readWin.mainWindow*fileNextPB.quickHelp:\
+   Read the next message in the message list.
+*readWin.mainWindow*filePrevPB.quickHelp:\
+   Read the previous message in the message list.
+*readWin.mainWindow*fileNextUnreadPB.quickHelp:\
+   Read the next unread message.
+*readWin.mainWindow*fileNextSenderPB.quickHelp:\
+   Read the next message from the same sender.
+*readWin.mainWindow*fileNextSubjectPB.quickHelp:\
+   Read the next message with the same subject.
+*readWin.mainWindow*filePrevUnreadPB.quickHelp:\
+   Read the previous unread message.
+*readWin.mainWindow*filePrevSenderPB.quickHelp:\
+   Read the previous message from the same sender.
+*readWin.mainWindow*filePreSubjectPB.quickHelp:\
+   Read the previous message with the same subject.
+*readWin.mainWindow*fileSavePB.quickHelp:\
+   Save this message to your default folder. Use Message menu for other options.
+*readWin.mainWindow*fileSaveToPB.quickHelp:\
+   Save this message to a mail folder. Use Message menu for other options.
+*readWin.mainWindow*fileSaveToFilePB.quickHelp:\
+   Save this message to a file. Use Message menu for other options.
+*readWin.mainWindow*filePrintPB.quickHelp:\
+   Print this message.
+*readWin.mainWindow*filePipePB.quickHelp:\
+   Pass this message to an external command.
+*readWin.mainWindow*fileDeletePB.quickHelp:\
+   Mark this message for deletion and display the next one.
+*readWin.mainWindow*fileDelClosePB.quickHelp:\
+   Mark this message for deletion and close this window.
+*readWin.mainWindow*fileUndeletePB.quickHelp:\
+   Restore this deleted message.
+*readWin.mainWindow*fileClosePB.quickHelp:\
+   Close this window.
+*readWin.mainWindow*replyPB.quickHelp:\
+   Reply to the sender of this message.
+*readWin.mainWindow*replyIncPB.quickHelp:\
+   Reply to the sender of this message with the message body \
+included.
+*readWin.mainWindow*replyAllPB.quickHelp:\
+   Reply to the sender and all recipients of this message.
+*readWin.mainWindow*replyAllIncPB.quickHelp:\
+   Reply to the sender and all recipients of this message \
+with the message body included.
+*readWin.mainWindow*forwardPB.quickHelp:\
+   Send this message to someone else.
+*readWin.mainWindow*forward822PB.quickHelp:\
+   Forward the selected message as a message inside of a MIME message.
+*readWin.mainWindow*resendPB.quickHelp:\
+   Redirect this message to someone else.
+*readWin.mainWindow*optPrefPB.quickHelp:\
+   Review or change Reading Window preferences.
+*readWin.mainWindow*optButtPB.quickHelp:\
+   Add buttons to the Reading Window.
+*readWin.mainWindow*optHeadPB.quickHelp:\
+   Display all message headers.
+*readWin.mainWindow*optRawPB.quickHelp:\
+   Display the unprocessed text of this MIME message.
+*readWin.mainWindow*optMailcapPB.quickHelp:\
+   Pick up changes to your mailcap file.
+*readWin.mainWindow*pushPinTB.quickHelp:\
+   Select this to pin this window. The next message you read will be \
+shown in a new window.
+*readWin*msgHeadText*quickHelp:\
+   These are the message headers.
+*readWin*msgBodyText*quickHelp:\
+   This is the message body.
+*readWin*msgPanes*sash.quickHelp:\
+   Click here and drag up or down to resize the Header and Body areas.
+*readWin*viewFlatTB.quickHelp:\
+   Expand and show all MIME parts in the message body.
+*readWin*viewOutlineTB.quickHelp:\
+   Show titles of MIME body parts in outline form. No effect on plain messages.
+*readWin*viewSourceTB.quickHelp:\
+   Show the raw text of a MIME message, without interpreting MIME structure.
+*readWin*optWrapTB.quickHelp:\
+   Wrap lines to fit the window, or show a horizontal scroll bar for long lines.
+*readWin*localTextWin*okPB.quickHelp:\
+   Close this window and return to the Reading window.
+
+!---------------------------------------------------------------------------
+
+*readPrefWin*colTF.quickHelp:\
+   Specify how wide the Reading window should be.
+*readPrefWin*headRowTF.quickHelp:\
+   Specify how many rows of message headers to show.
+*readPrefWin*bodyRowTF.quickHelp:\
+   Specify how many rows of the message body to show.
+*readPrefWin*wrapTB.quickHelp:\
+   Wrap long lines at the right margin, or show a horizontal scroll bar.
+*readPrefWin*viewFlatTB.quickHelp:\
+   Set default: Expand and show all MIME parts in the message body.
+*readPrefWin*viewOutlineTB.quickHelp:\
+   Set default: Show titles of MIME body parts in outline form.
+*readPrefWin*viewSourceTB.quickHelp:\
+   Show the raw text of a MIME message, without interpreting MIME structure.
+*readPrefWin*decryptTF.quickHelp:\
+   Command to use for decrypting encrypted messages.
+*readPrefWin*authTF.quickHelp:\
+   Command to use for authenticating digitally signed messages.
+*readPrefWin*webTF.quickHelp:\
+   Command to use for browsing World Wide Web URLs.
+
+!---------------------------------------------------------------------------
+
+*readWin*msgBodyText*richSearchWin*stringTF.quickHelp:\
+   What do you want to find?
+*readWin*msgBodyText*richSearchWin*donePB.quickHelp:\
+   Click here when finished searching.
+*readWin*msgBodyText*richSearchWin*findPB.quickHelp:\
+   Click here to start searching.
+*readWin*msgBodyText*richSearchWin*helpPB.quickHelp:\
+   Click here for more information.
+*readWin*msgBodyText*richSearchWin*wildTB.quickHelp:\
+   Evaluate string as an expression.
+*readWin*msgBodyText*richSearchWin*caseTB.quickHelp:\
+   Honor (or ignore) upper/lower case.
+*readWin*msgBodyText*richSearchWin*backTB.quickHelp:\
+   Set search direction (fwd/back).
+
+!---------------------------------------------------------------------------
+
+*sendWin*fileCB.quickHelp:\
+   Commands in this menu apply to the message being composed.
+*sendWin*editCB.quickHelp:\
+   Commands in this menu change the formatting of selected text.
+*sendWin*optCB.quickHelp:\
+   Commands in this menu allow customization of this window.
+*sendWin*fileEditPB.quickHelp:\
+   Edit the text using an external editor.
+*sendWin*fileSpellPB.quickHelp:\
+   Send the message body to an external spelling checker command.
+*sendWin*fileIncTextPB.quickHelp:\
+   Include a text file in your message.
+*sendWin*fileIncFilePB.quickHelp:\
+   Include or attach a file to your message.
+*sendWin*fileAddCB.quickHelp:\
+   Add a MIME container to your message.
+*sendWin*fileAddMixPB.quickHelp:\
+   Add a multi-part/mixed container to the message.
+*sendWin*fileAddDigPB.quickHelp:\
+   Add a multi-part/digest container to the message.
+*sendWin*fileAddAltPB.quickHelp:\
+   Add a multi-part/alternative container to the message.
+*sendWin*fileAddParPB.quickHelp:\
+   Add a multi-part/parallel container to the message.
+*sendWin*fileCheckPB.quickHelp:\
+   Ask the mail transport system to validate address(es) now (may be SLOW).
+*sendWin*fileSavePB.quickHelp:\
+   Create a template using this message. Or, save this message for later use.
+*sendWin*fileLoadPB.quickHelp:\
+   Load a message template into the Composition window.
+*sendWin*fileSendKeepPB.quickHelp:\
+   Send the message, don't clear the text from this window.
+*sendWin*fileSendPB.quickHelp:\
+   Send the message and clear the text.
+*sendWin*fileSendClosePB.quickHelp:\
+   Send the message, then close this window.
+*sendWin*fileClearPB.quickHelp:\
+   Clear this message text and headers.
+*sendWin*fileClosePB.quickHelp:\
+   Close the Composition Window.
+
+*sendWin*editUndeletePB.quickHelp:\
+   Restore the most recently deleted text.
+*sendWin*editPlainPB.quickHelp:\
+   Remove formatting attributes from the selected text.
+*sendWin*editBoldPB.quickHelp:\
+   Display the selected text in a bold font.
+*sendWin*editItalicPB.quickHelp:\
+   Display the selected text in an italic font.
+*sendWin*editFixedPB.quickHelp:\
+   Display the selected text in a fixed proportion font.
+*sendWin*editUnderPB.quickHelp:\
+   Underline the selected text.
+*sendWin*editColorCB.quickHelp:\
+   Display the selected text in a specific color. 
+*sendWin*colorRedPB.quickHelp:\
+   Display the selected text in red.
+*sendWin*colorGreenPB.quickHelp:\
+   Display the selected text in green.
+*sendWin*colorBluePB.quickHelp:\
+   Display the selected text in blue.
+*sendWin*colorYellowPB.quickHelp:\
+   Display the selected text in yellow.
+*sendWin*colorMagentaPB.quickHelp:\
+   Display the selected text in magenta.
+*sendWin*colorCyanPB.quickHelp:\
+   Display the selected text in cyan.
+*sendWin*colorBlackPB.quickHelp:\
+   Display the selected text in black.
+*sendWin*colorWhitePB.quickHelp:\
+   Display the selected text in white.
+*sendWin*colorNonePB.quickHelp:\
+   Remove color attributes from the selected text.
+*sendWin*editBiggerPB.quickHelp:\
+   Display the selected text with a larger point size.
+*sendWin*editSmallerPB.quickHelp:\
+   Display the selected text with a smaller point size.
+*sendWin*editFlushLeftPB.quickHelp:\
+   Align the selected text along the left margin.
+*sendWin*editFlushRightPB.quickHelp:\
+   Align the selected text along the right margin.
+*sendWin*editFlushBothPB.quickHelp:\
+   Mark the selected text for both left and right justification.
+*sendWin*editCenterPB.quickHelp:\
+   Center the selected text.
+*sendWin*editNoFillPB.quickHelp:\
+   Show the selected text as is, with no wrapping or justification applied.
+*sendWin*editExcerptMorePB.quickHelp:\
+   Show the selected text as an excerpt. Excerpts can be nested.
+*sendWin*editExcerptLessPB.quickHelp:\
+   Reduce the nesting of an excerpt. Turn off excerpting if at top level.
+*sendWin*editLeftMarginInPB.quickHelp:\
+   Indent the selected text from the left margin.
+*sendWin*editLeftMarginOutPB.quickHelp:\
+   Reverse the effect of the last indent from the left margin.
+*sendWin*editRightMarginInPB.quickHelp:\
+   Indent the selected text from the right margin.
+*sendWin*editRightMarginOutPB.quickHelp:\
+   Reverse the effect of the last indent from the right margin.
+*sendWin*optPrefPB.quickHelp:\
+   View and/or modify the Composition Window options and settings.
+*sendWin*optButtPB.quickHelp:\
+   Add function buttons to the Composition Window.
+*sendWin*optReplyPB.quickHelp:\
+   Customize how you reply to or forward messages.
+*sendWin*optSigPB.quickHelp:\
+   Customize your personal signature.
+*sendWin*optMailPB.quickHelp:\
+   Customize message formatting and various MIME parameters.
+*sendWin.mainWindow*sash.quickHelp:\
+   Click here and drag up or down to resize the Headers area.
+*sendWin*toText*quickHelp:\
+   Enter the mail addresses of the recipients of this message. \
+Ctrl-A to expand aliases.
+*sendWin*toAliasPB.quickHelp:\
+   Pick from a list of mail aliases.
+*sendWin*subjectText*quickHelp:\
+   Enter a subject line for this message.
+*sendWin*ccText*quickHelp:\
+   Enter any additional recipients of this message.
+*sendWin*ccAliasPB.quickHelp:\
+   Pick from a list of mail aliases.
+*sendWin*bccText*quickHelp:\
+   Enter any additional recipients of this message who are to remain anonymous.
+*sendWin*bccAliasPB.quickHelp:\
+   Pick from a list of mail aliases.
+*sendWin*fccText*quickHelp:\
+   Enter folder name(s) into which this message should be copied when sent.
+*sendWin*otherText*quickHelp:\
+   Enter any additional headers to be added to this message.
+*sendWin*bodyText*quickHelp:\
+   Enter the text of this message.
+*sendWin*optPlainTB.quickHelp:\
+   Force the message to be plain text with no MIME components.
+*sendWin*optMimeTB.quickHelp:\
+   Send this message as a MIME message.
+*sendWin*optAddSigTB.quickHelp:\
+   Append your signature file to the end of the message when it is sent.
+*sendWin*optDigSignTB.quickHelp:\
+   Generate a digital signature for this message.
+*sendWin*optEncryptTB.quickHelp:\
+   Encrypt the contents of this message.
+*sendWin*optWrapTB.quickHelp:\
+   Automatically wrap lines when you type past the right margin.
+*sendWin*optCheckAddrTB.quickHelp:\
+   Validate mail addresses before sending the message (may be SLOW).
+
+!---------------------------------------------------------------------------
+
+*includeFileWin*selectTF.quickHelp:	\
+   Type files name(s), <Ctrl-Return> to include or attach to your message.
+*includeFileWin*okPB.quickHelp:	\
+   Include or attach the selected file(s).
+*includeFileWin*clearPB.quickHelp:\
+   Clear all names from the Selected File(s) field.
+*includeFileWin*sash.quickHelp:\
+   Click here and drap up or down to resize.
+
+!---------------------------------------------------------------------------
+
+*includeTextWin*selectTF.quickHelp:	\
+   Type files name(s), <Ctrl-Return> to include in your message.
+*includeTextWin*okPB.quickHelp:	\
+   Include the selected file(s).
+*includeTextWin*clearPB.quickHelp:\
+   Clear all names from the Selected File(s) field.
+*includeTextWin*sash.quickHelp:\
+   Click here and drap up or down to resize.
+
+!---------------------------------------------------------------------------
+
+*fileDataWin*nameTF.quickHelp:\
+   Enter the name of the file to be included or attached.
+*fileDataWin*descTF.quickHelp:\
+   Enter a brief description of the file (optional).
+*fileDataWin*typeOM*quickHelp:\
+   Click to select the type of data contained in the file.
+*fileDataWin*includeAsTextTB.quickHelp:\
+   Expand the file in-line at the point where the cursor is located.
+*fileDataWin*includeAsFileTB.quickHelp:\
+   Include the file in the message, represented by an icon.
+*fileDataWin*attachLocalTB.quickHelp:\
+   Put a pointer to the file into the message (only works on local network).
+*fileDataWin*attachAnonTB.quickHelp:\
+   Put a pointer into the message, use anonymous FTP to retrieve.
+*fileDataWin*attachFtpTB.quickHelp:\
+   Put a pointer into the message, use FTP to retrieve.
+*fileDataWin*attachTftpTB.quickHelp:\
+   Put a pointer into the message, use TFTP to retrieve.
+*fileDataWin*attachMailTB.quickHelp:\
+   Put a pointer into the message, use a mail server to retrieve.
+*fileDataWin*encodeNoneTB.quickHelp:\
+   The file is not encoded in any way.
+*fileDataWin*encodeQpTB.quickHelp:\
+   Encode the file using the Quoted-Printable algorithm.
+*fileDataWin*encode64TB.quickHelp:\
+   Encode the file using the Base64 algorithm.
+*fileDataWin*encode8bitTB.quickHelp:\
+   Mark the file as containing 8-bit characters.
+*fileDataWin*encodeUuTB.quickHelp:\
+   Encode the file using the uuencode program.
+*fileDataWin*preEncodeTB.quickHelp:\
+   The file will be automatically encoded unless you select this.
+*fileDataWin*charTF.quickHelp:\
+   ASCII character set of the included data.
+*fileDataWin*charCB.quickHelp:\
+   List of possible character set names.
+*fileDataWin*outNameTF.quickHelp:\
+   Enter the name of the file as it should appear to the recipient. (optional)
+*fileDataWin*octTypeTF.quickHelp:\
+   Enter a modifier for application/octet-stream data (optional).
+*fileDataWin*octPadTF.quickHelp:\
+   Number of pad bits (required if your system byte size is other than 8).
+*fileDataWin*otherText.quickHelp:\
+   MIME parameters not otherwise specified can be entered here (optional).
+*fileDataWin*hostTF.quickHelp:\
+   Enter the name of the host on which the file resides.
+*fileDataWin*dirTF.quickHelp:\
+   Enter the name of the directory in which the file resides.
+*fileDataWin*ftpModeAsciiTB.quickHelp:\
+   The file will be transferred as ASCII data (conversion may be applied).
+*fileDataWin*ftpModeImageTB.quickHelp:\
+   The file will be transferred as binary data (no conversion).
+*fileDataWin*ftpModeEbcdicTB.quickHelp:\
+   Use this only if your system stores text data in EBCDIC rather than ASCII.
+*fileDataWin*tftpModeNetAsciiTB.quickHelp:\
+   The file will be transferred as ASCII data (conversion may be applied).
+*fileDataWin*tftpModeOctet.quickHelp:\
+   The file will be transferred as binary data (no conversion).
+*fileDataWin*tftpModeMailTB.quickHelp:\
+   The output file name should be an e-mail address.
+*fileDataWin*serverTF.quickHelp:\
+   Enter the e-mail address of the mail server.
+*fileDataWin*subjectTF.quickHelp:\
+   Enter the subject line to be sent to the mail server.
+*fileDataWin*bodyText.quickHelp:\
+   Enter the message (command) to be sent to the mail server.
+*fileDataWin*expTF.quickHelp:\
+   Enter a date after which the file will no longer be valid. (optional)
+*fileDataWin*sizeTF.quickHelp:\
+   Enter the size of the file (optional)
+*fileDataWin*permRoTB.quickHelp:\
+   Select this if the file should only be retrieved once by the recipient.
+*fileDataWin*permRwTB.quickHelp:	\
+   Select this if the file can be retrieved multiple times by the recipient.
+
+!---------------------------------------------------------------------------
+
+*saveCompositionWin*selectTextForm.selectTF.quickHelp:\
+   Enter the name of a file to which the composition is to be saved
+
+*loadCompositionWin*selectTextForm.selectTF.quickHelp:\
+   Enter the name of a file to be loaded
+
+!---------------------------------------------------------------------------
+
+*sendPrefWin*bodyRowTF.quickHelp:\
+   Specify how may rows to show of the message you are composing.
+*sendPrefWin*bodyColTF.quickHelp:\
+   Specify the width of the Composition window.
+*sendPrefWin*headRowTF.quickHelp:\
+   Specify how many rows to show in each of the header fields.
+*sendPrefWin*wrapTB.quickHelp:\
+   Insert "soft" newlines when typing past right margin.
+*sendPrefWin*showCcTB.quickHelp:\
+   Display, or hide, the Cc: field.
+*sendPrefWin*showBccTB.quickHelp:\
+   Display, or hide, the Bcc: field.
+*sendPrefWin*showFccTB.quickHelp:\
+   Display, or hide, the Fcc: field.
+*sendPrefWin*showOtherTB.quickHelp:\
+   Display, or hide, the field in which you can specify extra headers.
+*sendPrefWin*emacsTB.quickHelp:\
+   Set key bindings to work like the EMACS editor, else use Motif bindings.
+*sendPrefWin*deleteTB.quickHelp:\
+   Make the Delete key delete to the left, or delete from the right.
+*sendPrefWin*spaceTB.quickHelp:\
+   Insert commas automatically between addresses, or leave addresses as typed.
+*sendPrefWin*showSettingsTB.quickHelp:\
+   Show, or hide, the Selection buttons at the bottom of the Composition window.
+*sendPrefWin*maxFields1TB.quickHelp:\
+   Put all header fields on a single row at the top of the window.
+*sendPrefWin*maxFields2TB.quickHelp:\
+   Split header fields between two rows at the top of the window.
+*sendPrefWin*maxFields3TB.quickHelp:\
+   Split header fields among three rows at the top of the window.
+*sendPrefWin*maxFields4TB.quickHelp:\
+   Split header fields among four rows at the top of the window.
+*sendPrefWin*maxFields5TB.quickHelp:\
+   Split header fields among five rows at the top of the window.
+*sendPrefWin*editorTF.quickHelp:\
+   Specify an alternate editor to use for composing messages.
+*sendPrefWin*spellTF.quickHelp:\
+   Specify a command to use to check the spelling in your message.
+*sendPrefWin*digSignTF.quickHelp:\
+   Specify a command to use to create a digital signature.
+*sendPrefWin*encryptTF.quickHelp:\
+   Specify a command to use to encrypt your message.
+*sendPrefWin*encryptSignTF.quickHelp:\
+   Command to use to encrypt and digitally sign your message.
+*sendPrefWin*mimeDigSignTF.quickHelp:\
+   Command to create a digital signature in a MIME message.
+*sendPrefWin*mimeEncryptTF.quickHelp:\
+   Command to encrypt a MIME message.
+*sendPrefWin*mimeEncryptSignTF.quickHelp:\
+   Command to encrypt and digitally sign a MIME message.
+*sendPrefWin*autoSaveTB.quickHelp:\
+   Enable automatic saving of your edits in the Composition window.
+*sendPrefWin*autoSaveRateTF.quickHelp:\
+   Specify number of seconds between auto-saves of your edits.
+*sendPrefWin*autoSaveDirTF.quickHelp:\
+   Directory path name for keeping temporary save files.
+
+!---------------------------------------------------------------------------
+
+*mailPrefWin*fromHeadTF.quickHelp:\
+   Specify the contents of the "From:" header of all outgoing messages.
+*mailPrefWin*mailPlainTB.quickHelp:\
+   Send all messages as plain, unformatted text (no MIME content).
+*mailPrefWin*mailMimeTB.quickHelp:\
+   Use MIME formatting and encoding for all messages.
+*mailPrefWin*mailAltTB.quickHelp:\
+   Send messages in BOTH plain text and MIME version (plain text alternative).
+*mailPrefWin*textRichTB.quickHelp:\
+   In MIME messages, mark text as Enriched by default.
+*mailPrefWin*textPlainTB.quickHelp:\
+   In MIME messages, mark text as Plain by default.
+*mailPrefWin*charCB.quickHelp:\
+   List possible character sets for encoding the message text and headers.
+*mailPrefWin*charTF.quickHelp:\
+   Specify the character set for encoding the message text and headers.
+*mailPrefWin*bodyEnc8bitTB.quickHelp:\
+   Note that the text contains 8-bit characters, but don't otherwise encode them.
+*mailPrefWin*bodyEncQpTB.quickHelp:\
+   Encode the message text using Quoted Printable encoding.
+*mailPrefWin*headEncNoneTB.quickHelp:\
+   Leave the text of the message headers alone.
+*mailPrefWin*headEncQTB.quickHelp:\
+   Encode 8-bit characters in the headers using Quoted Printable encoding.
+*mailPrefWin*headEncBTB.quickHelp:\
+   Encode 8-bit characters in the headers using Base-64 encoding.
+*mailPrefWin*noFccTB.quickHelp:\
+   Don't automatically copy outgoing messages to any folder.
+*mailPrefWin*fccFolderTB.quickHelp:\
+   Automatically copy outgoing messages to a folder.
+*mailPrefWin*fccFolderTF.quickHelp:\
+   Folder into which outgoing messages should be copied.
+*mailPrefWin*fccPatternTB.quickHelp:\
+   Copy outgoing messages, select which folder according to pattern match.
+*mailPrefWin*fccPatternTF.quickHelp:\
+   Directory containing folders into which outgoing messages should be copied.
+*mailPrefWin*fccPatternPD*quickHelp:\
+   Select pattern to match in outgoing mail, which selects a folder name.
+*mailPrefWin*confirmAddrTB.quickHelp:\
+   Show a confirmation pop-up before sending mail to the specified addresses.
+*mailPrefWin*confirmAddrText*quickHelp:\
+   Addresses listed here should be confirmed before each use.
+*mailPrefWin*otherHeadText*quickHelp:\
+   These headers should be added to each outgoing message.
+*mailPrefWin*sendmailTF.quickHelp:\
+   Use this command to send outgoing mail.
+*mailPrefWin*deadTB.quickHelp:\
+   Cause interrupted messages to be saved to a file.
+*mailPrefWin*deadTF.quickHelp:\
+   Enter the name of a file in which interrupted messages are to be saved.
+*mailPrefWin*splitTB.quickHelp:\
+   Split large messages into smaller pieces, to be combined by the recipient.
+*mailPrefWin*splitTF.quickHelp:\
+   Size of the largest piece of a split message (should not exceed 100,000).
+*mailPrefWin*checkAddrTB.quickHelp:\
+   Before sending mail, confirm that addresses are valid (may be SLOW).
+
+!---------------------------------------------------------------------------
+
+*undelWin*appForm*quickHelp:\
+   Select messages from this list which you want to recover.
+*undelWin*selectPB.quickHelp:\
+   Select all messages in the list.
+*undelWin*deselectPB.quickHelp:\
+   Deselect all selected messages.
+
+!---------------------------------------------------------------------------
+
+*fontWin*pbTF.quickHelp:\
+   Specify the font to use for button labels and menu items.
+*fontWin*pbChoosePB.quickHelp:\
+   Click here to see a list of font names.
+*fontWin*labelTF.quickHelp:\
+   Specify the font to use for labels and titles.
+*fontWin*labelChoosePB.quickHelp:\
+   Click here to see a list of font names.
+*fontWin*textTF.quickHelp:\
+   Specify the font to use for text fields.
+*fontWin*textChoosePB.quickHelp:\
+   Click here to see a list of font names.
+*fontWin*listTF.quickHelp:\
+   Specify the font to use for lists.
+*fontWin*listChoosePB.quickHelp:\
+   Click here to see a list of font names.
+*fontWin*fontRC.richTF.quickHelp:\
+   Specify the font to use for MIME enriched text
+
+*fontChooser*nameTF.quickHelp:\
+   Enter the name of a font or click Family, Style, and Size from the lists.
+*fontChooser*sampText.quickHelp:\
+   When a font is chosen, sample text using that font is shown here.
+*fontChooser*showFixedTB.quickHelp:\
+   Include names of fixed-space fonts in the list.
+*fontChooser*showPropTB.quickHelp:\
+   Include names of proportional-space fonts in the list.
+*fontChooser*sizePixelsTB.quickHelp:\
+   The Size column represents pixels.
+*fontChooser*sizePointsTB.quickHelp:\
+   The Size column represents font point size (72 per inch).
+*fontChooser*familyList.quickHelp:\
+   List of font Families having this Style and Size.
+*fontChooser*styleList.quickHelp:\
+   List of possible Styles for this font Family and Size.
+*fontChooser*sizeList.quickHelp:\
+   List of possible Sizes for this font Family and Style.
+
+!---------------------------------------------------------------------------
+
+*summaryWin*numberTB.quickHelp:\
+   Show or hide the message number column.
+*summaryWin*statusTB.quickHelp:\
+   Show or hide the message status column.
+*summaryWin*senderTB.quickHelp:\
+   Show or hide the message sender column.
+*summaryWin*subjectTB.quickHelp:\
+   Show or hide the message subject column.
+*summaryWin*dateTB.quickHelp:\
+   Show or hide the message date column.
+*summaryWin*lineTB.quickHelp:\
+   Show or hide the message size (in lines) column.
+*summaryWin*byteTB.quickHelp:\
+   Show or hide the message size (in bytes) column.
+*summaryWin*posTF.quickHelp:\
+   Specify the column position, from left (0,1,2,...).
+*summaryWin*minTF.quickHelp:\
+   Specify the minimum column width (number of characters).
+*summaryWin*maxTF.quickHelp:\
+   Specify the maximum column width (number of characters).
+*summaryWin*titleTF.quickHelp:\
+   Specify the name to appear over the column.
+*summaryWin*iconTB.quickHelp:\
+   Show or hide icons for each message in the message list.
+*summaryWin*dateFormatForm*quickHelp:\
+   Specify the date format using the syntax of strftime(3).
+
+!-- Folder Preference Window
+
+*folderPrefWin*viewLargeTB.quickHelp:\
+  Show folders using large icons. 
+*folderPrefWin*viewSmallTB.quickHelp:\
+  Show folders using small icons. 
+*folderPrefWin*viewNameTB.quickHelp:\
+  Show folders by name only (no icons).
+*folderPrefWin*sortTB.quickHelp:\
+  Sort folders by name, else sort by order opened.
+*folderPrefWin*statusTB.quickHelp:\
+  Show folder status using different icons.
+*folderPrefWin*typeUnixTB.quickHelp:\
+  Create new folders using Unix (mailx) format.
+*folderPrefWin*typeMhTB.quickHelp:\
+  Create new folders using MH-compatible format.
+*folderPrefWin*typeMmdfTB.quickHelp:\
+  Create new folders using MMDF-compatible format.
+*folderPrefWin*typeImapTB.quickHelp:\
+  Create new folders on the IMAP server.
+*folderPrefWin*useUnixTB.quickHelp:\
+  Use local Unix folders in addition to IMAP.
+*folderPrefWin*useMhTB.quickHelp:\
+  Use local MH folders in addition to IMAP.
+*folderPrefWin*useMmdfTB.quickHelp:\
+  Use local MMDF folders in addition to IMAP.
+*folderPrefWin*useNoneTB.quickHelp:\
+  All folders are on the IMAP server.
+*folderPrefWin*confirmTypeTB.quickHelp:\
+  Ask folder type when creating, or automatically use the default.
+*folderPrefWin*initLabel*quickHelp:\
+  Folders which should be opened automatically at start-up.
+*folderPrefWin*initText*quickHelp:\
+  Folders which should be opened automatically at start-up.
+*folderPrefWin*rememberTB.quickHelp:\
+  Save names of folders open at exit, and reopen at next start-up.
+
+!--------------------------------------------------
+
+*helpResWin*shortNameForm.shortNameTF.quickHelp:\
+   This is the abbreviated name of the widget being edited
+*helpResWin*longNameForm.longNameTF.quickHelp:\
+   This is the full name of the widget being edited
+*helpResWin*longNameForm.longNameAB.quickHelp:\
+   Click here to edit parent of the current widget
+*helpResWin*quickHelpForm.quickHelpTF.quickHelp:\
+   Enter the quickHelp string for the widget
+*helpResWin*quickNameForm.quickNameTF.quickHelp:\
+   This is the name of the widget providing the quickHelp resource
+*helpResWin*contCardForm.contCardTF.quickHelp:\
+   Enter the name of the contextHelp helpcard
+*helpResWin*contNameForm.contNameTF.quickHelp:\
+   This is the name of the widget providing the contextHelp resource
+*helpResWin*helpCardForm.helpCardTF.quickHelp:\
+   Enter the name of the help card for the helpcard resource
+*helpResWin*helpNameForm.helpNameTF.quickHelp:\
+   This is the name of the widget providing the helpcard resource
+*helpResWin*quickNameForm.quickLoadPB.quickHelp:\
+   Click here to edit the widget providing the quickHelp resource
+*helpResWin*contCardForm.contCardPB.quickHelp:\
+   Click here to view the contextHelp helpcard
+*helpResWin*contNameForm.contLoadPB.quickHelp:\
+   Click here to edit the widget providing the contextHelp resource
+*helpResWin*helpCardForm.helpCardPB.quickHelp:\
+   Click here to view the "helpcard" help card
+*helpResWin*helpNameForm.helpLoadPB.quickHelp:\
+   Click here to edit the widget providing the helpcard resource
+*helpResWin*cmdRC.pickPB.quickHelp:\
+   Click here to pick a widget off the screen
+*helpResWin*cmdRC.nextPB.quickHelp:\
+   Click here to edit the next widget in the list
+*helpResWin*cmdRC.prevPB.quickHelp:\
+   Click here to edit the previous widget in the list
+*helpResWin*cmdRC.resetPB.quickHelp:\
+   Click here to reset the resources to their original values
+*helpResWin*buttonRC.savePB.quickHelp:\
+   Click here to save the resources to a file
+*helpResWin*appForm.widgetBox*quickHelp:\
+   This is a list of the widgets in the current window
+*helpResWin*widgetBox.titleDA*quickHelp:\
+   Click on a column title to sort the list based on that column
+
+!---HELP CARDS--------------------------------------------------------------
+
+*helpWin.helpString: \
+Help messages provide hints on how to use the application.\n\
+Click [Done] to close the [Help] window and return to the application.\n\
+Click [Index] to view a list of help topics.\n\
+ \n\
+Tip:  To read information about several Ishmail components,\n\
+leave the [Help] window open.  Ishmail automatically updates the\n\
+contents of the [Help] window when you select help for a new component.\n\
+
+*helpIndexWin.helpString: \
+Use the [Help Index] to look at help information for any item in Ishmail.\n\
+ \n\
+To read a help card, double-click the left mouse button on the list entry,\n\
+or highlight a help card name and click [View].\n\
+ \n\
+Click [Next] to read the next help card.\n\
+Click [Prev] to read the previous help card.\n\
+Click [Done] to close the Help Index and return to the application.
+
+!---Common Help Cards---
+
+*pushPinTB.contextHelp:		ishmail.common.pushPin.ctx.HLP
+*menuBar.contextHelp:		ishmail.common.menuBar.ctx.HLP
+*VertScrollBar.contextHelp:	ishmail.common.ScrollBar.ctx.HLP
+*HorScrollBar.contextHelp:	ishmail.common.ScrollBar.ctx.HLP
+*vScrollBar.contextHelp:	ishmail.common.ScrollBar.ctx.HLP
+*hScrollBar.contextHelp:	ishmail.common.ScrollBar.ctx.HLP
+*okPB.contextHelp:		ishmail.common.okPB.ctx.HLP
+*applyPB.contextHelp:		ishmail.common.applyPB.ctx.HLP
+*donePB.contextHelp:		ishmail.common.donePB.ctx.HLP
+*clearPB.contextHelp:		ishmail.common.clearPB.ctx.HLP
+*cancelPB.contextHelp:		ishmail.common.cancelPB.ctx.HLP
+*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+*applyAllTB.contextHelp:	ishmail.common.applyTB.ctx.HLP
+*applyCurrentTB.contextHelp:	ishmail.common.applyTB.ctx.HLP
+*sash.contextHelp:		ishmail.common.sash.ctx.HLP
+
+*msgWin.quickHelp.contextHelp:	ishmail.msgWin.quickHelp.ctx.HLP
+*msgWin.infoMsg.contextHelp:	ishmail.mainWindow.statusform.ctx.HLP
+
+!---Help Help Cards---
+
+*helpCB.contextHelp:		ishmail.common.helpMenu.ctx.HLP
+*helpPD.contextHelp:		ishmail.common.helpMenu.ctx.HLP
+*helpWindowPB.helpcard:		ishmail.helpWindowPB.win.HLP
+*helpAppPB.helpcard:		ishmail.app.HLP
+*helpHelpPB.helpcard:		ishmail.common.helpMenu.ctx.HLP
+*helpVerPB.helpcard:		ishmail.version.HLP
+*helpKeysPB.helpcard:		ishmail.keys.HLP
+*helpGuidePB.contextHelp:	ishmail.guide.ctx.HLP
+
+!---Help Index Help Cards---
+
+*helpIndex*contextHelp:		ishmail.common.helpIndex.win.HLP
+*helpIndex*indexView.contextHelp:	ishmail.common.helpIndex.indexView.ctx.HLP
+*helpIndex*indexNext.contextHelp:	ishmail.common.helpIndex.indexNext.ctx.HLP
+*helpIndex*indexPrev.contextHelp:	ishmail.common.helpIndex.indexPrev.ctx.HLP
+*helpIndex*OK.contextHelp:	ishmail.common.helpIndex.OK.ctx.HLP
+*helpIndex*Help.contextHelp:	ishmail.common.helpPB.ctx.HLP
+
+!---Query Window Help Cards---
+
+*queryImapWin.helpcard:		ishmail.queryImapWin.win.HLP
+*queryImapServerWin.helpcard:	ishmail.queryImapServerWin.win.HLP
+*queryPopWin.helpcard:		ishmail.queryPopWin.win.HLP
+*queryPopServerWin.helpcard:	ishmail.queryPopServerWin.win.HLP
+*queryFolderTypeWin.helpcard:	ishmail.queryFolderTypeWin.win.HLP
+*defFolderTypeWin.helpcard:	ishmail.defFolderTypeWin.win.HLP
+
+!---File Menu Help Cards---
+
+*filePrintPB.contextHelp:	ishmail.msgPrintPB.ctx.HLP
+*fileSleepPB.contextHelp:	ishmail.fileSleepPB.ctx.HLP
+*fileQuitPB.contextHelp:	ishmail.fileQuitPB.ctx.HLP
+*fileExitPB.contextHelp:	ishmail.fileExitPB.ctx.HLP
+
+!--Composition Window (File) options in the Message menu---
+
+*fileSendPB.contextHelp:	ishmail.fileSendPB.ctx.HLP
+*fileSendKeepPB.contextHelp:	ishmail.fileSendKeepPB.ctx.HLP
+*fileSendClosePB.contextHelp:	ishmail.fileSendClosePB.ctx.HLP
+*fileEditPB.contextHelp:	ishmail.fileEditPB.ctx.HLP
+*fileSpellPB.contextHelp:	ishmail.fileSpellPB.ctx.HLP
+*fileCheckPB.contextHelp:	ishmail.fileCheckPB.ctx.HLP
+*fileLoadPB.contextHelp:	ishmail.fileLoadPB.ctx.HLP
+*filePD.fileSavePB.contextHelp:	ishmail.fileSavePB.ctx.HLP
+*fileIncCB.contextHelp:		ishmail.fileIncCB.ctx.HLP
+*fileIncFilePB.contextHelp:	ishmail.fileIncFilePB.ctx.HLP
+*fileIncTextPB.contextHelp:	ishmail.fileIncTextPB.ctx.HLP
+*fileIncMsgPB.contextHelp:	ishmail.fileIncMsgPB.ctx.HLP
+*fileIncSigCB.contextHelp:	ishmail.fileIncSigCB.ctx.HLP
+*fileIncSigPD.contextHelp:	ishmail.fileIncSigCB.ctx.HLP
+*fileAddCB.contextHelp:		ishmail.fileAddCB.ctx.HLP
+*fileAddMixPB.contextHelp:	ishmail.fileAddMixPB.ctx.HLP
+*fileAddDigPB.contextHelp:	ishmail.fileAddDigPB.ctx.HLP
+*fileAddAltPB.contextHelp:	ishmail.fileAddAltPB.ctx.HLP
+*fileAddParPB.contextHelp:	ishmail.fileAddParPB.ctx.HLP
+*fileClearPB.contextHelp:	ishmail.fileClearPB.ctx.HLP
+*fileClosePB.contextHelp:	ishmail.fileClosePB.ctx.HLP
+
+!--Composition Window Include Text File Window---
+
+*includeTextWin.contextHelp:		ishmail.includeTextWin.win.HLP
+*includeTextWin*helpPB.helpcard:	ishmail.includeTextWin.win.HLP
+*includeTextWin*selectTF.contextHelp:	ishmail.includeTextWin.selectTF.ctx.HLP
+
+!--Composition Window Include/Attach File Window---
+
+*includeFileWin.contextHelp:		ishmail.includeFileWin.win.HLP
+*includeFileWin*helpPB.helpcard:	ishmail.includeFileWin.win.HLP
+*includeFileWin*selectTF.contextHelp:	ishmail.includeFileWin.selectTF.ctx.HLP
+
+!--Composition Window Include/Attach File Data Window---
+
+*fileDataWin*contextHelp:	ishmail.fileDataWin.win.HLP
+*fileDataWin*helpPB.helpcard:	ishmail.fileDataWin.win.HLP
+*fileDataWin*nameTF.contextHelp:	ishmail.fileDataWin.nameTF.ctx.HLP
+*fileDataWin*nameLabel.contextHelp:	ishmail.fileDataWin.nameTF.ctx.HLP
+*fileDataWin*descTF.contextHelp:	ishmail.fileDataWin.descTF.ctx.HLP
+*fileDataWin*descLabel.contextHelp:	ishmail.fileDataWin.descTF.ctx.HLP
+*fileDataWin*typeLabel.contextHelp:	ishmail.fileDataWin.typeOM.ctx.HLP
+*fileDataWin*typeOM*contextHelp:	ishmail.fileDataWin.typeOM.ctx.HLP
+*fileDataWin*typePD.contextHelp:	ishmail.fileDataWin.typeOM.ctx.HLP
+*fileDataWin*includeForm*contextHelp:	ishmail.fileDataWin.includeForm.ctx.HLP
+*fileDataWin*encodeForm*contextHelp:	ishmail.fileDataWin.encodeForm.ctx.HLP
+*fileDataWin*paramRC*contextHelp:	ishmail.fileDataWin.paramRC.ctx.HLP
+
+!---Reading Window (File) options in the Message menu---
+
+*fileNextCB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*filePrevCB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*fileSaveCB.contextHelp:	ishmail.msgSaveCB.ctx.HLP
+*readWin**fileSavePB.contextHelp:	ishmail.msgSavePB.ctx.HLP
+*fileSaveQuickCB.contextHelp:	ishmail.msgSaveQuickCB.ctx.HLP
+*fileSaveRecentCB.contextHelp:	ishmail.msgSaveRecentCB.ctx.HLP
+*fileSaveToPB.contextHelp:	ishmail.msgSaveToPB.ctx.HLP
+*fileSaveSelPB.contextHelp:	ishmail.msgSaveSelPB.ctx.HLP
+*fileSaveToFilePB.contextHelp:	ishmail.msgSaveToFilePB.ctx.HLP
+*fileNextPB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*filePrevPB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*fileNextUnreadPB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*fileNextSenderPB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*fileNextSubjectPB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*filePrevUnreadPB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*filePrevSenderPB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*filePrevSubjectPB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*filePipePB.contextHelp:	ishmail.msgPipePB.ctx.HLP
+*fileDeletePB.contextHelp:	ishmail.msgDelPB.ctx.HLP
+*fileDelClosePB.contextHelp:	ishmail.fileDelClosePB.ctx.HLP
+*fileUndeletePB.contextHelp:	ishmail.msgUndelCB.ctx.HLP
+
+!--Folder Menu Help Cards---
+
+*folderCB.contextHelp:		ishmail.folderCB.ctx.HLP
+*folderNewPB.contextHelp:	ishmail.folderNewPB.ctx.HLP
+*folderOpenPB.contextHelp:	ishmail.folderOpenPB.ctx.HLP
+*folderOpenRecentCB.contextHelp:	ishmail.folderOpenRecentCB.ctx.HLP
+*folderOpenQuickCB.contextHelp:	ishmail.folderOpenQuickCB.ctx.HLP
+*folderActCB.contextHelp:	ishmail.folderActCB.ctx.HLP
+*folderActSysPB.contextHelp:	ishmail.folderSysPB.ctx.HLP
+*folderActSelPB.contextHelp:	ishmail.folderActSelPB.ctx.HLP
+*folderSaveCB.contextHelp:	ishmail.folderSaveCB.ctx.HLP
+*folderSavePB.contextHelp:	ishmail.folderSaveCB.ctx.HLP
+*folderSaveSelPB.contextHelp:	ishmail.folderSaveCB.ctx.HLP
+*folderSaveAllPB.contextHelp:	ishmail.folderSaveCB.ctx.HLP
+*folderReadCB.contextHelp:	ishmail.folderReadCB.ctx.HLP
+*folderReadCurPB.contextHelp:	ishmail.folderReadCB.ctx.HLP
+*folderReadSelPB.contextHelp:	ishmail.folderReadCB.ctx.HLP
+*folderReadAllPB.contextHelp:	ishmail.folderReadCB.ctx.HLP
+*folderCloseCB.contextHelp:	ishmail.folderCloseCB.ctx.HLP
+*folderCloseCurPB.contextHelp:	ishmail.folderCloseCB.ctx.HLP
+*folderCloseSelPB.contextHelp:	ishmail.folderCloseCB.ctx.HLP
+*folderCloseAllPB.contextHelp:	ishmail.folderCloseCB.ctx.HLP
+*folderDelCB.contextHelp:	ishmail.folderDelCB.ctx.HLP
+*folderDelCurPB.contextHelp:	ishmail.folderDelCB.ctx.HLP
+*folderDelSelPB.contextHelp:	ishmail.folderDelCB.ctx.HLP
+*folderDelAllPB.contextHelp:	ishmail.folderDelCB.ctx.HLP
+*folderSelPB.contextHelp:	ishmail.folderSelPB.ctx.HLP
+*folderDeselPB.contextHelp:	ishmail.folderDeselPB.ctx.HLP
+
+!---Message Menu Help Cards---
+
+*msgCB.contextHelp:		ishmail.msgCB.ctx.HLP
+*msgComposePB.contextHelp:	ishmail.msgComposePB.ctx.HLP
+*msgDeselPB.contextHelp:	ishmail.msgDeselPB.ctx.HLP
+*msgPipePB.contextHelp:		ishmail.msgPipePB.ctx.HLP
+*msgForward822PB.contextHelp:	ishmail.msgForward822PB.ctx.HLP
+*msgForwardPB.contextHelp:	ishmail.msgForwardPB.ctx.HLP
+*msgDelPB.contextHelp:		ishmail.msgDelPB.ctx.HLP
+*msgPrintPB.contextHelp:	ishmail.msgPrintPB.ctx.HLP
+*msgNextCB.contextHelp:		ishmail.msgNextPB.ctx.HLP
+*msgNextPB.contextHelp:		ishmail.msgNextPB.ctx.HLP
+*msgNextUnreadPB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*msgNextSenderPB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*msgNextSubjectPB.contextHelp:	ishmail.msgNextPB.ctx.HLP
+*msgPrevCB.contextHelp:		ishmail.msgPrevPB.ctx.HLP
+*msgPrevPB.contextHelp:		ishmail.msgPrevPB.ctx.HLP
+*msgPrevUnreadPB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*msgPrevSenderPB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*msgPrevSubjectPB.contextHelp:	ishmail.msgPrevPB.ctx.HLP
+*msgReadCB.contextHelp:		ishmail.msgReadCB.ctx.HLP
+*msgReadPB.contextHelp:		ishmail.msgReadPB.ctx.HLP
+*msgResendPB.contextHelp:	ishmail.msgResendPB.ctx.HLP
+*msgReplyCB.contextHelp:	ishmail.msgReplyCB.ctx.HLP
+*msgReplyPB.contextHelp:	ishmail.msgReplyCB.msgReplyPB.ctx.HLP
+*msgReplyIncPB.contextHelp:	ishmail.msgReplyCB.msgReplyIncPB.ctx.HLP
+*msgReplyAllPB.contextHelp:	ishmail.msgReplyCB.msgReplyAllPB.ctx.HLP
+*msgReplyAllIncPB.contextHelp:	ishmail.msgReplyCB.msgReplyAllIncPB.ctx.HLP
+*msgSaveCB.contextHelp:		ishmail.msgSaveCB.ctx.HLP
+*msgSavePB.contextHelp:		ishmail.msgSavePB.ctx.HLP
+*msgSaveToPB.contextHelp:	ishmail.msgSaveToPB.ctx.HLP
+*msgSaveSelPB.contextHelp:	ishmail.msgSaveSelPB.ctx.HLP
+*msgSaveToFilePB.contextHelp:	ishmail.msgSaveToFilePB.ctx.HLP
+*msgSaveQuickCB.contextHelp:	ishmail.msgSaveQuickCB.ctx.HLP
+*msgSaveRecentCB.contextHelp:	ishmail.msgSaveRecentCB.ctx.HLP
+*msgFindPB.contextHelp:		ishmail.msgFindPB.ctx.HLP
+*msgSelPB.contextHelp:		ishmail.msgSelPB.ctx.HLP
+*msgClearAllPB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgClearFilteredPB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgClearForwardedPB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgClearPrintedPB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgClearRepliedPB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgClearResentPB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgClearSavedPB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgMarkNewPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgMarkReadPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgMarkUnreadPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgSetFilteredPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgSetForwardedPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgSetPrintedPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgSetRepliedPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgSetResentPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgSetSavedPB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgStatCB.contextHelp:		ishmail.msgSet.ctx.HLP
+*msgStatSetCB.contextHelp:	ishmail.msgSet.ctx.HLP
+*msgStatClearCB.contextHelp:	ishmail.msgClear.ctx.HLP
+*msgUndelCB.contextHelp:	ishmail.msgUndelCB.ctx.HLP
+*msgUndelLastPB.contextHelp:	ishmail.msgUndelLastPB.ctx.HLP
+*msgUndelSelPB.contextHelp:	ishmail.msgUndelSelPB.ctx.HLP
+*msgUndelListPB.contextHelp:	ishmail.msgUndelListPB.ctx.HLP
+
+!---Options Menu Help Cards---
+
+*optPrefPB.contextHelp:		ishmail.optPrefPB.ctx.HLP
+*optReadPB.contextHelp:		ishmail.optReadPB.ctx.HLP
+*optSendPB.contextHelp:		ishmail.optSendPB.ctx.HLP
+*optMailPB.contextHelp:		ishmail.optMailPB.ctx.HLP
+*optSigPB.contextHelp:		ishmail.optSigPB.ctx.HLP
+*optReplyPB.contextHelp:	ishmail.optReplyPB.ctx.HLP
+*optConfirmPB.contextHelp:	ishmail.optConfirmPB.ctx.HLP
+*optHeadPB.contextHelp:		ishmail.optHeadPB.ctx.HLP
+*optAliasPB.contextHelp:	ishmail.optAliasPB.ctx.HLP
+*optGroupAliasPB.contextHelp:	ishmail.optGroupAliasPB.ctx.HLP
+*optAlertPB.contextHelp:	ishmail.optAlertPB.ctx.HLP
+*optIconPB.contextHelp:		ishmail.optIconPB.ctx.HLP
+*optSavePB.contextHelp:		ishmail.optSavePB.ctx.HLP
+*optAutoFilePB.contextHelp:	ishmail.optAutoFilePB.ctx.HLP
+*optFontPB.contextHelp:		ishmail.optFontPB.ctx.HLP
+*optButtPB.contextHelp:		ishmail.optButtPB.ctx.HLP
+*optSummPB.contextHelp:		ishmail.optSummPB.ctx.HLP
+*optFolderPB.contextHelp:	ishmail.optFolderPB.ctx.HLP
+*optSortPB.contextHelp:		ishmail.optSortPB.ctx.HLP
+
+*optRawPB.contextHelp:		ishmail.readWin.optRawPB.ctx.HLP
+*optHeadTB.contextHelp:		ishmail.readWin.optHeadTB.ctx.HLP
+*optMailcapPB.contextHelp:	ishmail.readWin.optMailcapPB.ctx.HLP
+
+*optCcTB.contextHelp:		ishmail.optCcTB.ctx.HLP
+*optBccTB.contextHelp:		ishmail.optBccTB.ctx.HLP
+*optFccTB.contextHelp:		ishmail.optFccTB.ctx.HLP
+*optOtherTB.contextHelp:	ishmail.optOtherTB.ctx.HLP
+*optSettingsTB.contextHelp:	ishmail.sendWin.optSettingsTB.ctx.HLP
+
+
+!---Help Menu Help Cards---
+*helpCommentPB.contextHelp:	ishmail.helpCommentPB.ctx.HLP
+
+!---Edit Message List window---
+
+*summaryWin.contextHelp:		ishmail.summaryWin.win.HLP
+*summaryWin.helpcard:			ishmail.summaryWin.win.HLP
+*summaryWin*fieldTitle.contextHelp:	ishmail.summaryWin.fieldTitle.ctx.HLP
+*summaryWin*posTitle.contextHelp:	ishmail.summaryWin.posTitle.ctx.HLP
+*summaryWin*minTitle.contextHelp:	ishmail.summaryWin.minTitle.ctx.HLP
+*summaryWin*maxTitle.contextHelp:	ishmail.summaryWin.maxTitle.ctx.HLP
+*summaryWin*titleTitle.contextHelp:	ishmail.summaryWin.titleTitle.ctx.HLP
+*summaryWin*numberTB.contextHelp:	ishmail.summaryWin.numberTB.ctx.HLP
+*summaryWin*statusTB.contextHelp:	ishmail.summaryWin.statusTB.ctx.HLP
+*summaryWin*senderTB.contextHelp:	ishmail.summaryWin.senderTB.ctx.HLP
+*summaryWin*subjectTB.contextHelp:	ishmail.summaryWin.subjectTB.ctx.HLP
+*summaryWin*dateTB.contextHelp:		ishmail.summaryWin.dateTB.ctx.HLP
+*summaryWin*lineTB.contextHelp:		ishmail.summaryWin.lineTB.ctx.HLP
+*summaryWin*byteTB.contextHelp:		ishmail.summaryWin.byteTB.ctx.HLP
+*summaryWin*iconTB.contextHelp:		ishmail.summaryWin.iconTB.ctx.HLP
+*summaryWin*posTF.contextHelp:		ishmail.summaryWin.posTitle.ctx.HLP
+*summaryWin*minTF.contextHelp:		ishmail.summaryWin.minTitle.ctx.HLP
+*summaryWin*maxTF.contextHelp:		ishmail.summaryWin.maxTitle.ctx.HLP
+*summaryWin*titleTF.contextHelp:	ishmail.summaryWin.titleTitle.ctx.HLP
+*summaryWin*dateFormatForm.contextHelp:	ishmail.summaryWin.dateFormat.ctx.HLP
+
+
+!---Reply Menu Help Cards---
+
+*replyPD.contextHelp:		ishmail.replyPD.ctx.HLP
+*replyPB.contextHelp:		ishmail.msgReplyCB.msgReplyPB.ctx.HLP
+*replyIncPB.contextHelp:	ishmail.msgReplyCB.msgReplyIncPB.ctx.HLP
+*replyAllPB.contextHelp:	ishmail.msgReplyCB.msgReplyAllPB.ctx.HLP
+*replyAllIncPB.contextHelp:	ishmail.msgReplyCB.msgReplyAllIncPB.ctx.HLP
+*forwardPB.contextHelp:		ishmail.msgForwardPB.ctx.HLP
+*forward822PB.contextHelp:	ishmail.msgForward822PB.ctx.HLP
+*resendPB.contextHelp:		ishmail.msgResendPB.ctx.HLP
+
+!---Edit Menu Help Cards---
+
+*sendWin*editPD.contextHelp:	ishmail.sendWin*editCB.ctx.HLP
+*editUndeletePB.contextHelp:	ishmail.editUndeletePB.ctx.HLP
+*editPlainPB.contextHelp:	ishmail.editPlainPB.ctx.HLP
+*editBoldPB.contextHelp:	ishmail.editBoldPB.ctx.HLP
+*editItalicPB.contextHelp:	ishmail.editItalicPB.ctx.HLP
+*editFixedPB.contextHelp:	ishmail.editFixedPB.ctx.HLP
+*editUnderPB.contextHelp:	ishmail.editUnderPB.ctx.HLP
+*editColorCB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorRedPB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorGreenPB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorBluePB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorYellowPB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorMagentaPB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorCyanPB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorBlackPB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorWhitePB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*colorNonePB.contextHelp:	ishmail.editColorCB.ctx.HLP
+*editBiggerPB.contextHelp:	ishmail.editBiggerPB.ctx.HLP
+*editSmallerPB.contextHelp:	ishmail.editSmallerPB.ctx.HLP
+*editFlushLeftPB.contextHelp:	ishmail.editFlushLeftPB.ctx.HLP
+*editFlushRightPB.contextHelp:	ishmail.editFlushRightPB.ctx.HLP
+*editFlushBothPB.contextHelp:	ishmail.editFlushBothPB.ctx.HLP
+*editCenterPB.contextHelp:	ishmail.editCenterPB.ctx.HLP
+*editNoFillPB.contextHelp:	ishmail.editNoFillPB.ctx.HLP
+*editExcerptMorePB.contextHelp:	ishmail.editExcerptPB.ctx.HLP
+*editExcerptLessPB.contextHelp:	ishmail.editExcerptPB.ctx.HLP
+*editLeftMarginInPB.contextHelp:	ishmail.editLeftMarginPB.ctx.HLP
+*editLeftMarginOutPB.contextHelp:	ishmail.editLeftMarginPB.ctx.HLP
+*editRightMarginInPB.contextHelp:	ishmail.editRightMarginPB.ctx.HLP
+*editRightMarginOutPB.contextHelp:	ishmail.editRightMarginPB.ctx.HLP
+
+!---Main Window Help Cards---
+
+*mainShell.contextHelp:			ishmail.mainShell.win.HLP
+*mainShell*fileCB.contextHelp:		ishmail.mainShell.fileCB.ctx.HLP
+*mainShell*filePD.contextHelp:		ishmail.mainShell.fileCB.ctx.HLP
+*mainShell*folderCB.contextHelp:	ishmail.mainShell.folderCB.ctx.HLP
+*mainShell*folderPD.contextHelp:	ishmail.mainShell.folderCB.ctx.HLP
+*mainShell*msgCB.contextHelp:		ishmail.mainShell.msgCB.ctx.HLP
+*mainShell*msgPD.contextHelp:		ishmail.mainShell.msgCB.ctx.HLP
+*mainShell*optCB.contextHelp:		ishmail.mainShell.optCB.ctx.HLP
+*mainShell*optPD.contextHelp:		ishmail.mainShell.optCB.ctx.HLP
+*mainShell*helpWindowPB.helpcard:	ishmail.mainShell.win.HLP
+*mainShell*folderForm.contextHelp:	ishmail.mainShell.folderForm.ctx.HLP
+*mainShell*msgBox.contextHelp:		ishmail.mainShell.msgBox.ctx.HLP
+*mainWindow*taskButtonFrame.contextHelp:	ishmail.common.taskButtonFrame.ctx.HLP
+*mainShell*joyStick.contextHelp:	ishmail.mainShell.joyStick.ctx.HLP
+
+!---Composition Window Help Cards---
+
+*sendWin.contextHelp:			ishmail.sendWin.win.HLP
+! Consider adding button information to .win card an mapping taskButtonFrame
+! to the .win card
+*sendWin*mainWindow*helpPD.helpWindowPB.helpcard:		ishmail.sendWin.win.HLP
+*sendWin*fileCB.contextHelp:		ishmail.sendWin.fileCB.ctx.HLP
+*sendWin*filePD.contextHelp:		ishmail.sendWin.fileCB.ctx.HLP
+*sendWin*editCB.contextHelp:		ishmail.sendWin.editCB.ctx.HLP
+*sendWin*editPD.contextHelp:		ishmail.sendWin.editCB.ctx.HLP
+*sendWin*optCB.contextHelp:		ishmail.sendWin.optCB.ctx.HLP
+*sendWin*optPD.contextHelp:		ishmail.sendWin.optCB.ctx.HLP
+*sendWin*toLabel.contextHelp:		ishmail.sendWin.toForm.ctx.HLP
+*sendWin*toText.contextHelp:		ishmail.sendWin.toForm.ctx.HLP
+*sendWin*toAliasPB.contextHelp:		ishmail.sendWin.aliasPB.ctx.HLP
+*sendWin*subjectText.contextHelp:	ishmail.sendWin.subjectForm.ctx.HLP
+*sendWin*subjectLabel.contextHelp:	ishmail.sendWin.subjectForm.ctx.HLP
+*sendWin*ccText.contextHelp:		ishmail.sendWin.ccForm.ctx.HLP
+*sendWin*ccLabel.contextHelp:		ishmail.sendWin.ccForm.ctx.HLP
+*sendWin*ccAliasPB.contextHelp:		ishmail.sendWin.aliasPB.ctx.HLP
+*sendWin*bccText.contextHelp:		ishmail.sendWin.bccForm.ctx.HLP
+*sendWin*bccLabel.contextHelp:		ishmail.sendWin.bccForm.ctx.HLP
+*sendWin*fccText.contextHelp:		ishmail.sendWin.fccForm.ctx.HLP
+*sendWin*fccLabel.contextHelp:		ishmail.sendWin.fccForm.ctx.HLP
+*sendWin*bccAliasPB.contextHelp:	ishmail.sendWin.aliasPB.ctx.HLP
+*sendWin*otherText.contextHelp:		ishmail.sendWin.otherForm.ctx.HLP
+*sendWin*otherLabel.contextHelp:	ishmail.sendWin.otherForm.ctx.HLP
+*sendWin*bodyForm*contextHelp:		ishmail.sendWin.bodyForm.ctx.HLP
+*sendWin*optMimeTB.contextHelp:		ishmail.optMsgMimeTB.ctx.HLP
+*sendWin*optAddSigTB.contextHelp:	ishmail.sendWin.optAddSigTB.ctx.HLP
+*sendWin*optDigSignTB.contextHelp:	ishmail.sendWin.optDigSignTB.ctx.HLP
+*sendWin*optEncryptTB.contextHelp:	ishmail.sendWin.optEncryptTB.ctx.HLP
+*sendWin*optWrapTB.contextHelp:		ishmail.sendWin.optWrapTB.ctx.HLP
+*sendWin*typeForm.contextHelp:		ishmail.sendWin.typeForm.ctx.HLP
+*sendWin*buttonFrame.contextHelp:	ishmail.common.taskButtonFrame.ctx.HLP
+*sendWin*descForm.contextHelp:		ishmail.sendWin.descForm.ctx.HLP
+*sendWin*descForm.prodLabel.contextHelp:	ishmail.sendWin.descForm.prodLabel.ctx.HLP
+*sendWin*descForm.prodValue.contextHelp:	ishmail.sendWin.descForm.prodLabel.ctx.HLP
+*sendWin*descForm.compLabel.contextHelp:	ishmail.sendWin.descForm.compLabel.ctx.HLP
+*sendWin*descForm.compValue.contextHelp:	ishmail.sendWin.descForm.compLabel.ctx.HLP
+*sendWin*descForm.verLabel.contextHelp:		ishmail.sendWin.descForm.verLabel.ctx.HLP
+*sendWin*descForm.verValue.contextHelp:		ishmail.sendWin.descForm.verLabel.ctx.HLP
+*sendWin*catForm.contextHelp:		ishmail.sendWin.catForm.ctx.HLP
+*sendWin*sevForm.contextHelp:		ishmail.sendWin.sevForm.ctx.HLP
+*optCheckAddrTB.contextHelp:		ishmail.sendWin.optCheckAddrTB.ctx.HLP
+*optMsgTypeCB.contextHelp:		ishmail.optMsgTypeCB.ctx.HLP
+*optTextTypeCB.contextHelp:		ishmail.optTextTypeCB.ctx.HLP
+*optMsgPlainTB.contextHelp:		ishmail.optMsgPlainTB.ctx.HLP
+*optMsgMimeTB.contextHelp:		ishmail.optMsgMimeTB.ctx.HLP
+*optMsgAltTB.contextHelp:		ishmail.optMsgAltTB.ctx.HLP
+*optTextPlainTB.contextHelp:		ishmail.optTextPlainTB.ctx.HLP
+*optTextRichTB.contextHelp:		ishmail.optTextRichTB.ctx.HLP
+
+!---Select Aliases Window help cards---
+
+*pickAliasWin.contextHelp:		ishmail.pickAliasWin.win.HLP
+*pickAliasWin*helpPB.helpcard:		ishmail.pickAliasWin.win.HLP
+*pickAliasWin*aliasBox.contextHelp:	ishmail.pickAliasWin.aliasBox.ctx.HLP
+*pickAliasWin*findForm.contextHelp:	ishmail.pickAliasWin.findForm.ctx.HLP
+*pickAliasWin*expandTB.contextHelp:	ishmail.pickAliasWin.expandTB.ctx.HLP
+*pickAliasWin*aliasBox.contextHelp:	ishmail.pickAliasWin.aliasBox.ctx.HLP
+
+!---Reading Window Help Cards---
+
+*readWin.contextHelp:			ishmail.readWin.win.HLP
+*readWin.mainWindow*helpPD.helpWindowPB.helpcard:	ishmail.readWin.win.HLP
+*readWin*fileCB.contextHelp:		ishmail.readWin.fileCB.ctx.HLP
+*readWin*filePD.contextHelp:		ishmail.readWin.fileCB.ctx.HLP
+*readWin*replyCB.contextHelp:		ishmail.readWin.replyCB.ctx.HLP
+*readWin*replyPD.contextHelp:		ishmail.readWin.replyCB.ctx.HLP
+*readWin*optCB.contextHelp:		ishmail.readWin.optCB.ctx.HLP
+*readWin*optPD.contextHelp:		ishmail.readWin.optCB.ctx.HLP
+*readWin*msgHeadText.contextHelp:	ishmail.readWin.msgHeadText.ctx.HLP
+*readWin*msgBodyText.contextHelp:	ishmail.readWin.msgBodyText.ctx.HLP
+*readWin*buttonFrame.contextHelp:	ishmail.common.taskButtonFrame.ctx.HLP
+*readWin*localTextWin.helpcard:		ishmail.readWin.localTextWin.ctx.HLP
+*readWin*localTextWin.contextHelp:	ishmail.readWin.localTextWin.ctx.HLP
+*readWin*viewRadio.contextHelp:		ishmail.readWin.viewRadio.ctx.HLP
+*readWin*optWrapTB.contextHelp:		ishmail.readWin.optWrapTB.ctx.HLP
+*fileFilterCB.contextHelp:		ishmail.fileFilterCB.ctx.HLP
+*fileFilterPD.fileMimePB.contextHelp:	ishmail.readWin.fileMimePB.ctx.HLP
+*fileFilterPD.fileAuthPB.contextHelp:	ishmail.readWin.fileAuthPB.ctx.HLP
+*fileFilterPD.fileDecryptPB.contextHelp:	ishmail.readWin.fileDecryptPB.ctx.HLP
+*fileFilterPD.fileEditPB.contextHelp:	ishmail.readWin.fileEditPB.ctx.HLP
+*fileFilterPD.filePipePB.contextHelp:	ishmail.readWin.filePipePB.ctx.HLP
+
+*readWin.mainWindow*richSearchWin*helpPB.helpcard:	ishmail.richSearchWin.win.HLP
+
+!---Sort Specification Window---
+
+*sortWin.contextHelp:			ishmail.sortWin.win.HLP
+*sortWin*helpPB.helpcard:		ishmail.sortWin.win.HLP
+*sortWin*threadFrame.contextHelp:	ishmail.sortWin.threadFrame.ctx.HLP
+*sortWin*threadLabel.contextHelp:	ishmail.sortWin.threadFrame.ctx.HLP
+*sortWin*threadTB.contextHelp:		ishmail.sortWin.threadFrame.ctx.HLP
+*sortWin*numberFrame.contextHelp:	ishmail.sortWin.numberFrame.ctx.HLP
+*sortWin*numberLabel.contextHelp:	ishmail.sortWin.numberFrame.ctx.HLP
+*sortWin*numberTB.contextHelp:		ishmail.sortWin.numberFrame.ctx.HLP
+*sortWin*statusFrame.contextHelp:	ishmail.sortWin.statusFrame.ctx.HLP
+*sortWin*statusLabel.contextHelp:	ishmail.sortWin.statusFrame.ctx.HLP
+*sortWin*statusTB.contextHelp:		ishmail.sortWin.statusFrame.ctx.HLP
+*sortWin*senderFrame.contextHelp:	ishmail.sortWin.senderFrame.ctx.HLP
+*sortWin*senderLabel.contextHelp:	ishmail.sortWin.senderFrame.ctx.HLP
+*sortWin*senderTB.contextHelp:		ishmail.sortWin.senderFrame.ctx.HLP
+*sortWin*subjectFrame.contextHelp:	ishmail.sortWin.subjectFrame.ctx.HLP
+*sortWin*subjectLabel.contextHelp:	ishmail.sortWin.subjectFrame.ctx.HLP
+*sortWin*subjectTB.contextHelp:		ishmail.sortWin.subjectFrame.ctx.HLP
+*sortWin*dateFrame.contextHelp:		ishmail.sortWin.dateFrame.ctx.HLP
+*sortWin*dateLabel.contextHelp:		ishmail.sortWin.dateFrame.ctx.HLP
+*sortWin*dateTB.contextHelp:		ishmail.sortWin.dateFrame.ctx.HLP
+*sortWin*linesFrame.contextHelp:	ishmail.sortWin.linesFrame.ctx.HLP
+*sortWin*linesLabel.contextHelp:	ishmail.sortWin.linesFrame.ctx.HLP
+*sortWin*linesTB.contextHelp:	ishmail.sortWin.linesFrame.ctx.HLP
+*sortWin*bytesFrame.contextHelp:	ishmail.sortWin.bytesFrame.ctx.HLP
+*sortWin*bytesTB.contextHelp:	ishmail.sortWin.bytesFrame.ctx.HLP
+*sortWin*bytesFrame.contextHelp:	ishmail.sortWin.bytesFrame.ctx.HLP
+*sortWin*orderTitle*contextHelp:	ishmail.sortWin.orderKey.ctx.HLP
+*sortWin*keyTitle.contextHelp:		ishmail.sortWin.orderKey.ctx.HLP
+*sortWin*folderFrame.contextHelp:	ishmail.sortWin.folderFrame.ctx.HLP
+*sortWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+
+!---Edit Custom Buttons Window---
+
+*buttonWin.contextHelp:			ishmail.buttonWin.win.HLP
+*buttonWin.mainBoard*helpPB.helpcard:	ishmail.buttonWin.win.HLP
+*buttonWin*availList.contextHelp:	ishmail.buttonWin.availList.ctx.HLP
+*buttonWin*userList.contextHelp:	ishmail.buttonWin.userList.ctx.HLP
+*buttonWin*addAB.contextHelp:		ishmail.buttonWin.addRemAB.ctx.HLP
+*buttonWin*remAB.contextHelp:		ishmail.buttonWin.addRemAB.ctx.HLP
+*buttonWin*gravFrame.contextHelp:	ishmail.buttonWin.gravFrame.ctx.HLP
+*buttonWin*placeTitle.contextHelp:	ishmail.buttonWin.sameSizeTB.ctx.HLP
+*buttonWin*sameSizeTB.contextHelp:	ishmail.buttonWin.sameSizeTB.ctx.HLP
+*buttonWin*sizeRC.contextHelp:		ishmail.buttonWin.sizeRC.ctx.HLP
+*buttonWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+
+*buttonEditWin.contextHelp:		ishmail.buttonEditWin.win.HLP
+*buttonEditWin*helpPB.helpcard:		ishmail.buttonEditWin.win.HLP
+*buttonEditWin*abbrevTF.contextHelp:	ishmail.buttonEditWin.abbrevTF.ctx.HLP
+*buttonEditWin*orderTF.contextHelp:	ishmail.buttonEditWin.orderTF.ctx.HLP
+
+!---Alert Icons Window---
+
+*iconWin.contextHelp:			ishmail.iconWin.win.HLP
+*iconWin*mainBoard.mainWindow*helpPB.helpcard:		ishmail.iconWin.win.HLP
+*iconWin*entryBox.contextHelp:		ishmail.iconWin.win.HLP
+*iconWin*addPB.contextHelp:		ishmail.iconWin.addPB.ctx.HLP
+*iconWin*insertPB.contextHelp:		ishmail.iconWin.insertPB.ctx.HLP
+*iconWin*modifyPB.contextHelp:		ishmail.iconWin.modifyPB.ctx.HLP
+*iconWin*removePB.contextHelp:		ishmail.iconWin.removePB.ctx.HLP
+*iconWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+*iconWin*viewDA.contextHelp:		ishmail.iconWin.viewDA.ctx.HLP
+
+*iconWin.iconWinEntryWin.contextHelp:		ishmail.iconWinEntryWin.win.HLP
+*iconWin.iconWinEntryWin*mainWindow*helpPB.helpcard:	ishmail.iconWinEntryWin.win.HLP
+*iconWin.iconWinEntryWin*keyLabel.contextHelp:	ishmail.iconWinEntryWin.keyForm.ctx.HLP
+*iconWin.iconWinEntryWin*keyTF.contextHelp:	ishmail.iconWinEntryWin.keyForm.ctx.HLP
+*iconWin.iconWinEntryWin*valueLabel.contextHelp:	ishmail.iconWinEntryWin.valueForm.ctx.HLP
+*iconWin.iconWinEntryWin*valueText.contextHelp:	ishmail.iconWinEntryWin.valueForm.ctx.HLP
+*iconWin.iconWinEntryWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+
+!---Alert Commands Window---
+
+*alertWin.contextHelp:			ishmail.alertWin.win.HLP
+*alertWin*helpPB.helpcard:		ishmail.alertWin.win.HLP
+*alertWin*addPB.contextHelp:		ishmail.alertWin.addPB.ctx.HLP
+*alertWin*insertPB.contextHelp:		ishmail.alertWin.insertPB.ctx.HLP
+*alertWin*modifyPB.contextHelp:		ishmail.alertWin.modifyPB.ctx.HLP
+*alertWin*removePB.contextHelp:		ishmail.alertWin.removePB.ctx.HLP
+*alertWin*viewDA.contextHelp:		ishmail.alertWin.viewDA.ctx.HLP
+*alertWin*alertTB.contextHelp:		ishmail.alertWin.alertTB.ctx.HLP
+
+*alertWin.alertWinEntryWin.contextHelp:		ishmail.alertWinEntryWin.ctx.HLP
+*alertWin.alertWinEntryWin*helpPB.helpcard:	ishmail.alertWinEntryWin.ctx.HLP
+*alertWin.alertWinEntryWin*keyLabel.contextHelp:	ishmail.alertWinEntryWin.keyForm.ctx.HLP
+*alertWin.alertWinEntryWin*keyTF.contextHelp:	ishmail.alertWinEntryWin.keyForm.ctx.HLP
+*alertWin.alertWinEntryWin*valueLabel.contextHelp:	ishmail.alertWinEntryWin.valueForm.ctx.HLP
+*alertWin.alertWinEntryWin*valueText*contextHelp:	ishmail.alertWinEntryWin.valueForm.ctx.HLP
+*alertWin.alertWinEntryWin*helpPB.contextHelp:	ishmail.alertWinEntryWin.ctx.HLP
+
+
+!--Aliases Window---
+
+*aliasWin.contextHelp:			ishmail.aliasWin.win.HLP
+*aliasWin*helpPB.helpcard:		ishmail.aliasWin.win.HLP
+*aliasWin*addPB.contextHelp:		ishmail.aliasWin.addPB.ctx.HLP
+*aliasWin*insertPB.contextHelp:		ishmail.aliasWin.insertPB.ctx.HLP
+*aliasWin*modifyPB.contextHelp:		ishmail.aliasWin.modifyPB.ctx.HLP
+*aliasWin*removePB.contextHelp:		ishmail.aliasWin.removePB.ctx.HLP
+*aliasWin*sortTB.contextHelp:		ishmail.aliasWin.sortTB.ctx.HLP
+*aliasWin*viewDA.contextHelp:		ishmail.aliasWin.viewDA.ctx.HLP
+! For some reason these don't inherit the common help cards
+
+*aliasWin.aliasWinEntryWin.contextHelp:		ishmail.aliasWinEntryWin.ctx.HLP
+*aliasWin.aliasWinEntryWin*helpPB.helpcard:	ishmail.aliasWinEntryWin.ctx.HLP
+*aliasWin.aliasWinEntryWin*keyLabel.contextHelp:	ishmail.aliasWinEntryWin.keyForm.ctx.HLP
+*aliasWin.aliasWinEntryWin*keyTF.contextHelp:	ishmail.aliasWinEntryWin.keyForm.ctx.HLP
+*aliasWin.aliasWinEntryWin*valueLabel.contextHelp:	ishmail.aliasWinEntryWin.valueForm.ctx.HLP
+*aliasWin.aliasWinEntryWin*valueText.contextHelp:	ishmail.aliasWinEntryWin.valueForm.ctx.HLP
+*aliasWin.aliasWinEntryWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+
+!---Saving Patterns Window---
+
+*saveRuleWin.contextHelp:		ishmail.saveRuleWin.win.HLP
+*saveRuleWin*mainBoard.mainWindow*helpPB.helpcard:	ishmail.saveRuleWin.win.HLP
+*saveRuleWin*entryBox.contextHelp:	ishmail.saveRuleWin.win.HLP
+*saveRuleWin*addPB.contextHelp:		ishmail.saveRuleWin.addPB.ctx.HLP
+*saveRuleWin*insertPB.contextHelp:	ishmail.saveRuleWin.insertPB.ctx.HLP
+*saveRuleWin*modifyPB.contextHelp:	ishmail.saveRuleWin.modifyPB.ctx.HLP
+*saveRuleWin*removePB.contextHelp:	ishmail.saveRuleWin.removePB.ctx.HLP
+*saveRuleWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+*saveRuleWin*viewDA.contextHelp:	ishmail.saveRuleWin.viewDA.ctx.HLP
+
+*saveRuleWinEntryWin.contextHelp:	ishmail.saveRuleWinEntryWin.win.HLP
+*saveRuleWinEntryWin*helpPB.helpcard:	ishmail.saveRuleWinEntryWin.win.HLP
+*saveRuleWinEntryWin*keyLabel.contextHelp:	ishmail.saveRuleWinEntryWin.keyForm.ctx.HLP
+*saveRuleWinEntryWin*keyTF.contextHelp:	ishmail.saveRuleWinEntryWin.keyForm.ctx.HLP
+*saveRuleWinEntryWin*valueLabel.contextHelp:	ishmail.saveRuleWinEntryWin.valueForm.ctx.HLP
+*saveRuleWinEntryWin*valueText.contextHelp:	ishmail.saveRuleWinEntryWin.valueForm.ctx.HLP
+*saveRuleWinEntryWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+
+!---Automatic Filing Window---
+
+*autoFileWin.contextHelp:		ishmail.autoFileWin.win.HLP
+*autoFileWin*mainBoard.mainWindow*helpPB.helpcard:	ishmail.autoFileWin.win.HLP
+*autoFileWin*entryBox.contextHelp:	ishmail.autoFileWin.win.HLP
+*autoFileWin*addPB.contextHelp:		ishmail.autoFileWin.addPB.ctx.HLP
+*autoFileWin*insertPB.contextHelp:	ishmail.autoFileWin.insertPB.ctx.HLP
+*autoFileWin*modifyPB.contextHelp:	ishmail.autoFileWin.modifyPB.ctx.HLP
+*autoFileWin*removePB.contextHelp:	ishmail.autoFileWin.removePB.ctx.HLP
+*autoFileWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+*autoFileWin*viewDA.contextHelp:	ishmail.autoFileWin.viewDA.ctx.HLP
+*autoFileWin*autoFileTB.contextHelp:	ishmail.autoFileWin.autoFileTB.ctx.HLP
+
+*autoFileWinEntryWin.contextHelp:	ishmail.autoFileWinEntryWin.win.HLP
+*autoFileWinEntryWin*helpPB.helpcard:	ishmail.autoFileWinEntryWin.win.HLP
+*autoFileWinEntryWin*keyLabel.contextHelp:	ishmail.autoFileWinEntryWin.keyForm.ctx.HLP
+*autoFileWinEntryWin*keyTF.contextHelp:	ishmail.autoFileWinEntryWin.keyForm.ctx.HLP
+*autoFileWinEntryWin*valueLabel.contextHelp:	ishmail.autoFileWinEntryWin.valueForm.ctx.HLP
+*autoFileWinEntryWin*valueText.contextHelp:	ishmail.autoFileWinEntryWin.valueForm.ctx.HLP
+*autoFileWinEntryWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+
+!---Confirmation Preferences Window---
+
+*confirmWin.contextHelp:		ishmail.confirmWin.win.HLP
+*confirmWin*helpPB.helpcard:		ishmail.confirmWin.win.HLP
+*confirmWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+
+!---Edit Displayed Header Window---
+
+*headerWin.contextHelp:			ishmail.headerWin.win.HLP
+*headerWin*helpPB.helpcard:		ishmail.headerWin.win.HLP
+*headerWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+*headerWin*choiceFrame.contextHelp:	ishmail.headerWin.choiceFrame.ctx.HLP
+*headerWin*dtoiAB.contextHelp:		ishmail.headerWin.dtoiAB.ctx.HLP
+*headerWin*itodAB.contextHelp:		ishmail.headerWin.dtoiAB.ctx.HLP
+*headerWin*dListFrame.contextHelp:	ishmail.headerWin.dListFrame.ctx.HLP
+*headerWin*dListFrame*addButton.contextHelp:	ishmail.headerWin.dListFrame.addButton.ctx.HLP
+*headerWin*dListFrame*remButton.contextHelp:	ishmail.headerWin.dListFrame.remButton.ctx.HLP
+*headerWin*dListFrame*clrButton.contextHelp:	ishmail.headerWin.dListFrame.clrButton.ctx.HLP
+*headerWin*dListFrame*itemText.contextHelp:	ishmail.headerWin.dListFrame.itemText.ctx.HLP
+*headerWin*iListFrame.contextHelp:		ishmail.headerWin.iListFrame.ctx.HLP
+*headerWin*iListFrame*addButton.contextHelp:	ishmail.headerWin.dListFrame.addButton.ctx.HLP
+*headerWin*iListFrame*remButton.contextHelp:	ishmail.headerWin.dListFrame.remButton.ctx.HLP
+*headerWin*iListFrame*clrButton.contextHelp:	ishmail.headerWin.dListFrame.clrButton.ctx.HLP
+*headerWin*iListFrame*itemText.contextHelp:	ishmail.headerWin.dListFrame.itemText.ctx.HLP
+
+!---Mail Preferences Window---
+
+*prefWin.contextHelp:			ishmail.prefWin.win.HLP
+*prefWin*helpPB.helpcard:		ishmail.prefWin.win.HLP
+*prefWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+*prefWin*inBoxForm.contextHelp:		ishmail.prefWin.inBoxForm.ctx.HLP
+*prefWin*checkForm.contextHelp:		ishmail.prefWin.checkForm.ctx.HLP
+*prefWin*alertTB.contextHelp:		ishmail.prefWin.alertTB.ctx.HLP
+*prefWin*showNewTB.contextHelp:		ishmail.prefWin.showNewTB.ctx.HLP
+*prefWin*windowPosTB.contextHelp:	ishmail.prefWin.windowPosTB.ctx.HLP
+*prefWin*quickHelpTB.contextHelp:	ishmail.prefWin.quickHelpTB.ctx.HLP
+*prefWin*delSaveTB.contextHelp:		ishmail.prefWin.delSaveTB.ctx.HLP
+*prefWin*hideDelTB.contextHelp:		ishmail.prefWin.hideDelTB.ctx.HLP
+*prefWin*newUnreadTB.contextHelp:	ishmail.newUnreadTB.ctx.HLP
+*prefWin*recentForm.contextHelp:	ishmail.recentForm.ctx.HLP
+*prefWin*archiveForm.contextHelp:	ishmail.prefWin.archiveForm.ctx.HLP
+*prefWin*folderTF.contextHelp:		ishmail.prefWin.saveForm.ctx.HLP
+*prefWin*folderLabel.contextHelp:	ishmail.prefWin.saveForm.ctx.HLP
+*prefWin*saveLabel.contextHelp:		ishmail.prefWin.saveForm.ctx.HLP
+*prefWin*saveRC.contextHelp:		ishmail.prefWin.saveRC.ctx.HLP
+*prefWin*autoLabel.contextHelp:		ishmail.prefWin.autoMount.ctx.HLP
+*prefWin*autoTF.contextHelp:		ishmail.prefWin.autoMount.ctx.HLP
+*prefWin*printLabel.contextHelp:	ishmail.prefWin.printForm.ctx.HLP
+*prefWin*printTF.contextHelp:		ishmail.prefWin.printForm.ctx.HLP
+*prefWin*printLabel.contextHelp:	ishmail.prefWin.printForm.ctx.HLP
+*prefWin*webLabel.contextHelp:		ishmail.prefWin.webBrowser.ctx.HLP
+*prefWin*webTF.contextHelp:		ishmail.prefWin.webBrowser.ctx.HLP
+*prefWin*fieldRC.imapTF.contextHelp:	ishmail.imapTF.ctx.HLP
+*prefWin*fieldRC.imapTB.contextHelp:	ishmail.prefWin.imapTB.ctx.HLP
+*prefWin*fieldRC.popTF.contextHelp:	ishmail.prefWin.popTF.ctx.HLP
+*prefWin*fieldRC.popTB.contextHelp:	ishmail.prefWin.popTB.ctx.HLP
+*prefWin*fieldRC.popCmdTF.contextHelp:	ishmail.prefWin.popCmdTF.ctx.HLP
+
+!---Find Message Window---
+
+*boolExpWin.contextHelp:		ishmail.boolExpWin.win.HLP
+! Help Button goes to a card that talks about simple searches 
+! in the Find Message window
+*msgFindWin.boolExpWin*helpPB.helpcard:		ishmail.boolExpWin.win.HLP
+*boolExpWin*lparPB.contextHelp:		ishmail.boolExpWin.parPB.ctx.HLP
+*boolExpWin*rparPB.contextHelp:		ishmail.boolExpWin.parPB.ctx.HLP
+*boolExpWin*andPB.contextHelp:		ishmail.boolExpWin.andPB.ctx.HLP
+*boolExpWin*orPB.contextHelp:		ishmail.boolExpWin.orPB.ctx.HLP
+*boolExpWin*notPB.contextHelp:		ishmail.boolExpWin.notPB.ctx.HLP
+*boolExpWin*numPB.contextHelp:		ishmail.boolExpWin.numPB.ctx.HLP
+*boolExpWin*numOM.contextHelp:		ishmail.boolExpWin.numOM.ctx.HLP
+*boolExpWin*numTF.contextHelp:		ishmail.boolExpWin.numTF.ctx.HLP
+*boolExpWin*statPB.contextHelp:		ishmail.boolExpWin.statPB.ctx.HLP
+*boolExpWin*statOM.contextHelp:		ishmail.boolExpWin.statOM.ctx.HLP
+*boolExpWin*fromPB.contextHelp:		ishmail.boolExpWin.fromPB.ctx.HLP
+*boolExpWin*fromTF.contextHelp:		ishmail.boolExpWin.fromTF.ctx.HLP
+*boolExpWin*toPB.contextHelp:		ishmail.boolExpWin.toPB.ctx.HLP
+*boolExpWin*toTF.contextHelp:		ishmail.boolExpWin.toTF.ctx.HLP
+*boolExpWin*subjPB.contextHelp:		ishmail.boolExpWin.subjPB.ctx.HLP
+*boolExpWin*subjTF.contextHelp:		ishmail.boolExpWin.subjTF.ctx.HLP
+*boolExpWin*headPB.contextHelp:		ishmail.boolExpWin.headPB.ctx.HLP
+*boolExpWin*headTF.contextHelp:		ishmail.boolExpWin.headTF.ctx.HLP
+*boolExpWin*bodyPB.contextHelp:		ishmail.boolExpWin.bodyPB.ctx.HLP
+*boolExpWin*bodyTF.contextHelp:		ishmail.boolExpWin.bodyTF.ctx.HLP
+*boolExpWin*msgPB.contextHelp:		ishmail.boolExpWin.msgPB.ctx.HLP
+*boolExpWin*msgTF.contextHelp:		ishmail.boolExpWin.msgTF.ctx.HLP
+*boolExpWin*datePB.contextHelp:		ishmail.boolExpWin.datePB.ctx.HLP
+*boolExpWin*dateOM.contextHelp:		ishmail.boolExpWin.numOM.ctx.HLP
+*boolExpWin*dateTF.contextHelp:		ishmail.boolExpWin.dateTF.ctx.HLP
+*boolExpWin*linePB.contextHelp:		ishmail.boolExpWin.linePB.ctx.HLP
+*boolExpWin*lineOM.contextHelp:		ishmail.boolExpWin.numOM.ctx.HLP
+*boolExpWin*lineTF.contextHelp:		ishmail.boolExpWin.lineTF.ctx.HLP
+*boolExpWin*bytePB.contextHelp:		ishmail.boolExpWin.bytePB.ctx.HLP
+*boolExpWin*byteOM.contextHelp:		ishmail.boolExpWin.numOM.ctx.HLP
+*boolExpWin*byteTF.contextHelp:		ishmail.boolExpWin.byteTF.ctx.HLP
+*boolExpWin*expWin.contextHelp:		ishmail.boolExpWin.expWin.ctx.HLP
+*boolExpWin*applyPB.contextHelp:	ishmail.boolExpWin.applyPB.ctx.HLP
+*boolExpWin*findPrevPB.contextHelp:	ishmail.boolExpWin.findPrevPB.ctx.HLP
+*boolExpWin*findAllPB.contextHelp:	ishmail.boolExpWin.findAllPB.ctx.HLP
+*boolExpWin*clearPB.contextHelp:	ishmail.boolExpWin.clearPB.ctx.HLP
+*boolExpWin*cancelPB.contextHelp:	ishmail.boolExpWin.cancelPB.ctx.HLP
+*boolExpWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+
+
+!---Small Find Message Window---
+
+*msgFindWin.contextHelp:		ishmail.msgFindWin.win.HLP
+*msgFindWin*helpPB.helpcard:		ishmail.msgFindWin.win.HLP
+*msgFindWin*appForm.contextHelp:	ishmail.msgFindWin.appForm.ctx.HLP
+*msgFindWin*appForm.complexPB.contextHelp:	ishmail.msgFindWin.appForm.complexPB.ctx.HLP
+*msgFindWin*findPB.contextHelp:		ishmail.msgFindWin.findPB.ctx.HLP
+*msgFindWin*findPrevPB.contextHelp:	ishmail.msgFindWin.findPrevPB.ctx.HLP
+*msgFindWin*findAllPB.contextHelp:	ishmail.msgFindWin.findAllPB.ctx.HLP
+*msgFindWin*donePB.contextHelp:		ishmail.msgFindWin.donePB.ctx.HLP
+*msgFindWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+
+
+!---Print Message Window---
+
+*printWin.contextHelp:			ishmail.printWin.win.HLP
+*printWin*helpPB.helpcard:		ishmail.printWin.win.HLP
+*printWin*printQueryWin.helpcard:	ishmail.printQueryWin.win.HLP
+*printWin*getQueryWin.helpcard:		ishmail.printQueryWin.win.HLP
+*printWin*hdrRadio.contextHelp:		ishmail.printWin.hdrRadio.ctx.HLP
+*printWin*ordRadio.contextHelp:		ishmail.printWin.ordRadio.ctx.HLP
+*printWin*printPB.contextHelp:		ishmail.printWin.printPB.ctx.HLP
+*printWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+
+!---common context help for the file selection dialogs:
+!	open folder, save to folder, new folder, save to file, 
+!	save part, include/attach file
+
+*selectForm*listTB.contextHelp:		ishmail.selectForm.listTB.ctx.HLP
+*imapForm.imapTB.contextHelp:		ishmail.imapTB.ctx.HLP
+*imapForm.imapTF.contextHelp:		ishmail.imapTF.ctx.HLP
+*fileList.contextHelp:			ishmail.folderList.ctx.HLP
+*fileForm*filterPB.contextHelp:		ishmail.fileForm.filterPB.ctx.HLP
+*dirForm*dirList.contextHelp:		ishmail.dirForm.dirList.ctx.HLP
+*dirForm*dirNameTF.contextHelp:		ishmail.dirForm.dirNameTF.ctx.HLP
+*dirForm*dirNamePB.contextHelp:		ishmail.dirForm.dirNamePB.ctx.HLP
+*dirNameLabel.contextHelp:		ishmail.dirName.ctx.HLP
+*filterForm.contextHelp:		ishmail.fileFilter.ctx.HLP
+*fileList.contextHelp:			ishmail.fileList.ctx.HLP
+
+!---context help for specific file selection dilogs:
+!	open folder, save to folder, new folder, save to file, 
+!	save part, include/attach file
+
+!---Select Folders Window (from Open option of Folder menu)
+
+*openSelectWin.contextHelp:             ishmail.openSelectWin.win.HLP
+*openSelectWin*helpPB.helpcard:         ishmail.openSelectWin.win.HLP
+*openSelectWin*selectTF.contextHelp:	ishmail.openSelectWin.selectTF.ctx.HLP
+*openSelectWin*activateFrame.contextHelp:	ishmail.openSelectWin.activateFrame.ctx.HLP
+
+!---Create New Folder Window---
+
+*newFolderWin.contextHelp:		ishmail.folderNewPB.ctx.HLP
+*newFolderWin*helpPB.helpcard:		ishmail.folderNewPB.ctx.HLP
+*newFolderWin*selectTF.contextHelp:	ishmail.newFolderWin.win.HLP
+
+!---Save to Folder Window---
+
+*saveFolderWin.contextHelp:		ishmail.saveSelectWin.win.HLP
+*saveFolderWin*helpPB.helpcard:		ishmail.saveSelectWin.win.HLP
+*saveFolderWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+*saveFolderWin*selectTF.contextHelp:	ishmail.saveSelectWin.win.HLP
+*saveFolderWin*okPB.contextHelp:	ishmail.fileWin.okPB.ctx.HLP
+*saveFolderWin*ok2PB.contextHelp:	ishmail.fileWin.okPB.ctx.HLP
+
+!---Save to File Window---
+
+*saveFileWin.contextHelp:		ishmail.saveFileWin.win.HLP
+*saveFileWin*helpPB.helpcard:		ishmail.saveFileWin.win.HLP
+*saveFileWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+*saveFileWin*selectTF.contextHelp:	ishmail.saveFileWin.win.HLP
+*saveFileWin*okPB.contextHelp:		ishmail.fileWin.okPB.ctx.HLP
+*saveFileWin*ok2PB.contextHelp:		ishmail.fileWin.okPB.ctx.HLP
+*saveFileWin*saveHdrFrame.contextHelp:	ishmail.saveHdr.ctx.HLP
+
+!---Save Part to File Window---
+
+*savePartWin.contextHelp:		ishmail.savePartWin.win.HLP
+*savePartWin*helpPB.helpcard:		ishmail.savePartWin.win.HLP
+*savePartWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+*savePartWin*selectTF.contextHelp:	ishmail.savePartWin.win.HLP
+
+!---Attach or Include File Window---
+
+*fileSelectWin.contextHelp:		ishmail.fileSelectWin.win.HLP
+*fileSelectWin*helpPB.helpcard:		ishmail.fileSelectWin.win.HLP
+*fileSelectWin*helpPB.contextHelp:	ishmail.common.helpPB.ctx.HLP
+*fileSelectWin*selectTF.contextHelp:	ishmail.fileSelectWin.selectTF.HLP
+
+!---Pass Message to Filter Window---
+
+*pipeWin.contextHelp:			ishmail.pipeWin.win.HLP
+*pipeWin*helpPB.helpcard:		ishmail.pipeWin.win.HLP
+*pipeWin*hdrFrame.contextHelp:		ishmail.pipeWin.hdrFrame.ctx.HLP
+*pipeWin*ordFrame.contextHelp:		ishmail.pipeWin.ordFrame.ctx.HLP
+*pipeWin*cmdForm.contextHelp:		ishmail.pipeWin.cmdForm.ctx.HLP
+*pipeWin*pipePB.contextHelp:		ishmail.pipeWin.pipePB.ctx.HLP
+*pipeWin*helpPB.contextHelp:		ishmail.common.helpPB.ctx.HLP
+
+!--Edit Fonts Window
+
+*fontWin.helpcard:			ishmail.fontWin.win.HLP
+*fontWin.contextHelp:			ishmail.fontWin.win.HLP
+*fontWin*pbLabel.contextHelp:		ishmail.fontWin.pbLabel.ctx.HLP
+*fontWin*pbTF.contextHelp:		ishmail.fontWin.pbLabel.ctx.HLP
+*fontWin*pbChoosePB.contextHelp:	ishmail.fontWin.pbCB.ctx.HLP
+*fontWin*labelLabel.contextHelp:	ishmail.fontWin.labelLabel.ctx.HLP
+*fontWin*labelTF.contextHelp:		ishmail.fontWin.labelLabel.ctx.HLP
+*fontWin*labelChoosePB.contextHelp:	ishmail.fontWin.pbCB.ctx.HLP
+*fontWin*textLabel.contextHelp:		ishmail.fontWin.textLabel.ctx.HLP
+*fontWin*textTF.contextHelp:		ishmail.fontWin.textLabel.ctx.HLP
+*fontWin*textChoosePB.contextHelp:	ishmail.fontWin.pbCB.ctx.HLP
+*fontWin*listLabel.contextHelp:		ishmail.fontWin.listLabel.ctx.HLP
+*fontWin*listTF.contextHelp:		ishmail.fontWin.listLabel.ctx.HLP
+*fontWin*listChoosePB.contextHelp:	ishmail.fontWin.pbCB.ctx.HLP
+
+!--Font Chooser window
+
+*fontChooser.helpcard:			ishmail.fontChooser.win.HLP
+*fontChooser.contextHelp:		ishmail.fontChooser.win.HLP
+*fontChooser*nameFrame.contextHelp:	ishmail.fontChooser.nameFrame.ctx.HLP
+*fontChooser*sampFrame.contextHelp:	ishmail.fontChooser.sampFrame.ctx.HLP
+*fontChooser*propFrame.contextHelp:	ishmail.fontChooser.propFrame.ctx.HLP
+*fontChooser*sizeFrame.contextHelp:	ishmail.fontChooser.sizeFrame.ctx.HLP
+*fontChooser*familyList.contextHelp:	ishmail.fontChooser.familyList.ctx.HLP
+*fontChooser*styleList.contextHelp:	ishmail.fontChooser.styleList.ctx.HLP
+*fontChooser*sizeList.contextHelp:	ishmail.fontChooser.sizeList.ctx.HLP
+
+!--Folder Preferences Window
+
+*folderPrefWin.helpcard:	ishmail.folderPrefWin.win.HLP
+*folderPrefWin.contextHelp:	ishmail.folderPrefWin.win.HLP
+*folderPrefWin*viewRC.contextHelp:	ishmail.folderPrefWin.viewFrame.ctx.HLP
+*folderPrefWin*sortTB.contextHelp:	ishmail.folderPrefWin.sortTB.ctx.HLP
+*folderPrefWin*statusTB.contextHelp:	ishmail.folderPrefWin.statusTB.ctx.HLP
+*folderPrefWin*typeRC.contextHelp:	ishmail.folderPrefWin.typeFrame.ctx.HLP
+*folderPrefWin*useTypeRC.contextHelp:	ishmail.folderPrefWin.useTypeFrame.ctx.HLP
+*folderPrefWin*confirmTypeTB.contextHelp:	ishmail.folderPrefWin.confirmType.ctx.HLP
+*folderPrefWin*initForm.contextHelp:	ishmail.folderPrefWin.initForm.ctx.HLP
+*folderPrefWin*rememberTB.contextHelp:	ishmail.folderPrefWin.rememberTB.ctx.HLP
+
+!--Composition Window Preferences Window
+
+*sendPrefWin.helpcard:		ishmail.sendPrefWin.win.HLP
+*sendPrefWin.contextHelp:	ishmail.sendPrefWin.win.HLP
+*sendPrefWin*bodyRowTF.contextHelp:	ishmail.sendPrefWin.bodyRowTF.ctx.HLP
+*sendPrefWin*bodyColTF.contextHelp:	ishmail.sendPrefWin.bodyColTF.ctx.HLP
+*sendPrefWin*headRowTF.contextHelp:	ishmail.sendPrefWin.headRowTF.ctx.HLP
+*sendPrefWin*wrapTB.contextHelp:	ishmail.sendPrefWin.wrapTB.ctx.HLP
+*sendPrefWin*showCcTB.contextHelp:	ishmail.sendPrefWin.showTB.ctx.HLP
+*sendPrefWin*showBccTB.contextHelp:	ishmail.sendPrefWin.showTB.ctx.HLP
+*sendPrefWin*showFccTB.contextHelp:	ishmail.sendPrefWin.showTB.ctx.HLP
+*sendPrefWin*showOtherTB.contextHelp:	ishmail.sendPrefWin.showTB.ctx.HLP
+*sendPrefWin*showSettingsTB.contextHelp:	ishmail.sendPrefWin.showSettingsTB.ctx.HLP
+*sendPrefWin*emacsTB.contextHelp:	ishmail.sendPrefWin.emacsTB.ctx.HLP
+*sendPrefWin*deleteTB.contextHelp:	ishmail.sendPrefWin.deleteTB.ctx.HLP
+*sendPrefWin*spaceTB.contextHelp:	ishmail.sendPrefWin.spaceTB.ctx.HLP
+*sendPrefWin*maxFieldsFrame.contextHelp:	ishmail.sendPrefWin.maxFields.ctx.HLP
+*sendPrefWin*editorTF.contextHelp:	ishmail.sendPrefWin.editorTF.ctx.HLP
+*sendPrefWin*spellTF.contextHelp:	ishmail.sendPrefWin.spellTF.ctx.HLP
+*sendPrefWin*digSignTF.contextHelp:	ishmail.sendPrefWin.encryptSign.ctx.HLP
+*sendPrefWin*encryptTF.contextHelp:	ishmail.sendPrefWin.encryptSign.ctx.HLP
+*sendPrefWin*encryptSignTF.contextHelp:	ishmail.sendPrefWin.encryptSign.ctx.HLP
+*sendPrefWin*mimeDigSignTF.contextHelp:	ishmail.sendPrefWin.encryptSign.ctx.HLP
+*sendPrefWin*mimeEncryptTF.contextHelp:	ishmail.sendPrefWin.encryptSign.ctx.HLP
+*sendPrefWin*mimeEncryptSignTF.contextHelp:	ishmail.sendPrefWin.encryptSign.ctx.HLP
+*sendPrefWin*autoSaveTB.contextHelp:	ishmail.sendPrefWin.autoSaveTB.ctx.HLP
+*sendPrefWin*autoSaveRateTF.contextHelp:	ishmail.sendPrefWin.autoSaveRateTF.ctx.HLP
+*sendPrefWin*autoSaveDirTF.contextHelp:	ishmail.sendPrefWin.autoSaveDirTF.ctx.HLP
+
+!--Mail Preferences Window
+
+*mailPrefWin.helpcard:			ishmail.mailPrefWin.win.HLP
+*mailPrefWin.contextHelp:		ishmail.mailPrefWin.win.HLP
+*mailPrefWin*fromHeadTF.contextHelp:	ishmail.mailPrefWin.fromHeadTF.ctx.HLP
+*mailPrefWin*mailTypeFrame.contextHelp:	ishmail.mailPrefWin.mailTypeFrame.ctx.HLP
+*mailPrefWin*textTypeFrame.contextHelp:	ishmail.mailPrefWin.textTypeFrame.ctx.HLP
+*mailPrefWin*charForm.contextHelp:	ishmail.mailPrefWin.charForm.ctx.HLP
+*mailPrefWin*charCB.contextHelp:	ishmail.mailPrefWin.charCB.ctx.HLP
+*mailPrefWin*bodyEncFrame.contextHelp:	ishmail.mailPrefWin.bodyEncFrame.ctx.HLP
+*mailPrefWin*bodyEncLabel.contextHelp:	ishmail.mailPrefWin.bodyEncFrame.ctx.HLP
+*mailPrefWin*headEncFrame.contextHelp:	ishmail.mailPrefWin.headEncFrame.ctx.HLP
+*mailPrefWin*headEncLabel.contextHelp:	ishmail.mailPrefWin.headEncFrame.ctx.HLP
+*mailPrefWin*fccLabel.contextHelp:	ishmail.mailPrefWin.fccFrame.ctx.HLP
+*mailPrefWin*fccFrame.contextHelp:	ishmail.mailPrefWin.fccFrame.ctx.HLP
+*mailPrefWin*confirmAddrTB.contextHelp:	ishmail.mailPrefWin.confirmAddr.ctx.HLP
+*mailPrefWin*confirmAddrText.contextHelp:	ishmail.mailPrefWin.confirmAddrText.ctx.HLP
+*mailPrefWin*otherHeadLabel.contextHelp:	ishmail.mailPrefWin.otherHeadText.ctx.HLP
+*mailPrefWin*otherHeadText.contextHelp:	ishmail.mailPrefWin.otherHeadText.ctx.HLP
+*mailPrefWin*sendmailTF.contextHelp:	ishmail.mailPrefWin.sendmailTF.ctx.HLP
+*mailPrefWin*sendmailLabel.contextHelp:	ishmail.mailPrefWin.sendmailTF.ctx.HLP
+*mailPrefWin*deadTB.contextHelp:	ishmail.mailPrefWin.deadTB.ctx.HLP
+*mailPrefWin*deadTF.contextHelp:	ishmail.mailPrefWin.deadTB.ctx.HLP
+*mailPrefWin*splitTB.contextHelp:	ishmail.mailPrefWin.splitTB.ctx.HLP
+*mailPrefWin*splitLabel.contextHelp:	ishmail.mailPrefWin.splitTB.ctx.HLP
+*mailPrefWin*splitTF.contextHelp:	ishmail.mailPrefWin.splitTF.ctx.HLP
+*mailPrefWin*checkAddrTB.contextHelp:	ishmail.mailPrefWin.checkAddrTB.ctx.HLP
+
+!--Reply/Forward Preferences Window
+
+*replyPrefWin.helpcard:			ishmail.replyPrefWin.win.HLP
+*replyPrefWin.contextHelp:		ishmail.replyPrefWin.win.HLP
+*replyPrefWin*removeMeTB.contextHelp:	ishmail.replyPrefWin.removeMeTB.ctx.HLP
+*replyPrefWin*numberTB.contextHelp:	ishmail.replyPrefWin.numberTB.ctx.HLP
+*replyPrefWin*stripTB.contextHelp:	ishmail.replyPrefWin.stripTB.ctx.HLP
+*replyPrefWin*indentTF.contextHelp:	ishmail.replyPrefWin.indentForm.ctx.HLP
+*replyPrefWin*indentLabel.contextHelp:	ishmail.replyPrefWin.indentForm.ctx.HLP
+*replyPrefWin*attribText.contextHelp:	ishmail.replyPrefWin.attribForm.ctx.HLP
+*replyPrefWin*attribLabel.contextHelp:	ishmail.replyPrefWin.attribForm.ctx.HLP
+*replyPrefWin*begForwardText.contextHelp:	ishmail.replyPrefWin.begForwardForm.ctx.HLP
+*replyPrefWin*begForwardLabel.contextHelp:	ishmail.replyPprefWin.begForwardForm.ctx.HLP
+*replyPrefWin*endForwardText.contextHelp:	ishmail.replyPrefWin.endForwardForm.ctx.HLP
+*replyPrefWin*endForwardLabel.contextHelp:	ishmail.replyPrefWin.endForwardForm.ctx.HLP
+*replyPrefWin*forwardHeadFrame.contextHelp:	ishmail.replyPrefWin.forwardHeadFrame.ctx.HLP
+
+!--Signature Preferences Window
+
+*sigPrefWin.helpcard:			ishmail.sigPrefWin.win.HLP
+*sigPrefWin.contextHelp:		ishmail.sigPrefWin.win.HLP
+*sigPrefWin*enableSigTB.contextHelp:	ishmail.sigPrefWin.enableSigTB.ctx.HLP
+*sigPrefWin*sigPrefixTB.contextHelp:	ishmail.sigPrefWin.sigPrefixTB.ctx.HLP
+*sigPrefWin*typeFrame.contextHelp:	ishmail.sigPrefWin.typeFrame.ctx.HLP
+*sigPrefWin*fieldRC.contextHelp:	ishmail.sigPrefWin.fieldRC.ctx.HLP
+
+!--Read Window Preferences Window
+
+*readPrefWin.helpcard:		ishmail.readPrefWin.win.HLP
+*readPrefWin.contextHelp:	ishmail.readPrefWin.win.HLP
+*readPrefWin*colTF.contextHelp:	ishmail.readPrefWin.colTF.ctx.HLP
+*readPrefWin*headRowTF.contextHelp:	ishmail.readPrefWin.headRowTF.ctx.HLP
+*readPrefWin*bodyRowTF.contextHelp:	ishmail.readPrefWin.bodyRowTF.ctx.HLP
+*readPrefWin*viewFrame.contextHelp:	ishmail.readPrefWin.viewFrame.ctx.HLP
+*readPrefWin*wrapTB.contextHelp:	ishmail.readPrefWin.wrapTB.ctx.HLP
+*readPrefWin*decryptTF.contextHelp:	ishmail.readPrefWin.decryptTF.ctx.HLP
+*readPrefWin*authTF.contextHelp:	ishmail.readPrefWin.authTF.ctx.HLP
+*readPrefWin*webTF.contextHelp:		ishmail.readPrefWin.webTF.ctx.HLP
+
+!--License Request Window
+
+*noLicenseWin.helpcard:		ishmail.noLicenseWin.win.HLP
+
+!--Modal dialogs for which a help card is overkill
+
+*confirmDeleteWin*Help.sensitive:	False
+*saveToFileQueryWin*Help.sensitive:	False
+*saveQueryWin*Help.sensitive:		False
+*okToCreateWin*Help.sensitive:		False
+*resolveNameWin*Help.sensitive:		False
+*folderTypeWin*Help.sensitive:		False
+*overwriteQueryWin*Help.sensitive:	False
+*applyQueryWin*Help.sensitive:		False
+*applyFileWin*Help.sensitive:		False
+*printQueryWin*Help.sensitive:		False
+*getQueryWin*Help.sensitive:		False
+*noMailcapWin*Help.sensitive:		False
+*includeMsgWin*Help.sensitive:		False
+*clearWin*Help.sensitive:		False
+*lockQueryWin*Help.sensitive:		False
+*badFolderWin*Help.sensitive:		False
+*loginWin*helpPB.sensitive:		False

@@ -1,0 +1,69 @@
+/*
+ *  PDictC.clas -- class definition for PDictC
+ *
+ *   This type of dictionary stores only pointers to the keys and values
+ *   ODictC.h stores the actual keys and values
+ */
+
+/* Create CLASS as a derived class of ENTLIST */
+
+class CLASS : public ENTLIST {
+
+public:
+
+   inline CLASS() {}
+   virtual inline ~CLASS() {}
+
+/* Build this dictionary from another */
+   inline CLASS(const CLASS& d) { *this = d; }
+
+/* Copy one dictionary to another */
+
+   CLASS&	operator=(const CLASS& d);
+
+/* Lookup up entries */
+
+   int			indexOf (const KEYTYPE& key) const;
+   int			indexOf (const KEYTYPE* kp) const;
+   int			indexOf (const ENTRY& entry) const;
+   int			indexOf (const ENTRY* entry) const;
+   int			includes(const KEYTYPE& key) const;
+   int			includes(const KEYTYPE* kp) const;
+   int			includes(const ENTRY& entry) const;
+   int			includes(const ENTRY* entry) const;
+
+   VALTYPE		*definitionOf(const KEYTYPE& key) const;
+   VALTYPE		*definitionOf(const KEYTYPE* kp) const;
+
+   VALTYPE		*valOf(const int index) const;
+
+   KEYTYPE      	 *keyOf(const int index) const;
+
+   ENTRY		*entryOf(const KEYTYPE& key) const;
+   ENTRY		*entryOf(const KEYTYPE* kp) const;
+
+/* Changing entries */
+
+   ENTRY		*add   (const KEYTYPE* kp, const VALTYPE* vp);
+   ENTRY		*modify(const KEYTYPE& key, const VALTYPE* vp);
+   ENTRY		*modify(const KEYTYPE* kp, const VALTYPE* vp);
+   ENTRY		*modify(unsigned index, const VALTYPE* vp);
+
+/* Deleting entries */
+
+   void			remove(const KEYTYPE& key);
+   void			remove(const KEYTYPE* kp);
+   void			remove(unsigned index);
+   void			remove(const ENTRY& entry);
+   void			remove(const ENTRY* entry);
+
+/* Printing */
+
+   void			printOn(ostream& strm=cout) const;
+};
+
+inline ostream& operator<<(ostream& strm, const CLASS& d)
+{
+   d.printOn(strm);
+   return(strm);
+}

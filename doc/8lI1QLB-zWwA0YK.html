@@ -1,0 +1,357 @@
+<HTML>
+<HEAD>
+ <TITLE>Aliases Option</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="8lI1QLB-zWwA0YK">Aliases Option</H1>
+
+<P>
+Mail
+aliases are alternative names defined for an e-mail address
+or a group of addresses. This window lets you add, change, or
+delete aliases.
+<P>
+The system's mail transport program (e.g.
+<CITE>sendmail</CITE>) may have a
+list of aliases. Only your system administrator can change this
+list.
+<P>
+In addition to the system alias list, you can define aliases within
+<CITE>Ishmail</CITE>. These aliases are expanded to their full value before
+being sent to the mail transport program.
+<P>
+When composing a message you can use aliases in the
+<B>To:</B>,
+<B>Cc:</B>, or
+<B>Bcc:</B> fields. See
+<A HREF="wmbqgMBPQJ9X3cS.html#0nbqgMBPQJ9X3cS">Header Fields</A> in the chapter entitled
+<A HREF="Vj-1vFBulI9X3cS.html">Composition
+Window</A> for more information.
+<P>
+Aliases are saved in files.
+<CITE>Ishmail</CITE> looks for alias files in three
+places:
+<DL>
+<DT>Your private alias file
+<DD>This file, typically in your home directory, contains
+aliases you define. You can modify this file with an editor
+program, or use the
+<A HREF="8lI1QLB-zWwA0YK.html#HlI1QLB-zWwA0YK">Aliases Window</A> in
+<CITE>Ishmail</CITE> to make
+your changes, as described below.
+
+<P>
+
+<P>
+<HR>
+<B>TIP:</B>
+<BR>The default name of this file is
+<CODE>$HOME/.mailrc</CODE>.
+Alias definitions must conform to syntax
+defined by the
+<CITE>sendmail</CITE> program. (The easiest
+way to ensure this is to make changes only
+with the
+<B>Aliases</B> window rather than with an
+editor program). You can override the file
+name by adding a
+<CODE>mailrcFile</CODE> resource to your
+<CODE>$HOME/.ishmailrc</CODE> file.
+<HR>
+</P>
+<DT>Group alias file
+<DD>Aliases shared by a group of
+<CITE>Ishmail</CITE> users can be placed
+in a common file. If your have permission to write to this
+file you can use the
+<B>Alias</B> window to modify it. The format
+of the aliases is the same as your private alias file.
+<P>
+
+<P>
+<HR>
+<B>TIP:</B>
+<BR>The default name of this file is
+<CODE>mailrc</CODE>, and the
+default location is the
+<CODE>lib</CODE> subdirectory of where
+the
+<CITE>Ishmail</CITE> program was installed. You can
+override the file name by adding a
+<CODE>groupMailrcFile</CODE> resource to your
+<CODE>$HOME/.ishmailrc</CODE>
+file.
+<HR>
+</P>
+<DT>Other alias files
+<DD><CITE>Ishmail</CITE> can understand alias definitions from other mail
+programs, such as
+<CITE>Z-Mail</CITE>,
+<CITE>elm</CITE>, and
+<CITE>pine</CITE>. You cannot,
+however, modify these files with the
+<B>Alias</B> window. If you
+have other alias files, you can tell
+<CITE>Ishmail</CITE> to use them by
+adding an
+<CODE>otherAliasFiles</CODE> resource to your
+<CODE>$HOME/.ishmailrc</CODE>
+file. For example:
+<P>
+
+<PRE>
+otherAliasFiles: $HOME/.zmailrc $HOME/.elm/aliases.text
+</PRE>
+</DL>
+<P>
+<H4>Figure: <A NAME="HlI1QLB-zWwA0YK">Aliases Window</H4>
+
+<IMG SRC="8lI1QLB-zWwA0YK.extobj.1.gif">
+
+<H2><A NAME="G3J1QLB-zWwA0YK">Specifying Aliases</H2>
+
+<P>
+The
+<B>Aliases</B> window shows the list of defined aliases in a box,
+containing two text fields
+- the
+<B>Alias</B> name field and the name
+field's associated
+<B>Address</B> field. (If no aliases have been defined,
+both fields are empty).
+
+<P>
+Each alias can have one or more addresses associated with it.
+The address can be an e-mail address, another alias, or it can be
+a comma-separated list of aliases or addresses.
+<P>
+Click the
+<CODE>Sort Aliases</CODE> button in the upper left corner of the window
+to cause the list to be sorted alphabetically. Otherwise, the list is
+shown in the order that entries were added.
+<P>
+You use the four buttons to the left of the text fields to:
+<UL>
+<LI>Add a new alias.
+<P>
+
+</LI>
+<LI>Insert an alias into the list, above the selected entry.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>This function is not available if you have
+chosen to sort the list. In this case, new
+aliases are always inserted in alphabetical
+order.
+<HR>
+</P>
+</LI>
+<LI>Edit an existing alias.
+<P>
+
+</LI>
+<LI>Delete an existing alias.
+<P>
+
+</LI>
+</UL>
+<P>
+E-mail addresses can have many possible formats. Here are four
+that are commonly used:
+<DL>
+<DT><CODE>name</CODE>
+<DD>This format is valid if
+<CODE>name</CODE> is another user on your
+system, or is an alias known to the mail transport
+program (e.g. a
+<CITE>sendmail</CITE> alias).
+<P>
+
+<DT><CODE>name@host</CODE>
+<DD>This is the format used for Internet addresses (see
+<A HREF="wmbqgMBPQJ9X3cS.html#pzDI2.BsKL9X3cS">Address Formats</A>.) The
+<CODE>name</CODE> specifies a user on the
+<B>host</B>
+system. The
+<CODE>host</CODE> may be a specific system name, or more
+commonly, the name of a
+<I>domain</I> (which is a group of
+related systems). For example:
+<CODE>support@ishmail.com</CODE>.
+
+<P>
+
+<DT><CODE>name@host (Real Name)</CODE>
+<DD>The
+<CODE>(Real Name)</CODE> is known as a comment. It is typically the
+name of a person or organization. This information is
+ignored by the mail transport system, but makes the
+addresses more readable to humans. Comments can
+appear anywhere in the address, not just to the right of
+<CODE>name@host</CODE>.
+<P>
+
+<DT><CODE>Real Name &lt;name@host></CODE>
+<DD>If this form is used, the
+<CODE>Real Name</CODE> must appear on the left
+and the
+<CODE>name@host</CODE> must be enclosed in angle brackets. If
+you edit the
+<CODE>mailrc</CODE> file directly, you will see addresses of
+this form enclosed in double quotes. You do not need to
+use double quotes in the
+<B>Alias Entry</B> window.
+<P>
+
+<P>
+<HR>
+<B>CAUTION:</B>
+<BR>The addresses you define must be either valid
+alias names or valid e-mail addresses, or your
+mail will bounce.
+
+<HR>
+</P>
+<P>
+<HR>
+<B>TIP:</B>
+<BR>The Composition window has a
+<A HREF="VvEI2.BsKL9X3cS.html">Check
+Addresses</A> function which can be used to see if
+an address is valid. See the help card for the
+Composition window for more details.
+<HR>
+</P>
+<P>
+<HR>
+<B>TIP:</B>
+<BR>The best way to create aliases is to cut and
+paste e-mail addresses from actual mail you
+received. Typing mistakes are avoided, and
+you can be confident that the address is valid.
+<HR>
+</P>
+</DL>
+<P>
+When you click the
+<B>New ...</B>,
+<B>Insert ...</B>, or
+<B>Edit ...</B> buttons, the
+<B>Edit Alias</B>
+window appears. It contains text fields in which you can create
+or modify an alias.
+<P>
+<H4>Figure: <A NAME="J3J1QLB-zWwA0YK">Edit Alias Window</H4>
+
+<IMG SRC="8lI1QLB-zWwA0YK.extobj.2.gif">
+<P>
+The
+<CODE>Address:</CODE> field contains one or more addresses or aliases. Use
+commas to separate multiple addresses, or put each address on a
+separate line.
+
+<H3><A NAME="osBd.LBUXXwA0YK">To Create a New Alias:</H3>
+
+<OL>
+<LI>Click the
+<B>New ...</B> button or the
+<B>Insert ...</B> button. The
+<B>Edit Alias</B>
+window appears.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Alias</B>: text field and enter an alias
+name.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Address:</B> text field and enter an
+address, comma-separated address list, or other valid
+alias(es) that will be associated with the alias name you
+just entered in the
+<B>Alias:</B> field.
+<P>
+
+</LI>
+<LI>Click
+<B>Ok</B> or
+<B>Apply</B> in the
+<B>Edit Alias</B> dialog window to add the
+new alias to the
+<B>Alias List</B>.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="9tBd.LBUXXwA0YK">To Edit an
+Alias:</H3>
+
+<OL>
+<LI>Select an alias in the
+<B>Alias List</B>, and click the
+<B>Edit ...</B> button
+or double-click an alias. The
+<B>Edit Alias</B> window appears
+with the alias name and associated address in the text
+fields.
+<P>
+
+</LI>
+<LI>Make your modification(s) in the text fields.
+
+<P>
+
+</LI>
+<LI>Click
+<B>Ok</B> or
+<B>Apply</B> in the
+<B>Edit Alias</B> dialog window to add your
+changes to the
+<B>Alias List</B>.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="PtBd.LBUXXwA0YK">To Delete One or More Aliases:</H3>
+
+<OL>
+<LI>Select the alias(es) you want to remove.
+<P>
+
+</LI>
+<LI>Click the
+<B>Delete</B> button.
+
+<P>
+A pop-up confirmation box prompts you for confirmation
+before completing the operation.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="4AJ1QLB-zWwA0YK">Applying Your Changes</H3>
+
+<P>
+Apply or cancel your changes using the row of buttons across the
+bottom of the window. See
+<A HREF="1j.-uyBk2I9X3cS.html#9eH1QLB-zWwA0YK">Applying Your Changes</A>.
+
+
+<HR>
+Preceding Section: <A HREF="5MI1QLB-zWwA0YK.html">Displayed Headers Option</A><BR>
+Following Section: <A HREF="AAJ1QLB-zWwA0YK.html">Alerts Option</A><BR>
+Parent Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

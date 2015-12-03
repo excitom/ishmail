@@ -1,0 +1,80 @@
+#
+# Mailcap file for Ishmail
+#
+#    You may override these entries or add your own by creating a .mailcap file
+# in your home directory.  Put only the entries you wish to change in your
+# personal .mailcap file.
+#
+
+#
+# Text
+#
+text/plain; Ishmail
+text/richtext; Ishmail; \
+	print="cat %s | rt2ps | lpr"
+text/enriched; Ishmail; \
+	print="cat %s | et2ps | lpr"
+text/x-html; netscape -raise -remote 'openURL(%s)' >>/dev/null 2>&1 || netscape -install '%s'
+text/html; netscape -raise -remote 'openURL(%s)' >>/dev/null 2>&1 || netscape -install '%s'
+
+text/*; Ishmail
+
+#
+# Image
+#
+image/*; showimage %t %s
+
+#
+# Audio
+#
+audio/*; showaudio -
+
+#
+# Video
+#
+video/mpeg; mpeg_play %s
+video/quicktime; xanim +C1 -Cn +Ga0.5 %s
+
+#
+# Application
+#
+application/frame; maker -f %s; \
+	print="fmprint %s"
+application/x-frame; maker -f %s; \
+	print="fmprint %s"
+application/x-framemaker; maker -f %s; \
+	print="fmprint %s"
+application/x-mif; maker -f %s; \
+	print="fmprint %s"
+application/maker; maker -f %s; \
+	print="fmprint %s"
+
+application/mac-binhex40; mcvert %s
+
+application/x-des; xterm -e /bin/sh -c 'cat %s | des -d %{method} -k %{key} | less'
+application/x-program-listing; Ishmail; \
+	print="cat %s | lpr"
+
+#
+# If you have an interactive Postscript interpreter, you should think carefully 
+# before replacing lpr with it in the following line, because PostScript
+# can be an enormous security hole.  It is RELATIVELY harmless
+# when sent to the printer...
+#
+application/postscript; ghostview %s; \
+	print="cat %s | lpr"
+application/x-troff-man; xterm -e /bin/sh -c 'nroff -man %s | more'; \
+	print="nroff -man %s | lpr"
+
+#
+# External
+#
+message/external-body; showextern '%s' '%{access-type}' '%{name}' '%{site}' '%{directory}' '%{mode}' '%{ruser}' '%{rpwd}' '%{server}'
+
+#
+# Encryption
+#
+multipart/encrypted; showpgp "%{boundary}" "%s"; \
+	test=test "%{protocol}" = "application/pgp-encrypted"
+multipart/signed; showpgpsign "%{boundary}" "%s"; \
+	test=test "%{protocol}" = "application/pgp-signature"

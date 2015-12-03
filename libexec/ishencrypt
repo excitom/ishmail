@@ -1,0 +1,205 @@
+#!/bin/sh
+#
+# Description: signs and/or encrypt the input file and moves the pgp .asc
+# output to the output file
+#
+ECHO=echo
+DASHN="-n"
+
+PGP=pgp
+
+MYNAME=`basename $0`
+
+usage()
+{
+   $ECHO ""
+   $ECHO "Usage: $MYNAME -i infile -o outfile [-u uname] [-s] [-e -r recipient-list]"
+   $ECHO "   -s   : sign"
+   $ECHO "   -e   : encrypt (requires recipient-list)"
+   $ECHO "  At least one of -s and -e should be present"
+   $ECHO ""
+   $ECHO "*** Press return to continue ***"
+   read ANS
+}
+
+# defaults
+USER=""
+INPUT=""
+OUTPUT=""
+SIGN=""
+ENCR=""
+RECLIST=""
+MIME=""
+BOUNDARY=""
+
+#
+# Parse arguments
+#
+
+while test X"$1" != X
+do
+    case "$1" in
+    -i)   INPUT=$2;
+          shift 2;;
+    -o)   OUTPUT=$2;
+          shift 2;;
+    -u)   USER=$2;
+          shift 2;;
+    -s)   SIGN="yes";
+          shift;;
+    -e)   ENCR="yes"
+          shift;;
+    -r)   RECLIST=$2;
+          shift 2;;
+    -m)   MIME="yes";
+          shift;;
+    -b)   BOUNDARY=$2;
+          MIME="yes"
+          shift 2;;
+    -h)   usage;
+          exit 0;;
+     *)   usage;
+          exit 1;;
+    esac
+done
+
+#
+# Check argument validity
+#
+
+# Make sure an action is selected
+if test -z "$SIGN" -a -z "$ENCR"
+then
+    usage
+    exit 1
+fi
+
+# I/O should be defined
+if test -z "$INPUT" -o -z "$OUTPUT"
+then
+    usage
+    exit 1
+fi
+
+# For encryption, recepient list must be present
+if test -n "$ENCR" -a -z "$RECLIST"
+then
+    usage
+    exit 1
+fi
+
+
+# Check for sign-only
+if test -n "$SIGN" -a -z "$ENCR"
+then
+    SIGNONLY="yes"
+fi
+
+
+# Construct the PGP command line
+ARGS="-fat"
+if test -n "$USER"
+then
+    ARGS="${ARGS} -u '$USER'"
+fi
+
+if test -n "$SIGN"
+then
+    ARGS="${ARGS} -s"
+fi
+
+if test -n "$ENCR"
+then
+    ARGS="${ARGS} -e"
+fi
+
+# Produce detached signature for MIME messages
+if test -n "$MIME" -a -n "$SIGNONLY"
+then
+    ARGS="${ARGS} -b"
+fi
+
+COMMAND="$PGP $ARGS $RECLIST < $INPUT >> $OUTPUT"
+
+
+# Remove the output file(s)
+rm -f $OUTPUT $OUTPUT.head
+
+if test -n "$MIME"
+then
+    # Headers - in a separate file
+    if test -n "$SIGNONLY"
+    then
+        $ECHO "Content-Type: multipart/signed;" >> $OUTPUT.head
+        $ECHO " boundary=\"$BOUNDARY\";" >> $OUTPUT.head
+        $ECHO " micalg=pgp-md5;" >> $OUTPUT.head
+        $ECHO " protocol=\"application/pgp-signature\"" >> $OUTPUT.head
+    else
+        $ECHO "Content-Type: multipart/encrypted;" >> $OUTPUT.head
+        $ECHO " boundary=\"$BOUNDARY\";" >> $OUTPUT.head
+        $ECHO " protocol=\"application/pgp-encrypted\"" >> $OUTPUT.head
+    fi
+
+    # MIME boundary
+    $ECHO "--$BOUNDARY" >> $OUTPUT
+    
+    # Output the body first if needed
+    if test -n "$SIGNONLY"
+    then
+        cat $INPUT >> $OUTPUT
+        $ECHO "" >> $OUTPUT
+        $ECHO "--$BOUNDARY" >> $OUTPUT
+        $ECHO "Content-Type: application/pgp-signature" >> $OUTPUT
+    else
+        $ECHO "Content-Type: application/pgp-encrypted" >> $OUTPUT
+        $ECHO "" >> $OUTPUT
+        $ECHO "--$BOUNDARY" >> $OUTPUT
+        $ECHO "Content-Type: application/octet-stream" >> $OUTPUT
+    fi
+
+    # Prepare for the PGP part
+    $ECHO "" >> $OUTPUT
+fi
+
+#
+# Run the command and save the status
+#
+$ECHO "Executing $COMMAND"
+eval $COMMAND
+PGPSTAT=$?
+
+if test -n "$MIME"
+then
+    # Final MIME boundary
+    $ECHO "" >> $OUTPUT
+    $ECHO "--$BOUNDARY--" >> $OUTPUT
+fi
+
+#
+# Allow user to confirm
+#
+if test $PGPSTAT -eq 0
+then
+    DEFANS="Y"
+else
+    DEFANS="N"
+fi
+
+ANS=""
+
+$ECHO ""
+$ECHO ""
+
+while [ "$ANS" != "y" -a "$ANS" != "Y" -a "$ANS" != "n" -a "$ANS" != "N" ]
+do
+   $ECHO $DASHN "Was the PGP operation successful (y/n)[$DEFANS]?"
+   read ANS
+   test -z "$ANS" && ANS=$DEFANS
+done
+
+if [ "$ANS" = "n" -o "$ANS" = "N" ]
+then
+   test $PGPSTAT -eq 0 && PGPSTAT=1
+fi
+
+exit $PGPSTAT

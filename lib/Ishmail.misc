@@ -1,0 +1,1113 @@
+!
+! Misc
+!
+Ishmail*multiClickTime:				300
+Ishmail*cursorPositionVisible:			False
+Ishmail*XmSelectionBox*cursorPositionVisible:	True
+Ishmail*FileChooserC.filter:			[^.]*
+Ishmail*webBrowserCommand:\
+netscape -raise -remote 'openURL(%s)' >>/dev/null 2>&1 || netscape -install '%s'
+!Ishmail*webBrowserCommand:			Mosaic %s
+Ishmail*noMailPixmap:				system-closed-no-mail.xpm
+Ishmail*newMailPixmap:				system-open-new-mail.xpm
+Ishmail*unreadMailPixmap:			system-open-no-mail.xpm
+Ishmail*readMailPixmap:				system-open-no-mail.xpm
+Ishmail*sendmailCmd:				/usr/sbin/sendmail
+!Ishmail*sendmailCmd:				/usr/lib/sendmail
+!Ishmail*editCommand:				emacs $FILE
+Ishmail*editCommand:	xterm -title "Edit Composition" -e vi $FILE
+!Ishmail*editCommand:	xterm -title "Edit Composition" -tm "flush ^z" -e vi $FILE
+Ishmail*spellCommand:	xterm -title "Check Spelling" -e ispell $FILE
+Ishmail*xMailerTagLine:<http://ishmail.sourceforge.net>
+Ishmail*XtDebug:				True
+Ishmail*useRowCol:				False
+Ishmail*allowShellResize:			True
+Ishmail*tearOffModel:				Tear_Off_Enabled
+Ishmail*menuBar*tearOffModel:			Tear_Off_Enabled
+! DnD icons for Motif-1.2
+Ishmail*validDropIcon.pixmap:			thumb_up.xbm
+Ishmail*validDropIcon.mask:			thumb_up.mask
+Ishmail*validDropIcon.width:			17
+Ishmail*validDropIcon.height:			26
+Ishmail*validDropIcon.offsetX:			-17
+Ishmail*validDropIcon.offsetY:			-26
+Ishmail*invalidDropIcon.pixmap:			thumb_down.xbm
+Ishmail*invalidDropIcon.mask:			thumb_down.mask
+Ishmail*invalidDropIcon.width:			17
+Ishmail*invalidDropIcon.height:			26
+Ishmail*invalidDropIcon.offsetX:		-17
+Ishmail*invalidDropIcon.offsetY:		-26
+Ishmail*noDropIcon.pixmap:			thumb_down.xbm
+Ishmail*noDropIcon.mask:			thumb_down.mask
+Ishmail*noDropIcon.width:			17
+Ishmail*noDropIcon.height:			26
+Ishmail*noDropIcon.offsetX:			-17
+Ishmail*noDropIcon.offsetY:			-26
+! DnD icons for Motif-2.*
+Ishmail*validDropIcon2.pixmap:			thumb_up2.xbm
+Ishmail*validDropIcon2.mask:			thumb_up.mask
+Ishmail*validDropIcon2.width:			17
+Ishmail*validDropIcon2.height:			26
+Ishmail*validDropIcon2.offsetX:			-17
+Ishmail*validDropIcon2.offsetY:			-26
+Ishmail*invalidDropIcon2.pixmap:		thumb_down2.xbm
+Ishmail*invalidDropIcon2.mask:			thumb_down.mask
+Ishmail*invalidDropIcon2.width:			17
+Ishmail*invalidDropIcon2.height:		26
+Ishmail*invalidDropIcon2.offsetX:		-17
+Ishmail*invalidDropIcon2.offsetY:		-26
+Ishmail*noDropIcon2.pixmap:			thumb_down2.xbm
+Ishmail*noDropIcon2.mask:			thumb_down.mask
+Ishmail*noDropIcon2.width:			17
+Ishmail*noDropIcon2.height:			26
+Ishmail*noDropIcon2.offsetX:			-17
+Ishmail*noDropIcon2.offsetY:			-26
+
+Ishmail*HighlightThickness:			1
+Ishmail*HighlightOnEnter:			true
+Ishmail*XmLabel.highlightOnEnter:		false
+Ishmail*XmLabel.highlightThickness:		0
+Ishmail*XmLabelGadget.highlightOnEnter:		false
+Ishmail*XmLabelGadget.highlightThickness:	0
+
+Ishmail*XmList.listSpacing:			2
+Ishmail*XmList.listMarginHeight:		2
+Ishmail*XmList.listMarginWidth:			10
+
+Ishmail*XmFrame.marginWidth:			5
+Ishmail*XmFrame.marginHeight:			5
+Ishmail*XmFrame.shadowType:			Shadow_Etched_In
+
+Ishmail*XmSeparator.margin:			10
+Ishmail*XmSeparator.separatorType:		Shadow_Etched_Out
+Ishmail*XmSeparatorGadget.margin:		10
+Ishmail*XmSeparatorGadget.separatorType:	Shadow_Etched_Out
+
+Ishmail*XmLabel.marginWidth:					3
+Ishmail*XmLabel.marginHeight:					3
+Ishmail*XmLabelGadget.marginWidth:				3
+Ishmail*XmLabelGadget.marginHeight:				3
+Ishmail*XmPushButton.marginWidth:				3
+Ishmail*XmPushButton.marginHeight:				3
+Ishmail*XmPushButtonGadget.marginWidth:				3
+Ishmail*XmPushButtonGadget.marginHeight:			3
+Ishmail*XmToggleButton.marginWidth:				3
+Ishmail*XmToggleButton.marginHeight:				3
+Ishmail*XmToggleButtonGadget.marginWidth:			3
+Ishmail*XmToggleButtonGadget.marginHeight:			3
+Ishmail*quickPD.packing:					Pack_Column
+Ishmail*quickPB.marginHeight:					0
+Ishmail*quickCB.marginHeight:					0
+Ishmail*quickCB.mappingDelay:					500
+Ishmail*ButtonBox.uniformRows:					True
+Ishmail*ButtonBox.uniformCols:					True
+
+!-------------------------- App Window Defaults ------------------------------
+
+Ishmail*mainWindow*msgWin*labelString:			_
+Ishmail*mainWindow*infoMsg.borderWidth:	 		1
+Ishmail*appFrame.shadowType:			 	Shadow_Out
+Ishmail*appFrame.marginWidth:				1
+Ishmail*appFrame.marginHeight:				1
+Ishmail*appForm.bottomOffset:				1
+Ishmail*appForm.rightOffset:				0
+Ishmail*appForm.leftOffset:				0
+Ishmail*appForm.topOffset:				0
+Ishmail*buttonSep.bottomOffset:				1
+Ishmail*buttonSep.topOffset:				0
+Ishmail*buttonSep.leftOffset:				0
+Ishmail*buttonSep.rightOffset:				0
+Ishmail*buttonRC.XmPushButton.marginWidth:		5
+Ishmail*buttonRC.XmPushButton.marginHeight:		5
+Ishmail*buttonRC.packing:				Pack_Column
+
+!-------------------------- Help Window Defaults -----------------------------
+
+Ishmail*helpWin*helpForm.resizePolicy:			Resize_Grow
+Ishmail*helpWin.defaultButtonType:			Dialog_None
+Ishmail*helpWin*XmTextField.cursorPositionVisible:	True
+Ishmail*helpWin.showOliasButton:			False
+Ishmail*helpWin.enrichedText:				True
+Ishmail*helpWin*richText.rowCount:			20
+Ishmail*helpWin*richText.columnCount:			65
+Ishmail*helpWin*richText.editable:			False
+
+!--------------------- Help Resource Editor Defaults ------------------------
+
+Ishmail*helpResWin*shortNameLabel.alignment:		Alignment_End
+Ishmail*helpResWin*longNameLabel.alignment:		Alignment_End
+Ishmail*helpResWin*quickForm*XmLabel.alignment:		Alignment_End
+Ishmail*helpResWin*contForm*XmLabel.alignment:		Alignment_End
+Ishmail*helpResWin*helpForm*XmLabel.alignment:		Alignment_End
+Ishmail*helpResWin*cmdRC.packing:			Pack_Column
+
+Ishmail*helpResWin*shortNameTF.columns:			64
+Ishmail*helpResWin*longNameTF.columns:			64
+Ishmail*helpResWin*widgetBox.topOffset:			5
+Ishmail*helpResWin*widgetBox*scrollForm.width:		600
+Ishmail*helpResWin*widgetBox*scrollForm.height:		400
+Ishmail*helpResWin*widgetBox*hasLargeIconView:		False
+Ishmail*helpResWin*widgetBox*hasSmallIconView:		False
+Ishmail*helpResWin*widgetBox*visibleItemCount:		20
+Ishmail*helpResWin*widgetBox*showPixmaps:		True
+
+!------------------------ Error Dialog Defaults ------------------------------
+
+Ishmail*msgDialog*errText.rowCount:			5
+Ishmail*msgDialog*errText.columnCount:			65
+Ishmail*msgDialog*errText.editable:			False
+Ishmail*msgDialog*errText.resizeWidth:			False
+Ishmail*msgDialog*errText.timerOk:			False
+Ishmail*useErrorText:					True
+
+!-------------------------- Task Box Defaults --------------------------------
+
+Ishmail*taskTitle.marginHeight:				0
+Ishmail*taskTitle.highlightThickness:			0
+Ishmail*taskTitle.alignment:				Alignment_Beginning
+Ishmail*taskFrame.marginWidth:				10
+Ishmail*taskFrame.marginHeight:				10
+Ishmail*taskFrame.shadowType:				Shadow_Etched_Out
+Ishmail*taskButtonFrame.marginWidth:			0
+Ishmail*taskButtonFrame.marginHeight:			0
+Ishmail*taskButtonBox.packing:				Pack_Column
+
+!-------------------------- View Box Defaults --------------------------------
+
+Ishmail*VBoxC.popupEnabled:			False
+Ishmail*VBoxC.builtInDialogs:			False
+Ishmail*VBoxC.vJoyStickInc:			100
+Ishmail*VBoxC.hJoyStickInc:			100
+Ishmail*joyStickWidth:				4
+Ishmail*viewFrame.shadowType:			Shadow_In
+Ishmail*viewFrame.shadowThickness:		2
+Ishmail*viewFrame.rightOffset:			2
+Ishmail*viewFrame.bottomOffset:			2
+Ishmail*viewFrame.marginWidth:			1
+Ishmail*viewFrame.marginHeight:			1
+Ishmail*viewDA.horizSpacing:			1
+Ishmail*viewDA.vertSpacing:			1
+Ishmail*viewDA.labelOffset:			5
+Ishmail*viewDA.labelSpacing:			5
+Ishmail*viewDA.highlightThickness:		1
+Ishmail*viewDA.separatorThickness:		1
+Ishmail*viewDA.itemMarginWidth:			5
+Ishmail*viewDA.itemMarginHeight:		1
+
+!-------------------------- List Box Defaults --------------------------------
+
+Ishmail*itemListSW.bottomOffset:		5
+Ishmail*itemText.bottomOffset:			5
+
+!------------------------- File Chooser Defaults -----------------------------
+
+Ishmail*FileChooserC*selectText.rows:				1
+Ishmail*FileChooserC*selectText.columns:			40
+Ishmail*FileChooserC*selectTF.columns:				40
+Ishmail*FileChooserC*dirList.visibleItemCount:			10
+Ishmail*FileChooserC*fileList.visibleItemCount:			10
+Ishmail*FileChooserC*fileList.selectionPolicy:			Single_Select
+Ishmail*FileChooserC*dirFileSep.leftOffset:			5
+Ishmail*FileChooserC*fileForm.leftOffset:			5
+Ishmail*FileChooserC*buttonRC.defaultButtonShadowThickness:	1
+
+Ishmail*FileChooserC*selectText.translations:			#override \
+       Ctrl <Key>Return:	FileChooserWinC-activate()
+
+!------------------------ BoolExpWin Defaults -------------------------
+
+Ishmail*boolExpWin*expWin.topOffset:				5
+Ishmail*boolExpWin*buttonRC.defaultButtonShadowThickness:	2
+
+Ishmail*boolExpWin*expDA.marginWidth:				0
+Ishmail*boolExpWin*expDA.marginHeight:				0
+Ishmail*boolExpWin*expDA.cursor.blinkRate:			2
+
+!------------------------ SortWin Defaults -------------------------
+
+Ishmail*sortWin*keyRC*XmFrame.shadowType:		Shadow_In
+Ishmail*sortWin*keyRC*XmFrame.marginWidth:		0
+Ishmail*sortWin*keyRC*XmFrame.marginHeight:		0
+Ishmail*sortWin*keyRC*XmRowColumn.marginWidth:		0
+Ishmail*sortWin*keyRC*XmRowColumn.marginHeight:		0
+Ishmail*sortWin*threadLabel.labelString:		0
+Ishmail*sortWin*numberLabel.labelString:		0
+Ishmail*sortWin*statusLabel.labelString:		0
+Ishmail*sortWin*senderLabel.labelString:		0
+Ishmail*sortWin*toLabel.labelString:			0
+Ishmail*sortWin*subjectLabel.labelString:		0
+Ishmail*sortWin*dateLabel.labelString:			0
+Ishmail*sortWin*linesLabel.labelString:			0
+Ishmail*sortWin*bytesLabel.labelString:			0
+Ishmail*sortWin*threadFrame.shadowThickness:		0
+Ishmail*sortWin*threadFrame.shadowType:			Shadow_Etched_Out
+Ishmail*sortWin*threadSortFrame.shadowType:		Shadow_In
+Ishmail*sortWin*threadSortFrame.marginWidth:		0
+Ishmail*sortWin*threadSortFrame.marginHeight:		0
+Ishmail*sortWin*threadRadio.marginWidth:		0
+Ishmail*sortWin*threadRadio.marginHeight:		0
+Ishmail*sortWin*folderFrame.shadowType:			Shadow_In
+Ishmail*sortWin*folderFrame.marginWidth:		0
+Ishmail*sortWin*folderFrame.marginHeight:		0
+Ishmail*sortWin*folderRadio.marginWidth:		0
+Ishmail*sortWin*folderRadio.marginHeight:		0
+Ishmail*sortWin*buttonRC.defaultButtonShadowThickness:	2
+
+!--------------------------------------------------------------------------
+
+Ishmail*applyFrame.shadowType:			Shadow_In
+Ishmail*applyFrame.marginWidth:			0
+Ishmail*applyFrame.marginHeight:		0
+Ishmail*applyRadio.marginWidth:			0
+Ishmail*applyRadio.marginHeight:		0
+
+!----------------------------- MIME RichText Defaults -------------------
+
+Ishmail*MimeRichTextC.indentWidth:		30
+Ishmail*MimeRichTextC.lineSpacing:		1
+Ishmail*MimeRichTextC.editable:			False
+Ishmail*MimeRichTextC.forceFixed:		True
+Ishmail*richTextFrame.shadowType:		Shadow_In
+Ishmail*richSearchWin*stringTF.columns:		32
+Ishmail*richSearchWin*buttonRC.marginWidth:	0
+Ishmail*richSearchWin*buttonRC.marginHeight:	0
+
+!Ishmail*dragInitiatorProtocolStyle:		Drag_Preregister
+!Ishmail*dragReceiverProtocolStyle:		Drag_Preregister
+Ishmail*dragInitiatorProtocolStyle:		Drag_Prefer_Receiver
+Ishmail*dragReceiverProtocolStyle:		Drag_Dynamic
+
+Ishmail*pushPinTB.indicatorOn:			False
+Ishmail*pushPinTB.labelType:			Pixmap
+Ishmail*pushPinTB.labelPixmap:			pin-out.xbm
+Ishmail*pushPinTB.selectPixmap:			pin-in.xbm
+Ishmail*pushPinTB.marginWidth:			0
+Ishmail*pushPinTB.marginHeight:			0
+
+Ishmail*menuBar.marginWidth:			0
+Ishmail*menuBar.marginHeight:			0
+Ishmail*quickHelp.marginWidth:			1
+Ishmail*quickHelp.marginHeight:			1
+Ishmail*infoMsg.marginWidth:			1
+Ishmail*infoMsg.marginHeight:			1
+Ishmail*XmDrawingArea.marginWidth:		1
+Ishmail*XmDrawingArea.marginHeight:		1
+Ishmail*RowCol.marginWidth:			1
+Ishmail*RowCol.marginHeight:			1
+Ishmail*RowCol.uniformCols:			False
+Ishmail*RowCol.rowAlignment:			Alignment_Center
+Ishmail*RowCol.rowHeightAdjust:			None
+Ishmail*RowCol.allowRowResize:			False
+!Ishmail*taskVBox*scrollForm.resizePolicy:	Resize_None
+
+!Ishmail*XmText.translations:		#override \
+!       Ctrl <Key>U:		delete-to-start-of-line()	\n\
+!       Ctrl <Key>W:		delete-previous-word()		\n\
+!       Ctrl <Key>H:		delete-previous-character()
+!Ishmail*XmTextField.translations:	#override \
+!       Ctrl <Key>U:		delete-to-start-of-line()	\n\
+!       Ctrl <Key>W:		delete-previous-word()		\n\
+!       Ctrl <Key>H:		delete-previous-character()
+
+!----------------------------- MIME Icon Defaults -------------------
+
+Ishmail*MimeIconC.pixmap:			text.xpm
+Ishmail*application/octet-stream.pixmap:	binary.xpm
+Ishmail*application/postscript.pixmap:		postscript.xpm
+Ishmail*audio/basic.pixmap:			audio.xpm
+Ishmail*message/rfc822.pixmap:			new_mail.xpm
+Ishmail*text/enriched.pixmap:			richtext.xpm
+Ishmail*text/plain.pixmap:			text.xpm
+Ishmail*text/richtext.pixmap:			richtext.xpm
+Ishmail*image/gif.pixmap:			gif.xpm
+Ishmail*image/jpeg.pixmap:			jpg.xpm
+Ishmail*video/mpeg.pixmap:			mpg.xpm
+Ishmail*multipart/mixed.pixmap:			box.xpm
+Ishmail*multipart/digest.pixmap:		box.xpm
+Ishmail*multipart/alternative.pixmap:		box.xpm
+Ishmail*multipart/parallel.pixmap:		box.xpm
+
+!-----------------------------------------------------------------------
+
+Ishmail*queryPopServerWin*popTypeFrame.shadowType:	Shadow_In
+Ishmail*queryPopServerWin*popTypeFrame.marginWidth:	0
+Ishmail*queryPopServerWin*popTypeFrame.marginHeight:	0
+Ishmail*queryPopServerWin*popTypeRadio.marginWidth:	0
+Ishmail*queryPopServerWin*popTypeRadio.marginHeight:	0
+Ishmail*queryPopServerWin*popTypeRadio.orientation:	Horizontal
+Ishmail*queryPopServerWin*popType3TB.set:		True
+Ishmail*queryPopServerWin*popCmdTF.columns:		64
+
+Ishmail*queryFolderTypeWin*typeFrame.shadowType:	Shadow_In
+Ishmail*queryFolderTypeWin*typeFrame.marginWidth:	0
+Ishmail*queryFolderTypeWin*typeFrame.marginHeight:	0
+Ishmail*queryFolderTypeWin*typeRC.marginWidth:		0
+Ishmail*queryFolderTypeWin*typeRC.marginHeight:		0
+Ishmail*queryFolderTypeWin*typeRC.orientation:		Horizontal
+
+Ishmail*defFolderTypeWin*typeFrame.shadowType:		Shadow_In
+Ishmail*defFolderTypeWin*typeFrame.marginWidth:		0
+Ishmail*defFolderTypeWin*typeFrame.marginHeight:	0
+Ishmail*defFolderTypeWin*typeRC.marginWidth:		0
+Ishmail*defFolderTypeWin*typeRC.marginHeight:		0
+Ishmail*defFolderTypeWin*typeRC.orientation:		Vertical
+
+!-----------------------------------------------------------------------
+
+Ishmail*mainShell.mainWindow*panedWin.allowResize:			True
+Ishmail*mainShell.mainWindow*folderOpenQuickCB.mappingDelay:		500
+Ishmail*mainShell.mainWindow*msgSaveQuickCB.mappingDelay:		500
+Ishmail*mainShell.mainWindow*msgPUSaveQuickCB.mappingDelay:		500
+
+Ishmail*mainShell.mainWindow*folderBox.hasSmallIconView:		True
+Ishmail*mainShell.mainWindow*folderBox.leftOffset:			0
+Ishmail*mainShell.mainWindow*folderBox.rightOffset:			0
+Ishmail*mainShell.mainWindow*folderBox*scrollForm.width:		600
+Ishmail*mainShell.mainWindow*folderBox*scrollForm.height:		73
+Ishmail*mainShell.mainWindow*folderBox*viewDA.horizSpacing:		2
+Ishmail*mainShell.mainWindow*folderBox*viewDA.vertSpacing:		0
+Ishmail*mainShell.mainWindow*folderBox*viewDA.labelOffset:		1
+Ishmail*mainShell.mainWindow*folderBox*viewDA.labelSpacing:		1
+Ishmail*mainShell.mainWindow*folderBox*viewDA.itemMarginWidth:		0
+Ishmail*mainShell.mainWindow*folderBox*viewDA.itemMarginHeight:		0
+
+Ishmail*mainShell.mainWindow*msgBox.marginWidth:			1
+Ishmail*mainShell.mainWindow*msgBox.marginHeight:			1
+Ishmail*mainShell.mainWindow*msgBox*scrollForm.width:			600
+Ishmail*mainShell.mainWindow*msgBox*scrollForm.height:			400
+Ishmail*mainShell.mainWindow*msgBox*viewDA.vertSpacing:			0
+Ishmail*mainShell.mainWindow*msgBox*viewDA.separatorThickness:		1
+Ishmail*mainShell.mainWindow*msgBox*viewDA.itemMarginWidth:		5
+Ishmail*mainShell.mainWindow*msgBox*viewDA.itemMarginHeight:		0
+Ishmail*mainShell.mainWindow*msgBox*viewDA.showPixmaps:			True
+Ishmail*mainShell.mainWindow*msgBox*hasLargeIconView:			False
+Ishmail*mainShell.mainWindow*msgBox*hasSmallIconView:			False
+
+
+Ishmail*mainButtons:	msgReadPB msgFindPB msgComposePB \
+		msgReplyIncPB msgForwardPB msgSaveToPB msgDelPB
+Ishmail*mainShell*msgBox.buttonGravity:			West
+
+Ishmail*msgNumColumnPos:	0
+Ishmail*msgNumColumnMinWidth:	0
+Ishmail*msgNumColumnMaxWidth:	0
+Ishmail*msgNumColumnVisible:	True
+
+Ishmail*msgStatColumnPos:	1
+Ishmail*msgStatColumnMinWidth:	0
+Ishmail*msgStatColumnMaxWidth:	0
+Ishmail*msgStatColumnVisible:	True
+
+Ishmail*fromColumnPos:		2
+Ishmail*fromColumnMinWidth:	0
+Ishmail*fromColumnMaxWidth:	32
+Ishmail*fromColumnVisible:	True
+
+Ishmail*subjectColumnPos:	3
+Ishmail*subjectColumnMinWidth:	0
+Ishmail*subjectColumnMaxWidth:	48
+Ishmail*subjectColumnVisible:	True
+
+Ishmail*dateColumnPos:		4
+Ishmail*dateColumnMinWidth:	0
+Ishmail*dateColumnMaxWidth:	32
+Ishmail*dateColumnVisible:	True
+
+Ishmail*linesColumnPos:		5
+Ishmail*linesColumnMinWidth:	0
+Ishmail*linesColumnMaxWidth:	0
+Ishmail*linesColumnVisible:	False
+
+Ishmail*bytesColumnPos:		6
+Ishmail*bytesColumnMinWidth:	0
+Ishmail*bytesColumnMaxWidth:	0
+Ishmail*bytesColumnVisible:	True
+
+!-----------------------------------------------------------------------
+
+Ishmail*msgFindWin*patternTF.rightOffset:		5
+Ishmail*msgFindWin*patternTF.columns:			32
+Ishmail*msgFindWin*searchHeadTB.set:			True
+
+Ishmail*msgFindWin.boolExpWin*termRC.marginWidth:			3
+Ishmail*msgFindWin.boolExpWin*termRC.marginHeight:			0
+Ishmail*msgFindWin.boolExpWin*termRC.colSpacing:			3
+Ishmail*msgFindWin.boolExpWin*termRC.rowSpacing:			1
+Ishmail*msgFindWin.boolExpWin*termRC*XmRowColumn.marginWidth:		0
+Ishmail*msgFindWin.boolExpWin*termRC*XmRowColumn.marginHeight:		0
+Ishmail*msgFindWin.boolExpWin*termRC*XmLabelGadget.marginWidth:		0
+Ishmail*msgFindWin.boolExpWin*termRC*XmLabelGadget.marginHeight:	0
+Ishmail*msgFindWin.boolExpWin*termRC*XmLabelGadget.width:		0
+Ishmail*msgFindWin.boolExpWin*termRC*XmLabelGadget.height:		0
+!Ishmail*boolExpWin*fromTF.leftOffset:					15
+!Ishmail*boolExpWin*subjTF.leftOffset:					15
+
+Ishmail*complexImapFindWin*XmToggleButton.alignment:	Alignment_Beginning
+
+!---------------------------------------------------------------------------
+
+Ishmail*prefWin*appFrame.marginWidth:				1
+Ishmail*prefWin*appFrame.marginHeight:				1
+Ishmail*prefWin*checkRC.uniformRows:				False
+Ishmail*prefWin*fieldRC*XmLabel.alignment:			Alignment_End
+Ishmail*prefWin*fieldRC*XmToggleButton.alignment:		Alignment_End
+Ishmail*prefWin*fieldRC.uniformRows:				True
+Ishmail*prefWin*inBoxTF.columns:				25
+Ishmail*prefWin*checkTF.columns:				4
+Ishmail*prefWin*recentTF.columns:				4
+Ishmail*prefWin*buttonRC.defaultButtonShadowThickness:		1
+Ishmail*prefWin*saveFrame.topOffset:				2
+Ishmail*prefWin*saveFrame.shadowType:				Shadow_In
+Ishmail*prefWin*saveFrame.marginWidth:				0
+Ishmail*prefWin*saveFrame.marginHeight:				0
+Ishmail*prefWin*saveRC.marginWidth:				0
+Ishmail*prefWin*saveRC.marginHeight:				0
+Ishmail*prefWin*saveRC.spacing:					0
+Ishmail*prefWin*saveRC.entryAlignment:				Alignment_Center
+Ishmail*prefWin*savePatternOM.marginWidth:			0
+Ishmail*prefWin*savePatternOM.marginHeight:			0
+Ishmail*prefWin*savePatternOM.spacing:				0
+Ishmail*prefWin*editPatternPB.alignment:			Alignment_Center
+
+!---------------------------------------------------------------------------
+
+Ishmail*saveRuleWin*scrollForm.width:				500
+Ishmail*saveRuleWin*scrollForm.height:				300
+Ishmail*saveRuleWin*viewDA.showPixmaps:				False
+Ishmail*saveRuleWin*valueForm.topOffset:			5
+Ishmail*saveRuleWinEntryWin*valueText.editable:			True
+Ishmail*saveRuleWinEntryWin*valueText.rowCount:			1
+Ishmail*saveRuleWinEntryWin*valueText.columnCount:		64
+Ishmail*saveRuleWinEntryWin*keyTF.columns:			64
+
+!---------------------------------------------------------------------------
+
+Ishmail*autoFileWin*scrollForm.width:				500
+Ishmail*autoFileWin*scrollForm.height:				300
+Ishmail*autoFileWin*viewDA.showPixmaps:				False
+Ishmail*autoFileWin*valueForm.topOffset:			5
+Ishmail*autoFileWinEntryWin*valueText.editable:			True
+Ishmail*autoFileWinEntryWin*valueText.rowCount:			1
+Ishmail*autoFileWinEntryWin*valueText.columnCount:		64
+Ishmail*autoFileWinEntryWin*keyTF.columns:			64
+
+!---------------------------------------------------------------------------
+
+Ishmail*readWin.mainWindow*msgPanes.?.allowResize:		True
+Ishmail*readWin.mainWindow*msgHeadText*richTextVSB.alwaysOn:	True
+Ishmail*readWin.mainWindow*msgBodyText*richTextVSB.alwaysOn:	True
+Ishmail*readWin.mainWindow*fileSaveQuickCB.mappingDelay:	500
+Ishmail*readWin.mainWindow*mimePULabel.alignment:	Alignment_Beginning
+Ishmail*readWin.mainWindow*viewFrame.shadowType:		Shadow_In
+Ishmail*readWin.mainWindow*viewFrame.marginWidth:		0
+Ishmail*readWin.mainWindow*viewFrame.marginHeight:		0
+Ishmail*readWin.mainWindow*viewRadio.marginWidth:		0
+Ishmail*readWin.mainWindow*viewRadio.marginHeight:		0
+Ishmail*readWin*retrievalPixmaps: truck-0.xpm truck-1.xpm truck-2.xpm \
+truck-3.xpm truck-4.xpm truck-5.xpm truck-6.xpm truck-7.xpm truck-8.xpm
+Ishmail*readWin*displayPixmaps: heart-0.xpm heart-0.xpm heart-0.xpm heart-1.xpm
+
+Ishmail*readingButtons:	fileNextPB filePrevPB fileSaveToPB filePrintPB \
+			fileDeletePB fileClosePB
+Ishmail*readWin.mainWindow*buttonRC.numColumns:			1
+Ishmail*readWin.readWin*buttonRC.numColumns:			1
+Ishmail*readWin.buttonGravity:					South
+
+!---------------------------------------------------------------------------
+
+Ishmail*readPrefWin*wrapTB.leftOffset:			10
+Ishmail*readPrefWin*colTF.columns:			4
+Ishmail*readPrefWin*headRowTF.columns:			4
+Ishmail*readPrefWin*bodyRowTF.columns:			4
+Ishmail*readPrefWin*decryptTF.columns:			40
+Ishmail*readPrefWin*authTF.columns:			40
+Ishmail*readPrefWin*webTF.columns:			40
+Ishmail*readPrefWin*viewFrame.shadowType:		Shadow_In
+Ishmail*readPrefWin*viewFrame.marginWidth:		0
+Ishmail*readPrefWin*viewFrame.marginHeight:		0
+Ishmail*readPrefWin*viewRadio.marginWidth:		0
+Ishmail*readPrefWin*viewRadio.marginHeight:		0
+
+!---------------------------------------------------------------------------
+
+!Ishmail*mimeSaveWin*decodeFrame.shadowType:		Shadow_In
+!Ishmail*mimeSaveWin*decodeFrame.topOffset:		5
+!Ishmail*mimeSaveWin*decodeFrame.marginWidth:		0
+!Ishmail*mimeSaveWin*decodeFrame.marginHeight:		0
+!Ishmail*mimeSaveWin*decodeRadio.marginWidth:		0
+!Ishmail*mimeSaveWin*decodeRadio.marginHeight:		0
+
+!-----------------------------------------------------------------------
+
+Ishmail*sendWin*subjectText.rowCount:			1
+Ishmail*sendWin*subjectText.singleLine:			True
+Ishmail*sendWin*subjectText.tabTraverses:		True
+Ishmail*sendWin*toText.rowCount:			1
+Ishmail*sendWin*toText.tabTraverses:			True
+Ishmail*sendWin*ccText.rowCount:			1
+Ishmail*sendWin*ccText.tabTraverses:			True
+Ishmail*sendWin*bccText.rowCount:			1
+Ishmail*sendWin*bccText.tabTraverses:			True
+Ishmail*sendWin*fccText.rowCount:			1
+Ishmail*sendWin*fccText.tabTraverses:			True
+Ishmail*sendWin*otherText.rowCount:			1
+Ishmail*sendWin*otherText.tabTraverses:			True
+Ishmail*sendWin*headForm*XmLabel.alignment:		Alignment_End
+Ishmail*sendWin*headForm*XmPushButton.marginHeight:	0
+Ishmail*sendWin*headRC*XmLabel.alignment:		Alignment_End
+Ishmail*sendWin*headRC*XmPushButton.marginHeight:	0
+Ishmail*sendWin*headRC.uniformRows:			True
+Ishmail*sendWin*headRC.rowHeightAdjust:			Adjust_Attach
+Ishmail*sendWin*headRC.allowRowResize:			True
+Ishmail*sendWin*headerText.rowCount:			10
+Ishmail*sendWin*mimePULabel.alignment:			Alignment_Beginning
+Ishmail*sendWin*bodyText.editable:			True
+Ishmail*sendWin*bodyText*richTextVSB.alwaysOn:		True
+Ishmail*sendWin*optRC*marginHeight:			0
+Ishmail*sendWin*typeFrame.shadowType:			Shadow_In
+Ishmail*sendWin*typeFrame.marginWidth:			0
+Ishmail*sendWin*typeFrame.marginHeight:			0
+Ishmail*sendWin*typeRadio.marginWidth:			0
+Ishmail*sendWin*typeRadio.marginHeight:			0
+Ishmail*sendWin*editPixmaps: edit-0.xpm edit-1.xpm edit-2.xpm edit-3.xpm \
+edit-4.xpm edit-5.xpm edit-6.xpm edit-7.xpm
+
+Ishmail*sendWin*iconLabel.marginWidth:			0
+Ishmail*sendWin*iconLabel.marginHeight:			0
+Ishmail*sendWin*verFrame.marginWidth:			0
+Ishmail*sendWin*verFrame.marginHeight:			0
+Ishmail*sendWin*verFrame.shadowThickness:		0
+
+Ishmail*sendWin*enhanceTB.set:					True
+Ishmail*sendWin*mediumTB.set:					True
+Ishmail*sendWin*headerRC*XmFrame.shadowType:			Shadow_In
+Ishmail*sendWin*headerRC*XmFrame.marginWidth:			0
+Ishmail*sendWin*headerRC*XmFrame.marginHeight:			0
+Ishmail*sendWin*headerRC*XmFrame.XmRowColumn.marginWidth:	0
+Ishmail*sendWin*headerRC*XmFrame.XmRowColumn.marginHeight:	0
+
+Ishmail*sendWin*toText*translations:		#override \
+~Shift Ctrl <Key>A:		SendWinC-expand-aliases()	\n\
+ Shift Ctrl <Key>A:		SendWinC-expand-selection()
+Ishmail*sendWin*ccText*translations:		#override \
+~Shift Ctrl <Key>A:		SendWinC-expand-aliases()	\n\
+ Shift Ctrl <Key>A:		SendWinC-expand-selection()
+Ishmail*sendWin*bccText*translations:		#override \
+~Shift Ctrl <Key>A:		SendWinC-expand-aliases()	\n\
+ Shift Ctrl <Key>A:		SendWinC-expand-selection()
+
+Ishmail*composeButtons:	editBoldPB editItalicPB editUnderPB editBiggerPB \
+			editSmallerPB editCenterPB fileIncFilePB fileEditPB \
+			fileSpellPB fileSendPB fileClearPB fileClosePB
+Ishmail*sendWin.mainWindow*buttonRC.numColumns:			2
+Ishmail*sendWin.buttonGravity:					South
+
+Ishmail*sendWin*includeTextWin*selectText.rows:			4
+Ishmail*sendWin*includeTextWin*fileList.selectionPolicy:	Extended_Select
+
+Ishmail*sendWin*includeTextWin*includeFrame.shadowType:		Shadow_In
+Ishmail*sendWin*includeTextWin*includeFrame.marginWidth:	0
+Ishmail*sendWin*includeTextWin*includeFrame.marginHeight:	0
+Ishmail*sendWin*includeTextWin*includeRadio.marginWidth:	0
+Ishmail*sendWin*includeTextWin*includeRadio.marginHeight:	0
+
+Ishmail*sendWin*includeFileWin*selectText.rows:			4
+Ishmail*sendWin*includeFileWin*fileList.selectionPolicy:	Extended_Select
+
+Ishmail*sendWin*fileDataWin*appPanes.?.allowResize:			True
+Ishmail*sendWin*fileDataWin*typeAppPD*marginWidth:			1
+Ishmail*sendWin*fileDataWin*typeAppPD*marginHeight:			1
+Ishmail*sendWin*fileDataWin*typeAudioPD*marginWidth:			1
+Ishmail*sendWin*fileDataWin*typeAudioPD*marginHeight:			1
+Ishmail*sendWin*fileDataWin*typeImagePD*marginWidth:			1
+Ishmail*sendWin*fileDataWin*typeImagePD*marginHeight:			1
+Ishmail*sendWin*fileDataWin*typeMsgPD*marginWidth:			1
+Ishmail*sendWin*fileDataWin*typeMsgPD*marginHeight:			1
+Ishmail*sendWin*fileDataWin*typeMultPD*marginWidth:			1
+Ishmail*sendWin*fileDataWin*typeMultPD*marginHeight:			1
+Ishmail*sendWin*fileDataWin*typeTextPD*marginWidth:			1
+Ishmail*sendWin*fileDataWin*typeTextPD*marginHeight:			1
+Ishmail*sendWin*fileDataWin*typeVideoPD*marginWidth:			1
+Ishmail*sendWin*fileDataWin*typeVideoPD*marginHeight:			1
+Ishmail*sendWin*fileDataWin*typeLabel.alignment:	Alignment_Beginning
+Ishmail*sendWin*fileDataWin*appPanes*XmFrame.shadowType:	Shadow_In
+Ishmail*sendWin*fileDataWin*appPanes*XmFrame.marginWidth:		0
+Ishmail*sendWin*fileDataWin*appPanes*XmFrame.marginHeight:		0
+Ishmail*sendWin*fileDataWin*appPanes*XmFrame.XmRowColumn.marginWidth:	0
+Ishmail*sendWin*fileDataWin*appPanes*XmFrame.XmRowColumn.marginHeight:	0
+Ishmail*sendWin*fileDataWin*appPanes*XmFrame.XmRowColumn.XmToggleButton.marginWidth:  1
+Ishmail*sendWin*fileDataWin*appPanes*XmFrame.XmRowColumn.XmToggleButton.marginHeight: 1
+Ishmail*sendWin*fileDataWin*includeRadio.numColumns:			2
+Ishmail*sendWin*fileDataWin*otherText.rows:				2
+Ishmail*sendWin*fileDataWin*bodyText.rows:				2
+
+!---------------------------------------------------------------------------
+
+Ishmail*sendWin*includeMsgWin*typeFrame.shadowType:		Shadow_In
+Ishmail*sendWin*includeMsgWin*typeFrame.marginWidth:		0
+Ishmail*sendWin*includeMsgWin*typeFrame.marginHeight:		0
+Ishmail*sendWin*includeMsgWin*typeRadio.marginWidth:		0
+Ishmail*sendWin*includeMsgWin*typeRadio.marginHeight:		0
+Ishmail*sendWin*includeMsgWin*typeRadio.orientation:		Vertical
+Ishmail*sendWin*includeMsgWin*typeRadio.packing:		Pack_Tight
+
+!---------------------------------------------------------------------------
+
+Ishmail*sendPrefWin*appFrame.marginWidth:			1
+Ishmail*sendPrefWin*appFrame.marginHeight:			1
+Ishmail*sendPrefWin*sizeRC.colAlignment:			Alignment_Beginning
+Ishmail*sendPrefWin*sizeRC.colWidthAdjust:			Adjust_Equal
+Ishmail*sendPrefWin*sizeRC.allowColResize:			False
+Ishmail*sendPrefWin*sizeRC.uniformCols:				False
+Ishmail*sendPrefWin*sizeRC*XmTextField.columns:			4
+Ishmail*sendPrefWin*XmToggleButton.alignment:			Alignment_Beginning
+Ishmail*sendPrefWin*maxFieldsFrame.shadowType:			Shadow_In
+Ishmail*sendPrefWin*maxFieldsFrame.marginWidth:			0
+Ishmail*sendPrefWin*maxFieldsFrame.marginHeight:		0
+Ishmail*sendPrefWin*maxFieldsRadio.marginWidth:			0
+Ishmail*sendPrefWin*maxFieldsRadio.marginHeight:		0
+Ishmail*sendPrefWin*maxFieldsRadio.XmToggleButton.marginHeight:	0
+Ishmail*sendPrefWin*fieldRC.topOffset:				2
+Ishmail*sendPrefWin*fieldRC*XmLabel.alignment:			Alignment_End
+Ishmail*sendPrefWin*fieldRC*autoSaveTB.alignment:		Alignment_End
+Ishmail*sendPrefWin*fieldRC*XmTextField.columns:		40
+Ishmail*sendPrefWin*fieldRC*autoSaveRateTF.columns:		4
+Ishmail*sendPrefWin*fieldRC*autoSaveDirTF.columns:		20
+
+!---------------------------------------------------------------------------
+
+Ishmail*mailPrefWin*appFrame.marginWidth:			1
+Ishmail*mailPrefWin*appFrame.marginHeight:			1
+Ishmail*mailPrefWin*mailTypeFrame.shadowType:			Shadow_In
+Ishmail*mailPrefWin*mailTypeFrame.marginWidth:			0
+Ishmail*mailPrefWin*mailTypeFrame.marginHeight:			0
+Ishmail*mailPrefWin*mailTypeRadio.orientation:			Horizontal
+Ishmail*mailPrefWin*mailTypeRadio*marginWidth:			0
+Ishmail*mailPrefWin*mailTypeRadio*marginHeight:			0
+Ishmail*mailPrefWin*textTypeFrame.shadowType:			Shadow_In
+Ishmail*mailPrefWin*textTypeFrame.marginWidth:			0
+Ishmail*mailPrefWin*textTypeFrame.marginHeight:			0
+Ishmail*mailPrefWin*textTypeRadio.orientation:			Horizontal
+Ishmail*mailPrefWin*textTypeRadio*marginWidth:			0
+Ishmail*mailPrefWin*textTypeRadio*marginHeight:			0
+Ishmail*mailPrefWin*charMB.marginWidth:				0
+Ishmail*mailPrefWin*charMB.marginHeight:			0
+Ishmail*mailPrefWin*bodyEncFrame.shadowType:			Shadow_In
+Ishmail*mailPrefWin*bodyEncFrame.marginWidth:			0
+Ishmail*mailPrefWin*bodyEncFrame.marginHeight:			0
+Ishmail*mailPrefWin*bodyEncRadio*marginWidth:			1
+Ishmail*mailPrefWin*bodyEncRadio*marginHeight:			1
+Ishmail*mailPrefWin*headEncFrame.shadowType:			Shadow_In
+Ishmail*mailPrefWin*headEncFrame.marginWidth:			0
+Ishmail*mailPrefWin*headEncFrame.marginHeight:			0
+Ishmail*mailPrefWin*headEncRadio*marginWidth:			1
+Ishmail*mailPrefWin*headEncRadio*marginHeight:			1
+Ishmail*mailPrefWin*fccFrame.topOffset:				2
+Ishmail*mailPrefWin*fccFrame.shadowType:			Shadow_In
+Ishmail*mailPrefWin*fccFrame.marginWidth:			0
+Ishmail*mailPrefWin*fccFrame.marginHeight:			0
+Ishmail*mailPrefWin*fccRC.marginWidth:				0
+Ishmail*mailPrefWin*fccRC.marginHeight:				0
+Ishmail*mailPrefWin*fccPatternOM.marginWidth:			0
+Ishmail*mailPrefWin*fccPatternOM.marginHeight:			0
+Ishmail*mailPrefWin*fccPatternOM.spacing:			0
+Ishmail*mailPrefWin*fieldRC.topOffset:				2
+Ishmail*mailPrefWin*fieldRC*XmLabel.alignment:			Alignment_End
+Ishmail*mailPrefWin*fieldRC*XmToggleButton.alignment:		Alignment_End
+Ishmail*mailPrefWin*fieldRC.uniformRows:			True
+Ishmail*mailPrefWin*confirmAddrText.rows:			2
+Ishmail*mailPrefWin*confirmAddrText.editable:			True
+Ishmail*mailPrefWin*otherHeadText.rows:				2
+Ishmail*mailPrefWin*otherHeadText.editable:			True
+Ishmail*mailPrefWin*checkRC.uniformRows:			False
+Ishmail*mailPrefWin*checkRC*XmToggleButton.alignment:	Alignment_Beginning
+Ishmail*mailPrefWin*splitTF.columns:				8
+Ishmail*mailPrefWin*splitForm.topOffset:			5
+
+!---------------------------------------------------------------------------
+
+Ishmail*replyPrefWin*appFrame.marginWidth:			1
+Ishmail*replyPrefWin*appFrame.marginHeight:			1
+Ishmail*replyPrefWin*checkRC.uniformRows:			False
+Ishmail*replyPrefWin*checkRC*XmToggleButton.alignment:	Alignment_Beginning
+Ishmail*replyPrefWin*fieldRC*XmLabel.alignment:			Alignment_End
+Ishmail*replyPrefWin*fieldRC*XmToggleButton.alignment:		Alignment_End
+Ishmail*replyPrefWin*fieldRC.uniformRows:			True
+Ishmail*replyPrefWin*attribText.rowCount:			1
+Ishmail*replyPrefWin*attribText.columnCount:			40
+Ishmail*replyPrefWin*attribText.editable:			True
+Ishmail*replyPrefWin*attribText.resizeWidth:			True
+Ishmail*replyPrefWin*begForwardText.rowCount:			1
+Ishmail*replyPrefWin*begForwardText.columnCount:		40
+Ishmail*replyPrefWin*begForwardText.editable:			True
+Ishmail*replyPrefWin*begForwardText.resizeWidth:		True
+Ishmail*replyPrefWin*endForwardText.rowCount:			1
+Ishmail*replyPrefWin*endForwardText.columnCount:		40
+Ishmail*replyPrefWin*endForwardText.editable:			True
+Ishmail*replyPrefWin*endForwardText.resizeWidth:		True
+Ishmail*replyPrefWin*forwardHeadFrame.shadowType:		Shadow_In
+Ishmail*replyPrefWin*forwardHeadFrame.marginWidth:		0
+Ishmail*replyPrefWin*forwardHeadFrame.marginHeight:		0
+Ishmail*replyPrefWin*forwardHeadRadio.marginWidth:		0
+Ishmail*replyPrefWin*forwardHeadRadio.marginHeight:		0
+
+!Ishmail*replyPrefWin*XmText.translations:		#override \
+!!Ctrl		<Btn1Down>:	insert-string(!Ctrl_Btn1Down)	\n\
+!!Shift		<Btn1Down>:	insert-string(!Shift_Btn1Down)	\n\
+!~Ctrl ~Shift	<Btn1Down>:	insert-string(~Ctrl_~Shift_Btn1Down)	\n\
+!       Ctrl <Key>D:		activate()
+
+!---------------------------------------------------------------------------
+
+Ishmail*sigPrefWin*appFrame.marginWidth:			1
+Ishmail*sigPrefWin*appFrame.marginHeight:			1
+Ishmail*sigPrefWin*fieldRC*XmLabel.alignment:			Alignment_End
+Ishmail*sigPrefWin*fieldRC*XmToggleButton.alignment:		Alignment_End
+Ishmail*sigPrefWin*fieldRC.uniformRows:				True
+Ishmail*sigPrefWin*typeFrame.shadowType:			Shadow_In
+Ishmail*sigPrefWin*typeFrame.marginWidth:			0
+Ishmail*sigPrefWin*typeFrame.marginHeight:			0
+Ishmail*sigPrefWin*typeRadio.marginWidth:			0
+Ishmail*sigPrefWin*typeRadio.marginHeight:			0
+Ishmail*sigPrefWin*extPSigTF.columns:				40
+Ishmail*sigPrefWin*extESigTF.columns:				40
+Ishmail*sigPrefWin*intPSigTF.columns:				40
+Ishmail*sigPrefWin*intESigTF.columns:				40
+
+!---------------------------------------------------------------------------
+
+Ishmail*headerWin*dListFrame.shadowType:		Shadow_Etched_Out
+Ishmail*headerWin*iListFrame.shadowType:		Shadow_Etched_Out
+Ishmail*headerWin*dListFrame.shadowThickness:		4
+Ishmail*headerWin*iListFrame.shadowThickness:		4
+Ishmail*headerWin*dListBox*visibleItemCount:		6
+Ishmail*headerWin*iListBox*visibleItemCount:		6
+Ishmail*headerWin*XmArrowButton.width:			32
+Ishmail*headerWin*XmArrowButton.height:			32
+Ishmail*headerWin*XmArrowButton.leftOffset:		5
+Ishmail*headerWin*XmArrowButton.rightOffset:		5
+Ishmail*headerWin*dtoiAB.bottomOffset:			10
+Ishmail*headerWin*itodAB.topOffset:			10
+Ishmail*headerWin*listForm.bottomOffset:		5
+Ishmail*headerWin*choiceFrame.shadowType:		Shadow_In
+Ishmail*headerWin*choiceFrame.marginWidth:		0
+Ishmail*headerWin*choiceFrame.marginHeight:		0
+Ishmail*headerWin*choiceRadio.marginWidth:		0
+Ishmail*headerWin*choiceRadio.marginHeight:		0
+
+Ishmail*headerWin*buttonFrame*XmPushButton.marginWidth:		5
+Ishmail*headerWin*buttonFrame*XmPushButton.marginHeight:	5
+
+!---------------------------------------------------------------------------
+
+Ishmail*entryBox*taskRC.colSpacing:				10
+Ishmail*entryBox.bottomOffset:					5
+Ishmail*entryBox*hasLargeIconView:				False
+Ishmail*entryBox*hasSmallIconView:				False
+Ishmail*entryBox*viewDA.vertSpacing:				0
+Ishmail*entryBox*viewDA.separatorThickness:			1
+Ishmail*entryBox*viewDA.itemMarginWidth:			5
+Ishmail*entryBox*viewDA.itemMarginHeight:			1
+
+!---------------------------------------------------------------------------
+
+Ishmail*aliasWin*scrollForm.width:				500
+Ishmail*aliasWin*scrollForm.height:				300
+Ishmail*aliasWin*viewDA.showPixmaps:				False
+Ishmail*aliasWin*valueForm.topOffset:				5
+Ishmail*aliasWinEntryWin*valueText.editable:			True
+Ishmail*aliasWinEntryWin*valueText.height:			100
+Ishmail*aliasWinEntryWin*valueText.columnCount:			64
+Ishmail*aliasWinEntryWin*keyTF.columns:				64
+
+!---------------------------------------------------------------------------
+
+Ishmail*alertWin*scrollForm.width:				500
+Ishmail*alertWin*scrollForm.height:				300
+Ishmail*alertWin*viewDA.showPixmaps:				False
+Ishmail*alertWin*valueForm.topOffset:				5
+!Ishmail*alertWin*buttonFrame*XmPushButton.marginWidth:		5
+!Ishmail*alertWin*buttonFrame*XmPushButton.marginHeight:	5
+!Ishmail*alertWin*textButtonFrame*XmPushButton.marginWidth:	5
+!Ishmail*alertWin*textButtonFrame*XmPushButton.marginHeight:	5
+Ishmail*alertWinEntryWin*valueText.editable:			True
+Ishmail*alertWinEntryWin*valueText.singleLine:			True
+Ishmail*alertWinEntryWin*valueText.columnCount:			64
+Ishmail*alertWinEntryWin*keyTF.columns:				64
+
+!---------------------------------------------------------------------------
+
+Ishmail*iconWin*scrollForm.width:				500
+Ishmail*iconWin*scrollForm.height:				300
+Ishmail*iconWin*viewDA.showPixmaps:				False
+Ishmail*iconWin*valueForm.topOffset:				5
+!Ishmail*iconWin*buttonFrame*XmPushButton.marginWidth:		5
+!Ishmail*iconWin*buttonFrame*XmPushButton.marginHeight:		5
+!Ishmail*iconWin*textButtonFrame*XmPushButton.marginWidth:	5
+!Ishmail*iconWin*textButtonFrame*XmPushButton.marginHeight:	5
+Ishmail*iconWinEntryWin*valueText.editable:			True
+Ishmail*iconWinEntryWin*valueText.singleLine:			True
+Ishmail*iconWinEntryWin*valueText.columnCount:			64
+Ishmail*iconWinEntryWin*keyTF.columns:				64
+
+!---------------------------------------------------------------------------
+
+Ishmail*buttonWin*availList.visibleItemCount:		10
+Ishmail*buttonWin*userList.visibleItemCount:		10
+Ishmail*buttonWin*XmArrowButton.width:			32
+Ishmail*buttonWin*XmArrowButton.height:			32
+Ishmail*buttonWin*XmArrowButton.topOffset:		5
+Ishmail*buttonWin*XmArrowButton.bottomOffset:		5
+Ishmail*buttonWin*addAB.rightOffset:			10
+Ishmail*buttonWin*remAB.leftOffset:			10
+Ishmail*buttonWin*rowTF.maxLength:			4
+Ishmail*buttonWin*rowTF.value:				1
+Ishmail*buttonWin*colTF.maxLength:			4
+Ishmail*buttonWin*colTF.value:				1
+Ishmail*buttonWin*placeTitle.alignment:			Alignment_Center
+Ishmail*buttonWin*placeFrame.shadowThickness:		0
+Ishmail*buttonWin*placeFrame.marginWidth:		0
+Ishmail*buttonWin*placeFrame.marginHeight:		0
+Ishmail*buttonWin*gravFrame.shadowType:			Shadow_In
+Ishmail*buttonWin*gravFrame.marginWidth:		0
+Ishmail*buttonWin*gravFrame.marginHeight:		0
+Ishmail*buttonWin*sizeFrame.leftOffset:			10
+Ishmail*buttonWin*sizeFrame.shadowType:			Shadow_Etched_Out
+Ishmail*buttonWin*sizeRC.uniformRows:			True
+Ishmail*buttonWin*sizeRC.allowRowResize:		True
+Ishmail*buttonWin*sizeRC.rowHeightAdjust:		Equal
+
+Ishmail*buttonEditWin*XmTextField.columns:		32
+
+!---------------------------------------------------------------------------
+
+Ishmail*summaryWin*mainBoard.width:			500
+Ishmail*summaryWin*posTF.columns:			4
+Ishmail*summaryWin*minTF.columns:			4
+Ishmail*summaryWin*maxTF.columns:			4
+Ishmail*summaryWin*titleTF.columns:			16
+Ishmail*summaryWin*fieldRC.marginWidth:			0
+Ishmail*summaryWin*fieldRC.marginHeight:		0
+Ishmail*summaryWin*fieldRC*XmToggleButton.alignment:	Alignment_Beginning
+Ishmail*summaryWin*fieldRC*XmSeparator.margin:		0
+Ishmail*summaryWin*fieldRC*XmSeparator.separatorType:	Shadow_Etched_Out
+
+!---------------------------------------------------------------------------
+
+Ishmail*folderPrefWin*viewFrame.shadowType:		Shadow_In
+Ishmail*folderPrefWin*viewFrame.shadowThickness:	2
+Ishmail*folderPrefWin*viewFrame.marginWidth:		1
+Ishmail*folderPrefWin*viewFrame.marginHeight:		1
+Ishmail*folderPrefWin*viewRadio.marginWidth:		0
+Ishmail*folderPrefWin*viewRadio.marginHeight:		0
+Ishmail*folderPrefWin*typeRC.topOffset:			5
+Ishmail*folderPrefWin*typeRC.borderWidth:		1
+Ishmail*folderPrefWin*useTypeFrame.shadowType:		Shadow_In
+Ishmail*folderPrefWin*useTypeFrame.shadowThickness:	2
+Ishmail*folderPrefWin*useTypeFrame.marginWidth:		1
+Ishmail*folderPrefWin*useTypeFrame.marginHeight:	1
+Ishmail*folderPrefWin*useTypeRC.marginWidth:		0
+Ishmail*folderPrefWin*useTypeRC.marginHeight:		0
+Ishmail*folderPrefWin*typeFrame.shadowType:		Shadow_In
+Ishmail*folderPrefWin*typeFrame.shadowThickness:	2
+Ishmail*folderPrefWin*typeFrame.marginWidth:		1
+Ishmail*folderPrefWin*typeFrame.marginHeight:		1
+Ishmail*folderPrefWin*typeRadio.marginWidth:		0
+Ishmail*folderPrefWin*typeRadio.marginHeight:		0
+Ishmail*folderPrefWin*initForm.topOffset:		5
+Ishmail*folderPrefWin*initForm.marginWidth:		3
+Ishmail*folderPrefWin*initForm.marginHeight:		3
+Ishmail*folderPrefWin*initText.editable:		True
+Ishmail*folderPrefWin*initText.rowCount:		5
+
+!---------------------------------------------------------------------------
+
+Ishmail*printWin*ordFrame.shadowType:			Shadow_In
+Ishmail*printWin*ordFrame.marginWidth:			0
+Ishmail*printWin*ordFrame.marginHeight:			0
+Ishmail*printWin*ordRadio.marginWidth:			0
+Ishmail*printWin*ordRadio.marginHeight:			0
+Ishmail*printWin*ordRadio.orientation:			Vertical
+Ishmail*printWin*hdrFrame.shadowType:			Shadow_In
+Ishmail*printWin*hdrFrame.marginWidth:			0
+Ishmail*printWin*hdrFrame.marginHeight:			0
+Ishmail*printWin*hdrRadio.marginWidth:			0
+Ishmail*printWin*hdrRadio.marginHeight:			0
+Ishmail*printWin*hdrRadio.orientation:			Vertical
+
+Ishmail*printQueryWin*choiceFrame.shadowType:		Shadow_In
+Ishmail*printQueryWin*choiceFrame.marginWidth:		0
+Ishmail*printQueryWin*choiceFrame.marginHeight:		0
+Ishmail*printQueryWin*choiceRadio.marginWidth:		0
+Ishmail*printQueryWin*choiceRadio.marginHeight:		0
+Ishmail*printQueryWin*choiceRadio.orientation:		Vertical
+
+Ishmail*getQueryWin*choiceFrame.shadowType:		Shadow_In
+Ishmail*getQueryWin*choiceFrame.marginWidth:		0
+Ishmail*getQueryWin*choiceFrame.marginHeight:		0
+Ishmail*getQueryWin*choiceRadio.marginWidth:		0
+Ishmail*getQueryWin*choiceRadio.marginHeight:		0
+Ishmail*getQueryWin*choiceRadio.orientation:		Vertical
+
+!---------------------------------------------------------------------------
+
+Ishmail*pipeWin*ordFrame.shadowType:			Shadow_In
+Ishmail*pipeWin*ordFrame.marginWidth:			0
+Ishmail*pipeWin*ordFrame.marginHeight:			0
+Ishmail*pipeWin*ordRadio.marginWidth:			0
+Ishmail*pipeWin*ordRadio.marginHeight:			0
+Ishmail*pipeWin*ordRadio.orientation:			Vertical
+Ishmail*pipeWin*hdrFrame.topOffset:			5
+Ishmail*pipeWin*hdrFrame.shadowType:			Shadow_In
+Ishmail*pipeWin*hdrFrame.marginWidth:			0
+Ishmail*pipeWin*hdrFrame.marginHeight:			0
+Ishmail*pipeWin*hdrRadio.marginWidth:			0
+Ishmail*pipeWin*hdrRadio.marginHeight:			0
+Ishmail*pipeWin*hdrRadio.orientation:			Vertical
+Ishmail*pipeWin*cmdForm.topOffset:			5
+
+!---------------------------------------------------------------------------
+
+Ishmail*undelWin*msgBox*hasLargeIconView:		False
+Ishmail*undelWin*msgBox*hasSmallIconView:		False
+Ishmail*undelWin*msgBox.width:				600
+Ishmail*undelWin*msgBox.height:				200
+Ishmail*undelWin*msgBox*scrollForm.height:		200
+Ishmail*undelWin*msgBox*viewDA.vertSpacing:		0
+Ishmail*undelWin*msgBox*viewDA.separatorThickness:	1
+Ishmail*undelWin*msgBox*viewDA.itemMarginWidth:		5
+Ishmail*undelWin*msgBox*viewDA.itemMarginHeight:	1
+Ishmail*undelWin*msgBox*viewDA.showPixmaps:		True
+Ishmail*undelWin*msgBox.buttonGravity:			West
+
+!---------------------------------------------------------------------------
+
+Ishmail*openSelectWin*selectText.rows:			2
+Ishmail*openSelectWin*fileList.selectionPolicy:		Extended_Select
+
+Ishmail*openSelectWin*activateFrame.shadowType:		Shadow_In
+Ishmail*openSelectWin*activateFrame.marginWidth:	0
+Ishmail*openSelectWin*activateFrame.marginHeight:	0
+Ishmail*openSelectWin*activateRadio.marginWidth:	0
+Ishmail*openSelectWin*activateRadio.marginHeight:	0
+
+!---------------------------------------------------------------------------
+
+Ishmail*saveFolderWin*radioFrame.shadowType:			Shadow_In
+Ishmail*saveFolderWin*radioFrame.marginWidth:			0
+Ishmail*saveFolderWin*radioFrame.marginHeight:			0
+Ishmail*saveFolderWin*opRadio.marginWidth:			0
+Ishmail*saveFolderWin*opRadio.marginHeight:			0
+
+!---------------------------------------------------------------------------
+
+Ishmail*saveFileWin*saveHdrFrame.shadowType:			Shadow_In
+Ishmail*saveFileWin*saveHdrFrame.marginWidth:			0
+Ishmail*saveFileWin*saveHdrFrame.marginHeight:			0
+Ishmail*saveFileWin*saveHdrRadio.marginWidth:			0
+Ishmail*saveFileWin*saveHdrRadio.marginHeight:			0
+Ishmail*saveFileWin*radioFrame.shadowType:			Shadow_In
+Ishmail*saveFileWin*radioFrame.marginWidth:			0
+Ishmail*saveFileWin*radioFrame.marginHeight:			0
+Ishmail*saveFileWin*opRadio.marginWidth:			0
+Ishmail*saveFileWin*opRadio.marginHeight:			0
+
+!---------------------------------------------------------------------------
+
+Ishmail*newFolderWin*imapTF.columns:				16
+Ishmail*newFolderWin*acceptFileDoubleClick:			False
+
+!---------------------------------------------------------------------------
+
+Ishmail*fontWin*fontPD.spacing:					0
+Ishmail*fontWin*fontPD*XmPushButton.marginHeight:		0
+Ishmail*fontWin*XmTextField.columns:				32
+Ishmail*fontWin*fontRC.colSpacing:				1
+Ishmail*fontWin*fontRC.XmRowColumn.marginWidth:			0
+Ishmail*fontWin*fontRC.XmRowColumn.marginHeight:		0
+
+!---------------------------------------------------------------------------
+
+Ishmail*folderTypeWin*folderTypeFrame.shadowType:		Shadow_In
+Ishmail*folderTypeWin*folderTypeFrame.marginWidth:		0
+Ishmail*folderTypeWin*folderTypeFrame.marginHeight:		0
+Ishmail*folderTypeWin*folderTypeRadio.marginWidth:		0
+Ishmail*folderTypeWin*folderTypeRadio.marginHeight:		0
+
+!---------------------------------------------------------------------------
+
+Ishmail*pickAliasWin*findTF.columns:				32
+Ishmail*pickAliasWin*aliasBox*hasLargeIconView:			False
+Ishmail*pickAliasWin*aliasBox*hasSmallIconView:			False
+Ishmail*pickAliasWin*aliasBox*viewDA.vertSpacing:		0
+Ishmail*pickAliasWin*aliasBox*viewDA.separatorThickness:	1
+Ishmail*pickAliasWin*aliasBox*viewDA.itemMarginWidth:		5
+Ishmail*pickAliasWin*aliasBox*viewDA.itemMarginHeight:		1
+Ishmail*pickAliasWin*aliasBox*viewDA.showPixmaps:		False
+Ishmail*pickAliasWin*aliasBox*viewDA.visibleItemCount:		20
+
+!---------------------------------------------------------------------------
+
+Ishmail*fontChooser*familyListW.visibleItemCount:	16
+Ishmail*fontChooser*styleListW.visibleItemCount:	16
+Ishmail*fontChooser*sizeListW.visibleItemCount:		16
+Ishmail*fontChooser*styleLabel.leftOffset:		5
+Ishmail*fontChooser*sizeLabel.leftOffset:		5
+Ishmail*fontChooser*listForm.bottomOffset:		2
+Ishmail*fontChooser*propFrame.bottomOffset:		2
+Ishmail*fontChooser*propFrame.shadowType:		Shadow_In
+Ishmail*fontChooser*propRC*marginWidth:			0
+Ishmail*fontChooser*propRC*marginHeight:		0
+Ishmail*fontChooser*sizeFrame.shadowType:		Shadow_In
+Ishmail*fontChooser*sizeRC*marginWidth:			0
+Ishmail*fontChooser*sizeRC*marginHeight:		0
+Ishmail*fontChooser*sampFrame.shadowThickness:		0
+Ishmail*fontChooser*sampFrame.marginWidth:		0
+Ishmail*fontChooser*sampFrame.marginHeight:		0
+Ishmail*fontChooser*sampText.rows:			4
+Ishmail*fontChooser*nameFrame.shadowThickness:		0
+Ishmail*fontChooser*nameFrame.marginWidth:		0
+Ishmail*fontChooser*nameFrame.marginHeight:		0
+
+!------------------------ Terminal Defaults -------------------------
+
+Ishmail*TermC.rightOffset:			1
+
+Ishmail*TermC.rows:				24
+Ishmail*TermC.columns:				80
+Ishmail*TermC.scrollBar:			True
+Ishmail*TermC.pointerShape:			xterm
+
+Ishmail*termArea.translations:#override\n\
+   <Key> R4  : TermC-set-scrollbar(toggle)     \n\
+   <Key> R5  : TermC-hard-reset()              \n\
+   <Key> R6  : TermC-set-reverse-video(toggle) \n\
+   <Key> R7  : TermC-scroll-back(100,page)     \n\
+   <Key> R8  : TermC-scroll-back(1,line)       \n\
+   <Key> R9  : TermC-scroll-back(1,halfpage)   \n\
+   <Key> R13 : TermC-scroll-forw(100,page)     \n\
+   <Key> R14 : TermC-scroll-forw(1,line)       \n\
+   <Key> R15 : TermC-scroll-forw(1,halfpage)
+ * 
+ *          HAL COMPUTER SYSTEMS INTERNATIONAL, LTD.
+ *                  1315 Dell Avenue
+ *                  Campbell, CA  95008
+ *
+ * Author: Greg Hilton
+ * Contributors: Tom Lang, Frank Bieser, and others
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.

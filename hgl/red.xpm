@@ -1,0 +1,21 @@
+/* XPM */
+static char * red_xpm [] = {
+"13 13 5 1",
+"   m none  c none",
+".  m black  c #000000000000",
+"X  m white  c #ffff00000000",
+"o  m black  c #ffff00000000",
+"O  m black  c #ffffffffffff",
+"             ",
+"   ......    ",
+"  .XoXoX..   ",
+" .XoOoXoX..  ",
+".XoOOXoXoX.. ",
+".oOOXoXoXo.. ",
+".XOXoXoXoX.. ",
+".oOXXoXoXo.. ",
+".XoXoXoXoX.. ",
+" .XoXoXoX... ",
+"  .XoXoX...  ",
+"   .......   ",
+"     ....    "};

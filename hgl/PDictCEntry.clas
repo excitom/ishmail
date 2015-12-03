@@ -1,0 +1,47 @@
+/*
+ *  PDictCEntry.clas -- class definition for an entry in a PDictC
+ *
+ *   This type of dictionary stores only pointers to the keys and values
+ */
+
+class CLASS {
+
+public:
+
+   KEYTYPE	*key;
+   VALTYPE	*val;
+
+   inline CLASS () { key = (KEYTYPE*)NULL; val = (VALTYPE*)NULL; }
+   inline CLASS (const KEYTYPE* kp, const VALTYPE* vp)
+				 { key = (KEYTYPE *)kp; val = (VALTYPE *)vp; }
+   inline CLASS (const CLASS& e) { *this = e; }
+
+   inline CLASS&	operator= (const CLASS& e) {
+      if ( this != &e ) {
+	 key = e.key;
+	 val = e.val;
+      }
+      return *this;
+   }
+
+   inline int	operator== (const CLASS& e) const {
+   /* Only need to check pointers here */
+      return (key == e.key && val == e.val);
+   }
+   inline int	operator!= (const CLASS& e) const {
+      return !(*this==e);
+   }
+   inline int	compare  (const CLASS&) const { return 0; }
+   inline int	operator<(const CLASS&) const { return 0; }
+   inline int	operator>(const CLASS&) const { return 0; }
+
+   inline ostream&  printOn(ostream& strm=cout) const {
+      strm <<key <<" -> " <<val;
+      return strm;
+   }
+};
+
+inline ostream& operator<<(ostream& strm, const CLASS& e)
+{
+   return e.printOn(strm);
+}

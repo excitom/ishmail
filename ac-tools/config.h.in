@@ -1,0 +1,143 @@
+#ifndef __CONFIG_H
+#define __CONFIG_H
+
+/* Define if on AIX 3.
+   System headers sometimes define this.
+   We just want to avoid a redefinition error message.  */
+#ifndef _ALL_SOURCE
+#undef _ALL_SOURCE
+#endif
+
+/* Define if you need to in order for stat and other things to work.  */
+#undef _POSIX_SOURCE
+
+/* Define if you have the ANSI C header files.  */
+#undef STDC_HEADERS
+
+/* Define if char is unsigned (should NOT be defined if using gcc) */
+#undef __CHAR_UNSIGNED__   
+
+/* Define to empty if the keyword does not work.  */
+#undef const
+
+/* Define to `int' if <sys/types.h> doesn't define.  */
+#undef pid_t
+
+/* Define to `unsigned' if <sys/types.h> doesn't define.  */
+#undef size_t
+
+/* Define as the return type of signal handlers (int or void).  */
+#undef RETSIGTYPE
+
+/* Define if you have <sys/wait.h> that is POSIX.1 compatible.  */
+#undef HAVE_SYS_WAIT_H
+
+/* Define if you have the <sys/param.h> header file.  */
+#undef HAVE_SYS_PARAM_H
+
+/* Define if you have the <sys/time.h> header file.  */
+#undef HAVE_SYS_TIME_H
+
+/* Define if you have the <sys/select.h> header file.  */
+#undef HAVE_SYS_SELECT_H
+
+/* Define if your <sys/time.h> declares struct tm.  */
+#undef TM_IN_SYS_TIME
+
+/* Define if <time.h> and <sys/time.h> can be both included.  */
+#undef TIME_WITH_SYS_TIME
+
+#undef HAVE_TM_ZONE
+#undef HAVE_TZNAME
+
+/* Define if you have the gettimeofday function.  */
+#undef HAVE_GETTIMEOFDAY
+
+/* Define if you have <sysexits.h>.  */
+#undef HAVE_SYSEXITS_H
+
+/* Define if you have <vfork.h>.  */
+#undef HAVE_VFORK_H
+
+/* Define vfork as fork if vfork does not work.  */
+#undef vfork
+
+/* Define if you have the sysconf function.  */
+#undef HAVE_SYSCONF
+
+/* Define if you have the getpagesize function.  */
+#undef HAVE_GETPAGESIZE
+
+/* Define if you have the statvfs function.  */
+#undef HAVE_STATVFS
+
+/* Define if the stat(v)fs structure has __val array.  */
+#undef HAVE___VAL_IN_F_FSID
+
+/* Define if you have the unlink function.  */
+#undef HAVE_UNLINK
+
+/* Define if you have the setegid function.  */
+#undef HAVE_SETEGID
+
+/* Define if you have the getdomainname function and declaration.  */
+#undef HAVE_GETDOMAINNAME
+#undef HAVE_GETDOMAINNAME_DECL
+
+/* Define if you have the setenv function.  */
+#undef HAVE_SETENV
+
+/* Define if you have the strerror function.  */
+#undef HAVE_STRERROR
+
+/* Define if you have the strncasecmp function.  */
+#undef HAVE_STRNCASECMP
+
+/* Define if you have the gethostname function.  */
+#undef HAVE_GETHOSTNAME
+
+/* Define if you have the OpenSSL library  */
+#undef HAVE_OPENSSL
+
+/* Define to use Dmalloc. <dmalloc.h> must be in your include path */
+#undef WITH_DMALLOC
+
+/* Define if Motif library is actually Lesstif.  */
+#undef HAVE_LESSTIF
+
+/* Define if Motif library includes _XmVersionString[] string.  */
+#undef HAVE__XMVERSIONSTRING
+
+#undef HAVE_XMADDTOPOSTFROMLIST
+#undef HAVE_XMADDTOPOSTFROMLIST_DECL
+#undef HAVE_XMREMOVEFROMPOSTFROMLIST
+#undef HAVE_XMREMOVEFROMPOSTFROMLIST_DECL
+#undef HAVE__XMGETFOCUSPOLICY
+#undef HAVE__XMGETFOCUSPOLICY_DECL
+#undef HAVE__XMINPUTFORGADGET
+#undef HAVE__XMINPUTFORGADGET_DECL
+#undef HAVE__XMSHELLISEXCLUSIVE
+#undef HAVE__XMSHELLISEXCLUSIVE_DECL
+
+/* Define if you have the xpm.h.  */
+#undef HAVE_XPM_H
+
+/* Define if you have the xpm.h header among X11 includes.  */
+#undef HAVE_X11_XPM_H
+
+/* Define if you have (and want to use) editres  */
+#undef WITH_EDITRES
+
+/* Define if the print spooling command itself unlinks the temporary file */
+#undef PRINT_CMD_UNLINKS
+
+/* Define if you want to compile in (a basic) support for debugging  */
+#undef WITH_DEBUG
+
+#if defined(WITH_DEBUG)
+#  define DEBUG
+#else
+#  define NDEBUG
+#endif
+
+#endif /* __CONFIG_H */

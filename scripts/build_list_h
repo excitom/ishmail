@@ -1,0 +1,55 @@
+#!/bin/sh
+
+usage()
+{
+   echo "Usage: build_list_h HGL_srcdir P|O class_name type_name [include_file]"
+   exit 1;
+}
+
+HGLSRC=$1
+
+LTYPE=$2
+CLASS=$3
+ETYPE=$4
+INCL=$5
+
+test -z "$HGLSRC"	&& usage
+test -z "$LTYPE"	&& usage
+test -z "$CLASS"	&& usage
+test -z "$ETYPE"	&& usage
+
+LIST=$HGLSRC/${LTYPE}ListC
+
+if [ ! -f "$LIST.clas" ]
+then
+   echo "Could not find class file: $LIST.clas"
+   exit 1
+fi
+
+rm -f $CLASS.h
+
+#
+# Build .h file
+#
+
+echo "Creating $CLASS.h"
+echo "//"			>> $CLASS.h
+echo "// $CLASS.h"		>> $CLASS.h
+echo "//"			>> $CLASS.h
+echo ""				>> $CLASS.h
+echo "#ifndef _${CLASS}_h_"	>> $CLASS.h
+echo "#define _${CLASS}_h_"	>> $CLASS.h
+echo ""				>> $CLASS.h
+if [ ! -z "$INCL" ]
+then
+   echo "#include $INCL" >> $CLASS.h
+   echo ""		 >> $CLASS.h
+fi
+
+cat $LIST.clas \
+| sed -e "s/CLASS/$CLASS/g" \
+| sed -e "s/TYPE/$ETYPE/g" \
+>> $CLASS.h
+
+echo ""				>> $CLASS.h
+echo "#endif // _${CLASS}_h_"	>> $CLASS.h

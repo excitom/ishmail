@@ -1,0 +1,17 @@
+ishmail
+RuleDictC.h
+FolderListC.h
+ButtonEntryListC.C
+ButtonEntryListC.h
+MsgListC.h
+PartialMsgDictC.h
+FolderListC.C
+MailcapListC.h
+MailcapListC.C
+MsgListC.C
+PartialMsgDictC.C
+PidListC.C
+PidListC.h
+RuleDictC.C
+date.c
+version.c

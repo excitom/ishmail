@@ -1,0 +1,329 @@
+<HTML>
+<HEAD>
+ <TITLE>Using the File Selection Window</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="uO2ZgMB8BJ9X3cS">Using the File Selection Window</H1>
+
+<P>
+The
+file selection window is used by several of
+<CITE>Ishmail's</CITE> pull-down
+menu options that require you to select or type in the name of a
+mail folder or a file. You can either enter in the name of a mail
+folder or file in the file selection window text field, or you can
+expand the window and select the desired name(s) from a list of
+directories and files.
+<P>
+The file selection window is used when performing the following
+<CITE>Ishmail</CITE> tasks:
+<UL>
+<LI>Creating a new mail folder
+<P>
+
+</LI>
+<LI>Selecting one or more existing mail folders to open
+<P>
+
+</LI>
+<LI>Specifying a mail folder in which to save selected
+messages
+<P>
+
+</LI>
+<LI>Specifying a file in which to save selected messages
+<P>
+
+</LI>
+<LI>Specifying a file in which to save a part of a MIME
+message
+<P>
+
+</LI>
+<LI>Specifying the name of an external attachment to a
+message
+<P>
+
+</LI>
+<LI>Specifying the name of an external file to include in a
+message
+<P>
+
+</LI>
+</UL>
+<P>
+The file selection window is identified by a different title
+depending on the option with which it is associated. For example,
+if you invoke the file selection window via the
+<U>N</U><B>ew ...</B> option from
+the
+<B>Fo</B><U>l</U><B>der</B> pull-down window, it is called the
+<B>Create New Folder</B>
+window. However, if you invoke the file selection window from
+the
+<B>Sa</B><U>v</U><B>e </B>-><B> To </B><U>f</U><B>older</B> option in the
+<U>M</U><B>essage</B> pull-down menu, it is
+called the
+<B>Select</B>
+<B>Folder</B> window.
+<P>
+The functionality of the file selection window and the procedures
+for using it also differ somewhat depending on the option that
+invokes it.
+
+<P>
+The figures
+<A HREF="uO2ZgMB8BJ9X3cS.html#9P2ZgMB8BJ9X3cS">File Selection Window</A> and
+<A HREF="uO2ZgMB8BJ9X3cS.html#fR2ZgMB8BJ9X3cS">Expanded File Selection
+Window</A> below depict the
+<B>Select Folder</B> window and are intended as
+examples for the purpose of describing how the window looks and
+how it is used.
+<P>
+A "generic" description of the file selection window follows.
+
+
+<H2><A NAME="7P2ZgMB8BJ9X3cS">File Selection Options</H2>
+
+<P>
+When you first invoke the file selection window, it appears as a
+small dialog box that contains a text field in which you can enter
+the name of a mail folder or a file.
+<P>
+The text that you enter will be processed by the command shell
+(as specified by your
+<CODE>$SHELL</CODE> environment variable), so you can
+use pattern matching wildcards. In fact, you can even enter a
+command if you enclose it in back quotes (`).
+
+<P>
+If the wildcard pattern or command matches more than one file
+name, what happens next depends on what you're doing. For
+example, if you're opening folders all the folders that match will
+be opened. If you're doing something that only makes sense for a
+single file, such as saving a message to a file, then the first file
+name that matches will be used.
+<P>
+<H4>Figure: <A NAME="9P2ZgMB8BJ9X3cS">File Selection Window</H4>
+
+<IMG SRC="uO2ZgMB8BJ9X3cS.extobj.1.gif">
+<P>
+To the right of the text field is a
+<B>Show list</B> button that you can click
+to expand the window in order to see the current mail folder
+directory (or your
+<CODE>$HOME</CODE> directory, if you have invoked the
+<B>Select
+Folder</B> window via the
+<U>I</U><B>nclude/Attach</B> -> option in the Composition
+window). You can use this expanded file selection window to
+navigate within your system's directory structure.
+
+<P>
+Click the
+<B>Show list</B> button to expand the
+<B>Select Folder</B> window.
+<P>
+The
+<B>Create New Folder</B> window differs from the generic file selection
+window in that it has three radio buttons which let you choose to
+create a UNIX-type folder, an
+<CITE>MMDF</CITE>-type folder, or an
+<CITE>MH</CITE>-type
+folder.
+<P>
+The
+<B>Save Message to File</B> window differs from the generic file
+selection window in that it has three radio buttons which let you
+choose to save:
+<UL>
+<LI>All of the message headers along with the message body
+<P>
+
+</LI>
+<LI>Only the headers shown in the Reading window along
+with the message body
+<P>
+
+</LI>
+<LI>Just the message body with no headers at all
+<P>
+
+</LI>
+</UL>
+<P>
+<H4>Figure: <A NAME="fR2ZgMB8BJ9X3cS">Expanded File Selection Window</H4>
+
+<IMG SRC="uO2ZgMB8BJ9X3cS.extobj.2.gif">
+<P>
+The expanded file selection window contains these additional
+fields:
+<DL>
+<DT><B>Current Directory</B> field
+<DD>The
+<B>Current Directory</B> text field contains the name of the
+current directory. To change to a different directory, type
+another directory's name in the
+<B>Current Directory</B> field and
+press
+<B>Return</B> or click the
+<B>Set</B> button.
+<P>
+
+<DT><B>Directories</B> list
+<DD>The
+<B>Directories</B> list shows the names of subdirectories (that
+you have permission to view) under the current directory.
+To change to another directory in the list, double-click
+that directory.
+
+<P>
+
+<DT><B>Folder Name Filter</B>/<B>File Name Filter</B> text field
+<DD>The
+<B>Folder Name Filter/File Name Filter</B> text field is a search
+field. To search for a mail folder or file in the current
+directory, type the mail folder name or filename (you can
+use UNIX
+<I>regular expression</I> patterns) and click the
+<B>Filter</B>
+button or press
+<CODE>Return</CODE>. The names of mail folders or files
+that match the search pattern are displayed in the
+<B>Folders</B>
+field.
+<P>
+There is a default pattern in the
+<B>Filter</B> field:
+<P>
+<KBD>[^.]*</KBD>
+<P>
+This pattern excludes file names starting with a period
+character.
+<P>
+
+<DT><B>Folders/Files</B> list
+<DD>The
+<B>Folders/Files</B> list contains the list of mail folders or files
+in the current directory. To select a mail folder or file in
+the list, click on its name.
+<P>
+<CITE>MH</CITE>-type folder names are shown with a slash (/) to the
+right of the name.
+<P>
+To change the directory, enter the name of a different
+directory in the
+<B>Current Directory</B> text field (and press
+<B>Return</B> or click the
+<B>Set</B> button to activate the field), or
+double-click on a directory in the
+<B>Directories</B> list selection
+field.
+<P>
+
+</DL>
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>If you are working with
+<CITE>MH</CITE>-type folders
+(which are actually directories), their names
+appear in
+<I>both</I> the
+<B>Directories</B> list and in the
+<B>Folders</B> list. This allows nesting of the folders.
+If you select an
+<CITE>MH</CITE>-type folder from the
+<B>Directories</B> list it will be opened and all the
+messages in it will appear as folders (each
+containing a single message) in the
+<B>Folders</B> list.
+This is one way you can use an
+<CITE>MH</CITE>-type folder.
+A different, and perhaps better way is to
+select the name from the
+<B>Folders</B> list. Then, all
+the files in it are treated as messages in a
+single folder.
+<HR>
+</P>
+<P>
+To accept or apply your selection, click the appropriate button at
+the bottom of the file selection window.
+
+
+<H2><A NAME="UZ2ZgMB8BJ9X3cS">Accepting or Cancelling Your
+Selection(s)</H2>
+
+<P>
+Use the row of buttons across the bottom of the dialog window to
+accept or cancel your selections, or click the
+<B>Help</B> button to get
+more information. The button choices for accepting a selection
+differ depending on which pull-down menu option you are using.
+
+<P>
+If you are working with the file selection window associated with
+either the
+<B>Sa</B><U>v</U><B>e</B> -> <B>To </B><U>f</U><B>older</B> option or the
+<B>Sa</B><U>v</U><B>e</B> -> <B>To f</B><U>i</U><B>le</B> option in the
+<U>M</U><B>essage</B> pull-down menu, click either the
+<B>Copy</B> button or the
+<B>Move</B>
+button to accept your selection and close the window.
+<P>
+For all other file selection windows, click the
+<B>Ok</B> button to accept
+your selection(s) and close the window. Double-clicking the
+selected mail folder or file also accepts your selection and closes
+the window.
+
+<P>
+To cancel the select folder operation and close the window, click
+the
+<B>Cancel</B> button.
+
+
+<H2><A NAME="TyG1QLB-zWwA0YK">Folder
+Pop-up Menu Options</H2>
+
+<P>
+You can perform a subset of the
+<B>Fo</B><U>l</U><B>der</B> menu operations
+-
+<U>A</U><B>ctivate</B>
+(make active),
+<U>S</U><B>ave changes</B>, or
+<U>C</U><B>lose</B>
+- on any open mailbox folder
+by selecting the corresponding option from an alternate pop-up
+menu that you bring up adjacent to the folder.
+
+<P>
+Do this by placing the mouse pointer on the mailbox and clicking
+the right mouse button (mouse button 3). A pop-up menu
+appears from which you can select one of the valid options
+available for the given mail folder. The pop-up menu contains the
+name of the mail folder and the options that are currently valid
+for that folder. Invalid options are dimmed. To select one of the
+options, slide the mouse cursor down the menu and release it on
+the option you wish to select.
+
+<P>
+The figure
+<A HREF="uO2ZgMB8BJ9X3cS.html#nyG1QLB-zWwA0YK">Folder Pop-up Menu</A> illustrates this type of menu.
+
+<P>
+<H4>Figure: <A NAME="nyG1QLB-zWwA0YK">Folder Pop-up Menu</H4>
+
+<IMG SRC="uO2ZgMB8BJ9X3cS.extobj.3.gif">
+
+<HR>
+Preceding Section: <A HREF="f9tRqFB0aG9X3cS.html">Main Window Folder Menu</A><BR>
+Following Section: <A HREF="hAtRqFB0aG9X3cS.html">Main Window Message Menu</A><BR>
+Parent Section: <A HREF="f9tRqFB0aG9X3cS.html">Main Window Folder Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

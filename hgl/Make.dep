@@ -1,0 +1,211 @@
+# Generated automatically by `make depend'
+BoolExpC$(O) : BoolExpC.C BoolExpC.h
+BoolExpWinC$(O) : BoolExpWinC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h BoolExpWinC.h \
+ HalDialogC.h HalShellC.h IntListC.h ExpElemListC.h ExpElemC.h \
+ BoolExpC.h WArgList.h rsrc.h
+CallbackC$(O) : CallbackC.C CallbackC.h Base.h CallbackListC.h
+CharC$(O) : CharC.C CharC.h Base.h StrCase.h RangeC.h StringC.h
+ExpElemC$(O) : ExpElemC.C ExpElemC.h Base.h BoolExpC.h HalAppC.h \
+ StringC.h RangeC.h CallbackListC.h CallbackC.h PtrListC.h PtrT.h
+FieldViewC$(O) : FieldViewC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h FieldViewC.h ViewC.h \
+ VItemListC.h VItemC.h StringListC.h PixmapC.h IntListC.h RectC.h \
+ ColumnListC.h ColumnC.h FieldC.h PixmapNameDictC.h PixmapDataDictC.h \
+ ItemDataDictC.h ItemDataC.h FieldListC.h VBoxC.h ViewListC.h rsrc.h \
+ WArgList.h WXmString.h
+FiltDialogC$(O) : FiltDialogC.C FiltDialogC.h HalDialogC.h HalShellC.h \
+ CallbackListC.h CallbackC.h Base.h RegexC.h StringC.h RangeC.h \
+ regex.h WArgList.h VItemC.h StringListC.h PixmapC.h VBoxC.h \
+ ViewListC.h ViewC.h HalAppC.h PtrListC.h PtrT.h VItemListC.h RectC.h
+FindDialogC$(O) : FindDialogC.C FindDialogC.h HalDialogC.h HalShellC.h \
+ CallbackListC.h CallbackC.h Base.h RegexC.h StringC.h RangeC.h \
+ regex.h WArgList.h VItemC.h StringListC.h PixmapC.h VBoxC.h \
+ ViewListC.h ViewC.h HalAppC.h PtrListC.h PtrT.h VItemListC.h RectC.h
+FontChooserC$(O) : FontChooserC.C FontChooserC.h HalDialogC.h HalShellC.h \
+ CallbackListC.h CallbackC.h Base.h StringListC.h StringC.h RangeC.h \
+ WArgList.h HalAppC.h PtrListC.h PtrT.h WXmString.h rsrc.h CharC.h \
+ TextMisc.h
+FontDataC$(O) : FontDataC.C FontDataC.h StringC.h RangeC.h Base.h \
+ StringListC.h IntListC.h PtrListC.h PtrT.h CharC.h StrCase.h \
+ HalAppC.h CallbackListC.h CallbackC.h
+ForceDialog$(O) : ForceDialog.C
+HalAppC$(O) : HalAppC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h HalShellC.h \
+ HglResources.h WArgList.h WXmString.h WorkingBoxC.h SignalRegistry.h \
+ MimeRichTextC.h RectC.h rsrc.h HelpC.h CharC.h
+HalDialogC$(O) : HalDialogC.C HalDialogC.h HalShellC.h CallbackListC.h \
+ CallbackC.h Base.h HalAppC.h StringC.h RangeC.h PtrListC.h PtrT.h \
+ WArgList.h ForceDialog.h rsrc.h
+HalMainWinC$(O) : HalMainWinC.C HalMainWinC.h HalTopLevelC.h HalShellC.h \
+ CallbackListC.h CallbackC.h Base.h HalAppC.h StringC.h RangeC.h \
+ PtrListC.h PtrT.h WArgList.h
+HalShellC$(O) : HalShellC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h HalShellC.h \
+ ForceDialog.h WArgList.h WXmString.h rsrc.h TextMisc.h ButtonBox.h
+HalTopLevelC$(O) : HalTopLevelC.C HalTopLevelC.h HalShellC.h \
+ CallbackListC.h CallbackC.h Base.h WArgList.h StringC.h RangeC.h \
+ WXmString.h RegexC.h regex.h rsrc.h HelpC.h PtrListC.h PtrT.h \
+ HelpResWinC.h VBoxC.h ViewListC.h ViewC.h HalAppC.h VItemListC.h \
+ VItemC.h StringListC.h PixmapC.h RectC.h PtrList2.h
+HelpDbC$(O) : HelpDbC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h HelpDbC.h CharC.h \
+ MemMap.h RegexC.h regex.h SysErr.h
+HelpResWinC$(O) : HelpResWinC.C HelpResWinC.h HalTopLevelC.h HalShellC.h \
+ CallbackListC.h CallbackC.h Base.h VBoxC.h ViewListC.h ViewC.h \
+ HalAppC.h StringC.h RangeC.h PtrListC.h PtrT.h VItemListC.h VItemC.h \
+ StringListC.h PixmapC.h RectC.h PtrList2.h WArgList.h WXmString.h \
+ TextMisc.h rsrc.h MemMap.h CharC.h FieldViewC.h IntListC.h \
+ ColumnListC.h ColumnC.h FieldC.h PixmapNameDictC.h PixmapDataDictC.h \
+ ItemDataDictC.h ItemDataC.h FieldListC.h ButtonBox.h HelpC.h \
+ HelpDbC.h SysErr.h red.xpm green.xpm yellow.xpm
+HelpC$(O) : HelpC.C HalAppC.h StringC.h RangeC.h Base.h CallbackListC.h \
+ CallbackC.h PtrListC.h PtrT.h HelpC.h HelpDbC.h CharC.h rsrc.h \
+ WArgList.h WXmString.h MimeRichTextC.h RectC.h TextMisc.h SysErr.h \
+ HelpResWinC.h HalTopLevelC.h HalShellC.h VBoxC.h ViewListC.h ViewC.h \
+ VItemListC.h VItemC.h StringListC.h PixmapC.h PtrList2.h
+IconC$(O) : IconC.C IconC.h IconDataC.h RectC.h Base.h LabelDataListC.h \
+ LabelDataC.h StringC.h RangeC.h PixmapC.h VItemC.h StringListC.h \
+ CallbackC.h CallbackListC.h rsrc.h HalAppC.h PtrListC.h PtrT.h
+IconDataC$(O) : IconDataC.C IconDataC.h RectC.h Base.h LabelDataListC.h \
+ LabelDataC.h StringC.h RangeC.h VItemC.h StringListC.h CallbackC.h \
+ PixmapC.h
+IconViewC$(O) : IconViewC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h IconViewC.h ViewC.h \
+ VItemListC.h VItemC.h StringListC.h PixmapC.h PixmapNameDictC.h \
+ PixmapDataDictC.h IconDataDictC.h IconDataC.h RectC.h \
+ LabelDataListC.h LabelDataC.h VBoxC.h ViewListC.h rsrc.h WArgList.h
+JoyStickC$(O) : JoyStickC.C JoyStickC.h CallbackListC.h CallbackC.h \
+ Base.h WArgList.h HalAppC.h StringC.h RangeC.h PtrListC.h PtrT.h \
+ rsrc.h
+LgIconViewC$(O) : LgIconViewC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h LgIconViewC.h \
+ IconViewC.h ViewC.h VItemListC.h VItemC.h StringListC.h PixmapC.h \
+ PixmapNameDictC.h PixmapDataDictC.h IconDataDictC.h IconDataC.h \
+ RectC.h LabelDataListC.h LabelDataC.h VBoxC.h ViewListC.h rsrc.h \
+ WXmString.h
+ListBoxC$(O) : ListBoxC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h ListBoxC.h WArgList.h \
+ StringListC.h WXmString.h rsrc.h HalShellC.h TextMisc.h
+MemMap$(O) : MemMap.C MemMap.h CharC.h StringC.h RangeC.h Base.h \
+ HalAppC.h CallbackListC.h CallbackC.h PtrListC.h PtrT.h SysErr.h
+MimeRichTextDraw$(O) : MimeRichTextDraw.C MimeRichTextC.h RectC.h Base.h \
+ StringC.h RangeC.h CallbackC.h MimeRichTextP.h FontDataC.h \
+ StringListC.h IntListC.h PtrListC.h PtrT.h CharC.h PixelListC.h \
+ CallbackListC.h HalAppC.h WArgList.h gray.xbm
+MimeRichTextEdit$(O) : MimeRichTextEdit.C MimeRichTextC.h RectC.h Base.h \
+ StringC.h RangeC.h CallbackC.h MimeRichTextP.h FontDataC.h \
+ StringListC.h IntListC.h PtrListC.h PtrT.h CharC.h PixelListC.h \
+ CallbackListC.h HalAppC.h WArgList.h RichSearchWinC.h HalDialogC.h \
+ HalShellC.h rsrc.h
+MimeRichTextInit$(O) : MimeRichTextInit.C MimeRichTextC.h RectC.h Base.h \
+ StringC.h RangeC.h CallbackC.h MimeRichTextP.h FontDataC.h \
+ StringListC.h IntListC.h PtrListC.h PtrT.h CharC.h PixelListC.h \
+ CallbackListC.h rsrc.h HalAppC.h StrCase.h WArgList.h RegexC.h \
+ regex.h
+MimeRichTextSelect$(O) : MimeRichTextSelect.C MimeRichTextC.h RectC.h \
+ Base.h StringC.h RangeC.h CallbackC.h MimeRichTextP.h FontDataC.h \
+ StringListC.h IntListC.h PtrListC.h PtrT.h CharC.h PixelListC.h \
+ CallbackListC.h HalAppC.h rsrc.h System.h
+PixmapC$(O) : PixmapC.C PixmapC.h HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h
+PtrDictC$(O) : PtrDictC.C PtrDictC.h PtrList2.h
+PtrList2$(O) : PtrList2.C PtrList2.h
+RegexC$(O) : RegexC.C RegexC.h StringC.h RangeC.h Base.h regex.h CharC.h
+RichSearchWinC$(O) : RichSearchWinC.C RichSearchWinC.h HalDialogC.h \
+ HalShellC.h CallbackListC.h CallbackC.h Base.h MimeRichTextC.h \
+ RectC.h StringC.h RangeC.h MimeRichTextP.h FontDataC.h StringListC.h \
+ IntListC.h PtrListC.h PtrT.h CharC.h PixelListC.h RegexC.h regex.h \
+ WArgList.h HalAppC.h TextMisc.h rsrc.h
+RowColC$(O) : RowColC.C RowColC.h WidgetListC.h IntListC.h RowCol.h \
+ RowColChildListC.h RowColChildC.h RowOrColListC.h RowOrColC.h \
+ HalAppC.h StringC.h RangeC.h Base.h CallbackListC.h CallbackC.h \
+ PtrListC.h PtrT.h rsrc.h RowColP.h
+RowColChildC$(O) : RowColChildC.C RowColChildC.h
+RowOrColC$(O) : RowOrColC.C RowOrColC.h RowCol.h RowColChildListC.h \
+ RowColChildC.h RowColC.h WidgetListC.h IntListC.h RowOrColListC.h
+Shadow$(O) : Shadow.C Shadow.h
+SignalRegistry$(O) : SignalRegistry.C SignalRegistry.h CallbackC.h Base.h \
+ SignalDictC.h SignalCallsC.h CallbackListC.h
+SmIconViewC$(O) : SmIconViewC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h SmIconViewC.h \
+ IconViewC.h ViewC.h VItemListC.h VItemC.h StringListC.h PixmapC.h \
+ PixmapNameDictC.h PixmapDataDictC.h IconDataDictC.h IconDataC.h \
+ RectC.h LabelDataListC.h LabelDataC.h VBoxC.h ViewListC.h rsrc.h \
+ WXmString.h
+SortDialogC$(O) : SortDialogC.C SortDialogC.h HalDialogC.h HalShellC.h \
+ CallbackListC.h CallbackC.h Base.h WArgList.h VItemC.h StringListC.h \
+ StringC.h RangeC.h PixmapC.h VBoxC.h ViewListC.h ViewC.h HalAppC.h \
+ PtrListC.h PtrT.h VItemListC.h RectC.h
+SortExpWinC$(O) : SortExpWinC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h SortExpWinC.h \
+ HalDialogC.h HalShellC.h SortElemListC.h SortElemC.h SortKeyListC.h \
+ SortKeyC.h WArgList.h WXmString.h rsrc.h
+StrCase$(O) : StrCase.C StrCase.h
+StringC$(O) : StringC.C StringC.h RangeC.h Base.h CharC.h StrCase.h
+SysErr$(O) : SysErr.C StringC.h RangeC.h Base.h
+System$(O) : System.C Base.h
+TBoxC$(O) : TBoxC.C HalAppC.h StringC.h RangeC.h Base.h CallbackListC.h \
+ CallbackC.h PtrListC.h PtrT.h TBoxC.h VBoxC.h ViewListC.h ViewC.h \
+ VItemListC.h VItemC.h StringListC.h PixmapC.h RectC.h WXmString.h \
+ WArgList.h rsrc.h ButtonBox.h
+TextMisc$(O) : TextMisc.C TextMisc.h CharC.h MemMap.h StringC.h RangeC.h \
+ Base.h StringListC.h rsrc.h
+VBoxC$(O) : VBoxC.C HalAppC.h StringC.h RangeC.h Base.h CallbackListC.h \
+ CallbackC.h PtrListC.h PtrT.h VBoxC.h ViewListC.h ViewC.h \
+ VItemListC.h VItemC.h StringListC.h PixmapC.h RectC.h LgIconViewC.h \
+ IconViewC.h PixmapNameDictC.h PixmapDataDictC.h IconDataDictC.h \
+ IconDataC.h LabelDataListC.h LabelDataC.h SmIconViewC.h WArgList.h \
+ WXmString.h rsrc.h SortDialogC.h HalDialogC.h HalShellC.h \
+ FiltDialogC.h RegexC.h regex.h FindDialogC.h JoyStickC.h
+VItemC$(O) : VItemC.C HalAppC.h StringC.h RangeC.h Base.h CallbackListC.h \
+ CallbackC.h PtrListC.h PtrT.h VItemC.h StringListC.h PixmapC.h \
+ VBoxC.h ViewListC.h ViewC.h VItemListC.h RectC.h file.xbm sm_file.xbm
+ViewC$(O) : ViewC.C ViewC.h HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h
+WorkingBoxC$(O) : WorkingBoxC.C HalAppC.h StringC.h RangeC.h Base.h \
+ CallbackListC.h CallbackC.h PtrListC.h PtrT.h WorkingBoxC.h \
+ WXmString.h ForceDialog.h WorkingXbm.h WArgList.h rsrc.h
+rsrc$(O) : rsrc.C rsrc.h StringC.h RangeC.h Base.h IntListC.h \
+ StringListC.h RegexC.h regex.h HalAppC.h CallbackListC.h CallbackC.h \
+ PtrListC.h PtrT.h MimeRichTextC.h RectC.h
+CallbackListC$(O) : CallbackListC.C CallbackListC.h CallbackC.h Base.h
+ColumnListC$(O) : ColumnListC.C ColumnListC.h ColumnC.h FieldC.h \
+ StringC.h RangeC.h Base.h
+ExpElemListC$(O) : ExpElemListC.C ExpElemListC.h ExpElemC.h Base.h
+FieldListC$(O) : FieldListC.C FieldListC.h FieldC.h StringC.h RangeC.h \
+ Base.h
+IconDataDictC$(O) : IconDataDictC.C IconDataDictC.h VItemC.h \
+ StringListC.h StringC.h RangeC.h Base.h CallbackC.h PixmapC.h \
+ IconDataC.h RectC.h LabelDataListC.h LabelDataC.h
+IntListC$(O) : IntListC.C IntListC.h
+ItemDataDictC$(O) : ItemDataDictC.C ItemDataDictC.h VItemC.h \
+ StringListC.h StringC.h RangeC.h Base.h CallbackC.h PixmapC.h \
+ ItemDataC.h RectC.h FieldListC.h FieldC.h
+LabelDataListC$(O) : LabelDataListC.C LabelDataListC.h LabelDataC.h \
+ StringC.h RangeC.h Base.h
+PixelListC$(O) : PixelListC.C PixelListC.h
+PixmapDataDictC$(O) : PixmapDataDictC.C PixmapDataDictC.h PtrT.h \
+ PixmapC.h
+PixmapNameDictC$(O) : PixmapNameDictC.C PixmapNameDictC.h StringC.h \
+ RangeC.h Base.h PixmapC.h
+PtrListC$(O) : PtrListC.C PtrListC.h PtrT.h
+RangeListC$(O) : RangeListC.C RangeListC.h RangeC.h Base.h
+RowColChildListC$(O) : RowColChildListC.C RowColChildListC.h \
+ RowColChildC.h
+RowOrColListC$(O) : RowOrColListC.C RowOrColListC.h RowOrColC.h RowCol.h \
+ RowColChildListC.h RowColChildC.h
+SignalDictC$(O) : SignalDictC.C SignalDictC.h SignalCallsC.h \
+ CallbackListC.h CallbackC.h Base.h
+SortElemListC$(O) : SortElemListC.C SortElemListC.h SortElemC.h Base.h
+SortKeyListC$(O) : SortKeyListC.C SortKeyListC.h SortKeyC.h
+StringDictC$(O) : StringDictC.C StringDictC.h StringC.h RangeC.h Base.h
+StringListC$(O) : StringListC.C StringListC.h StringC.h RangeC.h Base.h
+VItemListC$(O) : VItemListC.C VItemListC.h VItemC.h StringListC.h \
+ StringC.h RangeC.h Base.h CallbackC.h PixmapC.h
+ViewListC$(O) : ViewListC.C ViewListC.h ViewC.h HalAppC.h StringC.h \
+ RangeC.h Base.h CallbackListC.h CallbackC.h PtrListC.h PtrT.h
+WidgetListC$(O) : WidgetListC.C WidgetListC.h
+RowCol$(O) : RowCol.c RowColP.h RowCol.h
+ButtonBox$(O) : ButtonBox.c ButtonBoxP.h ButtonBox.h
+regex$(O) : regex.c regex.h

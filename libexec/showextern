@@ -1,0 +1,148 @@
+#!/bin/sh
+
+# Copyright (c) 1996 H&L Software, Inc.
+# Copyright (c) 1994 HaL Computer Systems, Inc.
+# Derived from C-shell version, originally from Bellcore
+#
+# Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)
+# 
+# Permission to use, copy, modify, and distribute this material 
+# for any purpose and without fee is hereby granted, provided 
+# that the above copyright notice and this permission notice 
+# appear in all copies, and that the name of Bellcore not be 
+# used in advertising or publicity pertaining to this 
+# material without the specific, prior written permission 
+# of an authorized representative of Bellcore.  BELLCORE 
+# MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY 
+# OF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED "AS IS", 
+# WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+# 
+
+if [ $# -lt 3 ]; then
+    echo "Usage: showextern NEWFILE access-type name site directory mode ruser rpwd server"
+    exit 1
+fi
+#echo $0 $*
+NEWFILE=$1
+ATYPE=`echo $2 | tr 'A-Z' 'a-z'`
+NAME=$3
+SITE=$4
+DIR=$5
+MODE=$6
+USERNAME=$7
+PASS=$8
+SERVER=$9
+
+#
+# the password has been translated so it doesn't accidently show up in
+#    clear text.  This 'tr' reverses the translation.  The second form of
+#    tr is used on SVR4 systems.
+#
+TR1="tr '\060-\172\050-\057' '\050-\172'"
+TR2="tr '[\060-\172][\050-\057]' '[\050-\172]'"
+
+#
+# If TR1 doesn't change the word, we need to used TR2
+#
+test `echo "hello" | $TR1` = hello \
+	&& PASS=`echo $PASS | $TR2` \
+	|| PASS=`echo $PASS | $TR1`
+
+case "$ATYPE" in
+
+   ftp | anon-ftp)
+      if [ "$ATYPE" = "anon-ftp" ]; then
+	 USERNAME=anonymous
+	 HNAME=`hostname`
+	 DNAME=`domainname`
+	 PASS=`whoami`
+	 if [ ! -z $HNAME ]
+	 then
+	    PASS=${PASS}@$HNAME
+	    if [ ! -z $DNAME -a "$DNAME" != "none" -a "$DNAME" != "(none)" ]
+	    then
+	       PASS=${PASS}.$DNAME
+	    fi
+	    elif [ ! -z $DNAME ]
+	    then
+	       PASS=${PASS}@$DNAME
+	    fi
+	fi
+	
+	# We assumed that if an "rftp" exists, it is the version of ftp
+	# used to get through a firewall using a proxy server. However,
+	# there are other rftp programs out there, so this seems to 
+	# cause more trouble than it's worth.
+
+	#T=`type rftp 2>&1 | cut -d' ' -f2`
+	#if [ "$T" = "is" ]; then
+		#FTPCMD=rftp
+	#else
+		FTPCMD=ftp
+	#fi
+
+	if [ "$DIR" = "" ]; then
+		DIRCMD=""
+	else
+		DIRCMD="cd $DIR"
+	fi
+	if [ "$MODE" = "" ]; then
+		MODECMD=""
+	else
+		MODECMD="type $MODE"
+	fi
+
+	$FTPCMD -n <<!
+open $SITE
+user $USERNAME $PASS
+$DIRCMD
+$MODECMD
+get $NAME $NEWFILE
+quit
+!
+	if [ ! -f $NEWFILE ]; then
+	    exit 1
+	fi
+	;;
+
+   tftp)
+	if [ "$DIR" = "" ]; then
+		NEWNAME=$NAME
+	else
+		NEWNAME="$DIR/$NAME"
+	fi
+
+	tftp <<!
+connect $SITE
+$MODE
+get $NEWNAME $NEWFILE
+quit
+!
+	if [ ! -f $NEWFILE ]; then
+	    exit 1
+	fi
+	;;
+
+   mail-server)  # A very special case
+	SUBJECT="Automated Mail Server Request"
+	NEWERFILE="$NEWFILE.msg"
+	echo "Subject: $SUBJECT" > $NEWERFILE
+	echo "To: $SERVER" >> $NEWERFILE
+	echo "" >> $NEWERFILE
+	cat $NEWFILE >> $NEWERFILE
+	/usr/lib/sendmail -t < $NEWERFILE
+	if [ $? -ne 0 ]; then
+	    rm -f $NEWERFILE
+	    exit 1
+	fi
+	rm -f $NEWERFILE
+	exit 0
+	;;
+
+    *)
+	echo "Unknown access type: $ATYPE"
+	exit 1
+	;;
+esac
+
+exit 0

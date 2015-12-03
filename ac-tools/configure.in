@@ -1,0 +1,254 @@
+dnl **** Process this file with autoconf to produce a configure script.
+
+AC_INIT(src/main.C)
+AC_CONFIG_AUX_DIR(ac-tools)
+
+AC_CONFIG_HEADER(config.h:ac-tools/config.h.in)
+
+AC_PREFIX_DEFAULT("/usr/local")
+
+builtin(include, ac-tools/aclocal.m4)
+
+AC_SUBST(ISHVER)
+
+AC_SUBST(EXEEXT)
+AC_SUBST(OBJEXT)
+AC_SUBST(BATEXT)
+
+AC_SUBST(MKINSTALLDIRS)
+
+AC_SUBST(M_LIB)
+AC_SUBST(GUI_FLAGS)
+AC_SUBST(GUI_LIBS)
+
+AC_SUBST(PRINT_CMD)
+
+ISHVER="2.1.0"
+
+
+dnl **** define C compiler
+CC=${CC-gcc}
+AC_ARG_WITH(cc,
+[  --with-cc=PROG               use PROG as C compiler [${CC-gcc}]],
+[CC="${withval}"])
+
+dnl **** define C++ compiler
+CCC=${CCC-g++}
+AC_ARG_WITH(c++,
+[  --with-c++=PROG              use PROG as C++ compiler [${CCC-g++}]],
+[CCC="${withval}"])
+
+dnl Chance to add include path
+AC_ARG_WITH(extra-incpath,
+[  --with-extra-incpath=PATH    define extra include path (dir1:dir2:...) [none]],
+[CPPFLAGS="${CPPFLAGS} -I`echo ${withval}|sed 's/:/\ -I/g'`"])
+
+dnl ... and ld path
+AC_ARG_WITH(extra-ldpath,
+[  --with-extra-ldpath=PATH     define extra ld path (dir1:dir2:...) [none]],
+[LDFLAGS="-L`echo ${withval}|sed 's/:/\ -L/g'` ${LDFLAGS}";
+  case "${host}" in
+    sparc-sun-solaris*) LDFLAGS="-R:${withval} ${LDFLAGS}";;
+  esac
+])
+
+dnl **** use editres  
+AC_ARG_ENABLE(editres,
+[  --enable-editres             enable editres support [yes]],
+[case "${enableval}" in
+  yes) editres=true ;;
+  no)  editres=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-editres) ;;
+esac],[editres=true])
+
+AC_ARG_ENABLE(dmalloc,
+[  --enable-dmalloc             link against dmalloc library [no]],
+[case "${enableval}" in
+  yes) dmalloc=true ;;
+  no)  dmalloc=false;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-dmalloc) ;;
+esac],[dmalloc=no])
+
+dnl **** maintainer mode
+AC_ARG_ENABLE(maintainer,
+[  --enable-maintainer          enable maintainer's mode [no]],
+[case "${enableval}" in
+  yes) maintainer=true; debug=true ;;
+  no)  maintainer=false ;;
+  *) AC_MSG_ERROR(bad value ${enableval} for --enable-maintainer) ;;
+esac],[maintainer=false])
+
+if test $maintainer = true
+then
+  AC_DEFINE(WITH_DEBUG)
+fi
+
+dnl **** Check for host type
+AC_CANONICAL_HOST
+
+dnl Checks for C compiler
+AC_PROG_CC
+
+AC_ISC_POSIX
+AC_AIX
+AC_MINIX
+AC_C_CONST
+
+AC_C_CHAR_UNSIGNED
+
+dnl **** .exe/.obj file extensions
+AC_EXEEXT
+AC_OBJEXT
+
+OBJEXT=".$OBJEXT"
+if test "x$EXEEXT" != "x"
+then
+  EXEEXT=".$EXEEXT"
+fi
+
+dnl Checks for C++ compiler
+AC_PROG_CXX
+
+AC_PROG_MAKE_SET
+
+dnl **** Checks for programs.
+AC_CACHE_SAVE
+AC_CHECK_PROG(AR, ar, ar, NONE)
+if test "$AR" = "NONE"; then
+  AC_MSG_ERROR(--> Can't find \`ar'!)
+  exit 1
+fi
+
+AC_PROG_RANLIB
+AC_PROG_LN_S
+AC_PROG_YACC
+
+AC_PROG_INSTALL
+case "x$INSTALL" in
+   x/*) ;;
+   *) INSTALL=`pwd`/ac-tools/"shtool install -c" ;
+esac
+
+MKINSTALLDIRS=`pwd`/ac-tools/"shtool mkdir -p -f"
+
+dnl **** Check how to print
+AC_CHECK_PROG(LP_CMD, lp, 'lp -c', "NONE")
+if test "${ac_cv_prog_LP_CMD}" = "NONE"; then
+  AC_CHECK_PROG(LPR_CMD, lpr, 'lpr', "NONE")
+  if test "${ac_cv_prog_LPR_CMD}" = "NONE"; then
+    PRINT_CMD=
+  else
+    PRINT_CMD="${ac_cv_prog_LPR_CMD}"
+  fi
+else
+  PRINT_CMD="${ac_cv_prog_LP_CMD}"
+fi
+
+dnl **** Checks for header files.
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_CHECK_HEADERS(sys/param.h sys/select.h)
+AC_CHECK_HEADERS(sysexits.h)
+
+dnl **** Time stuff.
+AC_CHECK_HEADERS(sys/time.h)
+AC_HEADER_TIME
+AC_STRUCT_TM
+AC_STRUCT_TIMEZONE
+
+dnl **** Checks for typedefs, structures, and compiler characteristics.
+AC_TYPE_PID_T
+AC_TYPE_SIZE_T
+
+dnl **** stat(v)fs stuff.
+ACX_CHECK_STATFS
+
+dnl **** Checks for library functions.
+AC_TYPE_SIGNAL
+AC_FUNC_VFORK
+AC_CHECK_FUNCS(sysconf getpagesize)
+AC_CHECK_FUNCS(strerror)
+AC_CHECK_FUNCS(setenv)
+AC_CHECK_FUNCS(strncasecmp)
+AC_CHECK_FUNCS(gettimeofday)
+AC_CHECK_FUNCS(unlink)
+AC_CHECK_FUNCS(setegid)
+AC_CHECK_FUNCS(gethostname)
+ICE_CHECK_DECL(getdomainname, unistd.h)
+
+dnl **** Checks for libm
+AC_CHECK_LIB(m, sqrt, M_LIB="-lm")
+
+ACX_CHECK_OPENSSL(0.9.6a, AC_DEFINE(HAVE_OPENSSL))
+
+dnl **** use dmalloc  
+case $dmalloc in
+  true) ACX_USE_DMALLOC;;
+  *) ;;
+esac
+
+dnl **** X stuff
+AC_PATH_XTRA
+ACX_PROG_GXX_PICKY_XHEADER
+GUI_LIBS="-lXt -lXext -lX11 $X_PRE_LIBS $X_EXTRA_LIBS"
+
+dnl **** use editres  
+case $editres in
+  true) AC_CHECK_LIB(Xmu,_XEditResCheckMessages,GUI_LIBS="-lXmu $GUI_LIBS"; AC_DEFINE(WITH_EDITRES),,$X_LIBS $GUI_LIBS);;
+  *) ;;
+esac
+
+if test $ac_cv_lib_Xmu__XEditResCheckMessages != yes; then
+  AC_MSG_RESULT(--> support for EditRes protocol is disabled)
+fi
+
+AC_CACHE_SAVE
+dnl **** Check for Xpm lib and headers
+AC_CHECK_LIB(Xpm, XpmCreatePixmapFromData, GUI_LIBS="-lXpm $GUI_LIBS", , $X_LIBS $GUI_LIBS)
+if test "$ac_cv_lib_Xpm_XpmCreatePixmapFromData"     != yes; then
+  AC_MSG_ERROR(Xpm library has not been found, can't continue)
+fi
+AC_CHECK_HEADERS(xpm.h X11/xpm.h)
+if test "$ac_cv_header_xpm_h"     != yes && 
+   test "$ac_cv_header_X11_xpm_h" != yes; then
+  AC_MSG_ERROR(Xpm header file has not been found, can't continue)
+fi
+
+dnl **** some Motif-2.1 variants need the -lXp library
+AC_CHECK_LIB(Xp, main, GUI_LIBS="-lXp $GUI_LIBS", , $X_LIBS $GUI_LIBS)
+
+AC_CACHE_SAVE
+ICE_FIND_MOTIF
+if test "$motif_libraries_result" = "(none)" || 
+   test "$motif_includes_result" = "(none)"; then
+  AC_MSG_ERROR(Motif/LessTif has not been found, can't continue)
+fi
+
+AC_DEFINE(HAVE_MOTIF)
+GUI_LIBS="-lXm $GUI_LIBS"
+GUI="MOTIF_GUI"
+GUI_FLAGS="$X_CFLAGS"
+
+dnl **** Special Motif checks
+save_CPPFLAGS="$CPPFLAGS"
+save_LIBS="$LIBS"
+CPPFLAGS="$CPPFLAGS $GUI_FLAGS"
+LIBS="$X_LIBS $GUI_LIBS $LIBS"
+
+dnl **** Check whether Motif is actually Lesstif
+ICE_CHECK_LESSTIF
+dnl **** Check whether _XmVersionString[] can be referred to
+ACX_CHECK_XMVERSIONSTRING
+dnl **** MetroLink Motif lacks these definitions
+ICE_CHECK_DECL(XmAddToPostFromList, Xm/RowColumn.h)
+ICE_CHECK_DECL(XmRemoveFromPostFromList, Xm/RowColumn.h)
+dnl **** Undocumented _Xm* functions used in custom widgets
+ICE_CHECK_DECL(_XmGetFocusPolicy, Xm/XmP.h)
+ICE_CHECK_DECL(_XmInputForGadget, Xm/XmP.h)
+ICE_CHECK_DECL(_XmShellIsExclusive, Xm/XmP.h)
+
+CPPFLAGS="$save_CPPFLAGS"
+LIBS="$save_LIBS"
+
+dnl **** Create Make.conf and help cards
+AC_OUTPUT(Make.conf:ac-tools/Make.conf.in lib/Ishmail.hlp:lib/Ishmail.hlp.in)

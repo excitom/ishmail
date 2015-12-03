@@ -1,0 +1,190 @@
+<HTML>
+<HEAD>
+ <TITLE>Window Operations</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="DAB1CfBrBM9X3cS">Window Operations</H1>
+
+<P>
+You can
+resize the Composition window using your window
+manager's resizing borders at the edges of the window. As you
+resize the window vertically, the message composition area
+grows or shrinks proportionally while the recipient fields, subject
+field, and additional headers fields remain the same size. As you
+resize the window horizontally, both areas grow or shrink
+proportionally.
+<P>
+You can select the
+<B>Wrap text at right margin</B> option in the
+<A HREF="XBFI2.BsKL9X3cS.html">Composition
+Window Preferences</A> dialog. When this option is in effect
+<CITE>Ishmail</CITE>
+automatically inserts a soft
+newline character when you type
+past the right margin. This causes the cursor to return to the left
+margin and move down one line, so the text wraps around to the
+next line as if you had typed the
+<B>Return</B> (or
+<B>Enter</B>) key. Soft
+newlines differ from hard newlines, which are inserted when you
+press
+<B>Return</B> or
+<B>Enter</B>, in that soft newlines move when you
+resize the window. For example, if you type several lines of text
+then resize the window, the text re-flows to best fit the new
+window size.
+
+<P>
+By default, the
+<B>Cc:</B>,
+<B>Bcc:</B>,
+<B>Fcc:</B>, and
+<B>Additional headers</B> fields are not
+displayed in the Composition window. You can select to display
+them by clicking the
+<B>Show</B>
+<U>C</U><B>c:</B>,
+<B>Show</B>
+<U>B</U><B>cc:</B>,
+<B>Show</B>
+<U>F</U><B>cc:</B>, and
+<B>Show</B>
+<U>A</U><B>dditional:</B> buttons in the Composition window
+<U>O</U><B>ptions</B> menu.
+
+<H2><A NAME="rAB1CfBrBM9X3cS">Multiple Windows</H2>
+
+<P>
+You can
+open one or more Composition windows from the Main
+window at any time unless a pop-up dialog window is being
+displayed that requires action before it can be dismissed.
+<CITE>Ishmail</CITE>
+attempts to reuse existing Composition windows when possible.
+For example, if you open a Composition window and type some
+text into it, then select
+<U>C</U><B>ompose New...</B> again, a new Composition
+window is opened. However, if you had cleared the text in the
+original Composition window, selecting
+<U>C</U><B>ompose New...</B> would
+cause the first window to be reused. The intention is to prevent
+losing a composition in progress, while minimizing the number
+of windows created.
+
+<H2><A NAME="xAB1CfBrBM9X3cS">Selection Buttons</H2>
+
+<P>
+<H4>Figure: <A NAME="evDI2.BsKL9X3cS">Composition Window Selection Buttons</H4>
+
+<IMG SRC="DAB1CfBrBM9X3cS.extobj.1.gif">
+<P>
+Selection
+buttons just below the message composition area
+enable you to quickly customize messages you are currently
+composing. See
+<A HREF="lQFI2.BsKL9X3cS.html">Outgoing Mail Preferences</A>.
+
+<H3><A NAME="vZJtg-BfiI9X3cS">Add Signature</H3>
+
+<P>
+The
+<B>Add signature</B> option lets you to append a custom signature to
+an outgoing message. If you toggle this button
+<KBD>On</KBD>, the contents of
+your
+<I>signature file</I> is attached to the message prior to delivery. A
+change to this button does not remain in effect after you close the
+Composition window. The default value for
+<B>Add signature</B> is
+<KBD>Off</KBD>.
+You can change the default value in the
+<A HREF="uhFI2.BsKL9X3cS.html#mqFI2.BsKL9X3cS">Signature Preferences</A>
+dialog.
+
+
+<H3><A NAME="0aJtg-BfiI9X3cS">Wrap Text</H3>
+
+<P>
+The
+<B>Wrap text</B> option specifies whether text should automatically
+wrap when you type beyond the right margin. If text is not
+wrapped, a horizontal scroll bar will be added to the window if
+one or more lines in the message are longer than the window is
+wide. A change to this button does not remain in effect after you
+close the Composition window. The default value for
+<B>Wrap text</B> is
+<KBD>Off</KBD>. You can change the default value in the
+<A HREF="XBFI2.BsKL9X3cS.html">Composition
+Window Preferences</A> dialog.
+
+<H3><A NAME="6aJtg-BfiI9X3cS">Check Addresses</H3>
+
+<P>
+The third selection button,
+<B>Check addresses</B>, will cause
+<CITE>Ishmail</CITE> to
+request that the
+<CITE>sendmail</CITE> program validate the address(es) you
+typed into the
+<B>To:</B>,
+<B>Cc:</B>, or
+<B>Bcc:</B> fields. A change to this button does
+not remain in effect after you close the Composition window. The
+default value for
+<B>Check addresses</B> is
+<KBD>Off</KBD>. You can change the
+default value in the
+<A HREF="lQFI2.BsKL9X3cS.html">Outgoing Mail Preferences</A> dialog.
+
+<H3><A NAME="BaJtg-BfiI9X3cS">Message Type</H3>
+
+<P>
+Below the selection buttons are four radio buttons that control
+whether your message is sent as a MIME message.
+<DL>
+<DT><B>Plain text</B>
+<DD>Never send a MIME formatted message. Of course, this
+option precludes the use of MIME features in your
+message. Choose this option only if maximum backward
+compatibility is your main concern.
+<P>
+If you include MIME features in a message, a prompt will
+appear when you click the send option asking if you wish
+to send the message as plain text even though
+information will be lost.
+<P>
+
+<DT><B>MIME</B>
+<DD>This is the default value. A message is sent as a
+MIME-encoded message.
+<P>
+
+<DT><B>Both together</B>
+<DD>Send the message in both plain text and MIME format
+with the plain format first. Use this option if you don't
+know the capabilities of your recipient's mail program or
+if you are sending to several recipients, at least some of
+whom have MIME capability. The MIME recipients will
+not see the plain part, while the non-MIME recipients
+will see the plain part first and instructions to ignore the
+MIME part.
+
+<P>
+
+</DL>
+<P>
+Changes to these options do not remain in effect after you close
+the Composition window. See
+<A HREF="lQFI2.BsKL9X3cS.html">Outgoing Mail Preferences</A> to
+change the default values of any of these options.
+
+<HR>
+Preceding Section: <A HREF="YW-4QLBN0XwA0YK.html">Composition Window Components</A><BR>
+Following Section: <A HREF="4V-4QLBN0XwA0YK.html">Opening the Composition Window</A><BR>
+Parent Section: <A HREF="Vj-1vFBulI9X3cS.html">Composition Window</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

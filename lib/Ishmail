@@ -1,0 +1,17 @@
+#include "Ishmail.misc"
+#include "Ishmail.lang"
+#include "Ishmail.colors"
+#include "Ishmail.help"
+
+! If you are using OpenWindows, comment out the first line below and uncomment
+!    the second
+
+#include "Ishmail.fonts"
+!#include "Ishmail.fonts.ow"
+
+!
+! Place any site customizations in the following file.  This will allow
+!   these settings to be preserved across upgrades.
+!
+
+#include "Ishmail.site"

@@ -1,0 +1,49 @@
+!
+! General
+!
+Ishmail*background:		White
+Ishmail*foreground:		Black
+Ishmail*borderColor:		Black
+Ishmail*topShadowColor:		White
+Ishmail*bottomShadowColor:	Black
+Ishmail*highlightColor:		Black
+
+!
+! State dependent text colors
+!
+Ishmail*insensitiveBackground:	White
+Ishmail*insensitiveForeground:	Black
+Ishmail*optionalBackground:	White
+Ishmail*optionalForeground:	Black
+Ishmail*invalidBackground:	Black
+Ishmail*invalidForeground:	White
+
+!
+! Lists and view boxes
+!
+Ishmail*titleBackground:	White
+Ishmail*titleForeground:	Black
+Ishmail*selectedBackground:	Black
+Ishmail*selectedForeground:	White
+
+!
+! Toggle buttons
+!
+Ishmail*selectColor:		Black
+
+!
+! Drag-and-drop
+!
+Ishmail*validDropColor:		Black
+
+!
+! Message attachments
+!
+Ishmail*asciiBackground:	White
+Ishmail*imageBackground:	White
+Ishmail*audioBackground:	White
+Ishmail*videoBackground:	White
+Ishmail*asciiForeground:	Black
+Ishmail*imageForeground:	Black
+Ishmail*audioForeground:	Black
+Ishmail*videoForeground:	Black

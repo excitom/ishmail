@@ -1,0 +1,92 @@
+ISHVER = @ISHVER@
+host=@host@
+
+# Bourn shell
+SHELL = /bin/sh
+
+# Extension of object files
+O = @OBJEXT@
+
+# Extension of executables
+EXE = @EXEEXT@
+
+# Path prefix for installation links
+prefix = @prefix@
+exec_prefix = @exec_prefix@
+bindir = @bindir@
+datadir = @datadir@
+mandir = @mandir@
+
+# C compiler
+CC = @CC@
+
+# C++ compiler
+CXX = @CXX@
+
+# Location of yacc (or its substitution)
+YACC = @YACC@
+
+# ar
+AR = @AR@
+AR_FLAGS = cru
+
+# ranlib
+RANLIB = @RANLIB@
+
+# rm and mv
+RM = rm -f
+MV = mv -f
+
+# soft link
+LN_S=@LN_S@
+
+# BSD install
+INSTALL=@INSTALL@
+INSTALL_PROGRAM=@INSTALL_PROGRAM@
+INSTALL_DATA=@INSTALL_DATA@
+MKINSTALLDIRS=@MKINSTALLDIRS@
+
+# CPP flags
+CPPFLAGS = @CPPFLAGS@
+
+# C flags
+CFLAGS = @CFLAGS@
+
+# C++ flags
+CXXFLAGS = @CXXFLAGS@
+
+# GUI flags
+GUI_FLAGS = @GUI_FLAGS@
+
+# LDFLAGS
+LDFLAGS = @LDFLAGS@
+
+# Math library
+M_LIB = @M_LIB@
+
+# OpenSSL libraries
+OPENSSL_LIBS = @OPENSSL_LIBS@
+
+# dmalloc library
+DMALLOC_LIB = @DMALLOC_LIB@
+
+# GUI libraries
+GUI_LIBS = @X_LIBS@ @GUI_LIBS@
+
+# Command used to print
+PRINT_CMD = @PRINT_CMD@
+
+
+# Location of the Ishmail home
+ISHHOME = $(datadir)/ishmail
+
+HGLINCDIR = $(TOP)
+HGLSRC = $(HGLINCDIR)/hgl
+
+SCRIPTS = $(TOP)/scripts
+
+BUILD_LIST_H = $(SCRIPTS)/build_list_h $(HGLSRC)
+BUILD_LIST_C = $(SCRIPTS)/build_list_c $(HGLSRC)
+
+BUILD_DICT_H = $(SCRIPTS)/build_dict_h $(HGLSRC)
+BUILD_DICT_C = $(SCRIPTS)/build_dict_c $(HGLSRC)

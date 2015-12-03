@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+ <TITLE>Composing MIME Messages</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="QDeIvFBSQJ9X3cS">Composing MIME Messages</H1>
+
+<P>
+MIME messages
+are created using the Composition window.
+Either plain ASCII text or
+<EM>MIME</EM>
+<EM>Enriched Text</EM> can be entered into
+the window. Enriched Text attributes are applied by marking
+text with left-button drag-select, then pulling down the
+<U>E</U><B>dit</B>
+menu, which contains options for the various available
+attributes. The Composition window is a
+<I>wysiwyg</I> editor. When
+attributes are applied to text, they are displayed as they should
+appear to the recipient.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>There is no way to guarantee that the
+appearance of the message in the
+Composition window will exactly match what
+the recipient sees. First, the recipient may not
+have a MIME-capable mail tool. Second,
+MIME-capable mail tools may not always
+handle Enriched Text, or if they do, they may
+not do so in exactly the same way as
+<CITE>Ishmail</CITE>.
+Third, even if the recipient is using
+<CITE>Ishmail</CITE>,
+you may choose a font for the Enriched Text
+that is different than the one your recipient is
+using to display it.
+<HR>
+</P>
+<P>
+Other data types can be added as
+<I>body parts</I>. Body parts can be
+either in-line or external. External body parts are most useful for
+large data files that you don't want to physically copy, but rather
+send a pointer. Body parts are added to the message from the
+<U>I</U><B>nclude/Attach</B> -> options on the Message pull down menu. The
+former creates and in-line body part while the latter creates an
+external body part. (See
+<A HREF="bqbqgMBPQJ9X3cS.html">Include/Attach Option</A> for more
+information.)
+<P>
+<CITE>Ishmail</CITE> does not have the ability to create or edit anything other
+than text (plain or Enriched). Files containing data of another
+type must be created by some other program.
+<P>
+Each body part can have a description tag, defined by the user.
+After a body part is created, a place holder box is left in the
+composition window, containing a button and the description tag.
+The button is labeled
+<B>Delete</B>. Pressing it causes the body part to be
+discarded.
+<P>
+MIME messages actually consist of 7-bit ASCII text. Rich Text
+attributes are included as mark up tags. Other data types are
+encoded using a process, similar to
+<I>uuencode</I>, which converts
+binary data into 7-bit ASCII characters. If a MIME encoded
+message is sent to a recipient whose mail reader can't handle
+MIME, the message is still readable. However, the Rich Text
+markup will appear in the message. For example:
+<PRE>
+*******************************************************************
+<BR>* This message has been encoded using the Multipurpose Internet Mail
+<BR>* Extensions (MIME) format. The mail reader you are using does not
+<BR>* support MIME. To display the non-text portions of this message you
+<BR>* will need a MIME-capable mail reader.
+<BR>*******************************************************************
+<BR>--bODY.pART.bOUNDARY
+<BR>Content-Type: text/richtext;
+<BR>charset=us-ascii
+<BR>
+<BR>Here is a sample message with some rich text.
+<BR>&lt;Bold>this is bold face.&lt;/Bold>.
+<BR>&lt;Italic> this is italic.&lt;/Italic>
+<BR>&lt;nl> &lt;Center> &lt;Underline> This centered text is underlined. &lt;/Underline> &lt;/Center> &lt;nl>
+<BR>&lt;Indent>This is indented text.&lt;/Indent>&lt;nl>
+<BR>&lt;nl>
+<BR>This is how a GIF body part would be shown:
+<BR>--bODY.pART.bOUNDARY
+<BR>Content-Type: image/gif
+<BR>Content-Transfer-Encoding: base64
+<BR>Content-Description: The company logo
+<BR>R0lGODdhRAJVAYcAAAAAAIAAAACAAICAAAAAgIAAgACAgICAgMDAwP8AAAD/AP//AAAA//8A . . .
+</PRE>
+
+<HR>
+Preceding Section: <A HREF="9DeIvFBSQJ9X3cS.html">Reading MIME Messages</A><BR>
+Following Section: <A HREF="yDeIvFBSQJ9X3cS.html">MIME Data Types</A><BR>
+Parent Section: <A HREF="5DeIvFBSQJ9X3cS.html">A Brief Discussion of MIME Message Content</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

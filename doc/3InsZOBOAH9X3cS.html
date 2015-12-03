@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+ <TITLE>Sample Mailcap File</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="3InsZOBOAH9X3cS">Sample Mailcap File</H1>
+
+<PRE>
+text/richtext; Ishmail; print="cat %s | rt2ps | lp"
+<BR>
+<BR>audio/basic; cat %s > /dev/audio
+<BR>
+<BR># Image
+<BR>image/xwd; /usr/bin/X11/xwud -in %s
+<BR>image/x-xwd; /usr/bin/X11/xwud -in %s
+<BR>image/pgm; pgmtopbm %s | xv - -perfect
+<BR>image/x-pgm; pgmtopbm %s | xv - -perfect
+<BR>image/xbitmap; /usr/bin/X11/xloadimage %s
+<BR>image/x-xbitmap; /usr/bin/X11/xloadimage %s
+<BR>image/xbm; /usr/bin/X11/xloadimage %s
+<BR>image/x-xbm; /usr/bin/X11/xloadimage %s
+<BR>image/*; xv -perfect %s
+</PRE>
+<PRE>
+
+<BR># Audio
+<BR>audio/*; showaudio %s
+<BR>
+<BR># Video
+<BR>video/mpeg; mpeg_play %s
+<BR>
+<BR># Application
+<BR>application/frame; showframe %s; print="cat %s | lp"
+<BR>application/x-des; xterm -e /bin/sh -c 'cat %s | des -d %{method} -k %{key} | less'
+<BR>
+<BR># If you have an interactive Postscript interpreter, you should think carefully 
+<BR># before replacing lpr with it in the following line, because PostScript
+<BR># can be an enormous security hole. It is RELATIVELY harmless
+<BR># when sent to the printer...
+<BR>application/postscript; ghostview %s; label="A Postscript File";\
+<BR>	compose="getfilename Postscript %s"; print="cat %s | lp";\
+<BR>	composetyped="gettypedfile %s"
+<BR>
+<BR># External
+<BR>message/external-body; getmextern '%s' '%{access-type}' '%{name}' '%{site}' '%{directory}'
+<BR> '%{mode}' '%{ruser}' '%{rpwd}' '%{server}' '%{subject}'
+</PRE>
+
+<HR>
+Preceding Section: <A HREF="6m52wFBX4N9X3cS.html">Mailcap File Definition</A><BR>
+Following Section: <A HREF="466vpFBcuG9X3cS.html">Glossary</A><BR>
+Parent Section: <A HREF="Xj52wFBX4N9X3cS.html">Ishmail Resources</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

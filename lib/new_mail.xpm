@@ -1,0 +1,23 @@
+/* XPM */
+static char * new_mail_xpm [] = {
+"24 16 4 1",
+"   s mask m none  c none",
+".  m black  c black",
+"X  m white  c white",
+"o  m black  c cyan",
+"                        ",
+"                        ",
+"........................",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".X.....XXXXXXXXXXXXoooX.",
+".XXXXXXXXXXXXXXXXXXoooX.",
+".X.....XXXXXXXXXXXXoooX.",
+".XXXXXXXXXXXXXXXXXXoooX.",
+".XXXXXX...........XXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXX...........XXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXX...........XXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+"........................",
+"                        "};

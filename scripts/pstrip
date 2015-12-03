@@ -1,0 +1,14 @@
+#!/bin/sh
+exec perl -x $0 ${1+"$@"}
+#!perl
+
+# take the nicely formatted and commented PostScript prolog code and make
+# it lean, mean, and unreadable to the average human.
+while(<>) {
+	next if (/^%/);
+	s/^(.*)%.*$/\1 /;
+	s/\t/ /g;
+	s/  / /eg;
+	s/\n$/ /;
+	print;
+}

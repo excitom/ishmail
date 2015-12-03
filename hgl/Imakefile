@@ -1,0 +1,289 @@
+# 
+# HGL Imakefile
+#
+
+/*
+ * We'll assume, for now, that if we're building shared X libs, that we also
+ * want to build shared hgl libs.
+*/
+#define DoNormalLib NormalLibX
+/* Shared hgl libs causing problem on SunOS 4.1.x, so don't build them. */
+/* ld: Undefined symbol
+   _XtToolkitInitialize */
+#if SystemV4
+#define DoSharedLib SharedLibX
+#else
+#define DoSharedLib NO
+#endif
+
+#ifndef UseInstalled
+#TOP = ../../../motif
+#endif
+
+#include <Library.tmpl>
+#include <Motif.tmpl>
+
+INSTALLFLAGS = $(INSTINCFLAGS)
+
+SOHGLLIBREV = 1.0
+
+HEADERS = \
+AppDialogC.h AppShellC.h AppWindowC.h BarChartC.h Base.h BoolExpC.h \
+BoolExpWinC.h CallbackC.h ColorModC.h CounterC.h CounterModC.h Db.h \
+DoubleListC.h FieldViewC.h FiltDialogC.h FindDialogC.h FloatListC.h \
+ForceDialog.h FormatModC.h GraphC.h GridC.h HalAppC.h HalDialogC.h HalMainWinC.h \
+HalShellC.h HalTopLevelC.h HeaderBoxC.h Help.h HelpC.h HelpDbC.h HglResources.h HistogramC.h \
+HistogramModC.h IconC.h IconDataC.h IconViewC.h IntListC.h LgIconViewC.h \
+ListBoxC.h MatrixC.h MeterC.h MeterModC.h ModFormC.h ODictC.h OListC.h \
+OrientModC.h PDictC.h PListC.h PieChartC.h PieChartModC.h PixmapC.h \
+PostCardC.h PtrListC.h RangeC.h RectC.h RegexC.h ScaleC.h ScaleModC.h \
+Shadow.h ShadowModC.h SignalRegistry.h SmIconViewC.h SortDialogC.h \
+SortExpWinC.h SortKeyC.h StringC.h StringDictC.h StringListC.h StripChartC.h \
+StripChartModC.h TBoxC.h TermC.h TreeC.h TreeNodeC.h TreeOutline.h \
+TreeOutlineP.h VBoxC.h VItemC.h ValueC.h WidgetListC.h ViewC.h \
+WArgList.h WXmString.h WorkingBoxC.h WorkingXbm.h regex.h rsrc.h HalTreeC.h \
+HalTreeModC.h HalTreeNodeC.h LayoutC.h NumericFieldC.h OutlineLayoutC.h \
+TreeLayoutC.h
+
+HGLCSRC = \
+AppShellC.C AppWindowC.C BoolExpC.C BoolExpWinC.C CallbackC.C ColorModC.C \
+DoubleListC.C ForceDialog.C GridC.C HalAppC.C HalDialogC.C HalMainWinC.C \
+HalShellC.C HalTopLevelC.C HeaderBoxC.C List.C ListBoxC.C NumericFieldC.C \
+PostCardC.C RegexC.C RowColC.C Shadow.C SignalRegistry.C SortKeyC.C \
+SortExpWinC.C StringC.C TermC.C TreeC.C TreeNodeC.C ValueC.C WidgetListC.C \
+WorkingBoxC.C rsrc.C
+
+HGLCOBJ = \
+AppShellC.o AppWindowC.o BoolExpC.o BoolExpWinC.o CallbackC.o ColorModC.o \
+DoubleListC.o ForceDialog.o GridC.o HalAppC.o HalDialogC.o HalMainWinC.o \
+HalShellC.o HalTopLevelC.o HeaderBoxC.o List.o ListBoxC.o NumericFieldC.o \
+PostCardC.o RegexC.o RowColC.o Shadow.o SignalRegistry.o SortKeyC.o \
+SortExpWinC.o StringC.o TermC.o TreeC.o TreeNodeC.o ValueC.o WidgetListC.o \
+WorkingBoxC.o rsrc.o
+
+HGLcSRC = TreeOutline.c XawInitFake.c regex.c RowCol.c
+
+HGLcOBJ = TreeOutline.o XawInitFake.o regex.o RowCol.o
+
+HGLOBJ = $(HGLCOBJ) $(HGLcOBJ)
+HGLLIB = $(LIBDIR)/libhgl.a
+
+HGRSRC = \
+BarChartC.C CounterC.C CounterModC.C FormatModC.C HistogramC.C \
+HistogramModC.C MeterC.C MeterModC.C ModFormC.C OrientModC.C PieChartC.C \
+PieChartModC.C ScaleC.C ScaleModC.C ShadowModC.C StripChartC.C StripChartModC.C \
+GraphC.C
+
+HGROBJ = \
+BarChartC.o CounterC.o CounterModC.o FormatModC.o HistogramC.o \
+HistogramModC.o MeterC.o MeterModC.o ModFormC.o OrientModC.o PieChartC.o \
+PieChartModC.o ScaleC.o ScaleModC.o ShadowModC.o StripChartC.o StripChartModC.o \
+GraphC.o
+
+HGRLIB = $(LIBDIR)/libhgr.a
+
+HVBSRC = \
+ColumnC.C FieldViewC.C FiltDialogC.C FindDialogC.C IconC.C IconDataC.C \
+IconViewC.C ItemDataC.C LabelDataC.C LgIconViewC.C PixmapC.C PixmapC2.C \
+SortDialogC.C SmIconViewC.C TBoxC.C VBoxC.C VItemC.C ViewC.C
+
+HVBOBJ = \
+ColumnC.o FieldViewC.o FiltDialogC.o FindDialogC.o IconC.o IconDataC.o \
+IconViewC.o ItemDataC.o LabelDataC.o LgIconViewC.o PixmapC.o PixmapC2.o \
+SortDialogC.o SmIconViewC.o TBoxC.o VBoxC.o VItemC.o ViewC.o
+
+HVBLIB = $(LIBDIR)/libhvb.a
+
+HTRSRC = \
+HalTreeC.C HalTreeModC.C HalTreeNodeC.C LayoutC.C OutlineLayoutC.C TreeLayoutC.C
+
+HTROBJ = \
+HalTreeC.o HalTreeModC.o HalTreeNodeC.o LayoutC.o OutlineLayoutC.o TreeLayoutC.o
+
+HTRLIB = $(LIBDIR)/libhtr.a
+
+HELPSRC = Db.C Help.C HelpC.C HelpDbC.C
+HELPOBJ = Db.o Help.o HelpC.o HelpDbC.o
+HELPLIB = $(LIBDIR)/libhelp.a
+
+BITMAPS = \
+file.xbm hal.xbm sm_file.xbm thumb_down.mask thumb_down.xbm thumb_up.mask \
+thumb_up.xbm
+
+LIBS = $(HGLLIB) $(HGRLIB) $(HVBLIB) $(HTRLIB) $(HELPLIB)
+
+#ifndef UseInstalled
+/* All these help ensure we're not accessing 'installed' includes... */
+/* We also need motif/X11/hgl for the olias.h file used by Help.C */
+EXTRA_INCLUDES = -I. -I$(XTOP) -I$(MTOP) -I$(INCLUDESRC) -I$(MINCLUDESRC) -I$(MINCLUDESRC)/hgl
+#endif
+
+/* Any C++ related paths need to be set via env variables. */
+/* Regular C stuff is handled via imake/config. */
+C++=${CCC}
+C++_INCLUDES = -I${CCC_INCLUDES}
+
+#if SystemV4
+
+/* Solaris CC doesn't accept -K PIC, it needs -pic or -PIC... */
+/* Note that Solaris cc doesn't support -pic */
+CCPICFLAGS = -PIC
+
+/* -z is obsolete on Solaris... ?? */
+/* See manpage for /usr/ccs/bin/ld
+  Obsolete Options
+     The following SunOS  4.x.y  options  are  obsolete  in  this
+     release: -n, -N and -z.
+*/
+/*SHLIBLDFLAGS = -G -z text*/
+SHLIBLDFLAGS = -G
+
+SVR4_DEFINES = -DSYSV -DSOLARIS
+
+/* For OLIAS external api. */
+EXTRA_DEFINES = -DOLIAS
+
+#else
+
+/* Since we use CCPICFLAGS in the .C.o rule below (due to Solaris
+   PICFLAGS issue mentioned above), we need to set CCPICFLAGS for
+   SunOS also. */
+/* Not doing shared libs on SunOS 4.1.x, see comments above. */
+/*CCPICFLAGS = -pic */
+
+/* For OLIAS external api. */
+HELP_DEFINES = -DOLIAS
+/* If don't do this, we get -D_NO_PROTO from Motif, which we don't want...*/
+EXTRA_DEFINES = -U_NO_PROTO $(HELP_DEFINES)
+
+#endif
+
+#ifdef Simulate_HaL
+C++=$(CC)
+C++_INCLUDES=$(INCLUDES)
+#endif
+
+.SUFFIXES: .C .o _E.C _E.o
+
+/* Not doing shared libs on SunOS 4.1.x, see comments above. */
+#if SystemV4
+.C.o:
+	$(RM) $@ shared/$@
+	$(C++) -c $*.C $(CFLAGS) $(C++_INCLUDES) $(SVR4_DEFINES) $(CCPICFLAGS)
+	$(MV) $@ shared/$@
+	$(RM) $@
+	$(C++) -c $*.C $(CFLAGS) $(C++_INCLUDES) $(SVR4_DEFINES)
+#else
+.C.o:
+	$(RM) $@
+	$(C++) -c $*.C $(CFLAGS) $(C++_INCLUDES) $(SVR4_DEFINES)
+#endif
+
+LibraryObjectRule()
+
+#if DoSharedLib
+#if DoNormalLib
+SharedLibraryTarget(hgl,$(SOHGLLIBREV),$(HGLOBJ),shared,..)
+SharedLibraryTarget(hgr,$(SOHGLLIBREV),$(HGROBJ),shared,..)
+SharedLibraryTarget(hvb,$(SOHGLLIBREV),$(HVBOBJ),shared,..)
+SharedLibraryTarget(htr,$(SOHGLLIBREV),$(HTROBJ),shared,..)
+SharedLibraryTarget(help,$(SOHGLLIBREV),$(HELPOBJ),shared,..)
+#else
+SharedLibraryTarget(hgl,$(SOHGLLIBREV),$(HGLOBJ),.,.)
+SharedLibraryTarget(hgr,$(SOHGLLIBREV),$(HGROBJ),.,.)
+SharedLibraryTarget(hvb,$(SOHGLLIBREV),$(HVBOBJ),.,.)
+SharedLibraryTarget(htr,$(SOHGLLIBREV),$(HTROBJ),.,.)
+SharedLibraryTarget(help,$(SOHGLLIBREV),$(HELPOBJ),.,.)
+#endif
+InstallSharedLibrary(hgl,$(SOHGLLIBREV),$(USRLIBDIR))
+InstallSharedLibrary(hgr,$(SOHGLLIBREV),$(USRLIBDIR))
+InstallSharedLibrary(hvb,$(SOHGLLIBREV),$(USRLIBDIR))
+InstallSharedLibrary(htr,$(SOHGLLIBREV),$(USRLIBDIR))
+InstallSharedLibrary(help,$(SOHGLLIBREV),$(USRLIBDIR))
+#endif
+#if DoNormalLib
+/* Making these archive libraries causes problems... */
+/*
+NormalLibraryTarget(hgl,$(HGLOBJ))
+NormalLibraryTarget(hgr,$(HGROBJ))
+NormalLibraryTarget(hvb,$(HVBOBJ))
+NormalLibraryTarget(htr,$(HTROBJ))
+NormalLibraryTarget(help,$(HELPOBJ))
+*/
+
+all:: libhgl.a
+
+libhgl.a: $(HGLOBJ)
+	$(RM) $@
+	$(LD) -r -o $@ $(HGLOBJ)
+
+all:: libhgr.a
+
+libhgr.a: $(HGROBJ)
+	$(RM) $@
+	$(LD) -r -o $@ $(HGROBJ)
+
+all:: libhvb.a
+
+libhvb.a: $(HVBOBJ)
+	$(RM) $@
+	$(LD) -r -o $@ $(HVBOBJ)
+
+all:: libhtr.a
+
+libhtr.a: $(HTROBJ)
+	$(RM) $@
+	$(LD) -r -o $@ $(HTROBJ)
+
+all:: libhelp.a
+
+libhelp.a: $(HELPOBJ)
+	$(RM) $@
+	$(LD) -r -o $@ $(HELPOBJ)
+
+InstallLibrary(hgl,$(USRLIBDIR))
+InstallLibrary(hgr,$(USRLIBDIR))
+InstallLibrary(hvb,$(USRLIBDIR))
+InstallLibrary(htr,$(USRLIBDIR))
+InstallLibrary(help,$(USRLIBDIR))
+#endif
+
+cleanhgl:
+	$(RM) $(HGLOBJ)
+	$(RM) libhgl.a libhgl.so*
+
+cleanhvb:
+	$(RM) $(HVBOBJ)
+	$(RM) libhvb.a libhvb.so*
+
+cleanhtr:
+	$(RM) $(HTROBJ)
+	$(RM) libhtr.a libhtr.so*
+
+cleanhgr:
+	$(RM) $(HGROBJ)
+	$(RM) libhgr.a libhgr.so*
+
+cleanhelp:
+	$(RM) $(HELPOBJ)
+	$(RM) libhelp.a libhelp.so*
+
+BuildIncludes($(HEADERS),hgl,..)
+InstallMultiple($(HEADERS),$(USRINCDIR)/hgl)
+/* This expects the file to be named Hal.ad */
+/*InstallAppDefaults(Hal) */
+InstallNonExec(Hal,$(XAPPLOADDIR))
+InstallNonExec(Hal.misc,$(XAPPLOADDIR))
+InstallNonExec(Hal.lang,$(XAPPLOADDIR))
+InstallNonExec(Hal.fonts,$(XAPPLOADDIR))
+InstallNonExec(Hal.colors,$(XAPPLOADDIR))
+InstallNonExec(Hal-mono,$(XAPPLOADDIR))
+InstallNonExec(Hal.colors-mono,$(XAPPLOADDIR))
+
+BuildIncludes($(BITMAPS),bitmaps,..)
+InstallMultiple($(BITMAPS),$(INCDIR)/bitmaps)
+
+/* This really should be in ../help/Imakefile, which doesn't exist yet. */
+InstallNonExecFile(../help/common.hlp,$(LIBDIR)/help)
+
+DependTarget()

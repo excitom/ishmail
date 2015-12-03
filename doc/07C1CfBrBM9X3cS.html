@@ -1,0 +1,187 @@
+<HTML>
+<HEAD>
+ <TITLE>Add Container Option</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="07C1CfBrBM9X3cS">Add Container Option</H1>
+
+<P>
+MIME messages consist of one or more body parts. In the
+simplest case, these body parts are strung together sequentially.
+However, you can create body parts which, in turn, contain other
+body parts. These are referred to as
+<I>Container</I> body parts. The
+section immediately below describes the four types of containers
+you can select.
+
+<P>
+<A HREF="07C1CfBrBM9X3cS.html#A9C1CfBrBM9X3cS">Working with Containers</A> describes how to group messages in
+containers.
+
+<P>
+Select the
+<B>A</B><U>d</U><B>d Container</B> -> option if you want to impose structure
+on a MIME message you are composing. The
+<B>Add container</B> menu
+appears.
+<P>
+<H4>Figure: <A NAME="B7C1CfBrBM9X3cS">Add container Menu</H4>
+
+<IMG SRC="07C1CfBrBM9X3cS.extobj.1.gif">
+<DL>
+<DT><U>M</U><B>ixed</B>
+<DD>Select this option to create a
+Mixed container for one or
+more body parts. There are no rules on what types of
+body parts may be put in this container form. This is a
+"generic" container.
+<P>
+
+<DT><B>Message</B>
+<U>D</U><B>igest</B>
+<DD>Select this option to create a
+Message Digest container.
+This type of container is used to contain a group of one or
+more complete MIME messages (also known as RFC822
+messages), for example a group of messages being
+forwarded to another recipient.
+<P>
+
+<DT><U>A</U><B>lternatives</B>
+<DD>Select this option to create an
+Alternatives container.
+This type of container holds groups of two or more body
+parts that contain equivalent information, using
+different formatting of access methods. This option is
+useful if you aren't sure what level of MIME capability
+the recipient(s) of your message have, if you aren't sure
+whether they have MIME capability at all, or if you just
+wish to give them a choice.
+<P>
+In an Alternatives container, each body part contains the
+same information, accessed or formatted differently. The
+first body part contains the simplest version, typically
+plain ASCII text. The last body part contains the
+preferred version.
+<P>
+For example, if you send a message containing Enriched
+Text, a version of the text with the Enriched Text
+attributes stripped out should appear at the front of the
+message. If you send a message containing GIFs, or other
+types of binary attachments, these cannot be converted
+to ASCII. However, any explanatory text you type into
+the message will be visible.
+<P>
+Another way an Alternatives container can be used is to
+provide alternate access methods to a file. For example,
+when attaching a file to a message the most desirable
+way of doing so is as a Local file. However, this is only
+available to recipients on the same local network.
+Attaching a file using FTP access is a more universal, yet
+slower method of attachment. To cover both cases, you
+could build an Alternatives container and put two file
+attachments in it, each referring to the same file. The
+first attachment would be FTP type and the second
+(preferred) would be Local file type.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>This option gives you explicit control over
+creating an Alternatives container. However,
+you will probably find it easier simply to
+compose a message normally, then click the
+<B>Both if necessary</B> button at the bottom of the
+Composition window. The
+<I>both</I> in this case
+refers to a message with both plain text
+alternative and MIME parts.
+<CITE>Ishmail</CITE> will
+automatically build the Alternatives
+container for you, and put a plain ASCII text
+version of your message as the first body part.
+<HR>
+</P>
+<DT><U>P</U><B>arallel</B>
+<DD>Select this option to create a
+Parallel container.This type
+of container holds groups of two or more body parts
+which are considered related. The recipient of the
+message should try to "show" the body parts together.
+For example, an MPEG video clip and an Audio clip could
+be put in a parallel container. The recipient's mail tool
+should try to show the video clip while simultaneously
+playing the audio clip.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>While the idea of a Parallel container is good,
+in practice it is difficult to implement well.
+This is because programs external to
+<CITE>Ishmail</CITE>
+are used to show various body parts. In the
+example of a video clip and an audio clip, the
+MPEG viewer program usually takes several
+seconds to start up, while the audio clip can be
+played immediately. So, even though
+<CITE>Ishmail</CITE>
+could launch both programs simultaneously
+you will usually hear the audio clip long
+before you see the video.
+
+<HR>
+</P>
+</DL>
+
+<H2><A NAME="A9C1CfBrBM9X3cS">Working with Containers</H2>
+
+<P>
+Containers provide structure for your MIME messages. You can
+group messages as a Message Digest by first creating a Message
+Digest container then dragging the messages and dropping them
+into the container. (See
+<A HREF="GnbqgMBPQJ9X3cS.html#gDB1CfBrBM9X3cS">Using Drag-and-Drop</A> for a discussion of
+copying one or more messages into the Composition window.)
+
+<P>
+Containers appear in the Composition window as icons, with a
+label indicating the container type. The icons flow in-line with
+the message text, like included or attached files. Double-click on
+a container icon and a new Composition window is opened,
+showing its contents. You can create containers within
+containers.
+<P>
+Click on a container label and press and hold the right button
+and you get a pop-up menu which lets you do one of the following:
+<UL>
+<LI>delete the container
+<P>
+
+</LI>
+<LI>set the container type
+<P>
+
+</LI>
+<LI>edit the contents of the container (same as double-click
+action)
+<P>
+
+</LI>
+</UL>
+<P>
+For information about how container types should be used with
+MIME messages, see
+<A HREF="07C1CfBrBM9X3cS.html">Add Container Option</A>.
+
+<HR>
+Preceding Section: <A HREF="sHQXKNB0FN9X3cS.html">Modifying or Deleting an Included File</A><BR>
+Following Section: <A HREF="VvEI2.BsKL9X3cS.html">Check Addresses Now</A><BR>
+Parent Section: <A HREF="Iq-1vFBulI9X3cS.html">Composition Message Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

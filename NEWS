@@ -1,0 +1,96 @@
+
+[evgeny]  Source cleaning.
+[evgeny]  Fully revamped build procedure. Now uses autoconf.
+[evgeny]  Removed license-checking stuff.
+[evgeny]  Ported to the M*tif-2.* API.
+
+* 1.9.9 released.
+
+[evgeny]  Many portability fixes.
+[evgeny]  Honour ISHHOME shell variable as an alternative path to the
+          installation directory.
+[evgeny]  There is no longer a need in the shell wrapper around the real
+          binary.
+[evgeny]  Don't define automount dir by default.
+[evgeny]  Added dummy Ishmail.site for on-site customizations.
+[evgeny]  Don't hardcode perl path in auxiliary scripts.
+[evgeny]  Implemented transparent window icons.
+[evgeny]  Fixed DnD icons, was especially weird under M*tif-2.*
+[evgeny]  Several dialogs caused crash under [Open]M*tif-2.1 and wrong
+          geometry under LessTif.
+
+* 1.9.10 released.
+
+[evgeny]  Moved File/Comment -> Help/Comment.
+[nerijus] Added ISO-8859-13 (Baltic) for the list of predefined charsets.
+
+* 1.9.12 released.
+
+[evgeny]  Drag/select in message lists M*tif-2.* fixes
+[evgeny]  Added the "From:" header to the user-settable preferences.
+[evgeny]  Restrict the max title string of a reading window to 80 chars.
+          Otherwise, in some cases like very long subject, the whole window
+          became extremely wide.
+[kherron] Reply-to-all on a message with no "To" address would cause a crash. 
+[kherron] Reply on a message with no "From" address would cause a crash.
+[kherron] Workaround newer g++ with pre-R6 X11 includes.
+[evgeny]  In-box setting made configurable via "Options/Application" preference
+          dialog.
+[evgeny]  Even if IMAP is not used as a general place for folder storage, a
+          folder name of the "{server}folder" type does qualify as an IMAP
+          folder. Very usable for only INBOX residing on an IMAP server.
+[kherron] MH Folders were initialized incorrectly, causing an unnecessary
+          rescan during the first new-mail check.     
+[kherron] Misc optimizations.
+[kherron] Signature separator should be dash-dash-space, not just dash-dash.
+[brian]   Check for success of CC'ing, especially to an IMAP folder.
+[brian]   Recognize "Answered" flag in IMAP folders.
+[brian]   CRLF header line termination in IMAP messages.
+[brian]   Other IMAP fixes and enhancements.
+[evgeny]  IMAP reliability fixes, including workarounds some buggy servers.
+[evgeny]  An attempt to delete the current IMAP folder would silently fail.
+[evgeny]  Replying to a message from a currently unselected IMAP folder failed.
+[evgeny]  Ask whether to include attachments in the reply if the original
+          message contained some.
+[kherron] Support compiling/linking with the dmalloc library.
+[evgeny]  Implemented IMAP4 authentication schemes: LOGIN/CRAM-MD5/ANONYMOUS.
+          The CRAM-MD5 authenticator needs OpenSSL crypto lib installed.
+[evgeny]  Warn about using insecure login methods.
+[evgeny]  Don't attempt to use clear text login if the IMAP server reports
+          LOGINDISABLED.
+[evgeny]  Use the user's e-mail when dowing PGP signing.
+[evgeny]  Allow to add extra headers to re-sent messages.
+
+* 2.0.0 released.
+ 
+[evgeny]  Implemented starting in the TLS mode (IMAPS protocol).
+[evgeny]  Implemented STARTTLS IMAP extension (RFC2595).
+[evgeny]  A partial implementation of the IMAP URL scheme parsing (RFC2192).
+[evgeny]  Hopefully, fixed the folder contents doubling bug.
+[evgeny]  Enhanced the IMAP fetch speed enormously for large attachments.
+[evgeny]  Dbl click on a folder checks for new mail only instead of re-scaning
+          the folder.
+[evgeny]  The current folder icon was not updated after deleting several
+          messages simultaneously.
+[evgeny]  Message list wasn't updated after applying new sort preferences.
+[evgeny]  Message list wasn't updated at the end of title/separator drag.
+[evgeny]  $HOME was forgotten to be replaced in the default mailcap search
+          path.
+[evgeny]  Relaxed parsing of improper dates set by many broken MUA's and
+          scripts.
+[evgeny]  Added text/html to the list of internally recognized MIME types.
+[evgeny]  Better handling of text/html message parts composed by some broken
+          MUA's which don't bother putting enclosing <HTML></HTML> tags.
+[evgeny]  Updates to the online help.
+[evgeny]  Get rid of the "Help/Comments" window & related stuff. Instead,
+          direct user to the SF bug/wish tracker system.
+[drifta]  Man page updates.
+[evgeny]  If the folder is INBOX, check that it exists, too.
+[evgeny]  Don't add the extraneous blank line at the end of body text.
+[evgeny]  Changed default of sendmail location from /usr/lib/sendmail to
+          /usr/sbin/sendmail.
+[evgeny]  Some source cleaning.
+[evgeny]  Replaced a few raw <cr> chars with '\r' in the sources. gcc-2.96
+          choked on the former.
+
+* 2.1.0 released.

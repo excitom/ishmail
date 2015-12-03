@@ -1,0 +1,170 @@
+.\" $Header: /cvsroot/ishmail/ishmail/man/man1/ishmail.1,v 1.3 2001/03/29 11:07:24 evgeny Exp $ $Id: ishmail.1,v 1.3 2001/03/29 11:07:24 evgeny Exp $
+.TH ISHMAIL 1 "March 29, 2001" " " "Electronic Mail"
+.SH "NAME"
+ishmail \- Information SuperHighway Mail
+.SH "SYNOPSIS"
+.nf
+.ft 4
+\f4ishmail\f1 [\f2standard_X11_flags\f1] [\f2name1\f1 [\f2name2\f1 . . . \
+\f2nameN\f1]] [\f2-v\f1] [ & ]
+.ft 1
+.fi
+.RE
+.SH "DESCRIPTION"
+.PP
+\f2Ishmail\f1 is a graphical user interface (GUI) to the \f2sendmail\f1 mail
+delivery subsystem. You can use \f2Ishmail\f1 to receive, read, compose, and
+organize electronic mail messages containing standard 7-bit ASCII text
+information, as well as the specially formatted information provided by MIME
+(Multipurpose Internet Mail Extension), including Rich Text, audio, video,
+image (facsimile) and application information.
+.PP
+\f2Ishmail\f1 has three primary window interfaces, the Main Window, the
+Composition Window, and the Reading Window. Each window contains pull-down,
+tear-off, and cascading menus from which you select options that perform
+various command functions in the window.
+.PP
+The Main Window is displayed upon startup. From the Main Window, you choose
+options to manage your mail folders and files, read and compose mail messages,
+reply to, forward, and resend messages, and customize your mail environment.
+.PP
+Interacting with mail objects in the Main Window is simple and intuitive. In
+general, you select an object or multiple objects (mail folder, mail message,
+alias name, and so forth), then select a command from one of the menus to
+perform some action on the selected object.
+.PP
+The Composition Window is displayed when you select the \f4compose\f1,
+\f4reply\f1, \f4forward\f1, or \f4resend\f1 command from the Main Window or
+from a Reading Window. The Composition Window menus contain options for
+specifying an alternate editor, previewing the formatted output of messages
+containing Rich Text attributes, and including and attaching external files to
+messages. You can have multiple Composition Windows open simultaneously.
+.PP
+The Reading Window is displayed when you select the \f4read\f1 command from the
+Main Window. The Reading Window menus contain options for reading the next or
+previous message, saving a message, printing a message, deleting a message, and
+other functions. While in the Reading Window, you can also display and print
+MIME-encoded inclusions and attachments via external viewing and printing
+software that \f2Ishmail\f1 launches when you select a MIME-encoded body part.
+You can "pin" multiple Reading Windows to the screen.
+.PP
+Each of \f2Ishmail's\f1 primary windows contains an \f4Options\f1 menu in which
+you specify parameters for customizing the "look and feel" of the particular
+window. Customization options include changing display fonts and font sizes,
+adding shortcut buttons for commonly performed functions, specifying sort
+parameters, word-wrap, and so forth.
+.SH "FOLDER FORMATS"
+.PP
+\f2Ishmail\f1 supports two basic types of mail folder formats. One is the
+\f2unix-mail\f1 format, common to programs such as \f2mailx\f1, \f2elm\f1, etc.
+The other is \f2mh\f1 format, common to programs such as \f2mh\f1, \f2xmh\f1,
+and \f2exmh\f1. You can read, create, and append to folder formats of either
+type.
+
+.SH "OPTIONS"
+.PP
+\f2Ishmail\f1 accepts the standard \f2X\f1 client command line arguments.
+Warning messages are displayed on the command line if unrecognized option flags
+are used.
+.TP 1i
+\f2X client option flags\f1
+The standard \f2X\f1 client option flags as described in Using Command-line
+Options in the\f2 X User's Guide\f1. (See also X User's Reference for
+additional information about \f2X\f1 command line options.)
+.TP 1i
+\f2name1\f1,\f4 \f1\f2name2 ... nameN\f1
+The names of the mail folders you wish to open during \f2Ishmail\f1 startup.
+These names are relative to the directory in which the command is being run. To
+make Ishmail look for them in your folder directory, add `\f4+\f1' or `\f4=\f1'
+before the name.
+.IP
+When the program starts, these folders and the default In-box, or "system
+folder," are opened and presented in \f2Ishmail's\f1 main window.
+.TP 1i
+\f4&\f1
+The standard flag to the UNIX shell indicating that the program should run in
+the background.
+.TP 1i
+\f4-v\f1
+Print version number and exit.
+.IP
+\f3Caution\f1: \f2Ishmail\f1 catches and ignores all signals, except
+\f4SIGKILL(9)\f1 and \f4SIGTERM(15)\f1. If a SIGTERM is caught the program
+attempts to clean up and exit gracefully. If a \f4SIGKILL\f1 is caught the
+program exits immediately, potentially leaving lock files around and losing
+un-saved changes to mail folders. \f4SIGKILL\f1 should be used only as a last
+resort for termination.
+
+
+
+.SH "ENVIRONMENT VARIABLES"
+.TP
+.B ISHHOME
+The directory \f2Ishmail\f1 is installed into. By default,
+\f4/usr/local/share/ishmail\f1.
+.TP
+.B ISHMAILRC
+The location of the \f4.ishmailrc\f1 configuration file. By default, it is in
+\f4~/.ishmailrc\f1.
+.TP
+.B ISHIDX
+The directory where \f2Ishmail\f1 puts the mailbox index files. The default is
+to use the same directory as the associated folder. This sometimes is a problem
+for the InBox, as users don't have privilege to create files in the system mail
+folder directory (e.g. \f4/var/spool/mail\f1).
+.TP
+.B MAIL
+The location of the mailbox where incoming mail arrives. Usually
+\f4/var/spool/mail/$USER\f1.
+.TP
+.B MAILCAPS
+The column-separated list of mailcap files. The default one is
+\f4~/.mailcap:/etc/mailcap: /usr/etc/mailcap:/usr/local/etc/mailcap\f1.
+.TP
+.B MIMETYPES
+The location of the \f4mime.types\f1 file. The default one is
+$ISHHOME/lib/mime.types
+.TP
+.B MAILCHECK
+Mail checking interval in seconds.
+.TP
+.B NAME
+The full name of the user.
+
+
+.SH "FILES"
+.TP
+.B ~/.ishmailrc
+This file stores the personal settings, those that can be changed via the
+Options menu. See \f4ISHMAILRC\f1 above.
+.TP
+.B ~/.ishmail.pem
+If compiled with support for SSL/TLS connections, the file stores public
+certificates of IMAP servers which validity can not be rigorously verified for
+some reason but the user nevertheless trusted.
+.TP
+.B $ISHHOME/lib/Ishmail
+The file #include's several others; for example \f4Ishmail.colors\f1 is (you
+guessed) where the color resources are defined. These files are system-wide
+settings for all users. They (except \f4Ishmail.site\f1) are overwritten when
+you upgrade Ishmail, so don't make changes to them directly - but you can look
+at them to see which settings can be changed.
+.TP
+.B $ISHHOME/lib/Ishmail.site
+Here you can add your own changes that will affect all users on the system.
+.TP
+.B ~/.mailrc
+Contains the e-mail aliases.
+.TP
+.B mailcap
+Contains specifications for handling creation, display, and printing of various
+MIME data types. See \f4MAILCAPS\f1 above.
+.TP
+.B mime.types
+Defines the recognized file types. See \f4MIMETYPES\f1 above.
+
+
+.SH "SEE ALSO"
+.PP
+\f4X11\f1(7), \f4mail\f1(1), \f4sendmail\f1(8), \f4openssl\f1(1), Ishmail
+User's Guide.

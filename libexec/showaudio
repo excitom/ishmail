@@ -1,0 +1,130 @@
+#!/bin/sh
+
+# Copyright (c) 1996 H&L Software, Inc.
+# Copyright (c) 1994 HaL Computer Systems, Inc.
+# Derived from C-shell version, originally from Bellcore
+#
+# Copyright (c) 1991 Bell Communications Research, Inc. (Bellcore)
+# 
+# Permission to use, copy, modify, and distribute this material 
+# for any purpose and without fee is hereby granted, provided 
+# that the above copyright notice and this permission notice 
+# appear in all copies, and that the name of Bellcore not be 
+# used in advertising or publicity pertaining to this 
+# material without the specific, prior written permission 
+# of an authorized representative of Bellcore.  BELLCORE 
+# MAKES NO REPRESENTATIONS ABOUT THE ACCURACY OR SUITABILITY 
+# OF THIS MATERIAL FOR ANY PURPOSE.  IT IS PROVIDED "AS IS", 
+# WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
+#
+# First, figure out which machine to play it on!
+THISHOST=`uname -a | cut -d' ' -f2`
+
+if [ "$1" = "-" ]; then
+	STDINPUT=1
+	shift
+else
+	STDINPUT=0
+	if [ ! -r "$1" ]; then
+		echo "${1}: File not readable"
+		exit 1
+	fi
+fi
+
+AH=$THISHOST
+if [ "${DISPLAY:-XXX}" != "XXX" ]; then
+	AH=`echo $DISPLAY | sed -e 's/:.*//'`
+	if [ "$AH" = "unix" -o "$AH" = "" ]; then
+		 AH=$THISHOST
+	fi
+fi
+
+# if $AUDIOHOST is set in the environment, use it to override
+
+if [ "${AUDIOHOST:-XXX}" != "XXX" ]; then
+	AH=$AUDIOHOST
+fi
+
+# Play sound on remote system
+
+if [ $AH != $THISHOST ]; then
+	if [ "${MMS_AUDIO:-XXX}" != "XXX" ]; then
+	    if [ $STDINPUT -eq 1 ]; then
+	        cat | mms -host $AH "show audio/basic" -
+	    else
+	        cat $* | mms -host $AH "show audio/basic" -
+	    fi
+	    exit 0
+	fi
+
+	here=`pwd`
+	cd $HOME
+	x=`type showaudio 2>&1`
+	if [ `echo "$x" | cut -d' ' -f2` = "is" ]; then
+		THISPROG=`echo "$x" | cut -d' ' -f3`
+	else
+		echo "ERROR: Can't find 'showaudio' in search path"
+		exit 1
+	fi
+	if [ $STDINPUT -eq 1 ]; then
+		cat | rsh $AH $THISPROG -s -
+	else
+		cat $* | rsh $AH $THISPROG  -s -
+	fi
+	exit 0
+fi
+
+# play sound on local system
+# look for sfplay command, if not found try splay, if not found try
+# /dev/audio or /dev/sb0
+# add audioplay command - lac
+
+if [ `type audioplay 2>&1 | cut -d' ' -f2` = "is" ]; then
+	if [ $STDINPUT -eq 1 ]; then
+		audioplay
+		exit 0
+	else
+		exec audioplay $*
+		# no return
+	fi
+fi
+
+if [ `type sfplay 2>&1 | cut -d' ' -f2` = "is" ]; then
+	if [ $STDINPUT -eq 1 ]; then
+		cat > /tmp/audio.$$
+		sfplay -i mu-law chan 1 rate 8000 end /tmp/audio.$$
+		rm /tmp/audio.$$
+		exit 0
+	else
+		exec sfplay -i mu-law chan 1 rate 8000 end $*
+		# no return
+	fi
+fi
+
+if [ `type splay 2>&1 | cut -d' ' -f2` = "is" ]; then
+	if [ $STDINPUT -eq 1 ]; then
+	        exec splay -q
+		# no return
+	else
+        	exec splay -q $*
+		# no return
+	fi
+fi
+
+if [ -d /usr/sony ]; then
+	DEV=/dev/sb0
+else
+	DEV=/dev/audio
+fi
+
+if [ -w $DEV ]; then
+	if [ $STDINPUT -eq 1 ]; then
+		cat > $DEV
+	else
+		cat $* > $DEV
+	fi
+	exit 0
+else
+	echo "ERROR: Can't figure out how to play an audio file"
+	exit 1
+fi

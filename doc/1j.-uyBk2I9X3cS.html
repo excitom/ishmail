@@ -1,0 +1,709 @@
+<HTML>
+<HEAD>
+ <TITLE>Application-related Preferences</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="1j.-uyBk2I9X3cS">Application-related Preferences</H1>
+
+<P>
+Choose the
+<B>A</B><U>p</U><B>plication ...</B> option to customize a number of
+parameters and variables in your
+<CITE>Ishmail</CITE> environment, including
+mail directory and file locations, print command, Web browser
+command, and Alert bell volume.
+<P>
+The preferences that you can set with this option apply to the
+<CITE>Ishmail</CITE> program in general or to the
+<CODE>Main</CODE> window. There are
+several other options for setting preferences specific to the
+Reading window, the Composition window, and so forth.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>The decision about which parameter or
+variable should be placed into which
+preference window was made in a way that
+seemed logical to the developers of
+<CITE>Ishmail</CITE>. If
+you do not find a preference in the window you
+expect, keep looking. You will find it
+eventually.
+<HR>
+</P>
+<P>
+Selecting the
+<B>A</B><U>p</U><B>plication ...</B> option launches the
+<A HREF="1j.-uyBk2I9X3cS.html#9j.-uyBk2I9X3cS">Application
+Preferences Window</A>.
+<P>
+<H4>Figure: <A NAME="9j.-uyBk2I9X3cS">Application Preferences Window</H4>
+
+<IMG SRC="1j.-uyBk2I9X3cS.extobj.1.gif">
+
+<H2><A NAME="Rw.-uyBk2I9X3cS">Application Preferences Parameter Fields</H2>
+
+<P>
+You set or change parameters in the
+<B>Mail Preferences</B> dialog window
+by:
+<UL>
+<LI>Toggling selection buttons. The two toggle options are:
+<P>
+
+<UL>
+<LI>On or "Yes" if button is depressed.
+<P>
+
+</LI>
+<LI>Off or "No" if button is not depressed.
+<P>
+
+</LI>
+</UL>
+</LI>
+<LI>Picking a button from a box of radio buttons. There are
+two or more radio buttons in a box. Only one can be
+depressed at a time.
+
+<P>
+
+</LI>
+<LI>Selecting an option from a pull down menu.
+<P>
+
+</LI>
+<LI>Entering text in single-line or multiple-line text fields.
+<P>
+
+</LI>
+<LI>Dragging a sliding bar left or right. The value is shown
+above the slider. The value increases as you drag right
+and decreases as you drag left.
+<P>
+
+</LI>
+</UL>
+
+<H2><A NAME="Yw.-uyBk2I9X3cS">Specifying Application Message
+Preferences</H2>
+
+<P>
+This section describes the parameters you can specify in the
+<B>Application Preferences</B> window. The name of each parameter is
+shown, followed by a brief description of the parameter and an
+explanation of how to set or change the parameter. Default
+settings are provided where applicable.
+<P>
+Text fields scroll horizontally to accommodate text that is wider
+than the field's margins.
+
+<P>
+You can accept the default information in a text field or enter
+your own specification. The default text input editor for all text
+fields is the standard
+<CITE>Motif</CITE> text edit widget.
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Environment variables specified in the text
+fields (such as
+<CODE>$HOME</CODE>), are expanded before
+being used. The tilde operator, for example,
+<I>~username</I>, which specifies the home directory
+associated with
+<I>username</I>, is expanded if the
+command shell specified by the
+<CODE>$SHELL</CODE>
+environment variable allows it.
+<HR>
+</P>
+
+<H3><A NAME="pw.-uyBk2I9X3cS">Check for new mail</H3>
+
+<P>
+This parameter sets the
+interval at which mail should be
+checked.
+
+<P>
+Enter a numerical value in this field if you wish to change the
+default value shown.
+
+<P>
+The default value in the text field is derived from the
+<CODE>$MAILCHECK</CODE>
+environment variable. If this variable is not set, the default mail
+checking interval is once every 60 seconds.
+
+<H3><A NAME="0JI1QLB-zWwA0YK">Sound alert when new mail arrives</H3>
+
+<P>
+Toggle this parameter
+<KBD>On</KBD> to cause a "beep" to
+sound or to have an
+<B>Alert</B> command executed each time new mail arrives (see
+<A HREF="1j.-uyBk2I9X3cS.html#9j.-uyBk2I9X3cS">Application Preferences Window</A> for more information about
+setting
+<B>Alert</B> commands).
+
+<P>
+The default value for this parameter is
+<KBD>On</KBD>.
+
+<H3><A NAME="zw.-uyBk2I9X3cS">Alert bell volume</H3>
+
+<P>
+Drag the slider left to reduce the volume, or drag to the right to
+increase the volume.
+
+<H3><A NAME="Ab23AUB4IG9X3cS">Scroll to new messages as they arrive</H3>
+
+<P>
+This parameter causes newly arrived messages to be scrolled
+into view in your Main window message list.
+
+<P>
+The default value for this parameter is
+<KBD>On</KBD>.
+
+<H3><A NAME="IJI1QLB-zWwA0YK">Hide messages marked for deletion</H3>
+
+<P>
+Toggle this parameter
+<KBD>On</KBD> to cause messages that are marked for
+deletion to be removed (or hidden) from the
+<B>Folder Contents</B> list. You
+can restore "hidden" messages that have been marked for
+deletion by choosing the
+<U>U</U><B>ndelete</B> -> <U>F</U><B>rom list ...</B> option from the
+<U>M</U><B>essage</B> pull-down menu before performing a save operation to
+the mail folder file.
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>The
+<U>U</U><B>ndelete</B> -> <U>F</U><B>rom list ...</B> option is not
+available in the
+<U>M</U><B>essage</B> pull-down menu
+unless the
+<B>Hide messages marked for deletion</B> option
+is in effect.
+<HR>
+</P>
+<P>
+If this parameter is toggled
+<KBD>Off</KBD>, messages that have been
+marked for deletion remain in the message list but are marked
+with a
+<B>D</B> flag. You can restore these messages by performing an
+undelete operation before performing the next save operation to
+the folder file.
+<P>
+The default value for this parameter is
+<KBD>Off</KBD>.
+
+<H3><A NAME="6JI1QLB-zWwA0YK">Mark messages for deletion after saving</H3>
+
+<P>
+Toggle this parameter
+<KBD>On</KBD> to cause messages to be marked for
+deletion after you save them. If this parameter is in effect, when
+you choose the
+<B>Sa</B><U>v</U><B>e</B> option to save one or more messages, the
+messages will be copied to the default save file (also specified in
+the
+<B>Mail Preferences</B> window) and will be deleted from the current
+folder the next time you save changes to the folder.
+
+<P>
+The default value for this parameter is
+<KBD>Off</KBD>.
+
+<H3><A NAME="Ex.-uyBk2I9X3cS">Mark New as Unread when folder is saved</H3>
+
+<P>
+This is the normal behavior of most mail programs. This option
+lets you tell at a glance whether mail has arrived since the last
+time you saved your folder (fresh mail is marked
+<I>New</I>) and
+whether your mail folder contains older messages that you still
+haven't read (older, unread messages are marked as
+<I>Unread</I>).
+
+<P>
+If you want messages to stay marked as
+<I>New</I> until you read
+them, regardless of whether the folder is saved, toggle this
+button
+<KBD>off</KBD>.
+
+<H3><A NAME="Ix.-uyBk2I9X3cS">Save window positions on exit</H3>
+
+<P>
+Toggle this button
+<KBD>on</KBD> if you want
+<CITE>Ishmail</CITE> to remember the
+position and size of the
+<CODE>Main</CODE>,
+<CODE>Reading</CODE>, and
+<CODE>Composition</CODE> windows.
+These values are saved at the time you exit from
+<CITE>Ishmail</CITE>.
+<P>
+If you have more than one
+<CODE>Reading</CODE> or
+<CODE>Composition</CODE> window open, the
+size and position of the first of these windows is saved.
+<P>
+The default value is
+<KBD>off</KBD>.
+
+<H3><A NAME="4b23AUB4IG9X3cS">Show quick help</H3>
+
+<P>
+Toggle this parameter
+<KBD>Off</KBD> if you don't want
+quick help messages
+to be displayed. Quick help messages are short helpful hints that
+can facilitate your use of the window interface. They are
+displayed at the bottom of
+<CITE>Ishmail</CITE> windows.
+<P>
+The default value for
+<B>Show Quick Help</B> is
+<KBD>On</KBD>.
+
+<H3><A NAME="Rx.-uyBk2I9X3cS">Remember the most recent folders</H3>
+
+<P>
+<CITE>Ishmail</CITE> keeps a list of the most recently used folders, and
+presents this list when you select the
+<B>Save to Folder (Recent)</B> option
+(see
+<A HREF="dU8YifBdqH9X3cS.html">Save Options</A>). This gives you a quick way to pick folders
+without having to type their name or use the
+<A HREF="uO2ZgMB8BJ9X3cS.html">File Selection
+Window</A> dialog.
+<P>
+The default value is
+<KBD>10</KBD>.
+
+<H3><A NAME="Vx.-uyBk2I9X3cS">Move Read messages to folder when in-box is
+saved</H3>
+
+<P>
+If you want messages you have read to be automatically moved
+to another folder when you save the
+<CODE>In-Box</CODE>, toggle this button
+<KBD>on</KBD>.
+This will result in only
+<I>Unread</I> messages remaining in the
+<CODE>In-Box</CODE>
+after it is saved, since
+<I>Deleted</I> messages are purged at this time
+also.
+<P>
+If you toggle this button
+<KBD>on</KBD>, you must also provide the name of a
+folder to use. The default name is
+<I>+mbox</I>. Note that the
+<I>+</I> is
+shorthand for your default folder directory.
+<P>
+The default value of this parameter is
+<KBD>off</KBD>.
+
+<H3><A NAME="HKI1QLB-zWwA0YK">Folder directory:</H3>
+
+<P>
+This field lets you specify the directory which is associated with
+the
+<I>+</I> or
+<I>=</I> character at the start of a folder name.
+
+<P>
+You can specify a full path name, such as
+<I>/u/dave/Mail</I>, or a
+relative path name. Relative path names are resolved starting
+from your home directory,
+<I>$HOME</I>.
+
+<P>
+The default value is
+<I>Mail</I>, thus the default folder directory is
+<I>$HOME/Mail</I>. Therefore, a folder specified as
+<I>+xyz</I> or
+<I>=xyz</I> is
+interpreted as
+<I>$HOME/Mail/xyz</I>.
+
+<H3><A NAME="NKI1QLB-zWwA0YK">Default save folder:</H3>
+
+<P>
+This parameter specifies which folder is used when you use the
+<B>Save to: (default folder)</B> function on a message, or group of messages.
+(See
+<A HREF="dU8YifBdqH9X3cS.html">Save Options</A> for more information about message save
+functions.)
+<P>
+Choices for the default folder are:
+<DL>
+<DT><B>Always to</B>
+<DD>Specify the name of the default folder to be used with the
+<B>Save to: (default folder)</B> function.
+<P>
+Click the
+<B>Always to:</B> radio button and fill in the folder name
+to activate this option. The default folder name is
+<I>+mbox</I>.
+<P>
+
+<DT><B>By</B>
+<DD>Specify the criteria that will determine the name of the
+default folder to be used with the
+<B>Save to: (default folder)</B>
+function. Options are:
+<P>
+
+<DL>
+<DT><B>User</B>
+<DD>The folder name based on the name of the
+person (<B>user</B>) who sent you the message. In this
+case you also need to specify the directory which
+contains the folder.
+<P>
+For example, if you choose this option and
+specify
+<I>Mail</I> as the directory, when you save mail
+from
+<KBD>support@ishmail.com</KBD> it will
+be saved to
+<I>$HOME/Mail/support</I>.
+<P>
+To select this option:
+<P>
+
+<OL>
+<LI>Click the
+<B>By</B> radio button
+<P>
+
+</LI>
+<LI>Click the menu to the right of the
+<B>By</B>
+button and select
+<KBD>User</KBD>
+<P>
+
+</LI>
+<LI>Fill in the
+<B>to directory:</B> field
+<P>
+
+</LI>
+</OL>
+<DT><B>Address</B>
+<DD>The folder name is based on the full e-mail
+<B>address</B> of the person who sent you the message.
+This differs from the
+<B>user</B> option in that the
+<I>user</I>
+name is qualified by the e-mail
+<I>domain</I>. For
+example, you might receive mail from two users
+named
+<KBD>tom</KBD> in different domains, say
+<KBD>tom@ishmail.com</KBD> and
+<KBD>tom@widget.co.uk</KBD>. If
+you saved mail by
+<B>user</B>, mail from both would go
+to the same folder. Saving mail by
+<B>address</B> would
+put the mail into different folders:
+<I>$HOME/Mail/tom@ishmail.com</I> and
+<I>$HOME/Mail/tom@widget.co.uk</I>.
+<P>
+To select this option:
+<P>
+
+<OL>
+<LI>Click the
+<B>By</B> radio button
+<P>
+
+</LI>
+<LI>Click the menu to the right of the
+<B>By</B>
+button and select
+<KBD>Address</KBD>
+<P>
+
+</LI>
+<LI>Fill in the
+<B>to directory:</B> field
+<P>
+
+</LI>
+</OL>
+<DT><B>Pattern</B>
+<DD>The folder name is based on a pattern matched
+in the headers of the mail message.
+
+<P>
+To select this option:
+<P>
+
+<OL>
+<LI>Click the
+<B>By</B> radio button
+<P>
+
+</LI>
+<LI>Click the menu to the right of the
+<B>By</B>
+button and select
+<KBD>Pattern</KBD>
+<P>
+
+</LI>
+<LI>Fill in the
+<B>to directory:</B> field
+<P>
+
+</LI>
+</OL>
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>If the folder name associated with the pattern
+specified in the
+<B>Save Patterns</B> window is a
+relative name, it is a folder in the directory
+you specify here. If a fully qualified path name
+is specified, then the directory name specified
+here is ignored.
+
+<HR>
+</P>
+<DT><B>Pattern or User</B>
+<DD>The
+<B>Save Patterns</B> are searched first for a match. If
+found, the folder used is the one associated with
+the pattern. If no match, then the folder name is
+determined by the
+<KBD>user</KBD> portion of the e-mail
+address.
+<P>
+
+<DT><B>Pattern or Address</B>
+<DD>The
+<B>Save Patterns</B> are searched first for a match. If
+found, the folder used is the one associated with
+the pattern. If no match, then the folder name is
+determined by the full e-mail
+<KBD>address</KBD>.
+
+<P>
+See
+<A HREF="OUb3vyBctI9X3cS.html">Save Patterns Option</A> for more information.
+<P>
+
+</DL>
+</DL>
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>If the folder name generated by the
+<B>User</B>,
+<B>Address</B>, or
+<B>Pattern</B> option doesn't already exist,
+it will be created. The folder type is
+determined by the default specified in the
+<B>Folder Preferences</B> window. (See
+<A HREF="6wXf7fBT.L9X3cS.html">Folder
+Preferences Option</A> for more information
+about specifying folder preferences.)
+<HR>
+</P>
+
+<H3><A NAME="Iy.-uyBk2I9X3cS">Automounter Prefix:</H3>
+
+<P>
+Some systems use a feature of NFS known as the
+<B>automounter</B>.
+If these terms don't mean anything to you, don't bother reading
+this section and don't worry about this parameter. In most cases,
+the presence of the
+<B>automounter</B> is transparent to programs
+such as
+<CITE>Ishmail</CITE>.
+
+<P>
+In some configurations, a special prefix will be added to
+automounted path names. Say your home directory is
+<I>/home/greg</I>,
+and it is automounted. Using the
+<B>pwd</B> command might return
+<I>/tmp_mnt/home/greg</I>. The addition of the automounter prefix, in
+this case
+<I>/tmp_mnt</I>, can cause problems.
+<P>
+For example: If you attach a file to a message using the
+<B>Local File
+Attachment</B> option (see
+<A HREF="bqbqgMBPQJ9X3cS.html">Include/Attach Option</A>), the automounter
+prefix may be added to the path name. On other systems in your
+network, the
+<B>automounter</B> may not be used, or it may use a
+different prefix. In either case, the path name of your attached
+file may not be reachable unless the automounter prefix is first
+stripped off.
+<P>
+This parameter lets you specify the automounter prefix, so that
+<CITE>Ishmail</CITE> can strip it off of file names before they are used. The
+default value for this parameter is (on most systems) is
+<I>/tmp_mnt</I>.
+Check with your system administrator for more information.
+
+<H3><A NAME="oKI1QLB-zWwA0YK">Default print command:</H3>
+
+<P>
+The
+default print command is
+<B>pr | lp</B>, which causes the message
+to be formatted into pages, each with a running header
+containing time and date, before sending it to the printer.
+<P>
+You can string multiple commands together in this field using
+the UNIX
+<B>pipe</B> operation, specified by a vertical bar (|) between
+command names.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>This command is only used with plain text
+messages. Printing of Enriched Text
+messages, and any other type of printable
+data contained in a MIME message, is
+controlled by the
+<I>mailcap</I> file. (See
+<A HREF="6m52wFBX4N9X3cS.html">Mailcap File
+Definition</A>.)
+<HR>
+</P>
+
+<H3><A NAME="Yy.-uyBk2I9X3cS">Web browser
+command:</H3>
+
+<P>
+<CITE>Ishmail</CITE> automatically recognizes addresses on the World Wide
+Web (known as URLs) which may be contained in mail messages,
+and highlights them in a different font or color. When you place
+the cursor on a URL and press the left mouse button while
+holding down the
+<KBD>Ctrl</KBD> key, the URL is sent to a Web browser
+command which will display the associated Web page.
+<P>
+This parameter lets you
+specify the Web browser command.
+Relative path names are resolved using your
+<I>$PATH</I> environment
+variable. The value of the URL is substituted for
+<KBD>%s</KBD>.
+<P>
+The default Web browser command is:
+<B>Mosaic %s</B>
+
+<H2><A NAME="9eH1QLB-zWwA0YK">Applying Your Changes</H2>
+
+<P>
+Use the row of buttons across the bottom of the dialog window
+you are working in to
+apply or cancel changes you've made in a
+preferences dialog window.
+
+<P><IMG SRC="1j.-uyBk2I9X3cS.extobj.2.gif">
+<P>
+There are four options to choose from in all of the
+<U>O</U><B>ptions</B> menu
+dialog windows. To apply your changes:
+<OL>
+<LI>Decide whether you want your changes to be permanent
+or temporary, and click the button corresponding to your
+choice:
+<P>
+
+<UL>
+<LI><B>Current session only</B>
+<P>
+If you choose
+<B>Current session only</B>, your changes are
+in effect only until you close the current mail
+session.
+
+<P>
+
+</LI>
+<LI><B>Current and future sessions</B>
+<P>
+If you choose
+<B>Current and future sessions</B>, your mail
+resource file is updated accordingly and your
+changes are in effect for future sessions.
+<P>
+
+</LI>
+</UL>
+</LI>
+<LI>Click
+<B>Apply</B> to apply your changes and keep the window
+open. (The
+<B>Apply</B> option enables you to see the effect of
+your changes and immediately modify them.)
+<P>
+
+</LI>
+<LI>Click
+<B>Ok</B> to apply your changes and close the window.
+<P>
+
+</LI>
+<LI>Click
+<B>Done</B> to close the window without making any
+further changes. Changes you have already applied (by
+clicking
+<B>Apply</B>) stay in effect.
+<P>
+
+</LI>
+<LI>Click
+<B>Help</B> if you require more information.
+<P>
+
+</LI>
+</OL>
+<P>
+The
+custom
+resource file to which your changes are applied is
+<I>$HOME/.ishmailrc</I>. You can also edit this file outside of the
+<CITE>Ishmail</CITE>
+program. If the file already exists, the new or changed
+parameters will be merged with the contents of the file rather
+than simply overwriting the file. See
+<A HREF="Xj52wFBX4N9X3cS.html">Ishmail Resources</A> for
+information about editing
+<I>$HOME/.ishmailrc</I>.
+
+<HR>
+Preceding Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Following Section: <A HREF="fy.-uyBk2I9X3cS.html">Message-related Preferences</A><BR>
+Parent Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

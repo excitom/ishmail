@@ -1,0 +1,57 @@
+/*
+ *  $Id: SendMisc.h,v 1.1.1.1 2000/04/25 13:49:02 fnevgeny Exp $
+ *  
+ *  Copyright (c) 1994 HAL Computer Systems International, Ltd.
+ * 
+ *          HAL COMPUTER SYSTEMS INTERNATIONAL, LTD.
+ *                  1315 Dell Avenue
+ *                  Campbell, CA  95008
+ *
+ * Author: Greg Hilton
+ * Contributors: Tom Lang, Frank Bieser, and others
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * http://www.gnu.org/copyleft/gpl.html
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+ */
+#ifndef _SendMisc_h_
+#define _SendMisc_h_
+
+#include <hgl/StringC.h>
+#include <hgl/CharC.h>
+
+#include <X11/Intrinsic.h>
+
+class StringListC;
+
+/*---------------------------------------------------------------
+ *  Function to add a parameter to a MIME header
+ */
+
+inline void
+AddQuotedVal(StringC& str, CharC param, CharC val)
+{
+   str += param;
+   Boolean	needQuotes = (!val.StartsWith('"') || !val.EndsWith('"'));
+   if ( needQuotes ) str += '"';
+   str += val;
+   if ( needQuotes ) str += '"';
+}
+
+extern Boolean	AddHeader(StringC headStr, StringListC& headList,
+			  Boolean dupOk=False);
+extern Boolean	EncodeHeader(StringC& headStr);
+
+#endif // _SendMisc_h_

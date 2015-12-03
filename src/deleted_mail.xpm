@@ -1,0 +1,23 @@
+/* XPM */
+static char * deleted_mail_xpm [] = {
+"24 16 4 1",
+"   s mask m None  c None",
+".  m black  c black",
+"X  m white  c white",
+"o  m black  c cyan",
+"                        ",
+"                        ",
+"..............  ........",
+".XXXXXXXXXXXX.  .XXXXXX.",
+".X.....XXXXX.  .XXXoooX.",
+".XXXXXXXXXXX.  .XXXoooX.",
+".X.....XXXX.  .XXXXoooX.",
+".XXXXXXXXXX.  .XXXXoooX.",
+".XXXXXX....  .....XXXXX.",
+".XXXXXXXXX.  .XXXXXXXXX.",
+".XXXXXX...  ......XXXXX.",
+".XXXXXXXX.  .XXXXXXXXXX.",
+".XXXXXX..  .......XXXXX.",
+".XXXXXXX.  .XXXXXXXXXXX.",
+"........  ..............",
+"                        "};

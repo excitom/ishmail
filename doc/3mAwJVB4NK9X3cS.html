@@ -1,0 +1,288 @@
+<HTML>
+<HEAD>
+ <TITLE>Printing MIME Messages</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="3mAwJVB4NK9X3cS">Printing MIME Messages</H1>
+
+<P>
+The procedure for
+printing a message or messages containing
+MIME-encoded inclusions or attachments is described below. As
+you perform the print procedure, you can click the
+<B>Cancel</B> button
+at any time to cancel the operation, or click the
+<B>Help</B> button to get
+more information.
+<P>
+Click the
+<U>P</U><B>rint</B> command to print messages either from the
+Reading window or from the Main window. Inclusions and
+attachments are printed separately from the original mail
+message.
+<P>
+<CITE>Ishmail</CITE> has built-in support for printing the following file types:
+<UL>
+<LI>Plain ASCII text
+<P>
+
+</LI>
+<LI>Rich Text
+<P>
+
+</LI>
+<LI>PostScript.
+
+<P>
+
+</LI>
+</UL>
+<P>
+In order for
+<CITE>Ishmail</CITE> to print included or attached files containing
+other MIME-encoded content types, such as GIF, JPEG, ODA,
+and so forth, you must supply an external print application
+command for each type and specify it in your
+<SAMP>mailcap</SAMP> file or
+<I>$HOME/.mailcap</I> file.
+<P>
+Before issuing a print command for any inclusion or attachment,
+<CITE>Ishmail</CITE> checks the
+<SAMP>mailcap</SAMP> file to see if a print command is
+specified. If the command is found,
+<CITE>Ishmail</CITE> displays the name of
+the file in a
+<B>Print MIME</B> dialog window along with selection prompts
+that enable you to print the file or to skip it.
+
+<P>
+Follow this procedure to print messages containing inclusions or
+attachments:
+<OL>
+<LI>Select the message(s) you want to print, then click the
+<U>P</U><B>rint ...</B> option in the Main window
+<U>F</U><B>ile</B> pull-down window.
+The
+<B>Print Message</B> window is displayed.
+<P><IMG SRC="3mAwJVB4NK9X3cS.extobj.1.gif">
+<P>
+
+</LI>
+<LI>Select one of the
+<B>Print header</B> options by clicking the radio
+button adjacent to the option:
+<P>
+
+<OL>
+<LI>Select
+<B>Print all headers</B> to print the standard
+headers displayed in the message header
+section as well as headers that are normally
+hidden.
+<P>
+
+</LI>
+<LI>Select
+<B>Print displayed headers only</B> to print only the
+headers that are displayed in the message
+header section.
+<P>
+
+</LI>
+<LI>Select
+<B>Don't print headers</B> to print the message body
+only.
+<P>
+
+</LI>
+</OL>If you have selected multiple messages to print, two
+additional options appear in the
+<B>Print Message</B> window:
+
+<P><IMG SRC="3mAwJVB4NK9X3cS.extobj.2.gif">
+<P>
+
+</LI>
+<LI>Select one of the multiple-print options:
+<P>
+
+<OL>
+<LI>Select
+<B>Print separately</B> to print each message
+individually (a separate print command is sent
+to the printer for each message).
+<P>
+
+</LI>
+<LI>Select
+<B>Print together</B> to concatenate and print the
+selected messages via a single print command.
+<P>
+
+</LI>
+</OL>
+</LI>
+<LI>Click the
+<B>Print</B> button. One of two
+<B>print MIME</B> dialog windows
+is displayed, depending on whether the MIME-encoded
+file is available locally or must be retrieved from an
+external source:
+<P>
+
+<UL>
+<LI>If the file is available locally, or if the file has
+already been retrieved via a previous
+<U>S</U><B>how</B>
+option or
+<U>R</U><B>etrieve ...</B> option (see
+<A HREF="1-Q.uNBGxI9X3cS.html">Viewing
+MIME-encoded Messages</A>), the
+<B>Print MIME</B> dialog
+window is displayed.
+<P>
+
+</LI>
+<LI>If the file is not available and must be retrieved
+from an external source, the
+<B>Print</B>
+<B>MIME attachment</B>
+dialog window is displayed.
+<P><IMG SRC="3mAwJVB4NK9X3cS.extobj.3.gif">
+<P>
+
+</LI>
+</UL>
+</LI>
+<LI>Select options in the
+<B>Print MIME</B> window or the
+<B>Print</B>
+<B>MIME
+attachment</B> window to specify which files to print or to skip.
+
+<P>
+As you make your print selection(s), the name of each
+printable inclusion or attachment is displayed, in turn,
+at the top of the dialog window.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>An inclusion or attachment is "printable" if it
+is one of the file types for which there is
+built-in print support or if a print command
+for the file type is specified in the
+<CODE>mailcap</CODE> file.
+<HR>
+</P>
+<OL>
+<LI>Select
+<B>Print this one</B> or
+<B>Retrieve and print this one</B> to
+print the specified included file or attached file.
+(In the example illustration above, the specified
+attachment is the file
+<I>/pub/GIF/README</I>.)
+
+<P>
+
+</LI>
+<LI>Select
+<B>Skip this one</B> if you DON'T want the to print
+the specified attachment.
+<P>
+The dialog window will then display, in turn, the
+names of the each of the next included or
+attached files. As each name is displayed, you
+can choose to print it or skip it.
+<P>
+An error message is displayed if an inclusion or
+attachment can't be retrieved.
+<P>
+
+</LI>
+<LI>Select
+<B>Print all included and attached files</B> or
+<B>Retrieve and
+print all attached files</B> if you want to print ALL of the
+included or attached files. You will not be
+prompted to select any other inclusions or
+attachments in this message.
+<P>
+
+</LI>
+<LI>Select
+<B>Skip all included and attached files</B> or
+<B>Skip all
+attached files</B> if you DON'T want to print any of the
+included or attached files.
+<P>
+
+</LI>
+<LI>Press
+<B>Ok</B> to send the file and inclusions or
+attachments to the printer.
+
+<P>
+
+</LI>
+</OL>
+</LI>
+</OL>
+<P>
+<CITE>Ishmail</CITE> indicates the printing order of these files by inserting a
+note similar to the following in the printed output of the original
+mail message. The note is inserted at the location of the icon that
+represented the inclusion or attachment.
+
+<PRE>
+(Attached Text File: /pub/GIF/README)
+<BR>(Printed separately)
+<BR>
+</PRE>
+<P>
+If an inclusion or attachment can't be printed because the
+appropriate print software is not available, a message similar to
+the following is added to the printed output at the location of the
+icon that represented the inclusion or attachment:
+<PRE>
+(Attached GIF Image: /pub/GIF/shuttle.gif)
+<BR>(Not printable)
+<BR>
+</PRE>
+<P>
+If an inclusion or attachment is not printed because you elected
+to "skip" it, a message similar to the following is added to the
+printed output at the location of the icon that represented the
+inclusion or attachment:
+<PRE>
+(Attached GIF Image: /pub/GIF/shuttle.gif)
+<BR>(Not printed)
+<BR>
+</PRE>
+
+<H2><A NAME="K-Q.uNBGxI9X3cS">See Also</H2>
+
+<P>
+For a more detailed discussion of MIME-encoded messages, see
+<A HREF="http://ds.internic.net/rfc/rfc1521.txt">Internet RFC 1521</A> and
+<A HREF="http://ds.internic.net/rfc/rfc1341.txt">Internet RFC 1341</A> (<CITE>Multipurpose
+Internet Mail Extension</CITE>), September 1993, and June 1992,
+respectively, by N. Borenstein, and N. Freed.
+<P>
+For information about sending MIME-encoded attachments or
+inclusions with your messages, see
+<A HREF="bqbqgMBPQJ9X3cS.html">Include Option</A> in the
+Composition Window chapter.
+
+
+<HR>
+Preceding Section: <A HREF="1-Q.uNBGxI9X3cS.html">Viewing MIME-encoded Messages</A><BR>
+Following Section: <A HREF="RFwomgB97L9X3cS.html">Help Menu</A><BR>
+Parent Section: <A HREF="v.Q.uNBGxI9X3cS.html">Displaying MIME-encoded Messages</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

@@ -1,0 +1,114 @@
+#!/bin/sh
+# Copyright (c) 1996 H&L Software, Inc.
+# Copyright (c) 1994 HaL Computer Systems, Inc.
+
+# if at least one parameter, see if it is the image type, which has
+# the form 'image/<type>'
+TYPE='unknown'
+if [ $# -ge 1 ]; then
+	if [ "`echo $1 | cut -d'/' -f1`" = "image" ]; then
+		TYPE=`echo $1 | cut -d'/' -f2`
+		shift
+	fi
+fi
+
+# check for input file name
+if [ $# -eq 0 ]; then
+	STDIN=1
+	FILE="your file"
+else
+	STDIN=0
+	FILE=$1
+fi
+
+# make sure /usr/bin/X11 is in the search path
+if [ `echo "$PATH" | grep -c "/usr/bin/X11"` -eq 0 ]; then
+	PATH=$PATH:/usr/bin/X11
+fi
+
+# process according to image type
+FILTER=""
+case $TYPE in
+xwd | x-xwd)
+	if [ `type xwud 2>&1 | cut -d' ' -f2` = "not" ]; then
+		echo "ERROR: Can't find the 'xwud' program to show $FILE."
+		exit 1
+	fi
+	if [ $STDIN -eq 1 ]; then
+		cat - | xwud
+	else
+		xwud -in $FILE
+	fi
+	exit $?
+	### DONE ###
+	;;
+xbitmap | x-xbitmap | xbm | x-xbm)
+	TYPE=xbm
+	;;
+pgm | x-pgm)
+	if [ `type pgmtopbm 2>&1 | cut -d' ' -f2` = "not" ]; then
+		echo "ERROR: Can't find the 'pgmtopbm' program to show $FILE."
+		exit 1
+	fi
+	FILTER="pgmtopbm"
+	;;
+xpm | x-xpm | x-xpixmap)
+	if [ `type xpmtoppm 2>&1 | cut -d' ' -f2` = "not" ]; then
+		echo "ERROR: Can't find the 'xpmtoppm' program to show $FILE."
+		exit 1
+	fi
+	FILTER="xpmtoppm"
+	;;
+*)
+	# GIFs, JPEGs, etc.
+	;;
+esac
+
+# find a viewer program
+VIEWER=""
+VARGS=""
+if [ `type xloadimage 2>&1 | cut -d' ' -f2` = "is" ]; then
+	VIEWER=xloadimage
+fi
+if [ "$TYPE" != "xbm" -a `type xv 2>&1 | cut -d' ' -f2` = "is" ]; then
+	VIEWER=xv
+	VARGS="-perfect"
+fi
+if [ `type display 2>&1 | cut -d' ' -f2` = "is" ]; then
+	VIEWER=display
+	VARGS="-colormap Private"
+	if [ "$TYPE" = "xbm" ]; then
+		TMP=/tmp/showxbm$$
+		echo "#define display seems to need a # on the first line" > $TMP
+		if [ $STDIN -eq 1 ]; then
+			cat - >> $TMP
+			$STDIN = 0
+		else
+			cat $FILE >> $TMP
+			FILE=$TMP
+		fi
+	fi
+fi
+
+if [ "$VIEWER" = "" ]; then
+	echo "ERROR: Can't find any viewer program to show $FILE."
+	exit 1
+fi
+if [ $STDIN -eq 1 ]; then
+	if [ "$FILTER" = "" ]; then
+		$VIEWER -
+	else
+		cat - | $FILTER | $VIEWER -
+	fi
+else
+	if [ "$FILTER" = "" ]; then
+		$VIEWER $FILE
+	else
+		$FILTER $FILE | $VIEWER -
+	fi
+fi
+RC=$?
+if [ "$TMP" != "" ]; then
+	rm $TMP
+fi
+exit $RC

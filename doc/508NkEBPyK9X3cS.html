@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+ <TITLE>Sharing Folders with Other Mail Programs</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="508NkEBPyK9X3cS">Sharing Folders with Other Mail Programs</H1>
+
+<P>
+The mail folder files used by
+<CITE>Ishmail</CITE>, in particular the
+<CODE>In-box</CODE>, also
+referred to as the "system folder," can be
+shared with other
+supported mail programs, such as
+<CITE>mail</CITE>,
+<CITE>mailx</CITE>,
+<CITE>elm</CITE>,
+<CITE>pine</CITE>,
+<CITE>MMDF</CITE>,
+and
+<CITE>mh</CITE>.
+<P>
+There are many different mail folder formats, but most UNIX
+mail tools use one of three different formats for the data in mail
+folders. Programs such as
+<CITE>mail</CITE>,
+<CITE>mailx</CITE>, and
+<CITE>elm</CITE> store mail folders
+as files, each file containing one or more mail messages. The
+name of the file is the name of the folder. A line starting with the
+characters "From" is considered the start of a new message.
+<P>
+The
+<CITE>MMDF</CITE> program also stores folders as a single file containing
+one or more messages. However, in
+<CITE>MMDF</CITE>-style folders a line
+containing four Ctrl-A characters at the beginning and end of
+each message is used to separate messages.
+<P>
+The
+<CITE>mh</CITE> program, and related tools such as
+<CITE>xmh</CITE> and
+<CITE>exmh</CITE>, use a
+directory as a mail folder. Mail messages are saved as individual
+files in the directory. The folder name is the directory name, and
+the names of the files in the directory are numbers corresponding
+to the mail message number.
+<P>
+<CITE>Ishmail</CITE> can work with any of these three mail folder types.
+<P>
+<CITE>Ishmail's</CITE> ability to share mail files with these other mail
+programs gives you the flexibility of accessing your mail folders
+via a "dial-up" modem connection from any remote location. In
+most cases, such dial-up modem connections are through
+character-mode mail programs such as
+<CITE>elm, mh, mail</CITE>, and
+<CITE>mailx</CITE>.
+<P>
+If you intend to use a
+character-mode interface to access your
+mail remotely through a
+dial-up connection to the host system on
+which your mail resides, you should save your changes to
+<CITE>Ishmail</CITE>
+before using the other mail interface. Otherwise you could lose
+unsaved changes.
+
+<P>
+You can make changes to your mail folders using another mail
+interface program such as
+<CITE>mail</CITE> or
+<CITE>mailx</CITE> while
+<CITE>Ishmail</CITE> is
+simultaneously running on your host system. If you do, the
+potential exists for some mail messages to get out of sync with
+the internal copies kept by
+<CITE>Ishmail</CITE>, possibly resulting in some
+"Read" messages reverting back to "New" status. Some
+previously deleted messages may also show up again in
+<CITE>Ishmail</CITE>.
+<P>
+As a safeguard against data loss,
+<CITE>Ishmail</CITE> detects changes in the
+status of open mail folders. The next time you use
+<CITE>Ishmail</CITE>, it will
+notify you with a pop-up window that a folder has been changed
+by another program. When that happens,
+<CITE>Ishmail</CITE> always rereads
+the folder file to get the most up-to-date copy. As a result, any
+changes you previously made while in
+<CITE>Ishmail</CITE> but didn't save will
+be lost.
+
+
+<HR>
+Preceding Section: <A HREF="X-7NkEBPyK9X3cS.html">Customizing Ishmail</A><BR>
+Following Section: <A HREF="QOrBmMB7OM9X3cS.html">Exiting Ishmail</A><BR>
+Parent Section: <A HREF="A-7NkEBPyK9X3cS.html">Starting Ishmail</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

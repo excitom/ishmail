@@ -1,0 +1,21 @@
+Ishmail*optionMenu*fontList:			*-helvetica-bold-r-*-12-*
+Ishmail*buttonFontList:				*-helvetica-medium-r-*-12-*
+Ishmail*labelFontList:				*-helvetica-medium-r-*-12-*
+Ishmail*XmToggleButton.fontList:		*-helvetica-medium-r-*-12-*
+
+Ishmail*XmText.fontList:			*-courier-medium-r-*-12-*
+Ishmail*XmTextField.fontList:			*-courier-medium-r-*-12-*
+Ishmail*textFontList:				*-courier-medium-r-*-12-*
+
+Ishmail*XmList.fontList:			*-helvetica-medium-r-*-12-*
+Ishmail*listFontList:				*-helvetica-medium-r-*-12-*
+Ishmail*viewDA.fontList:\
+*-helvetica-medium-r-*-12-*=plain,\
+*-helvetica-bold-r-*-12-*=bold,\
+*-helvetica-medium-o-*-12-*=italic,\
+*-helvetica-bold-o-*-12-*=bold-italic
+
+Ishmail*MimeRichTextC.font:			*-courier-medium-r-*-12-*
+Ishmail*MimeRichTextC.fixedFont:		*-fixed-medium-r-*-13-*
+
+Ishmail*boolExpWin*expDA.cursor.fontList:	*-times-bold-r-normal-*-24-*

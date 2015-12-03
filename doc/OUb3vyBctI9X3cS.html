@@ -1,0 +1,243 @@
+<HTML>
+<HEAD>
+ <TITLE>Save Patterns Option</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="OUb3vyBctI9X3cS">Save Patterns Option</H1>
+
+<P>
+The
+<CODE>Save patterns ...</CODE>
+option lets you define patterns that influence
+which folder is selected when you save a message.
+<P>
+When you save a message you can explicitly choose a folder in
+which to put the message, or you can save the message to the
+default folder. The default folder can be a single folder (the same
+one each time you save) or it can change depending upon the
+contents of the message's headers. One of your choices is to pick
+the folder name based on a matching pattern in the message's
+headers. The
+<B>Save Patterns ...</B> option lets you define the patterns
+and their associated folder names.
+<P>
+See
+<A HREF="1j.-uyBk2I9X3cS.html">Application-related Preferences</A> for information about how
+the default folder is determined.
+<P>
+You specify a string pattern and a folder name. When you save a
+mail message to the default folder (and the
+<CODE>Default save folder: by
+pattern</CODE> option in the
+<B>Application Preferences</B> window is enabled) the
+headers are scanned for a match with the patterns. When a
+match is detected the message is saved into the associated folder.
+See
+<A HREF="1j.-uyBk2I9X3cS.html#NKI1QLB-zWwA0YK">Default save folder</A> for information about specifying default
+folder names.
+<P>
+To add or insert new save patterns, and to modify or delete
+existing save patterns, click the
+<CODE>Sa</CODE><U>v</U><CODE>e patterns ...</CODE> option. The
+<CODE>Save
+Patterns</CODE> window appears.
+<P>
+<H4>Figure: <A NAME="ZUb3vyBctI9X3cS">Save Patterns Window</H4>
+
+<IMG SRC="OUb3vyBctI9X3cS.extobj.1.gif">
+
+<H2><A NAME="gbb3vyBctI9X3cS">Specifying Save Patterns</H2>
+
+<P>
+The
+<CODE>Save Patterns</CODE> window shows the list of current string patterns
+and associated folder names in a box containing two text fields
+-
+the
+<B>Pattern</B> name field and the associated
+<B>Folder name</B> field. (If no
+save patterns have been defined, both fields are empty.)
+
+<P>
+The pattern is evaluated as a
+<I>regular expression</I>, as defined by
+the UNIX
+<B>ed</B> command.
+<P>
+You use the four buttons to the left of the text fields to:
+<UL>
+<LI>Create a new save pattern.
+<P>
+
+</LI>
+<LI>Insert a save pattern.
+<P>
+
+</LI>
+<LI>Edit an existing save pattern.
+<P>
+
+</LI>
+<LI>Delete an existing save pattern.
+<P>
+
+</LI>
+</UL>
+<P>
+When you click the
+<B>New ..., Insert ...</B>, or
+<B>Edit ...</B> buttons, the
+<CODE>Edit Save
+Pattern</CODE> window appears. It contains text fields in which you can
+create or modify a save pattern.
+<P>
+<H4>Figure: <A NAME="obb3vyBctI9X3cS">Edit Save Pattern Window</H4>
+
+<IMG SRC="OUb3vyBctI9X3cS.extobj.2.gif">
+
+<H3><A NAME="7eb3vyBctI9X3cS">Creating a New Save Pattern</H3>
+
+<P>
+To create a new save pattern:
+<OL>
+<LI>Click the
+<B>New ...</B> button. The
+<B>Edit Save Pattern</B> window
+appears.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Pattern</B>: text field and enter a
+string pattern that would appear in the header field of an
+incoming message.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Folder name:</B> text field and enter
+the name of the folder that should be used when the
+string pattern is encountered in a message header.
+<P>
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Folder names can be fully qualified path
+names or relative path names. Relative path
+names are resolved starting from your
+<I>$HOME</I> directory. Relative path names
+starting with a
+<I>+</I> or an
+<I>=</I> are resolved starting
+from your
+<CODE>Folder Directory</CODE> (see
+<A HREF="1j.-uyBk2I9X3cS.html">Application-related Preferences</A>), which is
+typically
+<I>$HOME/Mail</I>.
+<HR>
+</P>
+</LI>
+<LI>Click
+<B>Ok</B> or
+<B>Apply</B> in the
+<B>Edit Save Pattern</B> dialog window.
+
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="Heb3vyBctI9X3cS">Inserting a Save Pattern</H3>
+
+<P>
+Highlight an existing save pattern and click
+<B>Insert</B> to begin
+inserting a new save pattern.
+<CITE>Ishmail</CITE> displays the
+<B>Edit Save Pattern</B>
+window. Then:
+<OL>
+<LI>Place the pointer in the
+<B>Pattern</B>: text field and enter a
+string pattern that should appear in the header field of
+an incoming message.
+<P>
+
+</LI>
+<LI>Place the pointer in the
+<B>Folder name:</B> text field and enter
+the name of the folder that should be used when the
+string pattern is encountered in a message header.
+<P>
+
+</LI>
+<LI>Click
+<B>Ok</B> or
+<B>Apply</B> in the
+<B>Edit Save Pattern</B> dialog window.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="Neb3vyBctI9X3cS">Editing a Save Pattern</H3>
+
+<P>
+Highlight an existing save pattern and click
+<B>Edit</B> to begin editing
+the selected save pattern.
+<CITE>Ishmail</CITE> displays the
+<B>Edit Save Pattern</B>
+window. Then:
+<OL>
+<LI>Make your changes in the
+<B>Pattern:</B> and
+<B>File name:</B> fields.
+
+<P>
+
+</LI>
+<LI>Click
+<B>Apply</B> or
+<B>OK</B> in the
+<B>Edit Save Pattern</B> window to apply
+your changes to the selected save pattern.
+<P>
+
+</LI>
+</OL>
+
+<H3><A NAME="Seb3vyBctI9X3cS">Deleting a Save Pattern</H3>
+
+<P>
+Highlight a save pattern and click
+<B>Delete</B> to remove it from the
+<B>Save Pattern List</B>.
+<CITE>Ishmail</CITE> asks you to confirm your action before it
+deletes the save pattern.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>You can remove more than one save pattern at
+a time by highlighting multiple icons.
+<HR>
+</P>
+
+<H3><A NAME="Veb3vyBctI9X3cS">Applying Your Changes</H3>
+
+<P>
+Apply or cancel your changes using the row of buttons across the
+bottom of the window. See
+<A HREF="1j.-uyBk2I9X3cS.html#9eH1QLB-zWwA0YK">Applying Your Changes</A>.
+
+
+<HR>
+Preceding Section: <A HREF="FcJ1QLB-zWwA0YK.html">Icons Option</A><BR>
+Following Section: <A HREF="Xeb3vyBctI9X3cS.html">Automatic Mail Filing Option</A><BR>
+Parent Section: <A HREF="2EtRqFB0aG9X3cS.html">Main Window Options Menu</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

@@ -1,0 +1,172 @@
+!
+! General
+!
+Ishmail*background:					LightGray
+Ishmail*foreground:					Black
+Ishmail*borderColor:					Black
+Ishmail*topShadowColor:					White
+Ishmail*bottomShadowColor:				Black
+Ishmail*highlightColor:					Red
+
+!
+! Text
+!
+Ishmail*XmText.background:				LightSteelBlue
+Ishmail*XmTextField.background:				LightSteelBlue
+Ishmail*XmScrolledText*background:			LightSteelBlue
+Ishmail*MimeRichTextC.background:			LightSteelBlue
+Ishmail*richTextFrame.background:			LightSteelBlue
+Ishmail*richTextForm.background:			LightSteelBlue
+Ishmail*richTextArea.background:			LightSteelBlue
+Ishmail*infoMsg.background:				LightGray
+Ishmail*sendWin*bodyStateTF.background:			LightGray
+Ishmail*buttonEditWin*labelTF.background:		LightGray
+
+!
+! State dependent text colors
+!
+Ishmail*insensitiveBackground:				LightGray
+Ishmail*insensitiveForeground:				Black
+Ishmail*optionalBackground:				LightSkyBlue1
+Ishmail*optionalForeground:				Black
+Ishmail*invalidBackground:				Red
+Ishmail*invalidForeground:				Black
+
+!
+! Lists and view boxes
+!
+Ishmail*XmList.background:				LightYellow2
+Ishmail*viewFrame.background:				LightYellow2
+Ishmail*viewDA.background:				LightYellow2
+Ishmail*viewDA.titleBackground:				LightGray
+Ishmail*viewDA.selectedBackground:			MediumSeaGreen
+Ishmail*viewDA.selectedForeground:			LightYellow
+
+!
+! Toggle buttons
+!
+Ishmail*XmToggleButton.selectColor:			Magenta
+Ishmail*XmToggleButtonGadget.selectColor:		Magenta
+
+!
+! Drag-and-drop
+!
+Ishmail*validDropColor:					Green
+
+!
+! Application icon
+!
+Ishmail*iconForeground:					Black
+Ishmail*iconBackground:					White
+
+!
+! Complex search window
+!
+Ishmail*boolExpWin*expDA.cursor.foreground:		Red
+Ishmail*boolExpWin*expDA.andLabel.foreground:		Blue
+Ishmail*boolExpWin*expDA.orLabel.foreground:		Blue
+Ishmail*boolExpWin*expDA.notLabel.foreground:		Blue
+
+!
+! Radio boxes
+!
+Ishmail*queryPopServerWin*popTypeFrame*background:	Thistle
+Ishmail*queryFolderTypeWin*typeFrame*background:	Thistle
+Ishmail*defFolderTypeWin*typeFrame*background:		Thistle
+Ishmail*applyFrame*background:				Thistle
+Ishmail*readWin.mainWindow*viewFrame*background:	Thistle
+Ishmail*readPrefWin*viewFrame*background:		Thistle
+Ishmail*sendWin*catFrame*background:			Thistle
+Ishmail*sendWin*sevFrame*background:			Thistle
+Ishmail*sendWin*typeFrame*background:			Thistle
+Ishmail*sendWin*fileDataWin*appForm*XmFrame*background:	Thistle
+Ishmail*sendWin*includeMsgWin*typeFrame*background:	Thistle
+Ishmail*sendPrefWin*maxFieldsFrame*background:		Thistle
+Ishmail*mailPrefWin*fccFrame.background:		Thistle
+Ishmail*mailPrefWin*fccRC.background:			Thistle
+Ishmail*mailPrefWin*fccFrame*XmForm.background:		Thistle
+Ishmail*mailPrefWin*fccFrame*XmToggleButton.background:	Thistle
+Ishmail*mailPrefWin*fccPatternLabel.background:		Thistle
+Ishmail*mailPrefWin*mailTypeFrame*background:		Thistle
+Ishmail*mailPrefWin*textTypeFrame*background:		Thistle
+Ishmail*mailPrefWin*bodyEncFrame*background:		Thistle
+Ishmail*mailPrefWin*headEncFrame*background:		Thistle
+Ishmail*replyPrefWin*forwardHeadFrame*background:	Thistle
+Ishmail*sigPrefWin*typeFrame*background:		Thistle
+Ishmail*prefWin*saveFrame.background:			Thistle
+Ishmail*prefWin*saveFrame*XmRowColumn.background:	Thistle
+Ishmail*prefWin*saveFrame*XmForm.background:		Thistle
+Ishmail*prefWin*saveFrame*XmToggleButton.background:	Thistle
+Ishmail*prefWin*savePatternLabel.background:		Thistle
+Ishmail*headerWin*choiceFrame*background:		Thistle
+Ishmail*buttonWin*gravRC*background:			Thistle
+Ishmail*folderPrefWin*viewFrame*background:		Thistle
+Ishmail*folderPrefWin*useTypeFrame*background:		Thistle
+Ishmail*folderPrefWin*typeFrame*background:		Thistle
+Ishmail*sortWin*keyRC.XmFrame*background:		Thistle
+Ishmail*sortWin*threadSortFrame*background:		Thistle
+Ishmail*sortWin*folderFrame*background:			Thistle
+Ishmail*printWin*ordFrame*background:			Thistle
+Ishmail*printWin*hdrFrame*background:			Thistle
+Ishmail*printQueryWin*choiceFrame*background:		Thistle
+Ishmail*getQueryWin*choiceFrame*background:		Thistle
+Ishmail*pipeWin*ordFrame*background:			Thistle
+Ishmail*pipeWin*hdrFrame*background:			Thistle
+Ishmail*saveFolderWin*radioFrame*background:		Thistle
+Ishmail*saveFileWin*saveHdrFrame*background:		Thistle
+Ishmail*saveFileWin*radioFrame*background:		Thistle
+Ishmail*folderTypeWin*folderTypeFrame*background:	Thistle
+Ishmail*openSelectWin*activateFrame*background:		Thistle
+Ishmail*includeTextWin*includeFrame*background:		Thistle
+Ishmail*fontChooser*propFrame*background:		Thistle
+Ishmail*fontChooser*sizeFrame*background:		Thistle
+
+!
+! Folder and message popup menus
+!
+Ishmail*mainShell*folderPULabel.background:		MediumSeaGreen
+Ishmail*mainShell*folderPULabel.foreground:		LightYellow
+Ishmail*mainShell*msgPULabel.background:		MediumSeaGreen
+Ishmail*mainShell*msgPULabel.foreground:		LightYellow
+
+!
+! Message attachments
+!
+Ishmail*MimeIconC.background:				LightGray
+Ishmail*MimeIconC.foreground:				Black
+
+!
+! Miscellaneous
+!
+Ishmail*mainWindow*msgWin.background:	 		Gray90
+Ishmail*mainWindow*quickHelp.background:		Gray90
+Ishmail*quickCB.background:				Gray90
+Ishmail*workingDialog*scale.background:			MediumSeaGreen
+Ishmail*MimeRichTextC.urlColor:				Blue
+Ishmail*TermC.background:				LightSteelBlue
+
+!
+! Composition window color menu
+!
+Ishmail*sendWin.mainWindow*colorRedPB.foreground:		Red
+Ishmail*sendWin.mainWindow*colorGreenPB.foreground:		Green
+Ishmail*sendWin.mainWindow*colorBluePB.foreground:		Blue
+Ishmail*sendWin.mainWindow*colorYellowPB.foreground:		Yellow
+Ishmail*sendWin.mainWindow*colorMagentaPB.foreground:		Magenta
+Ishmail*sendWin.mainWindow*colorCyanPB.foreground:		Cyan
+Ishmail*sendWin.mainWindow*colorBlackPB.foreground:		Black
+Ishmail*sendWin.mainWindow*colorWhitePB.foreground:		White
+
+Ishmail*helpWin*colorRedPB.foreground:			Red
+Ishmail*helpWin*colorGreenPB.foreground:		Green
+Ishmail*helpWin*colorBluePB.foreground:			Blue
+Ishmail*helpWin*colorYellowPB.foreground:		Yellow
+Ishmail*helpWin*colorMagentaPB.foreground:		Magenta
+Ishmail*helpWin*colorCyanPB.foreground:			Cyan
+Ishmail*helpWin*colorBlackPB.foreground:		Black
+Ishmail*helpWin*colorWhitePB.foreground:		White
+Ishmail*helpResWin*shortNameTF.background:		Gray
+Ishmail*helpResWin*longNameTF.background:		Gray
+Ishmail*helpResWin*quickNameTF.background:		Gray
+Ishmail*helpResWin*contNameTF.background:		Gray
+Ishmail*helpResWin*helpNameTF.background:		Gray

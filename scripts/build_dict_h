@@ -1,0 +1,95 @@
+#!/bin/sh
+
+usage()
+{
+   echo "Usage: build_dict_h HGL_srcdir P|O dict_name key_type val_type [include_files]"
+   exit 1;
+}
+
+HGLSRC=$1
+
+DTYPE=$2
+DCLASS=$3
+KTYPE=$4
+VTYPE=$5
+KINCL=$6
+VINCL=$7
+
+test -z "$HGLSRC"	&& usage
+test -z "$DTYPE"	&& usage
+test -z "$DCLASS"	&& usage
+test -z "$KTYPE"	&& usage
+test -z "$VTYPE"	&& usage
+
+DICT=$HGLSRC/${DTYPE}DictC
+LIST=$HGLSRC/${DTYPE}ListC
+
+if [ ! -f "$DICT.clas" ]
+then
+   echo "Could not find class file: $DICT.clas"
+   exit 1
+fi
+
+rm -f $DCLASS.h
+
+#
+# Create dictionary .h file
+#
+
+echo "Creating $DCLASS.h"
+echo "//"			>> $DCLASS.h
+echo "// $DCLASS.h"		>> $DCLASS.h
+echo "//"			>> $DCLASS.h
+echo ""				>> $DCLASS.h
+echo "#ifndef _${DCLASS}_h_"	>> $DCLASS.h
+echo "#define _${DCLASS}_h_"	>> $DCLASS.h
+echo ""				>> $DCLASS.h
+if [ ! -z "$KINCL" -o ! -z "$VINCL" ]
+then
+   test -z "$KINCL" || echo "#include $KINCL"	>> $DCLASS.h
+   test -z "$VINCL" || echo "#include $VINCL"	>> $DCLASS.h
+   echo ""					>> $DCLASS.h
+fi
+
+#
+# Add entry class to .h file
+#
+
+ECLASS=${DCLASS}Entry
+ETEMP=${DICT}Entry
+
+echo "Adding $ECLASS to $DCLASS.h"
+cat $ETEMP.clas \
+| sed -e "s/CLASS/$ECLASS/g" \
+| sed -e "s/KEYTYPE/$KTYPE/g" \
+| sed -e "s/VALTYPE/$VTYPE/g" \
+>> $DCLASS.h
+echo "" >> $DCLASS.h
+
+#
+# Add entry class list to .h file
+#
+
+ELIST=${ECLASS}List
+echo "Adding $ELIST to $DCLASS.h"
+cat $LIST.clas \
+| sed -e "s/CLASS/$ELIST/g" \
+| sed -e "s/TYPE/$ECLASS/g" \
+>> $DCLASS.h
+echo "" >> $DCLASS.h
+
+#
+# Add dictionary class to .h file
+#
+
+echo "Adding $DCLASS to $DCLASS.h"
+cat $DICT.clas \
+| sed -e "s/CLASS/$DCLASS/g" \
+| sed -e "s/ENTLIST/$ELIST/g" \
+| sed -e "s/ENTRY/$ECLASS/g" \
+| sed -e "s/KEYTYPE/$KTYPE/g" \
+| sed -e "s/VALTYPE/$VTYPE/g" \
+>> $DCLASS.h
+
+echo "" >> $DCLASS.h
+echo "#endif // _${DCLASS}_h_" >> $DCLASS.h

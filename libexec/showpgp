@@ -1,0 +1,13 @@
+#!/bin/sh
+#
+# Usage: showpgp boundary file
+#
+# This script will decompose a "multipart/encrypted" with protocol
+#    "application/pgp-encrypted" and pass the parts to pgp
+#
+
+#
+# We can just pass the whole thing to pgp
+#
+
+exec xterm -title "Decrypt" -e ishdecrypt $2

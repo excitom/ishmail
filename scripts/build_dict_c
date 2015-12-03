@@ -1,0 +1,85 @@
+#!/bin/sh
+
+usage()
+{
+   echo "Usage: build_dict_c HGL_srcdir P|O dict_name key_type val_type"
+   exit 1;
+}
+
+HGLSRC=$1
+
+DTYPE=$2
+DCLASS=$3
+KTYPE=$4
+VTYPE=$5
+
+test -z "$HGLSRC"	&& usage
+test "$DTYPE" != "P" -a "$DTYPE" != "O"	&& usage
+test -z "$DCLASS"	&& usage
+test -z "$KTYPE"	&& usage
+test -z "$VTYPE"	&& usage
+
+rm -f $DCLASS.C
+
+#
+# Add entry class to .C file
+#
+
+echo "Creating $DCLASS.C"
+echo "//"			>> $DCLASS.C
+echo "// $DCLASS.C"		>> $DCLASS.C
+echo "//"			>> $DCLASS.C
+echo ""				>> $DCLASS.C
+echo "#include <config.h>"	>> $DCLASS.C
+echo ""				>> $DCLASS.C
+echo "#include \"$DCLASS.h\""	>> $DCLASS.C
+echo ""				>> $DCLASS.C 
+
+DICT=$HGLSRC/${DTYPE}DictC
+LIST=$HGLSRC/${DTYPE}ListC
+
+ETEMP=${DICT}Entry
+ECLASS=${DCLASS}Entry
+
+if [ -f "$ETEMP.meth" ]
+then
+   echo "Adding $ECLASS to $DCLASS.C"
+   cat $ETEMP.meth \
+   | sed -e "s/CLASS/$ECLASS/g" \
+   | sed -e "s/KEYTYPE/$KTYPE/g" \
+   | sed -e "s/VALTYPE/$VTYPE/g" \
+   >> $DCLASS.C
+   echo "" >> $DCLASS.C
+fi
+
+#
+# Add entry class list to .C file
+#
+
+ELIST=${ECLASS}List
+
+if [ -f "$LIST.meth" ]
+then
+   echo "Adding $ELIST to $DCLASS.C"
+   cat $LIST.meth \
+   | sed -e "s/CLASS/$ELIST/g" \
+   | sed -e "s/TYPE/$ECLASS/g" \
+   >> $DCLASS.C
+   echo "" >> $DCLASS.C
+fi
+
+#
+# Add dictionary class to .C file
+#
+
+if [ -f "$DICT.meth" ]
+then
+   echo "Adding $DCLASS to $DCLASS.C"
+   cat $DICT.meth \
+   | sed -e "s/CLASS/$DCLASS/g" \
+   | sed -e "s/ENTLIST/$ELIST/g" \
+   | sed -e "s/ENTRY/$ECLASS/g" \
+   | sed -e "s/KEYTYPE/$KTYPE/g" \
+   | sed -e "s/VALTYPE/$VTYPE/g" \
+   >> $DCLASS.C
+fi

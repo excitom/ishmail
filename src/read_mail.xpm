@@ -1,0 +1,22 @@
+/* XPM */
+static char * read_mail_xpm [] = {
+"24 16 3 1",
+"   s mask m None  c None",
+".  m black  c black",
+"X  m white  c gray",
+"    ................    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .X...XXXXXXXXXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .XXXX.......XXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .XX.........XXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .XX.........XXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .XXXXXXXXX...XX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    .XXXXXXXXXXXXXX.    ",
+"    ................    "};

@@ -1,0 +1,23 @@
+/* XPM */
+static char * unread_mail_xpm [] = {
+"24 16 4 1",
+"   s mask m None  c None",
+".  m black  c black",
+"X  m white  c white",
+"o  m black  c cyan",
+"          ....          ",
+"       ...XXXX...       ",
+"    ...XXXXXXXXXX...    ",
+" ...XXXXXXXXXXXXXXXX... ",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+"........................",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".X.....XXXXXXXXXXXXoooX.",
+".XXXXXXXXXXXXXXXXXXoooX.",
+".X.....XXXXXXXXXXXXoooX.",
+".XXXXXXXXXXXXXXXXXXoooX.",
+".XXXXXX...........XXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+".XXXXXX...........XXXXX.",
+".XXXXXXXXXXXXXXXXXXXXXX.",
+"........................"};

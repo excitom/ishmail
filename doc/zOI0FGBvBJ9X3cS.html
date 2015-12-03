@@ -1,0 +1,255 @@
+<HTML>
+<HEAD>
+ <TITLE>Reading Window Components</TITLE>
+</HEAD>
+<BODY bgcolor="#ffffff">
+
+<H1><A NAME="zOI0FGBvBJ9X3cS">Reading Window Components</H1>
+
+<P>
+The
+Reading window is made up of these components:
+<UL>
+<LI>Main menu bar containing four pull-down menus that
+enable you to perform tasks that are specific to the
+Reading window.
+
+<P>
+You select options in these menus to read the next or
+previous message, save or print the current message,
+and reply to or forward the current message to other
+recipient(s).
+
+<P>
+You can also select various options to customize your
+Reading window environment, or click the
+<U>H</U><B>elp</B> menu to
+get more information about the task(s) you want to
+perform.
+
+<P>
+For information about using the help menu system, see
+<A HREF="DEtRqFB0aG9X3cS.html">Help Menu Options</A>.
+<P>
+
+</LI>
+<LI>Two subwindows or viewing areas that display message
+headers and body text. These viewing areas can be
+scrolled to display text that is outside the margins.
+
+<P>
+You can also specify the column margin of the Reading
+window and elect to have text word-wrap if it is wider
+than the specified margin.
+
+<P>
+A window resize button (called a sash in
+<CITE>Motif</CITE>
+terminology) on the right side of the Reading window for
+changing the relative vertical sizes of the header viewing
+area and the message body viewing area.
+<P>
+
+</LI>
+<LI>Pushpin icon for pinning the window to the screen (in
+order to open additional Reading windows).
+
+<P>
+
+</LI>
+<LI><B>View type:</B> radio buttons, which let you choose how to
+format structured MIME messages.
+<P>
+
+</LI>
+<LI><B>Wrap text</B> button, which lets you choose between wrapping
+long lines to fit the window or using a horizontal scroll
+bar.
+<P>
+
+</LI>
+</UL>
+<P>
+<A HREF="zOI0FGBvBJ9X3cS.html#RXMN.FBn.L9X3cS">Elements of the Reading Window</A> illustrates the primary
+elements of the Reading window.
+
+<P>
+<H4>Figure: <A NAME="RXMN.FBn.L9X3cS">Elements of the Reading Window</H4>
+
+<IMG SRC="zOI0FGBvBJ9X3cS.extobj.1.gif">
+
+<H2><A NAME="SbEZyyBMtM9X3cS">Reading MIME Messages</H2>
+
+<P>
+When reading a MIME message you can view it in
+<I>Outline</I> form
+or
+<I>Flat</I> form. Chose which form you want by clicking one of the
+<B>View type:</B> radio buttons. These buttons have no effect on an
+ordinary mail message.
+<P>
+In Outline form you can easily see the message structure,
+including nesting of parts, if any. Each part is labeled with a
+description of its contents. You can click on any of the parts and
+see it expanded.
+<P>
+How a message part is expanded depends on what it contains.
+For example, to look at a PostScript part you must have a
+PostScript viewer program on your system, such as
+<CITE>ghostview</CITE>. To
+look at a GIF or JPEG part you must have a viewer such as
+<CITE>xv</CITE> or
+<CITE>display</CITE>. To listen to an audio part your system must have audio
+capability and a speaker. Plain ASCII text parts and Enriched
+Text parts are shown directly in the Reading window.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Various viewer programs are
+<I>not</I> part of
+<CITE>Ishmail</CITE>. If your system doesn't have the
+appropriate viewer you won't be able to look
+at certain attachments. However you can save
+them to files, for later use, or include them in
+subsequent mail messages to other users.
+<HR>
+</P>
+<P>
+If you choose Flat form to view a message all the plain text and
+enriched text parts are expanded, or
+<I>flattened</I>. The overall
+structure of the message will not be as apparent, instead it will
+read like a document rather than its table of contents.
+<P>
+In the Flat view, message parts containing data other than text
+will appear as icons. The icon will represent the data type, and
+will be labelled with a short description of the data. Just as with
+the Outline view, click an icon and the appropriate view program
+will be launched.
+<P>
+To save a message part to a file, position the mouse cursor over
+the icon and press and hold the right mouse button. A menu will
+pop up. The menu has an option for saving the MIME
+attachment to a file.
+<P>
+For more information about viewing and printing MIME
+messages, see
+<A HREF="v.Q.uNBGxI9X3cS.html">Displaying MIME-encoded Messages</A>.
+
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>Look at the
+<CODE>mailcap</CODE> file, found in the
+<CODE>lib</CODE>
+subdirectory of where
+<CITE>Ishmail</CITE> is installed, to
+see which viewing (and printing) programs
+are associated with various MIME data types.
+You can modify this file to use different viewer
+programs.
+<HR>
+</P>
+
+<H2><A NAME="sUQ.uNBGxI9X3cS">Resizing the Reading Window</H2>
+
+<P>
+You can
+resize the Reading window using your window
+manager's resizing borders at the edges of the window. As you
+resize the window vertically, the message body area grows or
+shrinks proportionally while the header fields remain the same
+size. As you resize the window horizontally, both areas grow or
+shrink proportionally.
+<P>
+Vertical and horizontal scroll bars are available to scroll the text
+outside the reading area.
+
+<P>
+There is also a
+<B>Wrap text</B> button at the bottom of the window. If you
+click this button
+<KBD>On</KBD> lines of text will wrap at the right margin,
+and you will not need a horizontal scroll bar.
+<P>
+<HR>
+<B>NOTE:</B>
+<BR>You will see different behavior of the text in
+the Reading window depending on whether
+word-wrap is selected and whether the
+message contains
+<I>hard newlines</I>.
+
+<HR>
+</P>
+<P>
+<I>Hard newlines</I> (sometimes referred to as
+<I>carriage returns</I>) are
+inserted into a message when the sender types the
+<B>Return</B> or
+<B>Enter</B> key when composing the message. Ideally, these are used
+only to mark paragraph boundaries rather than the end of each
+line. If hard newlines are at the end of each line, the message text
+will not re-flow nicely when the Reading window is resized.
+<P>
+If word-wrapping is turned on and a message does not contain
+hard newlines on each line, when you resize the window the text
+re-flows to best fit the window.
+
+<P>
+If word wrapping is turned off and a message does not contain
+hard newlines on each line, each paragraph will appear as a
+single, very long line.
+<P>
+<HR>
+<B>TIP:</B>
+<BR>You may find that toggling the word-wrap
+option improves the readability of a message,
+depending on the mail tool which was used to
+create the message. For example, the Sun
+<CITE>mailtool</CITE> does not put hard newlines on each
+line, but
+<CITE>elm</CITE> does. Messages coming from
+<CITE>mailtool</CITE> probably will look better with word
+wrap enabled, while messages coming from
+<CITE>elm</CITE> probably will look better with word wrap
+disabled.
+<HR>
+</P>
+
+<H2><A NAME="wUQ.uNBGxI9X3cS">"Pinning" Windows to the Screen</H2>
+
+<P>
+You can have multiple
+Reading windows open simultaneously.
+Before opening each new window, click on the
+pushpin in the
+upper right-hand corner of the current window to "pin" that
+window to the screen. Each time you open a new Reading
+window, you can "pin" it, in turn, to the screen.
+
+<P>
+You can open one or more Reading windows at any time unless a
+pop-up dialog is being displayed that requires action before it can
+be dismissed.
+
+
+<H2><A NAME="1VQ.uNBGxI9X3cS">Shortcut Buttons</H2>
+
+<P>
+Optionally, you can configure a number of shortcut buttons to be
+displayed along the bottom of the or sides of the window. These
+buttons help streamline your use of the window. There are more
+than 25 possible menu functions in the Reading window menu
+bar that can be performed by shortcut buttons. See
+<A HREF="WPeSlNBpSL9X3cS.html">Shortcut
+Buttons</A> for information about configuring shortcut buttons.
+
+<HR>
+Preceding Section: <A HREF="OXMN.FBn.L9X3cS.html">Reading Window</A><BR>
+Following Section: <A HREF="UCeSlNBpSL9X3cS.html">Opening a New Reading Window</A><BR>
+Parent Section: <A HREF="OXMN.FBn.L9X3cS.html">Reading Window</A><BR>
+Contents of <A HREF="zsPsIGBSYWwA0YK.html">Ishmail User's Guide</A><BR>
+<HR>
+</BODY>
+</HTML>

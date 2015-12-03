@@ -1,0 +1,37 @@
+#!/bin/sh
+PATH=/bin:/usr/bin:/usr/local/bin
+export PATH
+
+make configure
+
+cat << EOF > Make.conf
+YACC = bison -y
+
+MV = mv -f
+RM = rm -f
+
+HGLINCDIR = \$(TOP)
+HGLSRC = \$(HGLINCDIR)/hgl
+
+SCRIPTS = \$(TOP)/scripts
+
+BUILD_LIST_H = \$(SCRIPTS)/build_list_h \$(HGLSRC)
+BUILD_LIST_C = \$(SCRIPTS)/build_list_c \$(HGLSRC)
+
+BUILD_DICT_H = \$(SCRIPTS)/build_dict_h \$(HGLSRC)
+BUILD_DICT_C = \$(SCRIPTS)/build_dict_c \$(HGLSRC)
+
+EOF
+
+make ChangeLog
+
+for i in hgl src utils; do (cd $i; make srcdistro); done
+rm Make.conf
+
+CDIR=`pwd`
+CDIR_BNAME=`basename $CDIR`
+
+rm -f Make.conf
+cd ..
+tar --exclude \*CVS\* -cvzf ${CDIR_BNAME}.tar.gz $CDIR_BNAME
+cd -
