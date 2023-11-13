@@ -1,4 +1,4 @@
-#Ishmail
+# Ishmail
 
 *Electronic Mail for Unix Systems*
 
@@ -13,9 +13,9 @@ Ishmail is a powerful yet easy to use tool for reading, composing, organizing, a
 - SGI IRIX
 - BSDI
 
-##Flexible Connections
+## Flexible Connections
 
-###IMAP, POP, and local mail servers
+### IMAP, POP, and local mail servers
 
 You can work with mail folders on your system, on systems on your local network, or on remote servers using the popular POP or IMAP protocols.
 
@@ -23,9 +23,9 @@ Ishmail lets you organize messages in folders, with various options for sorting 
 
 Folders can be organized in directories. The file format used for the folders is common with the format used by other Unix mail tools such as mailx, Elm, mh, xmh, exmh, MMDF, and Z-mail.
 
-##Useful Features
+## Useful Features
 
-###Automatic filing, alerts, and more
+### Automatic filing, alerts, and more
 
 Ishmail has powerful tools for automatically filing messages to selected folders as they arrive, or as they are sent. You select messages for automatic filing using patterns (simple strings or regular expressions) which are compared against message headers, body or both.
 
@@ -39,17 +39,17 @@ If you prefer to use a different editor tool, such as vi or emacs, you can do so
 
 You can define aliases for other users' names or groups of user names. A dialog box provides an easy way to create or change aliases. The aliases are stored in a format (.mailrc) which is compatible with other mail tools. Ishmail can share alias files with programs such as Z-Mail and Elm.
 
-##Easy To Use Interface
+## Easy To Use Interface
 
-###Keyboard, mouse, and "drag and drop"
+### Keyboard, mouse, and "drag and drop"
 
 Whether you are a beginner or an expert, you will find ishmail easy to use.
 
 Ishmail is easily customized. You can specify many attributes, ranging from cosmetic changes (colors, fonts, window sizes) to functional changes (number of and placement of buttons and menus, preferences for default actions). Special preference dialogs let you to modify most attributes, so that editing various files or programming are not required. You can define your own short cut buttons for various windows. You control where they are placed, what the labels say, and what actions they do.
 
-##Help When You Need It
+## Help When You Need It
 
-###On-line help text and messages
+### On-line help text and messages
 
 Each window in ishmail includes a help menu. Help text is available for the whole program, the current window, the context of the cursor, key definitions, the version of the program, and the help system itself. The lower left corner of each window is a message area. Brief messages are shown, describing the action that would happen if the mouse were clicked.
 
