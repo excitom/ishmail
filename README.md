@@ -1,4 +1,5 @@
-#ishmail
+#Ishmail
+
 *Electronic Mail for Unix Systems*
 
 Ishmail is a powerful yet easy to use tool for reading, composing, organizing, and filing electronic mail. Ishmail handles multimedia mail. It supports the Multipurpose Internet Mail Extensions (MIME), a standard for mailing files containing various kinds of multimedia data across the Internet. Ishmail has a graphical user interface, built using the X Window System and OSF/Motif. It is compatible with the CDE Desktop. Ishmail is available for a variety of Unix systems, including:
