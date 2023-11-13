@@ -2,6 +2,12 @@
 
 *Electronic Mail for Unix Systems*
 
+## History
+
+This software was developed in the mid 90s using the X Window System and Motif. I've kept it around for sentimental reasons, including the [original web page](https://ishmail.com).
+
+## Overview
+
 Ishmail is a powerful yet easy to use tool for reading, composing, organizing, and filing electronic mail. Ishmail handles multimedia mail. It supports the Multipurpose Internet Mail Extensions (MIME), a standard for mailing files containing various kinds of multimedia data across the Internet. Ishmail has a graphical user interface, built using the X Window System and OSF/Motif. It is compatible with the CDE Desktop. Ishmail is available for a variety of Unix systems, including:
 
 - SunOS
